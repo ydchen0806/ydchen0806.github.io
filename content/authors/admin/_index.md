@@ -1,12 +1,12 @@
 ---
 # Display name
-title: 吳健雄
+title: 陈胤达
 
 # Name pronunciation (optional)
-name_pronunciation: Chien Shiung Wu
+name_pronunciation: Yinda Chen
 
 # Full name (for SEO)
-first_name: Shiung Wu
+first_name: Yinda
 last_name: Chien
 
 # Status emoji
@@ -120,5 +120,9 @@ social:
 highlight_name: true
 ---
 
-Chien Shiung Wu is a professor of artificial intelligence at the Stanford AI Lab. Her research interests include distributed robotics, mobile computing and programmable matter. She leads the Robotic Neurobiology group, which develops self-reconfiguring robots, systems of self-organizing robots, and mobile sensor networks.
+I'm Yinda Chen, a master's student at the University of Science and Technology of China (USTC), majoring in computer science and technology. Here's a little bit about me:<br>
+- 👀 I'm passionate about remote sensing and biomedical image processing.<br>
+- 🌱 I'm currently on a learning journey, exploring the fascinating world of computer science and technology at USTC.<br>
+- 💞️ I'm actively seeking collaboration opportunities on exciting deep learning projects in the fields of remote sensing and biomedical image processing.<br>
+- 🎓 I'm also seeking a Ph.D. position for the Fall semester of 2025. If there are any available positions, 🙏 I would be grateful for the chance to further discuss my qualifications. Thank you for your consideration. 🌟
 {style="text-align: justify;"}
