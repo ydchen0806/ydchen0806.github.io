@@ -62,27 +62,22 @@ sections:
       #   Leave `date_end` empty if it's your current employer.
       #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
       items:
-        - title: CEO
-          company: GenCoin
+        - title: Research Assistant
+          company: South China Botanical Garden, Chinese Academy of Sciences (CAS)
           company_url: ''
           company_logo: org-gc
-          location: California
-          date_start: '2021-01-01'
-          date_end: ''
-          description: |2-
-              Responsibilities include:
-
-              * Analysing
-              * Modelling
-              * Deploying
-        - title: Professor of Semiconductor Physics
-          company: University X
+          location: China
+          date_start: '2019-08-01'
+          date_end: '2020-08-01'
+          description:  Assisted researcher Zhanfeng Liu in conducting research related to soil and climate, and won the first prize for the research report.
+        - title: Research Assistant
+          company: The Wang Yanan Institute for Studies in Economics (WISE)
           company_url: ''
           company_logo: org-x
           location: California
-          date_start: '2016-01-01'
-          date_end: '2020-12-31'
-          description: Taught electronic engineering and researched semiconductor physics.
+          date_start: '2021-12-01'
+          date_end: '2022-07-31'
+          description: Assist Associate Professor Jiong Zhu in conducting research on spatial economics, mainly responsible for using ArcGIS to extract geographical location information.
     design:
       columns: '2'
   - block: accomplishments
