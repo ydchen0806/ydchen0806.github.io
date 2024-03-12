@@ -17,7 +17,7 @@ status:
 superuser: true
 
 # Role/position/tagline
-role: Professor of Artificial Intelligence
+role: Master of Computer Science and Technology
 
 # Organizations/Affiliations to show in About widget
 organizations:
@@ -36,15 +36,12 @@ interests:
 # Education to show in About widget
 education:
   courses:
-    - course: PhD in Artificial Intelligence
-      institution: Stanford University
-      year: 2012
-    - course: MEng in Artificial Intelligence
-      institution: Massachusetts Institute of Technology
-      year: 2009
-    - course: BSc in Artificial Intelligence
-      institution: Massachusetts Institute of Technology
-      year: 2008
+    - course: Master of Computer Science and Technology
+      institution: University of Science & Technology of China (USTC)
+      year: 2022-2025
+    - course: Bachelor of Remote Sensing & Economics (double degree)
+      institution: Xiamen University (XMU)
+      year: 2018-2022
 
 # Skills
 # For available icons, see: https://docs.hugoblox.com/getting-started/page-builder/#icons
@@ -102,13 +99,13 @@ social:
 #      header: true
   - icon: graduation-cap # Alternatively, use `google-scholar` icon from `ai` icon pack
     icon_pack: fas
-    link: https://scholar.google.co.uk/citations?user=sIwtMXoAAAAJ
+    link: https://scholar.google.com/citations?user=hCvlj5cAAAAJ&hl=zh-CN&oi=ao
   - icon: github
     icon_pack: fab
     link: https://github.com/ydchen0806
-  - icon: linkedin
-    icon_pack: fab
-    link: https://www.linkedin.com/
+#  - icon: linkedin
+#    icon_pack: fab
+#    link: https://www.linkedin.com/
   # Link to a PDF of your resume/CV.
   # To use: copy your resume to `static/uploads/resume.pdf`, enable `ai` icons in `params.yaml`,
   # and uncomment the lines below.
