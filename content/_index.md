@@ -239,7 +239,7 @@ sections:
       # Contact (add or remove contact options as necessary)
       email: cyd0806@mail.ustc.edu.cn
       phone: +86 13058626611
-      appointment_url: 'https://calendly.com'
+#      appointment_url: 'https://calendly.com'
       address:
         street: USTC gaoxin campus
         city: Hefei
@@ -247,15 +247,15 @@ sections:
         postcode: '94305'
         country: China
         country_code: China
-      directions: Enter Building 1 and take the stairs to Office 200 on Floor 2
-      office_hours:
-        - 'Monday 10:00 to 13:00'
-        - 'Wednesday 09:00 to 10:00'
+#      directions: Enter Building 1 and take the stairs to Office 200 on Floor 2
+#      office_hours:
+#        - 'Monday 10:00 to 13:00'
+#        - 'Wednesday 09:00 to 10:00'
       # Choose a map provider in `params.yaml` to show a map from these coordinates
       coordinates:
         latitude: '31.83819'
         longitude: '117.26139'  
-      contact_links:
+#      contact_links:
 #        - icon: twitter
 #          icon_pack: fab
 #          name: DM Me
