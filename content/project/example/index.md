@@ -1,6 +1,6 @@
 ---
-title: Example Project
-summary: An example of using the in-built project page.
+title: jazznotes.io
+summary: Jazz Notes is an open source node/ember app that helps you keep track of your music compositions and new ideas..
 tags:
   - Deep Learning
 date: '2016-04-27T00:00:00Z'
