@@ -235,7 +235,7 @@ sections:
       title: Contact
       subtitle:
       text: |-
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam mi diam, venenatis ut magna et, vehicula efficitur enim.
+        Contact Me
       # Contact (add or remove contact options as necessary)
       email: cyd0806@mail.ustc.edu.cn
       phone: +86 13058626611
@@ -244,7 +244,7 @@ sections:
         street: USTC gaoxin campus
         city: Hefei
         region:  Anhui
-        postcode: '94305'
+        postcode: ''
         country: China
         country_code: China
 #      directions: Enter Building 1 and take the stairs to Office 200 on Floor 2
@@ -269,15 +269,15 @@ sections:
 #          name: Zoom Me
 #          link: 'https://zoom.com'
       # Automatically link email and phone or display as text?
-      autolink: true
+#      autolink: true
       # Email form provider
-      form:
-        provider: netlify
-        formspree:
-          id:
-        netlify:
+#      form:
+#        provider: netlify
+#        formspree:
+#          id:
+#        netlify:
           # Enable CAPTCHA challenge to reduce spam?
-          captcha: false
+#          captcha: false
     design:
       columns: '2'
 ---
