@@ -72,7 +72,7 @@ sections:
           description:  Assisted researcher Zhanfeng Liu in conducting research related to soil and climate, and won the first prize for the research report.
         - title: Research Assistant
           company: The Wang Yanan Institute for Studies in Economics (WISE)
-          company_url: ''
+          company_url: 'https://wise.xmu.edu.cn/'
           company_logo: org-x
           location: California
           date_start: '2021-12-01'
