@@ -51,19 +51,19 @@ education:
 skills:
   - name: Technical
     items:
-      - name: Python
+      - name: Self-supervised Learning
         description: ''
         percent: 80
         icon: python
         icon_pack: fab
-      - name: Data Science
+      - name: Image Compression
         description: ''
-        percent: 100
+        percent: 60
         icon: chart-line
         icon_pack: fas
-      - name: Mathematics
+      - name: Machine Learning Theory
         description: ''
-        percent: 40
+        percent: 50
         icon: database
         icon_pack: fas
   - name: Hobbies
@@ -72,15 +72,15 @@ skills:
     items:
       - name: Hiking
         description: ''
-        percent: 60
+        percent: 80
         icon: person-hiking
         icon_pack: fas
-      - name: Cats
+      - name: Singing
         description: ''
         percent: 100
         icon: cat
         icon_pack: fas
-      - name: Photography
+      - name: Mobile Games
         description: ''
         percent: 80
         icon: camera-retro
@@ -109,6 +109,9 @@ social:
   - icon: linkedin
     icon_pack: fab
     link: https://www.linkedin.com/in/%E8%83%A4%E8%BE%BE-%E9%99%88-37632a200/?originalSubdomain=cn
+  - icon: wechat
+    icon_pack: fab
+    link: https://github.com/ydchen0806/ydchen0806/blob/main/wechat_QRcode.png
   # Link to a PDF of your resume/CV.
   # To use: copy your resume to `static/uploads/resume.pdf`, enable `ai` icons in `params.yaml`,
   # and uncomment the lines below.
