@@ -111,8 +111,8 @@ social:
   - icon: linkedin
     icon_pack: fab
     link: https://www.linkedin.com/in/%E8%83%A4%E8%BE%BE-%E9%99%88-37632a200/?originalSubdomain=cn
-  - icon: wechat
-    icon_pack: fab
+  - icon: weixin
+    icon_pack: brands
     link: https://github.com/ydchen0806/ydchen0806/blob/main/wechat_QRcode.png
   # Link to a PDF of your resume/CV.
   # To use: copy your resume to `static/uploads/resume.pdf`, enable `ai` icons in `params.yaml`,
