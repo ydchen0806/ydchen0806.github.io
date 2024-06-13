@@ -64,7 +64,7 @@ sections:
       items:
         - title: Research Assistant
           company: South China Botanical Garden, Chinese Academy of Sciences (CAS)
-          company_url: ''
+          company_url: 'https://www.scbg.ac.cn/'
           company_logo: org-gc
           location: China
           date_start: '2019-08-01'
