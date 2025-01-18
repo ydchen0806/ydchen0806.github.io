@@ -2,7 +2,7 @@
 title: "MaskFactory: Towards High-quality Synthetic Data Generation for Dichotomous Image Segmentation"
 collection: publications
 category: conferences
-permalink: /publication/NeurIPS2024
+permalink: # /publication/NeurIPS2024
 excerpt: 'MaskFactory proposes a two - stage method to generate high - quality synthetic datasets for DIS, outperforming existing methods in quality and efficiency.'
 date: 2024-10-17
 venue: NeurIPS

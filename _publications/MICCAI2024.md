@@ -2,7 +2,7 @@
 title: "BIMCV-R: A Landmark Dataset for 3D CT Text-Image Retrieval"
 collection: publications
 category: conferences
-permalink: /publication/MICCAI2024
+permalink: # /publication/MICCAI2024
 excerpt: '
 This paper presents BIMCV-R, a 3D CT text - image retrieval dataset, and MedFinder. Tests show MedFinder outperforms baselines in related tasks.
 '

@@ -2,7 +2,7 @@
 title: "Unsupervised Domain Adaptation for EM Image Denoising with Invertible Networks"
 collection: publications
 category: manuscripts
-permalink: /publication/TMI2024
+permalink: # /publication/TMI2024
 excerpt: 'The paper proposes an unsupervised domain adaptation method for EM image denoising with invertible networks, outperforming existing methods.'
 date: 2024-07-19
 venue: 'TMI'

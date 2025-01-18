@@ -2,7 +2,7 @@
 title: "Self-Supervised Neuron Segmentation with Multi-Agent Reinforcement Learning"
 collection: publications
 category: conferences
-permalink: /publication/IJCAI2023
+permalink: # /publication/IJCAI2023
 excerpt: '
 This paper proposes a decision - based MIM for neuron segmentation in EM data. It uses MARL to optimize masking, outperforming alternatives.'
 date: 2023-08-17

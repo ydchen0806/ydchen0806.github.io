@@ -2,7 +2,7 @@
 title: "Self-Supervised Neuron Segmentation with Multi-Agent Reinforcement Learning"
 collection: publications
 category: conferences
-permalink: /publication/2009-10-01-paper-title-number-1
+permalink: # /publication/2009-10-01-paper-title-number-1
 excerpt: '
 This paper proposes a decision - based MIM for neuron segmentation in EM data. It uses MARL to optimize masking, outperforming alternatives.'
 date: 2025-03-06
