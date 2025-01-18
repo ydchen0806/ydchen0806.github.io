@@ -1,20 +1,20 @@
 ---
-title: "Teaching experience 1"
+title: "XMU Wiserclub--Data Mining"
 collection: teaching
-type: "Undergraduate course"
-permalink: /teaching/2014-spring-teaching-1
-venue: "University 1, Department"
-date: 2014-01-01
-location: "City, Country"
+type: "Club activity"
+permalink: /teaching/2021-2022-wiser-club
+venue: "Xiamen University, WISER Club"
+date: 2021-08-01
+location: "Xiamen, China"
 ---
 
-This is a description of a teaching experience. You can use markdown like any other post.
+Responsible for designing and discussing the Data Mining course. Delivered lectures on **Clustering** and **Feature Extraction** topics.
 
-Heading 1
+<!-- Heading 1
 ======
 
 Heading 2
 ======
 
 Heading 3
-======
+====== -->
