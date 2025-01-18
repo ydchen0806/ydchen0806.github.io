@@ -1,5 +1,5 @@
 ---
-title: "Self-Supervised Neuron Segmentation with Multi-Agent Reinforcement Learning"
+title: "Condition-generation Latent Coding with an External Dictionary for Deep Image Compression"
 collection: publications
 category: conferences
 permalink: # /publication/2009-10-01-paper-title-number-1
