@@ -7,6 +7,11 @@ redirect_from:
   - /resume
 ---
 
+## PDF Resume
+You can find the PDF versions in [Chinese](/files/cyd_resume_CN.pdf) and [English](/files/CYD_resume_EN.pdf).
+
+---
+
 ### Education
 - **Ph.D. in Information and Communication Engineering**  
   University of Science and Technology of China & Shanghai AI Lab, Hefei & Shanghai (Expected July 2024)  
@@ -26,6 +31,7 @@ redirect_from:
   - Advisor: [Prof. Yuanye Zhang](https://scholar.google.com/citations?user=l1GMXf4AAAAJ&hl=en&oi=ao)
 
 ---
+
 
 ### Work Experience
 - **Research Intern**  

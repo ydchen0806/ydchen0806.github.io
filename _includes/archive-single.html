@@ -37,7 +37,7 @@
       </span>
       <span style="font-size: 0.9em; color: #666;">
         {% if post.venue %}
-          <i>{{ post.venue }}</i>
+          <i>{{ post.venue | replace: 'oral', '<span style="color: red;">oral</span>' | replace: 'highlight', '<span style="color: red;">highlight</span>' }}</i>
           {% if post.date %} | {% endif %}
         {% endif %}
         {% if post.date %}
@@ -47,6 +47,21 @@
         {% endif %}
       </span>
     </h2>
+
+    <!-- Authors -->
+    {% if post.author %}
+      <p style="margin: 10px 0; font-size: 0.95em; color: #444;">
+        {% assign author = post.author | split: "and" %}
+        {% for author in author %}
+          {% if author contains "Chen, Yinda" %}
+            <strong>{{ author }}</strong>
+          {% else %}
+            {{ author }}
+          {% endif %}
+          {% unless forloop.last %}; {% endunless %}
+        {% endfor %}
+      </p>
+    {% endif %}
 
     <!-- Buttons under Title -->
     <div class="links-container" style="margin: 10px 0;">

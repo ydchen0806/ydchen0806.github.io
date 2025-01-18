@@ -1,11 +1,12 @@
 ---
-title: "Self-Supervised Neuron Segmentation with Multi-Agent Reinforcement Learning"
+title: "BIMCV-R: A Landmark Dataset for 3D CT Text-Image Retrieval"
 collection: publications
 category: conferences
-permalink: /publication/2009-10-01-paper-title-number-1
+permalink: /publication/MICCAI2024
 excerpt: '
 This paper presents BIMCV-R, a 3D CT text - image retrieval dataset, and MedFinder. Tests show MedFinder outperforms baselines in related tasks.
 '
+author: Chen, Yinda and Liu, Che and Liu, Xiaoyu and Arcucci, Rossella and Xiong, Zhiwei
 date: 2024-10-06
 venue: MICCAI
 slidesurl: # 'http://academicpages.github.io/files/slides1.pdf'

@@ -12,7 +12,7 @@ I am [Yinda Chen](https://ydchen0806.github.io/), a Ph.D. candidate jointly trai
 - 👀 Passionate about representation learning theory and biomedical image processing. My research focuses on self-supervised pretraining, efficient fine-tuning, and tasks related to image encoding and compression.
 - 🌱 Exploring computer science and technology at USTC. My advisors are [Feng Wu](https://scholar.google.com/citations?user=5bInRDEAAAAJ&hl=en) and [Zhiwei Xiong](https://scholar.google.com/citations?user=Snl0HPEAAAAJ&hl=en&oi=ao). I collaborate closely with [Dong Liu](https://scholar.google.com/citations?user=lOWByxoAAAAJ&hl=en), [Li Li](https://scholar.google.com/citations?user=dEm6VKAAAAAJ&hl=en), and have conducted research internships at Imperial College London and the 301 Hospital. My collaborators include [Qionghai Dai](https://scholar.google.com/citations?user=CHAajY4AAAAJ&hl=en&oi=ao) and [Rossella Arcucci](https://scholar.google.com/citations?user=oxy2ZQoAAAAJ&hl=en).
 - 💞️ Diverse academic background: double bachelor's degrees in Environmental Science and Economics, participation in the statistical research group [WISERCLUB](https://github.com/wise-r) at WISE, Xiamen University, experience in mathematical competitions, a master's in Computer Science (CS), and a Ph.D. in Electronic Information Engineering (EE). Open to collaborations in fields like remote sensing and biomedical image processing.
-- 📄 My full resume is available [here](https://ydchen0806.github.io/). PDF versions: [Chinese](https://github.com/ydchen0806/ydchen0806/blob/main/cyd_resume_CN.pdf) , [English](https://github.com/ydchen0806/ydchen0806/blob/main/CYD_resume_EN.pdf).
+- 📄 You can find the PDF versions in [Chinese](/files/cyd_resume_CN.pdf) and [English](/files/CYD_resume_EN.pdf).
 - 🎓 Seeking **research internship positions** in large model theory, pretraining, and efficient fine-tuning. 🙏 Happy to discuss my qualifications further. Thank you! 🌟
 
 ## Education
@@ -25,6 +25,17 @@ I am [Yinda Chen](https://ydchen0806.github.io/), a Ph.D. candidate jointly trai
 - <img src="/images/xmu_logo.jpeg" alt="XMU Logo" width="60"/> **Xiamen University**  
   Remote Sensing & Economics (Dual Degree), B.S. (2018.9 – 2022.7)
 
+## News
+
+- 2025.01.18 A [paper](/files/Condition_generation_Latent_Coding_with_an_External_Dictionary_for_Deep_Image_Compression.pdf) was selected as oral by AAAI 2025.
+- 2025.12.11 Two papers were accepted by AAAI 2025.
+- 2024.12.06 I was successfully selected as the leader of the [doctoral national natural science project](/files/F0210中国科学技术大学-陈胤达_final.pptx).
+- 2024.10.10 A [paper](https://arxiv.org/pdf/2412.19080) was accepted by NeurIPS 2024.
+- 2024.06.18 Two papers were accepted by MICCAI 2024.
+
+## Professional Service
+
+I have served as a reviewer for prestigious conferences and journals, including CVPR 2025, NeurIPS 2024, ICML 2025, ICLR 2024, MICCAI 2025, ACM MM 2024, AISTATS 2024, and IJCV.
 
 ## Skills
 
