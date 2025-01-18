@@ -26,45 +26,89 @@
       </div>
     {% endif %}
 
-    <h2 class="archive__item-title" itemprop="headline">
-      {% if post.link %}
-        <a href="{{ post.link }}">{{ title }}</a> <a href="{{ base_path }}{{ post.url }}" rel="permalink"><i class="fa fa-link" aria-hidden="true" title="permalink"></i><span class="sr-only">Permalink</span></a>
-      {% else %}
-        <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ title }}</a>
-      {% endif %}
-    </h2>
-    
-    {% if post.read_time %}
-      <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> {% include read-time.html %}</p>
-    {% endif %}
-
-        {% if post.collection == 'teaching' %}
-          <p> {{ post.type }}, <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
-        {% elsif post.collection == 'publications' %}
-          <p>Published in <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
-        {% elsif post.date %}
-         <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Published:" }}</strong> <time datetime="{{ post.date | default: "1900-01-01" | date_to_xmlschema }}">{{ post.date | default: "1900-01-01" | date: "%B %d, %Y" }}</time></p>
+    <!-- Title with Venue and Date -->
+    <h2 class="archive__item-title" itemprop="headline" style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap;">
+      <span>
+        {% if post.link %}
+          <a href="{{ post.link }}">{{ title }}</a>
+        {% else %}
+          <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ title }}</a>
         {% endif %}
+      </span>
+      <span style="font-size: 0.9em; color: #666;">
+        {% if post.venue %}
+          <i>{{ post.venue }}</i>
+          {% if post.date %} | {% endif %}
+        {% endif %}
+        {% if post.date %}
+          <time datetime="{{ post.date | default: "1900-01-01" | date_to_xmlschema }}">
+            {{ post.date | default: "1900-01-01" | date: "%B %d, %Y" }}
+          </time>
+        {% endif %}
+      </span>
+    </h2>
 
-    {% if post.excerpt and site.read_more != 'enabled' %}
-    <p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify }}</p>
-    {% elsif post.excerpt and site.read_more == 'enabled' %}
-    <p class="archive__item-excerpt" itemprop="description"><p>{{ post.excerpt | markdownify | remove: '<p>' | remove: '</p>' }}<strong><a href="{{ base_path }}{{ post.url }}" rel="permalink"> Read more</a></strong></p></p>
-    {% endif %}
-    
-    {% if post.citation and post.paperurl and post.slidesurl %}
-      <p>Recommended citation: {{ post.citation }}<br /><a href="{{ post.paperurl }}">Download Paper</a> | <a href="{{ post.slidesurl }}">Download Slides</a></p>
-    {% elsif post.citation and post.paperurl %}
-      <p>Recommended citation: {{ post.citation }}<br /><a href="{{ post.paperurl }}">Download Paper</a></p>
-    {% elsif post.citation and post.slidesurl %}
-      <p>Recommended citation: {{ post.citation }}<br /><a href="{{ post.slidesurl }}">Download Slides</a></p>
-    {% elsif post.citation %}
-      <p>Recommended citation: {{ post.citation }}</p>
-    {% elsif post.paperurl %}
-      <p><a href=" {{ post.paperurl }} ">Download Paper</a></p>
-    {% elsif post.slidesurl %}
-      <p><a href="{{ post.slidesurl }}">Download Slides</a></p>
+    <!-- Buttons under Title -->
+    <div class="links-container" style="margin: 10px 0;">
+      {% if post.paperurl %}
+        <a href="{{ post.paperurl }}" target="_blank" rel="noopener" style="margin-right: 10px; padding: 5px 10px; background: #28a745; color: white; text-decoration: none; border-radius: 3px;">Paper</a>
+      {% endif %}
+      {% if post.codeurl %}
+        <a href="{{ post.codeurl }}" target="_blank" rel="noopener" style="margin-right: 10px; padding: 5px 10px; background: #17a2b8; color: white; text-decoration: none; border-radius: 3px;">Code</a>
+      {% endif %}
+      {% if post.slidesurl %}
+        <a href="{{ post.slidesurl }}" target="_blank" rel="noopener" style="padding: 5px 10px; background: #ffc107; color: white; text-decoration: none; border-radius: 3px;">Slide</a>
+      {% endif %}
+    </div>
+
+    {% if post.main_figure %}
+      <div class="publication-main-figure" style="margin: 10px 0;">
+        <img src="{{ post.main_figure | relative_url }}" alt="Main figure for {{ post.title }}" style="max-width: 100%; height: auto;">
+      </div>
     {% endif %}
 
+    <!-- Excerpt -->
+    {% if post.excerpt %}
+      <p class="archive__item-excerpt" itemprop="description" style="font-size: 0.95em; line-height: 1.5; color: #555;">
+        {{ post.excerpt | markdownify }}
+      </p>
+    {% endif %}
+
+    <!-- BibTeX at the end -->
+    {% if post.bibtex %}
+      <div class="bibtex-container" style="margin-top: 20px; position: relative;">
+        <strong style="font-size: 1em;">Citation (BibTeX):</strong>
+        <pre id="bibtex-{{ post.title | slugify }}" style="background: #f9f9f9; padding: 10px; border: 1px solid #ddd; overflow-x: auto; font-size: 0.9em; line-height: 1.4;">
+{{ post.bibtex }}
+        </pre>
+        <button onclick="copyBibtex('{{ post.title | slugify }}')" style="position: absolute; top: 5px; right: 5px; padding: 5px 10px; background: #007acc; color: white; border: none; cursor: pointer;">
+          Copy BibTeX
+        </button>
+        <span id="copy-success-{{ post.title | slugify }}" 
+              style="display: none; position: absolute; top: 5px; right: 80px; background: #28a745; color: white; padding: 3px 8px; border-radius: 3px; font-size: 0.9em;">
+          Copied!
+        </span>
+      </div>
+    {% endif %}
   </article>
 </div>
+
+<script>
+  function copyBibtex(id) {
+    const bibtexElement = document.getElementById(`bibtex-${id}`);
+    const successMessage = document.getElementById(`copy-success-${id}`);
+    
+    // Copy BibTeX content
+    navigator.clipboard.writeText(bibtexElement.textContent.trim()).then(() => {
+      // Show "Copied!" message
+      successMessage.style.display = 'inline';
+      
+      // Hide it after 1 second
+      setTimeout(() => {
+        successMessage.style.display = 'none';
+      }, 1000);
+    }).catch((err) => {
+      console.error('Failed to copy BibTeX:', err);
+    });
+  }
+</script>
