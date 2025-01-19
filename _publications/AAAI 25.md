@@ -3,8 +3,7 @@ title: "Condition-generation Latent Coding with an External Dictionary for Deep 
 collection: publications
 category: conferences
 permalink: # /publication/2009-10-01-paper-title-number-1
-excerpt: '
-This paper proposes a decision - based MIM for neuron segmentation in EM data. It uses MARL to optimize masking, outperforming alternatives.'
+excerpt: 'The paper proposes CLC for deep image compression. It uses a dictionary to generate references, shows good performance, and has theoretical analysis.'
 date: 2025-03-06
 venue: AAAI (oral)
 author: "Wu, Siqi* and Chen, Yinda* and Liu, Dong and He, Zhihai"

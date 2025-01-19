@@ -3,7 +3,7 @@ title: "Learning multiscale consistency for self-supervised electron microscopy 
 collection: publications
 category: conferences
 permalink: # /publication/2009-10-01-paper-title-number-1
-excerpt: 'MaskFactory proposes a two - stage method to generate high - quality synthetic datasets for DIS, outperforming existing methods in quality and efficiency.'
+excerpt: 'A pretraining framework for EM volume instance segmentation is proposed. It enforces multiscale consistency and shows good performance in neuron and mitochondria segmentation.'
 date: 2024-4-13
 venue: ICASSP
 author: Chen, Yinda and Huang, Wei and Liu, Xiaoyu and Deng, Shiyu and Chen, Qi and Xiong, Zhiwei
