@@ -57,7 +57,13 @@ Feel free to drop me an email to discuss potential collaborations, share your id
 
 ## Visitor Map 🌍
 
-<div style="text-align: center; margin-bottom: 20px;">
+<div style="text-align: center; margin-bottom: 20px; width: 300px; height: 300px; margin: 0 auto;">
   <!-- ClustrMaps Embed Code -->
   <script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=-6dpgBBQ6VS019wttjE8HshiwnZUQM6hxMNnvZM-u6c"></script>
+  <style>
+    canvas#clustrmaps-canvas {
+      width: 100% !important; /* 根据父容器宽度自适应 */
+      height: 100% !important; /* 根据父容器高度自适应 */
+    }
+  </style>
 </div>
