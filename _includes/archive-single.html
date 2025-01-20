@@ -91,12 +91,12 @@
 
     <!-- BibTeX at the end -->
     {% if post.bibtex %}
-      <div class="bibtex-container" style="margin-top: 20px; position: relative;">
-        <strong style="font-size: 1em;">Citation (BibTeX):</strong>
-        <pre id="bibtex-{{ post.title | slugify }}" style="background: #f9f9f9; padding: 10px; border: 1px solid #ddd; overflow-x: auto; font-size: 0.9em; line-height: 1.4;">
-{{ post.bibtex }}
-        </pre>
-        <button onclick="copyBibtex('{{ post.title | slugify }}')" style="position: absolute; top: 5px; right: 5px; padding: 5px 10px; background: #007acc; color: white; border: none; cursor: pointer;">
+    <div class="bibtex-container" style="margin-top: 20px; position: relative;">
+      <strong style="font-size: 1em;">Citation (BibTeX):</strong>
+      <div class="bibtex-wrapper" style="position: relative;">
+        <pre id="bibtex-{{ post.title | slugify }}" style="background: #f9f9f9; padding: 10px; border: 1px solid #ddd; overflow-x: auto; font-size: 0.9em; line-height: 1.4; margin: 10px 0;">{{- post.bibtex | strip -}}</pre>
+        <button onclick="copyBibtex('{{ post.title | slugify }}')" 
+                style="position: absolute; top: 5px; right: 5px; padding: 5px 10px; background: #007acc; color: white; border: none; border-radius: 3px; cursor: pointer; font-size: 0.9em;">
           Copy BibTeX
         </button>
         <span id="copy-success-{{ post.title | slugify }}" 
@@ -104,7 +104,10 @@
           Copied!
         </span>
       </div>
+    </div>
     {% endif %}
+  
+    
   </article>
 </div>
 
@@ -113,17 +116,46 @@
     const bibtexElement = document.getElementById(`bibtex-${id}`);
     const successMessage = document.getElementById(`copy-success-${id}`);
     
-    // Copy BibTeX content
-    navigator.clipboard.writeText(bibtexElement.textContent.trim()).then(() => {
-      // Show "Copied!" message
+    if (!bibtexElement) {
+      console.error('BibTeX element not found');
+      return;
+    }
+  
+    // Create a temporary textarea element to handle the copying
+    const textarea = document.createElement('textarea');
+    textarea.value = bibtexElement.textContent.trim();
+    textarea.setAttribute('readonly', '');
+    textarea.style.position = 'absolute';
+    textarea.style.left = '-9999px';
+    document.body.appendChild(textarea);
+  
+    try {
+      // Select and copy the text
+      textarea.select();
+      document.execCommand('copy');
+      document.body.removeChild(textarea);
+  
+      // Show success message
       successMessage.style.display = 'inline';
       
-      // Hide it after 1 second
+      // Hide success message after 1.5 seconds
       setTimeout(() => {
         successMessage.style.display = 'none';
-      }, 1000);
-    }).catch((err) => {
+      }, 1500);
+    } catch (err) {
       console.error('Failed to copy BibTeX:', err);
-    });
+      // Fallback to clipboard API if execCommand fails
+      navigator.clipboard.writeText(textarea.value).then(() => {
+        successMessage.style.display = 'inline';
+        setTimeout(() => {
+          successMessage.style.display = 'none';
+        }, 1500);
+      }).catch(err => {
+        console.error('Both copy methods failed:', err);
+        alert('Failed to copy BibTeX. Please try again or copy manually.');
+      });
+    } finally {
+      document.body.removeChild(textarea);
+    }
   }
-</script>
+  </script>
