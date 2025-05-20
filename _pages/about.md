@@ -27,6 +27,7 @@ I am [Yinda Chen](https://ydchen0806.github.io/), a Ph.D. candidate jointly trai
 
 ## News
 
+- 2025.05.15 One [paper](https://arxiv.org/pdf/2410.13523) was accepted by ACL 2025 findings.
 - 2025.05.01 One [paper](https://openreview.net/pdf?id=wJGXiHQwpZ) was accepted by ICML 2025.
 - 2025.01.18 One [paper](/files/Condition_generation_Latent_Coding_with_an_External_Dictionary_for_Deep_Image_Compression.pdf) was selected as oral by AAAI 2025.
 - 2024.12.11 Two papers were accepted by AAAI 2025.
