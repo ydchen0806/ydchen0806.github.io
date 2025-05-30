@@ -8,7 +8,7 @@
 
 # Basic Site Settings
 locale                   : "en-US"
-title                    : "Yinda Chen / Personal Blog"
+title                    : "Personal Website"
 title_separator          : "-"
 name                     : &name "Yinda Chen (陈胤达)"
 description              : &description "A Ph.D. candidate jointly trained by the [USTC](https://sist.ustc.edu.cn/main.htm) and [Shanghai AI Lab](https://www.shlab.org.cn/)"
