@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "CYD's Webpage"
+title: "Yinda Chen@USTC"
 author_profile: true
 redirect_from: 
   - /about/
