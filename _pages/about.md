@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-I am [Yinda Chen](https://ydchen0806.github.io/), a Ph.D. candidate jointly trained by the [USTC](https://sist.ustc.edu.cn/main.htm) and [Shanghai AI Lab](https://www.shlab.org.cn/), specializing in Information and Communication Engineering. Here's a little about me:
+I am [Yinda Chen (陈胤达)](https://ydchen0806.github.io/), a Ph.D. candidate jointly trained by the [USTC](https://sist.ustc.edu.cn/main.htm) and [Shanghai AI Lab](https://www.shlab.org.cn/), specializing in Information and Communication Engineering. Here's a little about me:
 
 - 👀 Passionate about representation learning theory and biomedical image processing. My research focuses on self-supervised pretraining, efficient fine-tuning, and tasks related to image encoding and compression.
 - 🌱 Exploring computer science and technology at USTC. My advisors are [Feng Wu](https://scholar.google.com/citations?user=5bInRDEAAAAJ&hl=en) and [Zhiwei Xiong](https://scholar.google.com/citations?user=Snl0HPEAAAAJ&hl=en&oi=ao). I collaborate closely with [Dong Liu](https://scholar.google.com/citations?user=lOWByxoAAAAJ&hl=en), [Li Li](https://scholar.google.com/citations?user=dEm6VKAAAAAJ&hl=en), and have conducted research internships at Imperial College London and the 301 Hospital. My collaborators include [Qionghai Dai](https://scholar.google.com/citations?user=CHAajY4AAAAJ&hl=en&oi=ao) and [Rossella Arcucci](https://scholar.google.com/citations?user=oxy2ZQoAAAAJ&hl=en).
