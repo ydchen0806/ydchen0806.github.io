@@ -27,6 +27,7 @@ I am [Yinda Chen (陈胤达)](https://ydchen0806.github.io/), a Ph.D. candidate 
 
 ## News
 
+- 2025.09.08 Started as Qingyun intern at Tencent IEG, working on game video scene understanding.
 - 2025.06.26 One [paper](https://arxiv.org/pdf/2405.16847) was accepted by ICCV 2025.
 - 2025.05.15 One [paper](https://arxiv.org/pdf/2410.13523) was accepted by ACL 2025 findings.
 - 2025.05.01 One [paper](https://openreview.net/pdf?id=wJGXiHQwpZ) was accepted by ICML 2025.
