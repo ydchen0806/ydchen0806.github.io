@@ -27,14 +27,35 @@ jobs:
       - name: Fetch Google Scholar stats
         run: |
           python scripts/fetch_scholar_stats.py
-
-      - name: Create orphan branch and push
+          
+      - name: Verify gs_data.json exists
         run: |
+          echo "Checking for gs_data.json..."
+          ls -lh gs_data.json
+          echo "Content:"
+          cat gs_data.json
+
+      - name: Update orphan branch
+        run: |
+          # 配置 Git
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git config --global user.name "github-actions[bot]"
-          git checkout --orphan google-scholar-stats
-          git rm -rf .
+          
+          # 保存数据文件
+          cp gs_data.json /tmp/gs_data.json
+          
+          # 检出或创建 orphan 分支
+          git fetch origin google-scholar-stats || true
+          git checkout google-scholar-stats 2>/dev/null || git checkout --orphan google-scholar-stats
+          
+          # 清理分支
+          git rm -rf . 2>/dev/null || true
           git clean -fd
-          git add -f gs_data.json
-          git commit -m "Update Google Scholar stats"
+          
+          # 恢复数据文件
+          cp /tmp/gs_data.json gs_data.json
+          
+          # 提交并推送
+          git add gs_data.json
+          git commit -m "Update Google Scholar stats: $(date +'%Y-%m-%d %H:%M:%S UTC')"
           git push -f origin google-scholar-stats
