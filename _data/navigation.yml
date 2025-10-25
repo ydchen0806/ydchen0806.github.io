@@ -1,0 +1,26 @@
+# main links links
+main:
+  - title: "About Me"
+    url: "/#about-me"
+
+  - title: "News"
+    url: "/#-news"
+
+  - title: "Publications"
+    url: "/#-publications"
+
+  - title: "Honors and Awards"
+    url: "/#-honors-and-awards"
+
+  - title: "Educations"
+    url: "/#-educations"
+
+  - title: "Talks and Teaching"
+    url: "/#-talks-and-teaching"
+
+  #- title: "Blog Posts"
+  #  url: "/#-blog-posts"
+
+  #- title: "CV"
+  #  url: "/#-cv"
+
