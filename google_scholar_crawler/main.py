@@ -10,7 +10,9 @@ def main():
         scholar_id = os.environ.get('GOOGLE_SCHOLAR_ID')
         if not scholar_id:
             print("❌ 错误: GOOGLE_SCHOLAR_ID 环境变量未设置")
-            sys.exit(1)
+            # sys.exit(1)
+            scholar_id = 'hCvlj5cAAAAJ'  # 替代ID，供测试使用
+            print(f"使用替代的 GOOGLE_SCHOLAR_ID: {scholar_id}")
         
         print(f"正在获取学者信息: {scholar_id}")
         print("=" * 50)
