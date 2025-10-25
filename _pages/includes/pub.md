@@ -78,7 +78,7 @@ This paper proposes a decision - based MIM for neuron segmentation in EM data. I
 </div>
 </div>
 
-## Research Highlights  
+<!-- ## Research Highlights  
 #### **Neuron Segmentation and Brain Tissue Reconstruction**  
 - **Principal Investigator**, Ph.D. Natural Science Foundation Project (2025.1 – 2027.12)  
   - Developed a billion-scale brain neuron segmentation model with advanced masking and point cloud alignment techniques.  
@@ -93,4 +93,4 @@ This paper proposes a decision - based MIM for neuron segmentation in EM data. I
 - *UniCompress: Multimodal Medical Image Compression* (Submitted to ICML 2025): Proposed a knowledge distillation-based compression framework.  
 
 #### **Large Model Pretraining**  
-- Specialized in pretraining medical image and neuron segmentation models using large-scale GPU clusters (64-GPU A40, DDP, DeepSpeed).
+- Specialized in pretraining medical image and neuron segmentation models using large-scale GPU clusters (64-GPU A40, DDP, DeepSpeed). -->
