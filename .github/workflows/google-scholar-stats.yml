@@ -2,8 +2,11 @@ name: Get Google Scholar Stats
 
 on:
   schedule:
-    - cron: '0 0 * * 0'  # 每周日运行一次
-  workflow_dispatch:  # 允许手动触发
+    - cron: '0 0 * * 0'
+  workflow_dispatch:
+
+permissions:
+  contents: write
 
 jobs:
   update-stats:
@@ -11,8 +14,6 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
-        with:
-          fetch-depth: 0
 
       - name: Set up Python
         uses: actions/setup-python@v4
@@ -27,11 +28,13 @@ jobs:
         run: |
           python scripts/fetch_scholar_stats.py
 
-      - name: Commit and push if changed
+      - name: Create orphan branch and push
         run: |
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git config --global user.name "github-actions[bot]"
-          git checkout -b google-scholar-stats
-          git add gs_data.json
-          git diff-index --quiet HEAD || git commit -m "Update Google Scholar stats"
+          git checkout --orphan google-scholar-stats
+          git rm -rf .
+          git clean -fd
+          git add -f gs_data.json
+          git commit -m "Update Google Scholar stats"
           git push -f origin google-scholar-stats
