@@ -1,0 +1,37 @@
+name: Get Google Scholar Stats
+
+on:
+  schedule:
+    - cron: '0 0 * * 0'  # 每周日运行一次
+  workflow_dispatch:  # 允许手动触发
+
+jobs:
+  update-stats:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
+
+      - name: Install dependencies
+        run: |
+          pip install scholarly requests
+
+      - name: Fetch Google Scholar stats
+        run: |
+          python scripts/fetch_scholar_stats.py
+
+      - name: Commit and push if changed
+        run: |
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "github-actions[bot]"
+          git checkout -b google-scholar-stats
+          git add gs_data.json
+          git diff-index --quiet HEAD || git commit -m "Update Google Scholar stats"
+          git push -f origin google-scholar-stats

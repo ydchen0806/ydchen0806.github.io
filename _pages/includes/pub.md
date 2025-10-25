@@ -1,6 +1,6 @@
 # 📝 Selected Publications  
 
-For a complete list of publications, please visit my [Google Scholar profile](https://scholar.google.com/citations?user=hCvlj5cAAAAJ&hl=zh-CN&oi=ao) [![](https://img.shields.io/badge/dynamic/json?logo=google%20scholar&label=Citations&query=citedby&url=https%3A%2F%2Fcitation-needed.springer.com%2Fapi%2Frecord%2FhCvlj5cAAAAJ)](https://scholar.google.com/citations?user=hCvlj5cAAAAJ&hl=zh-CN&oi=ao)
+For a complete list of publications, please visit my [Google Scholar profile](https://scholar.google.com/citations?user=hCvlj5cAAAAJ&hl=zh-CN&oi=ao) [![](https://img.shields.io/badge/dynamic/json?logo=google-scholar&logoColor=white&label=citations&query=citedby&url=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Fydchen0806%2Fydchen0806.github.io@google-scholar-stats%2Fgs_data.json)](https://scholar.google.com/citations?user=hCvlj5cAAAAJ&hl=zh-CN&oi=ao)
 
 ## Journal Articles  
 
