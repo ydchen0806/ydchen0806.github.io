@@ -13,7 +13,7 @@ For a complete list of publications, please visit my [Google Scholar profile](ht
 <div class='paper-box-text' markdown="1">
 
 [EMPOWER: Evolutionary Medical Prompt Optimization With Reinforcement Learning](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11205280) \\
-IEEE Journal of Biomedical and Health Informatics | 2025 \\
+IEEE Journal of Biomedical and Health Informatics | October 16, 2025 \\
 **Yinda Chen\***; Yangfan He\*; Jing Yang; Dapeng Zhang; Zhenlong Yuan; Muhammad Attique Khan; Jamel Baili; Por Lip Yee
 
 EMPOWER proposes an evolutionary framework for medical prompt optimization through specialized representation learning and multi-dimensional evaluation. It achieves 24.7% reduction in factual errors and 15.3% higher clinician preference.
@@ -25,7 +25,7 @@ EMPOWER proposes an evolutionary framework for medical prompt optimization throu
 <div class='paper-box-text' markdown="1">
 
 [Unsupervised Domain Adaptation for EM Image Denoising with Invertible Networks](/docs/Unsupervised_Domain_Adaptation_for_EM_Image_Denoising_With_Invertible_Networks.pdf) \\
-TMI | July 29, 2024 \\
+IEEE Transactions on Medical Imaging | July 29, 2024 \\
 Shiyu Deng; **Yinda Chen**; Wei Huang; Ruobing Zhang; Zhiwei Xiong
 
 [**Code**](https://github.com/sydeng99/DADn) [![](https://img.shields.io/github/stars/sydeng99/DADn?style=social&label=Code+Stars)](https://github.com/sydeng99/DADn)
