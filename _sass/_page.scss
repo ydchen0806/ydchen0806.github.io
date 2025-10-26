@@ -410,3 +410,106 @@
   font-size: $type-size-6;
   text-transform: uppercase;
 }
+
+
+// Paper box image styles
+.paper-box-image {
+  position: relative;
+}
+
+// ========== 期刊名称badge ==========
+.badge-journal {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  color: white;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 0.85em;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  z-index: 10;
+  letter-spacing: 0.5px;
+}
+
+// ========== 会议名称badge ==========
+.badge-conference {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 0.85em;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  z-index: 10;
+  letter-spacing: 0.5px;
+}
+
+// ========== SCI分区badge（期刊用）==========
+.badge-impact {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 0.75em;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  z-index: 10;
+  letter-spacing: 0.3px;
+}
+
+// Q1 - 金色渐变（最高级别）
+.badge-q1 {
+  background: linear-gradient(135deg, #f7971e 0%, #ffd200 100%);
+}
+
+// Q2 - 银蓝色渐变
+.badge-q2 {
+  background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+}
+
+// Q3 - 绿色渐变
+.badge-q3 {
+  background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
+}
+
+// Q4 - 灰紫色渐变
+.badge-q4 {
+  background: linear-gradient(135deg, #a8a8a8 0%, #c9c9c9 100%);
+}
+
+// ========== CCF分区badge（会议用）==========
+.badge-ccf {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 0.75em;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  z-index: 10;
+  letter-spacing: 0.3px;
+}
+
+// CCF A - 金红色渐变（最高级别）
+.badge-ccf-a {
+  background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
+}
+
+// CCF B - 蓝绿色渐变
+.badge-ccf-b {
+  background: linear-gradient(135deg, #30cfd0 0%, #330867 100%);
+}
+
+// CCF C - 紫灰色渐变
+.badge-ccf-c {
+  background: linear-gradient(135deg, #a8a8a8 0%, #d4d4d4 100%);
+}
