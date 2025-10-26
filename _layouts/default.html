@@ -7,6 +7,20 @@ layout: compress
   <head>
     {% include head.html %}
     {% include head/custom.html %}
+    <style>
+      /* 🔧 简单样式：全局更新时间样式 */
+      .site-footer {
+        text-align: center;
+        margin: 3em 0 1em 0;
+        font-size: 0.9rem;
+        color: #777;
+      }
+      @media (prefers-color-scheme: dark) {
+        .site-footer {
+          color: #aaa;
+        }
+      }
+    </style>
   </head>
 
   <body>
@@ -18,7 +32,9 @@ layout: compress
       {% include sidebar.html %}
     
       <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
-        {% if page.title %}<meta itemprop="headline" content="{{ page.title | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
+        {% if page.title %}
+        <meta itemprop="headline" content="{{ page.title | markdownify | strip_html | strip_newlines | escape_once }}">
+        {% endif %}
         <div class="page__inner-wrap">
           <section class="page__content" itemprop="text">
             {{ content }}
@@ -26,6 +42,11 @@ layout: compress
         </div>
       </article>
     </div>
+
+    <!-- ✅ 新增页脚更新时间 -->
+    <footer class="site-footer">
+      Last updated: {{ site.time | date: "%Y-%m-%d %H:%M:%S" }}
+    </footer>
 
     {% include scripts.html %}
 
