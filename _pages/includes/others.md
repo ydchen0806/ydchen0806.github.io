@@ -15,7 +15,7 @@
 - 🛠️ Tools: Git, Docker
 
 ## Professional Service  
-I have served as a reviewer for prestigious conferences and journals, including CVPR 2025, NeurIPS 2024, ICML 2025, ICLR 2024, MICCAI 2025, ACM MM 2024, AISTATS 2024, and IJCV.
+I have served as a reviewer for prestigious conferences and journals, including CVPR 2025, NeurIPS 2024, ICML 2025, ICLR 2024, MICCAI 2025, ACM MM 2024, AISTATS 2024, and IJCV, TIP.
 
 ## Let's Connect  
 - 📫 You can reach out to me via email at [cyd0806@mail.ustc.edu.cn](mailto:cyd0806@mail.ustc.edu.cn).
