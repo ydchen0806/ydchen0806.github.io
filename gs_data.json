@@ -1,0 +1,406 @@
+{
+  "container_type": "Author",
+  "filled": [
+    "basics",
+    "publications",
+    "indices",
+    "counts"
+  ],
+  "scholar_id": "hCvlj5cAAAAJ",
+  "source": "AUTHOR_PROFILE_PAGE",
+  "name": "Yinda Chen",
+  "url_picture": "https://scholar.googleusercontent.com/citations?view_op=view_photo&user=hCvlj5cAAAAJ&citpid=11",
+  "affiliation": "University of Science and Technology of China, Xiamen University",
+  "organization": 8123924430127665534,
+  "interests": [
+    "Machine Learning Theory",
+    "Self-supervised Learning",
+    "Image Compression"
+  ],
+  "email_domain": "@mail.ustc.edu.cn",
+  "homepage": "https://ydchen0806.github.io/",
+  "citedby": 360,
+  "publications": {
+    "hCvlj5cAAAAJ:qjMakFHDy7sC": {
+      "container_type": "Publication",
+      "source": "AUTHOR_PUBLICATION_ENTRY",
+      "bib": {
+        "title": "Generative text-guided 3d vision-language pretraining for unified medical image segmentation",
+        "pub_year": "2025"
+      },
+      "filled": false,
+      "author_pub_id": "hCvlj5cAAAAJ:qjMakFHDy7sC",
+      "num_citations": 81,
+      "citedby_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=14406524139271340179,16186074395435886446",
+      "cites_id": [
+        "14406524139271340179",
+        "16186074395435886446"
+      ]
+    },
+    "hCvlj5cAAAAJ:QIV2ME_5wuYC": {
+      "container_type": "Publication",
+      "source": "AUTHOR_PUBLICATION_ENTRY",
+      "bib": {
+        "title": "Self-supervised neuron segmentation with multi-agent reinforcement learning",
+        "pub_year": "2023"
+      },
+      "filled": false,
+      "author_pub_id": "hCvlj5cAAAAJ:QIV2ME_5wuYC",
+      "num_citations": 50,
+      "citedby_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=16480624259287685300",
+      "cites_id": [
+        "16480624259287685300"
+      ]
+    },
+    "hCvlj5cAAAAJ:mVmsd5A6BfQC": {
+      "container_type": "Publication",
+      "source": "AUTHOR_PUBLICATION_ENTRY",
+      "bib": {
+        "title": "Bimcv-r: A landmark dataset for 3d ct text-image retrieval",
+        "pub_year": "2024"
+      },
+      "filled": false,
+      "author_pub_id": "hCvlj5cAAAAJ:mVmsd5A6BfQC",
+      "num_citations": 48,
+      "citedby_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=265082457565795996",
+      "cites_id": [
+        "265082457565795996"
+      ]
+    },
+    "hCvlj5cAAAAJ:9ZlFYXVOiuMC": {
+      "container_type": "Publication",
+      "source": "AUTHOR_PUBLICATION_ENTRY",
+      "bib": {
+        "title": "Learning multiscale consistency for self-supervised electron microscopy instance segmentation",
+        "pub_year": "2024"
+      },
+      "filled": false,
+      "author_pub_id": "hCvlj5cAAAAJ:9ZlFYXVOiuMC",
+      "num_citations": 34,
+      "citedby_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=11108704587315534541",
+      "cites_id": [
+        "11108704587315534541"
+      ]
+    },
+    "hCvlj5cAAAAJ:Wp0gIr-vW9MC": {
+      "container_type": "Publication",
+      "source": "AUTHOR_PUBLICATION_ENTRY",
+      "bib": {
+        "title": "T3d: Towards 3d medical image understanding through vision-language pre-training",
+        "pub_year": "2025"
+      },
+      "filled": false,
+      "author_pub_id": "hCvlj5cAAAAJ:Wp0gIr-vW9MC",
+      "num_citations": 26,
+      "citedby_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=15118875624800640996,52874842078300679",
+      "cites_id": [
+        "15118875624800640996",
+        "52874842078300679"
+      ]
+    },
+    "hCvlj5cAAAAJ:blknAaTinKkC": {
+      "container_type": "Publication",
+      "source": "AUTHOR_PUBLICATION_ENTRY",
+      "bib": {
+        "title": "TokenUnify: Scaling Up Autoregressive Pretraining for Neuron Segmentation",
+        "pub_year": "2025"
+      },
+      "filled": false,
+      "author_pub_id": "hCvlj5cAAAAJ:blknAaTinKkC",
+      "num_citations": 23,
+      "citedby_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=792778255598799315,17964146140858085606",
+      "cites_id": [
+        "792778255598799315",
+        "17964146140858085606"
+      ]
+    },
+    "hCvlj5cAAAAJ:0EnyYjriUFMC": {
+      "container_type": "Publication",
+      "source": "AUTHOR_PUBLICATION_ENTRY",
+      "bib": {
+        "title": "MRI advances in the imaging diagnosis of tuberculous meningitis: opportunities and innovations",
+        "pub_year": "2021"
+      },
+      "filled": false,
+      "author_pub_id": "hCvlj5cAAAAJ:0EnyYjriUFMC",
+      "num_citations": 18,
+      "citedby_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=1909223042573006139",
+      "cites_id": [
+        "1909223042573006139"
+      ]
+    },
+    "hCvlj5cAAAAJ:aqlVkmm33-oC": {
+      "container_type": "Publication",
+      "source": "AUTHOR_PUBLICATION_ENTRY",
+      "bib": {
+        "title": "MaskFactory: Towards High-quality Synthetic Data Generation for Dichotomous Image Segmentation",
+        "pub_year": "2024"
+      },
+      "filled": false,
+      "author_pub_id": "hCvlj5cAAAAJ:aqlVkmm33-oC",
+      "num_citations": 16,
+      "citedby_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=10979683144764337221",
+      "cites_id": [
+        "10979683144764337221"
+      ]
+    },
+    "hCvlj5cAAAAJ:KlAtU1dfN6UC": {
+      "container_type": "Publication",
+      "source": "AUTHOR_PUBLICATION_ENTRY",
+      "bib": {
+        "title": "Unsupervised Domain Adaptation for EM Image Denoising with Invertible Networks",
+        "pub_year": "2024"
+      },
+      "filled": false,
+      "author_pub_id": "hCvlj5cAAAAJ:KlAtU1dfN6UC",
+      "num_citations": 9,
+      "citedby_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=5248594022362111440",
+      "cites_id": [
+        "5248594022362111440"
+      ]
+    },
+    "hCvlj5cAAAAJ:M3ejUd6NZC8C": {
+      "container_type": "Publication",
+      "source": "AUTHOR_PUBLICATION_ENTRY",
+      "bib": {
+        "title": "MapExpert: Online HD Map Construction with Simple and Efficient Sparse Map Element Expert",
+        "pub_year": "2025"
+      },
+      "filled": false,
+      "author_pub_id": "hCvlj5cAAAAJ:M3ejUd6NZC8C",
+      "num_citations": 8,
+      "citedby_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=8394790525469218891",
+      "cites_id": [
+        "8394790525469218891"
+      ]
+    },
+    "hCvlj5cAAAAJ:kNdYIx-mwKoC": {
+      "container_type": "Publication",
+      "source": "AUTHOR_PUBLICATION_ENTRY",
+      "bib": {
+        "title": "Intelligent Data Analytics for Diagnosing Melanoma Skin Lesions via Deep Learning in IoT System",
+        "pub_year": "2021"
+      },
+      "filled": false,
+      "author_pub_id": "hCvlj5cAAAAJ:kNdYIx-mwKoC",
+      "num_citations": 8,
+      "citedby_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=4486351460961108234",
+      "cites_id": [
+        "4486351460961108234"
+      ]
+    },
+    "hCvlj5cAAAAJ:UebtZRa9Y70C": {
+      "container_type": "Publication",
+      "source": "AUTHOR_PUBLICATION_ENTRY",
+      "bib": {
+        "title": "UniCompress: Enhancing Multi-Data Medical Image Compression with Knowledge Distillation",
+        "pub_year": "2024"
+      },
+      "filled": false,
+      "author_pub_id": "hCvlj5cAAAAJ:UebtZRa9Y70C",
+      "num_citations": 7,
+      "citedby_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=17465194568241263594",
+      "cites_id": [
+        "17465194568241263594"
+      ]
+    },
+    "hCvlj5cAAAAJ:hqOjcs7Dif8C": {
+      "container_type": "Publication",
+      "source": "AUTHOR_PUBLICATION_ENTRY",
+      "bib": {
+        "title": "Cross-Dimension Affinity Distillation for 3D EM Neuron Segmentation",
+        "pub_year": "2024"
+      },
+      "filled": false,
+      "author_pub_id": "hCvlj5cAAAAJ:hqOjcs7Dif8C",
+      "num_citations": 7,
+      "citedby_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=3940420523942162703",
+      "cites_id": [
+        "3940420523942162703"
+      ]
+    },
+    "hCvlj5cAAAAJ:u-x6o8ySG0sC": {
+      "container_type": "Publication",
+      "source": "AUTHOR_PUBLICATION_ENTRY",
+      "bib": {
+        "title": "Application of ai technology in defense of big data network security",
+        "pub_year": "2021"
+      },
+      "filled": false,
+      "author_pub_id": "hCvlj5cAAAAJ:u-x6o8ySG0sC",
+      "num_citations": 6,
+      "citedby_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=6509677914314963593",
+      "cites_id": [
+        "6509677914314963593"
+      ]
+    },
+    "hCvlj5cAAAAJ:YOwf2qJgpHMC": {
+      "container_type": "Publication",
+      "source": "AUTHOR_PUBLICATION_ENTRY",
+      "bib": {
+        "title": "Can Medical Vision-Language Pre-training Succeed with Purely Synthetic Data?",
+        "pub_year": "2025"
+      },
+      "filled": false,
+      "author_pub_id": "hCvlj5cAAAAJ:YOwf2qJgpHMC",
+      "num_citations": 4,
+      "citedby_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=14638223447251706549",
+      "cites_id": [
+        "14638223447251706549"
+      ]
+    },
+    "hCvlj5cAAAAJ:4DMP91E08xMC": {
+      "container_type": "Publication",
+      "source": "AUTHOR_PUBLICATION_ENTRY",
+      "bib": {
+        "title": "Conditional Latent Coding with Learnable Synthesized Reference for Deep Image Compression",
+        "pub_year": "2025"
+      },
+      "filled": false,
+      "author_pub_id": "hCvlj5cAAAAJ:4DMP91E08xMC",
+      "num_citations": 4,
+      "citedby_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=4834363217868144088",
+      "cites_id": [
+        "4834363217868144088"
+      ]
+    },
+    "hCvlj5cAAAAJ:HDshCWvjkbEC": {
+      "container_type": "Publication",
+      "source": "AUTHOR_PUBLICATION_ENTRY",
+      "bib": {
+        "title": "Does DINOv3 Set a New Medical Vision Standard?",
+        "pub_year": "2025"
+      },
+      "filled": false,
+      "author_pub_id": "hCvlj5cAAAAJ:HDshCWvjkbEC",
+      "num_citations": 3,
+      "citedby_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=14125076541943886920",
+      "cites_id": [
+        "14125076541943886920"
+      ]
+    },
+    "hCvlj5cAAAAJ:-f6ydRqryjwC": {
+      "container_type": "Publication",
+      "source": "AUTHOR_PUBLICATION_ENTRY",
+      "bib": {
+        "title": "DVP-MVS++: Synergize Depth-Normal-Edge and Harmonized Visibility Prior for Multi-View Stereo",
+        "pub_year": "2025"
+      },
+      "filled": false,
+      "author_pub_id": "hCvlj5cAAAAJ:-f6ydRqryjwC",
+      "num_citations": 3,
+      "citedby_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=3943804555289375719",
+      "cites_id": [
+        "3943804555289375719"
+      ]
+    },
+    "hCvlj5cAAAAJ:qxL8FJ1GzNcC": {
+      "container_type": "Publication",
+      "source": "AUTHOR_PUBLICATION_ENTRY",
+      "bib": {
+        "title": "QMamba: Post-Training Quantization for Vision State Space Models",
+        "pub_year": "2025"
+      },
+      "filled": false,
+      "author_pub_id": "hCvlj5cAAAAJ:qxL8FJ1GzNcC",
+      "num_citations": 3,
+      "citedby_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=4740882000113996213",
+      "cites_id": [
+        "4740882000113996213"
+      ]
+    },
+    "hCvlj5cAAAAJ:dhFuZR0502QC": {
+      "container_type": "Publication",
+      "source": "AUTHOR_PUBLICATION_ENTRY",
+      "bib": {
+        "title": "MaskTwins: Dual-form Complementary Masking for Domain-Adaptive Image Segmentation",
+        "pub_year": "2025"
+      },
+      "filled": false,
+      "author_pub_id": "hCvlj5cAAAAJ:dhFuZR0502QC",
+      "num_citations": 2,
+      "citedby_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=2570527739438112365,10242586575198079538",
+      "cites_id": [
+        "2570527739438112365",
+        "10242586575198079538"
+      ]
+    },
+    "hCvlj5cAAAAJ:k_IJM867U9cC": {
+      "container_type": "Publication",
+      "source": "AUTHOR_PUBLICATION_ENTRY",
+      "bib": {
+        "title": "EMPOWER: Evolutionary Medical Prompt Optimization With Reinforcement Learning",
+        "pub_year": "2025"
+      },
+      "filled": false,
+      "author_pub_id": "hCvlj5cAAAAJ:k_IJM867U9cC",
+      "num_citations": 0
+    },
+    "hCvlj5cAAAAJ:TFP_iSt0sucC": {
+      "container_type": "Publication",
+      "source": "AUTHOR_PUBLICATION_ENTRY",
+      "bib": {
+        "title": "Johnson-Lindenstrauss Lemma Guided Network for Efficient 3D Medical Segmentation",
+        "pub_year": "2025"
+      },
+      "filled": false,
+      "author_pub_id": "hCvlj5cAAAAJ:TFP_iSt0sucC",
+      "num_citations": 0
+    },
+    "hCvlj5cAAAAJ:bEWYMUwI8FkC": {
+      "container_type": "Publication",
+      "source": "AUTHOR_PUBLICATION_ENTRY",
+      "bib": {
+        "title": "FURINA: Free from Unmergeable Router via LINear Aggregation of mixed experts",
+        "pub_year": "2025"
+      },
+      "filled": false,
+      "author_pub_id": "hCvlj5cAAAAJ:bEWYMUwI8FkC",
+      "num_citations": 0
+    },
+    "hCvlj5cAAAAJ:isC4tDSrTZIC": {
+      "container_type": "Publication",
+      "source": "AUTHOR_PUBLICATION_ENTRY",
+      "bib": {
+        "title": "Low-Cost Test-Time Adaptation for Robust Video Editing",
+        "pub_year": "2025"
+      },
+      "filled": false,
+      "author_pub_id": "hCvlj5cAAAAJ:isC4tDSrTZIC",
+      "num_citations": 0
+    },
+    "hCvlj5cAAAAJ:Zph67rFs4hoC": {
+      "container_type": "Publication",
+      "source": "AUTHOR_PUBLICATION_ENTRY",
+      "bib": {
+        "title": "Joint EM Image Denoising and Segmentation with Instance-Aware Interaction",
+        "pub_year": "2024"
+      },
+      "filled": false,
+      "author_pub_id": "hCvlj5cAAAAJ:Zph67rFs4hoC",
+      "num_citations": 0
+    },
+    "hCvlj5cAAAAJ:iH-uZ7U-co4C": {
+      "container_type": "Publication",
+      "source": "AUTHOR_PUBLICATION_ENTRY",
+      "bib": {
+        "title": "Digital Business Model Innovation and Production Efficiency"
+      },
+      "filled": false,
+      "author_pub_id": "hCvlj5cAAAAJ:iH-uZ7U-co4C",
+      "num_citations": 0
+    }
+  },
+  "citedby5y": 359,
+  "hindex": 9,
+  "hindex5y": 9,
+  "i10index": 8,
+  "i10index5y": 8,
+  "cites_per_year": {
+    "2022": 5,
+    "2023": 15,
+    "2024": 149,
+    "2025": 187
+  },
+  "updated": "2025-10-26 01:39:35.797211"
+}
