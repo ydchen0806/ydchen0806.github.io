@@ -16,7 +16,7 @@
   - **Honors:** National Graduate Scholarship (2022)
 
 - <img src="/images/xmu_logo.jpeg" alt="XMU Logo" width="60"/> **Xiamen University**  
-  Remote Sensing & Economics (Dual Degree), B.S. (2018.9 – 2022.7)  
+  Environmental Ecological Engineering & Economics (Dual Degree), B.S. (2018.9 – 2022.7)  
   *Xiamen*
   - **Major Ranking:** 16/31, **Overall Ranking:** 1/31
   - **Honors:** Xiamen University Academic Star (2021), CDA Level 1 Certification (2022), Kaggle Expert
