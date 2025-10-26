@@ -59,7 +59,7 @@ TokenUnify proposes a hierarchical predictive coding framework for neuron segmen
 
 [MaskTwins: Dual-form Complementary Masking for Domain-Adaptive Image Segmentation](https://openreview.net/pdf?id=9CpeZ8BzPO) \\
 ICML | July 13, 2025 \\
-Jiawei Wang; **Yinda Chen** (Theory Contribution & Project Leader); Co-authors TBD
+Jiawen Wang; **Yinda Chen** (Theory Contribution & Project Leader); Xiaoyu Liu; Che Liu; Dong Liu; Jianqing Gao; Zhiwei Xiong
 
 [**Code**](https://github.com/jwwang0421/masktwins) [![](https://img.shields.io/github/stars/jwwang0421/masktwins?style=social&label=Code+Stars)](https://github.com/jwwang0421/masktwins) | [**Poster**](https://icml.cc/media/PosterPDFs/ICML%202025/46243.png?t=1750997391.8351207)
 
