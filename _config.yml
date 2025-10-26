@@ -8,7 +8,7 @@
 # Site Settings
 title                    : "Personal Website"
 description              : "PhD Candidate"
-repository               : "xinghuasun/xinghuasun.github.io"
+repository               : "ydchen0806/ydchen0806.github.io"
 google_scholar_stats_use_cdn : true
 
 # google analytics
@@ -23,14 +23,14 @@ baidu_site_verification  : code-ZxFK3f4pfb
 author:
   name             : "Yinda Chen (陈胤达)"
   avatar           : "images/profile.png"
-  bio              : #"PhD Candidate"
-  location         : #"Singapore"
+  bio              : "PhD Candidate"
+  location         : "Shanghai"
   employer         : "USTC & Shanghai AI Lab"
   email            : "cyd0806@mail.ustc.edu.cn"
   pubmed           : 
   googlescholar    : "https://scholar.google.com/citations?user=hCvlj5cAAAAJ&hl=en"
   orcid            : "https://orcid.org/0000-0002-1990-4224"
-  researchgate     :  "https://www.researchgate.net/profile/Yinda-Chen"
+  researchgate     : "https://www.researchgate.net/profile/Yinda-Chen"
   uri              :
   bitbucket        :
   codepen          :
@@ -38,14 +38,14 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : "https://github.com/ydchen0806"
+  github           : "ydchen0806"
   google_plus      :
   keybase          : #"https://www.kaggle.com/yindachen"
   instagram        :
   impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
-  linkedin         : "https://www.linkedin.com/in/%E8%83%A4%E8%BE%BE-%E9%99%88-37632a200/"
-  dblp             : #"https://dblp.org/pid/75/6568-6.html"
+  linkedin         : "胤达-陈-37632a200/"
+  dblp             : "https://dblp.org/pid/313/5179.html"
   pinterest        :
   soundcloud       :
   stackoverflow    : # http://stackoverflow.com/users/123456/username
