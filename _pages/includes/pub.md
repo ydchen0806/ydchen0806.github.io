@@ -58,10 +58,10 @@ TokenUnify proposes a hierarchical predictive coding framework for neuron segmen
 <div class='paper-box-text' markdown="1">
 
 [Condition-generation Latent Coding with an External Dictionary for Deep Image Compression](/docs/Condition_generation_Latent_Coding_with_an_External_Dictionary_for_Deep_Image_Compression.pdf) \\
-AAAI (oral) | March 06, 2025 \\
+AAAI <span style="color:red">**(<font color="red">oral</font>)**</span> | March 06, 2025 \\
 Siqi Wu; **Yinda Chen\***; Dong Liu; Zhihai He
 
-[**Code**](https://github.com/ydchen0806/CLC) [![](https://img.shields.io/github/stars/ydchen0806/CLC?style=social&label=Code+Stars)](https://github.com/ydchen0806/CLC)
+[**Code**](https://github.com/ydchen0806/CLC) [![](https://img.shields.io/github/stars/ydchen0806/CLC?style=social&label=Code+Stars)](https://github.com/ydchen0806/CLC) | [**Weights**](https://huggingface.co/cyd0806/CLC/tree/main) [![](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Weights-yellow)](https://huggingface.co/cyd0806/CLC/tree/main)
 
 The paper proposes CLC for deep image compression. It uses a dictionary to generate references, shows good performance, and has theoretical analysis.
 
@@ -114,10 +114,10 @@ A pretraining framework for EM volume instance segmentation is proposed. It enfo
 <div class='paper-box-text' markdown="1">
 
 [Self-Supervised Neuron Segmentation with Multi-Agent Reinforcement Learning](https://www.ijcai.org/proceedings/2023/0068.pdf) \\
-IJCAI (oral) | August 17, 2023 \\
+IJCAI <span style="color:red">**(<font color="red">oral</font>)**</span> | August 17, 2023 \\
 **Yinda Chen**; Wei Huang; Shenglong Zhou; Qi Chen; Zhiwei Xiong
 
-[**Code**](https://github.com/ydchen0806/dbMiM) [![](https://img.shields.io/github/stars/ydchen0806/dbMiM?style=social&label=Code+Stars)](https://github.com/ydchen0806/dbMiM)
+[**Code**](https://github.com/ydchen0806/dbMiM) [![](https://img.shields.io/github/stars/ydchen0806/dbMiM?style=social&label=Code+Stars)](https://github.com/ydchen0806/dbMiM) | [**Pretrain Data**](https://huggingface.co/datasets/cyd0806/EM_pretrain_data/tree/main) [![](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Dataset-blue)](https://huggingface.co/datasets/cyd0806/EM_pretrain_data/tree/main) | [**CREMI**](https://cremi.org/) | [**VNC**](https://drive.google.com/drive/folders/1JAdoKchlWrHnbTXvnFn6pWWwx6VIiMH3?usp=sharing)
 
 This paper proposes a decision-based MIM for neuron segmentation in EM data. It uses MARL to optimize masking, outperforming alternatives.
 
