@@ -14,6 +14,22 @@
 - 🌐 Web Development: HTML, CSS, JavaScript, Vue
 - 🛠️ Tools: Git, Docker
 
+# 🎯 Hobbies & Interests
+
+- 🎤 Singing: Enjoy singing and exploring different music genres
+- 🍳 Cooking: Passionate about trying new recipes and culinary experiments
+- 🎲 Board Games: Strategy game enthusiast, favorites include:
+  - Splendor (璀璨宝石)
+  - Catan (卡坦岛)
+  - Ticket to Ride (车票之旅)
+  - Azul (花砖物语)
+  - 7 Wonders (世界七大奇迹)
+  - Carcassonne (卡卡颂)
+  - Wingspan (展翅翱翔)
+- ⛰️ Hiking: Love exploring mountains and enjoying nature
+- ✈️ Traveling: Enthusiastic about discovering new places and cultures
+- 🎮 Gaming: Honor of Kings (王者荣耀) player
+
 ## Professional Service  
 I have served as a reviewer for prestigious conferences and journals, including CVPR 2025, NeurIPS 2024, ICML 2025, ICLR 2024, MICCAI 2025, ACM MM 2024, AISTATS 2024, and IJCV, TIP.
 
