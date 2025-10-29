@@ -16,19 +16,14 @@
 
 # 🎯 Hobbies & Interests
 
-- 🎤 Singing: Enjoy singing and exploring different music genres
-- 🍳 Cooking: Passionate about trying new recipes and culinary experiments
-- 🎲 Board Games: Strategy game enthusiast, favorites include:
-  - Splendor (璀璨宝石)
-  - Catan (卡坦岛)
-  - Ticket to Ride (车票之旅)
-  - Azul (花砖物语)
-  - 7 Wonders (世界七大奇迹)
-  - Carcassonne (卡卡颂)
-  - Wingspan (展翅翱翔)
-- ⛰️ Hiking: Love exploring mountains and enjoying nature
-- ✈️ Traveling: Enthusiastic about discovering new places and cultures
-- 🎮 Gaming: Honor of Kings (王者荣耀) player
+- 🎤 **Singing**: Love belting out tunes and exploring different music styles
+- 🍳 **Cooking**: Always experimenting with new recipes - my kitchen is my lab!
+- 🏸 **Sports**: Into badminton, basketball, and table tennis. Also hitting the gym as a total newbie (don't judge!)
+- 🎲 **Board Games**: Obsessed with strategy games like Splendor (璀璨宝石), Catan (卡坦岛), Ticket to Ride (车票之旅), Azul (花砖物语), 7 Wonders (世界七大奇迹), Carcassonne (卡卡颂), and Wingspan (展翅翱翔). Game night anyone?
+- ⛰️ **Hiking & Traveling**: Love chasing sunrises on mountain peaks and getting lost in new cities. Recently explored the misty heights of Huangshan, the sacred temples of Jiuhuashan, wandered through Zhuhai's coastlines and Changsha's food scene. Been lucky enough to haggle in Istanbul's bazaars, ride camels in Morocco's Sahara, and get caffeinated in Seoul's trendy streets
+- 🎮 **[Gaming](/docs/王者荣耀.png)**: Not just building Honor of Kings (Lingbao Project developer here!) but also crushing it as a player - rocking National Server Nezha, Golden Badge Nakoruru, and ranked Top 50 Jungler in Hefei. Let's duo queue sometime!
+
+**Feel free to hit me up for board games, badminton matches, hiking trips, or just grabbing food and chatting about life! Always down to meet cool people and try new things 🎉**
 
 ## Professional Service  
 I have served as a reviewer for prestigious conferences and journals, including CVPR 2025, NeurIPS 2024, ICML 2025, ICLR 2024, MICCAI 2025, ACM MM 2024, AISTATS 2024, and IJCV, TIP.
