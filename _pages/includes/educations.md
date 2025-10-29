@@ -18,8 +18,8 @@
 - <img src="/images/xmu_logo.jpeg" alt="XMU Logo" width="60"/> **Xiamen University**  
   Environmental Ecological Engineering & Economics (Dual Degree), B.S. (2018.9 – 2022.7)  
   *Xiamen*
-  - **Major Ranking:** 16/31, **[Overall Ranking](docs/排名第一.pdf)**:** 1/31
-  - **Honors:** Xiamen University Academic Star (2021), CDA Level 1 Certification (2022), Kaggle Expert
+  - **Major Ranking:** 16/31, **[Overall Ranking](docs/排名第一.pdf)**: **1/31**
+  - **Honors:** Xiamen University Academic Star (2021), CDA Level 1 Certification (2022), [Kaggle Expert](https://www.kaggle.com/yindachen)
   - **Advisor:** [Prof. Yuanye Zhang](https://scholar.google.com/citations?user=l1GMXf4AAAAJ&hl=en&oi=ao)
 
 ## Work Experience
