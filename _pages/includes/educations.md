@@ -1,7 +1,7 @@
 
 # 📖 Educations
 
-- <img src="/images/ustc_logo.png" alt="USTC Logo" width="55"/> **University of Science and Technology of China & Shanghai AI Lab**  
+- <img src="/images/ustc_logo.png" alt="USTC Logo" width="60"/> **University of Science and Technology of China & Shanghai AI Lab**  
   Information and Communication Engineering, Ph.D. (2024.7 – 2027.6, Expected)  
   *Hefei & Shanghai*
   - **Research Areas:** Machine Learning Theory, Self-Supervised Pretraining, Multimodal Large Models, Image Coding & Compression
@@ -10,7 +10,7 @@
   - **Core Courses:** Algorithm Design and Analysis, Statistical Learning, Deep Learning, Reinforcement Learning
   - **Honors:** National Natural Science Foundation of China Ph.D. Project Principal Investigator (2024)
 
-- <img src="/images/ustc_logo.png" alt="USTC Logo" width="55"/> **University of Science and Technology of China**  
+- <img src="/images/ustc_logo.png" alt="USTC Logo" width="60"/> **University of Science and Technology of China**  
   Computer Technology, M.S. (2022.9 – 2024.7)  
   *Hefei*
   - **Honors:** National Graduate Scholarship (2022)
