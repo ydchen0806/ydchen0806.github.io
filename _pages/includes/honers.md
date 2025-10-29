@@ -16,7 +16,7 @@
 - **[Xiamen University Academic Star](/docs/学术之星奖杯.jpg)** (December 2021)
   - Sole undergraduate awardee university-wide
   - Recognition for outstanding academic achievements
-  - 🔗 [Announcement](https://cee.xmu.edu.cn/info/1045/7524.htm)
+  - 🔗 [University News](https://xaxq.xmu.edu.cn/info/1032/10951.htm) | [Feature Report](https://cee.xmu.edu.cn/info/1045/7524.htm)
 
 - **["Jingrun Cup" Mathematics Competition (Professional Category), First Prize](/docs/景润杯奖状.pdf)** (September 2021)
   - Campus-level mathematics competition named after renowned mathematician Chen Jingrun | University First Place
@@ -28,10 +28,10 @@
 - **[National Undergraduate Mathematics Competition (Non-Major Category), Second Prize](/docs/数竞决赛.png)** (May 2021)
   - National finals organized by the Chinese Mathematical Society
   - Advanced from provincial first place
+  - 🔗 [Competition News](https://math.xmu.edu.cn/info/1017/10611.htm)
 
 - **["Challenge Cup" National Undergraduate Academic Science and Technology Competition, First Prize](/docs/挑战杯.png)** (May 2021)
   - Provincial level, Fujian Province
 
 - **[National Undergraduate Mathematics Competition (Non-Major Category), First Prize](/docs/数竞.png)** (November 2020)
   - High-level national mathematics competition for undergraduate students | Provincial First Place, Fujian Province
-  - 🔗 [Competition News](https://math.xmu.edu.cn/info/1017/10611.htm)
