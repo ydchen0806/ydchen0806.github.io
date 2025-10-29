@@ -18,7 +18,7 @@
   - Recognition for outstanding academic achievements
   - 🔗 [Announcement](https://cee.xmu.edu.cn/info/1045/7524.htm)
 
-- **["Jingrun Cup" Mathematics Competition (Professional Category), First Prize](/docs/排名第一.pdf)** (September 2021)
+- **["Jingrun Cup" Mathematics Competition (Professional Category), First Prize](/docs/景润杯奖状.pdf)** (September 2021)
   - Campus-level mathematics competition named after renowned mathematician Chen Jingrun | University First Place
   - 🔗 [Competition News](https://math.xmu.edu.cn/info/1024/11221.htm)
 
