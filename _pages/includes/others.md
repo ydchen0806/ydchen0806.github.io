@@ -26,7 +26,7 @@ I have served as a reviewer for prestigious conferences and journals, including 
 - ⛰️ **Hiking & Traveling**: Love chasing sunrises on mountain peaks and getting lost in new cities. Recently explored the misty heights of Huangshan, the sacred temples of Jiuhuashan, wandered through Zhuhai's coastlines and Changsha's food scene. Been lucky enough to haggle in Istanbul's bazaars, ride camels in Morocco's Sahara, and get caffeinated in Seoul's trendy streets
 - 🎮 **[Gaming](/docs/王者荣耀.png)**: Not just building Honor of Kings (Lingbao Project developer here!) but also crushing it as a player - rocking National Server Nezha, Golden Badge Nakoruru, and ranked Top 50 Jungler in Hefei. Let's duo queue sometime!
 
-**Feel free to hit me up for board games, badminton matches, hiking trips, or just grabbing food and chatting about life! Always down to meet cool people and try new things 🎉**
+**Feel free to hit me up for karaoke sessions, board games, badminton matches, hiking trips, or just grabbing food and chatting about life! Always down to meet cool people and try new things 🎉**
 
 
 
