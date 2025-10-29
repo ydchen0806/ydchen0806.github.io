@@ -14,6 +14,8 @@
 - 🌐 Web Development: HTML, CSS, JavaScript, Vue
 - 🛠️ Tools: Git, Docker
 
+
+
 # 🎯 Hobbies & Interests
 
 - 🎤 **Singing**: Love belting out tunes and exploring different music styles
@@ -25,10 +27,10 @@
 
 **Feel free to hit me up for board games, badminton matches, hiking trips, or just grabbing food and chatting about life! Always down to meet cool people and try new things 🎉**
 
-## Professional Service  
+## 🎓 Professional Service  
 I have served as a reviewer for prestigious conferences and journals, including CVPR 2025, NeurIPS 2024, ICML 2025, ICLR 2024, MICCAI 2025, ACM MM 2024, AISTATS 2024, and IJCV, TIP.
 
-## Let's Connect  
+## 📬 Let's Connect  
 - 📫 You can reach out to me via email at [cyd0806@mail.ustc.edu.cn](mailto:cyd0806@mail.ustc.edu.cn).
 - 💼 I'm eager to connect with fellow deep learning enthusiasts and graduate researchers who share similar interests and are passionate about advancing the frontiers of AI in these domains.
 - 📍 USTC Gaoxin campus, Hefei, Anhui, China
