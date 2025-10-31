@@ -23,7 +23,7 @@ baidu_site_verification  : code-ZxFK3f4pfb
 author:
   name             : "Yinda Chen (陈胤达)"
   avatar           : "images/profile.png"
-  bio              : "PhD Candidate"
+  bio              : # "PhD Candidate"
   location         : "Shanghai"
   employer         : "USTC & Shanghai AI Lab"
   email            : "cyd0806@mail.ustc.edu.cn"
