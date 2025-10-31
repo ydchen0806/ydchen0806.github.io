@@ -6,7 +6,7 @@
 # `jekyll serve`. If you change this file, please restart the server process.
 
 # Site Settings
-title                    : "Personal Website"
+title                    : "Yinda Chen"
 description              : "PhD Candidate"
 repository               : "ydchen0806/ydchen0806.github.io"
 google_scholar_stats_use_cdn : true
