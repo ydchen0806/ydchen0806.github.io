@@ -20,12 +20,12 @@ redirect_from:
 {% include_relative includes/pub.md %}
 <br>
 
-<span class='anchor' id='-honors-and-awards'></span>
-{% include_relative includes/honers.md %}
-<br>
-
 <span class='anchor' id='-educations'></span>
 {% include_relative includes/educations.md %}
+<br>
+
+<span class='anchor' id='-honors-and-awards'></span>
+{% include_relative includes/honers.md %}
 <br>
 
 <span class='anchor' id='-talks-and-teaching'></span>

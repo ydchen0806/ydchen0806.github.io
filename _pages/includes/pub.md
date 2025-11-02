@@ -13,11 +13,14 @@ For a complete list of publications, please visit my [Google Scholar profile](ht
   counter-reset: journal-counter;
 }
 
-/* Journal Articles自动编号 */
+/* Journal Articles自动编号 - 内联显示 */
 #journal-articles .paper-box-text::before {
   counter-increment: journal-counter;
   content: "[" counter(journal-counter) "] ";
   font-weight: bold;
+  color: #2196F3;
+  margin-right: 0.5em;
+  display: inline;
 }
 
 /* 重置并初始化Conference Papers的计数器 */
@@ -25,11 +28,14 @@ For a complete list of publications, please visit my [Google Scholar profile](ht
   counter-reset: conference-counter;
 }
 
-/* Conference Papers自动编号 */
+/* Conference Papers自动编号 - 内联显示 */
 #conference-papers .paper-box-text::before {
   counter-increment: conference-counter;
   content: "[" counter(conference-counter) "] ";
   font-weight: bold;
+  color: #2196F3;
+  margin-right: 0.5em;
+  display: inline;
 }
 </style>
 
