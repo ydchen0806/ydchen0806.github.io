@@ -48,6 +48,7 @@
   *Xiamen*
   - Responsible for designing and leading data mining courses, delivering lectures on clustering and Transformer architectures.
   - Mentored 20 undergraduate students in completing machine learning projects and organized 2 campus-wide competitions.
+  - 🔗 [Media Coverage](https://mp.weixin.qq.com/s/sqF3p69kdTF8KmdRhfEEMw)
 
 - <img src="/images/xmu_logo.jpeg" alt="XMU Logo" width="60"/> **[Wang Yanan Institute for Studies in Economics, Xiamen University](/docs/wise研助.pdf)**  
   Research Assistant, Econometrics (2020.8 – 2021.12)  
