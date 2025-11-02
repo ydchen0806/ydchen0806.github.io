@@ -39,7 +39,7 @@
   margin-top: 0.8em;
   margin-bottom: 0;
   padding-left: 1.5em;
-  list-style-type: none; /* 移除默认的 bullet point */
+  list-style-type: none;
 }
 
 #honors-awards > ul > li > ul > li {
@@ -73,15 +73,6 @@
   background: #e3f2fd;
 }
 
-/* 链接容器样式 */
-#honors-awards .links-container {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  flex-wrap: wrap;
-  margin-top: 4px;
-}
-
 /* 时间标签样式 */
 #honors-awards .award-date {
   color: #666;
@@ -98,7 +89,7 @@
 
 <div id="honors-awards" markdown="1">
 
-- **📄 [National Natural Science Foundation of China (NSFC) PhD Program](/docs/国自然.png)** <span class="award-date">(December 2024)</span>
+- **🎓 [National Natural Science Foundation of China (NSFC) PhD Program](/docs/国自然.png)** <span class="award-date">(December 2024)</span>
   - **Role:** Principal Investigator
   - **Achievement:** Sole awardee in Information Science, Anhui Province
   - **Description:** Prestigious national research funding program for doctoral students
@@ -112,30 +103,30 @@
   - **Achievement:** National award for academic performance and research contributions (Top 1%)
   - **Reference:** 🔗 [Official Announcement](https://iat.ustc.edu.cn/iat/x198/20221017/5920.html)
 
-- **⭐ [Xiamen University Academic Star](/docs/学术之星奖杯.jpg)** <span class="award-date">(December 2021)</span>
+- **🎓 [Xiamen University Academic Star](/docs/学术之星奖杯.jpg)** <span class="award-date">(December 2021)</span>
   - **Achievement:** Sole undergraduate awardee university-wide
   - **Recognition:** Outstanding academic achievements and research excellence
-  - **Media:** 📰 [University News](https://xaxq.xmu.edu.cn/info/1032/10951.htm) | 📖 [Feature Report](https://cee.xmu.edu.cn/info/1045/7524.htm)
+  - **Media:** 🔗 [University News](https://xaxq.xmu.edu.cn/info/1032/10951.htm) | [Feature Report](https://cee.xmu.edu.cn/info/1045/7524.htm)
 
-- **🥇 ["Jingrun Cup" Mathematics Competition (Professional Category), First Prize](/docs/景润杯奖状.pdf)** <span class="award-date">(September 2021)</span>
+- **🏆 ["Jingrun Cup" Mathematics Competition (Professional Category), First Prize](/docs/景润杯奖状.pdf)** <span class="award-date">(September 2021)</span>
   - **Level:** Campus-level competition named after renowned mathematician Chen Jingrun
   - **Ranking:** University First Place
   - **Reference:** 🔗 [Competition News](https://math.xmu.edu.cn/info/1024/11221.htm)
 
-- **💡 ["Internet+" Innovation and Entrepreneurship Competition, Gold Medal](/docs/互联网+.png)** <span class="award-date">(August 2021)</span>
+- **🏆 ["Internet+" Innovation and Entrepreneurship Competition, Gold Medal](/docs/互联网+.png)** <span class="award-date">(August 2021)</span>
   - **Level:** Provincial level competition
   - **Region:** Fujian Province
 
-- **🥈 [National Undergraduate Mathematics Competition (Non-Major Category), Second Prize](/docs/数竞决赛.png)** <span class="award-date">(May 2021)</span>
+- **🏆 [National Undergraduate Mathematics Competition (Non-Major Category), Second Prize](/docs/数竞决赛.png)** <span class="award-date">(May 2021)</span>
   - **Competition:** National finals organized by the Chinese Mathematical Society
   - **Progress:** Advanced from provincial first place
   - **Reference:** 🔗 [Competition News](https://math.xmu.edu.cn/info/1017/10611.htm)
 
-- **🏅 ["Challenge Cup" National Undergraduate Academic Science and Technology Competition, First Prize](/docs/挑战杯.png)** <span class="award-date">(May 2021)</span>
+- **🏆 ["Challenge Cup" National Undergraduate Academic Science and Technology Competition, First Prize](/docs/挑战杯.png)** <span class="award-date">(May 2021)</span>
   - **Level:** Provincial level competition
   - **Region:** Fujian Province
 
-- **🥇 [National Undergraduate Mathematics Competition (Non-Major Category), First Prize](/docs/数竞.png)** <span class="award-date">(November 2020)</span>
+- **🏆 [National Undergraduate Mathematics Competition (Non-Major Category), First Prize](/docs/数竞.png)** <span class="award-date">(November 2020)</span>
   - **Competition:** High-level national mathematics competition for undergraduate students
   - **Ranking:** Provincial First Place, Fujian Province
 
