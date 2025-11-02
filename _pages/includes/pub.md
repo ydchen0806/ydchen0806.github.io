@@ -7,6 +7,34 @@ For a complete list of publications, please visit my [Google Scholar profile](ht
 -->
 **Note:** * denotes equal contribution
 
+<style>
+/* 重置并初始化Journal Articles的计数器 */
+#journal-articles {
+  counter-reset: journal-counter;
+}
+
+/* Journal Articles自动编号 */
+#journal-articles .paper-box-text::before {
+  counter-increment: journal-counter;
+  content: "[" counter(journal-counter) "] ";
+  font-weight: bold;
+}
+
+/* 重置并初始化Conference Papers的计数器 */
+#conference-papers {
+  counter-reset: conference-counter;
+}
+
+/* Conference Papers自动编号 */
+#conference-papers .paper-box-text::before {
+  counter-increment: conference-counter;
+  content: "[" counter(conference-counter) "] ";
+  font-weight: bold;
+}
+</style>
+
+<div id="journal-articles">
+
 ## Journal Articles
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge-journal">IEEE JBHI</div><div class="badge-impact badge-q1">SCI Q1 | IF: 6.7</div><img src='images/JBHI25.png' alt="sym" width="100%"></div></div>
@@ -34,6 +62,10 @@ The paper proposes an unsupervised domain adaptation method for EM image denoisi
 
 </div>
 </div>
+
+</div>
+
+<div id="conference-papers">
 
 ## Conference Papers
 
@@ -133,4 +165,6 @@ IJCAI <span style="color:red">**(<font color="red">oral</font>)**</span> | Augus
 This paper proposes a decision-based MIM for neuron segmentation in EM data. It uses MARL to optimize masking, outperforming alternatives.
 
 </div>
+</div>
+
 </div>
