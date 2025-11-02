@@ -6,7 +6,7 @@
   counter-reset: award-counter;
 }
 
-/* Honors and Awards自动编号 */
+/* Honors and Awards自动编号 - 内联显示 */
 #honors-awards > ul > li {
   counter-increment: award-counter;
   list-style-type: none;
@@ -17,7 +17,9 @@
 #honors-awards > ul > li::before {
   content: "[" counter(award-counter) "] ";
   font-weight: bold;
-  margin-right: 0.3em;
+  color: #2196F3;
+  margin-right: 0.5em;
+  display: inline;
 }
 
 /* 调整子列表项不显示编号 */
