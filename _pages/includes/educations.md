@@ -5,8 +5,8 @@
   Information and Communication Engineering, Ph.D. (2024.7 – 2027.6, Expected)  
   *Hefei & Shanghai*
   - **Research Areas:** Machine Learning Theory, Self-Supervised Pretraining, Multimodal Large Models, Image Coding & Compression
-  - **Advisors:** [Prof. Feng Wu](https://scholar.google.com/citations?user=5bInRDEAAAAJ&hl=en), [Prof. Zhiwei Xiong](https://scholar.google.com/citations?user=Snl0HPEAAAAJ&hl=en&oi=ao)
-  - **Research with:** [Prof. Xiaoou Tang](https://scholar.google.com/citations?user=qpBtpGsAAAAJ&hl=en)'s team at Shanghai AI Lab
+  - **Advisors:** [Prof. Feng Wu (IEEE Fellow)](https://scholar.google.com/citations?user=5bInRDEAAAAJ&hl=en), [Prof. Zhiwei Xiong](https://scholar.google.com/citations?user=Snl0HPEAAAAJ&hl=en&oi=ao)
+  - **Research with:** [Prof. Xiaoou Tang (IEEE Fellow)](https://scholar.google.com/citations?user=qpBtpGsAAAAJ&hl=en)'s team at Shanghai AI Lab
   - **Core Courses:** Algorithm Design and Analysis, Statistical Learning, Deep Learning, Reinforcement Learning
   - **Honors:** National Natural Science Foundation of China Ph.D. Project Principal Investigator (2024)
 
