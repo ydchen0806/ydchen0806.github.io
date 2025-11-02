@@ -1,10 +1,10 @@
 # 📝 Selected Publications  
 
 For a complete list of publications, please visit my [Google Scholar profile](https://scholar.google.com/citations?user=hCvlj5cAAAAJ&hl=en&oi=ao) [![](https://img.shields.io/badge/citations-380+-blue?logo=google-scholar&logoColor=white)](https://scholar.google.com/citations?user=hCvlj5cAAAAJ&hl=en&oi=ao)
-
 <!-- 动态引用徽章（已注释）
 [![](https://img.shields.io/badge/dynamic/json?logo=google-scholar&logoColor=white&label=citations&query=citedby&url=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Fydchen0806%2Fydchen0806.github.io@google-scholar-stats%2Fgs_data.json)](https://scholar.google.com/citations?user=hCvlj5cAAAAJ&hl=en&oi=ao)
 -->
+
 **Note:** * denotes equal contribution
 
 <style>
@@ -41,7 +41,7 @@ For a complete list of publications, please visit my [Google Scholar profile](ht
 
 <div id="journal-articles" markdown="1">
 
-## Journal Articles
+## 📰 Journal Articles
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge-journal">IEEE JBHI</div><div class="badge-impact badge-q1">SCI Q1 | IF: 6.7</div><img src='images/JBHI25.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
@@ -73,7 +73,7 @@ The paper proposes an unsupervised domain adaptation method for EM image denoisi
 
 <div id="conference-papers" markdown="1">
 
-## Conference Papers
+## 🎓 Conference Papers
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge-conference">ICCV 2025</div><div class="badge-ccf badge-ccf-a">CCF A</div><img src='images/ICCV25.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
