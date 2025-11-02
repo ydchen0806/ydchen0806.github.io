@@ -22,7 +22,7 @@
   - **Honors:** Xiamen University Academic Star (2021), CDA Level 1 Certification (2022), [Kaggle Expert](https://www.kaggle.com/yindachen)
   - **Advisor:** [Prof. Yuanye Zhang](https://scholar.google.com/citations?user=l1GMXf4AAAAJ&hl=en&oi=ao)
 
-## Work Experience
+# 💼 Work Experience
 
 - <img src="/images/tencent.png" alt="Tencent Logo" width="60"/> **Tencent (IEG)**  
   Qingyun Program Intern (2025.8 – Present)  
