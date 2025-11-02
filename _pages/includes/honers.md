@@ -33,7 +33,7 @@
   - Principal Investigator | Sole awardee in Information Science, Anhui Province
   - Prestigious national research funding program for doctoral students
 
-- **[Interdisciplinary Contest in Modeling (ICM), Outstanding Winner](/docs/ICM.pdf)** (May 2024)
+- **Interdisciplinary Contest in Modeling (ICM), Outstanding Winner** (May 2024)
   - International mathematical modeling competition organized by COMAP
   - Top 0.17% of 10,388 participating teams worldwide
   - [**Paper & Code**](https://github.com/ydchen0806/24ICM_E_O_Award_Paper_code) [![](https://img.shields.io/github/stars/ydchen0806/24ICM_E_O_Award_Paper_code?style=social&label=Code+Stars)](https://github.com/ydchen0806/24ICM_E_O_Award_Paper_code)
