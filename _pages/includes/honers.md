@@ -1,10 +1,39 @@
 # 🥇 Honors and Awards
 
+<style>
+/* 重置并初始化Honors and Awards的计数器 */
+#honors-awards {
+  counter-reset: award-counter;
+}
+
+/* Honors and Awards自动编号 */
+#honors-awards > ul > li {
+  counter-increment: award-counter;
+  list-style-type: none;
+  position: relative;
+  margin-left: 0;
+}
+
+#honors-awards > ul > li::before {
+  content: "[" counter(award-counter) "] ";
+  font-weight: bold;
+  margin-right: 0.3em;
+}
+
+/* 调整子列表项不显示编号 */
+#honors-awards > ul > li > ul > li::before {
+  content: none;
+  counter-increment: none;
+}
+</style>
+
+<div id="honors-awards">
+
 - **[National Natural Science Foundation of China (NSFC) PhD Program](/docs/国自然.png)** (December 2024)
   - Principal Investigator | Sole awardee in Information Science, Anhui Province
   - Prestigious national research funding program for doctoral students
 
-- **Interdisciplinary Contest in Modeling (ICM), Outstanding Winner** (May 2024)
+- **[Interdisciplinary Contest in Modeling (ICM), Outstanding Winner](/docs/ICM.pdf)** (May 2024)
   - International mathematical modeling competition organized by COMAP
   - Top 0.17% of 10,388 participating teams worldwide
   - [**Paper & Code**](https://github.com/ydchen0806/24ICM_E_O_Award_Paper_code) [![](https://img.shields.io/github/stars/ydchen0806/24ICM_E_O_Award_Paper_code?style=social&label=Code+Stars)](https://github.com/ydchen0806/24ICM_E_O_Award_Paper_code)
@@ -35,3 +64,5 @@
 
 - **[National Undergraduate Mathematics Competition (Non-Major Category), First Prize](/docs/数竞.png)** (November 2020)
   - High-level national mathematics competition for undergraduate students | Provincial First Place, Fujian Province
+
+</div>
