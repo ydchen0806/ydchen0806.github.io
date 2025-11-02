@@ -125,7 +125,8 @@
     </div>
   </div>
   
-  - Academic ranking: [1st/31 overall](/docs/排名第一.pdf), 16th/31 in major
+  - Academic ranking: [1st/31 overall](/docs/排名第一.pdf)
+  <!-- , 16th/31 in major -->
   - Xiamen University Academic Star (2021), CDA Level 1 Certification (2022), [Kaggle Expert](https://www.kaggle.com/yindachen)
   - Research advisor: [Prof. Yuanye Zhang](https://scholar.google.com/citations?user=l1GMXf4AAAAJ&hl=en&oi=ao)
 
