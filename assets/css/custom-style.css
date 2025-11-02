@@ -1,0 +1,61 @@
+/* ===== Honors Section ===== */
+#honors-awards {
+    counter-reset: award-counter;
+  }
+  #honors-awards > ul > li {
+    counter-increment: award-counter;
+    list-style-type: none;
+    position: relative;
+    margin-left: 0;
+  }
+  #honors-awards > ul > li::before {
+    content: "[" counter(award-counter) "] ";
+    font-weight: bold;
+    margin-right: 0.3em;
+  }
+  
+  /* ===== Publications Section ===== */
+  #journal-articles .paper-box-text::before {
+    counter-increment: journal-counter;
+    content: "[" counter(journal-counter) "] ";
+    font-weight: bold;
+  }
+  #conference-papers .paper-box-text::before {
+    counter-increment: conference-counter;
+    content: "[" counter(conference-counter) "] ";
+    font-weight: bold;
+  }
+  .paper-box {
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    background: #fafafa;
+    margin-bottom: 1.2em;
+  }
+  .paper-box-image {
+    flex: 1 1 35%;
+    min-width: 200px;
+  }
+  .paper-box-text {
+    flex: 1 1 60%;
+    padding: 1em;
+  }
+  .badge-journal, .badge-conference {
+    display: inline-block;
+    background: #007acc;
+    color: #fff;
+    padding: 0.2em 0.6em;
+    border-radius: 4px;
+    font-size: 0.8em;
+    margin-right: 4px;
+  }
+  .badge-q1, .badge-ccf {
+    display: inline-block;
+    color: #fff;
+    background: #ff9800;
+    padding: 0.2em 0.6em;
+    border-radius: 4px;
+    font-size: 0.8em;
+  }

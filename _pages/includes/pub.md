@@ -33,7 +33,7 @@ For a complete list of publications, please visit my [Google Scholar profile](ht
 }
 </style>
 
-<div id="journal-articles">
+<div id="journal-articles" markdown="1">
 
 ## Journal Articles
 
@@ -65,7 +65,7 @@ The paper proposes an unsupervised domain adaptation method for EM image denoisi
 
 </div>
 
-<div id="conference-papers">
+<div id="conference-papers" markdown="1">
 
 ## Conference Papers
 

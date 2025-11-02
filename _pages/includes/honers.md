@@ -27,7 +27,7 @@
 }
 </style>
 
-<div id="honors-awards">
+<div id="honors-awards" markdown="1">
 
 - **[National Natural Science Foundation of China (NSFC) PhD Program](/docs/国自然.png)** (December 2024)
   - Principal Investigator | Sole awardee in Information Science, Anhui Province
