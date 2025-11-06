@@ -1,6 +1,6 @@
 # 🔥 News
 
-- **2025.11.05** One [paper](https://doi.org/10.1109/TCSVT.2025.3628932) was accepted by TCSVT (IEEE Transactions on Circuits and Systems for Video Technology).
+- **2025.11.05** One [paper](https://ieeexplore.ieee.org/document/11225906) was accepted by TCSVT (IEEE Transactions on Circuits and Systems for Video Technology).
 - **2025.10.16** One [paper](https://ieeexplore.ieee.org/document/11205280) was accepted by JBHI (IEEE Journal of Biomedical and Health Informatics).
 <!-- - 2025.09.08 Started as Qingyun intern at Tencent IEG, working on game video scene understanding. -->
 - **2025.08** Started as Qingyun intern at Tencent IEG, working on game video scene understanding.
