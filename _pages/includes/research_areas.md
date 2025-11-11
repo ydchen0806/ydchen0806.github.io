@@ -1,54 +1,30 @@
 # 🎯 Research Areas
 
 <div class="research-visualization">
-  <div class="research-intro">
-    <p>My research spans across multiple domains in AI and computer vision, with a focus on bridging <strong>understanding</strong> and <strong>generation</strong> in multimodal scenarios.</p>
-  </div>
-
   <div class="chart-container">
-    <div class="chart-wrapper radar-wrapper">
-      <h3>📊 Research Focus Distribution</h3>
+    <div class="chart-wrapper">
       <canvas id="researchRadarChart"></canvas>
     </div>
-    <div class="chart-wrapper pie-wrapper">
-      <h3>📈 Publication Topics</h3>
+    <div class="chart-wrapper">
       <canvas id="researchPieChart"></canvas>
     </div>
   </div>
 
-  <div class="research-keywords">
-    <h3>🔑 Key Research Keywords</h3>
-    <div class="keyword-cloud" id="keywordCloud">
-      <!-- Keywords will be auto-generated from publications -->
-    </div>
+  <div class="keyword-cloud" id="keywordCloud">
+    <!-- Keywords will be auto-generated from publications -->
   </div>
 </div>
 
 <style>
 .research-visualization {
-  margin: 2em 0;
-  padding: 2em;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  border-radius: 20px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-}
-
-.research-intro {
-  text-align: center;
-  margin-bottom: 2em;
-  color: white;
-  font-size: 1.1em;
-}
-
-.research-intro strong {
-  color: #FFD700;
+  margin: 1.5em 0;
 }
 
 .chart-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 2em;
-  margin-bottom: 2em;
+  gap: 1.5em;
+  margin-bottom: 1.5em;
 }
 
 @media (max-width: 768px) {
@@ -58,229 +34,123 @@
 }
 
 .chart-wrapper {
-  background: rgba(255, 255, 255, 0.95);
-  padding: 1.5em;
-  border-radius: 15px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: #fafafa;
+  padding: 1em;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+  transition: box-shadow 0.3s ease;
 }
 
 .chart-wrapper:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 12px 30px rgba(0,0,0,0.25);
-}
-
-.chart-wrapper h3 {
-  margin-top: 0;
-  margin-bottom: 1em;
-  color: #764ba2;
-  text-align: center;
-  font-size: 1.2em;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
 }
 
 .chart-wrapper canvas {
-  max-height: 350px;
-}
-
-.research-keywords {
-  background: rgba(255, 255, 255, 0.95);
-  padding: 1.5em;
-  border-radius: 15px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
-}
-
-.research-keywords h3 {
-  margin-top: 0;
-  margin-bottom: 1em;
-  color: #764ba2;
-  text-align: center;
+  max-height: 280px;
 }
 
 .keyword-cloud {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.8em;
+  gap: 0.6em;
   justify-content: center;
-  align-items: center;
-  min-height: 120px;
+  margin-top: 1em;
 }
 
 .keyword {
   display: inline-block;
-  padding: 0.5em 1em;
+  padding: 0.4em 0.9em;
   background: linear-gradient(135deg, #667eea, #764ba2);
   color: white;
-  border-radius: 25px;
+  border-radius: 20px;
   font-weight: 500;
-  transition: all 0.3s ease;
+  font-size: 0.85em;
+  transition: all 0.2s ease;
   cursor: default;
-  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
-  animation: fadeInUp 0.6s ease-out backwards;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
 
 .keyword[data-weight="5"] {
-  font-size: 1.2em;
-  padding: 0.6em 1.2em;
+  font-size: 1em;
+  padding: 0.5em 1em;
 }
 
 .keyword[data-weight="4"] {
-  font-size: 1.1em;
+  font-size: 0.95em;
 }
 
 .keyword[data-weight="3"] {
-  font-size: 1em;
+  font-size: 0.85em;
 }
 
 .keyword[data-weight="2"] {
-  font-size: 0.9em;
+  font-size: 0.8em;
 }
 
 .keyword:hover {
-  transform: scale(1.1) rotate(2deg);
-  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-  background: linear-gradient(135deg, #764ba2, #667eea);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
 }
-
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-/* 为关键词添加不同的延迟 */
-.keyword:nth-child(1) { animation-delay: 0.1s; }
-.keyword:nth-child(2) { animation-delay: 0.2s; }
-.keyword:nth-child(3) { animation-delay: 0.3s; }
-.keyword:nth-child(4) { animation-delay: 0.4s; }
-.keyword:nth-child(5) { animation-delay: 0.5s; }
-.keyword:nth-child(6) { animation-delay: 0.6s; }
-.keyword:nth-child(7) { animation-delay: 0.7s; }
-.keyword:nth-child(8) { animation-delay: 0.8s; }
-.keyword:nth-child(9) { animation-delay: 0.9s; }
-.keyword:nth-child(10) { animation-delay: 1s; }
-.keyword:nth-child(11) { animation-delay: 1.1s; }
-.keyword:nth-child(12) { animation-delay: 1.2s; }
-.keyword:nth-child(13) { animation-delay: 1.3s; }
 </style>
 
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
 <script>
-document.addEventListener('DOMContentLoaded', function() {
-  // 自动从页面内容提取研究主题
-  function extractResearchTopics() {
-    const topics = {
-      'Neuron Segmentation': 0,
-      'Image Compression': 0,
-      'Domain Adaptation': 0,
-      'Medical Imaging': 0,
-      'Multimodal Learning': 0,
-      'Synthetic Data': 0,
-      'Pretraining': 0
-    };
-
-    const keywords = {
-      'Neuron Segmentation': ['neuron', 'segmentation', 'em image', 'electron microscopy'],
-      'Image Compression': ['compression', 'coding', 'latent'],
-      'Domain Adaptation': ['domain adaptation', 'unsupervised', 'transfer'],
-      'Medical Imaging': ['medical', 'biomedical', 'ct', 'bimcv', 'clinical'],
-      'Multimodal Learning': ['multimodal', 'vision-language', 'text-image', 'retrieval'],
-      'Synthetic Data': ['synthetic', 'generation', 'maskfactory'],
-      'Pretraining': ['pretraining', 'pretrain', 'self-supervised', 'tokenunify', 'reinforcement']
-    };
-
-    // 获取所有论文标题和描述
-    const pubSection = document.querySelector('#-publications');
-    if (pubSection) {
-      const paperTexts = Array.from(pubSection.querySelectorAll('.paper-box-text'))
-        .map(box => box.textContent.toLowerCase());
-
-      paperTexts.forEach(text => {
-        Object.entries(keywords).forEach(([topic, words]) => {
-          if (words.some(word => text.includes(word))) {
-            topics[topic]++;
-          }
-        });
-      });
-    }
-
-    // 转换为百分比
-    const total = Object.values(topics).reduce((a, b) => a + b, 0) || 1;
-    const percentages = Object.entries(topics)
-      .filter(([_, count]) => count > 0)
-      .map(([topic, count]) => ({
-        topic,
-        percentage: Math.round((count / total) * 100)
-      }))
-      .sort((a, b) => b.percentage - a.percentage);
-
-    return percentages;
-  }
+// 确保在页面完全加载后执行
+window.addEventListener('load', function() {
+  // 默认关键词（作为备选）
+  const defaultKeywords = [
+    { keyword: 'Multimodal Learning', weight: 5 },
+    { keyword: 'Self-Supervised Learning', weight: 5 },
+    { keyword: 'Neuron Segmentation', weight: 4 },
+    { keyword: 'Image Compression', weight: 4 },
+    { keyword: 'Domain Adaptation', weight: 4 },
+    { keyword: 'Medical Imaging', weight: 3 },
+    { keyword: 'Representation Learning', weight: 3 },
+    { keyword: 'Reinforcement Learning', weight: 3 }
+  ];
 
   // 提取关键词
   function extractKeywords() {
-    const keywordScores = {
-      'Multimodal Learning': 0,
-      'Self-Supervised Pretraining': 0,
-      'Biomedical Image Analysis': 0,
-      'Image Compression': 0,
-      'Neuron Segmentation': 0,
-      'Domain Adaptation': 0,
-      'Representation Learning': 0,
-      'Vision-Language Models': 0,
-      'Reinforcement Learning': 0,
-      '3D Medical Imaging': 0,
-      'Electron Microscopy': 0,
-      'Synthetic Data Generation': 0
-    };
-
+    const keywordScores = {};
     const keywordPatterns = {
-      'Multimodal Learning': ['multimodal', 'multi-modal'],
-      'Self-Supervised Pretraining': ['self-supervised', 'pretraining', 'pretrain'],
-      'Biomedical Image Analysis': ['biomedical', 'medical image', 'clinical'],
+      'Multimodal Learning': ['multimodal', 'multi-modal', 'vision-language'],
+      'Self-Supervised Learning': ['self-supervised', 'pretraining', 'pretrain'],
+      'Neuron Segmentation': ['neuron', 'segmentation', 'em image'],
       'Image Compression': ['compression', 'coding', 'latent'],
-      'Neuron Segmentation': ['neuron', 'segmentation'],
       'Domain Adaptation': ['domain adaptation', 'unsupervised domain'],
+      'Medical Imaging': ['medical', 'biomedical', 'clinical', 'ct'],
       'Representation Learning': ['representation', 'feature learning'],
-      'Vision-Language Models': ['vision-language', 'text-image', 'retrieval'],
-      'Reinforcement Learning': ['reinforcement', 'marl', 'multi-agent'],
-      '3D Medical Imaging': ['3d', 'ct', 'volumetric'],
-      'Electron Microscopy': ['electron microscopy', 'em image'],
-      'Synthetic Data Generation': ['synthetic', 'generation', 'maskfactory']
+      'Reinforcement Learning': ['reinforcement', 'marl'],
+      'Synthetic Data': ['synthetic', 'generation', 'maskfactory'],
+      'Electron Microscopy': ['electron microscopy', 'em data']
     };
 
-    const pubSection = document.querySelector('#-publications');
+    const pubSection = document.querySelector('#journal-articles, #conference-papers');
     if (pubSection) {
       const allText = pubSection.textContent.toLowerCase();
       
       Object.entries(keywordPatterns).forEach(([keyword, patterns]) => {
+        let score = 0;
         patterns.forEach(pattern => {
-          const regex = new RegExp(pattern, 'gi');
-          const matches = allText.match(regex);
-          if (matches) {
-            keywordScores[keyword] += matches.length;
-          }
+          const matches = allText.match(new RegExp(pattern, 'gi'));
+          if (matches) score += matches.length;
         });
+        if (score > 0) keywordScores[keyword] = score;
       });
     }
 
-    // 按分数排序并分配权重
+    if (Object.keys(keywordScores).length === 0) return defaultKeywords;
+
     const sortedKeywords = Object.entries(keywordScores)
-      .filter(([_, score]) => score > 0)
       .sort((a, b) => b[1] - a[1])
-      .slice(0, 13);
+      .slice(0, 10);
 
     const maxScore = sortedKeywords[0]?.[1] || 1;
     
-    return sortedKeywords.map(([keyword, score]) => {
-      let weight = Math.ceil((score / maxScore) * 5);
-      weight = Math.max(2, Math.min(5, weight)); // 限制在2-5之间
-      return { keyword, weight };
-    });
+    return sortedKeywords.map(([keyword, score]) => ({
+      keyword,
+      weight: Math.max(2, Math.min(5, Math.ceil((score / maxScore) * 5)))
+    }));
   }
 
   // 生成关键词云
@@ -289,37 +159,80 @@ document.addEventListener('DOMContentLoaded', function() {
     if (!keywordCloud) return;
 
     const keywords = extractKeywords();
-    keywordCloud.innerHTML = keywords.map((item, index) => 
-      `<span class="keyword" data-weight="${item.weight}" style="animation-delay: ${index * 0.1}s">${item.keyword}</span>`
+    keywordCloud.innerHTML = keywords.map(item => 
+      `<span class="keyword" data-weight="${item.weight}">${item.keyword}</span>`
     ).join('');
   }
 
-  // 雷达图配置（基于intro中提到的研究方向）
+  // 提取研究主题
+  function extractResearchTopics() {
+    const topics = {
+      'Neuron Segmentation': 0,
+      'Image Compression': 0,
+      'Domain Adaptation': 0,
+      'Medical Imaging': 0,
+      'Multimodal Learning': 0,
+      'Pretraining Methods': 0
+    };
+
+    const keywords = {
+      'Neuron Segmentation': ['neuron', 'segmentation'],
+      'Image Compression': ['compression', 'coding'],
+      'Domain Adaptation': ['domain adaptation', 'unsupervised'],
+      'Medical Imaging': ['medical', 'biomedical', 'ct', 'em'],
+      'Multimodal Learning': ['multimodal', 'vision-language', 'text-image'],
+      'Pretraining Methods': ['pretraining', 'self-supervised', 'tokenunify']
+    };
+
+    const paperBoxes = document.querySelectorAll('.paper-box-text');
+    paperBoxes.forEach(box => {
+      const text = box.textContent.toLowerCase();
+      Object.entries(keywords).forEach(([topic, words]) => {
+        if (words.some(word => text.includes(word))) {
+          topics[topic]++;
+        }
+      });
+    });
+
+    const validTopics = Object.entries(topics)
+      .filter(([_, count]) => count > 0);
+    
+    if (validTopics.length === 0) {
+      return [
+        { topic: 'Neuron Segmentation', percentage: 28 },
+        { topic: 'Image Compression', percentage: 18 },
+        { topic: 'Medical Imaging', percentage: 22 },
+        { topic: 'Multimodal Learning', percentage: 18 },
+        { topic: 'Pretraining Methods', percentage: 14 }
+      ];
+    }
+
+    const total = validTopics.reduce((sum, [_, count]) => sum + count, 0);
+    return validTopics.map(([topic, count]) => ({
+      topic,
+      percentage: Math.round((count / total) * 100)
+    }));
+  }
+
+  // 雷达图
   const radarCtx = document.getElementById('researchRadarChart');
   if (radarCtx) {
     new Chart(radarCtx, {
       type: 'radar',
       data: {
-        labels: [
-          'Multimodal\nUnderstanding',
-          'Multimodal\nGeneration',
-          'Self-Supervised\nLearning',
-          'Biomedical\nImaging',
-          'Image\nCompression',
-          'Domain\nAdaptation'
-        ],
+        labels: ['Multimodal\nUnderstanding', 'Multimodal\nGeneration', 'Self-Supervised\nLearning', 'Biomedical\nImaging', 'Image\nCompression', 'Domain\nAdaptation'],
         datasets: [{
           label: 'Research Focus',
           data: [95, 85, 90, 88, 75, 80],
-          backgroundColor: 'rgba(118, 75, 162, 0.2)',
-          borderColor: 'rgba(118, 75, 162, 1)',
-          borderWidth: 3,
-          pointBackgroundColor: 'rgba(118, 75, 162, 1)',
+          backgroundColor: 'rgba(118, 75, 162, 0.15)',
+          borderColor: 'rgba(118, 75, 162, 0.8)',
+          borderWidth: 2,
+          pointBackgroundColor: 'rgba(118, 75, 162, 0.8)',
           pointBorderColor: '#fff',
           pointHoverBackgroundColor: '#fff',
           pointHoverBorderColor: 'rgba(118, 75, 162, 1)',
-          pointRadius: 5,
-          pointHoverRadius: 7
+          pointRadius: 4,
+          pointHoverRadius: 6
         }]
       },
       options: {
@@ -330,130 +243,86 @@ document.addEventListener('DOMContentLoaded', function() {
             beginAtZero: true,
             max: 100,
             ticks: {
-              stepSize: 20,
+              stepSize: 25,
               backdropColor: 'transparent',
-              color: '#666',
-              font: {
-                size: 11
-              }
+              color: '#999',
+              font: { size: 10 }
             },
-            grid: {
-              color: 'rgba(118, 75, 162, 0.2)'
-            },
+            grid: { color: 'rgba(118, 75, 162, 0.1)' },
             pointLabels: {
-              font: {
-                size: 12,
-                weight: '600'
-              },
+              font: { size: 11, weight: '600' },
               color: '#764ba2'
             }
           }
         },
         plugins: {
-          legend: {
-            display: false
-          },
+          legend: { display: false },
           tooltip: {
             backgroundColor: 'rgba(118, 75, 162, 0.9)',
-            titleFont: {
-              size: 14,
-              weight: 'bold'
-            },
-            bodyFont: {
-              size: 13
-            },
-            padding: 12,
-            cornerRadius: 8
+            padding: 10,
+            cornerRadius: 6
           }
-        },
-        animation: {
-          duration: 2000,
-          easing: 'easeInOutQuart'
         }
       }
     });
   }
 
-  // 饼图配置（自动从publications提取）
-  setTimeout(() => {
-    const pieCtx = document.getElementById('researchPieChart');
-    if (pieCtx) {
-      const topicsData = extractResearchTopics();
-      
-      const colors = [
-        { bg: 'rgba(156, 39, 176, 0.8)', border: 'rgba(156, 39, 176, 1)' },
-        { bg: 'rgba(103, 58, 183, 0.8)', border: 'rgba(103, 58, 183, 1)' },
-        { bg: 'rgba(63, 81, 181, 0.8)', border: 'rgba(63, 81, 181, 1)' },
-        { bg: 'rgba(33, 150, 243, 0.8)', border: 'rgba(33, 150, 243, 1)' },
-        { bg: 'rgba(0, 188, 212, 0.8)', border: 'rgba(0, 188, 212, 1)' },
-        { bg: 'rgba(255, 152, 0, 0.8)', border: 'rgba(255, 152, 0, 1)' },
-        { bg: 'rgba(76, 175, 80, 0.8)', border: 'rgba(76, 175, 80, 1)' }
-      ];
+  // 饼图
+  const pieCtx = document.getElementById('researchPieChart');
+  if (pieCtx) {
+    const topicsData = extractResearchTopics();
+    
+    const colors = [
+      { bg: 'rgba(156, 39, 176, 0.7)', border: 'rgba(156, 39, 176, 1)' },
+      { bg: 'rgba(103, 58, 183, 0.7)', border: 'rgba(103, 58, 183, 1)' },
+      { bg: 'rgba(63, 81, 181, 0.7)', border: 'rgba(63, 81, 181, 1)' },
+      { bg: 'rgba(33, 150, 243, 0.7)', border: 'rgba(33, 150, 243, 1)' },
+      { bg: 'rgba(0, 188, 212, 0.7)', border: 'rgba(0, 188, 212, 1)' },
+      { bg: 'rgba(255, 152, 0, 0.7)', border: 'rgba(255, 152, 0, 1)' }
+    ];
 
-      new Chart(pieCtx, {
-        type: 'doughnut',
-        data: {
-          labels: topicsData.map(d => d.topic),
-          datasets: [{
-            data: topicsData.map(d => d.percentage),
-            backgroundColor: colors.slice(0, topicsData.length).map(c => c.bg),
-            borderColor: colors.slice(0, topicsData.length).map(c => c.border),
-            borderWidth: 2,
-            hoverOffset: 15
-          }]
-        },
-        options: {
-          responsive: true,
-          maintainAspectRatio: true,
-          plugins: {
-            legend: {
-              position: 'bottom',
-              labels: {
-                padding: 15,
-                font: {
-                  size: 12,
-                  weight: '500'
-                },
-                color: '#333',
-                usePointStyle: true,
-                pointStyle: 'circle'
-              }
-            },
-            tooltip: {
-              backgroundColor: 'rgba(118, 75, 162, 0.95)',
-              titleFont: {
-                size: 14,
-                weight: 'bold'
-              },
-              bodyFont: {
-                size: 13
-              },
-              padding: 12,
-              cornerRadius: 8,
-              callbacks: {
-                label: function(context) {
-                  let label = context.label || '';
-                  if (label) {
-                    label += ': ';
-                  }
-                  label += context.parsed + '%';
-                  return label;
-                }
-              }
+    new Chart(pieCtx, {
+      type: 'doughnut',
+      data: {
+        labels: topicsData.map(d => d.topic),
+        datasets: [{
+          data: topicsData.map(d => d.percentage),
+          backgroundColor: colors.slice(0, topicsData.length).map(c => c.bg),
+          borderColor: colors.slice(0, topicsData.length).map(c => c.border),
+          borderWidth: 1,
+          hoverOffset: 8
+        }]
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: true,
+        plugins: {
+          legend: {
+            position: 'bottom',
+            labels: {
+              padding: 10,
+              font: { size: 11, weight: '500' },
+              color: '#555',
+              usePointStyle: true,
+              pointStyle: 'circle'
             }
           },
-          animation: {
-            animateRotate: true,
-            animateScale: true,
-            duration: 2000,
-            easing: 'easeInOutQuart'
+          tooltip: {
+            backgroundColor: 'rgba(118, 75, 162, 0.9)',
+            padding: 10,
+            cornerRadius: 6,
+            callbacks: {
+              label: function(context) {
+                return context.label + ': ' + context.parsed + '%';
+              }
+            }
           }
         }
-      });
-    }
+      }
+    });
+  }
 
-    // 生成关键词云
-    generateKeywordCloud();
-  }, 500); // 等待Publications部分加载完成
+  // 生成关键词云
+  generateKeywordCloud();
 });
 </script>
