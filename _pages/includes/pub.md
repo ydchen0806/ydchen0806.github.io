@@ -8,34 +8,126 @@ For a complete list of publications, please visit my [Google Scholar profile](ht
 **Note:** * denotes equal contribution
 
 <style>
-/* 重置并初始化Journal Articles的计数器 */
-#journal-articles {
-  counter-reset: journal-counter;
+/* Publications section styles */
+#journal-articles, #conference-papers {
+  counter-reset: paper-counter;
 }
 
-/* Journal Articles自动编号 - 内联显示 */
+/* Paper box enhanced styling */
+.paper-box {
+  list-style-type: none;
+  margin-bottom: 2.5em;
+  padding: 1.5em;
+  background: linear-gradient(to right, #fef5ff 0%, #ffffff 100%);
+  border-radius: 10px;
+  border-left: 5px solid #9C27B0;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.paper-box:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Journal Articles自动编号 */
 #journal-articles .paper-box-text::before {
-  counter-increment: journal-counter;
-  content: "[" counter(journal-counter) "] ";
+  counter-increment: paper-counter;
+  content: "[J" counter(paper-counter) "] ";
   font-weight: bold;
-  color: #2196F3;
+  color: #9C27B0;
   margin-right: 0.5em;
   display: inline;
+  font-size: 1.1em;
 }
 
-/* 重置并初始化Conference Papers的计数器 */
+/* Conference Papers自动编号 */
 #conference-papers {
-  counter-reset: conference-counter;
+  counter-reset: paper-counter;
 }
 
-/* Conference Papers自动编号 - 内联显示 */
 #conference-papers .paper-box-text::before {
-  counter-increment: conference-counter;
-  content: "[" counter(conference-counter) "] ";
+  counter-increment: paper-counter;
+  content: "[C" counter(paper-counter) "] ";
   font-weight: bold;
-  color: #2196F3;
+  color: #9C27B0;
   margin-right: 0.5em;
   display: inline;
+  font-size: 1.1em;
+}
+
+/* Paper title styling */
+.paper-box-text a {
+  color: #1a1a1a;
+  font-weight: 600;
+  font-size: 1.05em;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
+.paper-box-text a:hover {
+  color: #9C27B0;
+  text-decoration: underline;
+}
+
+/* Badge styling */
+.badge-journal, .badge-conference {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-size: 0.85em;
+  font-weight: 600;
+  margin-right: 6px;
+  margin-bottom: 8px;
+}
+
+.badge-journal {
+  background: #9C27B0;
+  color: white;
+}
+
+.badge-conference {
+  background: #673AB7;
+  color: white;
+}
+
+.badge-impact, .badge-ccf {
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: 3px;
+  font-size: 0.75em;
+  font-weight: 500;
+}
+
+.badge-q1 {
+  background: #FFD700;
+  color: #333;
+}
+
+.badge-ccf-a {
+  background: #E91E63;
+  color: white;
+}
+
+.badge-ccf-b {
+  background: #FF9800;
+  color: white;
+}
+
+/* Paper image styling */
+.paper-box-image img {
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* Code and resource links */
+.paper-box-text strong {
+  color: #9C27B0;
+}
+
+.paper-box-text img[src*="shields.io"] {
+  vertical-align: middle;
+  margin-left: 4px;
 }
 </style>
 
