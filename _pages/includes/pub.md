@@ -158,11 +158,11 @@ For a complete list of publications, please visit my [Google Scholar profile](ht
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge-journal">IEEE JBHI</div><div class="badge-impact badge-q1">SCI Q1 | IF: 6.7</div><img src='images/JBHI25.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-[EMPOWER: Evolutionary Medical Prompt Optimization With Reinforcement Learning](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11205280) <span class="research-tags"><span class="research-tag">Vision-Language</span><span class="research-tag">Multimodal Learning</span></span> \\
-IEEE Journal of Biomedical and Health Informatics | October 16, 2025 \\
-**Yinda Chen\***; Yangfan He\*; Jing Yang; Dapeng Zhang; Zhenlong Yuan; Muhammad Attique Khan; Jamel Baili; Por Lip Yee
+> [EMPOWER: Evolutionary Medical Prompt Optimization With Reinforcement Learning](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11205280) <span class="research-tags"><span class="research-tag">Vision-Language</span><span class="research-tag">Multimodal Learning</span></span> \\
+  IEEE Journal of Biomedical and Health Informatics | October 16, 2025 \\
+  **Yinda Chen\***; Yangfan He\*; Jing Yang; Dapeng Zhang; Zhenlong Yuan; Muhammad Attique Khan; Jamel Baili; Por Lip Yee
 
-EMPOWER proposes an evolutionary framework for prompt optimization through specialized representation learning and multi-dimensional evaluation. It achieves 24.7% reduction in factual errors and 15.3% higher preference scores.
+> EMPOWER proposes an evolutionary framework for prompt optimization through specialized representation learning and multi-dimensional evaluation. It achieves 24.7% reduction in factual errors and 15.3% higher preference scores.
 
 </div>
 </div>
@@ -218,11 +218,11 @@ MaskTwins introduces a dual-form complementary masking strategy for domain-adapt
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge-conference">AAAI 2025</div><div class="badge-ccf badge-ccf-a">CCF A</div><img src='images/AAAI25.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-[Condition-generation Latent Coding with an External Dictionary for Deep Image Compression](/docs/Condition_generation_Latent_Coding_with_an_External_Dictionary_for_Deep_Image_Compression.pdf) <span class="research-tags"><span class="research-tag">Image Compression</span></span> \\
-AAAI <span style="color:red">**(<font color="red">oral</font>)**</span> | March 06, 2025 \\
-Siqi Wu; **Yinda Chen\***; Dong Liu; Zhihai He
+> [Condition-generation Latent Coding with an External Dictionary for Deep Image Compression](/docs/Condition_generation_Latent_Coding_with_an_External_Dictionary_for_Deep_Image_Compression.pdf) <span class="research-tags"><span class="research-tag">Image Compression</span></span> \\
+  AAAI <span style="color:red">**(<font color="red">oral</font>)**</span> | March 06, 2025 \\
+  Siqi Wu; **Yinda Chen\***; Dong Liu; Zhihai He
 
-[**Code**](https://github.com/ydchen0806/CLC) [![](https://img.shields.io/github/stars/ydchen0806/CLC?style=social&label=Code+Stars)](https://github.com/ydchen0806/CLC) | [**Weights**](https://huggingface.co/cyd0806/CLC/tree/main) [![](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Weights-yellow)](https://huggingface.co/cyd0806/CLC/tree/main)
+  [**Code**](https://github.com/ydchen0806/CLC) [![](https://img.shields.io/github/stars/ydchen0806/CLC?style=social&label=Code+Stars)](https://github.com/ydchen0806/CLC) | [**Weights**](https://huggingface.co/cyd0806/CLC/tree/main) [![](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Weights-yellow)](https://huggingface.co/cyd0806/CLC/tree/main)
 
 The paper proposes CLC for deep image compression. It uses a dictionary to generate references, shows good performance, and has theoretical analysis.
 
@@ -260,13 +260,13 @@ This paper presents BIMCV-R, a 3D CT text-image retrieval dataset, and MedFinder
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge-conference">ICASSP 2024</div><div class="badge-ccf badge-ccf-b">CCF B</div><img src='images/ICASSP24.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-[Learning multiscale consistency for self-supervised computer vision instance segmentation](https://arxiv.org/pdf/2308.09917) <span class="research-tags"><span class="research-tag">Computer Vision</span><span class="research-tag">Pretraining Methods</span></span> \\
-ICASSP | April 13, 2024 \\
-**Yinda Chen**; Wei Huang; Xiaoyu Liu; Shiyu Deng; Qi Chen; Zhiwei Xiong
+> [Learning multiscale consistency for self-supervised computer vision instance segmentation](https://arxiv.org/pdf/2308.09917) <span class="research-tags"><span class="research-tag">Computer Vision</span><span class="research-tag">Pretraining Methods</span></span> \\
+  ICASSP | April 13, 2024 \\
+  **Yinda Chen**; Wei Huang; Xiaoyu Liu; Shiyu Deng; Qi Chen; Zhiwei Xiong
 
-[**Code**](https://github.com/ydchen0806/MS-Con-EM-Seg) [![](https://img.shields.io/github/stars/ydchen0806/MS-Con-EM-Seg?style=social&label=Code+Stars)](https://github.com/ydchen0806/MS-Con-EM-Seg)
+  [**Code**](https://github.com/ydchen0806/MS-Con-EM-Seg) [![](https://img.shields.io/github/stars/ydchen0806/MS-Con-EM-Seg?style=social&label=Code+Stars)](https://github.com/ydchen0806/MS-Con-EM-Seg)
 
-A pretraining framework for volume instance segmentation is proposed. It enforces multiscale consistency and shows good performance in instance segmentation tasks.
+> A pretraining framework for volume instance segmentation is proposed. It enforces multiscale consistency and shows good performance in instance segmentation tasks.
 
 </div>
 </div>
@@ -274,13 +274,13 @@ A pretraining framework for volume instance segmentation is proposed. It enforce
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge-conference">IJCAI 2023</div><div class="badge-ccf badge-ccf-a">CCF A</div><img src='images/ijcai2023.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-[Self-Supervised Computer Vision with Multi-Agent Reinforcement Learning](https://www.ijcai.org/proceedings/2023/0068.pdf) <span class="research-tags"><span class="research-tag">Computer Vision</span><span class="research-tag">Self-Supervised Learning</span></span> \\
-IJCAI <span style="color:red">**(<font color="red">oral</font>)**</span> | August 17, 2023 \\
-**Yinda Chen**; Wei Huang; Shenglong Zhou; Qi Chen; Zhiwei Xiong
+> [Self-Supervised Computer Vision with Multi-Agent Reinforcement Learning](https://www.ijcai.org/proceedings/2023/0068.pdf) <span class="research-tags"><span class="research-tag">Computer Vision</span><span class="research-tag">Self-Supervised Learning</span></span> \\
+  IJCAI <span style="color:red">**(<font color="red">oral</font>)**</span> | August 17, 2023 \\
+  **Yinda Chen**; Wei Huang; Shenglong Zhou; Qi Chen; Zhiwei Xiong
 
-[**Code**](https://github.com/ydchen0806/dbMiM) [![](https://img.shields.io/github/stars/ydchen0806/dbMiM?style=social&label=Code+Stars)](https://github.com/ydchen0806/dbMiM) | [**Pretrain Data**](https://huggingface.co/datasets/cyd0806/EM_pretrain_data/tree/main) [![](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Dataset-blue)](https://huggingface.co/datasets/cyd0806/EM_pretrain_data/tree/main) | [**CREMI**](https://cremi.org/) | [**VNC**](https://drive.google.com/drive/folders/1JAdoKchlWrHnbTXvnFn6pWWwx6VIiMH3?usp=sharing)
+  [**Code**](https://github.com/ydchen0806/dbMiM) [![](https://img.shields.io/github/stars/ydchen0806/dbMiM?style=social&label=Code+Stars)](https://github.com/ydchen0806/dbMiM) | [**Pretrain Data**](https://huggingface.co/datasets/cyd0806/EM_pretrain_data/tree/main) [![](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Dataset-blue)](https://huggingface.co/datasets/cyd0806/EM_pretrain_data/tree/main) | [**CREMI**](https://cremi.org/) | [**VNC**](https://drive.google.com/drive/folders/1JAdoKchlWrHnbTXvnFn6pWWwx6VIiMH3?usp=sharing)
 
-This paper proposes a decision-based MIM for computer vision segmentation. It uses MARL to optimize masking, outperforming alternatives.
+> This paper proposes a decision-based MIM for computer vision segmentation. It uses MARL to optimize masking, outperforming alternatives.
 
 </div>
 </div>
