@@ -129,6 +129,26 @@ For a complete list of publications, please visit my [Google Scholar profile](ht
   vertical-align: middle;
   margin-left: 4px;
 }
+
+/* Research area tags */
+.research-tags {
+  display: inline-flex;
+  gap: 4px;
+  margin-left: 8px;
+  vertical-align: middle;
+}
+
+.research-tag {
+  display: inline-block;
+  padding: 2px 6px;
+  font-size: 0.7em;
+  font-weight: 500;
+  border-radius: 3px;
+  background: rgba(118, 75, 162, 0.1);
+  color: #764ba2;
+  border: 1px solid rgba(118, 75, 162, 0.2);
+  white-space: nowrap;
+}
 </style>
 
 <div id="journal-articles" markdown="1">
