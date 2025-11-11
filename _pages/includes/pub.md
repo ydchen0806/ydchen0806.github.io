@@ -174,7 +174,7 @@ For a complete list of publications, please visit my [Google Scholar profile](ht
 IEEE Transactions on Medical Imaging | July 29, 2024 \\
 Shiyu Deng; **Yinda Chen**; Wei Huang; Ruobing Zhang; Zhiwei Xiong
 
-[**Code**](https://github.com/sydeng99/DADn) [![](https://img.shields.io/github/stars/sydeng99/DADn?style=social&label=Code+Stars)](https://github.com/sydeng99/DADn)
+[**Code**](https://github.com/sydeng99/DADn) [![](https://img.shields.io/github/stars/sydeng99/DADn?style=social&label=Code+Stars&cacheSeconds=3600)](https://github.com/sydeng99/DADn)
 
 The paper proposes an unsupervised domain adaptation method for EM image denoising with invertible networks, outperforming existing methods.
 
@@ -194,7 +194,7 @@ The paper proposes an unsupervised domain adaptation method for EM image denoisi
 ICCV | October 25, 2025 \\
 **Yinda Chen\***; Haoyuan Shi\*; Xiaoyu Liu; Te Shi; Ruobing Zhang; Dong Liu; Zhiwei Xiong; Feng Wu
 
-[**Code**](https://github.com/ydchen0806/TokenUnify) [![](https://img.shields.io/github/stars/ydchen0806/TokenUnify?style=social&label=Code+Stars)](https://github.com/ydchen0806/TokenUnify) | [**Dataset**](https://huggingface.co/datasets/cyd0806/wafer_EM) [![](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Dataset-blue)](https://huggingface.co/datasets/cyd0806/wafer_EM) | [**Weights**](https://huggingface.co/cyd0806/TokenUnify/tree/main/Pretrained_weights) [![](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Weights-yellow)](https://huggingface.co/cyd0806/TokenUnify/tree/main/Pretrained_weights)
+[**Code**](https://github.com/ydchen0806/TokenUnify) [![](https://img.shields.io/github/stars/ydchen0806/TokenUnify?style=social&label=Code+Stars&cacheSeconds=3600)](https://github.com/ydchen0806/TokenUnify) | [**Dataset**](https://huggingface.co/datasets/cyd0806/wafer_EM) [![](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Dataset-blue)](https://huggingface.co/datasets/cyd0806/wafer_EM) | [**Weights**](https://huggingface.co/cyd0806/TokenUnify/tree/main/Pretrained_weights) [![](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Weights-yellow)](https://huggingface.co/cyd0806/TokenUnify/tree/main/Pretrained_weights)
 
 TokenUnify proposes a hierarchical predictive coding framework for computer vision, reducing autoregressive error from O(K) to O(√K). It introduces a dataset with 1.2 billion annotated voxels and achieves 44% improvement over training from scratch.
 
@@ -208,7 +208,7 @@ TokenUnify proposes a hierarchical predictive coding framework for computer visi
 ICML | July 13, 2025 \\
 Jiawen Wang; **Yinda Chen\*** (Theory Contribution & Project Leader); Xiaoyu Liu; Che Liu; Dong Liu; Jianqing Gao; Zhiwei Xiong
 
-[**Code**](https://github.com/jwwang0421/masktwins) [![](https://img.shields.io/github/stars/jwwang0421/masktwins?style=social&label=Code+Stars)](https://github.com/jwwang0421/masktwins) | [**Poster**](https://icml.cc/media/PosterPDFs/ICML%202025/46243.png?t=1750997391.8351207)
+[**Code**](https://github.com/jwwang0421/masktwins) [![](https://img.shields.io/github/stars/jwwang0421/masktwins?style=social&label=Code+Stars&cacheSeconds=3600)](https://github.com/jwwang0421/masktwins) | [**Poster**](https://icml.cc/media/PosterPDFs/ICML%202025/46243.png?t=1750997391.8351207)
 
 MaskTwins introduces a dual-form complementary masking strategy for domain-adaptive image segmentation, effectively bridging the domain gap through coordinated spatial and feature-level masking mechanisms.
 
@@ -222,7 +222,7 @@ MaskTwins introduces a dual-form complementary masking strategy for domain-adapt
   AAAI <span style="color:red">**(<font color="red">oral</font>)**</span> | March 06, 2025 \\
   Siqi Wu; **Yinda Chen\***; Dong Liu; Zhihai He
 
-  [**Code**](https://github.com/ydchen0806/CLC) [![](https://img.shields.io/github/stars/ydchen0806/CLC?style=social&label=Code+Stars)](https://github.com/ydchen0806/CLC) | [**Weights**](https://huggingface.co/cyd0806/CLC/tree/main) [![](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Weights-yellow)](https://huggingface.co/cyd0806/CLC/tree/main)
+  [**Code**](https://github.com/ydchen0806/CLC) [![](https://img.shields.io/github/stars/ydchen0806/CLC?style=social&label=Code+Stars&cacheSeconds=3600)](https://github.com/ydchen0806/CLC) | [**Weights**](https://huggingface.co/cyd0806/CLC/tree/main) [![](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Weights-yellow)](https://huggingface.co/cyd0806/CLC/tree/main)
 
 The paper proposes CLC for deep image compression. It uses a dictionary to generate references, shows good performance, and has theoretical analysis.
 
@@ -236,7 +236,7 @@ The paper proposes CLC for deep image compression. It uses a dictionary to gener
 NeurIPS | October 17, 2024 \\
 Haotian Qian; **Yinda Chen\***; Shengtao Lou; Fahad Shahbaz Khan; Xiaogang Jin; Deng-Ping Fan
 
-[**Project**](https://qian-hao-tian.github.io/MaskFactory/) | [**Code**](https://github.com/ydchen0806/MaskFactory) [![](https://img.shields.io/github/stars/ydchen0806/MaskFactory?style=social&label=Code+Stars)](https://github.com/ydchen0806/MaskFactory)
+[**Project**](https://qian-hao-tian.github.io/MaskFactory/) | [**Code**](https://github.com/ydchen0806/MaskFactory) [![](https://img.shields.io/github/stars/ydchen0806/MaskFactory?style=social&label=Code+Stars&cacheSeconds=3600)](https://github.com/ydchen0806/MaskFactory)
 
 MaskFactory proposes a two-stage method to generate high-quality synthetic datasets for DIS, outperforming existing methods in quality and efficiency.
 
@@ -264,7 +264,7 @@ This paper presents BIMCV-R, a 3D CT text-image retrieval dataset, and MedFinder
   ICASSP | April 13, 2024 \\
   **Yinda Chen**; Wei Huang; Xiaoyu Liu; Shiyu Deng; Qi Chen; Zhiwei Xiong
 
-  [**Code**](https://github.com/ydchen0806/MS-Con-EM-Seg) [![](https://img.shields.io/github/stars/ydchen0806/MS-Con-EM-Seg?style=social&label=Code+Stars)](https://github.com/ydchen0806/MS-Con-EM-Seg)
+  [**Code**](https://github.com/ydchen0806/MS-Con-EM-Seg) [![](https://img.shields.io/github/stars/ydchen0806/MS-Con-EM-Seg?style=social&label=Code+Stars&cacheSeconds=3600)](https://github.com/ydchen0806/MS-Con-EM-Seg)
 
 > A pretraining framework for volume instance segmentation is proposed. It enforces multiscale consistency and shows good performance in instance segmentation tasks.
 
@@ -278,7 +278,7 @@ This paper presents BIMCV-R, a 3D CT text-image retrieval dataset, and MedFinder
   IJCAI <span style="color:red">**(<font color="red">oral</font>)**</span> | August 17, 2023 \\
   **Yinda Chen**; Wei Huang; Shenglong Zhou; Qi Chen; Zhiwei Xiong
 
-  [**Code**](https://github.com/ydchen0806/dbMiM) [![](https://img.shields.io/github/stars/ydchen0806/dbMiM?style=social&label=Code+Stars)](https://github.com/ydchen0806/dbMiM) | [**Pretrain Data**](https://huggingface.co/datasets/cyd0806/EM_pretrain_data/tree/main) [![](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Dataset-blue)](https://huggingface.co/datasets/cyd0806/EM_pretrain_data/tree/main) | [**CREMI**](https://cremi.org/) | [**VNC**](https://drive.google.com/drive/folders/1JAdoKchlWrHnbTXvnFn6pWWwx6VIiMH3?usp=sharing)
+  [**Code**](https://github.com/ydchen0806/dbMiM) [![](https://img.shields.io/github/stars/ydchen0806/dbMiM?style=social&label=Code+Stars&cacheSeconds=3600)](https://github.com/ydchen0806/dbMiM) | [**Pretrain Data**](https://huggingface.co/datasets/cyd0806/EM_pretrain_data/tree/main) [![](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Dataset-blue)](https://huggingface.co/datasets/cyd0806/EM_pretrain_data/tree/main) | [**CREMI**](https://cremi.org/) | [**VNC**](https://drive.google.com/drive/folders/1JAdoKchlWrHnbTXvnFn6pWWwx6VIiMH3?usp=sharing)
 
 > This paper proposes a decision-based MIM for computer vision segmentation. It uses MARL to optimize masking, outperforming alternatives.
 
