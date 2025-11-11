@@ -101,10 +101,10 @@ window.addEventListener('load', function() {
   const defaultKeywords = [
     { keyword: 'Multimodal Learning', weight: 5 },
     { keyword: 'Self-Supervised Learning', weight: 5 },
-    { keyword: 'Neuron Segmentation', weight: 4 },
+    { keyword: 'Computer Vision', weight: 4 },
     { keyword: 'Image Compression', weight: 4 },
     { keyword: 'Domain Adaptation', weight: 4 },
-    { keyword: 'Medical Imaging', weight: 3 },
+    { keyword: 'Deep Learning', weight: 3 },
     { keyword: 'Representation Learning', weight: 3 },
     { keyword: 'Reinforcement Learning', weight: 3 }
   ];
@@ -115,14 +115,14 @@ window.addEventListener('load', function() {
     const keywordPatterns = {
       'Multimodal Learning': ['multimodal', 'multi-modal', 'vision-language'],
       'Self-Supervised Learning': ['self-supervised', 'pretraining', 'pretrain'],
-      'Neuron Segmentation': ['neuron', 'segmentation', 'em image'],
+      'Computer Vision': ['vision', 'segmentation', 'image'],
       'Image Compression': ['compression', 'coding', 'latent'],
       'Domain Adaptation': ['domain adaptation', 'unsupervised domain'],
-      'Medical Imaging': ['medical', 'biomedical', 'clinical', 'ct'],
+      'Deep Learning': ['deep learning', 'neural network', 'transformer'],
       'Representation Learning': ['representation', 'feature learning'],
       'Reinforcement Learning': ['reinforcement', 'marl'],
       'Synthetic Data': ['synthetic', 'generation', 'maskfactory'],
-      'Electron Microscopy': ['electron microscopy', 'em data']
+      'Data-Centric AI': ['data', 'dataset', 'annotation']
     };
 
     const pubSection = document.querySelector('#journal-articles, #conference-papers');
@@ -167,21 +167,21 @@ window.addEventListener('load', function() {
   // 提取研究主题
   function extractResearchTopics() {
     const topics = {
-      'Neuron Segmentation': 0,
+      'Computer Vision': 0,
       'Image Compression': 0,
       'Domain Adaptation': 0,
-      'Medical Imaging': 0,
       'Multimodal Learning': 0,
-      'Pretraining Methods': 0
+      'Pretraining Methods': 0,
+      'Data-Centric AI': 0
     };
 
     const keywords = {
-      'Neuron Segmentation': ['neuron', 'segmentation'],
+      'Computer Vision': ['vision', 'segmentation', 'image'],
       'Image Compression': ['compression', 'coding'],
       'Domain Adaptation': ['domain adaptation', 'unsupervised'],
-      'Medical Imaging': ['medical', 'biomedical', 'ct', 'em'],
       'Multimodal Learning': ['multimodal', 'vision-language', 'text-image'],
-      'Pretraining Methods': ['pretraining', 'self-supervised', 'tokenunify']
+      'Pretraining Methods': ['pretraining', 'self-supervised', 'tokenunify'],
+      'Data-Centric AI': ['dataset', 'synthetic', 'data generation']
     };
 
     const paperBoxes = document.querySelectorAll('.paper-box-text');
@@ -199,11 +199,11 @@ window.addEventListener('load', function() {
     
     if (validTopics.length === 0) {
       return [
-        { topic: 'Neuron Segmentation', percentage: 28 },
+        { topic: 'Computer Vision', percentage: 28 },
         { topic: 'Image Compression', percentage: 18 },
-        { topic: 'Medical Imaging', percentage: 22 },
-        { topic: 'Multimodal Learning', percentage: 18 },
-        { topic: 'Pretraining Methods', percentage: 14 }
+        { topic: 'Multimodal Learning', percentage: 22 },
+        { topic: 'Pretraining Methods', percentage: 18 },
+        { topic: 'Data-Centric AI', percentage: 14 }
       ];
     }
 
@@ -220,7 +220,7 @@ window.addEventListener('load', function() {
     new Chart(radarCtx, {
       type: 'radar',
       data: {
-        labels: ['Multimodal\nUnderstanding', 'Multimodal\nGeneration', 'Self-Supervised\nLearning', 'Biomedical\nImaging', 'Image\nCompression', 'Domain\nAdaptation'],
+        labels: ['Multimodal\nUnderstanding', 'Multimodal\nGeneration', 'Self-Supervised\nLearning', 'Computer\nVision', 'Image\nCompression', 'Domain\nAdaptation'],
         datasets: [{
           label: 'Research Focus',
           data: [95, 85, 90, 88, 75, 80],

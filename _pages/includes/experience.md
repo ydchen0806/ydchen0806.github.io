@@ -114,7 +114,7 @@
   </div>
   
   - Collaborated with Academician [Qionghai Dai](https://scholar.google.com/citations?user=CHAajY4AAAAJ&hl=en&oi=ao)'s team on efficient data compression research
-  - Designed medical image-specific compression algorithms for CT, MRI, and other modalities
+  - Designed image-specific compression algorithms for various data modalities
   - Achieved 35% improvement in compression efficiency
 
 - <div class="company-header">
@@ -127,7 +127,7 @@
   </div>
   
   - Collaborated with [Dr. Rossella Arcucci](https://scholar.google.com/citations?user=oxy2ZQoAAAAJ&hl=en) and [Dr. Che Liu](https://scholar.google.com/citations?user=HED_458AAAAJ&hl=en&oi=sra) on multimodal pretraining research
-  - Developed image-text contrastive learning framework achieving 93.5% accuracy on medical diagnosis tasks
+  - Developed image-text contrastive learning framework achieving 93.5% accuracy on classification tasks
   - Submitted one journal paper
 
 - <div class="company-header">
