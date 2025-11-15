@@ -2,7 +2,9 @@ name: Get Google Scholar Stats
 
 on:
   schedule:
-    - cron: '0 0 * * 0'  # 每周日 UTC 00:00 运行
+    - cron: '0 0 * * 1'  # 每周一 UTC 00:00 运行
+    - cron: '0 0 * * 3'  # 每周三 UTC 00:00 运行
+    - cron: '0 0 * * 5'  # 每周五 UTC 00:00 运行
   workflow_dispatch:  # 允许手动触发
 
 permissions:
@@ -104,7 +106,7 @@ jobs:
           
           ---
           
-          *This data is automatically updated weekly by GitHub Actions.*
+          *This data is automatically updated three times per week (Monday, Wednesday, Friday) by GitHub Actions.*
           EOF
           
           # 提交更改
