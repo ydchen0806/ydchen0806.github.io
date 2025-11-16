@@ -1,17 +1,21 @@
+#!/usr/bin/env python3
+"""
+简化版 Google Scholar 爬虫，使用requests和BeautifulSoup
+"""
 import requests
 import json
 from bs4 import BeautifulSoup
 from datetime import datetime
 import os
 import sys
-import time
+import ssl
 
-def get_scholar_stats_fallback(scholar_id):
+def get_scholar_stats(scholar_id):
     """
-    备用方法：直接抓取Google Scholar页面获取基本统计信息
+    简化版Google Scholar数据获取
     """
     try:
-        print("使用备用方法获取Google Scholar数据...")
+        print(f"正在获取学者信息: {scholar_id}")
         url = f"https://scholar.google.com/citations?user={scholar_id}&hl=en"
         
         headers = {
@@ -22,9 +26,12 @@ def get_scholar_stats_fallback(scholar_id):
             'Connection': 'keep-alive',
         }
         
-        # 设置session以复用连接
-        session = requests.Session()
-        session.headers.update(headers)
+        print("正在请求Google Scholar页面...")
+        
+        # 设置SSL上下文
+        ssl_context = ssl.create_default_context()
+        ssl_context.check_hostname = False
+        ssl_context.verify_mode = ssl.CERT_NONE
         
         try:
             # 禁用代理
@@ -33,19 +40,24 @@ def get_scholar_stats_fallback(scholar_id):
                 'https': None,
             }
             
-            response = session.get(url, timeout=10, proxies=proxies)
-        except requests.exceptions.SSLError as ssl_error:
-            print(f"SSL错误，尝试禁用SSL验证: {ssl_error}")
-            response = session.get(url, timeout=10, verify=False, proxies=proxies)
-        if response.status_code != 200:
-            print(f"无法访问Google Scholar页面，状态码: {response.status_code}")
+            response = requests.get(url, headers=headers, timeout=15, verify=False, proxies=proxies)
+            print(f"响应状态码: {response.status_code}")
+            
+            if response.status_code != 200:
+                print(f"无法访问Google Scholar页面，状态码: {response.status_code}")
+                return None
+                
+        except Exception as e:
+            print(f"请求失败: {e}")
             return None
             
+        print("正在解析页面内容...")
         soup = BeautifulSoup(response.text, 'html.parser')
         
         # 提取基本信息
         name_element = soup.find('div', {'id': 'gsc_prf_in'})
         name = name_element.text if name_element else "Unknown"
+        print(f"找到学者姓名: {name}")
         
         # 提取统计信息
         stats_table = soup.find('table', {'class': 'gsc_rsb_std'})
@@ -55,13 +67,17 @@ def get_scholar_stats_fallback(scholar_id):
             
         stats_cells = stats_table.find_all('td', {'class': 'gsc_rsb_std'})
         
-        if len(stats_cells) < 3:
+        if len(stats_cells) < 5:
             print("统计信息不完整")
             return None
             
         citations = stats_cells[0].text.replace(',', '')
         h_index = stats_cells[2].text.replace(',', '')
         i10_index = stats_cells[4].text.replace(',', '')
+        
+        print(f"总引用数: {citations}")
+        print(f"h-index: {h_index}")
+        print(f"i10-index: {i10_index}")
         
         # 构建数据对象
         author_data = {
@@ -70,40 +86,37 @@ def get_scholar_stats_fallback(scholar_id):
             'hindex': int(h_index) if h_index.isdigit() else 0,
             'i10index': int(i10_index) if i10_index.isdigit() else 0,
             'updated': str(datetime.now()),
-            'publications': {},  # 备用方法不获取详细论文列表
-            'source': 'fallback_scraper'
+            'publications': {},  # 简化版不获取详细论文列表
+            'source': 'simple_scraper'
         }
-        
-        print(f"[OK] 备用方法成功获取基本信息: {name}")
-        print(f"[OK] 总引用数: {author_data['citedby']}")
-        print(f"[OK] h-index: {author_data['hindex']}")
-        print(f"[OK] i10-index: {author_data['i10index']}")
         
         return author_data
         
     except Exception as e:
-        print(f"备用方法也失败了: {e}")
+        print(f"获取数据时出错: {e}")
+        import traceback
+        traceback.print_exc()
         return None
 
 def main():
+    """主函数"""
     try:
         # 获取环境变量
         scholar_id = os.environ.get('GOOGLE_SCHOLAR_ID')
         if not scholar_id:
-            print(f"错误: GOOGLE_SCHOLAR_ID 环境变量未设置")
+            print("错误: GOOGLE_SCHOLAR_ID 环境变量未设置")
             scholar_id = 'hCvlj5cAAAAJ'  # 替代ID
             print(f"使用替代的 GOOGLE_SCHOLAR_ID: {scholar_id}")
         
-        print(f"正在获取学者信息: {scholar_id}")
         print("=" * 50)
         
-        # 尝试使用备用方法获取数据
-        author = get_scholar_stats_fallback(scholar_id)
+        # 尝试获取数据
+        author = get_scholar_stats(scholar_id)
         
         if not author:
             print("[ERROR] 无法获取Google Scholar数据")
-            sys.exit(1)
-        
+            return 1
+            
         print("=" * 50)
         
         # 创建results目录
@@ -126,7 +139,7 @@ def main():
             json.dump(shieldio_data, outfile, ensure_ascii=False, indent=2)
         print("[OK] Shields.io 数据已保存到 results/gs_data_shieldsio.json")
         
-        # 输出基本信息用于调试
+        # 输出基本信息
         print("\n" + "=" * 50)
         print("基本统计信息:")
         print(f"  姓名: {author['name']}")
@@ -143,7 +156,7 @@ def main():
         print(f"[ERROR] 发生错误: {e}")
         import traceback
         traceback.print_exc()
-        sys.exit(1)
+        return 1
 
 if __name__ == "__main__":
     sys.exit(main())
