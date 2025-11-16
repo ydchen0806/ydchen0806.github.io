@@ -28,13 +28,36 @@ jobs:
           pip install --upgrade pip
           pip install -r google_scholar_crawler/requirements.txt
 
-      - name: Fetch Google Scholar stats
+      - name: Fetch Google Scholar stats (primary method)
         env:
           # GOOGLE_SCHOLAR_ID: ${{ secrets.GOOGLE_SCHOLAR_ID }}
           # 如果没有设置 Secret，可以直接写 ID：
           GOOGLE_SCHOLAR_ID: 'hCvlj5cAAAAJ'
+        timeout-minutes: 10
+        continue-on-error: true
         run: |
+          echo "开始获取Google Scholar统计数据（主要方法）..."
           python google_scholar_crawler/main.py
+      
+      - name: Verify primary method result
+        if: success()
+        run: |
+          echo "检查主要方法的结果..."
+          if [ -f "results/gs_data.json" ]; then
+            echo "✓ 主要方法成功获取数据"
+          else
+            echo "❌ 主要方法未生成数据文件"
+            exit 1
+          fi
+      
+      - name: Fetch Google Scholar stats (fallback method)
+        if: failure()
+        env:
+          GOOGLE_SCHOLAR_ID: 'hCvlj5cAAAAJ'
+        timeout-minutes: 5
+        run: |
+          echo "主要方法失败，尝试备用方法..."
+          python google_scholar_crawler/fallback_crawler.py
 
       - name: Verify output files
         run: |

@@ -3,6 +3,15 @@ import json
 from datetime import datetime
 import os
 import sys
+import time
+import signal
+
+# 设置超时处理
+class TimeoutException(Exception):
+    pass
+
+def timeout_handler(signum, frame):
+    raise TimeoutException("操作超时")
 
 def main():
     try:
@@ -17,9 +26,33 @@ def main():
         print(f"正在获取学者信息: {scholar_id}")
         print("=" * 50)
         
-        # 搜索并填充作者信息
-        author = scholarly.search_author_id(scholar_id)
-        scholarly.fill(author, sections=['basics', 'indices', 'counts', 'publications'])
+        # 设置操作超时（30秒）
+        signal.signal(signal.SIGALRM, timeout_handler)
+        signal.alarm(30)
+        
+        try:
+            # 搜索并填充作者信息
+            print("步骤1: 搜索作者信息...")
+            author = scholarly.search_author_id(scholar_id)
+            signal.alarm(0)  # 重置超时
+            
+            signal.alarm(60)  # 设置60秒超时用于填充数据
+            print("步骤2: 获取详细数据...")
+            scholarly.fill(author, sections=['basics', 'indices', 'counts', 'publications'], limit=50)  # 限制获取论文数量
+            signal.alarm(0)  # 重置超时
+        except TimeoutException as e:
+            print(f"❌ 操作超时: {e}")
+            signal.alarm(0)  # 确保在异常情况下重置超时
+            raise
+        except Exception as e:
+            print(f"❌ 获取数据时出错: {e}")
+            # 如果获取完整数据失败，尝试只获取基本信息
+            signal.alarm(0)
+            print("尝试获取基本信息...")
+            signal.alarm(30)
+            author = scholarly.search_author_id(scholar_id)
+            scholarly.fill(author, sections=['basics', 'indices', 'counts'])
+            signal.alarm(0)
         
         name = author['name']
         author['updated'] = str(datetime.now())
