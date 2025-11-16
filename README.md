@@ -29,4 +29,4 @@ https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_REPO/google-scholar-stats/g
 
 ---
 
-*This data is automatically updated weekly by GitHub Actions.*
+*This data is automatically updated three times per week (Monday, Wednesday, Friday) by GitHub Actions.*
