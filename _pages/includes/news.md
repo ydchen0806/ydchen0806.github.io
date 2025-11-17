@@ -1,5 +1,6 @@
 # 🔥 News
 
+<!-- - **2025.11.20** My advisor Prof. Feng Wu (吴枫) was elected as an Academician of the Chinese Academy of Engineering. I will always learn from his dedication to research and mentorship. A role model forever. -->
 - **2025.11.09** One paper was accepted by AAAI 2026.
 - **2025.11.05** One [paper](https://ieeexplore.ieee.org/document/11225906) was accepted by TCSVT (IEEE Transactions on Circuits and Systems for Video Technology).
 - **2025.10.16** One [paper](https://ieeexplore.ieee.org/document/11205280) was accepted by JBHI (IEEE Journal of Biomedical and Health Informatics).
