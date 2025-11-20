@@ -2,12 +2,44 @@
 """
 健壮的 Google Scholar 爬虫 - 网络请求失败时使用模拟数据
 """
-import requests
 import json
-from bs4 import BeautifulSoup
-from datetime import datetime
 import os
 import sys
+import time
+
+import requests
+from bs4 import BeautifulSoup
+from datetime import datetime
+
+
+def resolve_proxies():
+    """
+    根据环境变量构造代理配置。
+    支持：
+      - GOOGLE_SCHOLAR_PROXY（优先）
+      - HTTPS_PROXY / https_proxy
+      - HTTP_PROXY / http_proxy
+    """
+    explicit = os.environ.get('GOOGLE_SCHOLAR_PROXY')
+    https_proxy = os.environ.get('HTTPS_PROXY') or os.environ.get('https_proxy')
+    http_proxy = os.environ.get('HTTP_PROXY') or os.environ.get('http_proxy')
+    
+    if explicit:
+        proxy = explicit.strip()
+        print(f"使用 GOOGLE_SCHOLAR_PROXY: {proxy}")
+        return {'http': proxy, 'https': proxy}
+    
+    proxies = {}
+    if http_proxy:
+        proxies['http'] = http_proxy.strip()
+    if https_proxy:
+        proxies['https'] = https_proxy.strip()
+    
+    if proxies:
+        print(f"检测到代理设置: {proxies}")
+        return proxies
+    
+    return {'http': None, 'https': None}
 
 def get_fallback_data(scholar_id):
     """当无法获取真实数据时，使用基于真实论文信息的模拟数据"""
@@ -107,11 +139,7 @@ def get_scholar_stats(scholar_id, max_retries=2):
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36',
     }
     
-    # 禁用代理
-    proxies = {
-        'http': None,
-        'https': None,
-    }
+    proxies = resolve_proxies()
     
     for attempt in range(max_retries + 1):
         try:
@@ -252,6 +280,4 @@ def main():
         return 1
 
 if __name__ == "__main__":
-    # 导入time模块
-    import time
     sys.exit(main())
