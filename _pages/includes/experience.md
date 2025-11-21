@@ -95,7 +95,7 @@
     <div>
       <p class="company-name">Tencent Interactive Entertainment Group (IEG)</p>
       <p class="position-info">Qingyun Program Intern</p>
-      <p class="location">📍 Shanghai · Aug 2025 - Present</p>
+      <p class="location">📍 Shanghai · Aug 2025 - Dec 2025</p>
     </div>
   </div>
   
