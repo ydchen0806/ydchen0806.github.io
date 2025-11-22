@@ -91,7 +91,7 @@
 <div id="work-section" markdown="1">
 
 - <div class="company-header">
-    <img src="/images/X-humanoid.png" alt="Beijing Humanoid Robot Innovation Center Logo" width="60"/>
+    <img src="/images/X-humanoid.png" alt="Beijing Humanoid Robot Innovation Center Logo" width="96"/>
     <div>
       <p class="company-name"><a href="https://www.x-humanoid.com/">Beijing Humanoid Robot Innovation Center</a></p>
       <p class="position-info">Core Member, Embodied Intelligence World Model Algorithm Team</p>
@@ -103,9 +103,9 @@
   - Developing advanced algorithms for humanoid robot perception and decision-making
 
 - <div class="company-header">
-    <img src="/images/tencent.png" alt="Tencent Logo" width="60"/>
+    <img src="/images/tencent.png" alt="Tencent Logo" width="96"/>
     <div>
-      <p class="company-name">Tencent Interactive Entertainment Group (IEG)</p>
+      <p class="company-name"><a href="https://ieg.tencent.com/">Tencent Interactive Entertainment Group (IEG)</a></p>
       <p class="position-info">Qingyun Program Intern</p>
       <p class="location">📍 Shanghai · Aug 2025 - Dec 2025</p>
     </div>
