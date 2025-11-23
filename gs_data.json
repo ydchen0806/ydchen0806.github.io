@@ -1,7 +1,7 @@
 {
   "name": "Yinda Chen",
-  "citedby": 425,
-  "citedby5y": 422,
+  "citedby": 430,
+  "citedby5y": 427,
   "hindex": 9,
   "hindex5y": 9,
   "i10index": 9,
@@ -15,7 +15,7 @@
     "Image Processing"
   ],
   "homepage": "https://ydchen0806.github.io/",
-  "updated": "2025-11-21 01:47:00.030433",
+  "updated": "2025-11-23 01:52:43.427253",
   "publications": {
     "pub1": {
       "title": "EMPOWER: Evolutionary Medical Prompt Optimization With Reinforcement Learning",
