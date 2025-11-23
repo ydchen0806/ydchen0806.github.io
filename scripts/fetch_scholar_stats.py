@@ -127,15 +127,15 @@ def get_scholar_stats(scholar_id: str, retries: int = 3) -> Optional[int]:
 
         if data and data.get("citedby") is not None:
             citedby = int(data["citedby"])
-            print(f"✓ 成功获取引用数: {citedby} (数据源: {data.get('source')})")
+            print(f"[OK] 成功获取引用数: {citedby} (数据源: {data.get('source')})")
             return citedby
 
         if attempt < retries:
             wait_time = attempt * 5
-            print(f"✗ 获取失败，{wait_time} 秒后重试...")
+            print(f"[WARN] 获取失败，{wait_time} 秒后重试...")
             time.sleep(wait_time)
         else:
-            print("✗ 所有重试均失败")
+            print("[ERROR] 所有重试均失败")
 
     return None
 
@@ -161,21 +161,21 @@ def main():
     citations = get_scholar_stats(scholar_id)
 
     if citations is None:
-        print("\n❌ 错误: 无法获取统计信息")
+        print("\n[ERROR] 错误: 无法获取统计信息")
         print("脚本将以错误代码退出")
         sys.exit(1)
 
     output_file = Path("gs_data.json")
     try:
         dump_badge(citations, output_file)
-        print(f"\n✓ 统计信息已成功保存到 {output_file}")
-        print(f"✓ 总引用数: {citations}")
+        print(f"\n[OK] 统计信息已成功保存到 {output_file}")
+        print(f"[OK] 总引用数: {citations}")
         print("=" * 50)
 
         saved_data = json.loads(output_file.read_text(encoding="utf-8"))
-        print(f"✓ 文件验证成功: {saved_data}")
+        print(f"[OK] 文件验证成功: {saved_data}")
     except Exception as exc:
-        print(f"\n❌ 保存文件时出错: {exc}")
+        print(f"\n[ERROR] 保存文件时出错: {exc}")
         sys.exit(1)
 
 if __name__ == "__main__":
