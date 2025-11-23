@@ -52,8 +52,8 @@ jobs:
       - name: Update google-scholar-stats branch
         run: |
           # 配置 Git
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git config --global user.name "github-actions[bot]"
+          git config --global user.email "ydchen0806@gmail.com"
+          git config --global user.name "ydchen0806"
           
           # 保存生成的文件到临时目录
           mkdir -p /tmp/scholar_data
