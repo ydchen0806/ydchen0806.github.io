@@ -1,4 +1,4 @@
-# 💼 Professional Experience
+![1763862184268](image/experience/1763862184268.png)![1763862187466](image/experience/1763862187466.png)![1763862269913](image/experience/1763862269913.png)# 💼 Professional Experience
 
 <style>
 /* Work Experience section styles */
@@ -125,7 +125,7 @@
     </div>
   </div>
   
-  - Collaborated with Academician [Qionghai Dai](https://scholar.google.com/citations?user=CHAajY4AAAAJ&hl=en&oi=ao)'s team on efficient data compression research
+  - Collaborated with Academician [Qionghai Dai](https://scholar.google.com/citations?user=CHAajY4AAAAJ&hl=en&oi=ao) (CAE Academician, IEEE Fellow)'s team on efficient data compression research
   - Designed image-specific compression algorithms for various data modalities
   - Achieved 35% improvement in compression efficiency
 

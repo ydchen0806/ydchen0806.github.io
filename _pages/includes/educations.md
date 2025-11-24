@@ -100,7 +100,7 @@
   </div>
   
   - Research focus: Machine Learning Theory, Self-Supervised Pretraining, Multimodal Large Models, Image Coding & Compression
-  - Working with [Prof. Feng Wu](https://scholar.google.com/citations?user=5bInRDEAAAAJ&hl=en) (IEEE Fellow) and [Prof. Zhiwei Xiong](https://scholar.google.com/citations?user=Snl0HPEAAAAJ&hl=en&oi=ao)
+  - Working with [Prof. Feng Wu](https://scholar.google.com/citations?user=5bInRDEAAAAJ&hl=en) (CAE Academician, IEEE Fellow) and [Prof. Zhiwei Xiong](https://scholar.google.com/citations?user=Snl0HPEAAAAJ&hl=en&oi=ao)
   - Research collaboration with [Prof. Xiaoou Tang](https://scholar.google.com/citations?user=qpBtpGsAAAAJ&hl=en) (IEEE Fellow) at Shanghai AI Lab
   - Selected coursework: Algorithm Design and Analysis, Statistical Learning, Deep Learning, Reinforcement Learning
   - Principal Investigator for NSFC Ph.D. Project (2024)
