@@ -125,7 +125,7 @@
     </div>
   </div>
   
-  - Collaborated with Academician [Qionghai Dai](https://scholar.google.com/citations?user=CHAajY4AAAAJ&hl=en&oi=ao) (CAE Academician, IEEE Fellow)'s team on efficient data compression research
+  - Collaborated with [Prof. Qionghai Dai](https://scholar.google.com/citations?user=CHAajY4AAAAJ&hl=en&oi=ao) (CAE Academician, IEEE Fellow)'s team on efficient data compression research
   - Designed image-specific compression algorithms for various data modalities
   - Achieved 35% improvement in compression efficiency
 
