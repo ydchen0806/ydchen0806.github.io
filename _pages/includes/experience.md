@@ -1,4 +1,4 @@
-![1763862184268](image/experience/1763862184268.png)![1763862187466](image/experience/1763862187466.png)![1763862269913](image/experience/1763862269913.png)# 💼 Professional Experience
+# 💼 Professional Experience
 
 <style>
 /* Work Experience section styles */
