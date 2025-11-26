@@ -192,20 +192,10 @@ def get_scholar_stats(scholar_id, max_retries=2):
                         print("[OK] 成功获取真实数据")
                         return author_data
                 
-                # 如果解析失败，返回基本信息
-                author_data = {
-                    'name': name,
-                    'citedby': 0,
-                    'hindex': 0,
-                    'i10index': 0,
-                    'updated': str(datetime.now()),
-                    'publications': {},
-                    'source': 'partial_data',
-                    'note': '仅获取到姓名，无法获取统计信息'
-                }
-                
-                print("[WARNING] 仅获取到部分数据")
-                return author_data
+                # 如果解析失败，无法获取统计信息，直接使用保底数据
+                print("[WARNING] 仅获取到姓名，无法获取统计信息")
+                print("页面结构可能已改变，使用保底数据")
+                break  # 跳出循环，直接使用保底数据
             
         except Exception as e:
             print(f"尝试 {attempt + 1} 失败: {e}")
