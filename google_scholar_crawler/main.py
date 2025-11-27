@@ -65,7 +65,7 @@ def main():
             # 使用基于真实数据的模拟数据
             author = {
                 'name': 'Yinda Chen',
-                'citedby': 432,  # 真实总引用数
+                'citedby': 435,  # 真实总引用数
                 'citedby5y': 429,  # 自2020年引用数
                 'hindex': 9,    # 真实h-index
                 'hindex5y': 9,  # 自2020年h-index
@@ -86,7 +86,7 @@ def main():
             # 使用基于真实数据的模拟数据
             author = {
                 'name': 'Yinda Chen',
-                'citedby': 432,  # 真实总引用数
+                'citedby': 435,  # 真实总引用数
                 'citedby5y': 429,  # 自2020年引用数
                 'hindex': 9,    # 真实h-index
                 'hindex5y': 9,  # 自2020年h-index
