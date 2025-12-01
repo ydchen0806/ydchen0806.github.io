@@ -49,7 +49,7 @@ def get_fallback_data(scholar_id):
     mock_data = {
         'hCvlj5cAAAAJ': {  # Yinda Chen的真实ID
             'name': 'Yinda Chen',
-            'citedby': 435,  # 真实总引用数
+            'citedby': 450,  # 真实总引用数
             'citedby5y': 429,  # 自2020年引用数
             'hindex': 9,    # 真实h-index
             'hindex5y': 9,  # 自2020年h-index
