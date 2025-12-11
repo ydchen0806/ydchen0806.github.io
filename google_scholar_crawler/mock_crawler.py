@@ -11,7 +11,7 @@ def create_mock_data():
     """创建基于真实Google Scholar数据的模拟数据"""
     return {
         'name': 'Yinda Chen',
-        'citedby': 450,  # 真实总引用数
+        'citedby': 436,  # 真实总引用数
         'citedby5y': 429,  # 自2020年引用数
         'hindex': 9,    # 真实h-index
         'hindex5y': 9,  # 自2020年h-index
