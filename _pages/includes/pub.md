@@ -360,7 +360,7 @@ This paper presents BIMCV-R, a 3D CT text-image retrieval dataset, and MedFinder
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge-conference">ICASSP 2024</div><div class="badge-ccf badge-ccf-b">CCF B</div><img src='images/ICASSP24.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-> [Learning multiscale consistency for self-supervised electron microscopy instance segmentation](https://arxiv.org/pdf/2308.09917) <span class="research-tags"><span class="research-tag">Computer Vision</span><span class="research-tag">Pretraining Methods</span></span> \\
+> [Learning multiscale consistency for self-supervised electron microscopy instance segmentation](https://arxiv.org/pdf/2308.09917) [![](https://img.shields.io/badge/citations-34-blue?logo=google-scholar&logoColor=white&style=flat-square)](https://scholar.google.com/citations?user=hCvlj5cAAAAJ) <span class="research-tags"><span class="research-tag">Computer Vision</span><span class="research-tag">Pretraining Methods</span></span> \\
   ICASSP | April 13, 2024 \\
   **Yinda Chen**; Wei Huang; Xiaoyu Liu; Shiyu Deng; Qi Chen; Zhiwei Xiong
 
