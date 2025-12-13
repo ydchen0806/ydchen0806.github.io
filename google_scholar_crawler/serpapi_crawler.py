@@ -7,6 +7,8 @@ SerpAPI 提供免费额度（每月100次），非常稳定可靠
 1. 从 SerpAPI 获取真实的 Google Scholar 数据
 2. 自动更新保底数据（当成功获取真实数据时）
 3. 生成 shields.io 徽章数据
+4. 生成引用趋势 SVG 图
+5. 获取一作论文列表及其引用数
 
 注册获取 API Key: https://serpapi.com/ (免费注册)
 """
@@ -34,6 +36,14 @@ FALLBACK_DATA = {
     "affiliation": "University of Science and Technology of China",
     "interests": ["Computer Vision", "Self-Supervised Learning", "Multimodal Learning"],
 }
+
+# 作者姓名变体（用于匹配一作）
+AUTHOR_NAME_VARIANTS = [
+    "Yinda Chen",
+    "Y Chen",
+    "YD Chen",
+    "陈胤达",
+]
 # =====================================================
 
 
@@ -128,6 +138,185 @@ def get_scholar_stats_serpapi(scholar_id: str, api_key: str) -> dict:
         return None
 
 
+def get_articles_serpapi(scholar_id: str, api_key: str, num_articles: int = 100) -> list:
+    """
+    获取作者的论文列表
+    """
+    print(f"[SerpAPI] 正在获取论文列表...")
+    
+    url = "https://serpapi.com/search.json"
+    params = {
+        "engine": "google_scholar_author",
+        "author_id": scholar_id,
+        "api_key": api_key,
+        "hl": "en",
+        "num": num_articles,
+        "sort": "cited"  # 按引用数排序
+    }
+    
+    try:
+        response = requests.get(url, params=params, timeout=30)
+        response.raise_for_status()
+        data = response.json()
+        
+        if "error" in data:
+            print(f"[SerpAPI] API 错误: {data['error']}")
+            return []
+        
+        articles = data.get("articles", [])
+        print(f"[SerpAPI] 获取到 {len(articles)} 篇论文")
+        return articles
+        
+    except Exception as e:
+        print(f"[SerpAPI] 获取论文失败: {e}")
+        return []
+
+
+def is_first_author(authors_str: str, name_variants: list) -> bool:
+    """
+    判断是否为一作（包括共同一作）
+    """
+    if not authors_str:
+        return False
+    
+    # 获取第一作者（逗号分隔的第一个）
+    first_author = authors_str.split(",")[0].strip()
+    
+    # 检查是否包含任何姓名变体
+    for variant in name_variants:
+        if variant.lower() in first_author.lower():
+            return True
+        # 也检查整个作者列表中是否有标注共同一作（*）
+        if f"{variant}*" in authors_str or f"*{variant}" in authors_str:
+            return True
+    
+    return False
+
+
+def filter_first_author_papers(articles: list, name_variants: list) -> list:
+    """
+    筛选一作论文
+    """
+    first_author_papers = []
+    
+    for article in articles:
+        authors = article.get("authors", "")
+        title = article.get("title", "")
+        
+        if is_first_author(authors, name_variants):
+            first_author_papers.append({
+                "title": title,
+                "authors": authors,
+                "year": article.get("year", ""),
+                "citations": article.get("cited_by", {}).get("value", 0),
+                "link": article.get("link", ""),
+                "citation_id": article.get("citation_id", "")
+            })
+    
+    print(f"[筛选] 找到 {len(first_author_papers)} 篇一作论文")
+    return first_author_papers
+
+
+def generate_citation_trend_svg(citation_graph: list, output_path: str):
+    """
+    生成引用趋势 SVG 图
+    """
+    if not citation_graph:
+        print("[SVG] 没有引用趋势数据")
+        return
+    
+    # 提取年份和引用数
+    years = [item.get("year", 0) for item in citation_graph]
+    citations = [item.get("citations", 0) for item in citation_graph]
+    
+    if not years or not citations:
+        return
+    
+    # SVG 尺寸
+    width = 600
+    height = 200
+    padding = 50
+    chart_width = width - 2 * padding
+    chart_height = height - 2 * padding
+    
+    # 计算比例
+    max_citations = max(citations) if citations else 1
+    x_step = chart_width / (len(years) - 1) if len(years) > 1 else chart_width
+    y_scale = chart_height / max_citations if max_citations > 0 else 1
+    
+    # 生成折线点
+    points = []
+    for i, (year, cite) in enumerate(zip(years, citations)):
+        x = padding + i * x_step
+        y = height - padding - cite * y_scale
+        points.append(f"{x},{y}")
+    
+    polyline_points = " ".join(points)
+    
+    # 生成 SVG
+    svg = f'''<?xml version="1.0" encoding="UTF-8"?>
+<svg width="{width}" height="{height}" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#667eea;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#667eea;stop-opacity:0.1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- 背景 -->
+  <rect width="{width}" height="{height}" fill="#ffffff" rx="10"/>
+  
+  <!-- 标题 -->
+  <text x="{width/2}" y="25" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#333">
+    📈 Citation Trend
+  </text>
+  
+  <!-- 网格线 -->
+  <g stroke="#e0e0e0" stroke-width="1">
+'''
+    
+    # 添加水平网格线
+    for i in range(5):
+        y = padding + i * chart_height / 4
+        svg += f'    <line x1="{padding}" y1="{y}" x2="{width-padding}" y2="{y}"/>\n'
+    
+    svg += '  </g>\n\n'
+    
+    # 添加填充区域
+    fill_points = f"{padding},{height-padding} " + polyline_points + f" {width-padding},{height-padding}"
+    svg += f'  <!-- 填充区域 -->\n'
+    svg += f'  <polygon points="{fill_points}" fill="url(#gradient)"/>\n\n'
+    
+    # 添加折线
+    svg += f'  <!-- 折线 -->\n'
+    svg += f'  <polyline points="{polyline_points}" fill="none" stroke="#667eea" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>\n\n'
+    
+    # 添加数据点和标签
+    svg += '  <!-- 数据点 -->\n'
+    for i, (year, cite) in enumerate(zip(years, citations)):
+        x = padding + i * x_step
+        y = height - padding - cite * y_scale
+        
+        # 数据点
+        svg += f'  <circle cx="{x}" cy="{y}" r="5" fill="#667eea" stroke="#fff" stroke-width="2"/>\n'
+        
+        # 年份标签（只显示部分年份避免重叠）
+        if i % 2 == 0 or i == len(years) - 1:
+            svg += f'  <text x="{x}" y="{height-padding+20}" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#666">{year}</text>\n'
+        
+        # 引用数标签（只显示最后一个）
+        if i == len(years) - 1:
+            svg += f'  <text x="{x}" y="{y-15}" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#667eea">{cite}</text>\n'
+    
+    svg += '</svg>'
+    
+    # 保存文件
+    with open(output_path, "w", encoding="utf-8") as f:
+        f.write(svg)
+    
+    print(f"[SVG] 引用趋势图已保存到 {output_path}")
+
+
 def update_fallback_in_script(citations: int, hindex: int, i10index: int):
     """
     自动更新本脚本中的保底数据
@@ -189,6 +378,7 @@ def main():
     print("=" * 60)
     
     author_data = None
+    first_author_papers = []
     
     # 尝试使用 SerpAPI
     if serpapi_key:
@@ -202,6 +392,15 @@ def main():
                 author_data["hindex"],
                 author_data["i10index"]
             )
+            
+            # 获取论文列表
+            print("\n[2] 获取论文列表...")
+            articles = get_articles_serpapi(scholar_id, serpapi_key)
+            
+            # 筛选一作论文
+            if articles:
+                first_author_papers = filter_first_author_papers(articles, AUTHOR_NAME_VARIANTS)
+                author_data["first_author_papers"] = first_author_papers
     else:
         print("\n[WARNING] SERPAPI_KEY 未设置，跳过 SerpAPI")
         print("  请在 GitHub Secrets 中设置 SERPAPI_KEY")
@@ -209,7 +408,7 @@ def main():
     
     # 如果 SerpAPI 失败，使用保底数据
     if not author_data:
-        print("\n[2] 使用保底数据...")
+        print("\n[3] 使用保底数据...")
         author_data = get_fallback_data()
     
     # 保存结果
@@ -256,6 +455,24 @@ def main():
         json.dump(i10index_data, f, ensure_ascii=False, indent=2)
     print("[OK] I10-Index 徽章已保存到 results/gs_i10index.json")
     
+    # 生成引用趋势 SVG
+    if author_data.get("citation_graph"):
+        generate_citation_trend_svg(
+            author_data["citation_graph"],
+            "results/citation_trend.svg"
+        )
+    
+    # 保存一作论文列表
+    if first_author_papers:
+        with open("results/first_author_papers.json", "w", encoding="utf-8") as f:
+            json.dump(first_author_papers, f, ensure_ascii=False, indent=2)
+        print(f"[OK] 一作论文列表已保存到 results/first_author_papers.json ({len(first_author_papers)} 篇)")
+        
+        # 打印一作论文摘要
+        print("\n一作论文列表:")
+        for i, paper in enumerate(first_author_papers[:10], 1):  # 只显示前10篇
+            print(f"  {i}. [{paper['citations']} 引用] {paper['title'][:60]}...")
+    
     # 输出摘要
     print("\n" + "=" * 60)
     print("统计摘要:")
@@ -263,6 +480,7 @@ def main():
     print(f"  引用数: {author_data['citedby']}")
     print(f"  h-index: {author_data['hindex']}")
     print(f"  i10-index: {author_data['i10index']}")
+    print(f"  一作论文数: {len(first_author_papers)}")
     print(f"  数据源: {author_data['source']}")
     print(f"  更新时间: {author_data['updated']}")
     print("=" * 60)
