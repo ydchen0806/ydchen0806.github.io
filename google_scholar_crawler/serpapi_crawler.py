@@ -9,6 +9,8 @@ SerpAPI 提供免费额度（每月100次），非常稳定可靠
 3. 生成 shields.io 徽章数据
 4. 生成引用趋势 SVG 图
 5. 获取一作论文列表及其引用数
+6. 筛选高引用论文（>50）生成徽章数据
+7. 筛选符合条件的一作论文，提取研究方向关键词
 
 注册获取 API Key: https://serpapi.com/ (免费注册)
 """
@@ -18,12 +20,26 @@ import re
 import sys
 from datetime import datetime
 from pathlib import Path
+from collections import Counter
 
 try:
     import requests
 except ImportError:
     print("请安装 requests: pip install requests")
     sys.exit(1)
+
+# 导入会议/期刊等级配置
+try:
+    from venue_config import is_qualified_venue, get_venue_level
+except ImportError:
+    # 如果无法导入，定义简单版本
+    def is_qualified_venue(venue_name):
+        qualified = ['AAAI', 'NeurIPS', 'ICML', 'ICLR', 'CVPR', 'ICCV', 'ECCV', 
+                     'ACL', 'EMNLP', 'IJCAI', 'MICCAI', 'TMI', 'TPAMI', 'TIP',
+                     'TCSVT', 'JBHI', 'Medical Image Analysis']
+        return any(q.upper() in venue_name.upper() for q in qualified)
+    def get_venue_level(venue_name):
+        return (None, None)
 
 
 # ==================== 保底数据配置 ====================
@@ -215,6 +231,124 @@ def filter_first_author_papers(articles: list, name_variants: list) -> list:
     
     print(f"[筛选] 找到 {len(first_author_papers)} 篇一作论文")
     return first_author_papers
+
+
+def extract_research_keywords(title: str) -> list:
+    """
+    从论文标题中提取研究方向关键词
+    """
+    # 关键词映射表
+    keyword_patterns = {
+        'Multimodal Learning': ['multimodal', 'multi-modal', 'vision-language', 'cross-modal'],
+        'Self-Supervised Learning': ['self-supervised', 'self supervised', 'pretraining', 'pretrain', 'contrastive'],
+        'Computer Vision': ['vision', 'visual', 'image segmentation', 'object detection', 'semantic'],
+        'Image Compression': ['compression', 'coding', 'latent', 'entropy'],
+        'Domain Adaptation': ['domain adaptation', 'unsupervised domain', 'transfer learning'],
+        'Medical Imaging': ['medical', 'clinical', 'biomedical', 'health', 'CT', 'MRI', 'X-ray'],
+        'Deep Learning': ['deep learning', 'neural network', 'transformer', 'attention'],
+        'Generative Models': ['generative', 'generation', 'diffusion', 'GAN', 'VAE'],
+        'Reinforcement Learning': ['reinforcement', 'RL', 'policy', 'reward'],
+        'Natural Language Processing': ['language', 'NLP', 'text', 'speech', 'TTS'],
+        'Representation Learning': ['representation', 'embedding', 'feature learning'],
+        'Data-Centric AI': ['synthetic data', 'data generation', 'dataset', 'annotation'],
+        'Embodied AI': ['embodied', 'robot', 'humanoid', 'manipulation'],
+        '3D Vision': ['3D', 'point cloud', 'depth', 'volumetric', 'NeRF'],
+    }
+    
+    title_lower = title.lower()
+    found_keywords = []
+    
+    for keyword, patterns in keyword_patterns.items():
+        for pattern in patterns:
+            if pattern.lower() in title_lower:
+                found_keywords.append(keyword)
+                break
+    
+    return found_keywords
+
+
+def filter_qualified_papers(papers: list, years_limit: int = 3) -> list:
+    """
+    筛选符合条件的论文：
+    - 3年内
+    - CCF B及以上 或 SCI 二区及以上
+    """
+    current_year = datetime.now().year
+    min_year = current_year - years_limit
+    
+    qualified = []
+    for paper in papers:
+        year = paper.get('year', '')
+        try:
+            paper_year = int(year) if year else 0
+        except ValueError:
+            paper_year = 0
+        
+        # 检查年份
+        if paper_year < min_year:
+            continue
+        
+        # 从标题或其他信息推断会议/期刊
+        # 注意：SerpAPI 返回的数据可能没有会议名称，需要从 pub.md 匹配
+        title = paper.get('title', '')
+        
+        # 暂时保留所有近3年的论文，后续可以通过标题匹配 pub.md 来过滤
+        paper['keywords'] = extract_research_keywords(title)
+        qualified.append(paper)
+    
+    return qualified
+
+
+def generate_research_keywords_json(papers: list, output_path: str):
+    """
+    从论文标题生成研究方向关键词 JSON
+    """
+    all_keywords = []
+    
+    for paper in papers:
+        keywords = paper.get('keywords', [])
+        if not keywords:
+            keywords = extract_research_keywords(paper.get('title', ''))
+        all_keywords.extend(keywords)
+    
+    # 统计关键词频率
+    keyword_counts = Counter(all_keywords)
+    
+    # 转换为权重（1-5）
+    max_count = max(keyword_counts.values()) if keyword_counts else 1
+    
+    keywords_data = []
+    for keyword, count in keyword_counts.most_common(12):  # 取前12个
+        weight = max(2, min(5, round((count / max_count) * 5)))
+        keywords_data.append({
+            'keyword': keyword,
+            'count': count,
+            'weight': weight
+        })
+    
+    # 保存 JSON
+    with open(output_path, 'w', encoding='utf-8') as f:
+        json.dump(keywords_data, f, ensure_ascii=False, indent=2)
+    
+    print(f"[OK] 研究方向关键词已保存到 {output_path}")
+    return keywords_data
+
+
+def filter_high_cited_papers(papers: list, min_citations: int = 50) -> list:
+    """
+    筛选高引用论文（>= min_citations）
+    """
+    high_cited = []
+    for paper in papers:
+        citations = paper.get('citations', 0)
+        if citations >= min_citations:
+            high_cited.append(paper)
+    
+    # 按引用数降序排列
+    high_cited.sort(key=lambda x: x.get('citations', 0), reverse=True)
+    
+    print(f"[筛选] 找到 {len(high_cited)} 篇高引用论文 (>={min_citations})")
+    return high_cited
 
 
 def generate_citation_trend_svg(citation_graph: list, output_path: str):
@@ -467,6 +601,23 @@ def main():
         with open("results/first_author_papers.json", "w", encoding="utf-8") as f:
             json.dump(first_author_papers, f, ensure_ascii=False, indent=2)
         print(f"[OK] 一作论文列表已保存到 results/first_author_papers.json ({len(first_author_papers)} 篇)")
+        
+        # 筛选高引用论文 (>=50)
+        high_cited_papers = filter_high_cited_papers(first_author_papers, min_citations=50)
+        if high_cited_papers:
+            with open("results/high_cited_papers.json", "w", encoding="utf-8") as f:
+                json.dump(high_cited_papers, f, ensure_ascii=False, indent=2)
+            print(f"[OK] 高引用论文已保存到 results/high_cited_papers.json ({len(high_cited_papers)} 篇)")
+        
+        # 筛选近3年符合条件的论文
+        qualified_papers = filter_qualified_papers(first_author_papers, years_limit=3)
+        if qualified_papers:
+            with open("results/qualified_papers.json", "w", encoding="utf-8") as f:
+                json.dump(qualified_papers, f, ensure_ascii=False, indent=2)
+            print(f"[OK] 符合条件的论文已保存到 results/qualified_papers.json ({len(qualified_papers)} 篇)")
+            
+            # 生成研究方向关键词
+            generate_research_keywords_json(qualified_papers, "results/research_keywords.json")
         
         # 打印一作论文摘要
         print("\n一作论文列表:")

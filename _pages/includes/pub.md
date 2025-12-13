@@ -150,7 +150,70 @@ For a complete list of publications, please visit my [Google Scholar profile](ht
   border: 1px solid rgba(118, 75, 162, 0.2);
   white-space: nowrap;
 }
+
+/* 高引用徽章样式 */
+.citation-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 2px 8px;
+  font-size: 0.75em;
+  font-weight: 600;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #ff6b6b, #ee5a24);
+  color: white;
+  margin-left: 8px;
+  vertical-align: middle;
+  box-shadow: 0 2px 4px rgba(238, 90, 36, 0.3);
+}
+
+.citation-badge::before {
+  content: '🔥';
+  font-size: 0.9em;
+}
 </style>
+
+<script>
+// 自动为高引用论文添加引用数徽章
+window.addEventListener('load', function() {
+  // 从 GitHub 加载高引用论文数据
+  fetch('https://raw.githubusercontent.com/ydchen0806/ydchen0806.github.io/google-scholar-stats/high_cited_papers.json')
+    .then(response => response.ok ? response.json() : [])
+    .then(highCitedPapers => {
+      if (!highCitedPapers || highCitedPapers.length === 0) return;
+      
+      // 获取所有论文标题链接
+      const paperLinks = document.querySelectorAll('.paper-box-text a');
+      
+      paperLinks.forEach(link => {
+        const linkText = link.textContent.toLowerCase().trim();
+        
+        // 尝试匹配高引用论文
+        highCitedPapers.forEach(paper => {
+          const paperTitle = paper.title.toLowerCase();
+          
+          // 使用模糊匹配（标题前30个字符）
+          if (linkText.includes(paperTitle.substring(0, 30)) || 
+              paperTitle.includes(linkText.substring(0, 30))) {
+            
+            // 检查是否已经添加了徽章
+            if (!link.parentElement.querySelector('.citation-badge')) {
+              const badge = document.createElement('span');
+              badge.className = 'citation-badge';
+              badge.textContent = paper.citations + ' citations';
+              badge.title = 'Google Scholar citations (auto-updated)';
+              
+              // 插入到链接后面
+              link.insertAdjacentElement('afterend', badge);
+              console.log(`[Citations] Added badge to: ${paper.title.substring(0, 40)}...`);
+            }
+          }
+        });
+      });
+    })
+    .catch(err => console.log('[Citations] Could not load high cited papers data'));
+});
+</script>
 
 <div id="journal-articles" markdown="1">
 

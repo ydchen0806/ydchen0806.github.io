@@ -97,17 +97,30 @@
 <script>
 // 确保在页面完全加载后执行
 window.addEventListener('load', function() {
-  // 默认关键词（作为备选）
+  // 默认关键词（作为备选，当 API 数据不可用时使用）
   const defaultKeywords = [
     { keyword: 'Multimodal Learning', weight: 5 },
     { keyword: 'Self-Supervised Learning', weight: 5 },
     { keyword: 'Computer Vision', weight: 4 },
     { keyword: 'Image Compression', weight: 4 },
     { keyword: 'Domain Adaptation', weight: 4 },
-    { keyword: 'Deep Learning', weight: 3 },
-    { keyword: 'Representation Learning', weight: 3 },
-    { keyword: 'Reinforcement Learning', weight: 3 }
+    { keyword: 'Medical Imaging', weight: 3 },
+    { keyword: 'Generative Models', weight: 3 },
+    { keyword: 'Embodied AI', weight: 3 }
   ];
+  
+  // 尝试从 GitHub 加载自动生成的关键词
+  let autoKeywords = null;
+  fetch('https://raw.githubusercontent.com/ydchen0806/ydchen0806.github.io/google-scholar-stats/research_keywords.json')
+    .then(response => response.ok ? response.json() : null)
+    .then(data => {
+      if (data && data.length > 0) {
+        autoKeywords = data;
+        generateKeywordCloud();  // 重新生成词云
+        console.log('[Research Areas] 已加载自动生成的研究方向关键词');
+      }
+    })
+    .catch(err => console.log('[Research Areas] 使用默认关键词'));
 
   // 提取关键词
   function extractKeywords() {
@@ -158,7 +171,8 @@ window.addEventListener('load', function() {
     const keywordCloud = document.getElementById('keywordCloud');
     if (!keywordCloud) return;
 
-    const keywords = extractKeywords();
+    // 优先使用自动生成的关键词
+    const keywords = autoKeywords || extractKeywords();
     keywordCloud.innerHTML = keywords.map(item => 
       `<span class="keyword" data-weight="${item.weight}">${item.keyword}</span>`
     ).join('');
