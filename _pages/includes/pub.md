@@ -176,9 +176,8 @@ For a complete list of publications, please visit my [Google Scholar profile](ht
 </style>
 
 <script>
-// 自动为所有论文添加引用数徽章（从爬虫数据自动更新）
+// 自动更新所有 shields.io 引用徽章的数字（从爬虫数据）
 window.addEventListener('load', function() {
-  // 从 GitHub 加载一作论文数据
   fetch('https://raw.githubusercontent.com/ydchen0806/ydchen0806.github.io/google-scholar-stats/first_author_papers.json')
     .then(response => response.ok ? response.json() : [])
     .then(allPapers => {
@@ -187,22 +186,16 @@ window.addEventListener('load', function() {
         return;
       }
       
-      console.log(`[Citations] Loaded ${allPapers.length} papers`);
+      console.log(`[Citations] Loaded ${allPapers.length} papers for auto-update`);
       
       // 获取所有论文容器
       const paperBoxes = document.querySelectorAll('.paper-box-text');
       
       paperBoxes.forEach(box => {
-        // 检查是否已有手动添加的引用徽章（shields.io）
-        if (box.innerHTML.includes('img.shields.io/badge/citations')) {
-          return; // 跳过已有徽章的论文
-        }
-        
-        // 只获取第一个链接（论文标题链接，排除 Code/Dataset 等链接）
+        // 找论文标题链接
         const allLinks = box.querySelectorAll('a');
         let titleLink = null;
         
-        // 找到第一个看起来像论文标题的链接
         for (let link of allLinks) {
           const text = link.textContent.trim();
           if (text.length > 20 && 
@@ -236,20 +229,19 @@ window.addEventListener('load', function() {
             if (linkWords.has(word)) matchCount++;
           }
           
-          // 如果超过50%的关键词匹配，认为是同一篇论文
-          if (paperWords.length > 0 && matchCount / paperWords.length > 0.5) {
-            // 检查是否已经添加了徽章
-            if (!box.querySelector('.citation-badge')) {
-              const badge = document.createElement('span');
-              badge.className = 'citation-badge';
-              badge.textContent = paper.citations + ' citations';
-              badge.title = 'Google Scholar citations (auto-updated)';
-              
-              // 插入到标题链接后面
-              titleLink.insertAdjacentElement('afterend', badge);
-              console.log(`[Citations] Matched: "${paper.title.substring(0, 40)}..." with ${paper.citations} citations`);
+          // 如果超过40%的关键词匹配，认为是同一篇论文
+          if (paperWords.length > 0 && matchCount / paperWords.length > 0.4) {
+            // 找到已有的 shields.io 引用徽章并更新数字
+            const badgeImg = box.querySelector('img[src*="img.shields.io/badge/citations"]');
+            if (badgeImg && paper.citations !== undefined) {
+              const oldSrc = badgeImg.src;
+              const newSrc = oldSrc.replace(/citations-\d+-blue/, `citations-${paper.citations}-blue`);
+              if (oldSrc !== newSrc) {
+                badgeImg.src = newSrc;
+                console.log(`[Citations] Updated: "${paper.title.substring(0, 35)}..." → ${paper.citations}`);
+              }
             }
-            break; // 找到匹配后停止
+            break;
           }
         }
       });
@@ -265,7 +257,7 @@ window.addEventListener('load', function() {
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge-journal">IEEE JBHI</div><div class="badge-impact badge-q1">SCI Q1 | IF: 6.7</div><img src='images/JBHI25.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-> [EMPOWER: Evolutionary Medical Prompt Optimization With Reinforcement Learning](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11205280) <span class="research-tags"><span class="research-tag">Vision-Language</span><span class="research-tag">Multimodal Learning</span></span> \\
+> [EMPOWER: Evolutionary Medical Prompt Optimization With Reinforcement Learning](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11205280) [![](https://img.shields.io/badge/citations-0-blue?logo=google-scholar&logoColor=white&style=flat-square)](https://scholar.google.com/citations?user=hCvlj5cAAAAJ) <span class="research-tags"><span class="research-tag">Vision-Language</span><span class="research-tag">Multimodal Learning</span></span> \\
   IEEE Journal of Biomedical and Health Informatics | October 16, 2025 \\
   **Yinda Chen\***; Yangfan He\*; Jing Yang; Dapeng Zhang; Zhenlong Yuan; Muhammad Attique Khan; Jamel Baili; Por Lip Yee
 
@@ -297,7 +289,7 @@ The paper proposes an unsupervised domain adaptation method for EM image denoisi
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge-conference">ICCV Workshop 2025</div><img src='images/GTGM.png' alt="GTGM" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-[GTGM: Generative Text-Guided 3D Vision-Language Pretraining for Medical Image Segmentation](https://arxiv.org/abs/2404.00000) [![](https://img.shields.io/badge/citations-116-blue?logo=google-scholar&logoColor=white)](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&citation_for_view=hCvlj5cAAAAJ:NMxIlDl6LWMC) <span class="research-tags"><span class="research-tag">Vision-Language</span><span class="research-tag">Medical Imaging</span></span> \\
+[GTGM: Generative Text-Guided 3D Vision-Language Pretraining for Medical Image Segmentation](https://arxiv.org/abs/2404.00000) [![](https://img.shields.io/badge/citations-116-blue?logo=google-scholar&logoColor=white&style=flat-square)](https://scholar.google.com/citations?user=hCvlj5cAAAAJ) <span class="research-tags"><span class="research-tag">Vision-Language</span><span class="research-tag">Medical Imaging</span></span> \\
 ICCV Workshop | October 25, 2025 \\
 **Yinda Chen\***; Che Liu\*; Wei Huang; Xiaoyu Liu; Haoyuan Shi; Sibo Cheng; Rossella Arcucci; Zhiwei Xiong
 
@@ -311,7 +303,7 @@ GTGM extends Vision-Language Pretraining to 3D medical images by leveraging LLMs
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge-conference">ICCV 2025</div><div class="badge-ccf badge-ccf-a">CCF A</div><img src='images/ICCV25.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-[TokenUnify: Scaling Up Autoregressive Pretraining for Computer Vision](https://openaccess.thecvf.com/content/ICCV2025/papers/Chen_TokenUnify_Scaling_Up_Autoregressive_Pretraining_for_Neuron_Segmentation_ICCV_2025_paper.pdf) <span class="research-tags"><span class="research-tag">Computer Vision</span><span class="research-tag">Self-Supervised Learning</span></span> \\
+[TokenUnify: Scaling Up Autoregressive Pretraining for Computer Vision](https://openaccess.thecvf.com/content/ICCV2025/papers/Chen_TokenUnify_Scaling_Up_Autoregressive_Pretraining_for_Neuron_Segmentation_ICCV_2025_paper.pdf) [![](https://img.shields.io/badge/citations-28-blue?logo=google-scholar&logoColor=white&style=flat-square)](https://scholar.google.com/citations?user=hCvlj5cAAAAJ) <span class="research-tags"><span class="research-tag">Computer Vision</span><span class="research-tag">Self-Supervised Learning</span></span> \\
 ICCV | October 25, 2025 \\
 **Yinda Chen\***; Haoyuan Shi\*; Xiaoyu Liu; Te Shi; Ruobing Zhang; Dong Liu; Zhiwei Xiong; Feng Wu
 
@@ -325,7 +317,7 @@ TokenUnify proposes a hierarchical predictive coding framework for computer visi
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge-conference">ICML 2025</div><div class="badge-ccf badge-ccf-a">CCF A</div><img src='images/ICML25.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-[MaskTwins: Dual-form Complementary Masking for Domain-Adaptive Image Segmentation](https://openreview.net/pdf?id=9CpeZ8BzPO) <span class="research-tags"><span class="research-tag">Domain Adaptation</span><span class="research-tag">Pretraining Methods</span></span> \\
+[MaskTwins: Dual-form Complementary Masking for Domain-Adaptive Image Segmentation](https://openreview.net/pdf?id=9CpeZ8BzPO) [![](https://img.shields.io/badge/citations-2-blue?logo=google-scholar&logoColor=white&style=flat-square)](https://scholar.google.com/citations?user=hCvlj5cAAAAJ) <span class="research-tags"><span class="research-tag">Domain Adaptation</span><span class="research-tag">Pretraining Methods</span></span> \\
 ICML | July 13, 2025 \\
 Jiawen Wang; **Yinda Chen\*** (Theory Contribution & Project Leader); Xiaoyu Liu; Che Liu; Dong Liu; Jianqing Gao; Zhiwei Xiong
 
@@ -339,7 +331,7 @@ MaskTwins introduces a dual-form complementary masking strategy for domain-adapt
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge-conference">AAAI 2025</div><div class="badge-ccf badge-ccf-a">CCF A</div><img src='images/AAAI25.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-> [Condition-generation Latent Coding with an External Dictionary for Deep Image Compression](/docs/Condition_generation_Latent_Coding_with_an_External_Dictionary_for_Deep_Image_Compression.pdf) <span class="research-tags"><span class="research-tag">Image Compression</span></span> \\
+> [Condition-generation Latent Coding with an External Dictionary for Deep Image Compression](/docs/Condition_generation_Latent_Coding_with_an_External_Dictionary_for_Deep_Image_Compression.pdf) [![](https://img.shields.io/badge/citations-5-blue?logo=google-scholar&logoColor=white&style=flat-square)](https://scholar.google.com/citations?user=hCvlj5cAAAAJ) <span class="research-tags"><span class="research-tag">Image Compression</span></span> \\
   AAAI <span style="color:red">**(<font color="red">oral</font>)**</span> | March 06, 2025 \\
   Siqi Wu; **Yinda Chen\***; Dong Liu; Zhihai He
 
@@ -353,7 +345,7 @@ The paper proposes CLC for deep image compression. It uses a dictionary to gener
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge-conference">NeurIPS 2024</div><div class="badge-ccf badge-ccf-a">CCF A</div><img src='images/NeurIPS24.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-[MaskFactory: Towards High-quality Synthetic Data Generation for Dichotomous Image Segmentation](https://arxiv.org/pdf/2412.19080) <span class="research-tags"><span class="research-tag">Multimodal Learning</span></span> \\
+[MaskFactory: Towards High-quality Synthetic Data Generation for Dichotomous Image Segmentation](https://arxiv.org/pdf/2412.19080) [![](https://img.shields.io/badge/citations-20-blue?logo=google-scholar&logoColor=white&style=flat-square)](https://scholar.google.com/citations?user=hCvlj5cAAAAJ) <span class="research-tags"><span class="research-tag">Multimodal Learning</span></span> \\
 NeurIPS | October 17, 2024 \\
 Haotian Qian; **Yinda Chen\***; Shengtao Lou; Fahad Shahbaz Khan; Xiaogang Jin; Deng-Ping Fan
 
@@ -367,7 +359,7 @@ MaskFactory proposes a two-stage method to generate high-quality synthetic datas
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge-conference">MICCAI 2024</div><div class="badge-ccf badge-ccf-b">CCF B</div><img src='images/MICCAI24.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-[BIMCV-R: A Landmark Dataset for 3D CT Text-Image Retrieval](https://arxiv.org/pdf/2403.15992) [![](https://img.shields.io/badge/citations-62-blue?logo=google-scholar&logoColor=white)](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&citation_for_view=hCvlj5cAAAAJ:mVmsd5A6BfQC) <span class="research-tags"><span class="research-tag">Vision-Language</span><span class="research-tag">Multimodal Learning</span></span> \\
+[BIMCV-R: A Landmark Dataset for 3D CT Text-Image Retrieval](https://arxiv.org/pdf/2403.15992) [![](https://img.shields.io/badge/citations-62-blue?logo=google-scholar&logoColor=white&style=flat-square)](https://scholar.google.com/citations?user=hCvlj5cAAAAJ) <span class="research-tags"><span class="research-tag">Vision-Language</span><span class="research-tag">Multimodal Learning</span></span> \\
 MICCAI | October 06, 2024 \\
 **Yinda Chen**; Che Liu; Xiaoyu Liu; Rossella Arcucci; Zhiwei Xiong
 
@@ -381,7 +373,7 @@ This paper presents BIMCV-R, a 3D CT text-image retrieval dataset, and MedFinder
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge-conference">ICASSP 2024</div><div class="badge-ccf badge-ccf-b">CCF B</div><img src='images/ICASSP24.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-> [Learning multiscale consistency for self-supervised computer vision instance segmentation](https://arxiv.org/pdf/2308.09917) <span class="research-tags"><span class="research-tag">Computer Vision</span><span class="research-tag">Pretraining Methods</span></span> \\
+> [Learning multiscale consistency for self-supervised computer vision instance segmentation](https://arxiv.org/pdf/2308.09917) [![](https://img.shields.io/badge/citations-34-blue?logo=google-scholar&logoColor=white&style=flat-square)](https://scholar.google.com/citations?user=hCvlj5cAAAAJ) <span class="research-tags"><span class="research-tag">Computer Vision</span><span class="research-tag">Pretraining Methods</span></span> \\
   ICASSP | April 13, 2024 \\
   **Yinda Chen**; Wei Huang; Xiaoyu Liu; Shiyu Deng; Qi Chen; Zhiwei Xiong
 
@@ -395,7 +387,7 @@ This paper presents BIMCV-R, a 3D CT text-image retrieval dataset, and MedFinder
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge-conference">IJCAI 2023</div><div class="badge-ccf badge-ccf-a">CCF A</div><img src='images/ijcai2023.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-> [Self-Supervised Computer Vision with Multi-Agent Reinforcement Learning](https://www.ijcai.org/proceedings/2023/0068.pdf) <span class="research-tags"><span class="research-tag">Computer Vision</span><span class="research-tag">Self-Supervised Learning</span></span> \\
+> [Self-Supervised Computer Vision with Multi-Agent Reinforcement Learning](https://www.ijcai.org/proceedings/2023/0068.pdf) [![](https://img.shields.io/badge/citations-57-blue?logo=google-scholar&logoColor=white&style=flat-square)](https://scholar.google.com/citations?user=hCvlj5cAAAAJ) <span class="research-tags"><span class="research-tag">Computer Vision</span><span class="research-tag">Self-Supervised Learning</span></span> \\
   IJCAI <span style="color:red">**(<font color="red">oral</font>)**</span> | August 17, 2023 \\
   **Yinda Chen**; Wei Huang; Shenglong Zhou; Qi Chen; Zhiwei Xiong
 
