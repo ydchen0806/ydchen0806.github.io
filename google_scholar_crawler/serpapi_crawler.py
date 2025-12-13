@@ -351,9 +351,14 @@ def filter_high_cited_papers(papers: list, min_citations: int = 50) -> list:
     return high_cited
 
 
-def generate_citation_trend_svg(citation_graph: list, output_path: str):
+def generate_citation_trend_svg(citation_graph: list, output_path: str, total_citations: int = None):
     """
     生成引用趋势 SVG 图（显示累计引用数）
+    
+    Args:
+        citation_graph: SerpAPI 返回的每年引用数据
+        output_path: 输出文件路径
+        total_citations: 真实的总引用数（用于校准）
     """
     if not citation_graph:
         print("[SVG] 没有引用趋势数据")
@@ -368,10 +373,19 @@ def generate_citation_trend_svg(citation_graph: list, output_path: str):
     
     # 计算累计引用数
     cumulative_citations = []
-    total = 0
+    running_total = 0
     for cite in yearly_citations:
-        total += cite
-        cumulative_citations.append(total)
+        running_total += cite
+        cumulative_citations.append(running_total)
+    
+    # 如果提供了真实总引用数，校准最后一年的值
+    if total_citations and cumulative_citations:
+        # 计算差值，分配到各年（假设早期数据缺失）
+        diff = total_citations - cumulative_citations[-1]
+        if diff > 0:
+            # 将差值加到第一年之前（作为基础值）
+            cumulative_citations = [c + diff for c in cumulative_citations]
+            print(f"[SVG] 校准累计引用数: {cumulative_citations[-1] - diff} → {total_citations}")
     
     # SVG 尺寸（加宽以显示更多标签）
     width = 700
@@ -452,12 +466,14 @@ def generate_citation_trend_svg(citation_graph: list, output_path: str):
         if len(years) <= 12 or i % 2 == 0 or i == len(years) - 1:
             svg += f'  <text x="{x}" y="{height-padding_bottom+18}" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#666">{year}</text>\n'
         
-        # 累计引用数标签（显示关键点：第一个、最后一个、每隔几年）
-        show_label = (i == 0) or (i == len(years) - 1) or (i % 3 == 0 and len(years) > 6)
-        if show_label:
-            # 标签位置调整，避免重叠
+        # 每年都标注累计引用数（调整位置避免重叠）
+        # 奇数年份标签在上方，偶数年份标签在下方数据点旁边
+        if i % 2 == 0:
             label_y = y - 12 if y > padding_top + 30 else y + 20
-            svg += f'  <text x="{x}" y="{label_y}" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#4285f4">{cite}</text>\n'
+        else:
+            label_y = y + 18 if y < height - padding_bottom - 30 else y - 12
+        
+        svg += f'  <text x="{x}" y="{label_y}" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#4285f4">{cite}</text>\n'
     
     svg += '</svg>'
     
@@ -606,11 +622,12 @@ def main():
         json.dump(i10index_data, f, ensure_ascii=False, indent=2)
     print("[OK] I10-Index 徽章已保存到 results/gs_i10index.json")
     
-    # 生成引用趋势 SVG
+    # 生成引用趋势 SVG（传入真实总引用数进行校准）
     if author_data.get("citation_graph"):
         generate_citation_trend_svg(
             author_data["citation_graph"],
-            "results/citation_trend.svg"
+            "results/citation_trend.svg",
+            total_citations=author_data.get("citedby", 0)
         )
     
     # 保存一作论文列表
