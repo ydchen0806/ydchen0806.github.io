@@ -291,7 +291,7 @@ The paper proposes an unsupervised domain adaptation method for EM image denoisi
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge-conference">ICCV 2025</div><div class="badge-ccf badge-ccf-a">CCF A</div><img src='images/GTGM.png' alt="GTGM" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-[GTGM: Generative Text-Guided 3D Vision-Language Pretraining for Medical Image Segmentation](https://arxiv.org/abs/2404.00000) <span class="research-tags"><span class="research-tag">Vision-Language</span><span class="research-tag">Medical Imaging</span></span> \\
+[GTGM: Generative Text-Guided 3D Vision-Language Pretraining for Medical Image Segmentation](https://arxiv.org/abs/2404.00000) [![](https://img.shields.io/badge/citations-116-blue?logo=google-scholar&logoColor=white)](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&citation_for_view=hCvlj5cAAAAJ:NMxIlDl6LWMC) <span class="research-tags"><span class="research-tag">Vision-Language</span><span class="research-tag">Medical Imaging</span></span> \\
 ICCV | October 25, 2025 \\
 **Yinda Chen\***; Che Liu\*; Wei Huang; Xiaoyu Liu; Haoyuan Shi; Sibo Cheng; Rossella Arcucci; Zhiwei Xiong
 
@@ -361,7 +361,7 @@ MaskFactory proposes a two-stage method to generate high-quality synthetic datas
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge-conference">MICCAI 2024</div><div class="badge-ccf badge-ccf-b">CCF B</div><img src='images/MICCAI24.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-[BIMCV-R: A Landmark Dataset for 3D CT Text-Image Retrieval](https://arxiv.org/pdf/2403.15992) <span class="research-tags"><span class="research-tag">Vision-Language</span><span class="research-tag">Multimodal Learning</span></span> \\
+[BIMCV-R: A Landmark Dataset for 3D CT Text-Image Retrieval](https://arxiv.org/pdf/2403.15992) [![](https://img.shields.io/badge/citations-62-blue?logo=google-scholar&logoColor=white)](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&citation_for_view=hCvlj5cAAAAJ:mVmsd5A6BfQC) <span class="research-tags"><span class="research-tag">Vision-Language</span><span class="research-tag">Multimodal Learning</span></span> \\
 MICCAI | October 06, 2024 \\
 **Yinda Chen**; Che Liu; Xiaoyu Liu; Rossella Arcucci; Zhiwei Xiong
 
