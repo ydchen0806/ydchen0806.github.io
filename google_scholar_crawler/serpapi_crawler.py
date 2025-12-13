@@ -353,36 +353,46 @@ def filter_high_cited_papers(papers: list, min_citations: int = 50) -> list:
 
 def generate_citation_trend_svg(citation_graph: list, output_path: str):
     """
-    生成引用趋势 SVG 图
+    生成引用趋势 SVG 图（显示累计引用数）
     """
     if not citation_graph:
         print("[SVG] 没有引用趋势数据")
         return
     
-    # 提取年份和引用数
+    # 提取年份和每年新增引用数
     years = [item.get("year", 0) for item in citation_graph]
-    citations = [item.get("citations", 0) for item in citation_graph]
+    yearly_citations = [item.get("citations", 0) for item in citation_graph]
     
-    if not years or not citations:
+    if not years or not yearly_citations:
         return
     
-    # SVG 尺寸
-    width = 600
-    height = 200
-    padding = 50
-    chart_width = width - 2 * padding
-    chart_height = height - 2 * padding
+    # 计算累计引用数
+    cumulative_citations = []
+    total = 0
+    for cite in yearly_citations:
+        total += cite
+        cumulative_citations.append(total)
+    
+    # SVG 尺寸（加宽以显示更多标签）
+    width = 700
+    height = 250
+    padding_left = 60
+    padding_right = 50
+    padding_top = 50
+    padding_bottom = 50
+    chart_width = width - padding_left - padding_right
+    chart_height = height - padding_top - padding_bottom
     
     # 计算比例
-    max_citations = max(citations) if citations else 1
+    max_citations = max(cumulative_citations) if cumulative_citations else 1
     x_step = chart_width / (len(years) - 1) if len(years) > 1 else chart_width
     y_scale = chart_height / max_citations if max_citations > 0 else 1
     
     # 生成折线点
     points = []
-    for i, (year, cite) in enumerate(zip(years, citations)):
-        x = padding + i * x_step
-        y = height - padding - cite * y_scale
+    for i, (year, cite) in enumerate(zip(years, cumulative_citations)):
+        x = padding_left + i * x_step
+        y = height - padding_bottom - cite * y_scale
         points.append(f"{x},{y}")
     
     polyline_points = " ".join(points)
@@ -392,55 +402,62 @@ def generate_citation_trend_svg(citation_graph: list, output_path: str):
 <svg width="{width}" height="{height}" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" style="stop-color:#667eea;stop-opacity:0.8" />
-      <stop offset="100%" style="stop-color:#667eea;stop-opacity:0.1" />
+      <stop offset="0%" style="stop-color:#4285f4;stop-opacity:0.6" />
+      <stop offset="100%" style="stop-color:#4285f4;stop-opacity:0.05" />
     </linearGradient>
   </defs>
   
   <!-- 背景 -->
-  <rect width="{width}" height="{height}" fill="#ffffff" rx="10"/>
+  <rect width="{width}" height="{height}" fill="#fafafa" rx="10"/>
   
   <!-- 标题 -->
-  <text x="{width/2}" y="25" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#333">
-    📈 Citation Trend
+  <text x="{width/2}" y="30" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#333">
+    📈 Cumulative Citations (Total: {cumulative_citations[-1]})
   </text>
   
-  <!-- 网格线 -->
-  <g stroke="#e0e0e0" stroke-width="1">
+  <!-- Y轴标签 -->
+  <g font-family="Arial, sans-serif" font-size="10" fill="#888">
 '''
     
-    # 添加水平网格线
+    # Y轴刻度标签
     for i in range(5):
-        y = padding + i * chart_height / 4
-        svg += f'    <line x1="{padding}" y1="{y}" x2="{width-padding}" y2="{y}"/>\n'
+        y_pos = padding_top + i * chart_height / 4
+        y_val = int(max_citations * (4 - i) / 4)
+        svg += f'    <text x="{padding_left - 10}" y="{y_pos + 4}" text-anchor="end">{y_val}</text>\n'
+        svg += f'    <line x1="{padding_left}" y1="{y_pos}" x2="{width - padding_right}" y2="{y_pos}" stroke="#e0e0e0" stroke-width="1"/>\n'
     
     svg += '  </g>\n\n'
     
     # 添加填充区域
-    fill_points = f"{padding},{height-padding} " + polyline_points + f" {width-padding},{height-padding}"
+    first_x = padding_left
+    last_x = padding_left + (len(years) - 1) * x_step
+    fill_points = f"{first_x},{height-padding_bottom} " + polyline_points + f" {last_x},{height-padding_bottom}"
     svg += f'  <!-- 填充区域 -->\n'
     svg += f'  <polygon points="{fill_points}" fill="url(#gradient)"/>\n\n'
     
     # 添加折线
     svg += f'  <!-- 折线 -->\n'
-    svg += f'  <polyline points="{polyline_points}" fill="none" stroke="#667eea" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>\n\n'
+    svg += f'  <polyline points="{polyline_points}" fill="none" stroke="#4285f4" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>\n\n'
     
     # 添加数据点和标签
-    svg += '  <!-- 数据点 -->\n'
-    for i, (year, cite) in enumerate(zip(years, citations)):
-        x = padding + i * x_step
-        y = height - padding - cite * y_scale
+    svg += '  <!-- 数据点和标签 -->\n'
+    for i, (year, cite) in enumerate(zip(years, cumulative_citations)):
+        x = padding_left + i * x_step
+        y = height - padding_bottom - cite * y_scale
         
         # 数据点
-        svg += f'  <circle cx="{x}" cy="{y}" r="5" fill="#667eea" stroke="#fff" stroke-width="2"/>\n'
+        svg += f'  <circle cx="{x}" cy="{y}" r="5" fill="#4285f4" stroke="#fff" stroke-width="2"/>\n'
         
-        # 年份标签（只显示部分年份避免重叠）
-        if i % 2 == 0 or i == len(years) - 1:
-            svg += f'  <text x="{x}" y="{height-padding+20}" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#666">{year}</text>\n'
+        # 年份标签（X轴）
+        if len(years) <= 12 or i % 2 == 0 or i == len(years) - 1:
+            svg += f'  <text x="{x}" y="{height-padding_bottom+18}" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#666">{year}</text>\n'
         
-        # 引用数标签（只显示最后一个）
-        if i == len(years) - 1:
-            svg += f'  <text x="{x}" y="{y-15}" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#667eea">{cite}</text>\n'
+        # 累计引用数标签（显示关键点：第一个、最后一个、每隔几年）
+        show_label = (i == 0) or (i == len(years) - 1) or (i % 3 == 0 and len(years) > 6)
+        if show_label:
+            # 标签位置调整，避免重叠
+            label_y = y - 12 if y > padding_top + 30 else y + 20
+            svg += f'  <text x="{x}" y="{label_y}" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#4285f4">{cite}</text>\n'
     
     svg += '</svg>'
     
