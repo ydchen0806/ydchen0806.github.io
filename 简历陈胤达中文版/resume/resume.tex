@@ -1,0 +1,378 @@
+% ========================================================================
+\documentclass[AutoFakeBold]{resume}
+% ========================================================================
+% ========================================================================
+\usepackage{zh_CN-Adobefonts_external}
+\usepackage{linespacing_fix}
+\usepackage{amsmath,bm}
+\usepackage{booktabs}
+\usepackage{cite}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fontawesome} % 图标
+\usepackage{datetime2} % 日期时间
+\usepackage{enumitem} % 用于自定义列表
+% 在导言区添加（\begin{document}之前）
+\newcommand{\confbadge}[2]{\hfill\makebox[3.5em][r]{\textcolor{#1}{\textbf{[#2]}}}}
+% ========================================================================
+% ========================================================================
+\begin{document}
+% ========================================================================
+% ========================================================================
+\pagenumbering{gobble}
+% ========================================================================
+\begin{figure}[h]
+    \begin{minipage}[c]{2.15cm}
+        \centering
+        \includegraphics[height=2cm,width=2cm]{resume/cydQRcode.jpeg}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[c]{2.5cm}
+        \centering
+        \includegraphics[height=3.5cm,width=2.5cm]{resume/cyd.png}
+    \end{minipage}
+\end{figure}
+\vspace{-28mm}
+% ========================================================================
+\name{\Large\textbf{\fangsong 陈胤达}}
+% ========================================================================
+\basicInfo{\phone{(+86)13058626611}\quad\email{cyd0806@mail.ustc.edu.cn}
+            }
+            
+ \centering{\faChain \url{https://ydchen0806.github.io/}} \\
+  \centering{\faChain \url{https://scholar.google.com/citations?user=hCvlj5cAAAAJ&hl=en&oi=ao}}
+% ========================================================================
+\vspace{.5em}
+
+% ========================================================================
+% ========================================================================
+\section{\makebox[.75em][c]{\faGraduationCap} \textbf{\fangsong 教育背景}}
+% ========================================================================
+\datedsubsection{\textbf{中国科学技术大学 \& 上海AI Lab}\ {\faMapMarker \small\textbf{\fangsong 合肥 \& 上海}}}{}
+% \datedsubsection{\textbf{中国科学技术大学}\ {\faMapMarker \small\textbf{\fangsong 合肥}}}{}
+\begin{flushleft}
+\textbf{\fangsong 信息与通信工程，博士研究生} \hfill \textbf{2024.7 \textasciitilde\ 2027.6（预计）}
+\end{flushleft}
+\begin{itemize}
+    \item \textbf{\kaishu 研究方向:}\hangindent=2em 
+    \kaishu 机器学习理论，自监督预训练，多模态大模型，图像编码、压缩
+    \item \textbf{\kaishu 导师:}\hangindent=2em 
+    \kaishu \href{https://scholar.google.com/citations?user=5bInRDEAAAAJ&hl=en}{吴枫}（中国工程院院士，IEEE Fellow），\href{https://scholar.google.com/citations?user=Snl0HPEAAAAJ&hl=en&oi=ao}{熊志伟}；合作导师：\href{https://scholar.google.com/citations?user=qpBtpGsAAAAJ&hl=en}{汤晓鸥}（IEEE Fellow，上海AI Lab）
+    \item \textbf{\kaishu 核心课程:}\hangindent=2em 
+    \kaishu 算法设计与分析，统计学习，深度学习，强化学习
+    \item \textbf{\kaishu 荣誉奖励:}\hangindent=2em 
+    \kaishu 国家自然科学基金博士生项目负责人（2024年）
+\end{itemize}
+
+\datedsubsection{\textbf{中国科学技术大学}\ {\faMapMarker \small\textbf{\fangsong 合肥}}}{}
+\begin{flushleft}
+\textbf{\fangsong 计算机技术，硕士} \hfill \textbf{2022.9 \textasciitilde\ 2024.7}
+\end{flushleft}
+\begin{itemize}
+    \item \textbf{\kaishu 荣誉奖励:}\hangindent=2em 
+    \kaishu 研究生国家奖学金（2022年）
+\end{itemize}
+
+\datedsubsection{\textbf{厦门大学}\ {\faMapMarker \small\textbf{\fangsong 厦门}}}{}
+\begin{flushleft}
+\textbf{\fangsong 遥感\&经济学双学位，本科} \hfill \textbf{2018.9 \textasciitilde\ 2022.7}
+\end{flushleft}
+\begin{itemize}
+    \item \textbf{\kaishu 综合排名: 1/31}
+    % \textbf{\kaishu 专业排名: 16/31} \qquad 
+    \item \textbf{\kaishu 荣誉奖励:}\hangindent=2em 
+    \kaishu 厦门大学学术之星（2021年），CDA一级认证（2022年），Kaggle Expert
+    \item \textbf{\kaishu 导师:}\hangindent=2em 
+    \kaishu \href{https://scholar.google.com/citations?user=l1GMXf4AAAAJ&hl=en&oi=ao}{张原野}
+\end{itemize}
+% ========================================================================
+% ========================================================================
+% ========================================================================
+% ========================================================================
+% ========================================================================
+% ========================================================================
+\section{\makebox[.75em][c]{\faFlask} \textbf{\fangsong 科研项目}}
+\datedsubsection{\textbf{\textit{国家自然科学基金博士生项目}}}{\textbf{2025.1 \textasciitilde \ 2027.12}}
+\role {国自然项目}{负责人\ {(经费\textcolor{red}{30万}，2024年安徽省信息口\textcolor{red}{唯一入选})}}
+\begin{enumerate}[label=\textbf{[\arabic*]}, leftmargin=2em, itemsep=3pt]
+    \item \kaishu \textbf{神经科学大模型}的构建与训练
+    \begin{itemize}
+        \item 面向脑神经科学研究的\textbf{百亿级别基础大模型}开发
+        \item 融合多模态神经影像数据的\textbf{预训练方法}设计
+    \end{itemize}
+\end{enumerate}
+
+% ========================================================================
+% ========================================================================
+\datedsubsection{\textbf{\textit{大规模自监督预训练}}}{\textbf{2022.5 \textasciitilde \ 2023.12}}
+\role{Conference\&Journal}{一作\&共同一作}
+\begin{enumerate}[label=\textbf{[\arabic*]}, leftmargin=2em, itemsep=3pt]
+    \item \kaishu \parbox[t]{0.9\linewidth}{\textbf{\textcolor{red}{【LONG ORAL】}Self-supervised neuron segmentation with multi-agent reinforcement learning}, \textbf{IJCAI 23}} \hfill \textcolor{red}{\textbf{[CCF-A]}}
+    \begin{itemize}
+        \item 基于强化学习方法改进MAE掩码策略，自动选取掩码率和掩码方案。
+        \item 核心技术：多智能体强化学习框架、自适应掩码策略优化、自监督特征学习。
+        \item 引入多智能体框架实现更高效的自监督特征学习，分割精度提升12\%。
+    \end{itemize}
+    
+    \item \kaishu \parbox[t]{0.9\linewidth}{\textbf{MaskTwins: Dual-form Complementary Masking for Domain-Adaptive Image Segmentation}, \textbf{ICML 25}} \hfill \textcolor{red}{\textbf{[CCF-A]}}
+    \begin{itemize}
+        \item 从稀疏信号重构角度提出互补掩码新理论，严格证明对偶形式互补掩码在提取领域不变特征上的理论优势。
+        \item 核心技术：对偶形式互补掩码理论、互补掩码一致性学习、无监督域适应框架。
+        \item 在自然图像分割上提升2.7\% mIoU，生物图像分割提升3.2\% IoU。
+    \end{itemize}
+
+    \item \kaishu \parbox[t]{0.9\linewidth}{\textbf{TokenUnify: Scalable Autoregressive Visual Pre-training with Mixture Token Prediction}, \textbf{ICCV 25}} \hfill \textcolor{red}{\textbf{[CCF-A]}}
+    \begin{itemize}
+        \item 提出图像自回归预训练方式与Mamba框架相结合，体现长序列和低计算量的优势。
+        \item 核心技术：自回归视觉预训练、Mamba架构集成、混合token预测策略。
+        \item 展示良好的scaling law，并给出相应的理论证明，模型性能与参数呈对数线性关系。
+    \end{itemize}
+
+    \item \kaishu \parbox[t]{0.9\linewidth}{\textbf{EMPOWER: Evolutionary Medical Prompt Optimization With Reinforcement Learning}, \textbf{JBHI}} \hfill \textcolor{red}{\textbf{[SCI一区]}}
+    \begin{itemize}
+        \item 提出首个针对医疗领域的进化prompt优化框架，结合领域知识和强化学习。
+        \item 核心技术：医学术语注意力机制、多维度质量评估(clarity/specificity/relevance/accuracy)、保结构进化算法、语义验证模块确保临床指南一致性。
+        \item 事实错误降低24.7\%，领域特异性提升19.6\%，在盲测中获得15.3\%更高的临床医生偏好。
+    \end{itemize}
+    
+    \item \kaishu \parbox[t]{0.9\linewidth}{\textbf{Learning multiscale consistency for self-supervised electron microscopy instance segmentation}, \textbf{ICASSP 24}} \hfill \textcolor{blue}{\textbf{[CCF-B]}}
+    \begin{itemize}
+        \item 基于多尺度特征对比学习和特征重构，实现高性能预训练策略。
+        \item 核心技术：多尺度特征对比学习、特征一致性损失函数、自监督表征学习。
+        \item 提出特征一致性损失函数，克服尺度变化带来的表征差异，准确率提升9\%。
+    \end{itemize}
+
+   \item \kaishu \parbox[t]{0.9\linewidth}{\textbf{[在投] Generative Text-Guided 3D Vision-Language Pretraining for Unified Medical Image Segmentation}, Submit to PR}
+    \begin{itemize}
+        \item 基于大语言模型生成图像描述，进行多模态图文对比学习预训练。
+        \item 核心技术：文本引导的3D视觉预训练、vision-language对比学习、生成式文本引导机制。
+        \item 创新性地引入生成式文本引导机制，解决医学图像标注稀缺问题，实现零样本分割。
+    \end{itemize}
+\end{enumerate}
+
+% ========================================================================
+\datedsubsection{\textbf{\textit{生成模型与多模态理解}}}{\textbf{2023.9 \textasciitilde \ 至今}}
+\role{Conference\&Journal}{一作\&共同一作}
+\begin{enumerate}[label=\textbf{[\arabic*]}, leftmargin=2em, itemsep=3pt]
+    \item \kaishu \parbox[t]{0.9\linewidth}{\textbf{MaskFactory: Towards High-quality Synthetic Data Generation For Dichotomous Image Segmentation}, \textbf{NeurIPS 24}} \hfill \textcolor{red}{\textbf{[CCF-A]}}
+    \begin{itemize}
+        \item 通过刚性和非刚性形变编辑掩码，再利用ControlNet生成对应的mask-image pair。
+        \item 核心技术：形变驱动的掩码编辑、ControlNet引导的图像生成、合成数据质量评估。
+        \item 合成数据在下游分割任务中表现接近真实数据，仅有2\%性能差距，大幅降低标注成本。
+    \end{itemize}
+    
+    % \item \kaishu \parbox[t]{0.9\linewidth}{\textbf{A Unified and Lightweight Adapter for Consistent Video Editing}, \textbf{WACV 26}} \hfill \textcolor{orange}{\textbf{[CCF-C]}}
+    % \begin{itemize}
+    %     \item 提出轻量级plug-and-play适配器，采用coarse-to-fine框架实现2D扩散模型的视频编辑。
+    %     \item 核心技术：Temporal UNet Adapter结合低秩模块和temporal smoothness loss、Semantic Prompt Adapter分离shared/unshared tokens、DDIM inversion中嵌入bilateral filtering进行细粒度优化。
+    %     \item 在单GPU上训练不到一天，仅增加数MB参数，显著提升时间一致性和感知质量。
+    % \end{itemize}
+    
+    % \item \kaishu \parbox[t]{0.9\linewidth}{\textbf{Vid-TTA: Low-Cost Test-Time Adaptation for Robust Video Editing}, \textbf{WACV 26}} \hfill \textcolor{orange}{\textbf{[CCF-C]}}
+    % \begin{itemize}
+    %     \item 首次将测试时适应(TTA)应用于视频编辑，在推理过程中动态微调UNet backbone。
+    %     \item 核心技术：motion-aware frame reconstruction识别关键运动区域、prompt perturbation增强模型鲁棒性、meta-learning驱动的动态loss平衡机制。
+    %     \item 显著改善视频时序一致性并缓解prompt overfitting，计算开销低，可作为现有模型的即插即用增强。
+    % \end{itemize}
+    
+    \item \kaishu \parbox[t]{0.9\linewidth}{\textbf{[在投] Joint Semantic and Coded Generation for Conditional Latent Coding}, Submit to TCSVT}
+    \begin{itemize}
+        \item 提出联合语义和编码生成框架，结合文本描述与极少量编码特征（0.01 bpp）引导可控整流流模型生成高保真参考图像。
+        \item 核心技术：ControlNet for DiT架构、迭代参考对齐(IRA)、动态特征融合(DFS)、迭代概率精炼(IPR)、理论鲁棒性证明。
+        \item 相比VVC压缩性能提升15.8\% BD-rate，成功统一图像生成与压缩，填补语义表示与编码表示间的关键空白。
+    \end{itemize}
+\end{enumerate}
+
+% ========================================================================
+\datedsubsection{\textbf{\textit{深度学习图像编码与压缩}}}{\textbf{2023.8 \textasciitilde \ 至今}}
+\role{Conference\&Journal}{一作\&共同一作}
+\begin{enumerate}[label=\textbf{[\arabic*]}, leftmargin=2em, itemsep=3pt]
+    \item \kaishu \parbox[t]{0.9\linewidth}{\textbf{\textcolor{red}{【ORAL】}Conditional Latent Coding with Learnable Synthesized Reference for Deep Image Compression}, \textbf{AAAI 25}} \hfill \textcolor{red}{\textbf{[CCF-A]}}
+    \begin{itemize}
+        \item 构建图像相似度字典检索相似图像，用于改进熵模型的概率估计。
+        \item 核心技术：条件隐变量编码、可学习的合成参考框架、自适应熵建模、Transformer编解码架构。
+        \item 提出可学习的合成参考框架，在同等比特率下PSNR提升0.6dB，压缩性能领先。
+    \end{itemize}
+    
+    \item \kaishu \parbox[t]{0.9\linewidth}{\textbf{BIMCV-R: A Landmark Dataset for 3D CT Text-Image Retrieval}, \textbf{MICCAI 24}} \hfill \textcolor{blue}{\textbf{[CCF-B]}}
+    \begin{itemize}
+        \item 构建首个开源的3D CT图文对数据集，包含10,000对高质量医学图像与描述。
+        \item 核心技术：3D CT图文对齐、多模态检索框架、关键词索引系统。
+        \item 实现高效的图文信息检索和关键词搜索，召回率较传统方法提升25\%。
+    \end{itemize}
+    
+    \item \kaishu \parbox[t]{0.9\linewidth}{\textbf{[在投] Learned Image Coding with Generative Reference of Conditional Latents}, Submit to TPAMI}
+    \begin{itemize}
+        \item AAAI 25 oral文章的拓展工作，进一步探究参考图像对图像编码的助益。
+        \item 核心技术：生成式参考图像合成、多源参考融合(本地字典+网络检索+图像生成)、条件隐变量生成框架、鲁棒性理论分析。
+        \item 通过三种方式获取参考图像，压缩性能提升15\%，提出条件隐变量生成框架，有效解决参考图像不可用情况下的性能退化问题，并给出扰动鲁棒性理论证明。
+    \end{itemize}
+    
+    \item \kaishu \parbox[t]{0.9\linewidth}{\textbf{[在投] UniCompress: Enhancing Multi-Data Medical Image Compression with Knowledge Distillation}, Submit to TCSVT}
+    \begin{itemize}
+        \item 通过多模态知识先验实现隐式神经网络压缩多个数据，压缩率提升40\%。
+        \item 核心技术：知识蒸馏、多模态融合、隐式神经表示、医学影像共性特征提取。
+        \item 基于知识蒸馏提取多种医学影像共性特征，减少20\%存储空间同时保持诊断质量。
+    \end{itemize}
+\end{enumerate}
+
+\datedsubsection{\textbf{\textit{大模型工程}}}{\textbf{2023.9 \textasciitilde \ 至今}}
+\role{Projects}{核心成员}
+\begin{enumerate}[label=\textbf{[\arabic*]}, leftmargin=2em, itemsep=3pt]
+    \item \kaishu 图像编码，帧内预测大模型
+    \begin{itemize}
+        \item 主导设计10亿参数级别编码架构，比传统编码标准提升30\%压缩率。
+    \end{itemize}
+    \item \kaishu 医学图像分割，神经元分割大模型
+    \begin{itemize}
+        \item 主要负责团队中的预训练部分，具有64卡A40大规模集群预训练经验。
+        \item 掌握DDP、DeepSpeed等大模型框架，实现300亿参数模型的高效训练与优化。
+    \end{itemize}
+\end{enumerate}
+
+% ========================================================================
+\section{\makebox[.75em][c]{\faGroup} \textbf{\fangsong 实习经历}}
+% ========================================================================
+\datedsubsection{\textbf{北京人形机器人创新中心（天工机器人）}\ {\faMapMarker \small\textbf{\fangsong 北京}}}{}
+\begin{flushleft}
+\textbf{\fangsong 具身智能世界模型算法团队，核心成员} \hfill \textbf{2025.12 \textasciitilde \ 至今}
+\end{flushleft}
+\begin{itemize}
+    \item \kaishu 专注于人形机器人的\textbf{具身智能世界模型}和\textbf{统一模型}研发。
+    \item \kaishu 研究面向人形机器人的多模态感知与决策统一框架。
+    \item \kaishu 开发基于世界模型的机器人行为预测与规划算法。
+\end{itemize}
+
+\datedsubsection{\textbf{腾讯（IEG）}\ {\faMapMarker \small\textbf{\fangsong 上海}}}{}
+\begin{flushleft}
+\textbf{\fangsong 青云计划实习生} \hfill \textbf{2025.8 \textasciitilde \ 2025.12}
+\end{flushleft}
+\begin{itemize}
+    \item \kaishu 专注游戏视频场景理解技术研发，构建智能视频内容分析系统。
+    \item \kaishu 基于多模态大模型设计游戏场景自动识别与分类算法，准确率达到95\%以上。
+    \item \kaishu 开发游戏视频关键帧提取和场景转换检测模型，为游戏内容创作提供技术支持。
+\end{itemize}
+
+\datedsubsection{\textbf{中国人民解放军总医院（301医院）}\ {\faMapMarker \small\textbf{\fangsong 北京}}}{}
+\begin{flushleft}
+\textbf{\fangsong 数据压缩小组，研究实习生} \hfill \textbf{2023.9 \textasciitilde \ 2024.2}
+\end{flushleft}
+\begin{itemize}
+    \item \kaishu 协同戴琼海院士团队进行高效数据压缩的研究。
+    \item \kaishu 设计了医学影像特定的压缩算法，针对CT、MRI等模态优化，压缩效率提升35\%。
+\end{itemize}
+
+\datedsubsection{\textbf{帝国理工学院}\ {\faMapMarker \small\textbf{\fangsong 伦敦（remote）}}}{}
+\begin{flushleft}
+\textbf{\fangsong Data Science Institute，研究实习生} \hfill \textbf{2022.11 \textasciitilde \ 2023.8}
+\end{flushleft}
+\begin{itemize}
+    \item \kaishu 协同Rossella Arcucci副教授进行多模态预训练的研究，并投稿期刊论文一篇。
+    \item \kaishu 开发了图像-文本对比学习框架，在医学诊断任务上准确率达到93.5\%。
+\end{itemize}
+
+\datedsubsection{\textbf{厦门大学WISER Club}\ {\faMapMarker \small\textbf{\fangsong 厦门}}}{}
+\begin{flushleft}
+\textbf{\fangsong 数据挖掘小组，Insider} \hfill \textbf{2021.8 \textasciitilde \ 2022.7}
+\end{flushleft}
+\begin{itemize}
+    \item \kaishu 负责数据挖掘类课程的设计与讨论，主讲聚类和Transformer小节。
+    \item \kaishu 指导20名本科生完成机器学习项目，组织2次校内竞赛活动。
+\end{itemize}
+
+\datedsubsection{\textbf{厦门大学王亚南经济研究院}\ {\faMapMarker \small\textbf{\fangsong 厦门}}}{}
+\begin{flushleft}
+\textbf{\fangsong 计量经济学，研究助理} \hfill \textbf{2020.8 \textasciitilde \ 2021.12}
+\end{flushleft}
+\begin{itemize}
+    \item \kaishu 协助朱炯副教授完成国土经济统计，进行宅基地信息的视觉特征提取。
+    \item \kaishu 开发卫星影像分析工具，自动识别土地利用变化，准确率达85\%。
+\end{itemize}
+% ========================================================================
+\section{\makebox[.75em][c]{\faTrophy} \textbf{\fangsong 荣誉奖项}}
+% ========================================================================
+\vspace{.5mm}
+\begin{itemize}[leftmargin=0em, itemsep=3pt]
+    \item \textbf{\fangsong 国家自然科学基金博士生项目} \hfill \textbf{2024.12}
+    \begin{itemize}[leftmargin=1.5em]
+        \item \kaishu 负责人，安徽省信息类唯一
+    \end{itemize}
+    
+    \item \textbf{\fangsong 研究生国家奖学金} \hfill \textbf{2022.12}
+    \begin{itemize}[leftmargin=1.5em]
+        \item \kaishu 获奖率1\%
+    \end{itemize}
+    
+    \item \textbf{\fangsong 厦门大学学术之星} \hfill \textbf{2021.12}
+    \begin{itemize}[leftmargin=1.5em]
+        \item \kaishu 本科生唯一获奖者
+    \end{itemize}
+    
+    \item \textbf{\fangsong ``景润杯"数学竞赛专业组} \hfill \textbf{2021.09}
+    \begin{itemize}[leftmargin=1.5em]
+        \item \kaishu 厦门大学第一名
+    \end{itemize}
+    
+    \item \textbf{\fangsong ``互联网+"大赛} \hfill \textbf{2021.08}
+    \begin{itemize}[leftmargin=1.5em]
+        \item \kaishu 福建省金奖
+    \end{itemize}
+    
+    \item \textbf{\fangsong 全国大学生数学竞赛非专业组决赛} \hfill \textbf{2021.05}
+    \begin{itemize}[leftmargin=1.5em]
+        \item \kaishu 全国二等奖
+    \end{itemize}
+    
+    \item \textbf{\fangsong ``挑战杯"全国大学生课外学术科技作品竞赛} \hfill \textbf{2021.05}
+    \begin{itemize}[leftmargin=1.5em]
+        \item \kaishu 福建省一等奖
+    \end{itemize}
+    
+    \item \textbf{\fangsong 全国大学生数学竞赛非专业组} \hfill \textbf{2020.11}
+    \begin{itemize}[leftmargin=1.5em]
+        \item \kaishu 福建省第一名
+    \end{itemize}
+    \end{itemize}
+% ========================================================================
+\section{\makebox[.75em][c]{\faCogs} \textbf{\fangsong 专业技能}}
+% ========================================================================
+\noindent
+\begin{minipage}[t]{.5\textwidth}
+    \begin{itemize}
+    \item \textbf{\kaishu 编程能力}: Python, MATLAB, \LaTeX, C, C++, Java 
+    \item \textbf{\kaishu 深度学习}: PyTorch, TensorFlow, DeepSpeed, DDP
+    \end{itemize}
+\end{minipage}
+\begin{minipage}[t]{.5\textwidth}
+    \begin{itemize}
+    \item \textbf{\kaishu 英语能力}: TOEFL(110), GRE(328)
+    \item \textbf{\kaishu 专业工具}: Git, Docker, CUDA, HPC
+    \end{itemize}
+\end{minipage}
+
+% ========================================================================
+\section{\makebox[.75em][c]{\faUsers} \textbf{\fangsong 学术服务}}
+% ========================================================================
+\begin{itemize}
+    \item \textbf{\kaishu 期刊\&会议审稿人}: CVPR 2025, NeurIPS 2024, ICML 2025, ICLR 2024, MICCAI 2025, ACM MM 2024, AISTATS 2024, IJCV, TIP
+\end{itemize}
+
+% ========================================================================
+\section{\makebox[.75em][c]{\faNewspaperO} \textbf{\fangsong 最新动态}}
+% ========================================================================
+\begin{itemize}[leftmargin=0em, itemsep=2pt]
+    \item \kaishu 加入北京人形机器人创新中心（天工机器人），担任具身智能世界模型算法团队核心成员 \hfill \textbf{2025.12}
+    \item \kaishu 导师吴枫教授当选中国工程院院士 \hfill \textbf{2025.11.21}
+    \item \kaishu 一篇论文被AAAI 2026接收 \hfill \textbf{2025.11.09}
+    \item \kaishu 一篇论文被TCSVT接收 \hfill \textbf{2025.11.05}
+    \item \kaishu 一篇论文被JBHI接收 \hfill \textbf{2025.10.16}
+    \item \kaishu 一篇论文被ICCV 2025接收 \hfill \textbf{2025.06.26}
+    \item \kaishu 一篇论文被ACL 2025 findings接收 \hfill \textbf{2025.05.15}
+    \item \kaishu 一篇论文被ICML 2025接收 \hfill \textbf{2025.05.01}
+    \item \kaishu 一篇论文被AAAI 2025选为口头报告 \hfill \textbf{2025.01.18}
+    \item \kaishu 成功入选博士生自然科学基金项目负责人 \hfill \textbf{2024.12.06}
+    \item \kaishu 一篇论文被NeurIPS 2024接收 \hfill \textbf{2024.10.10}
+\end{itemize}
+
+% ========================================================================
+\end{document}
+% ========================================================================

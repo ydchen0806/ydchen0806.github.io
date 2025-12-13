@@ -1,0 +1,350 @@
+% ========================================================================
+\documentclass[AutoFakeBold]{resume}
+% ========================================================================
+% ========================================================================
+\usepackage{zh_CN-Adobefonts_external}
+\usepackage{linespacing_fix}
+\usepackage{amsmath,bm}
+\usepackage{booktabs}
+\usepackage{cite}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fontawesome} % Icons
+\usepackage{datetime2} % Date and time
+\usepackage{enumitem} % For custom lists
+
+% ========================================================================
+% ========================================================================
+\begin{document}
+% ========================================================================
+% ========================================================================
+\pagenumbering{gobble}
+% ========================================================================
+\begin{figure}[h]
+    \begin{minipage}[c]{2.15cm}
+        \centering
+        \includegraphics[height=2cm,width=2cm]{resume/cydQRcode.jpeg}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[c]{2.5cm}
+        \centering
+        \includegraphics[height=3.5cm,width=2.5cm]{resume/cyd.png}
+    \end{minipage}
+\end{figure}
+\vspace{-28mm}
+% ========================================================================
+\name{\Large\textbf{Yinda Chen}}
+% ========================================================================
+\basicInfo{\phone{(+86)13058626611}\quad\email{cyd0806@mail.ustc.edu.cn}
+            }
+            
+ \centering{\faChain \url{https://ydchen0806.github.io/}} \\
+  \centering{\faChain \url{https://scholar.google.com/citations?user=hCvlj5cAAAAJ&hl=en&oi=ao}}
+% ========================================================================
+\vspace{.5em}
+
+% ========================================================================
+% ========================================================================
+\section{\makebox[.75em][c]{\faGraduationCap} \textbf{Education}}
+% ========================================================================
+\datedsubsection{\textbf{University of Science and Technology of China \& Shanghai AI Lab}\ {\faMapMarker \small\textbf{Hefei \& Shanghai}}}{}
+\begin{flushleft}
+\textbf{Information and Communication Engineering, Ph.D. Candidate} \hfill \textbf{2024.7 \textasciitilde\ 2027.6 (Expected)}
+\end{flushleft}
+\begin{itemize}
+    \item \textbf{Research Focus:}\hangindent=2em 
+    Representation learning theory, self-supervised pretraining, multimodal large models, image encoding and compression
+    \item \textbf{Advisors:}\hangindent=2em 
+    \href{https://scholar.google.com/citations?user=5bInRDEAAAAJ&hl=en}{Prof. Feng Wu} (CAE Academician, IEEE Fellow), \href{https://scholar.google.com/citations?user=Snl0HPEAAAAJ&hl=en&oi=ao}{Prof. Zhiwei Xiong}; Collaborative Supervisor: \href{https://scholar.google.com/citations?user=qpBtpGsAAAAJ&hl=en}{Prof. Xiaoou Tang} (IEEE Fellow, Shanghai AI Lab)
+    \item \textbf{Core Courses:}\hangindent=2em 
+    Algorithm Design and Analysis, Statistical Learning, Deep Learning, Reinforcement Learning
+    \item \textbf{Honors:}\hangindent=2em 
+    Principal Investigator of National Natural Science Foundation Ph.D. Project (2024)
+\end{itemize}
+
+\datedsubsection{\textbf{University of Science and Technology of China}\ {\faMapMarker \small\textbf{Hefei}}}{}
+\begin{flushleft}
+\textbf{Computer Technology, M.S.} \hfill \textbf{2022.9 \textasciitilde\ 2024.7}
+\end{flushleft}
+\begin{itemize}
+    \item \textbf{Honors:}\hangindent=2em 
+    National Graduate Scholarship (2022)
+\end{itemize}
+
+\datedsubsection{\textbf{Xiamen University}\ {\faMapMarker \small\textbf{Xiamen}}}{}
+\begin{flushleft}
+\textbf{Remote Sensing \& Economics (Dual Degree), B.S.} \hfill \textbf{2018.9 \textasciitilde\ 2022.7}
+\end{flushleft}
+\begin{itemize}
+    \item \textbf{Major Ranking: 16/31} \qquad \textbf{Overall Ranking: 1/31}
+    \item \textbf{Honors:}\hangindent=2em 
+    Xiamen University Academic Star (2021), CDA Level 1 Certification (2022), Kaggle Expert
+    \item \textbf{Advisor:}\hangindent=2em 
+    \href{https://scholar.google.com/citations?user=l1GMXf4AAAAJ&hl=en&oi=ao}{Prof. Yuanye Zhang}
+\end{itemize}
+% ========================================================================
+% ========================================================================
+% ========================================================================
+% ========================================================================
+\section{\makebox[.75em][c]{\faFlask} \textbf{Research Projects}}
+\datedsubsection{\textbf{\textit{National Natural Science Foundation Ph.D. Project}}}{\textbf{2025.1 \textasciitilde \ 2027.12}}
+\role {NSF Project}{Principal Investigator\ {(Funding: \textcolor{red}{300k RMB}, \textcolor{red}{Only recipient} in Information field, Anhui Province, 2024)}}
+\begin{enumerate}[label=\textbf{[\arabic*]}, leftmargin=2em, itemsep=3pt]
+    \item Foundation \textbf{10-billion-scale} brain neural \textbf{foundation model} training
+    \begin{itemize}
+        \item Neuron underlying visual feature \textbf{token construction}
+        \item Neural architecture search, \textbf{autoregressive visual model} training
+    \end{itemize}
+    \item \textbf{Fine-grained} neuron \textbf{segmentation}
+    \begin{itemize}
+        \item \textbf{Skeleton features}, attention decomposition mechanisms
+        \item Complementary masking, segmentation \textbf{robustness enhancement}
+    \end{itemize}
+    \item Neural \textbf{circuit reconstruction}
+    \begin{itemize}
+        \item Point cloud morphological features and image feature \textbf{alignment}
+        \item Candidate competition strategy, \textbf{progressive reasoning}, long-range tracking
+    \end{itemize}
+\end{enumerate}
+
+\datedsubsection{\textbf{\textit{Large-scale Self-supervised Pretraining}}}{\textbf{2022.5 \textasciitilde \ 2023.12}}
+\role {Conference\&Journal}{First Author}
+\begin{enumerate}[label=\textbf{[\arabic*]}, leftmargin=2em, itemsep=3pt]
+    \item \textbf{\textcolor{red}{【LONG ORAL】}Self-supervised neuron segmentation with multi-agent reinforcement learning}, \textbf{IJCAI 23} \hfill \textcolor{red}{\textbf{[CCF-A]}}
+    \begin{itemize}
+        \item Improved MAE masking strategy using reinforcement learning, automatically selecting mask ratios and schemes.
+        \item Introduced multi-agent framework for more efficient self-supervised feature learning, improving segmentation accuracy by 12\%.
+    \end{itemize}
+    \item \textbf{MaskTwins: Dual-form Complementary Masking for Domain-Adaptive Image Segmentation}, \textbf{ICML 25} \hfill \textcolor{red}{\textbf{[CCF-A]}}
+    \begin{itemize}
+    \item Proposed new complementary masking theory from sparse signal reconstruction perspective, rigorously proving theoretical advantages of dual-form complementary masking in extracting domain-invariant features.
+    \item Designed simple and efficient unsupervised domain adaptation framework, achieving cross-domain image segmentation through complementary masking consistency learning, improving natural image segmentation by 2.7\% mIoU and biomedical image segmentation by 3.2\% IoU.
+    \end{itemize}
+
+    \item \textbf{TokenUnify: Scalable Autoregressive Visual Pre-training with Mixture Token Prediction}, \textbf{ICCV 25} \hfill \textcolor{red}{\textbf{[CCF-A]}}
+    \begin{itemize}
+        \item Proposed image autoregressive pretraining combined with Mamba framework, demonstrating advantages of long sequences and low computational cost.
+        \item Demonstrated good scaling laws with corresponding theoretical proof, showing logarithmic-linear relationship between model performance and parameters.
+    \end{itemize}
+
+    \item \textbf{EMPOWER: Evolutionary Medical Prompt Optimization With Reinforcement Learning}, \textbf{JBHI} \hfill \textcolor{red}{\textbf{[SCI-Q1]}}
+    \begin{itemize}
+        \item Proposed the first evolutionary prompt optimization framework for medical domain, combining domain knowledge and reinforcement learning.
+        \item Core techniques: medical terminology attention mechanism, multi-dimensional quality assessment (clarity/specificity/relevance/accuracy), structure-preserving evolutionary algorithm, semantic verification module ensuring clinical guideline consistency.
+        \item Reduced factual errors by 24.7\%, improved domain specificity by 19.6\%, and achieved 15.3\% higher clinician preference in blind testing.
+    \end{itemize}
+    
+    \item \textbf{Learning multiscale consistency for self-supervised electron microscopy instance segmentation}, \textbf{ICASSP 24} \hfill \textcolor{blue}{\textbf{[CCF-B]}}
+    \begin{itemize}
+        \item Achieved high-performance pretraining strategy based on multiscale feature contrastive learning and feature reconstruction.
+        \item Proposed feature consistency loss function, overcoming representation differences caused by scale variations, improving accuracy by 9\%.
+    \end{itemize}
+    
+   \item \textbf{[Under Review] Generative Text-Guided 3D Vision-Language Pretraining for Unified Medical Image Segmentation}, Submit to TCSVT
+    \begin{itemize}
+        \item Generated image descriptions using large language models for multimodal image-text contrastive learning pretraining.
+        \item Innovatively introduced generative text guidance mechanism, solving medical image annotation scarcity problem, achieving zero-shot segmentation.
+    \end{itemize}
+        
+\end{enumerate}
+
+% ========================================================================
+\datedsubsection{\textbf{\textit{Large-scale Data Generation and Encoding Compression}}}{\textbf{2023.8 \textasciitilde \ Present}}
+\role {Conference\&Journal}{First Author \& Co-first Author}
+\begin{enumerate}[label=\textbf{[\arabic*]}, leftmargin=2em, itemsep=3pt]
+    \item \textbf{\textcolor{red}{【ORAL】}Conditional Latent Coding with Learnable Synthesized Reference for Deep Image Compression}, \textbf{AAAI 25} \\ 
+    \hfill \textcolor{red}{\textbf{[CCF-A]}}
+    \begin{itemize}
+        \item Built image similarity dictionary for retrieving similar images to improve entropy model probability estimation.
+        \item Proposed learnable synthetic reference framework, improving PSNR by 0.6dB at the same bit rate with leading compression performance.
+    \end{itemize}
+
+    \item \textbf{MaskFactory: Towards High-quality Synthetic Data Generation For Dichotomous Image Segmentation}, \textbf{NeurIPS 24} \\
+    \hfill \textcolor{red}{\textbf{[CCF-A]}}
+    \begin{itemize}
+        \item Generated corresponding mask-image pairs using ControlNet through rigid and non-rigid deformation editing of masks.
+        \item Core techniques: deformation-driven mask editing, ControlNet-guided image generation, synthetic data quality assessment.
+        \item Synthetic data performance approached real data in downstream segmentation tasks with only 2\% performance gap, significantly reducing annotation costs.
+    \end{itemize}
+    
+    \item \textbf{[Under Review] Joint Semantic and Coded Generation for Conditional Latent Coding}, Submit to TCSVT
+    \begin{itemize}
+        \item Proposed joint semantic and coded generation framework, combining text descriptions with minimal coded features (0.01 bpp) to guide controllable rectified flow models in generating high-fidelity reference images.
+        \item Core techniques: ControlNet for DiT architecture, iterative reference alignment (IRA), dynamic feature fusion (DFS), iterative probability refinement (IPR), theoretical robustness proof.
+        \item Improved compression performance by 15.8\% BD-rate compared to VVC, successfully unifying image generation and compression, bridging the gap between semantic and coded representations.
+    \end{itemize}
+    
+    \item \textbf{BIMCV-R: A Landmark Dataset for 3D CT Text-Image Retrieval}, \textbf{MICCAI 24} \hfill \textcolor{blue}{\textbf{[CCF-B]}}
+    \begin{itemize}
+        \item Built the first open-source 3D CT image-text pair dataset containing 10,000 high-quality medical image-description pairs.
+        \item Achieved efficient image-text information retrieval and keyword search, improving recall rate by 25\% over traditional methods.
+    \end{itemize}
+    
+    \item \textbf{[Under Review] Learned Image Coding with Generative Reference of Conditional Latents}, Submit to TPAMI 
+    \begin{itemize}
+        \item Extension work of AAAI 25 oral paper, further exploring benefits of reference images for image coding.
+        \item Obtained reference images through local dictionary, network retrieval, and image generation, improving compression performance by 15\%.
+        \item Proposed conditional latent generation framework, effectively solving performance degradation when reference images are unavailable.
+    \end{itemize}
+    
+    \item \textbf{[Under Review] UniCompress: Enhancing Multi-Data Medical Image Compression with Knowledge Distillation}, Submit to NeurIPS 25
+    \begin{itemize}
+        \item Achieved implicit neural network compression of multiple data through multimodal knowledge priors, improving compression rate by 40\%.
+        \item Extracted common features of various medical images through knowledge distillation, reducing storage space by 20\% while maintaining diagnostic quality.
+    \end{itemize}
+\end{enumerate}
+
+\datedsubsection{\textbf{\textit{Large Model Engineering}}}{\textbf{2023.9 \textasciitilde \ Present}}
+\role {Projects}{Core Member}
+\begin{enumerate}[label=\textbf{[\arabic*]}, leftmargin=2em, itemsep=3pt]
+    \item Image coding and intra-frame prediction large models
+    \begin{itemize}
+        \item Led design of billion-parameter-scale coding architecture, improving compression rate by 30\% over traditional coding standards.
+    \end{itemize}
+    \item Medical image segmentation and neuron segmentation large models
+    \begin{itemize}
+        \item Mainly responsible for pretraining in the team, with experience in large-scale cluster pretraining using 64 A40 GPUs.
+        \item Proficient in large model frameworks like DDP and DeepSpeed, achieving efficient training and optimization of 30-billion parameter models.
+    \end{itemize}
+\end{enumerate}
+
+% ========================================================================
+\section{\makebox[.75em][c]{\faGroup} \textbf{Research Experience}}
+% ========================================================================
+\datedsubsection{\textbf{Beijing Humanoid Robot Innovation Center (Tiangong Robot)}\hspace{2em} {\faMapMarker 
+\small\textbf{Beijing}}}{\textbf{2025.12 \textasciitilde \ Present}}
+\role {Embodied Intelligence World Model Algorithm Team}{Core Member}
+\begin{itemize}
+    \item Focusing on \textbf{embodied intelligence world models} and \textbf{unified models} for humanoid robots.
+    \item Researching unified multimodal perception and decision-making frameworks for humanoid robots.
+    \item Developing world model-based robot behavior prediction and planning algorithms.
+\end{itemize}
+
+\datedsubsection{\textbf{Tencent (IEG)}\hspace{2em} {\faMapMarker 
+\small\textbf{Shanghai}}}{\textbf{2025.8 \textasciitilde \ 2025.12}}
+\role {Qingyun Program}{Research Intern}
+\begin{itemize}
+    \item Focused on game video scene understanding technology development, building intelligent video content analysis systems.
+    \item Designed game scene automatic recognition and classification algorithms based on multimodal large models, achieving accuracy above 95\%.
+    \item Developed game video keyframe extraction and scene transition detection models for game content creation support.
+\end{itemize}
+
+\datedsubsection{\textbf{People's Liberation Army General Hospital (301 Hospital)}\hspace{2em} {\faMapMarker 
+\small\textbf{Beijing}}}{\textbf{2023.9 \textasciitilde \ 2024.2}}
+\role {Data Compression Group}{Research Intern}
+\begin{itemize}
+    \item Collaborated with Academician Qionghai Dai's team on efficient data compression research.
+    \item Designed medical imaging-specific compression algorithms optimized for CT, MRI modalities, improving compression efficiency by 35\%.
+\end{itemize}
+
+\datedsubsection{\textbf{Imperial College London}\hspace{2em} {\faMapMarker 
+\small\textbf{London (Remote)}}}{\textbf{2022.11 \textasciitilde \ 2023.8}}
+\role {Data Science Institute}{Research Intern}
+\begin{itemize}
+    \item Collaborated with Associate Professor Rossella Arcucci on multimodal pretraining research, submitting one journal paper.
+    \item Developed image-text contrastive learning framework, achieving 93.5\% accuracy on medical diagnosis tasks.
+\end{itemize}
+
+\datedsubsection{\textbf{Xiamen University WISER Club}\hspace{2em} {\faMapMarker 
+\small\textbf{Xiamen}}}{\textbf{2021.8 \textasciitilde \ 2022.7}}
+\role {Data Mining Group}{Insider}
+\begin{itemize}
+    \item Responsible for designing and discussing data mining courses, teaching clustering and Transformer sections.
+    \item Mentored 20 undergraduate students to complete machine learning projects, organized 2 campus competition activities.
+\end{itemize}
+
+\datedsubsection{\textbf{Wang Yanan Institute for Studies in Economics, Xiamen University}\hspace{2em} {\faMapMarker 
+\small\textbf{Xiamen}}}{\textbf{2020.8 \textasciitilde \ 2021.12}}
+\role {Econometrics}{Research Assistant}
+\begin{itemize}
+    \item Assisted Associate Professor Jiong Zhu in completing territorial economic statistics, conducting visual feature extraction of homestead information.
+    \item Developed satellite image analysis tools for automatic land use change identification with 85\% accuracy.
+\end{itemize}
+% ========================================================================
+\section{\makebox[.75em][c]{\faTrophy} \textbf{Honors and Awards}}
+% ========================================================================
+\vspace{.5mm}
+\begin{itemize}[leftmargin=0em, itemsep=3pt]
+    \item \textbf{National Natural Science Foundation Ph.D. Project} \hfill \textbf{2024.12}
+    \begin{itemize}[leftmargin=1.5em]
+        \item Principal Investigator, Only recipient in Information field, Anhui Province
+    \end{itemize}
+    
+    \item \textbf{National Graduate Scholarship} \hfill \textbf{2022.12}
+    \begin{itemize}[leftmargin=1.5em]
+        \item Award rate 1\%
+    \end{itemize}
+    
+    \item \textbf{Xiamen University Academic Star} \hfill \textbf{2021.12}
+    \begin{itemize}[leftmargin=1.5em]
+        \item Only undergraduate recipient
+    \end{itemize}
+    
+    \item \textbf{'Jingrun Cup' Mathematics Competition Professional Group} \hfill \textbf{2021.09}
+    \begin{itemize}[leftmargin=1.5em]
+        \item First Place, Xiamen University
+    \end{itemize}
+    
+    \item \textbf{'Internet+' Competition} \hfill \textbf{2021.08}
+    \begin{itemize}[leftmargin=1.5em]
+        \item Gold Award, Fujian Province
+    \end{itemize}
+    
+    \item \textbf{National College Student Mathematics Competition Non-major Group Finals} \hfill \textbf{2021.05}
+    \begin{itemize}[leftmargin=1.5em]
+        \item National Second Prize
+    \end{itemize}
+    
+    \item \textbf{'Challenge Cup' National College Student Extracurricular Academic Science and Technology Competition} \hfill \textbf{2021.05}
+    \begin{itemize}[leftmargin=1.5em]
+        \item First Prize, Fujian Province
+    \end{itemize}
+    
+    \item \textbf{National College Student Mathematics Competition Non-major Group} \hfill \textbf{2020.11}
+    \begin{itemize}[leftmargin=1.5em]
+        \item First Place, Fujian Province
+    \end{itemize}
+\end{itemize}
+% ========================================================================
+\section{\makebox[.75em][c]{\faCogs} \textbf{Technical Skills}}
+% ========================================================================
+\noindent
+\begin{minipage}[t]{.5\textwidth}
+    \begin{itemize}
+    \item \textbf{Programming}: Python, MATLAB, \LaTeX, C, C++, Java 
+    \item \textbf{Deep Learning}: PyTorch, TensorFlow, DeepSpeed, DDP
+    \end{itemize}
+\end{minipage}
+\begin{minipage}[t]{.5\textwidth}
+    \begin{itemize}
+    \item \textbf{Languages}: English (TOEFL 110, GRE 328), Chinese (Native)
+    \item \textbf{Tools}: Git, Docker, CUDA, HPC
+    \end{itemize}
+\end{minipage}
+
+% ========================================================================
+\section{\makebox[.75em][c]{\faUsers} \textbf{Professional Service}}
+% ========================================================================
+\begin{itemize}
+    \item \textbf{Reviewer}: CVPR 2025, NeurIPS 2024, ICML 2025, ICLR 2024, MICCAI 2025, ACM MM 2024, AISTATS 2024, IJCV, TIP
+\end{itemize}
+
+% ========================================================================
+\section{\makebox[.75em][c]{\faNewspaperO} \textbf{Recent News}}
+% ========================================================================
+\begin{itemize}[leftmargin=0em, itemsep=2pt]
+    \item Joined Beijing Humanoid Robot Innovation Center (Tiangong Robot) as core member of Embodied Intelligence World Model Algorithm Team \hfill \textbf{2025.12}
+    \item Advisor Prof. Feng Wu was elected as Academician of the Chinese Academy of Engineering (CAE) \hfill \textbf{2025.11.21}
+    \item One paper was accepted by AAAI 2026 \hfill \textbf{2025.11.09}
+    \item One paper was accepted by TCSVT \hfill \textbf{2025.11.05}
+    \item One paper was accepted by JBHI \hfill \textbf{2025.10.16}
+    \item One paper was accepted by ICCV 2025 \hfill \textbf{2025.06.26}
+    \item One paper was accepted by ACL 2025 findings \hfill \textbf{2025.05.15}
+    \item One paper was accepted by ICML 2025 \hfill \textbf{2025.05.01}
+    \item One paper was selected as oral by AAAI 2025 \hfill \textbf{2025.01.18}
+    \item Successfully selected as principal investigator of Ph.D. Natural Science Foundation Project \hfill \textbf{2024.12.06}
+    \item One paper was accepted by NeurIPS 2024 \hfill \textbf{2024.10.10}
+\end{itemize}
+
+% ========================================================================
+\end{document}
+% ========================================================================

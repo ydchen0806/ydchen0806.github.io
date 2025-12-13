@@ -289,6 +289,20 @@ The paper proposes an unsupervised domain adaptation method for EM image denoisi
 
 ## 🎓 Conference Papers
 
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge-conference">ICCV 2025</div><div class="badge-ccf badge-ccf-a">CCF A</div><img src='images/GTGM.png' alt="GTGM" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[GTGM: Generative Text-Guided 3D Vision-Language Pretraining for Medical Image Segmentation](https://arxiv.org/abs/2404.00000) <span class="research-tags"><span class="research-tag">Vision-Language</span><span class="research-tag">Medical Imaging</span></span> \\
+ICCV | October 25, 2025 \\
+**Yinda Chen\***; Che Liu\*; Wei Huang; Xiaoyu Liu; Haoyuan Shi; Sibo Cheng; Rossella Arcucci; Zhiwei Xiong
+
+[**Code**](https://github.com/ydchen0806/gtgm) [![](https://img.shields.io/github/stars/ydchen0806/gtgm?style=social&label=Code+Stars&cacheSeconds=3600)](https://github.com/ydchen0806/gtgm)
+
+GTGM extends Vision-Language Pretraining to 3D medical images by leveraging LLMs to generate synthetic textual descriptions, enabling text-guided representation learning without paired medical text. Combined with a negative-free contrastive learning strategy, GTGM achieves state-of-the-art performance across 10 CT/MRI segmentation datasets.
+
+</div>
+</div>
+
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge-conference">ICCV 2025</div><div class="badge-ccf badge-ccf-a">CCF A</div><img src='images/ICCV25.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 

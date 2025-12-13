@@ -1,0 +1,280 @@
+% ========================================================================
+\documentclass[AutoFakeBold]{resume}
+% ========================================================================
+% ========================================================================
+\usepackage{zh_CN-Adobefonts_external}
+\usepackage{linespacing_fix}
+\usepackage{amsmath,bm}
+\usepackage{booktabs}
+\usepackage{cite}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fontawesome} % Icons
+\usepackage{datetime2} % Date and time
+\usepackage{enumitem} % For custom lists
+
+% ========================================================================
+% 一键模式控制开关
+% ========================================================================
+\newif\ifshowclassifications
+\newif\ifshowvthospital
+
+% 默认设置（适合美签申请）
+\showclassificationsfalse  % 改为 \showclassificationstrue 可显示文章分区
+% \showclassificationsfalse
+% \showclassificationstrue
+\showvthospitalfalse      % 改为 \showvthospitaltrue 可显示301医院经历
+
+% ========================================================================
+% ========================================================================
+\begin{document}
+% ========================================================================
+% ========================================================================
+\pagenumbering{gobble}
+% ========================================================================
+\begin{figure}[h]
+    \hfill
+    \begin{minipage}[c]{2.5cm}
+        \centering
+        \includegraphics[height=3.5cm,width=2.5cm]{resume/cyd.png}
+    \end{minipage}
+\end{figure}
+\vspace{-28mm}
+% ========================================================================
+\name{\Large\textbf{Yinda Chen (陈胤达)}}
+% ========================================================================
+% 替换原来的 \basicInfo 部分
+\begin{center}
+\begin{tabular}{ll}
+\textbf{Phone:} & (+86)13058626611 \\
+\textbf{Email:} & cyd0806@mail.ustc.edu.cn \\
+\textbf{Date of Birth:} & 2000.08.06 \\
+\textbf{Gender:} & Male \\
+\textbf{Place of Origin:} & Zhejiang, Taizhou \\
+\end{tabular}
+\end{center}
+
+\centering{\textbf{Address:} University of Science and Technology of China, Gaoxin Campus} \\
+\centering{Chuangxin Avenue, Hefei, Anhui Province, China, 230088}
+% ========================================================================
+\vspace{.5em}
+
+% ========================================================================
+% ========================================================================
+\section{\makebox[.75em][c]{\faGraduationCap} \textbf{Education}}
+% ========================================================================
+\datedsubsection{\textbf{University of Science and Technology of China}\ {\faMapMarker \small\textbf{Hefei}}}{}
+\begin{flushleft}
+\textbf{Information and Communication Engineering, Ph.D. Candidate} \hfill \textbf{2024.7 \textasciitilde\ 2028.6 (Expected)}
+\end{flushleft}
+\begin{itemize}
+    \item \textbf{Research Focus:}\hangindent=2em 
+    Statistical learning theory, signal processing, medical image analysis, data compression
+    \item \textbf{Advisors:}\hangindent=2em 
+    Prof. Feng Wu (CAE Academician, IEEE Fellow), Prof. Zhiwei Xiong; Collaborative Supervisor: Prof. Xiaoou Tang (IEEE Fellow, Shanghai AI Lab)
+    \item \textbf{Principal Investigator:}\hangindent=2em 
+    Ph.D. Natural Science Foundation Project (Selected in 2024.12)
+\end{itemize}
+
+\datedsubsection{\textbf{University of Science and Technology of China}\ {\faMapMarker \small\textbf{Hefei}}}{}
+\begin{flushleft}
+\textbf{Computer Technology, M.S.} \hfill \textbf{2022.9 \textasciitilde\ 2024.7}
+\end{flushleft}
+% \begin{itemize}
+%     \item \textbf{Honors:}\hangindent=2em 
+%     Graduate Excellence Scholarship (2022)
+% \end{itemize}
+
+\datedsubsection{\textbf{Xiamen University}\ {\faMapMarker \small\textbf{Xiamen}}}{}
+\begin{flushleft}
+\textbf{Environmental Ecology Engineering \& Economics (Dual Degree), B.S.} \hfill \textbf{2018.9 \textasciitilde\ 2022.7}
+\end{flushleft}
+\begin{itemize}
+    % \item \textbf{Major Ranking: 16/31} \qquad \textbf{Overall Ranking: 1/31}
+    \item \textbf{Honors:}\hangindent=2em 
+    Xiamen University Academic Star (2021), CDA Level 1 Certification (2022)
+\end{itemize}
+
+% ========================================================================
+\section{\makebox[.75em][c]{\faNewspaperO} \textbf{Publications}}
+% ========================================================================
+
+\textbf{2025 (Accepted but Not Yet Published)}
+\begin{enumerate}[label=\textbf{[\arabic*]}, leftmargin=2em, itemsep=2pt]
+    \item \textbf{TokenUnify: Scalable Autoregressive Visual Pre-training with Mixture Token Prediction}\\
+    \textbf{Yinda Chen}*, Haoyuan Shi*, Xiaoyu Liu, Te Shi, Ruobing Zhang, Dong Liu, Zhiwei Xiong, Feng Wu\\
+    \textbf{ICCV 2025} \ifshowclassifications\hfill \textcolor{red}{\textbf{[CCF-A]}}\fi
+    
+    \item \textbf{Can Medical Vision-Language Pre-training Succeed with Purely Synthetic Data?}\\
+    Che Liu, Zhongwei Wan, Haozhe Wang, \textbf{Yinda Chen}, Talha Qaiser, Chen Jin, Fariba Yousefi, Nikolay Burlutskiy, Rossella Arcucci\\
+    \textbf{ACL 2025 Findings} \ifshowclassifications\hfill \textcolor{red}{\textbf{[CCF-A]}}\fi
+    
+    \item \textbf{MaskTwins: Dual-form Complementary Masking for Domain-Adaptive Image Segmentation}\\
+    Jiawen Wang*, \textbf{Yinda Chen}*, Xiaoyu Liu, Che Liu, Dong Liu, Zhiwei Xiong\\
+    \textbf{ICML 2025} \ifshowclassifications\hfill \textcolor{red}{\textbf{[CCF-A]}}\fi
+    
+    \item \textbf{Conditional Latent Coding with Learnable Synthesized Reference for Deep Image Compression}\\
+    Siqi Wu*, \textbf{Yinda Chen}*, Dong Liu, Zhihai He\\
+    \textbf{AAAI 2025} \ifshowclassifications\hfill \textcolor{red}{\textbf{[CCF-A]}}\fi
+    
+    \item \textbf{MapExpert: Online HD Map Construction with Simple and Efficient Sparse Map Element Expert}\\
+    Dapeng Zhang, Dayu Chen, Peng Zhi, \textbf{Yinda Chen}, Zhenlong Yuan, Chenyang Li, Rui Zhou, Qingguo Zhou\\
+    \textbf{AAAI 2025} \ifshowclassifications\hfill \textcolor{red}{\textbf{[CCF-A]}}\fi
+\end{enumerate}
+
+\textbf{2024 (Published)}
+\begin{enumerate}[label=\textbf{[\arabic*]}, leftmargin=2em, itemsep=2pt, resume]
+    % \item \textbf{MaskFactory: Towards High-quality Synthetic Data Generation For Dichotomous Image Segmentation}\\
+    % Haotian Qian*, \textbf{Yinda Chen}*, Shengtao Lou, Fahad Shahbaz Khan, Xiaogang Jin, Deng-Ping Fan\\
+    % \textbf{NeurIPS 2024} \ifshowclassifications\hfill \textcolor{red}{\textbf{[CCF-A]}}\fi
+    
+    \item \textbf{Cross-Dimension Affinity Distillation for 3D EM Neuron Segmentation}\\
+    Xiaoyu Liu, Miaomiao Cai, \textbf{Yinda Chen}, Yueyi Zhang, Te Shi, Ruobing Zhang, Xuejin Chen, Zhiwei Xiong\\
+    \textbf{CVPR 2024} \ifshowclassifications\hfill \textcolor{red}{\textbf{[CCF-A]}}\fi
+    
+    \item \textbf{BIMCV-R: A Landmark Dataset for 3D CT Text-Image Retrieval}\\
+    \textbf{Yinda Chen}, Che Liu, Xiaoyu Liu, Rossella Arcucci, Zhiwei Xiong\\
+    \textbf{MICCAI 2024} \ifshowclassifications\hfill \textcolor{blue}{\textbf{[CCF-B]}}\fi
+    
+    \item \textbf{Joint EM Image Denoising and Segmentation with Instance-Aware Interaction}\\
+    Zhicheng Wang, Jiacheng Li, \textbf{Yinda Chen}, Jiateng Shou, Shiyu Deng, Wei Huang, Zhiwei Xiong\\
+    \textbf{MICCAI 2024} \ifshowclassifications\hfill \textcolor{blue}{\textbf{[CCF-B]}}\fi
+    
+    \item \textbf{Learning multiscale consistency for self-supervised electron microscopy instance segmentation}\\
+    \textbf{Yinda Chen}, Wei Huang, Xiaoyu Liu, Shiyu Deng, Qi Chen, Zhiwei Xiong\\
+    \textbf{ICASSP 2024} \ifshowclassifications\hfill \textcolor{blue}{\textbf{[CCF-B]}}\fi
+    
+    \item \textbf{Unsupervised Domain Adaptation for EM Image Denoising with Invertible Networks}\\
+    Shiyu Deng, \textbf{Yinda Chen}, Wei Huang, Ruobing Zhang, Zhiwei Xiong\\
+    \textbf{IEEE Transactions on Medical Imaging} \ifshowclassifications\hfill \textcolor{red}{\textbf{[SCI-Q1]}}\fi
+\end{enumerate}
+
+\textbf{2023 (Published)}
+\begin{enumerate}[label=\textbf{[\arabic*]}, leftmargin=2em, itemsep=2pt, resume]
+    \item \textbf{Self-supervised neuron segmentation with multi-agent reinforcement learning}\\
+    \textbf{Yinda Chen}, Wei Huang, Shenglong Zhou, Qi Chen, Zhiwei Xiong\\
+    \textbf{IJCAI 2023} \ifshowclassifications\hfill \textcolor{red}{\textbf{[CCF-A]}}\fi
+\end{enumerate}
+
+% ========================================================================
+\section{\makebox[.75em][c]{\faGroup} \textbf{Research Experience}}
+% ========================================================================
+
+\datedsubsection{\textbf{Beijing Humanoid Robot Innovation Center (Tiangong Robot)}\hspace{2em} {\faMapMarker 
+\small\textbf{Beijing}}}{\textbf{2025.12 \textasciitilde \ Present}}
+\role {Embodied Intelligence World Model Algorithm Team}{Core Member}
+\begin{itemize}
+    \item Focusing on \textbf{embodied intelligence world models} and \textbf{unified models} for humanoid robots.
+    \item Researching unified multimodal perception and decision-making frameworks for humanoid robots.
+    \item Developing world model-based robot behavior prediction and planning algorithms.
+\end{itemize}
+
+\datedsubsection{\textbf{Tencent (IEG)}\hspace{2em} {\faMapMarker 
+\small\textbf{Shanghai}}}{\textbf{2025.8 \textasciitilde \ 2025.12}}
+\role {Qingyun Program}{Research Intern}
+\begin{itemize}
+    \item Focused on game video scene understanding technology development, building intelligent video content analysis systems.
+    \item Designed game scene automatic recognition and classification algorithms based on multimodal large models.
+\end{itemize}
+
+\datedsubsection{\textbf{Imperial College London}\hspace{2em} {\faMapMarker 
+\small\textbf{London (Remote)}}}{\textbf{2022.11 \textasciitilde \ 2023.8}}
+
+\begin{itemize}
+    \item Collaborated with Associate Professor Rossella Arcucci on multimodal medical data processing research
+    % \item Developed vision-language pre-training framework for 3D medical image understanding
+    % \item Built landmark dataset BIMCV-R for 3D CT text-image retrieval with 10,000 high-quality pairs
+\end{itemize}
+
+\ifshowvthospital
+\datedsubsection{\textbf{301 Hospital}\hspace{2em} {\faMapMarker 
+\small\textbf{Beijing}}}{\textbf{2023.3 \textasciitilde \ 2023.9}}
+\role {Medical Image Analysis Research}{Research Intern}
+\begin{itemize}
+    \item Collaborated with Professor Qionghai Dai on medical image analysis projects
+    \item Developed automated diagnosis systems for tuberculosis meningitis using MRI data
+    \item Implemented deep learning models for medical image segmentation with 93.5\% accuracy
+\end{itemize}
+\fi
+
+\datedsubsection{\textbf{Xiamen University WISER Club}\hspace{2em} {\faMapMarker 
+\small\textbf{Xiamen}}}{\textbf{2021.8 \textasciitilde \ 2022.7}}
+
+\begin{itemize}
+    \item Participated in designing data mining and statistical analysis courses for undergraduates
+    \item Mentored 20 students in computational projects, organized 2 campus competition activities
+\end{itemize}
+
+% ========================================================================
+\section{\makebox[.75em][c]{\faPlane} \textbf{Travel History (Past 5 Years)}}
+% ========================================================================
+\begin{itemize}[leftmargin=0em, itemsep=3pt]
+    \item \textbf{Turkey} \hfill \textbf{2024.10}
+    \item \textbf{Morocco} \hfill \textbf{2024.10}
+    \item \textbf{South Korea} \hfill \textbf{2024.04}
+    \item \textbf{Macau} \hfill \textbf{2023.08}
+\end{itemize}
+
+% ========================================================================
+\section{\makebox[.75em][c]{\faTrophy} \textbf{Honors and Awards}}
+% ========================================================================
+\vspace{.5mm}
+\begin{itemize}[leftmargin=0em, itemsep=3pt]
+    % \item \textbf{Ph.D. Natural Science Foundation Project} \hfill \textbf{2024.12}
+    % \begin{itemize}[leftmargin=1.5em]
+    %     \item Principal Investigator (Selected as PhD candidate)
+    % \end{itemize}
+    
+    % \item \textbf{Graduate Excellence Scholarship} \hfill \textbf{2022.12}
+    % \begin{itemize}[leftmargin=1.5em]
+    %     \item Top 1\% academic performance recognition
+    % \end{itemize}
+    
+    \item \textbf{Xiamen University Academic Star} \hfill \textbf{2021.12}
+    \begin{itemize}[leftmargin=1.5em]
+        \item Outstanding undergraduate research achievement
+    \end{itemize}
+    
+    \item \textbf{'Jingrun Cup' Mathematics Competition Professional Group} \hfill \textbf{2021.09}
+    \begin{itemize}[leftmargin=1.5em]
+        \item First Place, Xiamen University
+    \end{itemize}
+    
+    \item \textbf{'Internet+' Innovation Competition} \hfill \textbf{2021.08}
+    \begin{itemize}[leftmargin=1.5em]
+        \item Gold Award, Fujian Province
+    \end{itemize}
+    
+    \item \textbf{National College Student Mathematics Competition} \hfill \textbf{2021.05}
+    \begin{itemize}[leftmargin=1.5em]
+        \item National Second Prize
+    \end{itemize}
+\end{itemize}
+
+% ========================================================================
+\section{\makebox[.75em][c]{\faCogs} \textbf{Technical Skills}}
+% ========================================================================
+\noindent
+\begin{minipage}[t]{.5\textwidth}
+    \begin{itemize}
+    \item \textbf{Programming}: Python, C++, MATLAB, Mathematica, \LaTeX
+    \item \textbf{Frameworks}: TensorFlow, PyTorch, Pandas, NumPy
+    \end{itemize}
+\end{minipage}
+\begin{minipage}[t]{.5\textwidth}
+    \begin{itemize}
+    \item \textbf{Languages}: English (Fluent), Chinese (Native)
+    \item \textbf{Tools}: Git, Docker, High Performance Computing
+    \end{itemize}
+\end{minipage}
+
+% ========================================================================
+\section{\makebox[.75em][c]{\faUsers} \textbf{Professional Service}}
+% ========================================================================
+\begin{itemize}
+    \item \textbf{Reviewer}: CVPR 2025, NeurIPS 2024, ICML 2025, ICLR 2024, MICCAI 2025, ACM MM 2024, AISTATS 2024, IJCV
+    % \item \textbf{Teaching Assistant}: Algorithm Design and Analysis, Statistical Learning (USTC)
+\end{itemize}
+
+% ========================================================================
+\end{document}
+% ========================================================================
