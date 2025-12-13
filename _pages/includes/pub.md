@@ -151,25 +151,24 @@ For a complete list of publications, please visit my [Google Scholar profile](ht
   white-space: nowrap;
 }
 
-/* 高引用徽章样式 */
+/* 高引用徽章样式 - 低调版 */
 .citation-badge {
   display: inline-flex;
   align-items: center;
-  gap: 4px;
-  padding: 2px 8px;
-  font-size: 0.75em;
-  font-weight: 600;
-  border-radius: 12px;
-  background: linear-gradient(135deg, #ff6b6b, #ee5a24);
+  gap: 3px;
+  padding: 2px 6px;
+  font-size: 0.7em;
+  font-weight: 500;
+  border-radius: 4px;
+  background: #4285f4;
   color: white;
-  margin-left: 8px;
+  margin-left: 6px;
   vertical-align: middle;
-  box-shadow: 0 2px 4px rgba(238, 90, 36, 0.3);
 }
 
 .citation-badge::before {
-  content: '🔥';
-  font-size: 0.9em;
+  content: '📊';
+  font-size: 0.85em;
 }
 </style>
 
