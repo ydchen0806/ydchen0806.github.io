@@ -9,9 +9,12 @@ This branch contains automatically updated Google Scholar statistics.
 - `gs_hindex.json`: H-Index badge
 - `gs_i10index.json`: I10-Index badge
 - `citation_trend.svg`: Citation trend chart
-- `first_author_papers.json`: First-author papers list with citations
+- `first_author_papers.json`: First-author papers list
+- `high_cited_papers.json`: High-cited papers (>=50)
+- `all_papers.json`: All papers with details
+- `auto_publications.md`: Auto-generated publication list
 
-**Last updated:** 2025-12-13 08:51:41 UTC
+**Last updated:** 2025-12-13 13:56:27 UTC
 
 ## Usage
 
