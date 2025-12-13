@@ -1,9 +1,10 @@
 # 📝 Selected Publications  
 
 For a complete list of publications, please visit my [Google Scholar profile](https://scholar.google.com/citations?user=hCvlj5cAAAAJ&hl=en&oi=ao) [![](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/ydchen0806/ydchen0806.github.io/google-scholar-stats/gs_data_shieldsio.json&logo=google-scholar&logoColor=white)](https://scholar.google.com/citations?user=hCvlj5cAAAAJ&hl=en&oi=ao)
-<!-- 动态引用徽章（已注释）
-[![](https://img.shields.io/badge/dynamic/json?logo=google-scholar&logoColor=white&label=citations&query=citedby&url=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Fydchen0806%2Fydchen0806.github.io@google-scholar-stats%2Fgs_data.json)](https://scholar.google.com/citations?user=hCvlj5cAAAAJ&hl=en&oi=ao)
--->
+
+<div align="center">
+  <img src="https://raw.githubusercontent.com/ydchen0806/ydchen0806.github.io/google-scholar-stats/citation_trend.svg" alt="Citation Trend" style="max-width: 100%; height: auto;">
+</div>
 
 **Note:** * denotes equal contribution
 
