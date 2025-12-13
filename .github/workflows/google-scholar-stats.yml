@@ -16,30 +16,41 @@ jobs:
     
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           persist-credentials: true
 
       - name: Set up Python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v5
         with:
-          python-version: '3.9'
+          python-version: '3.11'
 
       - name: Install dependencies
         run: |
           pip install --upgrade pip
-          pip install -r google_scholar_crawler/requirements.txt
+          pip install requests beautifulsoup4
 
-      - name: Fetch Google Scholar stats (robust method)
+      - name: Fetch Google Scholar stats
         env:
-          # GOOGLE_SCHOLAR_ID: ${{ secrets.GOOGLE_SCHOLAR_ID }}
-          # 如果没有设置 Secret，可以直接写 ID：
           GOOGLE_SCHOLAR_ID: 'hCvlj5cAAAAJ'
+          # 在 GitHub Secrets 中设置 SERPAPI_KEY
+          # 注册获取免费 API Key: https://serpapi.com/ (每月100次免费)
+          SERPAPI_KEY: ${{ secrets.SERPAPI_KEY }}
         timeout-minutes: 5
         run: |
-          echo "使用健壮方法获取Google Scholar统计数据..."
-          python google_scholar_crawler/robust_crawler.py
+          echo "=========================================="
+          echo "获取 Google Scholar 统计数据..."
+          echo "=========================================="
+          
+          # 优先使用 SerpAPI（更稳定）
+          if [ -n "$SERPAPI_KEY" ]; then
+            echo "使用 SerpAPI 获取数据..."
+            python google_scholar_crawler/serpapi_crawler.py
+          else
+            echo "SERPAPI_KEY 未设置，使用传统方法..."
+            python google_scholar_crawler/robust_crawler.py
+          fi
 
       - name: Verify output files
         run: |
@@ -50,7 +61,7 @@ jobs:
           cat results/gs_data_shieldsio.json
           echo ""
           echo "=== gs_data.json 摘要 ==="
-          python -c "import json; data=json.load(open('results/gs_data.json')); print(f\"Name: {data['name']}\nCitations: {data['citedby']}\")"
+          python -c "import json; data=json.load(open('results/gs_data.json')); print(f\"Name: {data['name']}\nCitations: {data['citedby']}\nSource: {data.get('source', 'unknown')}\")"
 
       - name: Update google-scholar-stats branch
         run: |
@@ -79,15 +90,15 @@ jobs:
           cp -r /tmp/scholar_data/* .
           
           # 创建 README
-          cat > README.md << 'EOF'
+          cat > README.md << EOF
           # Google Scholar Statistics
           
           This branch contains automatically updated Google Scholar statistics.
           
           ## Files
           
-          - `gs_data.json`: Complete scholar profile data
-          - `gs_data_shieldsio.json`: Shields.io badge format data
+          - \`gs_data.json\`: Complete scholar profile data
+          - \`gs_data_shieldsio.json\`: Shields.io badge format data
           
           **Last updated:** $(date -u +'%Y-%m-%d %H:%M:%S UTC')
           
@@ -97,21 +108,15 @@ jobs:
           
           Add this to your README.md:
           
-          ```markdown
-          ![Google Scholar Citations](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_REPO/google-scholar-stats/gs_data_shieldsio.json&logo=google-scholar&logoColor=white)
-          ```
-          
-          Replace `YOUR_USERNAME` and `YOUR_REPO` with your actual GitHub username and repository name.
-          
-          ### Access Raw Data
-          
-          ```
-          https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_REPO/google-scholar-stats/gs_data.json
-          ```
+          \`\`\`markdown
+          ![Google Scholar Citations](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/ydchen0806/ydchen0806.github.io/google-scholar-stats/gs_data_shieldsio.json&logo=google-scholar&logoColor=white)
+          \`\`\`
           
           ---
           
           *This data is automatically updated three times per week (Monday, Wednesday, Friday) by GitHub Actions.*
+          
+          **Data Source:** SerpAPI / Fallback
           EOF
           
           # 提交更改
@@ -132,3 +137,7 @@ jobs:
           echo "📊 **查看数据分支:** https://github.com/${{ github.repository }}/tree/google-scholar-stats" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
           echo "🔗 **Raw JSON:** https://raw.githubusercontent.com/${{ github.repository }}/google-scholar-stats/gs_data_shieldsio.json" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          CITATIONS=$(python -c "import json; print(json.load(open('results/gs_data.json'))['citedby'])" 2>/dev/null || echo "N/A")
+          SOURCE=$(python -c "import json; print(json.load(open('results/gs_data.json')).get('source', 'unknown'))" 2>/dev/null || echo "N/A")
+          echo "📈 **当前引用数:** $CITATIONS (来源: $SOURCE)" >> $GITHUB_STEP_SUMMARY
