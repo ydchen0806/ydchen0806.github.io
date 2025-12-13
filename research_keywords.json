@@ -1,0 +1,52 @@
+[
+  {
+    "keyword": "Medical Imaging",
+    "count": 5,
+    "weight": 5
+  },
+  {
+    "keyword": "Self-Supervised Learning",
+    "count": 4,
+    "weight": 4
+  },
+  {
+    "keyword": "Computer Vision",
+    "count": 3,
+    "weight": 3
+  },
+  {
+    "keyword": "Generative Models",
+    "count": 2,
+    "weight": 2
+  },
+  {
+    "keyword": "Natural Language Processing",
+    "count": 2,
+    "weight": 2
+  },
+  {
+    "keyword": "3D Vision",
+    "count": 2,
+    "weight": 2
+  },
+  {
+    "keyword": "Data-Centric AI",
+    "count": 2,
+    "weight": 2
+  },
+  {
+    "keyword": "Image Compression",
+    "count": 2,
+    "weight": 2
+  },
+  {
+    "keyword": "Multimodal Learning",
+    "count": 1,
+    "weight": 2
+  },
+  {
+    "keyword": "Reinforcement Learning",
+    "count": 1,
+    "weight": 2
+  }
+]

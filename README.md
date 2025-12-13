@@ -11,7 +11,7 @@ This branch contains automatically updated Google Scholar statistics.
 - `citation_trend.svg`: Citation trend chart
 - `first_author_papers.json`: First-author papers list with citations
 
-**Last updated:** 2025-12-13 08:43:21 UTC
+**Last updated:** 2025-12-13 08:51:41 UTC
 
 ## Usage
 
