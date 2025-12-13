@@ -176,31 +176,35 @@ For a complete list of publications, please visit my [Google Scholar profile](ht
 </style>
 
 <script>
-// 自动为高引用论文添加引用数徽章
+// 自动为所有论文添加引用数徽章（从爬虫数据自动更新）
 window.addEventListener('load', function() {
-  // 从 GitHub 加载高引用论文数据
-  fetch('https://raw.githubusercontent.com/ydchen0806/ydchen0806.github.io/google-scholar-stats/high_cited_papers.json')
+  // 从 GitHub 加载一作论文数据
+  fetch('https://raw.githubusercontent.com/ydchen0806/ydchen0806.github.io/google-scholar-stats/first_author_papers.json')
     .then(response => response.ok ? response.json() : [])
-    .then(highCitedPapers => {
-      if (!highCitedPapers || highCitedPapers.length === 0) {
-        console.log('[Citations] No high cited papers data available');
+    .then(allPapers => {
+      if (!allPapers || allPapers.length === 0) {
+        console.log('[Citations] No papers data available');
         return;
       }
       
-      console.log(`[Citations] Loaded ${highCitedPapers.length} high cited papers`);
+      console.log(`[Citations] Loaded ${allPapers.length} papers`);
       
       // 获取所有论文容器
       const paperBoxes = document.querySelectorAll('.paper-box-text');
       
       paperBoxes.forEach(box => {
+        // 检查是否已有手动添加的引用徽章（shields.io）
+        if (box.innerHTML.includes('img.shields.io/badge/citations')) {
+          return; // 跳过已有徽章的论文
+        }
+        
         // 只获取第一个链接（论文标题链接，排除 Code/Dataset 等链接）
         const allLinks = box.querySelectorAll('a');
         let titleLink = null;
         
-        // 找到第一个看起来像论文标题的链接（通常是第一个，且文本较长）
+        // 找到第一个看起来像论文标题的链接
         for (let link of allLinks) {
           const text = link.textContent.trim();
-          // 论文标题通常较长（>20字符），且不是 Code/Dataset/Weights 等
           if (text.length > 20 && 
               !text.toLowerCase().includes('code') && 
               !text.toLowerCase().includes('dataset') &&
@@ -216,15 +220,14 @@ window.addEventListener('load', function() {
         
         const linkText = titleLink.textContent.toLowerCase().trim();
         
-        // 尝试匹配高引用论文
-        for (let paper of highCitedPapers) {
+        // 尝试匹配论文
+        for (let paper of allPapers) {
           const paperTitle = paper.title.toLowerCase();
           
-          // 提取标题的关键词进行匹配（去除标点符号）
+          // 提取关键词进行匹配
           const cleanLinkText = linkText.replace(/[^\w\s]/g, ' ').replace(/\s+/g, ' ').trim();
           const cleanPaperTitle = paperTitle.replace(/[^\w\s]/g, ' ').replace(/\s+/g, ' ').trim();
           
-          // 使用更精确的匹配：检查关键词重叠
           const linkWords = new Set(cleanLinkText.split(' ').filter(w => w.length > 3));
           const paperWords = cleanPaperTitle.split(' ').filter(w => w.length > 3);
           
