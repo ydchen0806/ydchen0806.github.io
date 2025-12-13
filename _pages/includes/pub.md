@@ -176,69 +176,56 @@ For a complete list of publications, please visit my [Google Scholar profile](ht
 </style>
 
 <script>
-// 自动更新所有 shields.io 引用徽章的数字（从爬虫数据）
+// 智能引用徽章：>= 10 显示，< 10 隐藏，自动更新
+const MIN_CITATIONS = 10;
+
 window.addEventListener('load', function() {
   fetch('https://raw.githubusercontent.com/ydchen0806/ydchen0806.github.io/google-scholar-stats/first_author_papers.json')
     .then(response => response.ok ? response.json() : [])
     .then(allPapers => {
-      if (!allPapers || allPapers.length === 0) {
-        console.log('[Citations] No papers data available');
-        return;
-      }
+      if (!allPapers || allPapers.length === 0) return;
       
-      console.log(`[Citations] Loaded ${allPapers.length} papers for auto-update`);
+      console.log(`[Citations] 加载 ${allPapers.length} 篇论文，阈值 >= ${MIN_CITATIONS}`);
       
-      // 获取所有论文容器
-      const paperBoxes = document.querySelectorAll('.paper-box-text');
-      
-      paperBoxes.forEach(box => {
+      document.querySelectorAll('.paper-box-text').forEach(box => {
         // 找论文标题链接
-        const allLinks = box.querySelectorAll('a');
         let titleLink = null;
-        
-        for (let link of allLinks) {
+        for (let link of box.querySelectorAll('a')) {
           const text = link.textContent.trim();
-          if (text.length > 20 && 
-              !text.toLowerCase().includes('code') && 
-              !text.toLowerCase().includes('dataset') &&
-              !text.toLowerCase().includes('weights') &&
-              !text.toLowerCase().includes('project') &&
-              !text.toLowerCase().includes('poster')) {
+          if (text.length > 25 && 
+              !['code', 'dataset', 'weights', 'project', 'poster'].some(k => text.toLowerCase().includes(k))) {
             titleLink = link;
             break;
           }
         }
-        
         if (!titleLink) return;
         
-        const linkText = titleLink.textContent.toLowerCase().trim();
+        const linkText = titleLink.textContent.toLowerCase().replace(/[^\w\s]/g, ' ').replace(/\s+/g, ' ').trim();
+        const linkWords = new Set(linkText.split(' ').filter(w => w.length > 3));
         
-        // 尝试匹配论文
+        // 匹配论文
         for (let paper of allPapers) {
-          const paperTitle = paper.title.toLowerCase();
+          const paperWords = paper.title.toLowerCase().replace(/[^\w\s]/g, ' ').split(' ').filter(w => w.length > 3);
+          const matchCount = paperWords.filter(w => linkWords.has(w)).length;
           
-          // 提取关键词进行匹配
-          const cleanLinkText = linkText.replace(/[^\w\s]/g, ' ').replace(/\s+/g, ' ').trim();
-          const cleanPaperTitle = paperTitle.replace(/[^\w\s]/g, ' ').replace(/\s+/g, ' ').trim();
-          
-          const linkWords = new Set(cleanLinkText.split(' ').filter(w => w.length > 3));
-          const paperWords = cleanPaperTitle.split(' ').filter(w => w.length > 3);
-          
-          let matchCount = 0;
-          for (let word of paperWords) {
-            if (linkWords.has(word)) matchCount++;
-          }
-          
-          // 如果超过40%的关键词匹配，认为是同一篇论文
           if (paperWords.length > 0 && matchCount / paperWords.length > 0.4) {
-            // 找到已有的 shields.io 引用徽章并更新数字
+            const citations = paper.citations || 0;
             const badgeImg = box.querySelector('img[src*="img.shields.io/badge/citations"]');
-            if (badgeImg && paper.citations !== undefined) {
-              const oldSrc = badgeImg.src;
-              const newSrc = oldSrc.replace(/citations-\d+-blue/, `citations-${paper.citations}-blue`);
-              if (oldSrc !== newSrc) {
-                badgeImg.src = newSrc;
-                console.log(`[Citations] Updated: "${paper.title.substring(0, 35)}..." → ${paper.citations}`);
+            
+            if (citations >= MIN_CITATIONS) {
+              // 更新或保持徽章
+              if (badgeImg) {
+                const newSrc = badgeImg.src.replace(/citations-\d+-blue/, `citations-${citations}-blue`);
+                if (badgeImg.src !== newSrc) {
+                  badgeImg.src = newSrc;
+                  console.log(`[Citations] 更新: ${paper.title.substring(0, 30)}... → ${citations}`);
+                }
+              }
+            } else {
+              // 引用数不够，隐藏徽章
+              if (badgeImg) {
+                badgeImg.parentElement.style.display = 'none';
+                console.log(`[Citations] 隐藏: ${paper.title.substring(0, 30)}... (${citations} < ${MIN_CITATIONS})`);
               }
             }
             break;
@@ -246,7 +233,7 @@ window.addEventListener('load', function() {
         }
       });
     })
-    .catch(err => console.log('[Citations] Error loading data:', err));
+    .catch(err => console.log('[Citations] Error:', err));
 });
 </script>
 
@@ -257,7 +244,7 @@ window.addEventListener('load', function() {
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge-journal">IEEE JBHI</div><div class="badge-impact badge-q1">SCI Q1 | IF: 6.7</div><img src='images/JBHI25.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-> [EMPOWER: Evolutionary Medical Prompt Optimization With Reinforcement Learning](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11205280) [![](https://img.shields.io/badge/citations-0-blue?logo=google-scholar&logoColor=white&style=flat-square)](https://scholar.google.com/citations?user=hCvlj5cAAAAJ) <span class="research-tags"><span class="research-tag">Vision-Language</span><span class="research-tag">Multimodal Learning</span></span> \\
+> [EMPOWER: Evolutionary Medical Prompt Optimization With Reinforcement Learning](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11205280) <span class="research-tags"><span class="research-tag">Vision-Language</span><span class="research-tag">Multimodal Learning</span></span> \\
   IEEE Journal of Biomedical and Health Informatics | October 16, 2025 \\
   **Yinda Chen\***; Yangfan He\*; Jing Yang; Dapeng Zhang; Zhenlong Yuan; Muhammad Attique Khan; Jamel Baili; Por Lip Yee
 
@@ -317,7 +304,7 @@ TokenUnify proposes a hierarchical predictive coding framework for computer visi
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge-conference">ICML 2025</div><div class="badge-ccf badge-ccf-a">CCF A</div><img src='images/ICML25.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-[MaskTwins: Dual-form Complementary Masking for Domain-Adaptive Image Segmentation](https://openreview.net/pdf?id=9CpeZ8BzPO) [![](https://img.shields.io/badge/citations-2-blue?logo=google-scholar&logoColor=white&style=flat-square)](https://scholar.google.com/citations?user=hCvlj5cAAAAJ) <span class="research-tags"><span class="research-tag">Domain Adaptation</span><span class="research-tag">Pretraining Methods</span></span> \\
+[MaskTwins: Dual-form Complementary Masking for Domain-Adaptive Image Segmentation](https://openreview.net/pdf?id=9CpeZ8BzPO) <span class="research-tags"><span class="research-tag">Domain Adaptation</span><span class="research-tag">Pretraining Methods</span></span> \\
 ICML | July 13, 2025 \\
 Jiawen Wang; **Yinda Chen\*** (Theory Contribution & Project Leader); Xiaoyu Liu; Che Liu; Dong Liu; Jianqing Gao; Zhiwei Xiong
 
@@ -331,7 +318,7 @@ MaskTwins introduces a dual-form complementary masking strategy for domain-adapt
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge-conference">AAAI 2025</div><div class="badge-ccf badge-ccf-a">CCF A</div><img src='images/AAAI25.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-> [Condition-generation Latent Coding with an External Dictionary for Deep Image Compression](/docs/Condition_generation_Latent_Coding_with_an_External_Dictionary_for_Deep_Image_Compression.pdf) [![](https://img.shields.io/badge/citations-5-blue?logo=google-scholar&logoColor=white&style=flat-square)](https://scholar.google.com/citations?user=hCvlj5cAAAAJ) <span class="research-tags"><span class="research-tag">Image Compression</span></span> \\
+> [Condition-generation Latent Coding with an External Dictionary for Deep Image Compression](/docs/Condition_generation_Latent_Coding_with_an_External_Dictionary_for_Deep_Image_Compression.pdf) <span class="research-tags"><span class="research-tag">Image Compression</span></span> \\
   AAAI <span style="color:red">**(<font color="red">oral</font>)**</span> | March 06, 2025 \\
   Siqi Wu; **Yinda Chen\***; Dong Liu; Zhihai He
 
@@ -373,7 +360,7 @@ This paper presents BIMCV-R, a 3D CT text-image retrieval dataset, and MedFinder
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge-conference">ICASSP 2024</div><div class="badge-ccf badge-ccf-b">CCF B</div><img src='images/ICASSP24.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-> [Learning multiscale consistency for self-supervised computer vision instance segmentation](https://arxiv.org/pdf/2308.09917) [![](https://img.shields.io/badge/citations-34-blue?logo=google-scholar&logoColor=white&style=flat-square)](https://scholar.google.com/citations?user=hCvlj5cAAAAJ) <span class="research-tags"><span class="research-tag">Computer Vision</span><span class="research-tag">Pretraining Methods</span></span> \\
+> [Learning multiscale consistency for self-supervised electron microscopy instance segmentation](https://arxiv.org/pdf/2308.09917) <span class="research-tags"><span class="research-tag">Computer Vision</span><span class="research-tag">Pretraining Methods</span></span> \\
   ICASSP | April 13, 2024 \\
   **Yinda Chen**; Wei Huang; Xiaoyu Liu; Shiyu Deng; Qi Chen; Zhiwei Xiong
 
