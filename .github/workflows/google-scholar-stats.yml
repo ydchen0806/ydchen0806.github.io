@@ -65,13 +65,13 @@ jobs:
       - name: Verify output files
         run: |
           echo "检查生成的文件..."
-          ls -lh results/
+          ls -lh google_scholar_crawler/results/
           echo ""
           echo "=== gs_data_shieldsio.json 内容 ==="
-          cat results/gs_data_shieldsio.json
+          cat google_scholar_crawler/results/gs_data_shieldsio.json
           echo ""
           echo "=== gs_data.json 摘要 ==="
-          python -c "import json; data=json.load(open('results/gs_data.json')); print(f\"Name: {data['name']}\nCitations: {data['citedby']}\nSource: {data.get('source', 'unknown')}\")"
+          python -c "import json; data=json.load(open('google_scholar_crawler/results/gs_data.json')); print(f\"Name: {data['name']}\nCitations: {data['citedby']}\nSource: {data.get('source', 'unknown')}\")"
 
       - name: Update google-scholar-stats branch
         run: |
@@ -81,7 +81,7 @@ jobs:
           
           # 保存生成的文件到临时目录
           mkdir -p /tmp/scholar_data
-          cp -r results/* /tmp/scholar_data/
+          cp -r google_scholar_crawler/results/* /tmp/scholar_data/
           
           # 切换到目标分支（如果不存在则创建）
           git fetch origin google-scholar-stats 2>/dev/null || true
@@ -154,6 +154,6 @@ jobs:
           echo "" >> $GITHUB_STEP_SUMMARY
           echo "🔗 **Raw JSON:** https://raw.githubusercontent.com/${{ github.repository }}/google-scholar-stats/gs_data_shieldsio.json" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
-          CITATIONS=$(python -c "import json; print(json.load(open('results/gs_data.json'))['citedby'])" 2>/dev/null || echo "N/A")
-          SOURCE=$(python -c "import json; print(json.load(open('results/gs_data.json')).get('source', 'unknown'))" 2>/dev/null || echo "N/A")
+          CITATIONS=$(python -c "import json; print(json.load(open('google_scholar_crawler/results/gs_data.json'))['citedby'])" 2>/dev/null || echo "N/A")
+          SOURCE=$(python -c "import json; print(json.load(open('google_scholar_crawler/results/gs_data.json')).get('source', 'unknown'))" 2>/dev/null || echo "N/A")
           echo "📈 **当前引用数:** $CITATIONS (来源: $SOURCE)" >> $GITHUB_STEP_SUMMARY
