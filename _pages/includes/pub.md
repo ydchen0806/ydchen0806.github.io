@@ -2,9 +2,12 @@
 
 For a complete list of publications, please visit my [Google Scholar profile](https://scholar.google.com/citations?user=hCvlj5cAAAAJ&hl=en&oi=ao) [![](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/ydchen0806/ydchen0806.github.io/google-scholar-stats/gs_data_shieldsio.json&logo=google-scholar&logoColor=white)](https://scholar.google.com/citations?user=hCvlj5cAAAAJ&hl=en&oi=ao)
 
-<div align="center">
+<details>
+<summary>📈 <strong>View Citation Trend</strong></summary>
+<div align="center" style="padding: 1em;">
   <img src="https://raw.githubusercontent.com/ydchen0806/ydchen0806.github.io/google-scholar-stats/citation_trend.svg" alt="Citation Trend" style="max-width: 100%; height: auto;">
 </div>
+</details>
 
 **Note:** * denotes equal contribution
 
@@ -288,14 +291,14 @@ The paper proposes an unsupervised domain adaptation method for EM image denoisi
 
 ## 🎓 Conference Papers
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge-conference">ICCV 2025</div><div class="badge-ccf badge-ccf-a">CCF A</div><img src='images/GTGM.png' alt="GTGM" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge-conference">ICCV Workshop 2025</div><img src='images/GTGM.png' alt="GTGM" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [GTGM: Generative Text-Guided 3D Vision-Language Pretraining for Medical Image Segmentation](https://arxiv.org/abs/2404.00000) [![](https://img.shields.io/badge/citations-116-blue?logo=google-scholar&logoColor=white)](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&citation_for_view=hCvlj5cAAAAJ:NMxIlDl6LWMC) <span class="research-tags"><span class="research-tag">Vision-Language</span><span class="research-tag">Medical Imaging</span></span> \\
-ICCV | October 25, 2025 \\
+ICCV Workshop | October 25, 2025 \\
 **Yinda Chen\***; Che Liu\*; Wei Huang; Xiaoyu Liu; Haoyuan Shi; Sibo Cheng; Rossella Arcucci; Zhiwei Xiong
 
-[**Code**](https://github.com/ydchen0806/gtgm) [![](https://img.shields.io/github/stars/ydchen0806/gtgm?style=social&label=Code+Stars&cacheSeconds=3600)](https://github.com/ydchen0806/gtgm)
+[**Code**](https://github.com/ydchen0806/gtgm)
 
 GTGM extends Vision-Language Pretraining to 3D medical images by leveraging LLMs to generate synthetic textual descriptions, enabling text-guided representation learning without paired medical text. Combined with a negative-free contrastive learning strategy, GTGM achieves state-of-the-art performance across 10 CT/MRI segmentation datasets.
 

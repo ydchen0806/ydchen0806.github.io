@@ -154,7 +154,9 @@ def process_papers(articles: list) -> list:
         title = article.get("title", "")
         authors = article.get("authors", "")
         year = article.get("year", "")
-        citations = article.get("cited_by", {}).get("value", 0)
+        cited_by = article.get("cited_by") or {}
+        citations = cited_by.get("value", 0) if isinstance(cited_by, dict) else 0
+        citations = citations or 0  # 确保不是 None
         link = article.get("link", "")
         
         # 判断是否为一作
