@@ -62,6 +62,27 @@ jobs:
           
           cd ..
 
+      - name: Update pub.md citations
+        run: |
+          echo "=========================================="
+          echo "更新 pub.md 中的引用数..."
+          echo "=========================================="
+          python google_scholar_crawler/update_pub_citations.py || echo "pub.md 更新失败，继续..."
+
+      - name: Commit pub.md changes
+        run: |
+          git config --global user.email "yindachen@mail.ustc.edu.cn"
+          git config --global user.name "ydchen0806"
+          
+          if git diff --quiet _pages/includes/pub.md; then
+            echo "pub.md 没有变化"
+          else
+            git add _pages/includes/pub.md
+            git commit -m "Auto-update citation counts in pub.md"
+            git push origin main
+            echo "✅ pub.md 已更新并推送"
+          fi
+
       - name: Verify output files
         run: |
           echo "检查生成的文件..."
