@@ -180,38 +180,76 @@ window.addEventListener('load', function() {
   fetch('https://raw.githubusercontent.com/ydchen0806/ydchen0806.github.io/google-scholar-stats/high_cited_papers.json')
     .then(response => response.ok ? response.json() : [])
     .then(highCitedPapers => {
-      if (!highCitedPapers || highCitedPapers.length === 0) return;
+      if (!highCitedPapers || highCitedPapers.length === 0) {
+        console.log('[Citations] No high cited papers data available');
+        return;
+      }
       
-      // 获取所有论文标题链接
-      const paperLinks = document.querySelectorAll('.paper-box-text a');
+      console.log(`[Citations] Loaded ${highCitedPapers.length} high cited papers`);
       
-      paperLinks.forEach(link => {
-        const linkText = link.textContent.toLowerCase().trim();
+      // 获取所有论文容器
+      const paperBoxes = document.querySelectorAll('.paper-box-text');
+      
+      paperBoxes.forEach(box => {
+        // 只获取第一个链接（论文标题链接，排除 Code/Dataset 等链接）
+        const allLinks = box.querySelectorAll('a');
+        let titleLink = null;
+        
+        // 找到第一个看起来像论文标题的链接（通常是第一个，且文本较长）
+        for (let link of allLinks) {
+          const text = link.textContent.trim();
+          // 论文标题通常较长（>20字符），且不是 Code/Dataset/Weights 等
+          if (text.length > 20 && 
+              !text.toLowerCase().includes('code') && 
+              !text.toLowerCase().includes('dataset') &&
+              !text.toLowerCase().includes('weights') &&
+              !text.toLowerCase().includes('project') &&
+              !text.toLowerCase().includes('poster')) {
+            titleLink = link;
+            break;
+          }
+        }
+        
+        if (!titleLink) return;
+        
+        const linkText = titleLink.textContent.toLowerCase().trim();
         
         // 尝试匹配高引用论文
-        highCitedPapers.forEach(paper => {
+        for (let paper of highCitedPapers) {
           const paperTitle = paper.title.toLowerCase();
           
-          // 使用模糊匹配（标题前30个字符）
-          if (linkText.includes(paperTitle.substring(0, 30)) || 
-              paperTitle.includes(linkText.substring(0, 30))) {
-            
+          // 提取标题的关键词进行匹配（去除标点符号）
+          const cleanLinkText = linkText.replace(/[^\w\s]/g, ' ').replace(/\s+/g, ' ').trim();
+          const cleanPaperTitle = paperTitle.replace(/[^\w\s]/g, ' ').replace(/\s+/g, ' ').trim();
+          
+          // 使用更精确的匹配：检查关键词重叠
+          const linkWords = new Set(cleanLinkText.split(' ').filter(w => w.length > 3));
+          const paperWords = cleanPaperTitle.split(' ').filter(w => w.length > 3);
+          
+          let matchCount = 0;
+          for (let word of paperWords) {
+            if (linkWords.has(word)) matchCount++;
+          }
+          
+          // 如果超过50%的关键词匹配，认为是同一篇论文
+          if (paperWords.length > 0 && matchCount / paperWords.length > 0.5) {
             // 检查是否已经添加了徽章
-            if (!link.parentElement.querySelector('.citation-badge')) {
+            if (!box.querySelector('.citation-badge')) {
               const badge = document.createElement('span');
               badge.className = 'citation-badge';
               badge.textContent = paper.citations + ' citations';
               badge.title = 'Google Scholar citations (auto-updated)';
               
-              // 插入到链接后面
-              link.insertAdjacentElement('afterend', badge);
-              console.log(`[Citations] Added badge to: ${paper.title.substring(0, 40)}...`);
+              // 插入到标题链接后面
+              titleLink.insertAdjacentElement('afterend', badge);
+              console.log(`[Citations] Matched: "${paper.title.substring(0, 40)}..." with ${paper.citations} citations`);
             }
+            break; // 找到匹配后停止
           }
-        });
+        }
       });
     })
-    .catch(err => console.log('[Citations] Could not load high cited papers data'));
+    .catch(err => console.log('[Citations] Error loading data:', err));
 });
 </script>
 
