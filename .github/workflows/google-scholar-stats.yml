@@ -37,20 +37,30 @@ jobs:
           # 在 GitHub Secrets 中设置 SERPAPI_KEY
           # 注册获取免费 API Key: https://serpapi.com/ (每月100次免费)
           SERPAPI_KEY: ${{ secrets.SERPAPI_KEY }}
-        timeout-minutes: 5
+        timeout-minutes: 10
         run: |
           echo "=========================================="
           echo "获取 Google Scholar 统计数据..."
           echo "=========================================="
           
+          cd google_scholar_crawler
+          
           # 优先使用 SerpAPI（更稳定）
           if [ -n "$SERPAPI_KEY" ]; then
             echo "使用 SerpAPI 获取数据..."
-            python google_scholar_crawler/serpapi_crawler.py
+            python serpapi_crawler.py
+            
+            echo ""
+            echo "=========================================="
+            echo "生成论文详细信息..."
+            echo "=========================================="
+            python paper_generator.py || echo "论文生成器运行失败，继续..."
           else
             echo "SERPAPI_KEY 未设置，使用传统方法..."
-            python google_scholar_crawler/robust_crawler.py
+            python robust_crawler.py
           fi
+          
+          cd ..
 
       - name: Verify output files
         run: |
@@ -102,7 +112,10 @@ jobs:
           - \`gs_hindex.json\`: H-Index badge
           - \`gs_i10index.json\`: I10-Index badge
           - \`citation_trend.svg\`: Citation trend chart
-          - \`first_author_papers.json\`: First-author papers list with citations
+          - \`first_author_papers.json\`: First-author papers list
+          - \`high_cited_papers.json\`: High-cited papers (>=50)
+          - \`all_papers.json\`: All papers with details
+          - \`auto_publications.md\`: Auto-generated publication list
           
           **Last updated:** $(date -u +'%Y-%m-%d %H:%M:%S UTC')
           
