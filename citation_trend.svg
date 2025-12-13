@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="600" height="200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#667eea;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#667eea;stop-opacity:0.1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- 背景 -->
+  <rect width="600" height="200" fill="#ffffff" rx="10"/>
+  
+  <!-- 标题 -->
+  <text x="300.0" y="25" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#333">
+    📈 Citation Trend
+  </text>
+  
+  <!-- 网格线 -->
+  <g stroke="#e0e0e0" stroke-width="1">
+    <line x1="50" y1="50.0" x2="550" y2="50.0"/>
+    <line x1="50" y1="75.0" x2="550" y2="75.0"/>
+    <line x1="50" y1="100.0" x2="550" y2="100.0"/>
+    <line x1="50" y1="125.0" x2="550" y2="125.0"/>
+    <line x1="50" y1="150.0" x2="550" y2="150.0"/>
+  </g>
+
+  <!-- 填充区域 -->
+  <polygon points="50,150 50.0,148.08429118773947 216.66666666666666,143.10344827586206 383.3333333333333,94.06130268199234 550.0,50.0 550,150" fill="url(#gradient)"/>
+
+  <!-- 折线 -->
+  <polyline points="50.0,148.08429118773947 216.66666666666666,143.10344827586206 383.3333333333333,94.06130268199234 550.0,50.0" fill="none" stroke="#667eea" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- 数据点 -->
+  <circle cx="50.0" cy="148.08429118773947" r="5" fill="#667eea" stroke="#fff" stroke-width="2"/>
+  <text x="50.0" y="170" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#666">2022</text>
+  <circle cx="216.66666666666666" cy="143.10344827586206" r="5" fill="#667eea" stroke="#fff" stroke-width="2"/>
+  <circle cx="383.3333333333333" cy="94.06130268199234" r="5" fill="#667eea" stroke="#fff" stroke-width="2"/>
+  <text x="383.3333333333333" y="170" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#666">2024</text>
+  <circle cx="550.0" cy="50.0" r="5" fill="#667eea" stroke="#fff" stroke-width="2"/>
+  <text x="550.0" y="170" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#666">2025</text>
+  <text x="550.0" y="35.0" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#667eea">261</text>
+</svg>

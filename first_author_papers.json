@@ -1,0 +1,82 @@
+[
+  {
+    "title": "GTGM: Generative Text-Guided 3D Vision-Language Pretraining for Medical Image Segmentation",
+    "authors": "Y Chen, C Liu, W Huang, X Liu, H Shi, S Cheng, R Arcucci, Z Xiong",
+    "year": "2025",
+    "citations": 116,
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&citation_for_view=hCvlj5cAAAAJ:NMxIlDl6LWMC",
+    "citation_id": "hCvlj5cAAAAJ:NMxIlDl6LWMC"
+  },
+  {
+    "title": "Bimcv-r: A landmark dataset for 3d ct text-image retrieval",
+    "authors": "Y Chen, C Liu, X Liu, R Arcucci, Z Xiong",
+    "year": "2024",
+    "citations": 62,
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&citation_for_view=hCvlj5cAAAAJ:mVmsd5A6BfQC",
+    "citation_id": "hCvlj5cAAAAJ:mVmsd5A6BfQC"
+  },
+  {
+    "title": "Self-supervised neuron segmentation with multi-agent reinforcement learning",
+    "authors": "Y Chen, W Huang, S Zhou, Q Chen, Z Xiong",
+    "year": "2023",
+    "citations": 57,
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&citation_for_view=hCvlj5cAAAAJ:QIV2ME_5wuYC",
+    "citation_id": "hCvlj5cAAAAJ:QIV2ME_5wuYC"
+  },
+  {
+    "title": "Learning multiscale consistency for self-supervised electron microscopy instance segmentation",
+    "authors": "Y Chen, W Huang, X Liu, S Deng, Q Chen, Z Xiong",
+    "year": "2024",
+    "citations": 34,
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&citation_for_view=hCvlj5cAAAAJ:9ZlFYXVOiuMC",
+    "citation_id": "hCvlj5cAAAAJ:9ZlFYXVOiuMC"
+  },
+  {
+    "title": "TokenUnify: Scaling Up Autoregressive Pretraining for Neuron Segmentation",
+    "authors": "Y Chen, H Shi, X Liu, T Shi, R Zhang, D Liu, Z Xiong, F Wu",
+    "year": "2025",
+    "citations": 28,
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&citation_for_view=hCvlj5cAAAAJ:blknAaTinKkC",
+    "citation_id": "hCvlj5cAAAAJ:blknAaTinKkC"
+  },
+  {
+    "title": "MaskFactory: Towards High-quality Synthetic Data Generation for Dichotomous Image Segmentation",
+    "authors": "H Qian*, YD Chen*, S Lou, FS Khan, X Jin, DP Fan",
+    "year": "2024",
+    "citations": 20,
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&citation_for_view=hCvlj5cAAAAJ:aqlVkmm33-oC",
+    "citation_id": "hCvlj5cAAAAJ:aqlVkmm33-oC"
+  },
+  {
+    "title": "UniCompress: Enhancing Multi-Data Medical Image Compression with Knowledge Distillation",
+    "authors": "R Yang*, Y Chen*, Z Zhang, X Liu, Z Li, K He, Z Xiong, J Suo, Q Dai",
+    "year": "2024",
+    "citations": 7,
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&citation_for_view=hCvlj5cAAAAJ:UebtZRa9Y70C",
+    "citation_id": "hCvlj5cAAAAJ:UebtZRa9Y70C"
+  },
+  {
+    "title": "Application of ai technology in defense of big data network security",
+    "authors": "Y Chen, X Gao, X Wu",
+    "year": "2021",
+    "citations": 6,
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&citation_for_view=hCvlj5cAAAAJ:u-x6o8ySG0sC",
+    "citation_id": "hCvlj5cAAAAJ:u-x6o8ySG0sC"
+  },
+  {
+    "title": "Conditional Latent Coding with Learnable Synthesized Reference for Deep Image Compression",
+    "authors": "S Wu*, Y Chen*, D Liu, Z He",
+    "year": "2025",
+    "citations": 5,
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&citation_for_view=hCvlj5cAAAAJ:4DMP91E08xMC",
+    "citation_id": "hCvlj5cAAAAJ:4DMP91E08xMC"
+  },
+  {
+    "title": "MaskTwins: Dual-form Complementary Masking for Domain-Adaptive Image Segmentation",
+    "authors": "J Wang*, Y Chen*, X Liu, C Liu, D Liu, Z Xiong",
+    "year": "2025",
+    "citations": 2,
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&citation_for_view=hCvlj5cAAAAJ:dhFuZR0502QC",
+    "citation_id": "hCvlj5cAAAAJ:dhFuZR0502QC"
+  }
+]

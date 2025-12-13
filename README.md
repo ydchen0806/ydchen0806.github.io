@@ -5,22 +5,25 @@ This branch contains automatically updated Google Scholar statistics.
 ## Files
 
 - `gs_data.json`: Complete scholar profile data
-- `gs_data_shieldsio.json`: Shields.io badge format data
+- `gs_data_shieldsio.json`: Citations badge (Shields.io format)
+- `gs_hindex.json`: H-Index badge
+- `gs_i10index.json`: I10-Index badge
+- `citation_trend.svg`: Citation trend chart
+- `first_author_papers.json`: First-author papers list with citations
 
-**Last updated:** 2025-12-13 08:22:51 UTC
+**Last updated:** 2025-12-13 08:43:21 UTC
 
 ## Usage
 
-### Display Citation Badge
-
-Add this to your README.md:
-
+### Citation Badge
 ```markdown
-![Google Scholar Citations](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/ydchen0806/ydchen0806.github.io/google-scholar-stats/gs_data_shieldsio.json&logo=google-scholar&logoColor=white)
+![Citations](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/ydchen0806/ydchen0806.github.io/google-scholar-stats/gs_data_shieldsio.json&logo=google-scholar&logoColor=white)
+```
+
+### Citation Trend Chart
+```markdown
+![Citation Trend](https://raw.githubusercontent.com/ydchen0806/ydchen0806.github.io/google-scholar-stats/citation_trend.svg)
 ```
 
 ---
-
-*This data is automatically updated three times per week (Monday, Wednesday, Friday) by GitHub Actions.*
-
-**Data Source:** SerpAPI / Fallback
+*Updated 3x weekly (Mon/Wed/Fri) via GitHub Actions | Source: SerpAPI*
