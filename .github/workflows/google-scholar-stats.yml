@@ -69,20 +69,6 @@ jobs:
           echo "=========================================="
           python google_scholar_crawler/update_pub_citations.py || echo "pub.md 更新失败，继续..."
 
-      - name: Commit pub.md changes
-        run: |
-          git config --global user.email "yindachen@mail.ustc.edu.cn"
-          git config --global user.name "ydchen0806"
-          
-          if git diff --quiet _pages/includes/pub.md; then
-            echo "pub.md 没有变化"
-          else
-            git add _pages/includes/pub.md
-            git commit -m "Auto-update citation counts in pub.md"
-            git push origin main
-            echo "✅ pub.md 已更新并推送"
-          fi
-
       - name: Verify output files
         run: |
           echo "检查生成的文件..."
@@ -93,6 +79,22 @@ jobs:
           echo ""
           echo "=== gs_data.json 摘要 ==="
           python -c "import json; data=json.load(open('google_scholar_crawler/results/gs_data.json')); print(f\"Name: {data['name']}\nCitations: {data['citedby']}\nSource: {data.get('source', 'unknown')}\")"
+
+      - name: Commit all main branch changes
+        run: |
+          # 配置 Git
+          git config --global user.email "yindachen@mail.ustc.edu.cn"
+          git config --global user.name "ydchen0806"
+          
+          # 提交所有更改（包括 serpapi_crawler.py 的 fallback 更新）
+          git add -A
+          if git diff --staged --quiet; then
+            echo "main 分支没有变化需要提交"
+          else
+            git commit -m "Auto-update: citations, fallback data [skip ci]"
+            git push origin main
+            echo "✅ main 分支更改已提交"
+          fi
 
       - name: Update google-scholar-stats branch
         run: |
