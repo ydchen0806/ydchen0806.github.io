@@ -90,6 +90,7 @@
 
 <div id="work-section" markdown="1">
 
+<!-- 
 - <div class="company-header">
     <img src="/images/X-humanoid.png" alt="Beijing Humanoid Robot Innovation Center Logo" width="144"/>
     <div>
@@ -101,6 +102,7 @@
   
   - Conducting research on embodied intelligence world models
   - Developing advanced algorithms for humanoid robot perception and decision-making
+-->
 
 - <div class="company-header">
     <img src="/images/tencent.png" alt="Tencent Logo" width="144"/>
