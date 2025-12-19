@@ -1,7 +1,7 @@
 {
   "name": "Yinda Chen",
-  "citedby": 437,
-  "citedby5y": 436,
+  "citedby": 440,
+  "citedby5y": 439,
   "hindex": 9,
   "hindex5y": 9,
   "i10index": 9,
@@ -12,7 +12,7 @@
     "Self-supervised Learning",
     "Image Compression"
   ],
-  "thumbnail": "https://scholar.googleusercontent.com/citations?view_op=view_photo&user=hCvlj5cAAAAJ&citpid=11",
+  "thumbnail": "https://scholar.googleusercontent.com/citations?view_op=view_photo&user=hCvlj5cAAAAJ&citpid=12",
   "citation_graph": [
     {
       "year": 2022,
@@ -28,10 +28,10 @@
     },
     {
       "year": 2025,
-      "citations": 261
+      "citations": 264
     }
   ],
-  "updated": "2025-12-17 02:01:01.488121",
+  "updated": "2025-12-19 01:54:02.772666",
   "source": "serpapi",
   "publications": {},
   "first_author_papers": [
@@ -79,7 +79,7 @@
       "title": "MaskFactory: Towards High-quality Synthetic Data Generation for Dichotomous Image Segmentation",
       "authors": "H Qian*, YD Chen*, S Lou, FS Khan, X Jin, DP Fan",
       "year": "2024",
-      "citations": 20,
+      "citations": 21,
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&citation_for_view=hCvlj5cAAAAJ:aqlVkmm33-oC",
       "citation_id": "hCvlj5cAAAAJ:aqlVkmm33-oC"
     },

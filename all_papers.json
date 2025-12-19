@@ -43,7 +43,7 @@
     "title": "Does DINOv3 Set a New Medical Vision Standard?",
     "authors": "C Liu, Y Chen, H Shi, J Lu, B Jian, J Pan, L Cai, J Wang, Y Zhang, J Li, ...",
     "year": "2025",
-    "citations": 7,
+    "citations": 8,
     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=hCvlj5cAAAAJ:HDshCWvjkbEC",
     "is_first_author": true,
     "venue": null,
@@ -156,7 +156,7 @@
     "title": "QMamba: Post-Training Quantization for Vision State Space Models",
     "authors": "Y Li, X Liu, J Li, R Xu, Y Chen, Z Xiong",
     "year": "2025",
-    "citations": 3,
+    "citations": 4,
     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=hCvlj5cAAAAJ:qxL8FJ1GzNcC",
     "is_first_author": false,
     "venue": {
@@ -256,7 +256,7 @@
     "title": "MaskFactory: Towards High-quality Synthetic Data Generation for Dichotomous Image Segmentation",
     "authors": "H Qian*, YD Chen*, S Lou, FS Khan, X Jin, DP Fan",
     "year": "2024",
-    "citations": 20,
+    "citations": 21,
     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=hCvlj5cAAAAJ:aqlVkmm33-oC",
     "is_first_author": true,
     "venue": {
