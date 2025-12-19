@@ -203,32 +203,42 @@ window.addEventListener('load', function() {
         const linkText = titleLink.textContent.toLowerCase().replace(/[^\w\s]/g, ' ').replace(/\s+/g, ' ').trim();
         const linkWords = new Set(linkText.split(' ').filter(w => w.length > 3));
         
-        // 匹配论文
+        // 匹配论文 - 选择匹配度最高的论文
+        let bestMatch = null;
+        let bestScore = 0;
+        
         for (let paper of allPapers) {
           const paperWords = paper.title.toLowerCase().replace(/[^\w\s]/g, ' ').split(' ').filter(w => w.length > 3);
-          const matchCount = paperWords.filter(w => linkWords.has(w)).length;
+          if (paperWords.length === 0) continue;
           
-          if (paperWords.length > 0 && matchCount / paperWords.length > 0.4) {
-            const citations = paper.citations || 0;
-            const badgeImg = box.querySelector('img[src*="img.shields.io/badge/citations"]');
-            
-            if (citations >= MIN_CITATIONS) {
-              // 更新或保持徽章
-              if (badgeImg) {
-                const newSrc = badgeImg.src.replace(/citations-\d+-blue/, `citations-${citations}-blue`);
-                if (badgeImg.src !== newSrc) {
-                  badgeImg.src = newSrc;
-                  console.log(`[Citations] 更新: ${paper.title.substring(0, 30)}... → ${citations}`);
-                }
-              }
-            } else {
-              // 引用数不够，隐藏徽章
-              if (badgeImg) {
-                badgeImg.parentElement.style.display = 'none';
-                console.log(`[Citations] 隐藏: ${paper.title.substring(0, 30)}... (${citations} < ${MIN_CITATIONS})`);
+          const matchCount = paperWords.filter(w => linkWords.has(w)).length;
+          const score = matchCount / paperWords.length;
+          
+          if (score > bestScore && score > 0.4) {
+            bestScore = score;
+            bestMatch = paper;
+          }
+        }
+        
+        if (bestMatch) {
+          const citations = bestMatch.citations || 0;
+          const badgeImg = box.querySelector('img[src*="img.shields.io/badge/citations"]');
+          
+          if (citations >= MIN_CITATIONS) {
+            // 更新或保持徽章
+            if (badgeImg) {
+              const newSrc = badgeImg.src.replace(/citations-\d+-blue/, `citations-${citations}-blue`);
+              if (badgeImg.src !== newSrc) {
+                badgeImg.src = newSrc;
+                console.log(`[Citations] 更新: ${bestMatch.title.substring(0, 30)}... → ${citations}`);
               }
             }
-            break;
+          } else {
+            // 引用数不够，隐藏徽章
+            if (badgeImg) {
+              badgeImg.parentElement.style.display = 'none';
+              console.log(`[Citations] 隐藏: ${bestMatch.title.substring(0, 30)}... (${citations} < ${MIN_CITATIONS})`);
+            }
           }
         }
       });
