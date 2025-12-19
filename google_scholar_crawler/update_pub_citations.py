@@ -51,9 +51,16 @@ def match_paper(pub_title: str, papers: list) -> dict:
     
     return best_match
 
-def create_badge(citations: int) -> str:
-    """创建引用徽章 markdown"""
-    return f' [![](https://img.shields.io/badge/citations-{citations}-blue?logo=google-scholar&logoColor=white&style=flat-square)](https://scholar.google.com/citations?user=hCvlj5cAAAAJ)'
+def create_badge(citations: int, paper_link: str = None) -> str:
+    """创建引用徽章 markdown
+    
+    Args:
+        citations: 引用数
+        paper_link: 论文的Google Scholar具体链接，如果没有则使用用户主页
+    """
+    # 使用论文的具体链接，如果没有则回退到用户主页
+    target_link = paper_link if paper_link else 'https://scholar.google.com/citations?user=hCvlj5cAAAAJ'
+    return f' [![](https://img.shields.io/badge/citations-{citations}-blue?logo=google-scholar&logoColor=white&style=flat-square)]({target_link})'
 
 def update_pub_md(pub_md_path: str, papers: list) -> int:
     """智能更新 pub.md 中的引用徽章"""
@@ -89,10 +96,11 @@ def update_pub_md(pub_md_path: str, papers: list) -> int:
         
         if paper:
             citations = paper.get('citations', 0) or 0
+            paper_link = paper.get('link', None)  # 获取论文的Google Scholar具体链接
             
             if citations >= MIN_CITATIONS_TO_SHOW:
-                # 需要显示徽章
-                new_badge = create_badge(citations)
+                # 需要显示徽章，使用论文的具体链接
+                new_badge = create_badge(citations, paper_link)
                 
                 if existing_badge:
                     # 已有徽章，检查是否需要更新
