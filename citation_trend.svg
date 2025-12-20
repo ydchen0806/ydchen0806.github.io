@@ -12,12 +12,12 @@
   
   <!-- 标题 -->
   <text x="350.0" y="30" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#333">
-    📈 Cumulative Citations (Total: 440)
+    📈 Cumulative Citations (Total: 441)
   </text>
   
   <!-- Y轴标签 -->
   <g font-family="Arial, sans-serif" font-size="10" fill="#888">
-    <text x="50" y="54.0" text-anchor="end">440</text>
+    <text x="50" y="54.0" text-anchor="end">441</text>
     <line x1="60" y1="50.0" x2="650" y2="50.0" stroke="#e0e0e0" stroke-width="1"/>
     <text x="50" y="91.5" text-anchor="end">330</text>
     <line x1="60" y1="87.5" x2="650" y2="87.5" stroke="#e0e0e0" stroke-width="1"/>
@@ -30,22 +30,22 @@
   </g>
 
   <!-- 填充区域 -->
-  <polygon points="60,200 60.0,196.25 256.66666666666663,190.11363636363637 453.3333333333333,140.0 650.0,50.0 650.0,200" fill="url(#gradient)"/>
+  <polygon points="60,200 60.0,196.25850340136054 256.66666666666663,190.1360544217687 453.3333333333333,140.47619047619048 650.0,50.0 650.0,200" fill="url(#gradient)"/>
 
   <!-- 折线 -->
-  <polyline points="60.0,196.25 256.66666666666663,190.11363636363637 453.3333333333333,140.0 650.0,50.0" fill="none" stroke="#4285f4" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <polyline points="60.0,196.25850340136054 256.66666666666663,190.1360544217687 453.3333333333333,140.47619047619048 650.0,50.0" fill="none" stroke="#4285f4" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
 
   <!-- 数据点和标签 -->
-  <circle cx="60.0" cy="196.25" r="5" fill="#4285f4" stroke="#fff" stroke-width="2"/>
+  <circle cx="60.0" cy="196.25850340136054" r="5" fill="#4285f4" stroke="#fff" stroke-width="2"/>
   <text x="60.0" y="218" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#666">2022</text>
-  <text x="60.0" y="184.25" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#4285f4">11</text>
-  <circle cx="256.66666666666663" cy="190.11363636363637" r="5" fill="#4285f4" stroke="#fff" stroke-width="2"/>
+  <text x="60.0" y="184.25850340136054" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#4285f4">11</text>
+  <circle cx="256.66666666666663" cy="190.1360544217687" r="5" fill="#4285f4" stroke="#fff" stroke-width="2"/>
   <text x="256.66666666666663" y="218" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#666">2023</text>
-  <text x="256.66666666666663" y="178.11363636363637" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#4285f4">29</text>
-  <circle cx="453.3333333333333" cy="140.0" r="5" fill="#4285f4" stroke="#fff" stroke-width="2"/>
+  <text x="256.66666666666663" y="178.1360544217687" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#4285f4">29</text>
+  <circle cx="453.3333333333333" cy="140.47619047619048" r="5" fill="#4285f4" stroke="#fff" stroke-width="2"/>
   <text x="453.3333333333333" y="218" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#666">2024</text>
-  <text x="453.3333333333333" y="128.0" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#4285f4">176</text>
+  <text x="453.3333333333333" y="128.47619047619048" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#4285f4">175</text>
   <circle cx="650.0" cy="50.0" r="5" fill="#4285f4" stroke="#fff" stroke-width="2"/>
   <text x="650.0" y="218" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#666">2025</text>
-  <text x="650.0" y="68.0" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#4285f4">440</text>
+  <text x="650.0" y="68.0" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#4285f4">441</text>
 </svg>
