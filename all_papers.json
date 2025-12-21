@@ -1,5 +1,25 @@
 [
   {
+    "title": "Reasoning-VLA: A Fast and General Vision-Language-Action Reasoning Model for Autonomous Driving",
+    "authors": "D Zhang, Z Yuan, Z Chen, CT Liao, Y Chen, F Shen, Q Zhou, TS Chua",
+    "year": "2025",
+    "citations": 1,
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=hCvlj5cAAAAJ:GnPB-g6toBAC",
+    "is_first_author": false,
+    "venue": {
+      "shortcut": "PR",
+      "full_name": "Pattern Recognition",
+      "type": "journal",
+      "ccf": null,
+      "sci": "Q1",
+      "impact_factor": 8.0
+    },
+    "is_high_cited": false,
+    "is_recent": true,
+    "is_qualified": true,
+    "should_include": false
+  },
+  {
     "title": "Johnson-Lindenstrauss Lemma Guided Network for Efficient 3D Medical Segmentation",
     "authors": "J Lu, L Cai, Y Chen, G Tang, S Jiang, H Shi, Z Xiong",
     "year": "2025",
@@ -276,7 +296,7 @@
     "title": "Bimcv-r: A landmark dataset for 3d ct text-image retrieval",
     "authors": "Y Chen, C Liu, X Liu, R Arcucci, Z Xiong",
     "year": "2024",
-    "citations": 62,
+    "citations": 63,
     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=hCvlj5cAAAAJ:mVmsd5A6BfQC",
     "is_first_author": true,
     "venue": {
