@@ -6,7 +6,7 @@
   "hindex5y": 9,
   "i10index": 9,
   "i10index5y": 9,
-  "affiliation": "University of Science and Technology of China, Xiamen University",
+  "affiliation": "University of Science and Technology of China",
   "interests": [
     "Machine Learning Theory",
     "Self-supervised Learning",
@@ -31,7 +31,7 @@
       "citations": 268
     }
   ],
-  "updated": "2025-12-21 03:10:13.657801",
+  "updated": "2025-12-22 00:52:54.358016",
   "source": "serpapi",
   "publications": {},
   "first_author_papers": [
