@@ -93,6 +93,26 @@
     "should_include": false
   },
   {
+    "title": "DVP-MVS++: Synergize Depth-Normal-Edge and Harmonized Visibility Prior for Multi-View Stereo",
+    "authors": "Z Yuan, D Zhang, Z Li, C Qian, J Chen, Y Chen, K Chen, T Mao, Z Li, ...",
+    "year": "2025",
+    "citations": 3,
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=hCvlj5cAAAAJ:O3NaXMp0MMsC",
+    "is_first_author": false,
+    "venue": {
+      "shortcut": "PR",
+      "full_name": "Pattern Recognition",
+      "type": "journal",
+      "ccf": null,
+      "sci": "Q1",
+      "impact_factor": 8.0
+    },
+    "is_high_cited": false,
+    "is_recent": true,
+    "is_qualified": true,
+    "should_include": false
+  },
+  {
     "title": "Can Medical Vision-Language Pre-training Succeed with Purely Synthetic Data?",
     "authors": "C Liu, Z Wan, H Wang, Y Chen, T Qaiser, C Jin, F Yousefi, N Burlutskiy, ...",
     "year": "2025",
@@ -369,7 +389,7 @@
     "title": "Learning multiscale consistency for self-supervised electron microscopy instance segmentation",
     "authors": "Y Chen, W Huang, X Liu, S Deng, Q Chen, Z Xiong",
     "year": "2024",
-    "citations": 34,
+    "citations": 35,
     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=hCvlj5cAAAAJ:9ZlFYXVOiuMC",
     "is_first_author": true,
     "venue": {
@@ -409,7 +429,7 @@
     "title": "Self-supervised neuron segmentation with multi-agent reinforcement learning",
     "authors": "Y Chen, W Huang, S Zhou, Q Chen, Z Xiong",
     "year": "2023",
-    "citations": 57,
+    "citations": 58,
     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=hCvlj5cAAAAJ:QIV2ME_5wuYC",
     "is_first_author": true,
     "venue": {
@@ -429,7 +449,7 @@
     "title": "MRI advances in the imaging diagnosis of tuberculous meningitis: opportunities and innovations",
     "authors": "X Chen, F Chen, C Liang, G He, H Chen, Y Wu, Y Chen, J Shuai, Y Yang, ...",
     "year": "2021",
-    "citations": 23,
+    "citations": 24,
     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=hCvlj5cAAAAJ:0EnyYjriUFMC",
     "is_first_author": false,
     "venue": null,
