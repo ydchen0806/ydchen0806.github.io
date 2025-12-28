@@ -370,7 +370,7 @@ This paper presents BIMCV-R, a 3D CT text-image retrieval dataset, and MedFinder
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge-conference">ICASSP 2024</div><div class="badge-ccf badge-ccf-b">CCF B</div><img src='images/ICASSP24.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-> [Learning multiscale consistency for self-supervised electron microscopy instance segmentation](https://arxiv.org/pdf/2308.09917) [![](https://img.shields.io/badge/citations-34-blue?logo=google-scholar&logoColor=white&style=flat-square)](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&citation_for_view=hCvlj5cAAAAJ:9ZlFYXVOiuMC) <span class="research-tags"><span class="research-tag">Computer Vision</span><span class="research-tag">Pretraining Methods</span></span> \\
+> [Learning multiscale consistency for self-supervised electron microscopy instance segmentation](https://arxiv.org/pdf/2308.09917) [![](https://img.shields.io/badge/citations-35-blue?logo=google-scholar&logoColor=white&style=flat-square)](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&citation_for_view=hCvlj5cAAAAJ:9ZlFYXVOiuMC) <span class="research-tags"><span class="research-tag">Computer Vision</span><span class="research-tag">Pretraining Methods</span></span> \\
   ICASSP | April 13, 2024 \\
   **Yinda Chen**; Wei Huang; Xiaoyu Liu; Shiyu Deng; Qi Chen; Zhiwei Xiong
 
@@ -384,7 +384,7 @@ This paper presents BIMCV-R, a 3D CT text-image retrieval dataset, and MedFinder
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge-conference">IJCAI 2023</div><div class="badge-ccf badge-ccf-a">CCF A</div><img src='images/ijcai2023.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-> [Self-Supervised Computer Vision with Multi-Agent Reinforcement Learning](https://www.ijcai.org/proceedings/2023/0068.pdf) [![](https://img.shields.io/badge/citations-57-blue?logo=google-scholar&logoColor=white&style=flat-square)](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&citation_for_view=hCvlj5cAAAAJ:QIV2ME_5wuYC) <span class="research-tags"><span class="research-tag">Computer Vision</span><span class="research-tag">Self-Supervised Learning</span></span> \\
+> [Self-Supervised Computer Vision with Multi-Agent Reinforcement Learning](https://www.ijcai.org/proceedings/2023/0068.pdf) [![](https://img.shields.io/badge/citations-58-blue?logo=google-scholar&logoColor=white&style=flat-square)](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&citation_for_view=hCvlj5cAAAAJ:QIV2ME_5wuYC) <span class="research-tags"><span class="research-tag">Computer Vision</span><span class="research-tag">Self-Supervised Learning</span></span> \\
   IJCAI <span style="color:red">**(<font color="red">oral</font>)**</span> | August 17, 2023 \\
   **Yinda Chen**; Wei Huang; Shenglong Zhou; Qi Chen; Zhiwei Xiong
 
