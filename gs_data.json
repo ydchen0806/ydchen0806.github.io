@@ -1,11 +1,11 @@
 {
   "name": "Yinda Chen",
-  "citedby": 452,
-  "citedby5y": 451,
+  "citedby": 453,
+  "citedby5y": 0,
   "hindex": 9,
-  "hindex5y": 9,
+  "hindex5y": 0,
   "i10index": 9,
-  "i10index5y": 9,
+  "i10index5y": 0,
   "affiliation": "University of Science and Technology of China",
   "interests": [
     "Machine Learning Theory",
@@ -20,18 +20,18 @@
     },
     {
       "year": 2023,
-      "citations": 18
+      "citations": 16
     },
     {
       "year": 2024,
-      "citations": 147
+      "citations": 146
     },
     {
       "year": 2025,
-      "citations": 274
+      "citations": 278
     }
   ],
-  "updated": "2025-12-31 02:07:11.061967",
+  "updated": "2026-01-01 14:49:08.524823",
   "source": "serpapi",
   "publications": {},
   "first_author_papers": [
@@ -39,7 +39,7 @@
       "title": "GTGM: Generative Text-Guided 3D Vision-Language Pretraining for Medical Image Segmentation",
       "authors": "Y Chen, C Liu, W Huang, X Liu, H Shi, S Cheng, R Arcucci, Z Xiong",
       "year": "2025",
-      "citations": 116,
+      "citations": 115,
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&citation_for_view=hCvlj5cAAAAJ:NMxIlDl6LWMC",
       "citation_id": "hCvlj5cAAAAJ:NMxIlDl6LWMC"
     },
@@ -47,7 +47,7 @@
       "title": "Bimcv-r: A landmark dataset for 3d ct text-image retrieval",
       "authors": "Y Chen, C Liu, X Liu, R Arcucci, Z Xiong",
       "year": "2024",
-      "citations": 64,
+      "citations": 63,
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&citation_for_view=hCvlj5cAAAAJ:mVmsd5A6BfQC",
       "citation_id": "hCvlj5cAAAAJ:mVmsd5A6BfQC"
     },
@@ -71,7 +71,7 @@
       "title": "TokenUnify: Scaling Up Autoregressive Pretraining for Neuron Segmentation",
       "authors": "Y Chen, H Shi, X Liu, T Shi, R Zhang, D Liu, Z Xiong, F Wu",
       "year": "2025",
-      "citations": 28,
+      "citations": 29,
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&citation_for_view=hCvlj5cAAAAJ:blknAaTinKkC",
       "citation_id": "hCvlj5cAAAAJ:blknAaTinKkC"
     },
