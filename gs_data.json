@@ -1,6 +1,6 @@
 {
   "name": "Yinda Chen",
-  "citedby": 455,
+  "citedby": 454,
   "citedby5y": 0,
   "hindex": 9,
   "hindex5y": 0,
@@ -24,18 +24,18 @@
     },
     {
       "year": 2024,
-      "citations": 146
+      "citations": 147
     },
     {
       "year": 2025,
-      "citations": 280
+      "citations": 279
     },
     {
       "year": 2026,
-      "citations": 5
+      "citations": 4
     }
   ],
-  "updated": "2026-01-02 14:04:47.512442",
+  "updated": "2026-01-05 00:56:02.595763",
   "source": "serpapi",
   "publications": {},
   "first_author_papers": [
@@ -75,7 +75,7 @@
       "title": "TokenUnify: Scaling Up Autoregressive Pretraining for Neuron Segmentation",
       "authors": "Y Chen, H Shi, X Liu, T Shi, R Zhang, D Liu, Z Xiong, F Wu",
       "year": "2025",
-      "citations": 29,
+      "citations": 28,
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&citation_for_view=hCvlj5cAAAAJ:blknAaTinKkC",
       "citation_id": "hCvlj5cAAAAJ:blknAaTinKkC"
     },
