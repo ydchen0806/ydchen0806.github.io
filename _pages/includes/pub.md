@@ -342,7 +342,7 @@ The paper proposes CLC for deep image compression. It uses a dictionary to gener
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge-conference">NeurIPS 2024</div><div class="badge-ccf badge-ccf-a">CCF A</div><img src='images/NeurIPS24.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-[MaskFactory: Towards High-quality Synthetic Data Generation for Dichotomous Image Segmentation](https://arxiv.org/pdf/2412.19080) [![](https://img.shields.io/badge/citations-21-blue?logo=google-scholar&logoColor=white&style=flat-square)](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&citation_for_view=hCvlj5cAAAAJ:aqlVkmm33-oC) <span class="research-tags"><span class="research-tag">Multimodal Learning</span></span> \\
+[MaskFactory: Towards High-quality Synthetic Data Generation for Dichotomous Image Segmentation](https://arxiv.org/pdf/2412.19080) [![](https://img.shields.io/badge/citations-22-blue?logo=google-scholar&logoColor=white&style=flat-square)](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&citation_for_view=hCvlj5cAAAAJ:aqlVkmm33-oC) <span class="research-tags"><span class="research-tag">Multimodal Learning</span></span> \\
 NeurIPS | October 17, 2024 \\
 Haotian Qian; **Yinda Chen\***; Shengtao Lou; Fahad Shahbaz Khan; Xiaogang Jin; Deng-Ping Fan
 
