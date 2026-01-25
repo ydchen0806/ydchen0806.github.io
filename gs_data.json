@@ -1,10 +1,10 @@
 {
   "name": "Yinda Chen",
-  "citedby": 462,
+  "citedby": 489,
   "citedby5y": 0,
-  "hindex": 10,
+  "hindex": 11,
   "hindex5y": 0,
-  "i10index": 10,
+  "i10index": 11,
   "i10index5y": 0,
   "affiliation": "University of Science and Technology of China",
   "interests": [
@@ -20,22 +20,22 @@
     },
     {
       "year": 2023,
-      "citations": 15
+      "citations": 18
     },
     {
       "year": 2024,
-      "citations": 146
+      "citations": 155
     },
     {
       "year": 2025,
-      "citations": 281
+      "citations": 296
     },
     {
       "year": 2026,
       "citations": 12
     }
   ],
-  "updated": "2026-01-24 07:41:02.351841",
+  "updated": "2026-01-25 03:45:20.100114",
   "source": "serpapi",
   "publications": {},
   "first_author_papers": [

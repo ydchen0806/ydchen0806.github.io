@@ -116,7 +116,7 @@
     "title": "Can Medical Vision-Language Pre-training Succeed with Purely Synthetic Data?",
     "authors": "C Liu, Z Wan, H Wang, Y Chen, T Qaiser, C Jin, F Yousefi, N Burlutskiy, ...",
     "year": "2025",
-    "citations": 5,
+    "citations": 31,
     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=hCvlj5cAAAAJ:YOwf2qJgpHMC",
     "is_first_author": false,
     "venue": {
@@ -356,7 +356,7 @@
     "title": "Unsupervised Domain Adaptation for EM Image Denoising with Invertible Networks",
     "authors": "S Deng, Y Chen, W Huang, R Zhang, Z Xiong",
     "year": "2024",
-    "citations": 11,
+    "citations": 12,
     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=hCvlj5cAAAAJ:KlAtU1dfN6UC",
     "is_first_author": true,
     "venue": null,
