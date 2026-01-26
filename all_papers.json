@@ -116,7 +116,7 @@
     "title": "Can Medical Vision-Language Pre-training Succeed with Purely Synthetic Data?",
     "authors": "C Liu, Z Wan, H Wang, Y Chen, T Qaiser, C Jin, F Yousefi, N Burlutskiy, ...",
     "year": "2025",
-    "citations": 31,
+    "citations": 32,
     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=hCvlj5cAAAAJ:YOwf2qJgpHMC",
     "is_first_author": false,
     "venue": {
@@ -256,7 +256,7 @@
     "title": "TokenUnify: Scaling Up Autoregressive Pretraining for Neuron Segmentation",
     "authors": "Y Chen, H Shi, X Liu, T Shi, R Zhang, D Liu, Z Xiong, F Wu",
     "year": "2025",
-    "citations": 29,
+    "citations": 30,
     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=hCvlj5cAAAAJ:blknAaTinKkC",
     "is_first_author": true,
     "venue": {
@@ -429,7 +429,7 @@
     "title": "Self-supervised neuron segmentation with multi-agent reinforcement learning",
     "authors": "Y Chen, W Huang, S Zhou, Q Chen, Z Xiong",
     "year": "2023",
-    "citations": 58,
+    "citations": 59,
     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=hCvlj5cAAAAJ:QIV2ME_5wuYC",
     "is_first_author": true,
     "venue": {

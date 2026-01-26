@@ -1,6 +1,6 @@
 {
   "name": "Yinda Chen",
-  "citedby": 489,
+  "citedby": 492,
   "citedby5y": 0,
   "hindex": 11,
   "hindex5y": 0,
@@ -32,10 +32,10 @@
     },
     {
       "year": 2026,
-      "citations": 12
+      "citations": 15
     }
   ],
-  "updated": "2026-01-26 00:56:32.228071",
+  "updated": "2026-01-26 06:58:24.671197",
   "source": "serpapi",
   "publications": {},
   "first_author_papers": [
@@ -59,7 +59,7 @@
       "title": "Self-supervised neuron segmentation with multi-agent reinforcement learning",
       "authors": "Y Chen, W Huang, S Zhou, Q Chen, Z Xiong",
       "year": "2023",
-      "citations": 58,
+      "citations": 59,
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&citation_for_view=hCvlj5cAAAAJ:QIV2ME_5wuYC",
       "citation_id": "hCvlj5cAAAAJ:QIV2ME_5wuYC"
     },
@@ -75,7 +75,7 @@
       "title": "TokenUnify: Scaling Up Autoregressive Pretraining for Neuron Segmentation",
       "authors": "Y Chen, H Shi, X Liu, T Shi, R Zhang, D Liu, Z Xiong, F Wu",
       "year": "2025",
-      "citations": 29,
+      "citations": 30,
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&citation_for_view=hCvlj5cAAAAJ:blknAaTinKkC",
       "citation_id": "hCvlj5cAAAAJ:blknAaTinKkC"
     },
