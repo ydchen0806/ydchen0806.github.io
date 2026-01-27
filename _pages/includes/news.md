@@ -1,8 +1,8 @@
 # 🔥 News
 
-- **2026.01.26** Two papers were accepted by ICLR 2026. See you in Rio de Janeiro!
+- **2026.01.26** Two papers were accepted by ICLR 2026. See you in Rio de Janeiro, Brazil!
 - **2026.01.20** Traveling to Singapore for AAAI 2026. Welcome friends interested in embodied intelligence, world models, and medical imaging to connect and exchange ideas!
-- **2026.01.18** One paper on medical image registration was accepted by ICASSP 2026. See you in Barcelona in May!
+- **2026.01.18** One paper on medical image registration was accepted by ICASSP 2026. See you in Barcelona, Spain in May!
 - **2025.12** Joined [Beijing Humanoid Robot Innovation Center (Tiangong Robot)](https://www.x-humanoid.com/) as a core member of the Embodied Intelligence World Model Algorithm Team, focusing on **embodied intelligence world models** and **unified models** for humanoid robots.
 - **2025.11.21** My advisor Prof. Feng Wu (吴枫) was elected as an [Academician of the Chinese Academy of Engineering](https://www.cae.cn/cae/html/main/col1/2025-11/21/20251121085534713797145_1.html) (CAE). The CAE Academician is the highest academic honor in engineering and technology in China, representing the nation's most prestigious recognition for outstanding contributions to engineering innovation and scientific advancement. I will always learn from his dedication to research and mentorship. A role model forever.
 - **2025.11.09** One paper was accepted by AAAI 2026.
