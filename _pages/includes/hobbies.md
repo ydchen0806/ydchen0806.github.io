@@ -4,7 +4,7 @@
 - 🍳 **Cooking**: Always experimenting with new recipes - my kitchen is my lab!
 - 🏸 **Sports**: Into badminton, basketball, and table tennis. Also hitting the gym as a total newbie (don't judge!)
 - 🎲 **Board Games**: Obsessed with strategy games like Splendor (璀璨宝石), Catan (卡坦岛), Ticket to Ride (车票之旅), Azul (花砖物语), 7 Wonders (世界七大奇迹), Carcassonne (卡卡颂), and Wingspan (展翅翱翔). Game night anyone?
-- ⛰️ **Hiking & Traveling**: Love chasing sunrises on mountain peaks and getting lost in new cities. Recently explored the misty heights of Huangshan, the sacred temples of Jiuhuashan, wandered through Zhuhai's coastlines and Changsha's food scene. Been lucky enough to haggle in Istanbul's bazaars, ride camels in Morocco's Sahara, and get caffeinated in Seoul's trendy streets
+- ⛰️ **Hiking & Traveling**: Love chasing sunrises on mountain peaks and getting lost in new cities. Recently explored the misty heights of Huangshan, the sacred temples of Jiuhuashan, wandered through Zhuhai's coastlines and Changsha's food scene. Been lucky enough to haggle in Istanbul's bazaars, ride camels in Morocco's Sahara, get caffeinated in Seoul's trendy streets, and enjoyed the futuristic vibes of Singapore (AAAI 2026 trip!)
 - 🎮 **[Gaming](/docs/王者荣耀.png)**: Not just building Honor of Kings (Lingbao Project developer here!) but also crushing it as a player - rocking National Server Nezha, Golden Badge Nakoruru, and ranked Top 50 Jungler in Hefei. Let's duo queue sometime!
 
 **Feel free to hit me up for karaoke sessions, board games, badminton matches, hiking trips, or just grabbing food and chatting about life! Always down to meet cool people and try new things 🎉**
