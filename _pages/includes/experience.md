@@ -115,6 +115,7 @@
   - Supervised by [Dr. Liang Du](https://scholar.google.com/citations?user=oxNIbCUAAAAJ&hl=en&oi=ao) and [Dr. Wentao Yao](https://scholar.google.com/citations?hl=en&user=ibNed18AAAAJ)
   - Designed TTS models for generating game commentary and character voiceovers, exploring generation-understanding synergy
   - Developed multimodal algorithms to analyze game video content and automatically generate contextual commentary scripts
+  - Co-developed [MAIN-VLA](https://main-vla.github.io/): A game world model for *Game for Peace (和平精英)*, modeling abstraction of intention and environment for Visual-Language-Action in complex gaming scenarios
 
 - <div class="company-header">
     <img src="/images/301.png" alt="301 Hospital Logo" width="60"/>
