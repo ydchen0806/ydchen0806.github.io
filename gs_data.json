@@ -1,6 +1,6 @@
 {
   "name": "Yinda Chen",
-  "citedby": 500,
+  "citedby": 501,
   "citedby5y": 0,
   "hindex": 11,
   "hindex5y": 0,
@@ -20,7 +20,7 @@
     },
     {
       "year": 2023,
-      "citations": 20
+      "citations": 21
     },
     {
       "year": 2024,
@@ -28,14 +28,14 @@
     },
     {
       "year": 2025,
-      "citations": 299
+      "citations": 298
     },
     {
       "year": 2026,
-      "citations": 18
+      "citations": 19
     }
   ],
-  "updated": "2026-02-02 01:02:46.721853",
+  "updated": "2026-02-04 02:36:02.226805",
   "source": "serpapi",
   "publications": {},
   "first_author_papers": [
