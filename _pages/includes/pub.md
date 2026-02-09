@@ -300,7 +300,7 @@ GTGM extends Vision-Language Pretraining to 3D medical images by leveraging LLMs
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge-conference">ICCV 2025</div><div class="badge-ccf badge-ccf-a">CCF A</div><img src='images/ICCV25.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-[TokenUnify: Scaling Up Autoregressive Pretraining for Computer Vision](https://openaccess.thecvf.com/content/ICCV2025/papers/Chen_TokenUnify_Scaling_Up_Autoregressive_Pretraining_for_Neuron_Segmentation_ICCV_2025_paper.pdf) [![](https://img.shields.io/badge/citations-31-blue?logo=google-scholar&logoColor=white&style=flat-square)](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&citation_for_view=hCvlj5cAAAAJ:blknAaTinKkC) <span class="research-tags"><span class="research-tag">Computer Vision</span><span class="research-tag">Self-Supervised Learning</span></span> \\
+[TokenUnify: Scaling Up Autoregressive Pretraining for Computer Vision](https://openaccess.thecvf.com/content/ICCV2025/papers/Chen_TokenUnify_Scaling_Up_Autoregressive_Pretraining_for_Neuron_Segmentation_ICCV_2025_paper.pdf) [![](https://img.shields.io/badge/citations-30-blue?logo=google-scholar&logoColor=white&style=flat-square)](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&citation_for_view=hCvlj5cAAAAJ:blknAaTinKkC) <span class="research-tags"><span class="research-tag">Computer Vision</span><span class="research-tag">Self-Supervised Learning</span></span> \\
 ICCV | October 25, 2025 \\
 **Yinda Chen\***; Haoyuan Shi\*; Xiaoyu Liu; Te Shi; Ruobing Zhang; Dong Liu; Zhiwei Xiong; Feng Wu
 
