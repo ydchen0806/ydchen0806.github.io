@@ -1,5 +1,25 @@
 [
   {
+    "title": "MAIN-VLA: Modeling Abstraction of Intention and eNvironment for Vision-Language-Action Models",
+    "authors": "Z Zhou, L Du, Z Sun, X Zhou, R Ye, Q Chen, Y Chen, L Qiu",
+    "year": "2026",
+    "citations": 0,
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=hCvlj5cAAAAJ:RYcK_YlVTxYC",
+    "is_first_author": false,
+    "venue": {
+      "shortcut": "PR",
+      "full_name": "Pattern Recognition",
+      "type": "journal",
+      "ccf": null,
+      "sci": "Q1",
+      "impact_factor": 8.0
+    },
+    "is_high_cited": false,
+    "is_recent": true,
+    "is_qualified": true,
+    "should_include": false
+  },
+  {
     "title": "Reasoning-VLA: A fast and general vision-language-action reasoning model for autonomous driving",
     "authors": "D Zhang, Z Yuan, Z Chen, CT Liao, Y Chen, F Shen, Q Zhou, TS Chua",
     "year": "2025",
@@ -18,6 +38,26 @@
     "is_recent": true,
     "is_qualified": true,
     "should_include": false
+  },
+  {
+    "title": "EMPOWER: Evolutionary Medical Prompt Optimization With Reinforcement Learning",
+    "authors": "Y Chen, Y He, J Yang, D Zhang, Z Yuan, MA Khan, J Baili, L Yee",
+    "year": "2025",
+    "citations": 2,
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=hCvlj5cAAAAJ:J_g5lzvAfSwC",
+    "is_first_author": true,
+    "venue": {
+      "shortcut": "PR",
+      "full_name": "Pattern Recognition",
+      "type": "journal",
+      "ccf": null,
+      "sci": "Q1",
+      "impact_factor": 8.0
+    },
+    "is_high_cited": false,
+    "is_recent": true,
+    "is_qualified": true,
+    "should_include": true
   },
   {
     "title": "Johnson-Lindenstrauss Lemma Guided Network for Efficient 3D Medical Segmentation",
@@ -63,7 +103,7 @@
     "title": "Does DINOv3 Set a New Medical Vision Standard?",
     "authors": "C Liu, Y Chen, H Shi, J Lu, B Jian, J Pan, L Cai, J Wang, Y Zhang, J Li, ...",
     "year": "2025",
-    "citations": 18,
+    "citations": 19,
     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=hCvlj5cAAAAJ:HDshCWvjkbEC",
     "is_first_author": true,
     "venue": null,
@@ -82,6 +122,26 @@
     "venue": {
       "shortcut": "ICCV",
       "full_name": "IEEE/CVF International Conference on Computer Vision",
+      "type": "conference",
+      "ccf": "A",
+      "sci": null,
+      "impact_factor": null
+    },
+    "is_high_cited": false,
+    "is_recent": true,
+    "is_qualified": true,
+    "should_include": false
+  },
+  {
+    "title": "Can Medical Vision-Language Pre-training Succeed with Purely Synthetic Data?",
+    "authors": "C Liu, Z Wan, H Wang, Y Chen, T Qaiser, C Jin, N Burlutskiy, F Yousefi, ...",
+    "year": "2025",
+    "citations": 8,
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=hCvlj5cAAAAJ:NaGl4SEjCO4C",
+    "is_first_author": false,
+    "venue": {
+      "shortcut": "ACL",
+      "full_name": "Annual Meeting of the Association for Computational Linguistics",
       "type": "conference",
       "ccf": "A",
       "sci": null,
@@ -136,7 +196,7 @@
     "title": "MaskTwins: Dual-form Complementary Masking for Domain-Adaptive Image Segmentation",
     "authors": "J Wang*, Y Chen*, X Liu, C Liu, D Liu, Z Xiong",
     "year": "2025",
-    "citations": 3,
+    "citations": 5,
     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=hCvlj5cAAAAJ:dhFuZR0502QC",
     "is_first_author": true,
     "venue": {
@@ -156,7 +216,7 @@
     "title": "Conditional Latent Coding with Learnable Synthesized Reference for Deep Image Compression",
     "authors": "S Wu*, Y Chen*, D Liu, Z He",
     "year": "2025",
-    "citations": 5,
+    "citations": 6,
     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=hCvlj5cAAAAJ:4DMP91E08xMC",
     "is_first_author": true,
     "venue": {
@@ -176,7 +236,7 @@
     "title": "MapExpert: Online HD Map Construction with Simple and Efficient Sparse Map Element Expert",
     "authors": "D Zhang, D Chen, P Zhi, Y Chen, Z Yuan, C Li, R Zhou, Q Zhou",
     "year": "2025",
-    "citations": 8,
+    "citations": 11,
     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=hCvlj5cAAAAJ:M3ejUd6NZC8C",
     "is_first_author": false,
     "venue": {
@@ -210,6 +270,19 @@
     "is_high_cited": false,
     "is_recent": true,
     "is_qualified": true,
+    "should_include": false
+  },
+  {
+    "title": "ADDI: A Simplified E2E Autonomous Driving Model with Distinct Experts and Implicit Interactions",
+    "authors": "D Zhang, Z Yuan, C Li, Y Chen, S Zhao, H Nie, R Zhou, Q Zhou",
+    "year": "2025",
+    "citations": 2,
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=hCvlj5cAAAAJ:lSLTfruPkqcC",
+    "is_first_author": false,
+    "venue": null,
+    "is_high_cited": false,
+    "is_recent": true,
+    "is_qualified": null,
     "should_include": false
   },
   {
@@ -256,7 +329,7 @@
     "title": "TokenUnify: Scaling Up Autoregressive Pretraining for Neuron Segmentation",
     "authors": "Y Chen, H Shi, X Liu, T Shi, R Zhang, D Liu, Z Xiong, F Wu",
     "year": "2025",
-    "citations": 30,
+    "citations": 32,
     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=hCvlj5cAAAAJ:blknAaTinKkC",
     "is_first_author": true,
     "venue": {
@@ -316,7 +389,7 @@
     "title": "Bimcv-r: A landmark dataset for 3d ct text-image retrieval",
     "authors": "Y Chen, C Liu, X Liu, R Arcucci, Z Xiong",
     "year": "2024",
-    "citations": 64,
+    "citations": 60,
     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=hCvlj5cAAAAJ:mVmsd5A6BfQC",
     "is_first_author": true,
     "venue": {
@@ -389,7 +462,7 @@
     "title": "Learning multiscale consistency for self-supervised electron microscopy instance segmentation",
     "authors": "Y Chen, W Huang, X Liu, S Deng, Q Chen, Z Xiong",
     "year": "2024",
-    "citations": 35,
+    "citations": 33,
     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=hCvlj5cAAAAJ:9ZlFYXVOiuMC",
     "is_first_author": true,
     "venue": {
@@ -429,7 +502,7 @@
     "title": "Self-supervised neuron segmentation with multi-agent reinforcement learning",
     "authors": "Y Chen, W Huang, S Zhou, Q Chen, Z Xiong",
     "year": "2023",
-    "citations": 59,
+    "citations": 55,
     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=hCvlj5cAAAAJ:QIV2ME_5wuYC",
     "is_first_author": true,
     "venue": {
@@ -449,7 +522,7 @@
     "title": "MRI advances in the imaging diagnosis of tuberculous meningitis: opportunities and innovations",
     "authors": "X Chen, F Chen, C Liang, G He, H Chen, Y Wu, Y Chen, J Shuai, Y Yang, ...",
     "year": "2021",
-    "citations": 28,
+    "citations": 29,
     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=hCvlj5cAAAAJ:0EnyYjriUFMC",
     "is_first_author": false,
     "venue": null,
@@ -475,7 +548,7 @@
     "title": "Intelligent Data Analytics for Diagnosing Melanoma Skin Lesions via Deep Learning in IoT System",
     "authors": "S Zhang, S Huang, H Wu, Z Yang, Y Chen",
     "year": "2021",
-    "citations": 8,
+    "citations": 9,
     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=hCvlj5cAAAAJ:kNdYIx-mwKoC",
     "is_first_author": false,
     "venue": null,

@@ -1,18 +1,18 @@
 [
   {
     "keyword": "Medical Imaging",
-    "count": 5,
+    "count": 6,
     "weight": 5
   },
   {
     "keyword": "Self-Supervised Learning",
     "count": 4,
-    "weight": 4
+    "weight": 3
   },
   {
     "keyword": "Computer Vision",
     "count": 3,
-    "weight": 3
+    "weight": 2
   },
   {
     "keyword": "Generative Models",
@@ -35,17 +35,17 @@
     "weight": 2
   },
   {
+    "keyword": "Reinforcement Learning",
+    "count": 2,
+    "weight": 2
+  },
+  {
     "keyword": "Image Compression",
     "count": 2,
     "weight": 2
   },
   {
     "keyword": "Multimodal Learning",
-    "count": 1,
-    "weight": 2
-  },
-  {
-    "keyword": "Reinforcement Learning",
     "count": 1,
     "weight": 2
   }
