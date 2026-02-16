@@ -156,7 +156,7 @@
     "title": "DVP-MVS++: Synergize Depth-Normal-Edge and Harmonized Visibility Prior for Multi-View Stereo",
     "authors": "Z Yuan, D Zhang, Z Li, C Qian, J Chen, Y Chen, K Chen, T Mao, Z Li, ...",
     "year": "2025",
-    "citations": 5,
+    "citations": 6,
     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=hCvlj5cAAAAJ:O3NaXMp0MMsC",
     "is_first_author": false,
     "venue": {
@@ -176,7 +176,7 @@
     "title": "Can Medical Vision-Language Pre-training Succeed with Purely Synthetic Data?",
     "authors": "C Liu, Z Wan, H Wang, Y Chen, T Qaiser, C Jin, F Yousefi, N Burlutskiy, ...",
     "year": "2025",
-    "citations": 33,
+    "citations": 24,
     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=hCvlj5cAAAAJ:YOwf2qJgpHMC",
     "is_first_author": false,
     "venue": {
@@ -256,7 +256,7 @@
     "title": "QMamba: Post-Training Quantization for Vision State Space Models",
     "authors": "Y Li, X Liu, J Li, R Xu, Y Chen, Z Xiong",
     "year": "2025",
-    "citations": 4,
+    "citations": 3,
     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=hCvlj5cAAAAJ:qxL8FJ1GzNcC",
     "is_first_author": false,
     "venue": {
