@@ -46,7 +46,7 @@ except ImportError:
 # 当 SerpAPI 请求失败时使用这些值
 FALLBACK_DATA = {
     "name": "Yinda Chen",
-    "citedby": 516,      # 保底引用数（会被自动更新）
+    "citedby": 507,      # 保底引用数（会被自动更新）
     "hindex": 11,         # 保底 h-index（会被自动更新）
     "i10index": 12,       # 保底 i10-index（会被自动更新）
     "affiliation": "University of Science and Technology of China",
