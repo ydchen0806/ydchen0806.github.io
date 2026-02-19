@@ -96,7 +96,7 @@ J Wang*, **Y Chen***, X Liu, C Liu, D Liu, Z Xiong
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge-conference">MICCAI 2024</div><div class="badge-ccf badge-ccf-b">CCF B</div><img src='images/placeholder.png' alt="paper" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-[Bimcv-r: A landmark dataset for 3d ct text-image retrieval](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=hCvlj5cAAAAJ:mVmsd5A6BfQC) <span class="citation-badge">60 citations</span> \\
+[Bimcv-r: A landmark dataset for 3d ct text-image retrieval](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=hCvlj5cAAAAJ:mVmsd5A6BfQC) <span class="citation-badge">61 citations</span> \\
 MICCAI | 2024 \\
 **Y Chen**, C Liu, X Liu, R Arcucci, Z Xiong
 
@@ -132,7 +132,7 @@ H Qian*, **YD Chen***, S Lou, FS Khan, X Jin, DP Fan
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge-conference">IJCAI 2023</div><div class="badge-ccf badge-ccf-a">CCF A</div><img src='images/placeholder.png' alt="paper" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-[Self-supervised neuron segmentation with multi-agent reinforcement learning](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=hCvlj5cAAAAJ:QIV2ME_5wuYC) <span class="citation-badge">55 citations</span> \\
+[Self-supervised neuron segmentation with multi-agent reinforcement learning](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=hCvlj5cAAAAJ:QIV2ME_5wuYC) <span class="citation-badge">56 citations</span> \\
 IJCAI | 2023 \\
 **Y Chen**, W Huang, S Zhou, Q Chen, Z Xiong
 
