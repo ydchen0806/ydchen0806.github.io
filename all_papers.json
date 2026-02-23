@@ -20,6 +20,26 @@
     "should_include": false
   },
   {
+    "title": "EMPOWER: Evolutionary Medical Prompt Optimization With Reinforcement Learning",
+    "authors": "Y Chen, Y He, J Yang, D Zhang, Z Yuan, MA Khan, J Baili, L Yee",
+    "year": "2026",
+    "citations": 2,
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=hCvlj5cAAAAJ:J_g5lzvAfSwC",
+    "is_first_author": true,
+    "venue": {
+      "shortcut": "PR",
+      "full_name": "Pattern Recognition",
+      "type": "journal",
+      "ccf": null,
+      "sci": "Q1",
+      "impact_factor": 8.0
+    },
+    "is_high_cited": false,
+    "is_recent": true,
+    "is_qualified": true,
+    "should_include": true
+  },
+  {
     "title": "Reasoning-VLA: A fast and general vision-language-action reasoning model for autonomous driving",
     "authors": "D Zhang, Z Yuan, Z Chen, CT Liao, Y Chen, F Shen, Q Zhou, TS Chua",
     "year": "2025",
@@ -38,26 +58,6 @@
     "is_recent": true,
     "is_qualified": true,
     "should_include": false
-  },
-  {
-    "title": "EMPOWER: Evolutionary Medical Prompt Optimization With Reinforcement Learning",
-    "authors": "Y Chen, Y He, J Yang, D Zhang, Z Yuan, MA Khan, J Baili, L Yee",
-    "year": "2025",
-    "citations": 2,
-    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=hCvlj5cAAAAJ:J_g5lzvAfSwC",
-    "is_first_author": true,
-    "venue": {
-      "shortcut": "PR",
-      "full_name": "Pattern Recognition",
-      "type": "journal",
-      "ccf": null,
-      "sci": "Q1",
-      "impact_factor": 8.0
-    },
-    "is_high_cited": false,
-    "is_recent": true,
-    "is_qualified": true,
-    "should_include": true
   },
   {
     "title": "Johnson-Lindenstrauss Lemma Guided Network for Efficient 3D Medical Segmentation",
@@ -349,7 +349,7 @@
     "title": "MaskFactory: Towards High-quality Synthetic Data Generation for Dichotomous Image Segmentation",
     "authors": "H Qian*, YD Chen*, S Lou, FS Khan, X Jin, DP Fan",
     "year": "2024",
-    "citations": 23,
+    "citations": 24,
     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=hCvlj5cAAAAJ:aqlVkmm33-oC",
     "is_first_author": true,
     "venue": {
