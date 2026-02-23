@@ -11,7 +11,7 @@
 <div class='paper-box-text' markdown="1">
 
 [EMPOWER: Evolutionary Medical Prompt Optimization With Reinforcement Learning](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=hCvlj5cAAAAJ:J_g5lzvAfSwC) \\
-PR | 2025 \\
+PR | 2026 \\
 **Y Chen**, Y He, J Yang, D Zhang, Z Yuan, MA Khan, J Baili, L Yee
 
 <!-- TODO: Add paper description -->
