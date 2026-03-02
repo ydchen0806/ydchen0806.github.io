@@ -23,7 +23,7 @@
     "title": "EMPOWER: Evolutionary Medical Prompt Optimization With Reinforcement Learning",
     "authors": "Y Chen, Y He, J Yang, D Zhang, Z Yuan, MA Khan, J Baili, L Yee",
     "year": "2026",
-    "citations": 2,
+    "citations": 3,
     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=hCvlj5cAAAAJ:J_g5lzvAfSwC",
     "is_first_author": true,
     "venue": {
@@ -103,7 +103,7 @@
     "title": "Does DINOv3 Set a New Medical Vision Standard?",
     "authors": "C Liu, Y Chen, H Shi, J Lu, B Jian, J Pan, L Cai, J Wang, Y Zhang, J Li, ...",
     "year": "2025",
-    "citations": 21,
+    "citations": 22,
     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=hCvlj5cAAAAJ:HDshCWvjkbEC",
     "is_first_author": true,
     "venue": null,
@@ -116,7 +116,7 @@
     "title": "T3d: Towards 3d medical image understanding through vision-language pre-training",
     "authors": "C Liu, C Ouyang, Y Chen, CC Quilodrán-Casas, L Ma, J Fu, Y Guo, ...",
     "year": "2025",
-    "citations": 28,
+    "citations": 29,
     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=hCvlj5cAAAAJ:Wp0gIr-vW9MC",
     "is_first_author": false,
     "venue": {
@@ -156,7 +156,7 @@
     "title": "Can Medical Vision-Language Pre-training Succeed with Purely Synthetic Data?",
     "authors": "C Liu, Z Wan, H Wang, Y Chen, T Qaiser, C Jin, F Yousefi, N Burlutskiy, ...",
     "year": "2025",
-    "citations": 33,
+    "citations": 34,
     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=hCvlj5cAAAAJ:YOwf2qJgpHMC",
     "is_first_author": false,
     "venue": {
@@ -309,7 +309,7 @@
     "title": "TokenUnify: Scaling Up Autoregressive Pretraining for Neuron Segmentation",
     "authors": "Y Chen, H Shi, X Liu, T Shi, R Zhang, D Liu, Z Xiong, F Wu",
     "year": "2025",
-    "citations": 33,
+    "citations": 34,
     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=hCvlj5cAAAAJ:blknAaTinKkC",
     "is_first_author": true,
     "venue": {
@@ -369,7 +369,7 @@
     "title": "Bimcv-r: A landmark dataset for 3d ct text-image retrieval",
     "authors": "Y Chen, C Liu, X Liu, R Arcucci, Z Xiong",
     "year": "2024",
-    "citations": 61,
+    "citations": 62,
     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=hCvlj5cAAAAJ:mVmsd5A6BfQC",
     "is_first_author": true,
     "venue": {
@@ -422,7 +422,7 @@
     "title": "UniCompress: Enhancing Multi-Data Medical Image Compression with Knowledge Distillation",
     "authors": "R Yang*, Y Chen*, Z Zhang, X Liu, Z Li, K He, Z Xiong, J Suo, Q Dai",
     "year": "2024",
-    "citations": 7,
+    "citations": 8,
     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=hCvlj5cAAAAJ:UebtZRa9Y70C",
     "is_first_author": true,
     "venue": {
@@ -502,7 +502,7 @@
     "title": "MRI advances in the imaging diagnosis of tuberculous meningitis: opportunities and innovations",
     "authors": "X Chen, F Chen, C Liang, G He, H Chen, Y Wu, Y Chen, J Shuai, Y Yang, ...",
     "year": "2021",
-    "citations": 29,
+    "citations": 30,
     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=hCvlj5cAAAAJ:0EnyYjriUFMC",
     "is_first_author": false,
     "venue": null,

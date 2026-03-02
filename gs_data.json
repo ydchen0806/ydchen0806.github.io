@@ -1,6 +1,6 @@
 {
   "name": "Yinda Chen",
-  "citedby": 538,
+  "citedby": 546,
   "citedby5y": 0,
   "hindex": 12,
   "hindex5y": 0,
@@ -28,14 +28,14 @@
     },
     {
       "year": 2025,
-      "citations": 321
+      "citations": 323
     },
     {
       "year": 2026,
-      "citations": 35
+      "citations": 41
     }
   ],
-  "updated": "2026-02-27 02:24:40.081137",
+  "updated": "2026-03-02 01:02:01.631738",
   "source": "serpapi",
   "publications": {},
   "first_author_papers": [
@@ -51,7 +51,7 @@
       "title": "Bimcv-r: A landmark dataset for 3d ct text-image retrieval",
       "authors": "Y Chen, C Liu, X Liu, R Arcucci, Z Xiong",
       "year": "2024",
-      "citations": 61,
+      "citations": 62,
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&citation_for_view=hCvlj5cAAAAJ:mVmsd5A6BfQC",
       "citation_id": "hCvlj5cAAAAJ:mVmsd5A6BfQC"
     },
@@ -64,20 +64,20 @@
       "citation_id": "hCvlj5cAAAAJ:QIV2ME_5wuYC"
     },
     {
+      "title": "TokenUnify: Scaling Up Autoregressive Pretraining for Neuron Segmentation",
+      "authors": "Y Chen, H Shi, X Liu, T Shi, R Zhang, D Liu, Z Xiong, F Wu",
+      "year": "2025",
+      "citations": 34,
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&citation_for_view=hCvlj5cAAAAJ:blknAaTinKkC",
+      "citation_id": "hCvlj5cAAAAJ:blknAaTinKkC"
+    },
+    {
       "title": "Learning multiscale consistency for self-supervised electron microscopy instance segmentation",
       "authors": "Y Chen, W Huang, X Liu, S Deng, Q Chen, Z Xiong",
       "year": "2024",
       "citations": 34,
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&citation_for_view=hCvlj5cAAAAJ:9ZlFYXVOiuMC",
       "citation_id": "hCvlj5cAAAAJ:9ZlFYXVOiuMC"
-    },
-    {
-      "title": "TokenUnify: Scaling Up Autoregressive Pretraining for Neuron Segmentation",
-      "authors": "Y Chen, H Shi, X Liu, T Shi, R Zhang, D Liu, Z Xiong, F Wu",
-      "year": "2025",
-      "citations": 33,
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&citation_for_view=hCvlj5cAAAAJ:blknAaTinKkC",
-      "citation_id": "hCvlj5cAAAAJ:blknAaTinKkC"
     },
     {
       "title": "MaskFactory: Towards High-quality Synthetic Data Generation for Dichotomous Image Segmentation",
@@ -91,7 +91,7 @@
       "title": "UniCompress: Enhancing Multi-Data Medical Image Compression with Knowledge Distillation",
       "authors": "R Yang*, Y Chen*, Z Zhang, X Liu, Z Li, K He, Z Xiong, J Suo, Q Dai",
       "year": "2024",
-      "citations": 7,
+      "citations": 8,
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&citation_for_view=hCvlj5cAAAAJ:UebtZRa9Y70C",
       "citation_id": "hCvlj5cAAAAJ:UebtZRa9Y70C"
     },
@@ -123,7 +123,7 @@
       "title": "EMPOWER: Evolutionary Medical Prompt Optimization With Reinforcement Learning",
       "authors": "Y Chen, Y He, J Yang, D Zhang, Z Yuan, MA Khan, J Baili, L Yee",
       "year": "2026",
-      "citations": 2,
+      "citations": 3,
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&citation_for_view=hCvlj5cAAAAJ:J_g5lzvAfSwC",
       "citation_id": "hCvlj5cAAAAJ:J_g5lzvAfSwC"
     }
