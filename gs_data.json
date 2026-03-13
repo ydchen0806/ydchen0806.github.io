@@ -1,6 +1,6 @@
 {
   "name": "Yinda Chen",
-  "citedby": 552,
+  "citedby": 553,
   "citedby5y": 0,
   "hindex": 12,
   "hindex5y": 0,
@@ -32,10 +32,10 @@
     },
     {
       "year": 2026,
-      "citations": 46
+      "citations": 47
     }
   ],
-  "updated": "2026-03-11 02:33:39.751051",
+  "updated": "2026-03-13 02:25:35.406521",
   "source": "serpapi",
   "publications": {},
   "first_author_papers": [
@@ -99,7 +99,7 @@
       "title": "Conditional Latent Coding with Learnable Synthesized Reference for Deep Image Compression",
       "authors": "S Wu*, Y Chen*, D Liu, Z He",
       "year": "2025",
-      "citations": 6,
+      "citations": 7,
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&citation_for_view=hCvlj5cAAAAJ:4DMP91E08xMC",
       "citation_id": "hCvlj5cAAAAJ:4DMP91E08xMC"
     },
