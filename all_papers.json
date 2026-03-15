@@ -103,7 +103,7 @@
     "title": "Does DINOv3 Set a New Medical Vision Standard?",
     "authors": "C Liu, Y Chen, H Shi, J Lu, B Jian, J Pan, L Cai, J Wang, Y Zhang, J Li, ...",
     "year": "2025",
-    "citations": 22,
+    "citations": 24,
     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=hCvlj5cAAAAJ:HDshCWvjkbEC",
     "is_first_author": true,
     "venue": null,
@@ -116,7 +116,7 @@
     "title": "T3d: Towards 3d medical image understanding through vision-language pre-training",
     "authors": "C Liu, C Ouyang, Y Chen, CC Quilodrán-Casas, L Ma, J Fu, Y Guo, ...",
     "year": "2025",
-    "citations": 30,
+    "citations": 31,
     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=hCvlj5cAAAAJ:Wp0gIr-vW9MC",
     "is_first_author": false,
     "venue": {
@@ -289,7 +289,7 @@
     "title": "GTGM: Generative Text-Guided 3D Vision-Language Pretraining for Medical Image Segmentation",
     "authors": "Y Chen, C Liu, W Huang, X Liu, H Shi, S Cheng, R Arcucci, Z Xiong",
     "year": "2025",
-    "citations": 117,
+    "citations": 118,
     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=hCvlj5cAAAAJ:NMxIlDl6LWMC",
     "is_first_author": true,
     "venue": {

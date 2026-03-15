@@ -1,6 +1,6 @@
 {
   "name": "Yinda Chen",
-  "citedby": 553,
+  "citedby": 557,
   "citedby5y": 0,
   "hindex": 12,
   "hindex5y": 0,
@@ -32,10 +32,10 @@
     },
     {
       "year": 2026,
-      "citations": 47
+      "citations": 51
     }
   ],
-  "updated": "2026-03-13 02:25:35.406521",
+  "updated": "2026-03-15 10:44:23.355581",
   "source": "serpapi",
   "publications": {},
   "first_author_papers": [
@@ -43,7 +43,7 @@
       "title": "GTGM: Generative Text-Guided 3D Vision-Language Pretraining for Medical Image Segmentation",
       "authors": "Y Chen, C Liu, W Huang, X Liu, H Shi, S Cheng, R Arcucci, Z Xiong",
       "year": "2025",
-      "citations": 117,
+      "citations": 118,
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&citation_for_view=hCvlj5cAAAAJ:NMxIlDl6LWMC",
       "citation_id": "hCvlj5cAAAAJ:NMxIlDl6LWMC"
     },
