@@ -251,6 +251,20 @@ window.addEventListener('load', function() {
 
 ## 📰 Journal Articles
 
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge-journal">IEEE TPAMI</div><div class="badge-impact badge-q1">SCI Q1 | IF: 20.8</div><img src='images/TPAMI25.png' alt="GRCL Framework" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+> [Learned Image Coding with Generative Reference of Conditional Latents](https://arxiv.org/abs/2025.00000) <span class="research-tags"><span class="research-tag">Image Compression</span><span class="research-tag">Generative Models</span></span> \\
+  IEEE Transactions on Pattern Analysis and Machine Intelligence | Accepted, 2025 \\
+  Siqi Wu\*; **Yinda Chen\***; Weiming Chen; Dong Liu; K. C. Ho; Zhihai He
+
+  [**Code**](https://github.com/ydchen0806/CLC) [![](https://img.shields.io/github/stars/ydchen0806/CLC?style=social&label=Code+Stars&cacheSeconds=3600)](https://github.com/ydchen0806/CLC)
+
+> GRCL presents a generic framework that exploits semantically correlated external images as conditional coding references in the latent domain. Three reference generation methods are investigated: local dictionary retrieval, web-based image search, and diffusion-based image-text-image generation. Theoretical analysis proves robustness to reference perturbations via subspace recovery error bounds. Achieves up to 1.5 dB PSNR gain over state-of-the-art methods with only ~0.005 bpp overhead.
+
+</div>
+</div>
+
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge-journal">IEEE JBHI</div><div class="badge-impact badge-q1">SCI Q1 | IF: 6.7</div><img src='images/JBHI25.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 

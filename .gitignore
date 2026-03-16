@@ -1,8 +1,11 @@
-﻿_site/
+_site/
 push.sh
 .DS_Store
 /github_myprofile_updater/README.md
 简历陈胤达中文版.zip
 简历陈胤达中文版/
+简历解压/
 iccv_workshop_gtgm.zip
 *.zip
+*.tex
+1b50c863212b4cd530410d851b95743c.png
