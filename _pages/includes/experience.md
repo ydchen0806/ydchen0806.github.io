@@ -120,7 +120,7 @@
 - <div class="company-header">
     <img src="/images/301.png" alt="301 Hospital Logo" width="60"/>
     <div>
-      <p class="company-name"><a href="/docs/301医院.pdf">Chinese PLA General Hospital (301 Hospital)</a></p>
+      <p class="company-name"><a href="/docs/301医院.png">Chinese PLA General Hospital (301 Hospital)</a></p>
       <p class="position-info">Research Intern, Data Compression Group</p>
       <p class="location">📍 Beijing · Sept 2023 - Feb 2024</p>
     </div>
@@ -133,7 +133,7 @@
 - <div class="company-header">
     <img src="/images/IC.png" alt="Imperial College Logo" width="60"/>
     <div>
-      <p class="company-name"><a href="/docs/IC_letter_Yinda.pdf">Imperial College London</a></p>
+      <p class="company-name"><a href="/docs/IC_letter_Yinda.png">Imperial College London</a></p>
       <p class="position-info">Research Intern, Data Science Institute</p>
       <p class="location">📍 London (Remote) · Nov 2022 - Aug 2023</p>
     </div>
@@ -159,7 +159,7 @@
 - <div class="company-header">
     <img src="/images/xmu_logo.jpeg" alt="XMU Logo" width="60"/>
     <div>
-      <p class="company-name"><a href="/docs/wise研助.pdf">Wang Yanan Institute for Studies in Economics, Xiamen University</a></p>
+      <p class="company-name"><a href="/docs/wise研助.png">Wang Yanan Institute for Studies in Economics, Xiamen University</a></p>
       <p class="position-info">Research Assistant, Econometrics</p>
       <p class="location">📍 Xiamen · Aug 2020 - Dec 2021</p>
     </div>

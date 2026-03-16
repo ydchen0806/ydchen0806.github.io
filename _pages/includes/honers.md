@@ -99,7 +99,7 @@
   - **Ranking:** Top 0.17% of 10,388 participating teams worldwide
   - **Resources:** 📝 [Paper & Code](https://github.com/ydchen0806/24ICM_E_O_Award_Paper_code) [![](https://img.shields.io/github/stars/ydchen0806/24ICM_E_O_Award_Paper_code?style=social&label=Stars)](https://github.com/ydchen0806/24ICM_E_O_Award_Paper_code)
 
-- **🎓 [National Graduate Scholarship](/docs/国奖证书研究生.pdf)** <span class="award-date">(December 2022)</span>
+- **🎓 [National Graduate Scholarship](/docs/国奖证书研究生.png)** <span class="award-date">(December 2022)</span>
   - **Achievement:** National award for academic performance and research contributions (Top 1%)
   - **Reference:** 🔗 [Official Announcement](https://iat.ustc.edu.cn/iat/x198/20221017/5920.html)
 
@@ -108,7 +108,7 @@
   - **Recognition:** Outstanding academic achievements and research excellence
   - **Media:** 🔗 [University News](https://xaxq.xmu.edu.cn/info/1032/10951.htm) | [Feature Report](https://cee.xmu.edu.cn/info/1045/7524.htm)
 
-- **🏆 ["Jingrun Cup" Mathematics Competition (Professional Category), First Prize](/docs/景润杯奖状.pdf)** <span class="award-date">(September 2021)</span>
+- **🏆 ["Jingrun Cup" Mathematics Competition (Professional Category), First Prize](/docs/景润杯奖状.png)** <span class="award-date">(September 2021)</span>
   - **Level:** Campus-level competition named after renowned mathematician Chen Jingrun
   - **Ranking:** University First Place
   - **Reference:** 🔗 [Competition News](https://math.xmu.edu.cn/info/1024/11221.htm)
