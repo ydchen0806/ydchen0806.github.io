@@ -14,7 +14,7 @@ This branch contains automatically updated Google Scholar statistics.
 - `all_papers.json`: All papers with details
 - `auto_publications.md`: Auto-generated publication list
 
-**Last updated:** 2026-03-18 04:14:45 UTC
+**Last updated:** 2026-03-18 04:15:14 UTC
 
 ## Usage
 
