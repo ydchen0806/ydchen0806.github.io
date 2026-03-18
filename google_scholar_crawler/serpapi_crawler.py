@@ -46,9 +46,9 @@ except ImportError:
 # 当 SerpAPI 请求失败时使用这些值
 FALLBACK_DATA = {
     "name": "Yinda Chen",
-    "citedby": 0,      # 保底引用数（会被自动更新）
-    "hindex": 0,         # 保底 h-index（会被自动更新）
-    "i10index": 0,       # 保底 i10-index（会被自动更新）
+    "citedby": 557,      # 保底引用数（会被自动更新，仅当新值 > 0）
+    "hindex": 12,         # 保底 h-index（会被自动更新，仅当新值 > 0）
+    "i10index": 13,       # 保底 i10-index（会被自动更新，仅当新值 > 0）
     "affiliation": "University of Science and Technology of China",
     "interests": ["Computer Vision", "Self-Supervised Learning", "Multimodal Learning"],
 }
@@ -91,8 +91,8 @@ def get_scholar_stats_serpapi(scholar_id: str, api_key: str) -> dict:
         author = data.get("author", {})
         cited_by = data.get("cited_by", {})
         
-        # 获取统计信息
-        citations = cited_by.get("table", [])
+        # 获取统计信息 - 兼容 SerpAPI 不同语言/版本的 key 名称
+        table = cited_by.get("table", [])
         citations_all = 0
         citations_5y = 0
         h_index = 0
@@ -100,22 +100,39 @@ def get_scholar_stats_serpapi(scholar_id: str, api_key: str) -> dict:
         i10_index = 0
         i10_index_5y = 0
         
-        for item in citations:
-            if item.get("citations", {}).get("all") is not None:
-                citations_all = item["citations"]["all"]
-            if item.get("citations", {}).get("since_2020") is not None:
-                citations_5y = item["citations"]["since_2020"]
-            if item.get("h_index", {}).get("all") is not None:
-                h_index = item["h_index"]["all"]
-            if item.get("h_index", {}).get("since_2020") is not None:
-                h_index_5y = item["h_index"]["since_2020"]
-            if item.get("i10_index", {}).get("all") is not None:
-                i10_index = item["i10_index"]["all"]
-            if item.get("i10_index", {}).get("since_2020") is not None:
-                i10_index_5y = item["i10_index"]["since_2020"]
+        print(f"[SerpAPI] cited_by.table 原始数据: {json.dumps(table, ensure_ascii=False)}")
         
-        # 获取引用趋势图数据
+        def extract_all_and_recent(item_dict):
+            """从 table 条目中提取 all 和 recent 值，兼容不同语言的 key"""
+            val_all, val_recent = 0, 0
+            for key, sub in item_dict.items():
+                if isinstance(sub, dict):
+                    if "all" in sub:
+                        val_all = sub["all"]
+                    for sk, sv in sub.items():
+                        if sk != "all" and isinstance(sv, int):
+                            val_recent = sv
+            return val_all, val_recent
+        
+        # table[0] = citations, table[1] = h_index, table[2] = i10_index
+        if len(table) >= 1:
+            citations_all, citations_5y = extract_all_and_recent(table[0])
+        if len(table) >= 2:
+            h_index, h_index_5y = extract_all_and_recent(table[1])
+        if len(table) >= 3:
+            i10_index, i10_index_5y = extract_all_and_recent(table[2])
+        
+        # 从引用趋势图获取补充数据
         cited_by_graph = cited_by.get("graph", [])
+        
+        # 安全检查：如果 table 解析失败（citedby=0），尝试从 graph 数据求和
+        if citations_all == 0 and cited_by_graph:
+            graph_total = sum(
+                int(item.get("citations", 0)) for item in cited_by_graph
+            )
+            if graph_total > 0:
+                citations_all = graph_total
+                print(f"[SerpAPI] table 解析为 0，从 citation_graph 求和得 {graph_total}")
         
         author_data = {
             "name": author.get("name", "Unknown"),
@@ -128,7 +145,7 @@ def get_scholar_stats_serpapi(scholar_id: str, api_key: str) -> dict:
             "affiliation": author.get("affiliations", ""),
             "interests": [interest.get("title", "") for interest in author.get("interests", [])],
             "thumbnail": author.get("thumbnail", ""),
-            "citation_graph": cited_by_graph,  # 引用趋势数据
+            "citation_graph": cited_by_graph,
             "updated": str(datetime.now()),
             "source": "serpapi",
             "publications": {}
@@ -487,28 +504,29 @@ def generate_citation_trend_svg(citation_graph: list, output_path: str, total_ci
 def update_fallback_in_script(citations: int, hindex: int, i10index: int):
     """
     自动更新本脚本中的保底数据
-    当成功获取真实数据时调用此函数
+    只在获取到有效数据（> 0）时调用
     """
+    if citations <= 0:
+        print(f"[自动更新] 跳过：citations={citations} 无效，不覆盖保底数据")
+        return
+    
     script_path = Path(__file__)
     
     try:
         content = script_path.read_text(encoding="utf-8")
         
-        # 更新 citedby
         content = re.sub(
             r'("citedby":\s*)(\d+)',
             f'\\g<1>{citations}',
             content
         )
         
-        # 更新 hindex
         content = re.sub(
             r'("hindex":\s*)(\d+)',
             f'\\g<1>{hindex}',
             content
         )
         
-        # 更新 i10index
         content = re.sub(
             r'("i10index":\s*)(\d+)',
             f'\\g<1>{i10index}',
@@ -552,14 +570,7 @@ def main():
         print("\n[1] 尝试使用 SerpAPI...")
         author_data = get_scholar_stats_serpapi(scholar_id, serpapi_key)
         
-        # 如果成功获取，自动更新保底数据
         if author_data and author_data.get("source") == "serpapi":
-            update_fallback_in_script(
-                author_data["citedby"],
-                author_data["hindex"],
-                author_data["i10index"]
-            )
-            
             # 获取论文列表
             print("\n[2] 获取论文列表...")
             articles = get_articles_serpapi(scholar_id, serpapi_key)
@@ -568,6 +579,34 @@ def main():
             if articles:
                 first_author_papers = filter_first_author_papers(articles, AUTHOR_NAME_VARIANTS)
                 author_data["first_author_papers"] = first_author_papers
+            
+            # 安全检查：如果总引用数为 0 但论文有引用，用所有论文引用数之和作为下限
+            if author_data["citedby"] == 0 and articles:
+                total_from_papers = sum(
+                    a.get("cited_by", {}).get("value", 0) if isinstance(a.get("cited_by"), dict)
+                    else 0
+                    for a in articles
+                )
+                if total_from_papers > 0:
+                    print(f"[安全检查] citedby=0 异常！从 {len(articles)} 篇论文求和得 {total_from_papers}")
+                    author_data["citedby"] = total_from_papers
+            
+            # 最终防线：如果 citedby 仍为 0，使用保底数据的值
+            if author_data["citedby"] == 0 and FALLBACK_DATA["citedby"] > 0:
+                print(f"[安全检查] citedby 仍为 0，使用保底值 {FALLBACK_DATA['citedby']}")
+                author_data["citedby"] = FALLBACK_DATA["citedby"]
+                author_data["hindex"] = FALLBACK_DATA["hindex"]
+                author_data["i10index"] = FALLBACK_DATA["i10index"]
+            
+            # 只有当引用数 > 0 时才更新保底数据，防止写入 0
+            if author_data["citedby"] > 0:
+                update_fallback_in_script(
+                    author_data["citedby"],
+                    author_data["hindex"],
+                    author_data["i10index"]
+                )
+            else:
+                print("[WARNING] citedby 为 0，跳过保底数据更新以防止覆盖")
     else:
         print("\n[WARNING] SERPAPI_KEY 未设置，跳过 SerpAPI")
         print("  请在 GitHub Secrets 中设置 SERPAPI_KEY")
