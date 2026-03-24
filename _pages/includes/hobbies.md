@@ -123,7 +123,7 @@
 
 <p class="cta-text">Feel free to hit me up for karaoke, board games, badminton, hiking, or just grabbing food and chatting about life!</p>
 
-# 📬 Let's Connect
+<h1>📬 Let's Connect</h1>
 
 <div class="connect-box">
   <h3>Get in Touch</h3>
@@ -132,7 +132,7 @@
   <p>📍 USTC Gaoxin campus, Hefei, Anhui, China</p>
 </div>
 
-# Visitor Map 🌍
+<h1>Visitor Map 🌍</h1>
 
 <div class="visitor-map">
   <script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=-6dpgBBQ6VS019wttjE8HshiwnZUQM6hxMNnvZM-u6c"></script>
