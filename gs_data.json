@@ -1,7 +1,7 @@
 {
   "name": "Yinda Chen",
-  "citedby": 560,
-  "citedby5y": 559,
+  "citedby": 565,
+  "citedby5y": 564,
   "hindex": 12,
   "hindex5y": 12,
   "i10index": 13,
@@ -32,10 +32,10 @@
     },
     {
       "year": 2026,
-      "citations": 59
+      "citations": 64
     }
   ],
-  "updated": "2026-03-23 01:07:20.811817",
+  "updated": "2026-03-24 03:27:23.762462",
   "source": "serpapi",
   "publications": {},
   "first_author_papers": [
@@ -88,6 +88,14 @@
       "citation_id": "hCvlj5cAAAAJ:aqlVkmm33-oC"
     },
     {
+      "title": "EMPOWER: Evolutionary Medical Prompt Optimization With Reinforcement Learning",
+      "authors": "Y Chen, Y He, J Yang, D Zhang, Z Yuan, MA Khan, J Baili, L Yee",
+      "year": "2026",
+      "citations": 8,
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&citation_for_view=hCvlj5cAAAAJ:J_g5lzvAfSwC",
+      "citation_id": "hCvlj5cAAAAJ:J_g5lzvAfSwC"
+    },
+    {
       "title": "UniCompress: Enhancing Multi-Data Medical Image Compression with Knowledge Distillation",
       "authors": "R Yang*, Y Chen*, Z Zhang, X Liu, Z Li, K He, Z Xiong, J Suo, Q Dai",
       "year": "2024",
@@ -118,14 +126,6 @@
       "citations": 5,
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&citation_for_view=hCvlj5cAAAAJ:dhFuZR0502QC",
       "citation_id": "hCvlj5cAAAAJ:dhFuZR0502QC"
-    },
-    {
-      "title": "EMPOWER: Evolutionary Medical Prompt Optimization With Reinforcement Learning",
-      "authors": "Y Chen, Y He, J Yang, D Zhang, Z Yuan, MA Khan, J Baili, L Yee",
-      "year": "2026",
-      "citations": 3,
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&citation_for_view=hCvlj5cAAAAJ:J_g5lzvAfSwC",
-      "citation_id": "hCvlj5cAAAAJ:J_g5lzvAfSwC"
     }
   ]
 }
