@@ -1,7 +1,6 @@
 # 🥇 Honors and Awards
 
 <style>
-/* ===== Honors Section - Collapsible Categories ===== */
 #honors-awards details {
   margin-bottom: 1em;
   border-radius: 10px;
@@ -130,9 +129,8 @@
 
 <div id="honors-awards">
 
-<!-- ====== National Awards & Research Funding ====== -->
 <details open>
-<summary>🏅 National Awards & Research Funding <span class="badge-count">3</span></summary>
+<summary>🏅 National Awards & Research Funding <span class="badge-count">5</span></summary>
 <ul class="award-list">
 
 <li><strong><a href="/docs/国自然.png">National Natural Science Foundation of China (NSFC) PhD Program</a></strong> <span class="award-date">(December 2024)</span>
@@ -140,13 +138,6 @@
     <li><strong>Role:</strong> Principal Investigator</li>
     <li><strong>Achievement:</strong> Sole awardee in Information Science, Anhui Province</li>
     <li><strong>Description:</strong> Prestigious national research funding program for doctoral students</li>
-  </ul>
-</li>
-
-<li><strong><a href="/docs/国奖证书研究生.png">National Graduate Scholarship (国家奖学金)</a></strong> <span class="award-date">(December 2022)</span>
-  <ul>
-    <li><strong>Achievement:</strong> National award for academic performance and research contributions (Top 1%)</li>
-    <li><strong>Reference:</strong> 🔗 <a href="https://iat.ustc.edu.cn/iat/x198/20221017/5920.html">Official Announcement</a></li>
   </ul>
 </li>
 
@@ -158,36 +149,12 @@
   </ul>
 </li>
 
-</ul>
-</details>
-
-<!-- ====== Academic Honors & Scholarships ====== -->
-<details open>
-<summary>🎓 Academic Honors & Scholarships <span class="badge-count">2</span></summary>
-<ul class="award-list">
-
-<li><strong><a href="/docs/学术之星奖杯.jpg">Xiamen University Academic Star (学术之星)</a></strong> <span class="award-date">(December 2021)</span>
+<li><strong><a href="/docs/国奖证书研究生.png">National Graduate Scholarship (国家奖学金)</a></strong> <span class="award-date">(December 2022)</span>
   <ul>
-    <li><strong>Achievement:</strong> Sole undergraduate awardee university-wide</li>
-    <li><strong>Recognition:</strong> Outstanding academic achievements and research excellence</li>
-    <li><strong>Media:</strong> 🔗 <a href="https://xaxq.xmu.edu.cn/info/1032/10951.htm">University News</a> | <a href="https://cee.xmu.edu.cn/info/1045/7524.htm">Feature Report</a></li>
+    <li><strong>Achievement:</strong> National award for academic performance and research contributions (Top 1%)</li>
+    <li><strong>Reference:</strong> 🔗 <a href="https://iat.ustc.edu.cn/iat/x198/20221017/5920.html">Official Announcement</a></li>
   </ul>
 </li>
-
-<li><strong><a href="/docs/增华奖学金.jpg">Zenghua Scholarship (增华奖学金)</a></strong> <span class="award-date">(January 2026)</span>
-  <ul>
-    <li><strong>Level:</strong> University-level scholarship, USTC</li>
-    <li><strong>Achievement:</strong> Awarded for outstanding academic performance and research contributions</li>
-  </ul>
-</li>
-
-</ul>
-</details>
-
-<!-- ====== Competition Awards ====== -->
-<details>
-<summary>🏆 Competition Awards <span class="badge-count">5</span></summary>
-<ul class="award-list">
 
 <li><strong><a href="/docs/数竞决赛.png">National Undergraduate Mathematics Competition (Non-Major Category), Second Prize</a></strong> <span class="award-date">(May 2021)</span>
   <ul>
@@ -204,6 +171,35 @@
   </ul>
 </li>
 
+</ul>
+</details>
+
+<details open>
+<summary>🎓 Academic Honors & Scholarships <span class="badge-count">2</span></summary>
+<ul class="award-list">
+
+<li><strong><a href="/docs/增华奖学金.jpg">Zenghua Scholarship (增华奖学金)</a></strong> <span class="award-date">(January 2026)</span>
+  <ul>
+    <li><strong>Level:</strong> University-level scholarship, USTC</li>
+    <li><strong>Achievement:</strong> Awarded for outstanding academic performance and research contributions</li>
+  </ul>
+</li>
+
+<li><strong><a href="/docs/学术之星奖杯.jpg">Xiamen University Academic Star (学术之星)</a></strong> <span class="award-date">(December 2021)</span>
+  <ul>
+    <li><strong>Achievement:</strong> Sole undergraduate awardee university-wide</li>
+    <li><strong>Recognition:</strong> Outstanding academic achievements and research excellence</li>
+    <li><strong>Media:</strong> 🔗 <a href="https://xaxq.xmu.edu.cn/info/1032/10951.htm">University News</a> | <a href="https://cee.xmu.edu.cn/info/1045/7524.htm">Feature Report</a></li>
+  </ul>
+</li>
+
+</ul>
+</details>
+
+<details open>
+<summary>🏆 Competition Awards <span class="badge-count">3</span></summary>
+<ul class="award-list">
+
 <li><strong><a href="/docs/景润杯奖状.png">"Jingrun Cup" Mathematics Competition (Professional Category), First Prize</a></strong> <span class="award-date">(September 2021)</span>
   <ul>
     <li><strong>Level:</strong> Campus-level competition named after renowned mathematician Chen Jingrun</li>
@@ -212,14 +208,14 @@
   </ul>
 </li>
 
-<li><strong><a href="/docs/挑战杯.png">"Challenge Cup" National Undergraduate Academic Science and Technology Competition, First Prize</a></strong> <span class="award-date">(May 2021)</span>
+<li><strong><a href="/docs/互联网+.png">"Internet+" Innovation and Entrepreneurship Competition, Gold Medal</a></strong> <span class="award-date">(August 2021)</span>
   <ul>
     <li><strong>Level:</strong> Provincial level competition</li>
     <li><strong>Region:</strong> Fujian Province</li>
   </ul>
 </li>
 
-<li><strong><a href="/docs/互联网+.png">"Internet+" Innovation and Entrepreneurship Competition, Gold Medal</a></strong> <span class="award-date">(August 2021)</span>
+<li><strong><a href="/docs/挑战杯.png">"Challenge Cup" National Undergraduate Academic Science and Technology Competition, First Prize</a></strong> <span class="award-date">(May 2021)</span>
   <ul>
     <li><strong>Level:</strong> Provincial level competition</li>
     <li><strong>Region:</strong> Fujian Province</li>
