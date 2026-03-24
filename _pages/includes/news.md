@@ -1,5 +1,6 @@
 # 🔥 News
 
+- **2026.01** Awarded the [Zenghua Scholarship (增华奖学金)](/docs/增华奖学金.jpg) by USTC, a university-level scholarship.
 - **2026.01.26** Two papers were accepted by ICLR 2026. See you in Rio de Janeiro, Brazil!
 - **2026.01.20** Traveling to Singapore for AAAI 2026. Welcome friends interested in embodied intelligence, world models, and medical imaging to connect and exchange ideas!
 - **2026.01.18** One paper on medical image registration was accepted by ICASSP 2026. See you in Barcelona, Spain in May!

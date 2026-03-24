@@ -89,6 +89,10 @@
 
 <div id="honors-awards" markdown="1">
 
+- **🎓 [Zenghua Scholarship (增华奖学金)](/docs/增华奖学金.jpg)** <span class="award-date">(January 2026)</span>
+  - **Level:** University-level scholarship, USTC
+  - **Achievement:** Awarded for outstanding academic performance and research contributions
+
 - **🎓 [National Natural Science Foundation of China (NSFC) PhD Program](/docs/国自然.png)** <span class="award-date">(December 2024)</span>
   - **Role:** Principal Investigator
   - **Achievement:** Sole awardee in Information Science, Anhui Province
