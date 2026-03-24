@@ -1,29 +1,141 @@
 # 🎯 Hobbies & Interests
 
-- 🎤 **Singing**: Love belting out tunes and exploring different music styles
-- 🍳 **Cooking**: Always experimenting with new recipes - my kitchen is my lab!
-- 🏸 **Sports**: Into badminton, basketball, and table tennis. Also hitting the gym as a total newbie (don't judge!)
-- 🎲 **Board Games**: Obsessed with strategy games like Splendor (璀璨宝石), Catan (卡坦岛), Ticket to Ride (车票之旅), Azul (花砖物语), 7 Wonders (世界七大奇迹), Carcassonne (卡卡颂), and Wingspan (展翅翱翔). Game night anyone?
-- ⛰️ **Hiking & Traveling**: Love chasing sunrises on mountain peaks and getting lost in new cities. Recently explored the misty heights of Huangshan, the sacred temples of Jiuhuashan, wandered through Zhuhai's coastlines and Changsha's food scene. Been lucky enough to haggle in Istanbul's bazaars, ride camels in Morocco's Sahara, get caffeinated in Seoul's trendy streets, and marvel at Singapore's futuristic skyline
-- 🎮 **[Gaming](/docs/王者荣耀.png)**: Not just building Honor of Kings (Lingbao Project developer here!) but also crushing it as a player - rocking National Server Nezha, Golden Badge Nakoruru, and ranked Top 50 Jungler in Hefei. Let's duo queue sometime!
+<style>
+#hobbies-section .hobby-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1em;
+  margin-bottom: 1.5em;
+}
+#hobbies-section .hobby-card {
+  padding: 1em 1.2em;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #f8f9fa 0%, #fff 100%);
+  border: 1px solid #e8e8e8;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+  transition: all 0.25s;
+}
+#hobbies-section .hobby-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+  border-color: #ddd;
+}
+#hobbies-section .hobby-title {
+  font-weight: 600;
+  font-size: 1em;
+  margin-bottom: 0.4em;
+  color: #1a1a1a;
+}
+#hobbies-section .hobby-desc {
+  font-size: 0.9em;
+  color: #555;
+  line-height: 1.6;
+}
+#hobbies-section .hobby-desc a {
+  color: #2196F3;
+  text-decoration: none;
+}
+#hobbies-section .hobby-desc a:hover {
+  text-decoration: underline;
+}
 
-**Feel free to hit me up for karaoke sessions, board games, badminton matches, hiking trips, or just grabbing food and chatting about life! Always down to meet cool people and try new things 🎉**
+#hobbies-section .connect-box {
+  padding: 1.2em 1.5em;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #e3f2fd 0%, #f3e5f5 100%);
+  border: 1px solid #e0d6f0;
+  margin-bottom: 1.5em;
+}
+#hobbies-section .connect-box h3 {
+  margin: 0 0 0.6em 0;
+  font-size: 1.05em;
+  color: #1a1a1a;
+}
+#hobbies-section .connect-box p {
+  margin: 0.3em 0;
+  font-size: 0.92em;
+  color: #444;
+  line-height: 1.7;
+}
+#hobbies-section .connect-box a {
+  color: #1976D2;
+  text-decoration: none;
+}
+#hobbies-section .connect-box a:hover {
+  text-decoration: underline;
+}
 
-# 📬 Let's Connect  
-- 📫 You can reach out to me via email at [cyd0806@mail.ustc.edu.cn](mailto:cyd0806@mail.ustc.edu.cn).
-- 💼 I'm eager to connect with fellow deep learning enthusiasts and graduate researchers who share similar interests and are passionate about advancing the frontiers of AI in these domains.
-- 📍 USTC Gaoxin campus, Hefei, Anhui, China
+#hobbies-section .cta-text {
+  text-align: center;
+  font-size: 0.95em;
+  color: #666;
+  margin: 1em 0;
+  font-style: italic;
+}
 
-Feel free to drop me an email to discuss potential collaborations, share your ideas, or just have a friendly chat!
+#hobbies-section .visitor-map {
+  text-align: center;
+  margin: 1em auto;
+  width: 300px;
+  height: 300px;
+}
+#hobbies-section .visitor-map canvas {
+  width: 100% !important;
+  height: 100% !important;
+}
+</style>
 
-# Visitor Map 🌍  
-<div style="text-align: center; margin-bottom: 20px; width: 300px; height: 300px; margin: 0 auto;">
-  <!-- ClustrMaps Embed Code -->
+<div id="hobbies-section">
+
+<div class="hobby-grid">
+
+<div class="hobby-card">
+  <div class="hobby-title">🎤 Singing</div>
+  <div class="hobby-desc">Love belting out tunes and exploring different music styles</div>
+</div>
+
+<div class="hobby-card">
+  <div class="hobby-title">🍳 Cooking</div>
+  <div class="hobby-desc">Always experimenting with new recipes — my kitchen is my lab!</div>
+</div>
+
+<div class="hobby-card">
+  <div class="hobby-title">🏸 Sports</div>
+  <div class="hobby-desc">Into badminton, basketball, and table tennis. Also hitting the gym as a total newbie!</div>
+</div>
+
+<div class="hobby-card">
+  <div class="hobby-title">🎲 Board Games</div>
+  <div class="hobby-desc">Obsessed with Splendor, Catan, Ticket to Ride, Azul, 7 Wonders, Carcassonne, and Wingspan. Game night anyone?</div>
+</div>
+
+<div class="hobby-card">
+  <div class="hobby-title">⛰️ Hiking & Traveling</div>
+  <div class="hobby-desc">Love chasing sunrises on mountain peaks. Explored Huangshan, Jiuhuashan, Zhuhai, Changsha, Istanbul, Morocco's Sahara, Seoul, and Singapore.</div>
+</div>
+
+<div class="hobby-card">
+  <div class="hobby-title">🎮 <a href="/docs/王者荣耀.png">Gaming</a></div>
+  <div class="hobby-desc">Not just building Honor of Kings (Lingbao developer!) but rocking National Server Nezha, Golden Badge Nakoruru, and ranked Top 50 Jungler in Hefei.</div>
+</div>
+
+</div>
+
+<p class="cta-text">Feel free to hit me up for karaoke, board games, badminton, hiking, or just grabbing food and chatting about life!</p>
+
+# 📬 Let's Connect
+
+<div class="connect-box">
+  <h3>Get in Touch</h3>
+  <p>📫 Email: <a href="mailto:cyd0806@mail.ustc.edu.cn">cyd0806@mail.ustc.edu.cn</a></p>
+  <p>💼 I'm eager to connect with fellow deep learning enthusiasts and researchers passionate about advancing AI.</p>
+  <p>📍 USTC Gaoxin campus, Hefei, Anhui, China</p>
+</div>
+
+# Visitor Map 🌍
+
+<div class="visitor-map">
   <script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=-6dpgBBQ6VS019wttjE8HshiwnZUQM6hxMNnvZM-u6c"></script>
-  <style>
-    canvas#clustrmaps-canvas {
-      width: 100% !important; /* 根据父容器宽度自适应 */
-      height: 100% !important; /* 根据父容器高度自适应 */
-    }
-  </style>
+</div>
+
 </div>

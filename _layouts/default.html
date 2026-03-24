@@ -48,6 +48,28 @@ layout: compress
       Last updated: {{ site.time | date: "%Y-%m-%d %H:%M:%S" }}
     </footer>
 
+    <!-- Back to Top Button -->
+    <button id="backToTop" aria-label="Back to top" style="
+      display:none; position:fixed; bottom:2em; right:2em; z-index:999;
+      width:44px; height:44px; border-radius:50%; border:none;
+      background:linear-gradient(135deg,#667eea,#764ba2);
+      color:#fff; font-size:1.3em; cursor:pointer;
+      box-shadow:0 4px 14px rgba(102,126,234,0.4);
+      transition:all 0.3s; opacity:0;
+    ">▲</button>
+    <script>
+    (function(){
+      var btn=document.getElementById('backToTop');
+      window.addEventListener('scroll',function(){
+        if(window.scrollY>400){btn.style.display='block';setTimeout(function(){btn.style.opacity='1'},10)}
+        else{btn.style.opacity='0';setTimeout(function(){if(window.scrollY<=400)btn.style.display='none'},300)}
+      });
+      btn.addEventListener('click',function(){window.scrollTo({top:0,behavior:'smooth'})});
+      btn.addEventListener('mouseenter',function(){btn.style.transform='translateY(-3px)';btn.style.boxShadow='0 6px 20px rgba(102,126,234,0.5)'});
+      btn.addEventListener('mouseleave',function(){btn.style.transform='';btn.style.boxShadow='0 4px 14px rgba(102,126,234,0.4)'});
+    })();
+    </script>
+
     {% include scripts.html %}
 
   </body>
