@@ -45,6 +45,18 @@ R Yang*, **Y Chen***, Z Zhang, X Liu, Z Li, K He, Z Xiong, J Suo, Q Dai
 
 ## 🎓 Conference Papers
 
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge-conference">AAAI 2026</div><div class="badge-ccf badge-ccf-a">CCF A</div><img src='images/placeholder.png' alt="paper" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[Efficient Plug-and-Play Weight Refinement for Sparse Large Models](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=hCvlj5cAAAAJ:70eg2SAEIzsC) \\
+AAAI | 2026 \\
+J Xie, **Y Chen**, X Liu, Y Li, H Shi, Z Xiong
+
+<!-- TODO: Add paper description -->
+
+</div>
+</div>
+
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge-conference">ICCV 2025</div><div class="badge-ccf badge-ccf-a">CCF A</div><img src='images/placeholder.png' alt="paper" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
