@@ -1,5 +1,25 @@
 [
   {
+    "title": "Efficient Plug-and-Play Weight Refinement for Sparse Large Models",
+    "authors": "J Xie, Y Chen, X Liu, Y Li, H Shi, Z Xiong",
+    "year": "2026",
+    "citations": 0,
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=hCvlj5cAAAAJ:70eg2SAEIzsC",
+    "is_first_author": true,
+    "venue": {
+      "shortcut": "AAAI",
+      "full_name": "AAAI Conference on Artificial Intelligence",
+      "type": "conference",
+      "ccf": "A",
+      "sci": null,
+      "impact_factor": null
+    },
+    "is_high_cited": false,
+    "is_recent": true,
+    "is_qualified": true,
+    "should_include": true
+  },
+  {
     "title": "MAIN-VLA: Modeling Abstraction of Intention and eNvironment for Vision-Language-Action Models",
     "authors": "Z Zhou, L Du, Z Sun, X Zhou, R Ye, Q Chen, Y Chen, L Qiu",
     "year": "2026",
@@ -196,7 +216,7 @@
     "title": "Conditional Latent Coding with Learnable Synthesized Reference for Deep Image Compression",
     "authors": "S Wu*, Y Chen*, D Liu, Z He",
     "year": "2025",
-    "citations": 7,
+    "citations": 8,
     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=hCvlj5cAAAAJ:4DMP91E08xMC",
     "is_first_author": true,
     "venue": {
@@ -389,7 +409,7 @@
     "title": "Joint EM Image Denoising and Segmentation with Instance-Aware Interaction",
     "authors": "Z Wang, J Li, Y Chen, J Shou, S Deng, W Huang, Z Xiong",
     "year": "2024",
-    "citations": 1,
+    "citations": 2,
     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=hCvlj5cAAAAJ:Zph67rFs4hoC",
     "is_first_author": false,
     "venue": {

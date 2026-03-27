@@ -92,6 +92,17 @@
     ]
   },
   {
+    "title": "Conditional Latent Coding with Learnable Synthesized Reference for Deep Image Compression",
+    "authors": "S Wu*, Y Chen*, D Liu, Z He",
+    "year": "2025",
+    "citations": 8,
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&citation_for_view=hCvlj5cAAAAJ:4DMP91E08xMC",
+    "citation_id": "hCvlj5cAAAAJ:4DMP91E08xMC",
+    "keywords": [
+      "Image Compression"
+    ]
+  },
+  {
     "title": "UniCompress: Enhancing Multi-Data Medical Image Compression with Knowledge Distillation",
     "authors": "R Yang*, Y Chen*, Z Zhang, X Liu, Z Li, K He, Z Xiong, J Suo, Q Dai",
     "year": "2024",
@@ -101,17 +112,6 @@
     "keywords": [
       "Image Compression",
       "Medical Imaging"
-    ]
-  },
-  {
-    "title": "Conditional Latent Coding with Learnable Synthesized Reference for Deep Image Compression",
-    "authors": "S Wu*, Y Chen*, D Liu, Z He",
-    "year": "2025",
-    "citations": 7,
-    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&citation_for_view=hCvlj5cAAAAJ:4DMP91E08xMC",
-    "citation_id": "hCvlj5cAAAAJ:4DMP91E08xMC",
-    "keywords": [
-      "Image Compression"
     ]
   },
   {

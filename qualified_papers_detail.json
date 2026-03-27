@@ -1,5 +1,25 @@
 [
   {
+    "title": "Efficient Plug-and-Play Weight Refinement for Sparse Large Models",
+    "authors": "J Xie, Y Chen, X Liu, Y Li, H Shi, Z Xiong",
+    "year": "2026",
+    "citations": 0,
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=hCvlj5cAAAAJ:70eg2SAEIzsC",
+    "is_first_author": true,
+    "venue": {
+      "shortcut": "AAAI",
+      "full_name": "AAAI Conference on Artificial Intelligence",
+      "type": "conference",
+      "ccf": "A",
+      "sci": null,
+      "impact_factor": null
+    },
+    "is_high_cited": false,
+    "is_recent": true,
+    "is_qualified": true,
+    "should_include": true
+  },
+  {
     "title": "EMPOWER: Evolutionary Medical Prompt Optimization With Reinforcement Learning",
     "authors": "Y Chen, Y He, J Yang, D Zhang, Z Yuan, MA Khan, J Baili, L Yee",
     "year": "2026",
@@ -43,7 +63,7 @@
     "title": "Conditional Latent Coding with Learnable Synthesized Reference for Deep Image Compression",
     "authors": "S Wu*, Y Chen*, D Liu, Z He",
     "year": "2025",
-    "citations": 7,
+    "citations": 8,
     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=hCvlj5cAAAAJ:4DMP91E08xMC",
     "is_first_author": true,
     "venue": {
