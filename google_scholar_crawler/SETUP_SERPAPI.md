@@ -167,19 +167,13 @@ params = {
 修改 `.github/workflows/google-scholar-stats.yml`：
 
 ```yaml
-# 每天更新（约30次/月，仍在免费额度内）
+# 当前配置：每天一次（约 30 次/月，注意 SerpAPI 免费额度）
 schedule:
-  - cron: '0 0 * * *'
+  - cron: '0 1 * * *'  # 每天 UTC 01:00
 
-# 每周一次（约4次/月）
+# 每周一次（约 4 次/月）
 schedule:
   - cron: '0 0 * * 1'
-
-# 当前配置：每周三次
-schedule:
-  - cron: '0 0 * * 1'  # 周一
-  - cron: '0 0 * * 3'  # 周三
-  - cron: '0 0 * * 5'  # 周五
 ```
 
 ---
@@ -188,8 +182,9 @@ schedule:
 
 | 问题 | 解决方案 |
 |------|----------|
+| 定时任务不再跑 | GitHub 在仓库约 60 天无活动时会暂停 scheduled workflow；打开 **Actions** → 左侧 **Get Google Scholar Stats** → 右上角 **Enable workflow** |
 | API 请求失败 | 检查 SERPAPI_KEY 是否正确设置 |
-| 数据未更新 | 查看 Actions 运行日志 |
+| 数据未更新 | 查看 Actions 运行日志；可手动 **Run workflow** 试跑 |
 | 徽章显示旧数据 | shields.io 有缓存，等待几分钟或加 `?cacheSeconds=3600` |
 | 额度用完 | 等待下月重置或升级付费计划 |
 

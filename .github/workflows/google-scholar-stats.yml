@@ -1,10 +1,11 @@
 name: Get Google Scholar Stats
 
+# 定时任务说明：
+# - cron 使用 UTC。'0 1 * * *' = 每天 UTC 01:00（北京时间 09:00），避开整点负载高峰。
+# - GitHub 若 60 天无仓库活动，会暂停 scheduled workflow；到 Actions 里点一次 “Enable workflow” 即可恢复。
 on:
   schedule:
-    - cron: '0 0 * * 1'  # 每周一 UTC 00:00 运行
-    - cron: '0 0 * * 3'  # 每周三 UTC 00:00 运行
-    - cron: '0 0 * * 5'  # 每周五 UTC 00:00 运行
+    - cron: '0 1 * * *'  # 每天 UTC 01:00（约北京时间 09:00）
   workflow_dispatch:  # 允许手动触发
 
 permissions:
@@ -155,7 +156,7 @@ jobs:
           \`\`\`
           
           ---
-          *Updated 3x weekly (Mon/Wed/Fri) via GitHub Actions | Source: SerpAPI*
+          *Updated daily via GitHub Actions | Source: SerpAPI*
           EOF
           
           # 提交更改
