@@ -63,6 +63,26 @@ AUTHOR_NAME_VARIANTS = [
 # =====================================================
 
 
+def safe_int(value, default: int = 0) -> int:
+    """SerpAPI / JSON 里数字字段常为 null 或字符串，统一转成 int。"""
+    if value is None:
+        return default
+    try:
+        return int(value)
+    except (TypeError, ValueError):
+        return default
+
+
+def article_citation_count(article: dict) -> int:
+    """单篇论文引用数；cited_by.value 可能为 null。"""
+    cb = article.get("cited_by")
+    if isinstance(cb, dict):
+        return safe_int(cb.get("value"), 0)
+    if isinstance(cb, (int, float)):
+        return int(cb)
+    return 0
+
+
 def get_scholar_stats_serpapi(scholar_id: str, api_key: str) -> dict:
     """
     使用 SerpAPI 获取 Google Scholar 统计信息
@@ -108,7 +128,7 @@ def get_scholar_stats_serpapi(scholar_id: str, api_key: str) -> dict:
             for key, sub in item_dict.items():
                 if isinstance(sub, dict):
                     if "all" in sub:
-                        val_all = sub["all"]
+                        val_all = safe_int(sub.get("all"), 0)
                     for sk, sv in sub.items():
                         if sk != "all" and isinstance(sv, int):
                             val_recent = sv
@@ -128,7 +148,7 @@ def get_scholar_stats_serpapi(scholar_id: str, api_key: str) -> dict:
         # 安全检查：如果 table 解析失败（citedby=0），尝试从 graph 数据求和
         if citations_all == 0 and cited_by_graph:
             graph_total = sum(
-                int(item.get("citations", 0)) for item in cited_by_graph
+                safe_int(item.get("citations"), 0) for item in cited_by_graph
             )
             if graph_total > 0:
                 citations_all = graph_total
@@ -241,7 +261,7 @@ def filter_first_author_papers(articles: list, name_variants: list) -> list:
                 "title": title,
                 "authors": authors,
                 "year": article.get("year", ""),
-                "citations": article.get("cited_by", {}).get("value", 0),
+                "citations": article_citation_count(article),
                 "link": article.get("link", ""),
                 "citation_id": article.get("citation_id", "")
             })
@@ -382,8 +402,8 @@ def generate_citation_trend_svg(citation_graph: list, output_path: str, total_ci
         return
     
     # 提取年份和每年新增引用数
-    years = [item.get("year", 0) for item in citation_graph]
-    yearly_citations = [item.get("citations", 0) for item in citation_graph]
+    years = [safe_int(item.get("year"), 0) for item in citation_graph]
+    yearly_citations = [safe_int(item.get("citations"), 0) for item in citation_graph]
     
     if not years or not yearly_citations:
         return
@@ -582,11 +602,7 @@ def main():
             
             # 安全检查：如果总引用数为 0 但论文有引用，用所有论文引用数之和作为下限
             if author_data["citedby"] == 0 and articles:
-                total_from_papers = sum(
-                    a.get("cited_by", {}).get("value", 0) if isinstance(a.get("cited_by"), dict)
-                    else 0
-                    for a in articles
-                )
+                total_from_papers = sum(article_citation_count(a) for a in articles)
                 if total_from_papers > 0:
                     print(f"[安全检查] citedby=0 异常！从 {len(articles)} 篇论文求和得 {total_from_papers}")
                     author_data["citedby"] = total_from_papers
