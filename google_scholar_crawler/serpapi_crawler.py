@@ -83,6 +83,26 @@ def article_citation_count(article: dict) -> int:
     return 0
 
 
+def safe_str(value, default: str = "") -> str:
+    """JSON 里常见显式 null：.get('title','') 仍会返回 None，用此统一成字符串。"""
+    if value is None:
+        return default
+    return str(value)
+
+
+def normalize_author_metrics(author_data: dict) -> dict:
+    """SerpAPI 可能返回 null，避免 citedby > 0 等与 None 比较报错。"""
+    if not author_data:
+        return author_data
+    author_data["citedby"] = safe_int(author_data.get("citedby"), 0)
+    author_data["citedby5y"] = safe_int(author_data.get("citedby5y"), 0)
+    author_data["hindex"] = safe_int(author_data.get("hindex"), 0)
+    author_data["hindex5y"] = safe_int(author_data.get("hindex5y"), 0)
+    author_data["i10index"] = safe_int(author_data.get("i10index"), 0)
+    author_data["i10index5y"] = safe_int(author_data.get("i10index5y"), 0)
+    return author_data
+
+
 def get_scholar_stats_serpapi(scholar_id: str, api_key: str) -> dict:
     """
     使用 SerpAPI 获取 Google Scholar 统计信息
@@ -155,22 +175,23 @@ def get_scholar_stats_serpapi(scholar_id: str, api_key: str) -> dict:
                 print(f"[SerpAPI] table 解析为 0，从 citation_graph 求和得 {graph_total}")
         
         author_data = {
-            "name": author.get("name", "Unknown"),
+            "name": safe_str(author.get("name"), "Unknown"),
             "citedby": citations_all,
             "citedby5y": citations_5y,
             "hindex": h_index,
             "hindex5y": h_index_5y,
             "i10index": i10_index,
             "i10index5y": i10_index_5y,
-            "affiliation": author.get("affiliations", ""),
-            "interests": [interest.get("title", "") for interest in author.get("interests", [])],
-            "thumbnail": author.get("thumbnail", ""),
+            "affiliation": safe_str(author.get("affiliations"), ""),
+            "interests": [safe_str(interest.get("title"), "") for interest in author.get("interests", [])],
+            "thumbnail": safe_str(author.get("thumbnail"), ""),
             "citation_graph": cited_by_graph,
             "updated": str(datetime.now()),
             "source": "serpapi",
             "publications": {}
         }
-        
+        normalize_author_metrics(author_data)
+
         print(f"[SerpAPI] 成功获取数据:")
         print(f"  姓名: {author_data['name']}")
         print(f"  总引用数: {author_data['citedby']}")
@@ -253,17 +274,17 @@ def filter_first_author_papers(articles: list, name_variants: list) -> list:
     first_author_papers = []
     
     for article in articles:
-        authors = article.get("authors", "")
-        title = article.get("title", "")
+        authors = safe_str(article.get("authors"), "")
+        title = safe_str(article.get("title"), "")
         
         if is_first_author(authors, name_variants):
             first_author_papers.append({
                 "title": title,
                 "authors": authors,
-                "year": article.get("year", ""),
+                "year": safe_str(article.get("year"), ""),
                 "citations": article_citation_count(article),
-                "link": article.get("link", ""),
-                "citation_id": article.get("citation_id", "")
+                "link": safe_str(article.get("link"), ""),
+                "citation_id": safe_str(article.get("citation_id"), "")
             })
     
     print(f"[筛选] 找到 {len(first_author_papers)} 篇一作论文")
@@ -292,6 +313,7 @@ def extract_research_keywords(title: str) -> list:
         '3D Vision': ['3D', 'point cloud', 'depth', 'volumetric', 'NeRF'],
     }
     
+    title = safe_str(title)
     title_lower = title.lower()
     found_keywords = []
     
@@ -327,7 +349,7 @@ def filter_qualified_papers(papers: list, years_limit: int = 3) -> list:
         
         # 从标题或其他信息推断会议/期刊
         # 注意：SerpAPI 返回的数据可能没有会议名称，需要从 pub.md 匹配
-        title = paper.get('title', '')
+        title = safe_str(paper.get("title"))
         
         # 暂时保留所有近3年的论文，后续可以通过标题匹配 pub.md 来过滤
         paper['keywords'] = extract_research_keywords(title)
@@ -345,7 +367,7 @@ def generate_research_keywords_json(papers: list, output_path: str):
     for paper in papers:
         keywords = paper.get('keywords', [])
         if not keywords:
-            keywords = extract_research_keywords(paper.get('title', ''))
+            keywords = extract_research_keywords(safe_str(paper.get("title")))
         all_keywords.extend(keywords)
     
     # 统计关键词频率
@@ -377,12 +399,12 @@ def filter_high_cited_papers(papers: list, min_citations: int = 50) -> list:
     """
     high_cited = []
     for paper in papers:
-        citations = paper.get('citations', 0)
+        citations = safe_int(paper.get("citations"), 0)
         if citations >= min_citations:
             high_cited.append(paper)
     
     # 按引用数降序排列
-    high_cited.sort(key=lambda x: x.get('citations', 0), reverse=True)
+    high_cited.sort(key=lambda x: safe_int(x.get("citations"), 0), reverse=True)
     
     print(f"[筛选] 找到 {len(high_cited)} 篇高引用论文 (>={min_citations})")
     return high_cited
@@ -526,6 +548,7 @@ def update_fallback_in_script(citations: int, hindex: int, i10index: int):
     自动更新本脚本中的保底数据
     只在获取到有效数据（> 0）时调用
     """
+    citations, hindex, i10index = safe_int(citations, 0), safe_int(hindex, 0), safe_int(i10index, 0)
     if citations <= 0:
         print(f"[自动更新] 跳过：citations={citations} 无效，不覆盖保底数据")
         return
@@ -632,6 +655,8 @@ def main():
     if not author_data:
         print("\n[3] 使用保底数据...")
         author_data = get_fallback_data()
+
+    normalize_author_metrics(author_data)
     
     # 保存结果
     print("\n" + "=" * 60)
@@ -679,11 +704,14 @@ def main():
     
     # 生成引用趋势 SVG（传入真实总引用数进行校准）
     if author_data.get("citation_graph"):
-        generate_citation_trend_svg(
-            author_data["citation_graph"],
-            "results/citation_trend.svg",
-            total_citations=author_data.get("citedby", 0)
-        )
+        try:
+            generate_citation_trend_svg(
+                author_data["citation_graph"],
+                "results/citation_trend.svg",
+                total_citations=safe_int(author_data.get("citedby"), 0)
+            )
+        except Exception as e:
+            print(f"[WARNING] 引用趋势 SVG 生成失败（已跳过）: {e}")
     
     # 保存一作论文列表
     if first_author_papers:
@@ -699,19 +727,22 @@ def main():
             print(f"[OK] 高引用论文已保存到 results/high_cited_papers.json ({len(high_cited_papers)} 篇)")
         
         # 筛选近3年符合条件的论文
-        qualified_papers = filter_qualified_papers(first_author_papers, years_limit=3)
-        if qualified_papers:
-            with open("results/qualified_papers.json", "w", encoding="utf-8") as f:
-                json.dump(qualified_papers, f, ensure_ascii=False, indent=2)
-            print(f"[OK] 符合条件的论文已保存到 results/qualified_papers.json ({len(qualified_papers)} 篇)")
-            
-            # 生成研究方向关键词
-            generate_research_keywords_json(qualified_papers, "results/research_keywords.json")
+        try:
+            qualified_papers = filter_qualified_papers(first_author_papers, years_limit=3)
+            if qualified_papers:
+                with open("results/qualified_papers.json", "w", encoding="utf-8") as f:
+                    json.dump(qualified_papers, f, ensure_ascii=False, indent=2)
+                print(f"[OK] 符合条件的论文已保存到 results/qualified_papers.json ({len(qualified_papers)} 篇)")
+                generate_research_keywords_json(qualified_papers, "results/research_keywords.json")
+        except Exception as e:
+            print(f"[WARNING] 符合条件论文/关键词生成失败（已跳过）: {e}")
         
         # 打印一作论文摘要
         print("\n一作论文列表:")
         for i, paper in enumerate(first_author_papers[:10], 1):  # 只显示前10篇
-            print(f"  {i}. [{paper['citations']} 引用] {paper['title'][:60]}...")
+            pt = safe_str(paper.get("title"))
+            pc = safe_int(paper.get("citations"), 0)
+            print(f"  {i}. [{pc} 引用] {pt[:60]}{'...' if len(pt) > 60 else ''}")
     
     # 输出摘要
     print("\n" + "=" * 60)
@@ -729,4 +760,41 @@ def main():
 
 
 if __name__ == "__main__":
-    sys.exit(main())
+    try:
+        sys.exit(main())
+    except Exception as e:
+        import traceback
+        traceback.print_exc()
+        print(f"[FATAL] {e}")
+        print("[FATAL] 写入保底 JSON，避免 Action 后续步骤因缺文件失败…")
+        try:
+            os.makedirs("results", exist_ok=True)
+            fb = get_fallback_data()
+            normalize_author_metrics(fb)
+            with open("results/gs_data.json", "w", encoding="utf-8") as f:
+                json.dump(fb, f, ensure_ascii=False, indent=2)
+            with open("results/gs_data_shieldsio.json", "w", encoding="utf-8") as f:
+                json.dump({
+                    "schemaVersion": 1,
+                    "label": "citations",
+                    "message": str(fb["citedby"]),
+                    "color": "blue",
+                }, f, ensure_ascii=False, indent=2)
+            with open("results/gs_hindex.json", "w", encoding="utf-8") as f:
+                json.dump({
+                    "schemaVersion": 1,
+                    "label": "h-index",
+                    "message": str(fb["hindex"]),
+                    "color": "green",
+                }, f, ensure_ascii=False, indent=2)
+            with open("results/gs_i10index.json", "w", encoding="utf-8") as f:
+                json.dump({
+                    "schemaVersion": 1,
+                    "label": "i10-index",
+                    "message": str(fb["i10index"]),
+                    "color": "orange",
+                }, f, ensure_ascii=False, indent=2)
+        except Exception as e2:
+            print(f"[FATAL] 保底写入也失败: {e2}")
+            sys.exit(1)
+        sys.exit(0)
