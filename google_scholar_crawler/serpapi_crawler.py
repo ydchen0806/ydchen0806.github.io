@@ -73,14 +73,33 @@ def safe_int(value, default: int = 0) -> int:
         return default
 
 
-def article_citation_count(article: dict) -> int:
-    """单篇论文引用数；cited_by.value 可能为 null。"""
-    cb = article.get("cited_by")
-    if isinstance(cb, dict):
-        return safe_int(cb.get("value"), 0)
-    if isinstance(cb, (int, float)):
-        return int(cb)
-    return 0
+def article_citation_count(article) -> int:
+    """
+    单篇论文引用数。SerpAPI 常见形态：
+    - cited_by: { "value": int | null, ... }
+    - cited_by: [ { "value": ... }, ... ]（少数响应）
+    - 顶层 citations / num_citations
+    任何异常或无法解析一律返回 0，保证调用方 sum 不会出现 int + None。
+    """
+    try:
+        if not isinstance(article, dict):
+            return 0
+        cb = article.get("cited_by")
+        if isinstance(cb, dict):
+            return safe_int(cb.get("value"), 0)
+        if isinstance(cb, list):
+            s = 0
+            for it in cb:
+                if isinstance(it, dict):
+                    s += safe_int(it.get("value"), 0)
+            return s
+        if isinstance(cb, (int, float)):
+            return int(cb)
+        if isinstance(cb, str):
+            return safe_int(cb.strip(), 0)
+        return safe_int(article.get("citations"), safe_int(article.get("num_citations"), 0))
+    except Exception:
+        return 0
 
 
 def safe_str(value, default: str = "") -> str:
@@ -625,7 +644,16 @@ def main():
             
             # 安全检查：如果总引用数为 0 但论文有引用，用所有论文引用数之和作为下限
             if author_data["citedby"] == 0 and articles:
-                total_from_papers = sum(article_citation_count(a) for a in articles)
+                # 显式累加，避免生成器里偶发返回非 int；cit_sum_v4
+                total_from_papers = 0
+                for idx, art in enumerate(articles):
+                    try:
+                        if not isinstance(art, dict):
+                            continue
+                        n = article_citation_count(art)
+                        total_from_papers += safe_int(n, 0)
+                    except TypeError as e:
+                        print(f"[安全检查] 论文 #{idx} 引用累加跳过: {e}")
                 if total_from_papers > 0:
                     print(f"[安全检查] citedby=0 异常！从 {len(articles)} 篇论文求和得 {total_from_papers}")
                     author_data["citedby"] = total_from_papers
