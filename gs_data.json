@@ -1,41 +1,16 @@
 {
-  "name": "Yinda Chen",
-  "citedby": 567,
-  "citedby5y": 566,
-  "hindex": 12,
-  "hindex5y": 12,
-  "i10index": 13,
-  "i10index5y": 13,
-  "affiliation": "University of Science and Technology of China",
-  "interests": [
-    "Machine Learning Theory",
-    "Self-supervised Learning",
-    "Image Compression"
-  ],
-  "thumbnail": "https://scholar.googleusercontent.com/citations?view_op=view_photo&user=hCvlj5cAAAAJ&citpid=12",
-  "citation_graph": [
-    {
-      "year": 2022,
-      "citations": 5
-    },
-    {
-      "year": 2023,
-      "citations": 18
-    },
-    {
-      "year": 2024,
-      "citations": 156
-    },
-    {
-      "year": 2025,
-      "citations": 318
-    },
-    {
-      "year": 2026,
-      "citations": 67
-    }
-  ],
-  "updated": "2026-03-30 01:14:13.533465",
+  "name": "Unknown",
+  "citedby": 570,
+  "citedby5y": 0,
+  "hindex": 0,
+  "hindex5y": 0,
+  "i10index": 0,
+  "i10index5y": 0,
+  "affiliation": "",
+  "interests": [],
+  "thumbnail": "",
+  "citation_graph": [],
+  "updated": "2026-03-31 07:21:49.059595",
   "source": "serpapi",
   "publications": {},
   "first_author_papers": [
@@ -88,20 +63,20 @@
       "citation_id": "hCvlj5cAAAAJ:aqlVkmm33-oC"
     },
     {
+      "title": "Conditional Latent Coding with Learnable Synthesized Reference for Deep Image Compression",
+      "authors": "S Wu*, Y Chen*, D Liu, Z He",
+      "year": "2025",
+      "citations": 9,
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&citation_for_view=hCvlj5cAAAAJ:4DMP91E08xMC",
+      "citation_id": "hCvlj5cAAAAJ:4DMP91E08xMC"
+    },
+    {
       "title": "EMPOWER: Evolutionary Medical Prompt Optimization With Reinforcement Learning",
       "authors": "Y Chen, Y He, J Yang, D Zhang, Z Yuan, MA Khan, J Baili, L Yee",
       "year": "2026",
       "citations": 8,
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&citation_for_view=hCvlj5cAAAAJ:J_g5lzvAfSwC",
       "citation_id": "hCvlj5cAAAAJ:J_g5lzvAfSwC"
-    },
-    {
-      "title": "Conditional Latent Coding with Learnable Synthesized Reference for Deep Image Compression",
-      "authors": "S Wu*, Y Chen*, D Liu, Z He",
-      "year": "2025",
-      "citations": 8,
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&citation_for_view=hCvlj5cAAAAJ:4DMP91E08xMC",
-      "citation_id": "hCvlj5cAAAAJ:4DMP91E08xMC"
     },
     {
       "title": "UniCompress: Enhancing Multi-Data Medical Image Compression with Knowledge Distillation",
