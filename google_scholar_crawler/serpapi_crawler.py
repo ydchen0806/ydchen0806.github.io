@@ -75,29 +75,51 @@ def safe_int(value, default: int = 0) -> int:
 
 def article_citation_count(article) -> int:
     """
-    单篇论文引用数。SerpAPI 常见形态：
-    - cited_by: { "value": int | null, ... }
-    - cited_by: [ { "value": ... }, ... ]（少数响应）
-    - 顶层 citations / num_citations
-    任何异常或无法解析一律返回 0，保证调用方 sum 不会出现 int + None。
+    Extract citation count from a single article dict returned by SerpAPI.
+
+    SerpAPI response formats seen in the wild:
+      - cited_by: {"value": 42}           (most common)
+      - cited_by: {"value": null}          (key present, value is JSON null)
+      - cited_by: 42                       (direct integer)
+      - cited_by: "42"                     (string)
+      - cited_by: [{"value": 10}, ...]     (rare list variant)
+      - no cited_by, but top-level citations / num_citations
+
+    This function ALWAYS returns an int >= 0; never None.
     """
+    if not isinstance(article, dict):
+        return 0
     try:
-        if not isinstance(article, dict):
-            return 0
-        cb = article.get("cited_by")
-        if isinstance(cb, dict):
-            return safe_int(cb.get("value"), 0)
-        if isinstance(cb, list):
-            s = 0
-            for it in cb:
-                if isinstance(it, dict):
-                    s += safe_int(it.get("value"), 0)
-            return s
-        if isinstance(cb, (int, float)):
-            return int(cb)
-        if isinstance(cb, str):
-            return safe_int(cb.strip(), 0)
-        return safe_int(article.get("citations"), safe_int(article.get("num_citations"), 0))
+        cited_by = article.get("cited_by")
+
+        if isinstance(cited_by, dict):
+            return safe_int(cited_by.get("value"), 0)
+
+        if isinstance(cited_by, int):
+            return cited_by if cited_by >= 0 else 0
+
+        if isinstance(cited_by, float):
+            return max(int(cited_by), 0)
+
+        if isinstance(cited_by, str):
+            return safe_int(cited_by.strip(), 0)
+
+        if isinstance(cited_by, list):
+            total = 0
+            for item in cited_by:
+                if isinstance(item, dict):
+                    total += safe_int(item.get("value"), 0)
+                else:
+                    total += safe_int(item, 0)
+            return total
+
+        # cited_by missing or unrecognised — try alternative keys
+        for key in ("citations", "num_citations", "citation_count"):
+            val = article.get(key)
+            if val is not None:
+                return safe_int(val, 0)
+
+        return 0
     except Exception:
         return 0
 
@@ -642,20 +664,20 @@ def main():
                 first_author_papers = filter_first_author_papers(articles, AUTHOR_NAME_VARIANTS)
                 author_data["first_author_papers"] = first_author_papers
             
-            # 安全检查：如果总引用数为 0 但论文有引用，用所有论文引用数之和作为下限
+            # Safety net: when the profile-level citedby is 0 but individual
+            # papers do have citations, sum them up as a lower bound.
             if author_data["citedby"] == 0 and articles:
-                # 显式累加，避免生成器里偶发返回非 int；cit_sum_v4
                 total_from_papers = 0
                 for idx, art in enumerate(articles):
                     try:
-                        if not isinstance(art, dict):
-                            continue
-                        n = article_citation_count(art)
-                        total_from_papers += safe_int(n, 0)
-                    except TypeError as e:
-                        print(f"[安全检查] 论文 #{idx} 引用累加跳过: {e}")
+                        count = article_citation_count(art)
+                        if not isinstance(count, int):
+                            count = safe_int(count, 0)
+                        total_from_papers += count
+                    except Exception as exc:
+                        print(f"[safety] skipping article #{idx}: {exc}")
                 if total_from_papers > 0:
-                    print(f"[安全检查] citedby=0 异常！从 {len(articles)} 篇论文求和得 {total_from_papers}")
+                    print(f"[safety] citedby was 0, paper-sum = {total_from_papers}")
                     author_data["citedby"] = total_from_papers
             
             # 最终防线：如果 citedby 仍为 0，使用保底数据的值
