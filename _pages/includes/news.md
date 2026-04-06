@@ -75,7 +75,7 @@
 
 <li class="news-item">
   <span class="news-date">2026.04</span>
-  <span class="news-text">🎵 Earned the <a href="/docs/berklee_singing_popular_music_cert.png">Singing Popular Music</a> certification from <strong>Berklee College of Music</strong> (via Coursera).</span>
+  <span class="news-text">🎵 Earned the <a href="/docs/berklee_singing_popular_music_cert.png">Singing Popular Music</a> certification from <strong>Berklee College of Music</strong>.</span>
 </li>
 
 <li class="news-item">
