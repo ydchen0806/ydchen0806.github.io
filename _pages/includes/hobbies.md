@@ -91,7 +91,7 @@
 
 <div class="hobby-card">
   <div class="hobby-title">🎤 Singing</div>
-  <div class="hobby-desc">Love belting out tunes and exploring different music styles</div>
+  <div class="hobby-desc">Love belting out tunes and exploring different music styles. Certified in <a href="/docs/berklee_singing_popular_music_cert.png">Singing Popular Music</a> by Berklee College of Music (Coursera).</div>
 </div>
 
 <div class="hobby-card">

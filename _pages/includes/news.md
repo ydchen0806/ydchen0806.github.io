@@ -74,6 +74,11 @@
 <ul class="news-list">
 
 <li class="news-item">
+  <span class="news-date">2026.04</span>
+  <span class="news-text">🎵 Earned the <a href="/docs/berklee_singing_popular_music_cert.png">Singing Popular Music</a> certification from <strong>Berklee College of Music</strong> (via Coursera).</span>
+</li>
+
+<li class="news-item">
   <span class="news-date">2026.01</span>
   <span class="news-text">🎓 Awarded the <a href="/docs/增华奖学金.jpg">Zenghua Scholarship (增华奖学金)</a> by USTC, a university-level scholarship.</span>
 </li>
