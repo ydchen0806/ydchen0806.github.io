@@ -60,7 +60,7 @@ J Xie, **Y Chen**, X Liu, Y Li, H Shi, Z Xiong
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge-conference">ICCV 2025</div><div class="badge-ccf badge-ccf-a">CCF A</div><img src='images/placeholder.png' alt="paper" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-[GTGM: Generative Text-Guided 3D Vision-Language Pretraining for Medical Image Segmentation](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=hCvlj5cAAAAJ:NMxIlDl6LWMC) <span class="citation-badge">119 citations</span> \\
+[GTGM: Generative Text-Guided 3D Vision-Language Pretraining for Medical Image Segmentation](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=hCvlj5cAAAAJ:NMxIlDl6LWMC) <span class="citation-badge">120 citations</span> \\
 ICCV | 2025 \\
 **Y Chen**, C Liu, W Huang, X Liu, H Shi, S Cheng, R Arcucci, Z Xiong
 
