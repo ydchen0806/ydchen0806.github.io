@@ -1,7 +1,7 @@
 {
   "name": "Yinda Chen",
-  "citedby": 584,
-  "citedby5y": 584,
+  "citedby": 585,
+  "citedby5y": 585,
   "hindex": 12,
   "hindex5y": 12,
   "i10index": 13,
@@ -12,7 +12,7 @@
     "Self-supervised Learning",
     "Image Compression"
   ],
-  "thumbnail": "https://scholar.googleusercontent.com/citations?view_op=view_photo&user=hCvlj5cAAAAJ&citpid=12",
+  "thumbnail": "https://scholar.googleusercontent.com/citations?view_op=view_photo&user=hCvlj5cAAAAJ&citpid=13",
   "citation_graph": [
     {
       "year": 2022,
@@ -32,10 +32,10 @@
     },
     {
       "year": 2026,
-      "citations": 82
+      "citations": 83
     }
   ],
-  "updated": "2026-04-22 03:55:27.888232",
+  "updated": "2026-04-23 04:00:26.033927",
   "source": "serpapi",
   "publications": {},
   "first_author_papers": [
