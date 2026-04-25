@@ -30,10 +30,10 @@
   </g>
 
   <!-- 填充区域 -->
-  <polygon points="60,200 60.0,198.2051282051282 207.5,193.5897435897436 355.0,153.33333333333334 502.5,71.2820512820513 650.0,50.0 650.0,200" fill="url(#gradient)"/>
+  <polygon points="60,200 60.0,198.2051282051282 207.5,193.5897435897436 355.0,153.33333333333334 502.5,71.53846153846155 650.0,50.0 650.0,200" fill="url(#gradient)"/>
 
   <!-- 折线 -->
-  <polyline points="60.0,198.2051282051282 207.5,193.5897435897436 355.0,153.33333333333334 502.5,71.2820512820513 650.0,50.0" fill="none" stroke="#4285f4" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <polyline points="60.0,198.2051282051282 207.5,193.5897435897436 355.0,153.33333333333334 502.5,71.53846153846155 650.0,50.0" fill="none" stroke="#4285f4" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
 
   <!-- 数据点和标签 -->
   <circle cx="60.0" cy="198.2051282051282" r="5" fill="#4285f4" stroke="#fff" stroke-width="2"/>
@@ -45,9 +45,9 @@
   <circle cx="355.0" cy="153.33333333333334" r="5" fill="#4285f4" stroke="#fff" stroke-width="2"/>
   <text x="355.0" y="218" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#666">2024</text>
   <text x="355.0" y="141.33333333333334" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#4285f4">182</text>
-  <circle cx="502.5" cy="71.2820512820513" r="5" fill="#4285f4" stroke="#fff" stroke-width="2"/>
+  <circle cx="502.5" cy="71.53846153846155" r="5" fill="#4285f4" stroke="#fff" stroke-width="2"/>
   <text x="502.5" y="218" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#666">2025</text>
-  <text x="502.5" y="89.2820512820513" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#4285f4">502</text>
+  <text x="502.5" y="89.53846153846155" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#4285f4">501</text>
   <circle cx="650.0" cy="50.0" r="5" fill="#4285f4" stroke="#fff" stroke-width="2"/>
   <text x="650.0" y="218" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#666">2026</text>
   <text x="650.0" y="70.0" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#4285f4">585</text>
