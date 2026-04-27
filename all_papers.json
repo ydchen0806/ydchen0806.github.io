@@ -1,5 +1,45 @@
 [
   {
+    "title": "M2Reg: Unsupervised Multi-Scale Registration for Multimodal Microscopy",
+    "authors": "X Wu, Y Chen, R Zhang, H Jin, Z Xiong",
+    "year": "2026",
+    "citations": 0,
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=hCvlj5cAAAAJ:ldfaerwXgEUC",
+    "is_first_author": true,
+    "venue": {
+      "shortcut": "ICASSP",
+      "full_name": "IEEE International Conference on Acoustics, Speech and Signal Processing",
+      "type": "conference",
+      "ccf": "B",
+      "sci": null,
+      "impact_factor": null
+    },
+    "is_high_cited": false,
+    "is_recent": true,
+    "is_qualified": true,
+    "should_include": true
+  },
+  {
+    "title": "Reasoning on the Manifold: Bidirectional Consistency for Self-Verification in Diffusion Language Models",
+    "authors": "J Ruan, X Gao, Y Chen, H Zeng, L Du, G Li, J Fu, J Pu",
+    "year": "2026",
+    "citations": 0,
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=hCvlj5cAAAAJ:2P1L_qKh6hAC",
+    "is_first_author": false,
+    "venue": {
+      "shortcut": "PR",
+      "full_name": "Pattern Recognition",
+      "type": "journal",
+      "ccf": null,
+      "sci": "Q1",
+      "impact_factor": 8.0
+    },
+    "is_high_cited": false,
+    "is_recent": true,
+    "is_qualified": true,
+    "should_include": false
+  },
+  {
     "title": "Efficient Plug-and-Play Weight Refinement for Sparse Large Models",
     "authors": "J Xie, Y Chen, X Liu, Y Li, H Shi, Z Xiong",
     "year": "2026",
