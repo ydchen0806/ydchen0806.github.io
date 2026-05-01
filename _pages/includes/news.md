@@ -74,6 +74,11 @@
 <ul class="news-list">
 
 <li class="news-item">
+  <span class="news-date">2026.05</span>
+  <span class="news-text">📄 Three papers were accepted by <strong>ICML 2026</strong>.</span>
+</li>
+
+<li class="news-item">
   <span class="news-date">2026.04</span>
   <span class="news-text">🎵 Earned the <a href="/docs/berklee_singing_popular_music_cert.png">Singing Popular Music</a> certification from <strong>Berklee College of Music</strong>.</span>
 </li>
