@@ -75,7 +75,7 @@
 
 <li class="news-item">
   <span class="news-date">2026.05</span>
-  <span class="news-text">📄 Three papers were accepted by <strong>ICML 2026</strong>.</span>
+  <span class="news-text">📄 Three papers were accepted by <strong>ICML 2026</strong>. See you in Seoul, South Korea!</span>
 </li>
 
 <li class="news-item">
