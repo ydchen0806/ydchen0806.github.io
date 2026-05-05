@@ -1,41 +1,16 @@
 {
-  "name": "Yinda Chen",
-  "citedby": 593,
-  "citedby5y": 593,
-  "hindex": 12,
-  "hindex5y": 12,
-  "i10index": 13,
-  "i10index5y": 13,
-  "affiliation": "University of Science and Technology of China",
-  "interests": [
-    "Machine Learning Theory",
-    "Self-supervised Learning",
-    "Image Compression"
-  ],
-  "thumbnail": "https://scholar.googleusercontent.com/citations?view_op=view_photo&user=hCvlj5cAAAAJ&citpid=13",
-  "citation_graph": [
-    {
-      "year": 2022,
-      "citations": 5
-    },
-    {
-      "year": 2023,
-      "citations": 18
-    },
-    {
-      "year": 2024,
-      "citations": 157
-    },
-    {
-      "year": 2025,
-      "citations": 320
-    },
-    {
-      "year": 2026,
-      "citations": 91
-    }
-  ],
-  "updated": "2026-05-04 04:36:07.697770",
+  "name": "Unknown",
+  "citedby": 595,
+  "citedby5y": 0,
+  "hindex": 0,
+  "hindex5y": 0,
+  "i10index": 0,
+  "i10index5y": 0,
+  "affiliation": "",
+  "interests": [],
+  "thumbnail": "",
+  "citation_graph": [],
+  "updated": "2026-05-05 04:12:12.441313",
   "source": "serpapi",
   "publications": {},
   "first_author_papers": [
@@ -67,7 +42,7 @@
       "title": "TokenUnify: Scaling Up Autoregressive Pretraining for Neuron Segmentation",
       "authors": "Y Chen, H Shi, X Liu, T Shi, R Zhang, D Liu, Z Xiong, F Wu",
       "year": "2025",
-      "citations": 36,
+      "citations": 37,
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&citation_for_view=hCvlj5cAAAAJ:blknAaTinKkC",
       "citation_id": "hCvlj5cAAAAJ:blknAaTinKkC"
     },
@@ -96,20 +71,20 @@
       "citation_id": "hCvlj5cAAAAJ:4DMP91E08xMC"
     },
     {
+      "title": "UniCompress: Enhancing Multi-Data Medical Image Compression with Knowledge Distillation",
+      "authors": "R Yang*, Y Chen*, Z Zhang, X Liu, Z Li, K He, Z Xiong, J Suo, Q Dai",
+      "year": "2024",
+      "citations": 9,
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&citation_for_view=hCvlj5cAAAAJ:UebtZRa9Y70C",
+      "citation_id": "hCvlj5cAAAAJ:UebtZRa9Y70C"
+    },
+    {
       "title": "EMPOWER: Evolutionary Medical Prompt Optimization With Reinforcement Learning",
       "authors": "Y Chen, Y He, J Yang, D Zhang, Z Yuan, MA Khan, J Baili, L Yee",
       "year": "2026",
       "citations": 8,
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&citation_for_view=hCvlj5cAAAAJ:J_g5lzvAfSwC",
       "citation_id": "hCvlj5cAAAAJ:J_g5lzvAfSwC"
-    },
-    {
-      "title": "UniCompress: Enhancing Multi-Data Medical Image Compression with Knowledge Distillation",
-      "authors": "R Yang*, Y Chen*, Z Zhang, X Liu, Z Li, K He, Z Xiong, J Suo, Q Dai",
-      "year": "2024",
-      "citations": 8,
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&citation_for_view=hCvlj5cAAAAJ:UebtZRa9Y70C",
-      "citation_id": "hCvlj5cAAAAJ:UebtZRa9Y70C"
     },
     {
       "title": "Application of ai technology in defense of big data network security",

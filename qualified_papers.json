@@ -46,7 +46,7 @@
     "title": "TokenUnify: Scaling Up Autoregressive Pretraining for Neuron Segmentation",
     "authors": "Y Chen, H Shi, X Liu, T Shi, R Zhang, D Liu, Z Xiong, F Wu",
     "year": "2025",
-    "citations": 36,
+    "citations": 37,
     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&citation_for_view=hCvlj5cAAAAJ:blknAaTinKkC",
     "citation_id": "hCvlj5cAAAAJ:blknAaTinKkC",
     "keywords": [
@@ -91,6 +91,18 @@
     ]
   },
   {
+    "title": "UniCompress: Enhancing Multi-Data Medical Image Compression with Knowledge Distillation",
+    "authors": "R Yang*, Y Chen*, Z Zhang, X Liu, Z Li, K He, Z Xiong, J Suo, Q Dai",
+    "year": "2024",
+    "citations": 9,
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&citation_for_view=hCvlj5cAAAAJ:UebtZRa9Y70C",
+    "citation_id": "hCvlj5cAAAAJ:UebtZRa9Y70C",
+    "keywords": [
+      "Image Compression",
+      "Medical Imaging"
+    ]
+  },
+  {
     "title": "EMPOWER: Evolutionary Medical Prompt Optimization With Reinforcement Learning",
     "authors": "Y Chen, Y He, J Yang, D Zhang, Z Yuan, MA Khan, J Baili, L Yee",
     "year": "2026",
@@ -100,18 +112,6 @@
     "keywords": [
       "Medical Imaging",
       "Reinforcement Learning"
-    ]
-  },
-  {
-    "title": "UniCompress: Enhancing Multi-Data Medical Image Compression with Knowledge Distillation",
-    "authors": "R Yang*, Y Chen*, Z Zhang, X Liu, Z Li, K He, Z Xiong, J Suo, Q Dai",
-    "year": "2024",
-    "citations": 8,
-    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&citation_for_view=hCvlj5cAAAAJ:UebtZRa9Y70C",
-    "citation_id": "hCvlj5cAAAAJ:UebtZRa9Y70C",
-    "keywords": [
-      "Image Compression",
-      "Medical Imaging"
     ]
   },
   {
