@@ -244,7 +244,7 @@ window.addEventListener('load', function() {
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge-conference">ICCV 2025</div><div class="badge-ccf badge-ccf-a">CCF A</div><img src='images/ICCV25.png' alt="TokenUnify" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-[TokenUnify: Scaling Up Autoregressive Pretraining for Computer Vision](https://openaccess.thecvf.com/content/ICCV2025/papers/Chen_TokenUnify_Scaling_Up_Autoregressive_Pretraining_for_Neuron_Segmentation_ICCV_2025_paper.pdf) [![](https://img.shields.io/badge/citations-37-blue?logo=google-scholar&logoColor=white&style=flat-square)](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&citation_for_view=hCvlj5cAAAAJ:blknAaTinKkC) <span class="research-tags"><span class="research-tag">Computer Vision</span><span class="research-tag">Self-Supervised Learning</span></span> \\
+[TokenUnify: Scaling Up Autoregressive Pretraining for Computer Vision](https://openaccess.thecvf.com/content/ICCV2025/papers/Chen_TokenUnify_Scaling_Up_Autoregressive_Pretraining_for_Neuron_Segmentation_ICCV_2025_paper.pdf) [![](https://img.shields.io/badge/citations-38-blue?logo=google-scholar&logoColor=white&style=flat-square)](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&citation_for_view=hCvlj5cAAAAJ:blknAaTinKkC) <span class="research-tags"><span class="research-tag">Computer Vision</span><span class="research-tag">Self-Supervised Learning</span></span> \\
 ICCV | October 25, 2025 \\
 **Yinda Chen\***; Haoyuan Shi\*; Xiaoyu Liu; Te Shi; Ruobing Zhang; Dong Liu; Zhiwei Xiong; Feng Wu
 
@@ -286,7 +286,7 @@ MaskTwins introduces a dual-form complementary masking strategy for domain-adapt
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge-conference">ICASSP 2024</div><div class="badge-ccf badge-ccf-b">CCF B</div><img src='images/ICASSP24.png' alt="MS-Con" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-> [Learning multiscale consistency for self-supervised electron microscopy instance segmentation](https://arxiv.org/pdf/2308.09917) [![](https://img.shields.io/badge/citations-34-blue?logo=google-scholar&logoColor=white&style=flat-square)](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&citation_for_view=hCvlj5cAAAAJ:9ZlFYXVOiuMC) <span class="research-tags"><span class="research-tag">Computer Vision</span><span class="research-tag">Pretraining Methods</span></span> \\
+> [Learning multiscale consistency for self-supervised electron microscopy instance segmentation](https://arxiv.org/pdf/2308.09917) [![](https://img.shields.io/badge/citations-35-blue?logo=google-scholar&logoColor=white&style=flat-square)](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&citation_for_view=hCvlj5cAAAAJ:9ZlFYXVOiuMC) <span class="research-tags"><span class="research-tag">Computer Vision</span><span class="research-tag">Pretraining Methods</span></span> \\
   ICASSP | April 13, 2024 \\
   **Yinda Chen**; Wei Huang; Xiaoyu Liu; Shiyu Deng; Qi Chen; Zhiwei Xiong
 
