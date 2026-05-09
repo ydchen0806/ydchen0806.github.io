@@ -1,11 +1,11 @@
 {
   "name": "Yinda Chen",
-  "citedby": 595,
-  "citedby5y": 595,
+  "citedby": 598,
+  "citedby5y": 598,
   "hindex": 12,
   "hindex5y": 12,
-  "i10index": 13,
-  "i10index5y": 13,
+  "i10index": 14,
+  "i10index5y": 14,
   "affiliation": "University of Science and Technology of China",
   "interests": [
     "Machine Learning Theory",
@@ -20,22 +20,22 @@
     },
     {
       "year": 2023,
-      "citations": 18
+      "citations": 15
     },
     {
       "year": 2024,
-      "citations": 157
+      "citations": 160
     },
     {
       "year": 2025,
-      "citations": 319
+      "citations": 316
     },
     {
       "year": 2026,
-      "citations": 94
+      "citations": 100
     }
   ],
-  "updated": "2026-05-08 04:12:06.791201",
+  "updated": "2026-05-09 04:18:24.561357",
   "source": "serpapi",
   "publications": {},
   "first_author_papers": [
@@ -67,7 +67,7 @@
       "title": "TokenUnify: Scaling Up Autoregressive Pretraining for Neuron Segmentation",
       "authors": "Y Chen, H Shi, X Liu, T Shi, R Zhang, D Liu, Z Xiong, F Wu",
       "year": "2025",
-      "citations": 37,
+      "citations": 38,
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&citation_for_view=hCvlj5cAAAAJ:blknAaTinKkC",
       "citation_id": "hCvlj5cAAAAJ:blknAaTinKkC"
     },
@@ -75,7 +75,7 @@
       "title": "Learning multiscale consistency for self-supervised electron microscopy instance segmentation",
       "authors": "Y Chen, W Huang, X Liu, S Deng, Q Chen, Z Xiong",
       "year": "2024",
-      "citations": 34,
+      "citations": 35,
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&citation_for_view=hCvlj5cAAAAJ:9ZlFYXVOiuMC",
       "citation_id": "hCvlj5cAAAAJ:9ZlFYXVOiuMC"
     },
@@ -88,20 +88,20 @@
       "citation_id": "hCvlj5cAAAAJ:aqlVkmm33-oC"
     },
     {
+      "title": "UniCompress: Enhancing Multi-Data Medical Image Compression with Knowledge Distillation",
+      "authors": "R Yang*, Y Chen*, Z Zhang, X Liu, Z Li, K He, Z Xiong, J Suo, Q Dai",
+      "year": "2024",
+      "citations": 10,
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&citation_for_view=hCvlj5cAAAAJ:UebtZRa9Y70C",
+      "citation_id": "hCvlj5cAAAAJ:UebtZRa9Y70C"
+    },
+    {
       "title": "Conditional Latent Coding with Learnable Synthesized Reference for Deep Image Compression",
       "authors": "S Wu*, Y Chen*, D Liu, Z He",
       "year": "2025",
       "citations": 9,
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&citation_for_view=hCvlj5cAAAAJ:4DMP91E08xMC",
       "citation_id": "hCvlj5cAAAAJ:4DMP91E08xMC"
-    },
-    {
-      "title": "UniCompress: Enhancing Multi-Data Medical Image Compression with Knowledge Distillation",
-      "authors": "R Yang*, Y Chen*, Z Zhang, X Liu, Z Li, K He, Z Xiong, J Suo, Q Dai",
-      "year": "2024",
-      "citations": 9,
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&citation_for_view=hCvlj5cAAAAJ:UebtZRa9Y70C",
-      "citation_id": "hCvlj5cAAAAJ:UebtZRa9Y70C"
     },
     {
       "title": "EMPOWER: Evolutionary Medical Prompt Optimization With Reinforcement Learning",

@@ -46,7 +46,7 @@
     "title": "TokenUnify: Scaling Up Autoregressive Pretraining for Neuron Segmentation",
     "authors": "Y Chen, H Shi, X Liu, T Shi, R Zhang, D Liu, Z Xiong, F Wu",
     "year": "2025",
-    "citations": 37,
+    "citations": 38,
     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&citation_for_view=hCvlj5cAAAAJ:blknAaTinKkC",
     "citation_id": "hCvlj5cAAAAJ:blknAaTinKkC",
     "keywords": [
@@ -57,7 +57,7 @@
     "title": "Learning multiscale consistency for self-supervised electron microscopy instance segmentation",
     "authors": "Y Chen, W Huang, X Liu, S Deng, Q Chen, Z Xiong",
     "year": "2024",
-    "citations": 34,
+    "citations": 35,
     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&citation_for_view=hCvlj5cAAAAJ:9ZlFYXVOiuMC",
     "citation_id": "hCvlj5cAAAAJ:9ZlFYXVOiuMC",
     "keywords": [
@@ -80,6 +80,18 @@
     ]
   },
   {
+    "title": "UniCompress: Enhancing Multi-Data Medical Image Compression with Knowledge Distillation",
+    "authors": "R Yang*, Y Chen*, Z Zhang, X Liu, Z Li, K He, Z Xiong, J Suo, Q Dai",
+    "year": "2024",
+    "citations": 10,
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&citation_for_view=hCvlj5cAAAAJ:UebtZRa9Y70C",
+    "citation_id": "hCvlj5cAAAAJ:UebtZRa9Y70C",
+    "keywords": [
+      "Image Compression",
+      "Medical Imaging"
+    ]
+  },
+  {
     "title": "Conditional Latent Coding with Learnable Synthesized Reference for Deep Image Compression",
     "authors": "S Wu*, Y Chen*, D Liu, Z He",
     "year": "2025",
@@ -88,18 +100,6 @@
     "citation_id": "hCvlj5cAAAAJ:4DMP91E08xMC",
     "keywords": [
       "Image Compression"
-    ]
-  },
-  {
-    "title": "UniCompress: Enhancing Multi-Data Medical Image Compression with Knowledge Distillation",
-    "authors": "R Yang*, Y Chen*, Z Zhang, X Liu, Z Li, K He, Z Xiong, J Suo, Q Dai",
-    "year": "2024",
-    "citations": 9,
-    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&citation_for_view=hCvlj5cAAAAJ:UebtZRa9Y70C",
-    "citation_id": "hCvlj5cAAAAJ:UebtZRa9Y70C",
-    "keywords": [
-      "Image Compression",
-      "Medical Imaging"
     ]
   },
   {
