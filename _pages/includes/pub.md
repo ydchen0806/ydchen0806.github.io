@@ -272,7 +272,7 @@ MaskTwins introduces a dual-form complementary masking strategy for domain-adapt
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge-conference">IJCAI 2023</div><div class="badge-ccf badge-ccf-a">CCF A</div><img src='images/ijcai2023.png' alt="dbMiM" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-> [Self-Supervised Computer Vision with Multi-Agent Reinforcement Learning](https://www.ijcai.org/proceedings/2023/0068.pdf) [![](https://img.shields.io/badge/citations-57-blue?logo=google-scholar&logoColor=white&style=flat-square)](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&citation_for_view=hCvlj5cAAAAJ:QIV2ME_5wuYC) <span class="research-tags"><span class="research-tag">Computer Vision</span><span class="research-tag">Self-Supervised Learning</span></span> \\
+> [Self-Supervised Computer Vision with Multi-Agent Reinforcement Learning](https://www.ijcai.org/proceedings/2023/0068.pdf) [![](https://img.shields.io/badge/citations-58-blue?logo=google-scholar&logoColor=white&style=flat-square)](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&citation_for_view=hCvlj5cAAAAJ:QIV2ME_5wuYC) <span class="research-tags"><span class="research-tag">Computer Vision</span><span class="research-tag">Self-Supervised Learning</span></span> \\
   IJCAI <span style="color:red">**(<font color="red">oral</font>)**</span> | August 17, 2023 \\
   **Yinda Chen**; Wei Huang; Shenglong Zhou; Qi Chen; Zhiwei Xiong
 
