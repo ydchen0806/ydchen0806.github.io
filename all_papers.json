@@ -256,7 +256,7 @@
     "title": "MaskTwins: Dual-form Complementary Masking for Domain-Adaptive Image Segmentation",
     "authors": "J Wang*, Y Chen*, X Liu, C Liu, D Liu, Z Xiong",
     "year": "2025",
-    "citations": 5,
+    "citations": 6,
     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=hCvlj5cAAAAJ:dhFuZR0502QC",
     "is_first_author": true,
     "venue": {
@@ -562,7 +562,7 @@
     "title": "Self-supervised neuron segmentation with multi-agent reinforcement learning",
     "authors": "Y Chen, W Huang, S Zhou, Q Chen, Z Xiong",
     "year": "2023",
-    "citations": 57,
+    "citations": 58,
     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=hCvlj5cAAAAJ:QIV2ME_5wuYC",
     "is_first_author": true,
     "venue": {

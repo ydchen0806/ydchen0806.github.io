@@ -1,7 +1,7 @@
 {
   "name": "Yinda Chen",
-  "citedby": 598,
-  "citedby5y": 598,
+  "citedby": 600,
+  "citedby5y": 600,
   "hindex": 12,
   "hindex5y": 12,
   "i10index": 14,
@@ -28,14 +28,14 @@
     },
     {
       "year": 2025,
-      "citations": 316
+      "citations": 317
     },
     {
       "year": 2026,
-      "citations": 100
+      "citations": 101
     }
   ],
-  "updated": "2026-05-10 04:38:54.441884",
+  "updated": "2026-05-11 03:44:07.157033",
   "source": "serpapi",
   "publications": {},
   "first_author_papers": [
@@ -59,7 +59,7 @@
       "title": "Self-supervised neuron segmentation with multi-agent reinforcement learning",
       "authors": "Y Chen, W Huang, S Zhou, Q Chen, Z Xiong",
       "year": "2023",
-      "citations": 57,
+      "citations": 58,
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&citation_for_view=hCvlj5cAAAAJ:QIV2ME_5wuYC",
       "citation_id": "hCvlj5cAAAAJ:QIV2ME_5wuYC"
     },
@@ -112,20 +112,20 @@
       "citation_id": "hCvlj5cAAAAJ:J_g5lzvAfSwC"
     },
     {
+      "title": "MaskTwins: Dual-form Complementary Masking for Domain-Adaptive Image Segmentation",
+      "authors": "J Wang*, Y Chen*, X Liu, C Liu, D Liu, Z Xiong",
+      "year": "2025",
+      "citations": 6,
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&citation_for_view=hCvlj5cAAAAJ:dhFuZR0502QC",
+      "citation_id": "hCvlj5cAAAAJ:dhFuZR0502QC"
+    },
+    {
       "title": "Application of ai technology in defense of big data network security",
       "authors": "Y Chen, X Gao, X Wu",
       "year": "2021",
       "citations": 6,
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&citation_for_view=hCvlj5cAAAAJ:u-x6o8ySG0sC",
       "citation_id": "hCvlj5cAAAAJ:u-x6o8ySG0sC"
-    },
-    {
-      "title": "MaskTwins: Dual-form Complementary Masking for Domain-Adaptive Image Segmentation",
-      "authors": "J Wang*, Y Chen*, X Liu, C Liu, D Liu, Z Xiong",
-      "year": "2025",
-      "citations": 5,
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&citation_for_view=hCvlj5cAAAAJ:dhFuZR0502QC",
-      "citation_id": "hCvlj5cAAAAJ:dhFuZR0502QC"
     }
   ]
 }
