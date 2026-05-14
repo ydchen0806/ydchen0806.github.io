@@ -1,41 +1,16 @@
 {
-  "name": "Yinda Chen",
-  "citedby": 601,
-  "citedby5y": 601,
-  "hindex": 12,
-  "hindex5y": 12,
-  "i10index": 14,
-  "i10index5y": 14,
-  "affiliation": "University of Science and Technology of China",
-  "interests": [
-    "Machine Learning Theory",
-    "Self-supervised Learning",
-    "Image Compression"
-  ],
-  "thumbnail": "https://scholar.googleusercontent.com/citations?view_op=view_photo&user=hCvlj5cAAAAJ&citpid=13",
-  "citation_graph": [
-    {
-      "year": 2022,
-      "citations": 5
-    },
-    {
-      "year": 2023,
-      "citations": 15
-    },
-    {
-      "year": 2024,
-      "citations": 160
-    },
-    {
-      "year": 2025,
-      "citations": 317
-    },
-    {
-      "year": 2026,
-      "citations": 102
-    }
-  ],
-  "updated": "2026-05-13 04:37:35.054282",
+  "name": "Unknown",
+  "citedby": 602,
+  "citedby5y": 0,
+  "hindex": 0,
+  "hindex5y": 0,
+  "i10index": 0,
+  "i10index5y": 0,
+  "affiliation": "",
+  "interests": [],
+  "thumbnail": "",
+  "citation_graph": [],
+  "updated": "2026-05-14 04:36:36.787113",
   "source": "serpapi",
   "publications": {},
   "first_author_papers": [
