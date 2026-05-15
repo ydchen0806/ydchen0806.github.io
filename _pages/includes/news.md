@@ -75,6 +75,11 @@
 
 <li class="news-item">
   <span class="news-date">2026.05</span>
+  <span class="news-text">📄 As the second core author, contributed to <a href="https://arxiv.org/pdf/2605.15153v1"><strong>Pelican-Unified 1.0</strong></a>: <strong>统一具身智能模型</strong>.</span>
+</li>
+
+<li class="news-item">
+  <span class="news-date">2026.05</span>
   <span class="news-text">📄 Three papers were accepted by <strong>ICML 2026</strong>. See you in Seoul, South Korea!</span>
 </li>
 

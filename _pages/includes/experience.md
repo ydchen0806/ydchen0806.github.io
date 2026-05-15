@@ -73,6 +73,20 @@
   border-radius: 8px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
+#work-section .company-mark {
+  width: 72px;
+  min-width: 72px;
+  height: 72px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: 0;
+  background: linear-gradient(135deg, #1f3a5f 0%, #2f7d7e 100%);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.12);
+}
 #work-section .company-name {
   font-size: 1.1em;
   font-weight: 600;
@@ -125,7 +139,22 @@
 <div id="work-section">
 
 <details open>
-<summary>🏢 Industry Experience <span class="badge-count">3</span></summary>
+<summary>🏢 Industry Experience <span class="badge-count">4</span></summary>
+
+<div class="exp-item">
+<div class="company-header">
+  <div class="company-mark">九坤</div>
+  <div>
+    <p class="company-name"><a href="https://www.ubiquant.com/">Ubiquant (九坤投资)</a></p>
+    <p class="position-info">Incoming Researcher, Quantitative Research and Large Language Models</p>
+    <p class="location">📍 China · May 26, 2026 - Future</p>
+  </div>
+</div>
+<ul class="exp-details">
+  <li>Will work on quantitative research and large language model research</li>
+  <li>Exploring how multimodal and language-model research can support data-driven decision making</li>
+</ul>
+</div>
 
 <div class="exp-item">
 <div class="company-header">
@@ -139,6 +168,7 @@
 <ul class="exp-details">
   <li>Conducting research on embodied intelligence world models</li>
   <li>Developing advanced algorithms for humanoid robot perception and decision-making</li>
+  <li>Contributed as the second core author to <a href="https://arxiv.org/pdf/2605.15153v1">Pelican-Unified 1.0</a>, a unified embodied intelligence model for understanding, reasoning, imagination, and action</li>
 </ul>
 </div>
 
