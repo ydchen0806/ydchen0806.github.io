@@ -1,106 +1,41 @@
 {
-  "name": "Unknown",
-  "citedby": 602,
-  "citedby5y": 0,
-  "hindex": 0,
-  "hindex5y": 0,
-  "i10index": 0,
-  "i10index5y": 0,
-  "affiliation": "",
-  "interests": [],
-  "thumbnail": "",
-  "citation_graph": [],
-  "updated": "2026-05-14 04:36:36.787113",
-  "source": "serpapi",
-  "publications": {},
-  "first_author_papers": [
+  "name": "Yinda Chen",
+  "citedby": 605,
+  "citedby5y": 605,
+  "hindex": 12,
+  "hindex5y": 12,
+  "i10index": 14,
+  "i10index5y": 14,
+  "affiliation": "University of Science and Technology of China",
+  "interests": [
+    "Machine Learning Theory",
+    "Self-supervised Learning",
+    "Image Compression"
+  ],
+  "thumbnail": "https://scholar.googleusercontent.com/citations?view_op=view_photo&user=hCvlj5cAAAAJ&citpid=13",
+  "citation_graph": [
     {
-      "title": "GTGM: Generative Text-Guided 3D Vision-Language Pretraining for Medical Image Segmentation",
-      "authors": "Y Chen, C Liu, W Huang, X Liu, H Shi, S Cheng, R Arcucci, Z Xiong",
-      "year": "2025",
-      "citations": 120,
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&citation_for_view=hCvlj5cAAAAJ:NMxIlDl6LWMC",
-      "citation_id": "hCvlj5cAAAAJ:NMxIlDl6LWMC"
+      "year": 2022,
+      "citations": 5
     },
     {
-      "title": "Bimcv-r: A landmark dataset for 3d ct text-image retrieval",
-      "authors": "Y Chen, C Liu, X Liu, R Arcucci, Z Xiong",
-      "year": "2024",
-      "citations": 67,
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&citation_for_view=hCvlj5cAAAAJ:mVmsd5A6BfQC",
-      "citation_id": "hCvlj5cAAAAJ:mVmsd5A6BfQC"
+      "year": 2023,
+      "citations": 15
     },
     {
-      "title": "Self-supervised neuron segmentation with multi-agent reinforcement learning",
-      "authors": "Y Chen, W Huang, S Zhou, Q Chen, Z Xiong",
-      "year": "2023",
-      "citations": 58,
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&citation_for_view=hCvlj5cAAAAJ:QIV2ME_5wuYC",
-      "citation_id": "hCvlj5cAAAAJ:QIV2ME_5wuYC"
+      "year": 2024,
+      "citations": 160
     },
     {
-      "title": "TokenUnify: Scaling Up Autoregressive Pretraining for Neuron Segmentation",
-      "authors": "Y Chen, H Shi, X Liu, T Shi, R Zhang, D Liu, Z Xiong, F Wu",
-      "year": "2025",
-      "citations": 38,
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&citation_for_view=hCvlj5cAAAAJ:blknAaTinKkC",
-      "citation_id": "hCvlj5cAAAAJ:blknAaTinKkC"
+      "year": 2025,
+      "citations": 317
     },
     {
-      "title": "Learning multiscale consistency for self-supervised electron microscopy instance segmentation",
-      "authors": "Y Chen, W Huang, X Liu, S Deng, Q Chen, Z Xiong",
-      "year": "2024",
-      "citations": 35,
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&citation_for_view=hCvlj5cAAAAJ:9ZlFYXVOiuMC",
-      "citation_id": "hCvlj5cAAAAJ:9ZlFYXVOiuMC"
-    },
-    {
-      "title": "MaskFactory: Towards High-quality Synthetic Data Generation for Dichotomous Image Segmentation",
-      "authors": "H Qian*, YD Chen*, S Lou, FS Khan, X Jin, DP Fan",
-      "year": "2024",
-      "citations": 24,
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&citation_for_view=hCvlj5cAAAAJ:aqlVkmm33-oC",
-      "citation_id": "hCvlj5cAAAAJ:aqlVkmm33-oC"
-    },
-    {
-      "title": "UniCompress: Enhancing Multi-Data Medical Image Compression with Knowledge Distillation",
-      "authors": "R Yang*, Y Chen*, Z Zhang, X Liu, Z Li, K He, Z Xiong, J Suo, Q Dai",
-      "year": "2024",
-      "citations": 10,
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&citation_for_view=hCvlj5cAAAAJ:UebtZRa9Y70C",
-      "citation_id": "hCvlj5cAAAAJ:UebtZRa9Y70C"
-    },
-    {
-      "title": "Conditional Latent Coding with Learnable Synthesized Reference for Deep Image Compression",
-      "authors": "S Wu*, Y Chen*, D Liu, Z He",
-      "year": "2025",
-      "citations": 9,
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&citation_for_view=hCvlj5cAAAAJ:4DMP91E08xMC",
-      "citation_id": "hCvlj5cAAAAJ:4DMP91E08xMC"
-    },
-    {
-      "title": "EMPOWER: Evolutionary Medical Prompt Optimization With Reinforcement Learning",
-      "authors": "Y Chen, Y He, J Yang, D Zhang, Z Yuan, MA Khan, J Baili, L Yee",
-      "year": "2026",
-      "citations": 8,
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&citation_for_view=hCvlj5cAAAAJ:J_g5lzvAfSwC",
-      "citation_id": "hCvlj5cAAAAJ:J_g5lzvAfSwC"
-    },
-    {
-      "title": "MaskTwins: Dual-form Complementary Masking for Domain-Adaptive Image Segmentation",
-      "authors": "J Wang*, Y Chen*, X Liu, C Liu, D Liu, Z Xiong",
-      "year": "2025",
-      "citations": 6,
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&citation_for_view=hCvlj5cAAAAJ:dhFuZR0502QC",
-      "citation_id": "hCvlj5cAAAAJ:dhFuZR0502QC"
-    },
-    {
-      "title": "Application of ai technology in defense of big data network security",
-      "authors": "Y Chen, X Gao, X Wu",
-      "year": "2021",
-      "citations": 6,
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&citation_for_view=hCvlj5cAAAAJ:u-x6o8ySG0sC",
-      "citation_id": "hCvlj5cAAAAJ:u-x6o8ySG0sC"
+      "year": 2026,
+      "citations": 106
     }
-  ]
+  ],
+  "updated": "2026-05-15 04:42:49.362631",
+  "source": "serpapi",
+  "publications": {}
 }
