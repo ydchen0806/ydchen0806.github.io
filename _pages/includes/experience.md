@@ -133,7 +133,7 @@
   <div>
     <p class="company-name"><a href="https://www.ubiquant.com/">Ubiquant (九坤投资)</a></p>
     <p class="position-info">Incoming Researcher, Quantitative Research and Large Language Models</p>
-    <p class="location">📍 China · May 26, 2026 - Future</p>
+    <p class="location">📍 Beijing · May 26, 2026 - Future</p>
   </div>
 </div>
 <ul class="exp-details">

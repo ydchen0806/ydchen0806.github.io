@@ -237,6 +237,26 @@ window.addEventListener('load', function() {
 
 <div id="pub-section">
 
+<!-- ====== Embodied Intelligence & Unified Models ====== -->
+<details open>
+<summary>🤖 Embodied Intelligence & Unified Models <span class="badge-count">1</span></summary>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge-conference">Technical Report 2026</div><img src='images/PelicanUnified.png' alt="Pelican-Unified 1.0" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[Pelican-Unified 1.0: A Unified Embodied Intelligence Model (UEI) for Understanding, Reasoning, Imagination and Action](https://arxiv.org/pdf/2605.15153v1) <span class="research-tags"><span class="research-tag">Embodied Intelligence</span><span class="research-tag">World Models</span><span class="research-tag">Unified Models</span></span> \\
+Technical Report | May 15, 2026 \\
+Beijing Innovation Center of Humanoid Robotics (X-Humanoid), WFM System Group; **Yinda Chen** (core contributor, second author)
+
+[**PDF**](https://arxiv.org/pdf/2605.15153v1)
+
+Pelican-Unified 1.0 presents a unified embodied intelligence model that integrates scene understanding, chain-of-thought reasoning, future imagination, and low-level action generation within one shared training framework.
+
+</div>
+</div>
+
+</details>
+
 <!-- ====== Self-Supervised Learning & Pretraining ====== -->
 <details open>
 <summary>🧠 Self-Supervised Learning & Pretraining <span class="badge-count">4</span></summary>
