@@ -75,7 +75,7 @@
 
 <li class="news-item">
   <span class="news-date">2026.05</span>
-  <span class="news-text">📄 As the second core author, contributed to <a href="https://arxiv.org/pdf/2605.15153v1"><strong>Pelican-Unified 1.0</strong></a>: <strong>统一具身智能模型</strong>.</span>
+  <span class="news-text">📄 As a core contributor (second author), contributed to <a href="https://arxiv.org/pdf/2605.15153v1"><strong>Pelican-Unified 1.0</strong></a>: <strong>unifying understanding, reasoning, imagination, and action</strong> (统一理解、推理、想象与动作).</span>
 </li>
 
 <li class="news-item">
