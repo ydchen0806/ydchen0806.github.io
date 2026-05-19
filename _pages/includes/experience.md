@@ -154,7 +154,7 @@
 <ul class="exp-details">
   <li>Conducting research on embodied intelligence world models</li>
   <li>Developing advanced algorithms for humanoid robot perception and decision-making</li>
-  <li>Contributed as a core contributor (second author) to <a href="https://arxiv.org/pdf/2605.15153v1">Pelican-Unified 1.0</a>, a unified embodied intelligence model for understanding, reasoning, imagination, and action</li>
+  <li>Contributed as a core contributor (ranked second) to <a href="https://arxiv.org/pdf/2605.15153.pdf">Pelican-Unified 1.0</a>, a unified embodied intelligence model for understanding, reasoning, imagination, and action</li>
 </ul>
 </div>
 

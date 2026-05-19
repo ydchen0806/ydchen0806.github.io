@@ -246,7 +246,7 @@ window.addEventListener('load', function() {
 
 [Pelican-Unified 1.0: A Unified Embodied Intelligence Model (UEI) for Understanding, Reasoning, Imagination and Action](https://arxiv.org/abs/2605.15153) <span class="research-tags"><span class="research-tag">Embodied Intelligence</span><span class="research-tag">World Models</span><span class="research-tag">Unified Models</span></span> \\
 arXiv Technical Report | May 14, 2026 \\
-Beijing Innovation Center of Humanoid Robotics (X-Humanoid), WFM System Group; **Yinda Chen** (core contributor, second author)
+Beijing Innovation Center of Humanoid Robotics (X-Humanoid), WFM System Group; **Yinda Chen** (core contributor, ranked second)
 
 [**PDF**](https://arxiv.org/pdf/2605.15153.pdf) | [**arXiv**](https://arxiv.org/abs/2605.15153) | [**Hugging Face**](https://huggingface.co/papers/2605.15153) | [**Official**](https://www.x-humanoid.com/) | [**People's Daily**](https://sdxw.iqilu.com/share/YS0yMS0xNzIwMTkyMA.html) | [**Beijing Daily / Beijing Gov**](https://www.beijing.gov.cn/fuwu/lqfw/gggs/202605/t20260519_4656998.html) | [**Machine Heart**](https://mp.weixin.qq.com/s/z-OAqnl4IKHpaiT4bYBHIA) | [**Zhidongxi**](https://www.zhidx.com/p/558258.html)
 
