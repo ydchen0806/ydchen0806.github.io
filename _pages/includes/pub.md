@@ -248,7 +248,7 @@ window.addEventListener('load', function() {
 arXiv Technical Report | May 14, 2026 \\
 Beijing Innovation Center of Humanoid Robotics (X-Humanoid), WFM System Group; **Yinda Chen** (core contributor, second author)
 
-[**PDF**](https://arxiv.org/pdf/2605.15153.pdf) | [**arXiv**](https://arxiv.org/abs/2605.15153) | [**Official**](https://www.x-humanoid.com/) | [**Beijing Gov Report**](https://www.beijing.gov.cn/fuwu/lqfw/gggs/202605/t20260519_4656998.html) | [**IT Home**](https://www.ithome.com/0/951/344.htm) | [**Qianlong**](http://beijing.qianlong.com/2026/0519/8670001.shtml)
+[**PDF**](https://arxiv.org/pdf/2605.15153.pdf) | [**arXiv**](https://arxiv.org/abs/2605.15153) | [**Hugging Face**](https://huggingface.co/papers/2605.15153) | [**Official**](https://www.x-humanoid.com/) | [**People's Daily**](https://sdxw.iqilu.com/share/YS0yMS0xNzIwMTkyMA.html) | [**Beijing Daily / Beijing Gov**](https://www.beijing.gov.cn/fuwu/lqfw/gggs/202605/t20260519_4656998.html) | [**Machine Heart**](https://mp.weixin.qq.com/s/z-OAqnl4IKHpaiT4bYBHIA) | [**Zhidongxi**](https://www.zhidx.com/p/558258.html)
 
 Pelican-Unified 1.0, also reported as Pelican-Unify 1.0, unifies understanding, reasoning, future imagination, and action in one embodied intelligence loop. It uses a single VLM for scene/instruction understanding and task-oriented reasoning, plus a Unified Future Generator that jointly predicts future videos and actions in the same denoising process.
 

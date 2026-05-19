@@ -132,12 +132,12 @@
   <img src="/images/ubiquant-logo.png" alt="Ubiquant Logo" width="144"/>
   <div>
     <p class="company-name"><a href="https://www.ubiquant.com/">Ubiquant (九坤投资)</a></p>
-    <p class="position-info">Incoming Researcher, Quantitative Research and Large Language Models</p>
-    <p class="location">📍 Beijing · May 26, 2026 - Future</p>
+    <p class="position-info">Researcher, Quantitative Research and Large Language Models</p>
+    <p class="location">📍 Beijing · May 2026 - Present</p>
   </div>
 </div>
 <ul class="exp-details">
-  <li>Will work on quantitative research and large language model research</li>
+  <li>Working on quantitative research and large language model research</li>
   <li>Exploring how multimodal and language-model research can support data-driven decision making</li>
 </ul>
 </div>
