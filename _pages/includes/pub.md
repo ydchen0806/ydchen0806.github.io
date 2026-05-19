@@ -244,13 +244,15 @@ window.addEventListener('load', function() {
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge-conference">Technical Report 2026</div><img src='images/PelicanUnified.png' alt="Pelican-Unified 1.0" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-[Pelican-Unified 1.0: A Unified Embodied Intelligence Model (UEI) for Understanding, Reasoning, Imagination and Action](https://arxiv.org/pdf/2605.15153v1) <span class="research-tags"><span class="research-tag">Embodied Intelligence</span><span class="research-tag">World Models</span><span class="research-tag">Unified Models</span></span> \\
-Technical Report | May 15, 2026 \\
+[Pelican-Unified 1.0: A Unified Embodied Intelligence Model (UEI) for Understanding, Reasoning, Imagination and Action](https://arxiv.org/abs/2605.15153) <span class="research-tags"><span class="research-tag">Embodied Intelligence</span><span class="research-tag">World Models</span><span class="research-tag">Unified Models</span></span> \\
+arXiv Technical Report | May 14, 2026 \\
 Beijing Innovation Center of Humanoid Robotics (X-Humanoid), WFM System Group; **Yinda Chen** (core contributor, second author)
 
-[**PDF**](https://arxiv.org/pdf/2605.15153v1)
+[**PDF**](https://arxiv.org/pdf/2605.15153.pdf) | [**arXiv**](https://arxiv.org/abs/2605.15153) | [**Official**](https://www.x-humanoid.com/) | [**Beijing Gov Report**](https://www.beijing.gov.cn/fuwu/lqfw/gggs/202605/t20260519_4656998.html) | [**IT Home**](https://www.ithome.com/0/951/344.htm) | [**Qianlong**](http://beijing.qianlong.com/2026/0519/8670001.shtml)
 
-Pelican-Unified 1.0 presents a unified embodied intelligence model that integrates scene understanding, chain-of-thought reasoning, future imagination, and low-level action generation within one shared training framework.
+Pelican-Unified 1.0, also reported as Pelican-Unify 1.0, unifies understanding, reasoning, future imagination, and action in one embodied intelligence loop. It uses a single VLM for scene/instruction understanding and task-oriented reasoning, plus a Unified Future Generator that jointly predicts future videos and actions in the same denoising process.
+
+It ranks first on WorldArena with **66.03 EWM**, reaches **98.12%** 3D accuracy, achieves **93.5** average success on RoboTwin, and scores **64.7** across eight VLM benchmarks among comparable-scale models. The model has been validated on UR5e arms and the Tiangong humanoid robot for zero-shot long-horizon tasks such as interface insertion, waterproofing, and object manipulation.
 
 </div>
 </div>
