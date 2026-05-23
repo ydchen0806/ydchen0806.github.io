@@ -12,6 +12,6 @@ I am [**Yinda Chen (陈胤达)**](https://ydchen0806.github.io/), a Ph.D. candid
 
 - 📝 Thanks to the generous guidance of my mentors and the support of amazing collaborators, I've been fortunate to publish papers <a href='https://scholar.google.com/citations?user=hCvlj5cAAAAJ&hl=en'><img src="https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/ydchen0806/ydchen0806.github.io/google-scholar-stats/gs_data_shieldsio.json&logo=google-scholar&logoColor=white"></a> at conferences including **ICLR**, **ICML**, **ICCV**, **NeurIPS**, **AAAI**, **ACL**, **IJCAI**, and **MICCAI**, and journals including **TPAMI**, **TMI**, and **JBHI**. 
 
-- 📄 My CV is available in [Chinese](/docs/简历陈胤达中文版.pdf) and [English](/docs/CYD_resume_EN.pdf).
+- 📄 My CV is available in [Chinese](/docs/cyd_resume_CN.pdf) and [English](/docs/CYD_resume_EN.pdf).
 
 I know my talents may not match those of many brilliant pioneers in this field, but I believe in the power of continuous learning and genuine collaboration. I'm always eager to exchange ideas, seek advice from the community, and help those who are just starting their research journey. Please feel free to reach out—I'd be truly honored to connect, collaborate, or simply share thoughts about research! 🌟
