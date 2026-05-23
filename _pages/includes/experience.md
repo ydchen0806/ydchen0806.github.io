@@ -137,8 +137,8 @@
   </div>
 </div>
 <ul class="exp-details">
-  <li>Working on quantitative research and large language model research</li>
-  <li>Exploring how multimodal and language-model research can support data-driven decision making</li>
+  <li>Working on quantitative research and general large models, targeting DeepSeek-level capabilities</li>
+  <li>Experienced with 10k-GPU-scale clusters and exploring LLM applications in factor mining and data-driven decision making</li>
 </ul>
 </div>
 
