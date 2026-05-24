@@ -125,8 +125,9 @@
 <div id="work-section">
 
 <details open>
-<summary>🏢 Industry Experience <span class="badge-count">4</span></summary>
+<summary>🏢 Industry Experience <span class="badge-count">3</span></summary>
 
+<!--
 <div class="exp-item">
 <div class="company-header">
   <img src="/images/ubiquant-logo.png" alt="Ubiquant Logo" width="144"/>
@@ -141,6 +142,7 @@
   <li>Experienced with 10k-GPU-scale clusters and exploring LLM applications in factor mining and data-driven decision making</li>
 </ul>
 </div>
+-->
 
 <div class="exp-item">
 <div class="company-header">
