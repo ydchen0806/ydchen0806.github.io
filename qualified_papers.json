@@ -34,7 +34,7 @@
     "title": "Self-supervised neuron segmentation with multi-agent reinforcement learning",
     "authors": "Y Chen, W Huang, S Zhou, Q Chen, Z Xiong",
     "year": "2023",
-    "citations": 58,
+    "citations": 59,
     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&citation_for_view=hCvlj5cAAAAJ:QIV2ME_5wuYC",
     "citation_id": "hCvlj5cAAAAJ:QIV2ME_5wuYC",
     "keywords": [
@@ -92,6 +92,18 @@
     ]
   },
   {
+    "title": "EMPOWER: Evolutionary Medical Prompt Optimization With Reinforcement Learning",
+    "authors": "Y Chen, Y He, J Yang, D Zhang, Z Yuan, MA Khan, J Baili, L Yee",
+    "year": "2026",
+    "citations": 9,
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&citation_for_view=hCvlj5cAAAAJ:J_g5lzvAfSwC",
+    "citation_id": "hCvlj5cAAAAJ:J_g5lzvAfSwC",
+    "keywords": [
+      "Medical Imaging",
+      "Reinforcement Learning"
+    ]
+  },
+  {
     "title": "Conditional Latent Coding with Learnable Synthesized Reference for Deep Image Compression",
     "authors": "S Wu*, Y Chen*, D Liu, Z He",
     "year": "2025",
@@ -100,18 +112,6 @@
     "citation_id": "hCvlj5cAAAAJ:4DMP91E08xMC",
     "keywords": [
       "Image Compression"
-    ]
-  },
-  {
-    "title": "EMPOWER: Evolutionary Medical Prompt Optimization With Reinforcement Learning",
-    "authors": "Y Chen, Y He, J Yang, D Zhang, Z Yuan, MA Khan, J Baili, L Yee",
-    "year": "2026",
-    "citations": 8,
-    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&citation_for_view=hCvlj5cAAAAJ:J_g5lzvAfSwC",
-    "citation_id": "hCvlj5cAAAAJ:J_g5lzvAfSwC",
-    "keywords": [
-      "Medical Imaging",
-      "Reinforcement Learning"
     ]
   },
   {

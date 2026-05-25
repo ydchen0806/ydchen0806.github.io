@@ -1,11 +1,11 @@
 {
   "name": "Yinda Chen",
-  "citedby": 612,
-  "citedby5y": 612,
-  "hindex": 12,
-  "hindex5y": 12,
-  "i10index": 14,
-  "i10index5y": 14,
+  "citedby": 622,
+  "citedby5y": 622,
+  "hindex": 13,
+  "hindex5y": 13,
+  "i10index": 15,
+  "i10index5y": 15,
   "affiliation": "University of Science and Technology of China",
   "interests": [
     "Computational Neuroscience",
@@ -28,14 +28,14 @@
     },
     {
       "year": 2025,
-      "citations": 318
+      "citations": 317
     },
     {
       "year": 2026,
-      "citations": 112
+      "citations": 122
     }
   ],
-  "updated": "2026-05-24 04:57:14.122944",
+  "updated": "2026-05-25 05:14:30.460516",
   "source": "serpapi",
   "publications": {},
   "first_author_papers": [
@@ -59,7 +59,7 @@
       "title": "Self-supervised neuron segmentation with multi-agent reinforcement learning",
       "authors": "Y Chen, W Huang, S Zhou, Q Chen, Z Xiong",
       "year": "2023",
-      "citations": 58,
+      "citations": 59,
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&citation_for_view=hCvlj5cAAAAJ:QIV2ME_5wuYC",
       "citation_id": "hCvlj5cAAAAJ:QIV2ME_5wuYC"
     },
@@ -96,20 +96,20 @@
       "citation_id": "hCvlj5cAAAAJ:UebtZRa9Y70C"
     },
     {
+      "title": "EMPOWER: Evolutionary Medical Prompt Optimization With Reinforcement Learning",
+      "authors": "Y Chen, Y He, J Yang, D Zhang, Z Yuan, MA Khan, J Baili, L Yee",
+      "year": "2026",
+      "citations": 9,
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&citation_for_view=hCvlj5cAAAAJ:J_g5lzvAfSwC",
+      "citation_id": "hCvlj5cAAAAJ:J_g5lzvAfSwC"
+    },
+    {
       "title": "Conditional Latent Coding with Learnable Synthesized Reference for Deep Image Compression",
       "authors": "S Wu*, Y Chen*, D Liu, Z He",
       "year": "2025",
       "citations": 9,
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&citation_for_view=hCvlj5cAAAAJ:4DMP91E08xMC",
       "citation_id": "hCvlj5cAAAAJ:4DMP91E08xMC"
-    },
-    {
-      "title": "EMPOWER: Evolutionary Medical Prompt Optimization With Reinforcement Learning",
-      "authors": "Y Chen, Y He, J Yang, D Zhang, Z Yuan, MA Khan, J Baili, L Yee",
-      "year": "2026",
-      "citations": 8,
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&citation_for_view=hCvlj5cAAAAJ:J_g5lzvAfSwC",
-      "citation_id": "hCvlj5cAAAAJ:J_g5lzvAfSwC"
     },
     {
       "title": "MaskTwins: Dual-form Complementary Masking for Domain-Adaptive Image Segmentation",
