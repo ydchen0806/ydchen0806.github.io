@@ -1,11 +1,11 @@
 {
   "name": "Yinda Chen",
-  "citedby": 623,
-  "citedby5y": 623,
+  "citedby": 624,
+  "citedby5y": 624,
   "hindex": 13,
   "hindex5y": 13,
-  "i10index": 15,
-  "i10index5y": 15,
+  "i10index": 16,
+  "i10index5y": 16,
   "affiliation": "University of Science and Technology of China",
   "interests": [
     "Computational Neuroscience",
@@ -32,10 +32,10 @@
     },
     {
       "year": 2026,
-      "citations": 124
+      "citations": 125
     }
   ],
-  "updated": "2026-05-29 05:04:59.936891",
+  "updated": "2026-05-30 04:43:53.366338",
   "source": "serpapi",
   "publications": {},
   "first_author_papers": [
@@ -88,6 +88,14 @@
       "citation_id": "hCvlj5cAAAAJ:aqlVkmm33-oC"
     },
     {
+      "title": "Conditional Latent Coding with Learnable Synthesized Reference for Deep Image Compression",
+      "authors": "S Wu*, Y Chen*, D Liu, Z He",
+      "year": "2025",
+      "citations": 10,
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&citation_for_view=hCvlj5cAAAAJ:4DMP91E08xMC",
+      "citation_id": "hCvlj5cAAAAJ:4DMP91E08xMC"
+    },
+    {
       "title": "UniCompress: Enhancing Multi-Data Medical Image Compression with Knowledge Distillation",
       "authors": "R Yang*, Y Chen*, Z Zhang, X Liu, Z Li, K He, Z Xiong, J Suo, Q Dai",
       "year": "2024",
@@ -102,14 +110,6 @@
       "citations": 9,
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&citation_for_view=hCvlj5cAAAAJ:J_g5lzvAfSwC",
       "citation_id": "hCvlj5cAAAAJ:J_g5lzvAfSwC"
-    },
-    {
-      "title": "Conditional Latent Coding with Learnable Synthesized Reference for Deep Image Compression",
-      "authors": "S Wu*, Y Chen*, D Liu, Z He",
-      "year": "2025",
-      "citations": 9,
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&citation_for_view=hCvlj5cAAAAJ:4DMP91E08xMC",
-      "citation_id": "hCvlj5cAAAAJ:4DMP91E08xMC"
     },
     {
       "title": "MaskTwins: Dual-form Complementary Masking for Domain-Adaptive Image Segmentation",
