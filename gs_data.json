@@ -1,7 +1,7 @@
 {
   "name": "Yinda Chen",
-  "citedby": 642,
-  "citedby5y": 642,
+  "citedby": 644,
+  "citedby5y": 644,
   "hindex": 13,
   "hindex5y": 13,
   "i10index": 17,
@@ -32,10 +32,10 @@
     },
     {
       "year": 2026,
-      "citations": 143
+      "citations": 145
     }
   ],
-  "updated": "2026-06-11 05:20:45.559374",
+  "updated": "2026-06-12 05:25:20.049102",
   "source": "serpapi",
   "publications": {},
   "first_author_papers": [
@@ -88,20 +88,20 @@
       "citation_id": "hCvlj5cAAAAJ:aqlVkmm33-oC"
     },
     {
+      "title": "EMPOWER: Evolutionary Medical Prompt Optimization With Reinforcement Learning",
+      "authors": "Y Chen, Y He, J Yang, D Zhang, Z Yuan, MA Khan, J Baili, L Yee",
+      "year": "2026",
+      "citations": 11,
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&citation_for_view=hCvlj5cAAAAJ:J_g5lzvAfSwC",
+      "citation_id": "hCvlj5cAAAAJ:J_g5lzvAfSwC"
+    },
+    {
       "title": "UniCompress: Enhancing Multi-Data Medical Image Compression with Knowledge Distillation",
       "authors": "R Yang*, Y Chen*, Z Zhang, X Liu, Z Li, K He, Z Xiong, J Suo, Q Dai",
       "year": "2024",
       "citations": 11,
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&citation_for_view=hCvlj5cAAAAJ:UebtZRa9Y70C",
       "citation_id": "hCvlj5cAAAAJ:UebtZRa9Y70C"
-    },
-    {
-      "title": "EMPOWER: Evolutionary Medical Prompt Optimization With Reinforcement Learning",
-      "authors": "Y Chen, Y He, J Yang, D Zhang, Z Yuan, MA Khan, J Baili, L Yee",
-      "year": "2026",
-      "citations": 10,
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&citation_for_view=hCvlj5cAAAAJ:J_g5lzvAfSwC",
-      "citation_id": "hCvlj5cAAAAJ:J_g5lzvAfSwC"
     },
     {
       "title": "Conditional Latent Coding with Learnable Synthesized Reference for Deep Image Compression",
