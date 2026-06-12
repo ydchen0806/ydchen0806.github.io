@@ -74,6 +74,11 @@
 <ul class="news-list">
 
 <li class="news-item">
+  <span class="news-date">2026.06</span>
+  <span class="news-text">📄 One <a href="https://ieeexplore.ieee.org/document/11557391">paper</a> was accepted by <strong>TCSVT</strong> (IEEE Transactions on Circuits and Systems for Video Technology).</span>
+</li>
+
+<li class="news-item">
   <span class="news-date">2026.05</span>
   <span class="news-text">📄 As a core contributor (ranked second), contributed to <a href="https://arxiv.org/pdf/2605.15153.pdf"><strong>Pelican-Unified 1.0</strong></a>: <strong>unifying understanding, reasoning, imagination, and action</strong> (统一理解、推理、想象与动作).</span>
 </li>
@@ -108,15 +113,15 @@
   <span class="news-text">📄 One paper on medical image registration was accepted by <strong>ICASSP 2026</strong>. See you in Barcelona, Spain in May!</span>
 </li>
 
-<li class="news-item">
-  <span class="news-date">2025.12</span>
-  <span class="news-text">💼 Joined <a href="https://www.x-humanoid.com/">Beijing Humanoid Robot Innovation Center (UBTECH Robotics)</a> as a core member, focusing on <strong>embodied intelligence world models</strong> for humanoid robots.</span>
-</li>
-
 </ul>
 
 <div class="news-more" id="newsMore">
 <ul class="news-list">
+
+<li class="news-item">
+  <span class="news-date">2025.12</span>
+  <span class="news-text">💼 Joined <a href="https://www.x-humanoid.com/">Beijing Humanoid Robot Innovation Center (UBTECH Robotics)</a> as a core member, focusing on <strong>embodied intelligence world models</strong> for humanoid robots.</span>
+</li>
 
 <li class="news-item">
   <span class="news-date">2025.11</span>
@@ -176,6 +181,6 @@
 </ul>
 </div>
 
-<button class="news-toggle" id="newsToggle" onclick="var m=document.getElementById('newsMore');var b=document.getElementById('newsToggle');if(m.classList.contains('show')){m.classList.remove('show');b.textContent='▼ Show earlier news (11 more)'}else{m.classList.add('show');b.textContent='▲ Collapse'}">▼ Show earlier news (11 more)</button>
+<button class="news-toggle" id="newsToggle" onclick="var m=document.getElementById('newsMore');var b=document.getElementById('newsToggle');if(m.classList.contains('show')){m.classList.remove('show');b.textContent='▼ Show earlier news (12 more)'}else{m.classList.add('show');b.textContent='▲ Collapse'}">▼ Show earlier news (12 more)</button>
 
 </div>

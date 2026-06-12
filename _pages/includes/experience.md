@@ -125,24 +125,7 @@
 <div id="work-section">
 
 <details open>
-<summary>🏢 Industry Experience <span class="badge-count">3</span></summary>
-
-<!--
-<div class="exp-item">
-<div class="company-header">
-  <img src="/images/ubiquant-logo.png" alt="Ubiquant Logo" width="144"/>
-  <div>
-    <p class="company-name"><a href="https://www.ubiquant.com/">Ubiquant (九坤投资)</a></p>
-    <p class="position-info">Researcher, Quantitative Research and Large Language Models</p>
-    <p class="location">📍 Beijing · May 2026 - Present</p>
-  </div>
-</div>
-<ul class="exp-details">
-  <li>Working on quantitative research and general large models, targeting DeepSeek-level capabilities</li>
-  <li>Experienced with 10k-GPU-scale clusters and exploring LLM applications in factor mining and data-driven decision making</li>
-</ul>
-</div>
--->
+<summary>🏢 Industry Experience <span class="badge-count">4</span></summary>
 
 <div class="exp-item">
 <div class="company-header">
@@ -157,6 +140,21 @@
   <li>Conducting research on embodied intelligence world models</li>
   <li>Developing advanced algorithms for humanoid robot perception and decision-making</li>
   <li>Contributed as a core contributor (ranked second) to <a href="https://arxiv.org/pdf/2605.15153.pdf">Pelican-Unified 1.0</a>, a unified embodied intelligence model for understanding, reasoning, imagination, and action</li>
+</ul>
+</div>
+
+<div class="exp-item">
+<div class="company-header">
+  <img src="/images/ubiquant-logo.png" alt="Ubiquant Logo" width="144"/>
+  <div>
+    <p class="company-name"><a href="https://www.ubiquant.com/">Ubiquant (九坤投资)</a></p>
+    <p class="position-info">Researcher, Quantitative Research and Large Language Model Foundation Training</p>
+    <p class="location">📍 Beijing · May 2026 - Present</p>
+  </div>
+</div>
+<ul class="exp-details">
+  <li>Working on quantitative research and large language model foundation training</li>
+  <li>Experienced with thousand-GPU-scale clusters and exploring LLM applications in factor mining and data-driven decision making</li>
 </ul>
 </div>
 

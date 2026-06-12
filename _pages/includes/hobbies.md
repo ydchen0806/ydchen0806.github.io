@@ -76,10 +76,26 @@
 #hobbies-section .visitor-map {
   text-align: center;
   margin: 1em auto;
+  max-width: 640px;
+}
+#hobbies-section .visitor-map-card {
+  padding: 8px;
+  border: 1px solid #e6e8eb;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+}
+#hobbies-section .visitor-map-card img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+#hobbies-section .clustrmaps-globe {
   width: 300px;
   height: 300px;
 }
-#hobbies-section .visitor-map canvas {
+#hobbies-section .clustrmaps-globe canvas {
   width: 100% !important;
   height: 100% !important;
 }
@@ -134,8 +150,16 @@
 
 <h1>Visitor Map 🌍</h1>
 
-<div class="visitor-map">
+<div class="visitor-map visitor-map-card">
+  <a href="https://flagcounter.com/" target="_blank" rel="noopener">
+    <img src="https://s11.flagcounter.com/map/ydchen0806/size_l/txt_333333/border_F2F2F2/pageviews_0/viewers_0/flags_0/" alt="Visitor map powered by Flag Counter" loading="lazy"/>
+  </a>
+</div>
+
+<!-- ClustrMaps visitor globe. Restore this block when clustrmaps.com is healthy again.
+<div class="visitor-map clustrmaps-globe">
   <script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=-6dpgBBQ6VS019wttjE8HshiwnZUQM6hxMNnvZM-u6c"></script>
 </div>
+-->
 
 </div>
