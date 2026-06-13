@@ -22,6 +22,18 @@ PR | 2026 \\
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge-journal">PR</div><div class="badge-impact badge-q1">SCI Q1 | IF: 8.0</div><img src='images/placeholder.png' alt="paper" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
+[What Should a Skill Remember? Quality-Cost Trade-offs in Cost-Aware Skill Rewriting for Language Model Agents](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=hCvlj5cAAAAJ:HoB7MX3m0LUC) \\
+PR | 2026 \\
+Q Xing, **Y Chen**, Y Jin, Z Wu, B Lin, H Zhou, X Chen, H Chen, Z Xiong
+
+<!-- TODO: Add paper description -->
+
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge-journal">PR</div><div class="badge-impact badge-q1">SCI Q1 | IF: 8.0</div><img src='images/placeholder.png' alt="paper" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
 [Digital Business Model Innovation and Production Efficiency](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=hCvlj5cAAAAJ:iH-uZ7U-co4C) \\
 PR | 2025 \\
 Y Zhou, **Y Chen**, Z Hu
@@ -132,7 +144,7 @@ J Wang*, **Y Chen***, X Liu, C Liu, D Liu, Z Xiong
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge-conference">MICCAI 2024</div><div class="badge-ccf badge-ccf-b">CCF B</div><img src='images/placeholder.png' alt="paper" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-[Bimcv-r: A landmark dataset for 3d ct text-image retrieval](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=hCvlj5cAAAAJ:mVmsd5A6BfQC) <span class="citation-badge">70 citations</span> \\
+[Bimcv-r: A landmark dataset for 3d ct text-image retrieval](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=hCvlj5cAAAAJ:mVmsd5A6BfQC) <span class="citation-badge">71 citations</span> \\
 MICCAI | 2024 \\
 **Y Chen**, C Liu, X Liu, R Arcucci, Z Xiong
 
@@ -168,7 +180,7 @@ H Qian*, **YD Chen***, S Lou, FS Khan, X Jin, DP Fan
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge-conference">IJCAI 2023</div><div class="badge-ccf badge-ccf-a">CCF A</div><img src='images/placeholder.png' alt="paper" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-[Self-supervised neuron segmentation with multi-agent reinforcement learning](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=hCvlj5cAAAAJ:QIV2ME_5wuYC) <span class="citation-badge">60 citations</span> \\
+[Self-supervised neuron segmentation with multi-agent reinforcement learning](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=hCvlj5cAAAAJ:QIV2ME_5wuYC) <span class="citation-badge">61 citations</span> \\
 IJCAI | 2023 \\
 **Y Chen**, W Huang, S Zhou, Q Chen, Z Xiong
 
