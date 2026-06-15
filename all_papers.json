@@ -33,26 +33,6 @@
     "should_include": true
   },
   {
-    "title": "VLA-Trace: Diagnosing Vision-Language-Action Models through Representation and Behavior Tracing",
-    "authors": "H Shi, X Ren, Y Zhang, Q Zhang, J Hu, H Shan, H Dong, J Lu, Y Chen, ...",
-    "year": "2026",
-    "citations": 0,
-    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=hCvlj5cAAAAJ:SeFeTyx0c_EC",
-    "is_first_author": false,
-    "venue": {
-      "shortcut": "PR",
-      "full_name": "Pattern Recognition",
-      "type": "journal",
-      "ccf": null,
-      "sci": "Q1",
-      "impact_factor": 8.0
-    },
-    "is_high_cited": false,
-    "is_recent": true,
-    "is_qualified": true,
-    "should_include": false
-  },
-  {
     "title": "Pelican-Unified 1.0: A Unified Embodied Intelligence Model for Understanding, Reasoning, Imagination and Action",
     "authors": "Y Zhang, Y Chen, C Liu, Z Ding, J Xu, S Zou, J Liao, J Hu, X Ren, X Zhang, ...",
     "year": "2026",
@@ -249,7 +229,7 @@
     "title": "Does DINOv3 Set a New Medical Vision Standard?",
     "authors": "C Liu, Y Chen, H Shi, J Lu, B Jian, J Pan, L Cai, J Wang, Y Zhang, J Li, ...",
     "year": "2025",
-    "citations": 31,
+    "citations": 32,
     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=hCvlj5cAAAAJ:HDshCWvjkbEC",
     "is_first_author": true,
     "venue": null,
@@ -342,7 +322,7 @@
     "title": "Conditional Latent Coding with Learnable Synthesized Reference for Deep Image Compression",
     "authors": "S Wu*, Y Chen*, D Liu, Z He",
     "year": "2025",
-    "citations": 11,
+    "citations": 12,
     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=hCvlj5cAAAAJ:4DMP91E08xMC",
     "is_first_author": true,
     "venue": {
@@ -455,7 +435,7 @@
     "title": "TokenUnify: Scaling Up Autoregressive Pretraining for Neuron Segmentation",
     "authors": "Y Chen, H Shi, X Liu, T Shi, R Zhang, D Liu, Z Xiong, F Wu",
     "year": "2025",
-    "citations": 38,
+    "citations": 39,
     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=hCvlj5cAAAAJ:blknAaTinKkC",
     "is_first_author": true,
     "venue": {
@@ -588,7 +568,7 @@
     "title": "Learning multiscale consistency for self-supervised electron microscopy instance segmentation",
     "authors": "Y Chen, W Huang, X Liu, S Deng, Q Chen, Z Xiong",
     "year": "2024",
-    "citations": 36,
+    "citations": 37,
     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=hCvlj5cAAAAJ:9ZlFYXVOiuMC",
     "is_first_author": true,
     "venue": {
