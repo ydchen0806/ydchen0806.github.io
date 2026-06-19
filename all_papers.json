@@ -36,7 +36,7 @@
     "title": "Pelican-Unified 1.0: A Unified Embodied Intelligence Model for Understanding, Reasoning, Imagination and Action",
     "authors": "Y Zhang, Y Chen, C Liu, Z Ding, J Xu, S Zou, J Liao, J Hu, X Ren, X Zhang, ...",
     "year": "2026",
-    "citations": 1,
+    "citations": 2,
     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=hCvlj5cAAAAJ:pqnbT2bcN3wC",
     "is_first_author": true,
     "venue": null,
@@ -149,7 +149,7 @@
     "title": "EMPOWER: Evolutionary Medical Prompt Optimization With Reinforcement Learning",
     "authors": "Y Chen, Y He, J Yang, D Zhang, Z Yuan, MA Khan, J Baili, L Yee",
     "year": "2026",
-    "citations": 11,
+    "citations": 12,
     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=hCvlj5cAAAAJ:J_g5lzvAfSwC",
     "is_first_author": true,
     "venue": {
@@ -322,7 +322,7 @@
     "title": "Conditional Latent Coding with Learnable Synthesized Reference for Deep Image Compression",
     "authors": "S Wu*, Y Chen*, D Liu, Z He",
     "year": "2025",
-    "citations": 12,
+    "citations": 11,
     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=hCvlj5cAAAAJ:4DMP91E08xMC",
     "is_first_author": true,
     "venue": {
