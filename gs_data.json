@@ -1,7 +1,7 @@
 {
   "name": "Yinda Chen",
-  "citedby": 656,
-  "citedby5y": 656,
+  "citedby": 661,
+  "citedby5y": 661,
   "hindex": 13,
   "hindex5y": 13,
   "i10index": 17,
@@ -32,10 +32,10 @@
     },
     {
       "year": 2026,
-      "citations": 156
+      "citations": 161
     }
   ],
-  "updated": "2026-06-20 05:02:53.965503",
+  "updated": "2026-06-21 05:51:51.959586",
   "source": "serpapi",
   "publications": {},
   "first_author_papers": [
@@ -91,7 +91,7 @@
       "title": "EMPOWER: Evolutionary Medical Prompt Optimization With Reinforcement Learning",
       "authors": "Y Chen, Y He, J Yang, D Zhang, Z Yuan, MA Khan, J Baili, L Yee",
       "year": "2026",
-      "citations": 12,
+      "citations": 13,
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&citation_for_view=hCvlj5cAAAAJ:J_g5lzvAfSwC",
       "citation_id": "hCvlj5cAAAAJ:J_g5lzvAfSwC"
     },
