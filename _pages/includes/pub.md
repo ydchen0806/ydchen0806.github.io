@@ -388,7 +388,7 @@ The paper proposes an unsupervised domain adaptation method for EM image denoisi
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge-journal">IEEE TPAMI</div><div class="badge-impact badge-q1">SCI Q1 | IF: 20.8</div><img src='images/TPAMI25.png' alt="GRCL Framework" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-> [Learned Image Coding with Generative Reference of Conditional Latents](https://arxiv.org/abs/2025.00000) [![](https://img.shields.io/badge/citations-11-blue?logo=google-scholar&logoColor=white&style=flat-square)](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&citation_for_view=hCvlj5cAAAAJ:4DMP91E08xMC) <span class="research-tags"><span class="research-tag">Image Compression</span><span class="research-tag">Generative Models</span></span> \\
+> [Learned Image Coding with Generative Reference of Conditional Latents](https://arxiv.org/abs/2025.00000) [![](https://img.shields.io/badge/citations-12-blue?logo=google-scholar&logoColor=white&style=flat-square)](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&citation_for_view=hCvlj5cAAAAJ:4DMP91E08xMC) <span class="research-tags"><span class="research-tag">Image Compression</span><span class="research-tag">Generative Models</span></span> \\
   IEEE Transactions on Pattern Analysis and Machine Intelligence | Accepted, 2025 \\
   Siqi Wu\*; **Yinda Chen\***; Weiming Chen; Dong Liu; K. C. Ho; Zhihai He
 
@@ -402,7 +402,7 @@ The paper proposes an unsupervised domain adaptation method for EM image denoisi
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge-conference">AAAI 2025</div><div class="badge-ccf badge-ccf-a">CCF A</div><img src='images/AAAI25.png' alt="CLC" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-> [Condition-generation Latent Coding with an External Dictionary for Deep Image Compression](/docs/Condition_generation_Latent_Coding_with_an_External_Dictionary_for_Deep_Image_Compression.pdf) [![](https://img.shields.io/badge/citations-11-blue?logo=google-scholar&logoColor=white&style=flat-square)](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&citation_for_view=hCvlj5cAAAAJ:4DMP91E08xMC) <span class="research-tags"><span class="research-tag">Image Compression</span></span> \\
+> [Condition-generation Latent Coding with an External Dictionary for Deep Image Compression](/docs/Condition_generation_Latent_Coding_with_an_External_Dictionary_for_Deep_Image_Compression.pdf) [![](https://img.shields.io/badge/citations-12-blue?logo=google-scholar&logoColor=white&style=flat-square)](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&citation_for_view=hCvlj5cAAAAJ:4DMP91E08xMC) <span class="research-tags"><span class="research-tag">Image Compression</span></span> \\
   AAAI <span style="color:red">**(<font color="red">oral</font>)**</span> | March 06, 2025 \\
   Siqi Wu; **Yinda Chen\***; Dong Liu; Zhihai He
 
