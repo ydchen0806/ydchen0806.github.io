@@ -1,5 +1,25 @@
 [
   {
+    "title": "Connectome-scale self-supervised representation learning reveals neuronal organization beyond canonical labels",
+    "authors": "T Shi, Y Chen, C Liu, R Zhang",
+    "year": "2026",
+    "citations": 0,
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=hCvlj5cAAAAJ:dfsIfKJdRG4C",
+    "is_first_author": true,
+    "venue": {
+      "shortcut": "PR",
+      "full_name": "Pattern Recognition",
+      "type": "journal",
+      "ccf": null,
+      "sci": "Q1",
+      "impact_factor": 8.0
+    },
+    "is_high_cited": false,
+    "is_recent": true,
+    "is_qualified": true,
+    "should_include": true
+  },
+  {
     "title": "Spatial synaptic regularization stabilizes learning across biological and artificial neural networks",
     "authors": "H Zhu, Y Chen, P Zhao, Z Xiong, H Peng, F Wu, R Zhang",
     "year": "2026",

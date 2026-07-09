@@ -22,6 +22,18 @@ PR | 2026 \\
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge-journal">PR</div><div class="badge-impact badge-q1">SCI Q1 | IF: 8.0</div><img src='images/placeholder.png' alt="paper" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
+[Connectome-scale self-supervised representation learning reveals neuronal organization beyond canonical labels](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=hCvlj5cAAAAJ:dfsIfKJdRG4C) \\
+PR | 2026 \\
+T Shi, **Y Chen**, C Liu, R Zhang
+
+<!-- TODO: Add paper description -->
+
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge-journal">PR</div><div class="badge-impact badge-q1">SCI Q1 | IF: 8.0</div><img src='images/placeholder.png' alt="paper" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
 [What Should a Skill Remember? Quality-Cost Trade-offs in Cost-Aware Skill Rewriting for Language Model Agents](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=hCvlj5cAAAAJ:HoB7MX3m0LUC) \\
 PR | 2026 \\
 Q Xing, **Y Chen**, Y Jin, Z Wu, B Lin, H Zhou, X Chen, H Chen, Z Xiong
