@@ -1,4 +1,4 @@
-# 📝 Selected Publications  
+# 📝 Selected Research
 
 For a complete list of publications, please visit my [Google Scholar profile](https://scholar.google.com/citations?user=hCvlj5cAAAAJ&hl=en&oi=ao) [![](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/ydchen0806/ydchen0806.github.io/google-scholar-stats/gs_data_shieldsio.json&logo=google-scholar&logoColor=white)](https://scholar.google.com/citations?user=hCvlj5cAAAAJ&hl=en&oi=ao)
 
@@ -237,31 +237,9 @@ window.addEventListener('load', function() {
 
 <div id="pub-section">
 
-<!-- ====== Embodied Intelligence & Unified Models ====== -->
+<!-- ====== Representation and Predictive Learning ====== -->
 <details open>
-<summary>🤖 Embodied Intelligence & Unified Models <span class="badge-count">1</span></summary>
-
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge-conference">Technical Report 2026</div><img src='images/PelicanUnified.png' alt="Pelican-Unified 1.0" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-
-[Pelican-Unified 1.0: A Unified Embodied Intelligence Model (UEI) for Understanding, Reasoning, Imagination and Action](https://arxiv.org/abs/2605.15153) <span class="research-tags"><span class="research-tag">Embodied Intelligence</span><span class="research-tag">World Models</span><span class="research-tag">Unified Models</span></span> \\
-arXiv Technical Report | May 14, 2026 \\
-Beijing Innovation Center of Humanoid Robotics (X-Humanoid), WFM System Group; **Yinda Chen** (core contributor, ranked second)
-
-[**PDF**](https://arxiv.org/pdf/2605.15153.pdf) | [**arXiv**](https://arxiv.org/abs/2605.15153) | [**Hugging Face**](https://huggingface.co/papers/2605.15153) | [**Official**](https://www.x-humanoid.com/) | [**People's Daily (人民日报)**](https://www.peopleapp.com/column/30052155186-500007497131) | [**Beijing Daily / Beijing Gov (北京日报 / 北京市政府)**](https://www.beijing.gov.cn/fuwu/lqfw/gggs/202605/t20260519_4656998.html) | [**Machine Heart (机器之心)**](https://mp.weixin.qq.com/s/z-OAqnl4IKHpaiT4bYBHIA) | [**Zhidongxi (智东西)**](https://www.zhidx.com/p/558258.html)
-
-Pelican-Unified 1.0, also reported as Pelican-Unify 1.0, unifies understanding, reasoning, future imagination, and action in one embodied intelligence loop. It uses a single VLM for scene/instruction understanding and task-oriented reasoning, plus a Unified Future Generator that jointly predicts future videos and actions in the same denoising process.
-
-It ranks first on WorldArena with **66.03 EWM**, reaches **98.12%** 3D accuracy, achieves **93.5** average success on RoboTwin, and scores **64.7** across eight VLM benchmarks among comparable-scale models. The model has been validated on UR5e arms and the Tiangong humanoid robot for zero-shot long-horizon tasks such as interface insertion, waterproofing, and object manipulation.
-
-</div>
-</div>
-
-</details>
-
-<!-- ====== Self-Supervised Learning & Pretraining ====== -->
-<details open>
-<summary>🧠 Self-Supervised Learning & Pretraining <span class="badge-count">4</span></summary>
+<summary>🧠 Representation and Predictive Learning <span class="badge-count">4</span></summary>
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge-conference">ICCV 2025</div><div class="badge-ccf badge-ccf-a">CCF A</div><img src='images/ICCV25.png' alt="TokenUnify" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
@@ -321,9 +299,9 @@ MaskTwins introduces a dual-form complementary masking strategy for domain-adapt
 
 </details>
 
-<!-- ====== Medical Image Analysis & Vision-Language ====== -->
-<details open>
-<summary>🏥 Medical Image Analysis & Vision-Language <span class="badge-count">4</span></summary>
+<!-- ====== Multimodal and Generative Models ====== -->
+<details>
+<summary>✨ Multimodal and Generative Models <span class="badge-count">7</span></summary>
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge-conference">ICCV Workshop 2025</div><img src='images/GTGM.png' alt="GTGM" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
@@ -379,12 +357,6 @@ The paper proposes an unsupervised domain adaptation method for EM image denoisi
 </div>
 </div>
 
-</details>
-
-<!-- ====== Image Compression ====== -->
-<details open>
-<summary>📦 Image Compression <span class="badge-count">2</span></summary>
-
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge-journal">IEEE TPAMI</div><div class="badge-impact badge-q1">SCI Q1 | IF: 20.8</div><img src='images/TPAMI25.png' alt="GRCL Framework" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
@@ -413,12 +385,6 @@ The paper proposes CLC for deep image compression. It uses a dictionary to gener
 </div>
 </div>
 
-</details>
-
-<!-- ====== Image Segmentation & Synthesis ====== -->
-<details open>
-<summary>🎨 Image Segmentation & Synthesis <span class="badge-count">1</span></summary>
-
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge-conference">NeurIPS 2024</div><div class="badge-ccf badge-ccf-a">CCF A</div><img src='images/NeurIPS24.png' alt="MaskFactory" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
@@ -429,6 +395,28 @@ Haotian Qian; **Yinda Chen\***; Shengtao Lou; Fahad Shahbaz Khan; Xiaogang Jin; 
 [**Project**](https://qian-hao-tian.github.io/MaskFactory/) | [**Code**](https://github.com/ydchen0806/MaskFactory) [![](https://img.shields.io/github/stars/ydchen0806/MaskFactory?style=social&label=Code+Stars&cacheSeconds=3600)](https://github.com/ydchen0806/MaskFactory)
 
 MaskFactory proposes a two-stage method to generate high-quality synthetic datasets for DIS, outperforming existing methods in quality and efficiency.
+
+</div>
+</div>
+
+</details>
+
+<!-- ====== World Models and Embodied Intelligence ====== -->
+<details open>
+<summary>🤖 World Models and Embodied Intelligence <span class="badge-count">1</span></summary>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge-conference">Technical Report 2026</div><img src='images/PelicanUnified.png' alt="Pelican-Unified 1.0" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[Pelican-Unified 1.0: A Unified Embodied Intelligence Model (UEI) for Understanding, Reasoning, Imagination and Action](https://arxiv.org/abs/2605.15153) <span class="research-tags"><span class="research-tag">Embodied Intelligence</span><span class="research-tag">World Models</span><span class="research-tag">Unified Models</span></span> \\
+arXiv Technical Report | May 14, 2026 \\
+Beijing Innovation Center of Humanoid Robotics (X-Humanoid), WFM System Group; **Yinda Chen** (core contributor, ranked second)
+
+[**PDF**](https://arxiv.org/pdf/2605.15153.pdf) | [**arXiv**](https://arxiv.org/abs/2605.15153) | [**Hugging Face**](https://huggingface.co/papers/2605.15153) | [**Official**](https://www.x-humanoid.com/) | [**People's Daily (人民日报)**](https://www.peopleapp.com/column/30052155186-500007497131) | [**Beijing Daily / Beijing Gov (北京日报 / 北京市政府)**](https://www.beijing.gov.cn/fuwu/lqfw/gggs/202605/t20260519_4656998.html) | [**Machine Heart (机器之心)**](https://mp.weixin.qq.com/s/z-OAqnl4IKHpaiT4bYBHIA) | [**Zhidongxi (智东西)**](https://www.zhidx.com/p/558258.html)
+
+Pelican-Unified 1.0, also reported as Pelican-Unify 1.0, unifies understanding, reasoning, future imagination, and action in one embodied intelligence loop. It uses a single VLM for scene/instruction understanding and task-oriented reasoning, plus a Unified Future Generator that jointly predicts future videos and actions in the same denoising process.
+
+It ranks first on WorldArena with **66.03 EWM**, reaches **98.12%** 3D accuracy, achieves **93.5** average success on RoboTwin, and scores **64.7** across eight VLM benchmarks among comparable-scale models. The model has been validated on UR5e arms and the Tiangong humanoid robot for zero-shot long-horizon tasks such as interface insertion, waterproofing, and object manipulation.
 
 </div>
 </div>

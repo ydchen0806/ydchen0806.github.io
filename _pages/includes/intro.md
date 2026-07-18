@@ -4,6 +4,10 @@ I am [**Yinda Chen (陈胤达)**](https://ydchen0806.github.io/), a Ph.D. candid
 
 - 👀 My research focuses on **multimodal understanding and generation**. Initially, I explored these two directions separately—working on **representation learning**, **self-supervised pretraining**, and **efficient fine-tuning** in **computer vision** and other multimodal tasks. Now, I'm gradually moving toward a **unified framework** that bridges understanding and generation across various domains.
 
+<details class="about-details">
+<summary>More about my background, mentors, and experience</summary>
+<div class="about-details__content" markdown="1">
+
 - 🧭 I have the immense privilege of being advised by [Prof. Feng Wu (吴枫, CAE Academician, IEEE Fellow)](https://scholar.google.com/citations?user=5bInRDEAAAAJ&hl=en) and [Prof. Zhiwei Xiong (熊志伟)](https://scholar.google.com/citations?user=Snl0HPEAAAAJ&hl=en) at **USTC**, and co-supervised by [Prof. Xiaoou Tang (汤晓鸥, IEEE Fellow)](https://scholar.google.com/citations?user=qpBtpGsAAAAJ&hl=en) at the **Shanghai AI Lab**. I also have the honor to collaborate closely with [Prof. Dong Liu (刘东)](https://scholar.google.com/citations?user=lOWByxoAAAAJ&hl=en), [Prof. Li Li (李礼)](https://scholar.google.com/citations?user=dEm6VKAAAAAJ&hl=en), and [Prof. Zhihai He (何志海, IEEE Fellow)](https://scholar.google.com/citations?user=wtr6OgkAAAAJ&hl=en). Additionally, I've been fortunate to conduct research internships at **Imperial College London** with [Dr. Rossella Arcucci](https://scholar.google.com/citations?user=oxy2ZQoAAAAJ&hl=en) and [Dr. Che Liu (刘澈)](https://scholar.google.com/citations?user=HED_458AAAAJ&hl=en&oi=sra), and the **PLA General Hospital (301 Hospital)** with [Prof. Qionghai Dai (戴琼海, CAE Academician, IEEE Fellow)](https://scholar.google.com/citations?user=CHAajY4AAAAJ&hl=en).
 
 - 🌱 Currently, I'm a **core member** at the [Beijing Humanoid Robot Innovation Center (UBTECH Robotics)](https://www.x-humanoid.com/), focusing on **embodied intelligence world models** and **unified models** for humanoid robots under the mentorship of [Dr. Yong Dai (代勇)](https://scholar.google.com/citations?user=mCCOT7wAAAAJ&hl=zh-CN). I also have research experience with [**Ubiquant (九坤投资)**](https://www.ubiquant.com/), focusing on **quantitative research** and **large language model foundation training**, with exposure to **thousand-GPU-scale clusters**. Previously, I was an intern at **Tencent IEG (Interactive Entertainment Group)** through the *Qingyun Program*, where I worked on **game world models** and helped deliver *Honor of Kings – Lingbao*, focusing on **TTS (Text-to-Speech)** and **real-time match commentary** under the guidance of [Dr. Liang Du (杜量)](https://scholar.google.com/citations?user=oxNIbCUAAAAJ&hl=en&oi=ao) and [Dr. Wentao Yao (姚文韬)](https://scholar.google.com/citations?hl=en&user=ibNed18AAAAJ).
@@ -15,3 +19,22 @@ I am [**Yinda Chen (陈胤达)**](https://ydchen0806.github.io/), a Ph.D. candid
 - 📄 My CV is available in [Chinese](/docs/cyd_resume_CN.pdf) and [English](/docs/CYD_resume_EN.pdf).
 
 I know my talents may not match those of many brilliant pioneers in this field, but I believe in the power of continuous learning and genuine collaboration. I'm always eager to exchange ideas, seek advice from the community, and help those who are just starting their research journey. Please feel free to reach out—I'd be truly honored to connect, collaborate, or simply share thoughts about research! 🌟
+
+</div>
+</details>
+
+<style>
+.about-details {
+  margin-top: 1.25em;
+  border-top: 1px solid #e8e8e8;
+  border-bottom: 1px solid #e8e8e8;
+}
+.about-details summary {
+  padding: 0.8em 0;
+  cursor: pointer;
+  font-weight: 600;
+}
+.about-details__content {
+  padding-bottom: 0.25em;
+}
+</style>
