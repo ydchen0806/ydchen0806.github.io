@@ -1,4 +1,4 @@
-# Talks and Service
+# 💬 Talks, Skills & Service
 
 <style>
 #others-section details {

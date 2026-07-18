@@ -1,4 +1,4 @@
-# Education
+# 📖 Education
 
 <style>
 #education-section details {

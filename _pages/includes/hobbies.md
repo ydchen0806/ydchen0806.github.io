@@ -1,4 +1,4 @@
-# Personal Interests
+# 🎯 Hobbies & Interests
 
 <style>
 #hobbies-section .hobby-grid {

@@ -7,7 +7,7 @@
 
 # Site Settings
 title                    : "Yinda Chen"
-description              : "Predictive Multimodal Intelligence | Embodied AI and Computational Neuroscience"
+description              : "Predictive Multimodal Intelligence | USTC and Shanghai AI Lab"
 repository               : "ydchen0806/ydchen0806.github.io"
 google_scholar_stats_use_cdn : true
 
@@ -23,8 +23,8 @@ baidu_site_verification  : code-ZxFK3f4pfb
 author:
   name             : "Yinda Chen (陈胤达)"
   avatar           : "images/profile.png"
-  bio              : "PhD candidate working on multimodal foundation models, world models, connectomics, and NeuroAI."
-  employer         : "University of Science and Technology of China"
+  bio              : "Ph.D. candidate at USTC, jointly trained with Shanghai AI Lab."
+  employer         : "University of Science and Technology of China & Shanghai AI Lab"
   email            : "cyd0806@mail.ustc.edu.cn"
   pubmed           : 
   googlescholar    : "https://scholar.google.com/citations?user=hCvlj5cAAAAJ&hl=en"

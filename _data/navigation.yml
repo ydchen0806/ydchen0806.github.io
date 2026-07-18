@@ -1,39 +1,30 @@
 # main links links
 main:
-  - title: "Introduction"
+  - title: "About Me"
     url: "/#about-me"
-
-  - title: "Opportunities"
-    url: "/#-opportunities"
 
   - title: "Research Areas"
     url: "/#-research-areas"
 
-  - title: "Current Research"
-    url: "/#-current-research"
-
-  - title: "Selected Research"
-    url: "/#-selected-research"
-
   - title: "News"
     url: "/#-news"
 
-  - title: "Education"
-    url: "/#-education"
+  - title: "Educations"
+    url: "/#-educations"
 
-  - title: "Research Experience"
-    url: "/#-research-experience"
+  - title: "Professional Experience"
+    url: "/#-professional-experience"
 
-  - title: "Advisors"
-    url: "/#-advisors-and-collaborators"
+  - title: "Publications"
+    url: "/#-publications"
 
   - title: "Honors and Awards"
     url: "/#-honors-and-awards"
 
-  - title: "Talks and Service"
+  - title: "Talks and Teaching"
     url: "/#-talks-and-teaching"
 
-  - title: "Personal Interests"
+  - title: "Hobbies & Interests"
     url: "/#-hobbies-and-interests"
 
   #- title: "Blog Posts"

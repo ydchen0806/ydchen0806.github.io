@@ -52,9 +52,9 @@ layout: compress
     <button id="backToTop" aria-label="Back to top" style="
       display:none; position:fixed; bottom:2em; right:2em; z-index:999;
       width:44px; height:44px; border-radius:50%; border:none;
-      background:#0f6b78;
+      background:linear-gradient(135deg,#667eea,#764ba2);
       color:#fff; font-size:1.3em; cursor:pointer;
-      box-shadow:0 4px 14px rgba(15,107,120,0.28);
+      box-shadow:0 4px 14px rgba(102,126,234,0.4);
       transition:all 0.3s; opacity:0;
     ">▲</button>
     <script>
@@ -65,8 +65,8 @@ layout: compress
         else{btn.style.opacity='0';setTimeout(function(){if(window.scrollY<=400)btn.style.display='none'},300)}
       });
       btn.addEventListener('click',function(){window.scrollTo({top:0,behavior:'smooth'})});
-      btn.addEventListener('mouseenter',function(){btn.style.transform='translateY(-3px)';btn.style.boxShadow='0 6px 20px rgba(15,107,120,0.36)'});
-      btn.addEventListener('mouseleave',function(){btn.style.transform='';btn.style.boxShadow='0 4px 14px rgba(15,107,120,0.28)'});
+      btn.addEventListener('mouseenter',function(){btn.style.transform='translateY(-3px)';btn.style.boxShadow='0 6px 20px rgba(102,126,234,0.5)'});
+      btn.addEventListener('mouseleave',function(){btn.style.transform='';btn.style.boxShadow='0 4px 14px rgba(102,126,234,0.4)'});
     })();
     </script>
 

@@ -1,4 +1,4 @@
-# Honors
+# 🥇 Honors and Awards
 
 <style>
 #honors-awards details {
