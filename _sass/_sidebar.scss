@@ -237,6 +237,23 @@
     white-space: nowrap;
   }
 
+  .author__employer {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.25em;
+    white-space: normal;
+
+    .fa {
+      flex: 0 0 auto;
+      margin-top: 0.25em;
+    }
+
+    span {
+      min-width: 0;
+      overflow-wrap: anywhere;
+    }
+  }
+
   a {
     display: block;
     margin-bottom: 5px;
