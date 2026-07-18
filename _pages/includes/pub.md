@@ -269,20 +269,6 @@ MaskTwins introduces a dual-form complementary masking strategy for domain-adapt
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge-conference">ICASSP 2024</div><div class="badge-ccf badge-ccf-b">CCF B</div><img src='images/ICASSP24.png' alt="MS-Con" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-
-> [Learning multiscale consistency for self-supervised electron microscopy instance segmentation](https://arxiv.org/pdf/2308.09917) [![](https://img.shields.io/badge/citations-37-blue?logo=google-scholar&logoColor=white&style=flat-square)](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&citation_for_view=hCvlj5cAAAAJ:9ZlFYXVOiuMC) <span class="research-tags"><span class="research-tag">Computer Vision</span><span class="research-tag">Pretraining Methods</span></span> \\
-  ICASSP | April 13, 2024 \\
-  **Yinda Chen**; Wei Huang; Xiaoyu Liu; Shiyu Deng; Qi Chen; Zhiwei Xiong
-
-  [**Code**](https://github.com/ydchen0806/MS-Con-EM-Seg) [![](https://img.shields.io/github/stars/ydchen0806/MS-Con-EM-Seg?style=social&label=Code+Stars&cacheSeconds=3600)](https://github.com/ydchen0806/MS-Con-EM-Seg)
-
-> A pretraining framework for volume instance segmentation is proposed. It enforces multiscale consistency and shows good performance in instance segmentation tasks.
-
-</div>
-</div>
-
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge-conference">IJCAI 2023</div><div class="badge-ccf badge-ccf-a">CCF A</div><img src='images/ijcai2023.png' alt="dbMiM" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
@@ -297,65 +283,25 @@ MaskTwins introduces a dual-form complementary masking strategy for domain-adapt
 </div>
 </div>
 
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge-conference">ICASSP 2024</div><div class="badge-ccf badge-ccf-b">CCF B</div><img src='images/ICASSP24.png' alt="MS-Con" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+> [Learning multiscale consistency for self-supervised electron microscopy instance segmentation](https://arxiv.org/pdf/2308.09917) [![](https://img.shields.io/badge/citations-37-blue?logo=google-scholar&logoColor=white&style=flat-square)](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&citation_for_view=hCvlj5cAAAAJ:9ZlFYXVOiuMC) <span class="research-tags"><span class="research-tag">Computer Vision</span><span class="research-tag">Pretraining Methods</span></span> \\
+  ICASSP | April 13, 2024 \\
+  **Yinda Chen**; Wei Huang; Xiaoyu Liu; Shiyu Deng; Qi Chen; Zhiwei Xiong
+
+  [**Code**](https://github.com/ydchen0806/MS-Con-EM-Seg) [![](https://img.shields.io/github/stars/ydchen0806/MS-Con-EM-Seg?style=social&label=Code+Stars&cacheSeconds=3600)](https://github.com/ydchen0806/MS-Con-EM-Seg)
+
+> A pretraining framework for volume instance segmentation is proposed. It enforces multiscale consistency and shows good performance in instance segmentation tasks.
+
+</div>
+</div>
+
 </details>
 
 <!-- ====== Multimodal and Generative Models ====== -->
 <details>
 <summary>✨ Multimodal and Generative Models <span class="badge-count">7</span></summary>
-
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge-conference">ICCV Workshop 2025</div><img src='images/GTGM.png' alt="GTGM" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-
-[GTGM: Generative Text-Guided 3D Vision-Language Pretraining for Medical Image Segmentation](https://arxiv.org/abs/2404.00000) [![](https://img.shields.io/badge/citations-121-blue?logo=google-scholar&logoColor=white&style=flat-square)](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&citation_for_view=hCvlj5cAAAAJ:NMxIlDl6LWMC) <span class="research-tags"><span class="research-tag">Vision-Language</span><span class="research-tag">Medical Imaging</span></span> \\
-ICCV Workshop | October 25, 2025 \\
-**Yinda Chen\***; Che Liu\*; Wei Huang; Xiaoyu Liu; Haoyuan Shi; Sibo Cheng; Rossella Arcucci; Zhiwei Xiong
-
-[**Code**](https://github.com/ydchen0806/gtgm)
-
-GTGM extends Vision-Language Pretraining to 3D medical images by leveraging LLMs to generate synthetic textual descriptions, enabling text-guided representation learning without paired medical text. Combined with a negative-free contrastive learning strategy, GTGM achieves state-of-the-art performance across 10 CT/MRI segmentation datasets.
-
-</div>
-</div>
-
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge-journal">IEEE JBHI</div><div class="badge-impact badge-q1">SCI Q1 | IF: 6.7</div><img src='images/JBHI25.png' alt="EMPOWER" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-
-> [EMPOWER: Evolutionary Medical Prompt Optimization With Reinforcement Learning](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11205280) [![](https://img.shields.io/badge/citations-13-blue?logo=google-scholar&logoColor=white&style=flat-square)](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&citation_for_view=hCvlj5cAAAAJ:J_g5lzvAfSwC) <span class="research-tags"><span class="research-tag">Vision-Language</span><span class="research-tag">Multimodal Learning</span></span> \\
-  IEEE Journal of Biomedical and Health Informatics | October 16, 2025 \\
-  **Yinda Chen\***; Yangfan He\*; Jing Yang; Dapeng Zhang; Zhenlong Yuan; Muhammad Attique Khan; Jamel Baili; Por Lip Yee
-
-> EMPOWER proposes an evolutionary framework for prompt optimization through specialized representation learning and multi-dimensional evaluation. It achieves 24.7% reduction in factual errors and 15.3% higher preference scores.
-
-</div>
-</div>
-
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge-conference">MICCAI 2024</div><div class="badge-ccf badge-ccf-b">CCF B</div><img src='images/MICCAI24.png' alt="BIMCV-R" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-
-[BIMCV-R: A Landmark Dataset for 3D CT Text-Image Retrieval](https://arxiv.org/pdf/2403.15992) [![](https://img.shields.io/badge/citations-72-blue?logo=google-scholar&logoColor=white&style=flat-square)](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&citation_for_view=hCvlj5cAAAAJ:mVmsd5A6BfQC) <span class="research-tags"><span class="research-tag">Vision-Language</span><span class="research-tag">Multimodal Learning</span></span> \\
-MICCAI | October 06, 2024 \\
-**Yinda Chen**; Che Liu; Xiaoyu Liu; Rossella Arcucci; Zhiwei Xiong
-
-[**Dataset**](https://huggingface.co/datasets/cyd0806/BIMCV-R) [![](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Dataset-blue)](https://huggingface.co/datasets/cyd0806/BIMCV-R)
-
-This paper presents BIMCV-R, a 3D CT text-image retrieval dataset, and MedFinder. Tests show MedFinder outperforms baselines in related tasks.
-
-</div>
-</div>
-
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge-journal">IEEE TMI</div><div class="badge-impact badge-q1">SCI Q1 | IF: 10.6</div><img src='images/TMI24.png' alt="DADn" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-
-[Unsupervised Domain Adaptation for EM Image Denoising with Invertible Networks](/docs/Unsupervised_Domain_Adaptation_for_EM_Image_Denoising_With_Invertible_Networks.pdf) <span class="research-tags"><span class="research-tag">Domain Adaptation</span><span class="research-tag">Image Denoising</span></span> \\
-IEEE Transactions on Medical Imaging | July 29, 2024 \\
-Shiyu Deng; **Yinda Chen**; Wei Huang; Ruobing Zhang; Zhiwei Xiong
-
-[**Code**](https://github.com/sydeng99/DADn) [![](https://img.shields.io/github/stars/sydeng99/DADn?style=social&label=Code+Stars&cacheSeconds=3600)](https://github.com/sydeng99/DADn)
-
-The paper proposes an unsupervised domain adaptation method for EM image denoising with invertible networks, outperforming existing methods.
-
-</div>
-</div>
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge-journal">IEEE TPAMI</div><div class="badge-impact badge-q1">SCI Q1 | IF: 20.8</div><img src='images/TPAMI25.png' alt="GRCL Framework" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
@@ -385,6 +331,34 @@ The paper proposes CLC for deep image compression. It uses a dictionary to gener
 </div>
 </div>
 
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge-conference">ICCV Workshop 2025</div><img src='images/GTGM.png' alt="GTGM" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[GTGM: Generative Text-Guided 3D Vision-Language Pretraining for Medical Image Segmentation](https://arxiv.org/abs/2404.00000) [![](https://img.shields.io/badge/citations-121-blue?logo=google-scholar&logoColor=white&style=flat-square)](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&citation_for_view=hCvlj5cAAAAJ:NMxIlDl6LWMC) <span class="research-tags"><span class="research-tag">Vision-Language</span><span class="research-tag">Medical Imaging</span></span> \\
+ICCV Workshop | October 25, 2025 \\
+**Yinda Chen\***; Che Liu\*; Wei Huang; Xiaoyu Liu; Haoyuan Shi; Sibo Cheng; Rossella Arcucci; Zhiwei Xiong
+
+[**Code**](https://github.com/ydchen0806/gtgm)
+
+GTGM extends Vision-Language Pretraining to 3D medical images by leveraging LLMs to generate synthetic textual descriptions, enabling text-guided representation learning without paired medical text. Combined with a negative-free contrastive learning strategy, GTGM achieves state-of-the-art performance across 10 CT/MRI segmentation datasets.
+
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge-conference">MICCAI 2024</div><div class="badge-ccf badge-ccf-b">CCF B</div><img src='images/MICCAI24.png' alt="BIMCV-R" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[BIMCV-R: A Landmark Dataset for 3D CT Text-Image Retrieval](https://arxiv.org/pdf/2403.15992) [![](https://img.shields.io/badge/citations-72-blue?logo=google-scholar&logoColor=white&style=flat-square)](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&citation_for_view=hCvlj5cAAAAJ:mVmsd5A6BfQC) <span class="research-tags"><span class="research-tag">Vision-Language</span><span class="research-tag">Multimodal Learning</span></span> \\
+MICCAI | October 06, 2024 \\
+**Yinda Chen**; Che Liu; Xiaoyu Liu; Rossella Arcucci; Zhiwei Xiong
+
+[**Dataset**](https://huggingface.co/datasets/cyd0806/BIMCV-R) [![](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Dataset-blue)](https://huggingface.co/datasets/cyd0806/BIMCV-R)
+
+This paper presents BIMCV-R, a 3D CT text-image retrieval dataset, and MedFinder. Tests show MedFinder outperforms baselines in related tasks.
+
+</div>
+</div>
+
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge-conference">NeurIPS 2024</div><div class="badge-ccf badge-ccf-a">CCF A</div><img src='images/NeurIPS24.png' alt="MaskFactory" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
@@ -395,6 +369,32 @@ Haotian Qian; **Yinda Chen\***; Shengtao Lou; Fahad Shahbaz Khan; Xiaogang Jin; 
 [**Project**](https://qian-hao-tian.github.io/MaskFactory/) | [**Code**](https://github.com/ydchen0806/MaskFactory) [![](https://img.shields.io/github/stars/ydchen0806/MaskFactory?style=social&label=Code+Stars&cacheSeconds=3600)](https://github.com/ydchen0806/MaskFactory)
 
 MaskFactory proposes a two-stage method to generate high-quality synthetic datasets for DIS, outperforming existing methods in quality and efficiency.
+
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge-journal">IEEE TMI</div><div class="badge-impact badge-q1">SCI Q1 | IF: 10.6</div><img src='images/TMI24.png' alt="DADn" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[Unsupervised Domain Adaptation for EM Image Denoising with Invertible Networks](/docs/Unsupervised_Domain_Adaptation_for_EM_Image_Denoising_With_Invertible_Networks.pdf) <span class="research-tags"><span class="research-tag">Domain Adaptation</span><span class="research-tag">Image Denoising</span></span> \\
+IEEE Transactions on Medical Imaging | July 29, 2024 \\
+Shiyu Deng; **Yinda Chen**; Wei Huang; Ruobing Zhang; Zhiwei Xiong
+
+[**Code**](https://github.com/sydeng99/DADn) [![](https://img.shields.io/github/stars/sydeng99/DADn?style=social&label=Code+Stars&cacheSeconds=3600)](https://github.com/sydeng99/DADn)
+
+The paper proposes an unsupervised domain adaptation method for EM image denoising with invertible networks, outperforming existing methods.
+
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge-journal">IEEE JBHI</div><div class="badge-impact badge-q1">SCI Q1 | IF: 6.7</div><img src='images/JBHI25.png' alt="EMPOWER" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+> [EMPOWER: Evolutionary Medical Prompt Optimization With Reinforcement Learning](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11205280) [![](https://img.shields.io/badge/citations-13-blue?logo=google-scholar&logoColor=white&style=flat-square)](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&citation_for_view=hCvlj5cAAAAJ:J_g5lzvAfSwC) <span class="research-tags"><span class="research-tag">Vision-Language</span><span class="research-tag">Multimodal Learning</span></span> \\
+  IEEE Journal of Biomedical and Health Informatics | October 16, 2025 \\
+  **Yinda Chen\***; Yangfan He\*; Jing Yang; Dapeng Zhang; Zhenlong Yuan; Muhammad Attique Khan; Jamel Baili; Por Lip Yee
+
+> EMPOWER proposes an evolutionary framework for prompt optimization through specialized representation learning and multi-dimensional evaluation. It achieves 24.7% reduction in factual errors and 15.3% higher preference scores.
 
 </div>
 </div>
