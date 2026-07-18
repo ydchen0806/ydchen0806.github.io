@@ -1,438 +1,20 @@
-# ğŸ“ Selected Publications
-
-For a complete list of publications, please visit my [Google Scholar profile](https://scholar.google.com/citations?user=hCvlj5cAAAAJ&hl=en&oi=ao) [![](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/ydchen0806/ydchen0806.github.io/google-scholar-stats/gs_data_shieldsio.json&logo=google-scholar&logoColor=white)](https://scholar.google.com/citations?user=hCvlj5cAAAAJ&hl=en&oi=ao)
-
-<details>
-<summary>ğŸ“ˆ <strong>View Citation Trend</strong></summary>
-<div align="center" style="padding: 1em;">
-  <img src="https://raw.githubusercontent.com/ydchen0806/ydchen0806.github.io/google-scholar-stats/citation_trend.svg" alt="Citation Trend" style="max-width: 100%; height: auto;">
-</div>
-</details>
-
-**Note:** * denotes equal contribution
-
-<style>
-#pub-section details {
-  margin-bottom: 1em;
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-  border: 1px solid #e8e8e8;
-  transition: box-shadow 0.3s;
-}
-#pub-section details:hover {
-  box-shadow: 0 4px 16px rgba(0,0,0,0.10);
-}
-#pub-section details[open] {
-  box-shadow: 0 4px 16px rgba(0,0,0,0.10);
-}
-
-#pub-section summary {
-  padding: 0.9em 1.2em;
-  cursor: pointer;
-  font-size: 1.1em;
-  font-weight: 600;
-  color: #1a1a1a;
-  background: linear-gradient(135deg, #fef5ff 0%, #f5eef8 100%);
-  user-select: none;
-  display: flex;
-  align-items: center;
-  gap: 0.5em;
-  list-style: none;
-  transition: background 0.2s;
-}
-#pub-section summary::-webkit-details-marker { display: none; }
-#pub-section summary::before {
-  content: "â–¶";
-  font-size: 0.7em;
-  color: #9C27B0;
-  transition: transform 0.25s;
-  display: inline-block;
-}
-#pub-section details[open] > summary::before {
-  transform: rotate(90deg);
-}
-#pub-section summary:hover {
-  background: linear-gradient(135deg, #f5eef8 0%, #ece0f0 100%);
-}
-
-#pub-section .badge-count {
-  font-size: 0.75em;
-  font-weight: 500;
-  color: #fff;
-  background: #9C27B0;
-  padding: 2px 9px;
-  border-radius: 12px;
-  margin-left: auto;
-}
-
-.paper-box {
-  list-style-type: none;
-  margin-bottom: 0;
-  padding: 1.5em;
-  border-bottom: 1px solid #f0f0f0;
-  transition: background 0.15s;
-}
-.paper-box:last-child { border-bottom: none; }
-.paper-box:hover { background: #fdfaff; }
-
-.paper-box-image img {
-  border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-}
-
-.paper-box-text a {
-  color: #1a1a1a;
-  font-weight: 600;
-  font-size: 1.05em;
-  text-decoration: none;
-  transition: all 0.2s;
-}
-.paper-box-text a:hover {
-  color: #9C27B0;
-  text-decoration: underline;
-}
-
-.badge-journal, .badge-conference {
-  display: inline-block;
-  padding: 4px 10px;
-  border-radius: 4px;
-  font-size: 0.85em;
-  font-weight: 600;
-  margin-right: 6px;
-  margin-bottom: 8px;
-}
-.badge-journal {
-  background: #9C27B0;
-  color: white;
-}
-.badge-conference {
-  background: #673AB7;
-  color: white;
-}
-
-.badge-impact, .badge-ccf {
-  display: inline-block;
-  padding: 4px 8px;
-  border-radius: 3px;
-  font-size: 0.75em;
-  font-weight: 500;
-}
-.badge-q1 {
-  background: #FFD700;
-  color: #333;
-}
-.badge-ccf-a {
-  background: #E91E63;
-  color: white;
-}
-.badge-ccf-b {
-  background: #FF9800;
-  color: white;
-}
-
-.paper-box-text strong {
-  color: #9C27B0;
-}
-.paper-box-text img[src*="shields.io"] {
-  vertical-align: middle;
-  margin-left: 4px;
-}
-
-.research-tags {
-  display: inline-flex;
-  gap: 4px;
-  margin-left: 8px;
-  vertical-align: middle;
-}
-.research-tag {
-  display: inline-block;
-  padding: 2px 6px;
-  font-size: 0.7em;
-  font-weight: 500;
-  border-radius: 3px;
-  background: rgba(118, 75, 162, 0.1);
-  color: #764ba2;
-  border: 1px solid rgba(118, 75, 162, 0.2);
-  white-space: nowrap;
-}
-
-.citation-badge {
-  display: inline-flex;
-  align-items: center;
-  gap: 3px;
-  padding: 2px 6px;
-  font-size: 0.7em;
-  font-weight: 500;
-  border-radius: 4px;
-  background: #4285f4;
-  color: white;
-  margin-left: 6px;
-  vertical-align: middle;
-}
-.citation-badge::before {
-  content: 'ğŸ“Š';
-  font-size: 0.85em;
-}
-</style>
-
-<script>
-const MIN_CITATIONS = 10;
-
-window.addEventListener('load', function() {
-  fetch('https://raw.githubusercontent.com/ydchen0806/ydchen0806.github.io/google-scholar-stats/first_author_papers.json')
-    .then(response => response.ok ? response.json() : [])
-    .then(allPapers => {
-      if (!allPapers || allPapers.length === 0) return;
-
-      document.querySelectorAll('.paper-box-text').forEach(box => {
-        let titleLink = null;
-        for (let link of box.querySelectorAll('a')) {
-          const text = link.textContent.trim();
-          if (text.length > 25 &&
-              !['code', 'dataset', 'weights', 'project', 'poster'].some(k => text.toLowerCase().includes(k))) {
-            titleLink = link;
-            break;
-          }
-        }
-        if (!titleLink) return;
-
-        const linkText = titleLink.textContent.toLowerCase().replace(/[^\w\s]/g, ' ').replace(/\s+/g, ' ').trim();
-        const linkWords = new Set(linkText.split(' ').filter(w => w.length > 3));
-
-        let bestMatch = null;
-        let bestScore = 0;
-
-        for (let paper of allPapers) {
-          const paperWords = paper.title.toLowerCase().replace(/[^\w\s]/g, ' ').split(' ').filter(w => w.length > 3);
-          if (paperWords.length === 0) continue;
-
-          const matchCount = paperWords.filter(w => linkWords.has(w)).length;
-          const score = matchCount / paperWords.length;
-
-          if (score > bestScore && score > 0.4) {
-            bestScore = score;
-            bestMatch = paper;
-          }
-        }
-
-        if (bestMatch) {
-          const citations = bestMatch.citations || 0;
-          const badgeImg = box.querySelector('img[src*="img.shields.io/badge/citations"]');
-
-          if (citations >= MIN_CITATIONS) {
-            if (badgeImg) {
-              const newSrc = badgeImg.src.replace(/citations-\d+-blue/, `citations-${citations}-blue`);
-              if (badgeImg.src !== newSrc) badgeImg.src = newSrc;
-            }
-          } else {
-            if (badgeImg) badgeImg.parentElement.style.display = 'none';
-          }
-        }
-      });
-    })
-    .catch(err => console.log('[Citations] Error:', err));
-});
-</script>
-
-<div id="pub-section">
-
-<!-- ====== Embodied Intelligence & Unified Models ====== -->
-<details open>
-<summary>ğŸ¤– Embodied Intelligence & Unified Models <span class="badge-count">1</span></summary>
-
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge-conference">Technical Report 2026</div><img src='images/PelicanUnified.png' alt="Pelican-Unified 1.0" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-
-[Pelican-Unified 1.0: A Unified Embodied Intelligence Model (UEI) for Understanding, Reasoning, Imagination and Action](https://arxiv.org/abs/2605.15153) <span class="research-tags"><span class="research-tag">Embodied Intelligence</span><span class="research-tag">World Models</span><span class="research-tag">Unified Models</span></span> \\
-arXiv Technical Report | May 14, 2026 \\
-Beijing Innovation Center of Humanoid Robotics (X-Humanoid), WFM System Group; **Yinda Chen** (core contributor, ranked second)
-
-[**PDF**](https://arxiv.org/pdf/2605.15153.pdf) | [**arXiv**](https://arxiv.org/abs/2605.15153) | [**Hugging Face**](https://huggingface.co/papers/2605.15153) | [**Official**](https://www.x-humanoid.com/) | [**People's Daily (äººæ°‘æ—¥æŠ¥)**](https://www.peopleapp.com/column/30052155186-500007497131) | [**Beijing Daily / Beijing Gov (åŒ—äº¬æ—¥æŠ¥ / åŒ—äº¬å¸‚æ”¿åºœ)**](https://www.beijing.gov.cn/fuwu/lqfw/gggs/202605/t20260519_4656998.html) | [**Machine Heart (æœºå™¨ä¹‹å¿ƒ)**](https://mp.weixin.qq.com/s/z-OAqnl4IKHpaiT4bYBHIA) | [**Zhidongxi (æ™ºä¸œè¥¿)**](https://www.zhidx.com/p/558258.html)
-
-Pelican-Unified 1.0, also reported as Pelican-Unify 1.0, unifies understanding, reasoning, future imagination, and action in one embodied intelligence loop. It uses a single VLM for scene/instruction understanding and task-oriented reasoning, plus a Unified Future Generator that jointly predicts future videos and actions in the same denoising process.
-
-It ranks first on WorldArena with **66.03 EWM**, reaches **98.12%** 3D accuracy, achieves **93.5** average success on RoboTwin, and scores **64.7** across eight VLM benchmarks among comparable-scale models. The model has been validated on UR5e arms and the Tiangong humanoid robot for zero-shot long-horizon tasks such as interface insertion, waterproofing, and object manipulation.
-
-</div>
-</div>
-
-</details>
-
-<!-- ====== Self-Supervised Learning & Pretraining ====== -->
-<details open>
-<summary>ğŸ§  Self-Supervised Learning & Pretraining <span class="badge-count">4</span></summary>
-
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge-conference">ICCV 2025</div><div class="badge-ccf badge-ccf-a">CCF A</div><img src='images/ICCV25.png' alt="TokenUnify" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-
-[TokenUnify: Scaling Up Autoregressive Pretraining for Computer Vision](https://openaccess.thecvf.com/content/ICCV2025/papers/Chen_TokenUnify_Scaling_Up_Autoregressive_Pretraining_for_Neuron_Segmentation_ICCV_2025_paper.pdf) [![](https://img.shields.io/badge/citations-39-blue?logo=google-scholar&logoColor=white&style=flat-square)](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&citation_for_view=hCvlj5cAAAAJ:blknAaTinKkC) <span class="research-tags"><span class="research-tag">Computer Vision</span><span class="research-tag">Self-Supervised Learning</span></span> \\
-ICCV | October 25, 2025 \\
-**Yinda Chen\***; Haoyuan Shi\*; Xiaoyu Liu; Te Shi; Ruobing Zhang; Dong Liu; Zhiwei Xiong; Feng Wu
-
-[**Code**](https://github.com/ydchen0806/TokenUnify) [![](https://img.shields.io/github/stars/ydchen0806/TokenUnify?style=social&label=Code+Stars&cacheSeconds=3600)](https://github.com/ydchen0806/TokenUnify) | [**Dataset**](https://huggingface.co/datasets/cyd0806/wafer_EM) [![](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Dataset-blue)](https://huggingface.co/datasets/cyd0806/wafer_EM) | [**Weights**](https://huggingface.co/cyd0806/TokenUnify/tree/main/Pretrained_weights) [![](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Weights-yellow)](https://huggingface.co/cyd0806/TokenUnify/tree/main/Pretrained_weights)
-
-TokenUnify proposes a hierarchical predictive coding framework for computer vision, reducing autoregressive error from O(K) to O(âˆšK). It introduces a dataset with 1.2 billion annotated voxels and achieves 44% improvement over training from scratch.
-
-</div>
-</div>
-
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge-conference">ICML 2025</div><div class="badge-ccf badge-ccf-a">CCF A</div><img src='images/ICML25.png' alt="MaskTwins" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-
-[MaskTwins: Dual-form Complementary Masking for Domain-Adaptive Image Segmentation](https://openreview.net/pdf?id=9CpeZ8BzPO) <span class="research-tags"><span class="research-tag">Domain Adaptation</span><span class="research-tag">Pretraining Methods</span></span> \\
-ICML | July 13, 2025 \\
-Jiawen Wang; **Yinda Chen\*** (Theory Contribution & Project Leader); Xiaoyu Liu; Che Liu; Dong Liu; Jianqing Gao; Zhiwei Xiong
-
-[**Code**](https://github.com/jwwang0421/masktwins) [![](https://img.shields.io/github/stars/jwwang0421/masktwins?style=social&label=Code+Stars&cacheSeconds=3600)](https://github.com/jwwang0421/masktwins) | [**Poster**](https://icml.cc/media/PosterPDFs/ICML%202025/46243.png?t=1750997391.8351207)
-
-MaskTwins introduces a dual-form complementary masking strategy for domain-adaptive image segmentation, effectively bridging the domain gap through coordinated spatial and feature-level masking mechanisms.
-
-</div>
-</div>
-
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge-conference">ICASSP 2024</div><div class="badge-ccf badge-ccf-b">CCF B</div><img src='images/ICASSP24.png' alt="MS-Con" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-
-> [Learning multiscale consistency for self-supervised electron microscopy instance segmentation](https://arxiv.org/pdf/2308.09917) [![](https://img.shields.io/badge/citations-37-blue?logo=google-scholar&logoColor=white&style=flat-square)](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&citation_for_view=hCvlj5cAAAAJ:9ZlFYXVOiuMC) <span class="research-tags"><span class="research-tag">Computer Vision</span><span class="research-tag">Pretraining Methods</span></span> \\
-  ICASSP | April 13, 2024 \\
-  **Yinda Chen**; Wei Huang; Xiaoyu Liu; Shiyu Deng; Qi Chen; Zhiwei Xiong
-
-  [**Code**](https://github.com/ydchen0806/MS-Con-EM-Seg) [![](https://img.shields.io/github/stars/ydchen0806/MS-Con-EM-Seg?style=social&label=Code+Stars&cacheSeconds=3600)](https://github.com/ydchen0806/MS-Con-EM-Seg)
-
-> A pretraining framework for volume instance segmentation is proposed. It enforces multiscale consistency and shows good performance in instance segmentation tasks.
-
-</div>
-</div>
-
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge-conference">IJCAI 2023</div><div class="badge-ccf badge-ccf-a">CCF A</div><img src='images/ijcai2023.png' alt="dbMiM" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-
-> [Self-Supervised Computer Vision with Multi-Agent Reinforcement Learning](https://www.ijcai.org/proceedings/2023/0068.pdf) [![](https://img.shields.io/badge/citations-61-blue?logo=google-scholar&logoColor=white&style=flat-square)](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&citation_for_view=hCvlj5cAAAAJ:QIV2ME_5wuYC) <span class="research-tags"><span class="research-tag">Computer Vision</span><span class="research-tag">Self-Supervised Learning</span></span> \\
-  IJCAI <span style="color:red">**(<font color="red">oral</font>)**</span> | August 17, 2023 \\
-  **Yinda Chen**; Wei Huang; Shenglong Zhou; Qi Chen; Zhiwei Xiong
-
-  [**Code**](https://github.com/ydchen0806/dbMiM) [![](https://img.shields.io/github/stars/ydchen0806/dbMiM?style=social&label=Code+Stars&cacheSeconds=3600)](https://github.com/ydchen0806/dbMiM) | [**Pretrain Data**](https://huggingface.co/datasets/cyd0806/EM_pretrain_data/tree/main) [![](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Dataset-blue)](https://huggingface.co/datasets/cyd0806/EM_pretrain_data/tree/main) | [**CREMI**](https://cremi.org/) | [**VNC**](https://drive.google.com/drive/folders/1JAdoKchlWrHnbTXvnFn6pWWwx6VIiMH3?usp=sharing)
-
-> This paper proposes a decision-based MIM for computer vision segmentation. It uses MARL to optimize masking, outperforming alternatives.
-
-</div>
-</div>
-
-</details>
-
-<!-- ====== Medical Image Analysis & Vision-Language ====== -->
-<details open>
-<summary>ğŸ¥ Medical Image Analysis & Vision-Language <span class="badge-count">4</span></summary>
-
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge-conference">ICCV Workshop 2025</div><img src='images/GTGM.png' alt="GTGM" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-
-[GTGM: Generative Text-Guided 3D Vision-Language Pretraining for Medical Image Segmentation](https://arxiv.org/abs/2404.00000) [![](https://img.shields.io/badge/citations-121-blue?logo=google-scholar&logoColor=white&style=flat-square)](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&citation_for_view=hCvlj5cAAAAJ:NMxIlDl6LWMC) <span class="research-tags"><span class="research-tag">Vision-Language</span><span class="research-tag">Medical Imaging</span></span> \\
-ICCV Workshop | October 25, 2025 \\
-**Yinda Chen\***; Che Liu\*; Wei Huang; Xiaoyu Liu; Haoyuan Shi; Sibo Cheng; Rossella Arcucci; Zhiwei Xiong
-
-[**Code**](https://github.com/ydchen0806/gtgm)
-
-GTGM extends Vision-Language Pretraining to 3D medical images by leveraging LLMs to generate synthetic textual descriptions, enabling text-guided representation learning without paired medical text. Combined with a negative-free contrastive learning strategy, GTGM achieves state-of-the-art performance across 10 CT/MRI segmentation datasets.
-
-</div>
-</div>
-
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge-journal">IEEE JBHI</div><div class="badge-impact badge-q1">SCI Q1 | IF: 6.7</div><img src='images/JBHI25.png' alt="EMPOWER" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-
-> [EMPOWER: Evolutionary Medical Prompt Optimization With Reinforcement Learning](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11205280) [![](https://img.shields.io/badge/citations-13-blue?logo=google-scholar&logoColor=white&style=flat-square)](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&citation_for_view=hCvlj5cAAAAJ:J_g5lzvAfSwC) <span class="research-tags"><span class="research-tag">Vision-Language</span><span class="research-tag">Multimodal Learning</span></span> \\
-  IEEE Journal of Biomedical and Health Informatics | October 16, 2025 \\
-  **Yinda Chen\***; Yangfan He\*; Jing Yang; Dapeng Zhang; Zhenlong Yuan; Muhammad Attique Khan; Jamel Baili; Por Lip Yee
-
-> EMPOWER proposes an evolutionary framework for prompt optimization through specialized representation learning and multi-dimensional evaluation. It achieves 24.7% reduction in factual errors and 15.3% higher preference scores.
-
-</div>
-</div>
-
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge-conference">MICCAI 2024</div><div class="badge-ccf badge-ccf-b">CCF B</div><img src='images/MICCAI24.png' alt="BIMCV-R" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-
-[BIMCV-R: A Landmark Dataset for 3D CT Text-Image Retrieval](https://arxiv.org/pdf/2403.15992) [![](https://img.shields.io/badge/citations-72-blue?logo=google-scholar&logoColor=white&style=flat-square)](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&citation_for_view=hCvlj5cAAAAJ:mVmsd5A6BfQC) <span class="research-tags"><span class="research-tag">Vision-Language</span><span class="research-tag">Multimodal Learning</span></span> \\
-MICCAI | October 06, 2024 \\
-**Yinda Chen**; Che Liu; Xiaoyu Liu; Rossella Arcucci; Zhiwei Xiong
-
-[**Dataset**](https://huggingface.co/datasets/cyd0806/BIMCV-R) [![](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Dataset-blue)](https://huggingface.co/datasets/cyd0806/BIMCV-R)
-
-This paper presents BIMCV-R, a 3D CT text-image retrieval dataset, and MedFinder. Tests show MedFinder outperforms baselines in related tasks.
-
-</div>
-</div>
-
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge-journal">IEEE TMI</div><div class="badge-impact badge-q1">SCI Q1 | IF: 10.6</div><img src='images/TMI24.png' alt="DADn" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-
-[Unsupervised Domain Adaptation for EM Image Denoising with Invertible Networks](/docs/Unsupervised_Domain_Adaptation_for_EM_Image_Denoising_With_Invertible_Networks.pdf) <span class="research-tags"><span class="research-tag">Domain Adaptation</span><span class="research-tag">Image Denoising</span></span> \\
-IEEE Transactions on Medical Imaging | July 29, 2024 \\
-Shiyu Deng; **Yinda Chen**; Wei Huang; Ruobing Zhang; Zhiwei Xiong
-
-[**Code**](https://github.com/sydeng99/DADn) [![](https://img.shields.io/github/stars/sydeng99/DADn?style=social&label=Code+Stars&cacheSeconds=3600)](https://github.com/sydeng99/DADn)
-
-The paper proposes an unsupervised domain adaptation method for EM image denoising with invertible networks, outperforming existing methods.
-
-</div>
-</div>
-
-</details>
-
-<!-- ====== Image Compression ====== -->
-<details open>
-<summary>ğŸ“¦ Image Compression <span class="badge-count">2</span></summary>
-
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge-journal">IEEE TPAMI</div><div class="badge-impact badge-q1">SCI Q1 | IF: 20.8</div><img src='images/TPAMI25.png' alt="GRCL Framework" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-
-> [Learned Image Coding with Generative Reference of Conditional Latents](https://arxiv.org/abs/2025.00000) [![](https://img.shields.io/badge/citations-12-blue?logo=google-scholar&logoColor=white&style=flat-square)](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&citation_for_view=hCvlj5cAAAAJ:4DMP91E08xMC) <span class="research-tags"><span class="research-tag">Image Compression</span><span class="research-tag">Generative Models</span></span> \\
-  IEEE Transactions on Pattern Analysis and Machine Intelligence | Accepted, 2025 \\
-  Siqi Wu\*; **Yinda Chen\***; Weiming Chen; Dong Liu; K. C. Ho; Zhihai He
-
-  [**Code**](https://github.com/ydchen0806/CLC) [![](https://img.shields.io/github/stars/ydchen0806/CLC?style=social&label=Code+Stars&cacheSeconds=3600)](https://github.com/ydchen0806/CLC)
-
-> GRCL presents a generic framework that exploits semantically correlated external images as conditional coding references in the latent domain. Three reference generation methods are investigated: local dictionary retrieval, web-based image search, and diffusion-based image-text-image generation. Theoretical analysis proves robustness to reference perturbations via subspace recovery error bounds. Achieves up to 1.5 dB PSNR gain over state-of-the-art methods with only ~0.005 bpp overhead.
-
-</div>
-</div>
-
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge-conference">AAAI 2025</div><div class="badge-ccf badge-ccf-a">CCF A</div><img src='images/AAAI25.png' alt="CLC" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-
-> [Condition-generation Latent Coding with an External Dictionary for Deep Image Compression](/docs/Condition_generation_Latent_Coding_with_an_External_Dictionary_for_Deep_Image_Compression.pdf) [![](https://img.shields.io/badge/citations-12-blue?logo=google-scholar&logoColor=white&style=flat-square)](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&citation_for_view=hCvlj5cAAAAJ:4DMP91E08xMC) <span class="research-tags"><span class="research-tag">Image Compression</span></span> \\
-  AAAI <span style="color:red">**(<font color="red">oral</font>)**</span> | March 06, 2025 \\
-  Siqi Wu; **Yinda Chen\***; Dong Liu; Zhihai He
-
-  [**Code**](https://github.com/ydchen0806/CLC) [![](https://img.shields.io/github/stars/ydchen0806/CLC?style=social&label=Code+Stars&cacheSeconds=3600)](https://github.com/ydchen0806/CLC) | [**Weights**](https://huggingface.co/cyd0806/CLC/tree/main) [![](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Weights-yellow)](https://huggingface.co/cyd0806/CLC/tree/main)
-
-The paper proposes CLC for deep image compression. It uses a dictionary to generate references, shows good performance, and has theoretical analysis.
-
-</div>
-</div>
-
-</details>
-
-<!-- ====== Image Segmentation & Synthesis ====== -->
-<details open>
-<summary>ğŸ¨ Image Segmentation & Synthesis <span class="badge-count">1</span></summary>
-
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge-conference">NeurIPS 2024</div><div class="badge-ccf badge-ccf-a">CCF A</div><img src='images/NeurIPS24.png' alt="MaskFactory" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-
-[MaskFactory: Towards High-quality Synthetic Data Generation for Dichotomous Image Segmentation](https://arxiv.org/pdf/2412.19080) [![](https://img.shields.io/badge/citations-26-blue?logo=google-scholar&logoColor=white&style=flat-square)](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&citation_for_view=hCvlj5cAAAAJ:aqlVkmm33-oC) <span class="research-tags"><span class="research-tag">Multimodal Learning</span></span> \\
-NeurIPS | October 17, 2024 \\
-Haotian Qian; **Yinda Chen\***; Shengtao Lou; Fahad Shahbaz Khan; Xiaogang Jin; Deng-Ping Fan
-
-[**Project**](https://qian-hao-tian.github.io/MaskFactory/) | [**Code**](https://github.com/ydchen0806/MaskFactory) [![](https://img.shields.io/github/stars/ydchen0806/MaskFactory?style=social&label=Code+Stars&cacheSeconds=3600)](https://github.com/ydchen0806/MaskFactory)
-
-MaskFactory proposes a two-stage method to generate high-quality synthetic datasets for DIS, outperforming existing methods in quality and efficiency.
-
-</div>
-</div>
-
-</details>
-
-</div>
+YªçŠx-®éÜj×¢ëiºÚ+Š§j[h‘éÜ¢éíó^½N‹Z–‹­¦ëeŠw¬ÔŒƒÂ~NtM•±•Ñ•AÕ‰±¥…Ñ¥½¹Ì€€()½È„½µÁ±•Ñ”±¥ÍĞ½˜ÁÕ‰±¥…Ñ¥½¹Ì°Á±•…Í”Ù¥Í¥Ğµäm½½±”M¡½±…ÈÁÉ½™¥±•t¡¡ÑÑÁÌè¼½Í¡½±…È¹½½±”¹½´½¥Ñ…Ñ¥½¹ÌıÕÍ•Èõ¡Ù±¨Õ(™¡°õ•¸™½¤õ…¼¤l…mt¡¡ÑÑÁÌè¼½¥µœ¹Í¡¥•±‘Ì¹¥¼½•¹‘Á½¥¹ĞıÕÉ°õ¡ÑÑÁÌè¼½É…Ü¹¥Ñ¡Õ‰ÕÍ•É½¹Ñ•¹Ğ¹½´½å‘¡•¸ÀàÀØ½å‘¡•¸ÀàÀØ¹¥Ñ¡Õˆ¹¥¼½½½±”µÍ¡½±…ÈµÍÑ…ÑÌ½Í}‘…Ñ…}Í¡¥•±‘Í¥¼¹©Í½¸™±½¼õ½½±”µÍ¡½±…È™±½½½±½Èõİ¡¥Ñ”¥t¡¡ÑÑÁÌè¼½Í¡½±…È¹½½±”¹½´½¥Ñ…Ñ¥½¹ÌıÕÍ•Èõ¡Ù±¨Õ(™¡°õ•¸™½¤õ…¼¤((ñ‘•Ñ…¥±Ìø(ñÍÕµµ…ÉäûÂ~N €ñÍÑÉ½¹œùY¥•Ü¥Ñ…Ñ¥½¸QÉ•¹ğ½ÍÑÉ½¹œøğ½ÍÕµµ…Éäø(ñ‘¥Ø…±¥¸ô‰•¹Ñ•ÈˆÍÑå±”ô‰Á…‘‘¥¹œè€Å•´ìˆø(€€ñ¥µœÍÉŒô‰¡ÑÑÁÌè¼½É…Ü¹¥Ñ¡Õ‰ÕÍ•É½¹Ñ•¹Ğ¹½´½å‘¡•¸ÀàÀØ½å‘¡•¸ÀàÀØ¹¥Ñ¡Õˆ¹¥¼½½½±”µÍ¡½±…ÈµÍÑ…ÑÌ½¥Ñ…Ñ¥½¹}ÑÉ•¹¹ÍÙœˆ…±Ğô‰¥Ñ…Ñ¥½¸QÉ•¹ˆÍÑå±”ô‰µ…àµİ¥‘Ñ è€ÄÀÀ”ì¡•¥¡Ğè…ÕÑ¼ìˆø(ğ½‘¥Øø(ğ½‘•Ñ…¥±Ìø((¨©9½Ñ”è¨¨€¨‘•¹½Ñ•Ì•ÅÕ…°½¹ÑÉ¥‰ÕÑ¥½¸((ñÍÑå±”ø(ÁÕˆµÍ•Ñ¥½¸‘•Ñ…¥±Ìì(€µ…É¥¸µ‰½ÑÑ½´è€Å•´ì(€‰½É‘•ÈµÉ…‘¥ÕÌè€ÄÁÁàì(€½Ù•É™±½Üè¡¥‘‘•¸ì(€‰½àµÍ¡…‘½Üè€À€ÉÁà€áÁàÉ‰„ À°À°À°À¸ÀØ¤ì(€‰½É‘•Èè€ÅÁàÍ½±¥€”á”á”àì(€ÑÉ…¹Í¥Ñ¥½¸è‰½àµÍ¡…‘½Ü€À¸ÍÌì)ô(ÁÕˆµÍ•Ñ¥½¸‘•Ñ…¥±Ìé¡½Ù•Èì(€‰½àµÍ¡…‘½Üè€À€ÑÁà€ÄÙÁàÉ‰„ À°À°À°À¸ÄÀ¤ì)ô(ÁÕˆµÍ•Ñ¥½¸‘•Ñ…¥±Ím½Á•¹tì(€‰½àµÍ¡…‘½Üè€À€ÑÁà€ÄÙÁàÉ‰„ À°À°À°À¸ÄÀ¤ì)ô((ÁÕˆµÍ•Ñ¥½¸ÍÕµµ…Éäì(€Á…‘‘¥¹œè€À¸å•´€Ä¸É•´ì(€ÕÉÍ½ÈèÁ½¥¹Ñ•Èì(€™½¹ĞµÍ¥é”è€Ä¸Å•´ì(€™½¹Ğµİ•¥¡Ğè€ØÀÀì(€½±½Èè€ŒÅ„Å„Å„ì(€‰…­É½Õ¹è±¥¹•…ÈµÉ…‘¥•¹Ğ ÄÌÕ‘•œ°€™•˜Õ™˜€À”°€˜Õ••˜à€ÄÀÀ”¤ì(€ÕÍ•ÈµÍ•±•Ğè¹½¹”ì(€‘¥ÍÁ±…äè™±•àì(€…±¥¸µ¥Ñ•µÌè•¹Ñ•Èì(€…Àè€À¸Õ•´ì(€±¥ÍĞµÍÑå±”è¹½¹”ì(€ÑÉ…¹Í¥Ñ¥½¸è‰…­É½Õ¹€À¸ÉÌì)ô(ÁÕˆµÍ•Ñ¥½¸ÍÕµµ…Éäèèµİ•‰­¥Ğµ‘•Ñ…¥±Ìµµ…É­•Èì‘¥ÍÁ±…äè¹½¹”ìô(ÁÕˆµÍ•Ñ¥½¸ÍÕµµ…Éäèé‰•™½É”ì(€½¹Ñ•¹Ğè€‹ŠZØˆì(€™½¹ĞµÍ¥é”è€À¸İ•´ì(€½±½Èè€ŒåÈİÀì(€ÑÉ…¹Í¥Ñ¥½¸èÑÉ…¹Í™½É´€À¸ÈÕÌì(€‘¥ÍÁ±…äè¥¹±¥¹”µ‰±½¬ì)ô(ÁÕˆµÍ•Ñ¥½¸‘•Ñ…¥±Ím½Á•¹t€øÍÕµµ…Éäèé‰•™½É”ì(€ÑÉ…¹Í™½É´èÉ½Ñ…Ñ” äÁ‘•œ¤ì)ô(ÁÕˆµÍ•Ñ¥½¸ÍÕµµ…Éäé¡½Ù•Èì(€‰…­É½Õ¹è±¥¹•…ÈµÉ…‘¥•¹Ğ ÄÌÕ‘•œ°€˜Õ••˜à€À”°€•”Á˜À€ÄÀÀ”¤ì)ô((ÁÕˆµÍ•Ñ¥½¸€¹‰…‘”µ½Õ¹Ğì(€™½¹ĞµÍ¥é”è€À¸ÜÕ•´ì(€™½¹Ğµİ•¥¡Ğè€ÔÀÀì(€½±½Èè€™™˜ì(€‰…­É½Õ¹è€ŒåÈİÀì(€Á…‘‘¥¹œè€ÉÁà€åÁàì(€‰½É‘•ÈµÉ…‘¥ÕÌè€ÄÉÁàì(€µ…É¥¸µ±•™Ğè…ÕÑ¼ì)ô((¹Á…Á•Èµ‰½àì(€±¥ÍĞµÍÑå±”µÑåÁ”è¹½¹”ì(€µ…É¥¸µ‰½ÑÑ½´è€Àì(€Á…‘‘¥¹œè€Ä¸Õ•´ì(€‰½É‘•Èµ‰½ÑÑ½´è€ÅÁàÍ½±¥€˜Á˜Á˜Àì(€ÑÉ…¹Í¥Ñ¥½¸è‰…­É½Õ¹€À¸ÄÕÌì)ô(¹Á…Á•Èµ‰½àé±…ÍĞµ¡¥±ì‰½É‘•Èµ‰½ÑÑ½´è¹½¹”ìô(¹Á…Á•Èµ‰½àé¡½Ù•Èì‰…­É½Õ¹è€™‘™…™˜ìô((¹Á…Á•Èµ‰½àµ¥µ…”¥µœì(€‰½É‘•ÈµÉ…‘¥ÕÌè€áÁàì(€‰½àµÍ¡…‘½Üè€À€ÉÁà€ÙÁàÉ‰„ À°À°À°À¸Ä¤ì)ô((¹Á…Á•Èµ‰½àµÑ•áĞ„ì(€½±½Èè€ŒÅ„Å„Å„ì(€™½¹Ğµİ•¥¡Ğè€ØÀÀì(€™½¹ĞµÍ¥é”è€Ä¸ÀÕ•´ì(€Ñ•áĞµ‘•½É…Ñ¥½¸è¹½¹”ì(€ÑÉ…¹Í¥Ñ¥½¸è…±°€À¸ÉÌì)ô(¹Á…Á•Èµ‰½àµÑ•áĞ„é¡½Ù•Èì(€½±½Èè€ŒåÈİÀì(€Ñ•áĞµ‘•½É…Ñ¥½¸èÕ¹‘•É±¥¹”ì)ô((¹‰…‘”µ©½ÕÉ¹…°°€¹‰…‘”µ½¹™•É•¹”ì(€‘¥ÍÁ±…äè¥¹±¥¹”µ‰±½¬ì(€Á…‘‘¥¹œè€ÑÁà€ÄÁÁàì(€‰½É‘•ÈµÉ…‘¥ÕÌè€ÑÁàì(€™½¹ĞµÍ¥é”è€À¸àÕ•´ì(€™½¹Ğµİ•¥¡Ğè€ØÀÀì(€µ…É¥¸µÉ¥¡Ğè€ÙÁàì(€µ…É¥¸µ‰½ÑÑ½´è€áÁàì)ô(¹‰…‘”µ©½ÕÉ¹…°ì(€‰…­É½Õ¹è€ŒåÈİÀì(€½±½Èèİ¡¥Ñ”ì)ô(¹‰…‘”µ½¹™•É•¹”ì(€‰…­É½Õ¹è€ŒØÜÍÜì(€½±½Èèİ¡¥Ñ”ì)ô((¹‰…‘”µ¥µÁ…Ğ°€¹‰…‘”µ˜ì(€‘¥ÍÁ±…äè¥¹±¥¹”µ‰±½¬ì(€Á…‘‘¥¹œè€ÑÁà€áÁàì(€‰½É‘•ÈµÉ…‘¥ÕÌè€ÍÁàì(€™½¹ĞµÍ¥é”è€À¸ÜÕ•´ì(€™½¹Ğµİ•¥¡Ğè€ÔÀÀì)ô(¹‰…‘”µÄÄì(€‰…­É½Õ¹è€ÜÀÀì(€½±½Èè€ŒÌÌÌì)ô(¹‰…‘”µ˜µ„ì(€‰…­É½Õ¹è€äÅØÌì(€½±½Èèİ¡¥Ñ”ì)ô(¹‰…‘”µ˜µˆì(€‰…­É½Õ¹è€äàÀÀì(€½±½Èèİ¡¥Ñ”ì)ô((¹Á…Á•Èµ‰½àµÑ•áĞÍÑÉ½¹œì(€½±½Èè€ŒåÈİÀì)ô(¹Á…Á•Èµ‰½àµÑ•áĞ¥µmÍÉŒ¨ô‰Í¡¥•±‘Ì¹¥¼‰tì(€Ù•ÉÑ¥…°µ…±¥¸èµ¥‘‘±”ì(€µ…É¥¸µ±•™Ğè€ÑÁàì)ô((¹É•Í•…É µÑ…Ìì(€‘¥ÍÁ±…äè¥¹±¥¹”µ™±•àì(€…Àè€ÑÁàì(€µ…É¥¸µ±•™Ğè€áÁàì(€Ù•ÉÑ¥…°µ…±¥¸èµ¥‘‘±”ì)ô(¹É•Í•…É µÑ…œì(€‘¥ÍÁ±…äè¥¹±¥¹”µ‰±½¬ì(€Á…‘‘¥¹œè€ÉÁà€ÙÁàì(€™½¹ĞµÍ¥é”è€À¸İ•´ì(€™½¹Ğµİ•¥¡Ğè€ÔÀÀì(€‰½É‘•ÈµÉ…‘¥ÕÌè€ÍÁàì(€‰…­É½Õ¹èÉ‰„ ÄÄà°€ÜÔ°€ÄØÈ°€À¸Ä¤ì(€½±½Èè€ŒÜØÑ‰„Èì(€‰½É‘•Èè€ÅÁàÍ½±¥É‰„ ÄÄà°€ÜÔ°€ÄØÈ°€À¸È¤ì(€İ¡¥Ñ”µÍÁ…”è¹½İÉ…Àì)ô((¹¥Ñ…Ñ¥½¸µ‰…‘”ì(€‘¥ÍÁ±…äè¥¹±¥¹”µ™±•àì(€…±¥¸µ¥Ñ•µÌè•¹Ñ•Èì(€…Àè€ÍÁàì(€Á…‘‘¥¹œè€ÉÁà€ÙÁàì(€™½¹ĞµÍ¥é”è€À¸İ•´ì(€™½¹Ğµİ•¥¡Ğè€ÔÀÀì(€‰½É‘•ÈµÉ…‘¥ÕÌè€ÑÁàì(€‰…­É½Õ¹è€ŒĞÈàÕ˜Ğì(€½±½Èèİ¡¥Ñ”ì(€µ…É¥¸µ±•™Ğè€ÙÁàì(€Ù•ÉÑ¥…°µ…±¥¸èµ¥‘‘±”ì)ô(¹¥Ñ…Ñ¥½¸µ‰…‘”èé‰•™½É”ì(€½¹Ñ•¹Ğè€ŸÂ~N(œì(€™½¹ĞµÍ¥é”è€À¸àÕ•´ì)ô(ğ½ÍÑå±”ø((ñÍÉ¥ÁĞø)½¹ÍĞ5%9}%QQ%=9L€ô€ÄÀì()İ¥¹‘½Ü¹…‘‘Ù•¹Ñ1¥ÍÑ•¹•È ±½…œ°™Õ¹Ñ¥½¸ ¤ì(€™•Ñ  ¡ÑÑÁÌè¼½É…Ü¹¥Ñ¡Õ‰ÕÍ•É½¹Ñ•¹Ğ¹½´½å‘¡•¸ÀàÀØ½å‘¡•¸ÀàÀØ¹¥Ñ¡Õˆ¹¥¼½½½±”µÍ¡½±…ÈµÍÑ…ÑÌ½™¥ÉÍÑ}…ÕÑ¡½É}Á…Á•ÉÌ¹©Í½¸œ¤(€€€€¹Ñ¡•¸¡É•ÍÁ½¹Í”€ôøÉ•ÍÁ½¹Í”¹½¬€üÉ•ÍÁ½¹Í”¹©Í½¸ ¤€èmt¤(€€€€¹Ñ¡•¸¡…±±A…Á•ÉÌ€ôøì(€€€€€¥˜€ ……±±A…Á•ÉÌñğ…±±A…Á•ÉÌ¹±•¹Ñ €ôôô€À¤É•ÑÕÉ¸ì(€€€€€€(€€€€€‘½Õµ•¹Ğ¹ÅÕ•ÉåM•±•Ñ½É±° œ¹Á…Á•Èµ‰½àµÑ•áĞœ¤¹™½É… ¡‰½à€ôøì(€€€€€€€±•ĞÑ¥Ñ±•1¥¹¬€ô¹Õ±°ì(€€€€€€€™½È€¡±•Ğ±¥¹¬½˜‰½à¹ÅÕ•ÉåM•±•Ñ½É±° „œ¤¤ì(€€€€€€€€€½¹ÍĞÑ•áĞ€ô±¥¹¬¹Ñ•áÑ½¹Ñ•¹Ğ¹ÑÉ¥´ ¤ì(€€€€€€€€€¥˜€¡Ñ•áĞ¹±•¹Ñ €ø€ÈÔ€˜˜€(€€€€€€€€€€€€€€…l½‘”œ°€‘…Ñ…Í•Ğœ°€İ•¥¡ÑÌœ°€ÁÉ½©•Ğœ°€Á½ÍÑ•Èt¹Í½µ”¡¬€ôøÑ•áĞ¹Ñ½1½İ•É…Í” ¤¹¥¹±Õ‘•Ì¡¬¤¤¤ì(€€€€€€€€€€€Ñ¥Ñ±•1¥¹¬€ô±¥¹¬ì(€€€€€€€€€€€‰É•…¬ì(€€€€€€€€€ô(€€€€€€€ô(€€€€€€€¥˜€ …Ñ¥Ñ±•1¥¹¬¤É•ÑÕÉ¸ì(€€€€€€€€(€€€€€€€½¹ÍĞ±¥¹­Q•áĞ€ôÑ¥Ñ±•1¥¹¬¹Ñ•áÑ½¹Ñ•¹Ğ¹Ñ½1½İ•É…Í” ¤¹É•Á±…” ½myqİqÍt½œ°€œ€œ¤¹É•Á±…” ½qÌ¬½œ°€œ€œ¤¹ÑÉ¥´ ¤ì(€€€€€€€½¹ÍĞ±¥¹­]½É‘Ì€ô¹•ÜM•Ğ¡±¥¹­Q•áĞ¹ÍÁ±¥Ğ œ€œ¤¹™¥±Ñ•È¡Ü€ôøÜ¹±•¹Ñ €ø€Ì¤¤ì(€€€€€€€€(€€€€€€€±•Ğ‰•ÍÑ5…Ñ €ô¹Õ±°ì(€€€€€€€±•Ğ‰•ÍÑM½É”€ô€Àì(€€€€€€€€(€€€€€€€™½È€¡±•ĞÁ…Á•È½˜…±±A…Á•ÉÌ¤ì(€€€€€€€€€½¹ÍĞÁ…Á•É]½É‘Ì€ôÁ…Á•È¹Ñ¥Ñ±”¹Ñ½1½İ•É…Í” ¤¹É•Á±…” ½myqİqÍt½œ°€œ€œ¤¹ÍÁ±¥Ğ œ€œ¤¹™¥±Ñ•È¡Ü€ôøÜ¹±•¹Ñ €ø€Ì¤ì(€€€€€€€€€¥˜€¡Á…Á•É]½É‘Ì¹±•¹Ñ €ôôô€À¤½¹Ñ¥¹Õ”ì(€€€€€€€€€€(€€€€€€€€€½¹ÍĞµ…Ñ¡½Õ¹Ğ€ôÁ…Á•É]½É‘Ì¹™¥±Ñ•È¡Ü€ôø±¥¹­]½É‘Ì¹¡…Ì¡Ü¤¤¹±•¹Ñ ì(€€€€€€€€€½¹ÍĞÍ½É”€ôµ…Ñ¡½Õ¹Ğ€¼Á…Á•É]½É‘Ì¹±•¹Ñ ì(€€€€€€€€€€(€€€€€€€€€¥˜€¡Í½É”€ø‰•ÍÑM½É”€˜˜Í½É”€ø€À¸Ğ¤ì(€€€€€€€€€€€‰•ÍÑM½É”€ôÍ½É”ì(€€€€€€€€€€€‰•ÍÑ5…Ñ €ôÁ…Á•Èì(€€€€€€€€€ô(€€€€€€€ô(€€€€€€€€(€€€€€€€¥˜€¡‰•ÍÑ5…Ñ ¤ì(€€€€€€€€€½¹ÍĞ¥Ñ…Ñ¥½¹Ì€ô‰•ÍÑ5…Ñ ¹¥Ñ…Ñ¥½¹Ìñğ€Àì(€€€€€€€€€½¹ÍĞ‰…‘•%µœ€ô‰½à¹ÅÕ•ÉåM•±•Ñ½È ¥µmÍÉŒ¨ô‰¥µœ¹Í¡¥•±‘Ì¹¥¼½‰…‘”½¥Ñ…Ñ¥½¹Ì‰tœ¤ì(€€€€€€€€€€(€€€€€€€€€¥˜€¡¥Ñ…Ñ¥½¹Ì€øô5%9}%QQ%=9L¤ì(€€€€€€€€€€€¥˜€¡‰…‘•%µœ¤ì(€€€€€€€€€€€€€½¹ÍĞ¹•İMÉŒ€ô‰…‘•%µœ¹ÍÉŒ¹É•Á±…” ½¥Ñ…Ñ¥½¹Ìµq¬µ‰±Õ”¼°¥Ñ…Ñ¥½¹Ì´‘í¥Ñ…Ñ¥½¹Íôµ‰±Õ•€¤ì(€€€€€€€€€€€€€¥˜€¡‰…‘•%µœ¹ÍÉŒ€„ôô¹•İMÉŒ¤‰…‘•%µœ¹ÍÉŒ€ô¹•İMÉŒì(€€€€€€€€€€€ô(€€€€€€€€€ô•±Í”ì(€€€€€€€€€€€¥˜€¡‰…‘•%µœ¤‰…‘•%µœ¹Á…É•¹Ñ±•µ•¹Ğ¹ÍÑå±”¹‘¥ÍÁ±…ä€ô€¹½¹”œì(€€€€€€€€€ô(€€€€€€€ô(€€€€€ô¤ì(€€€ô¤(€€€€¹…Ñ ¡•ÉÈ€ôø½¹Í½±”¹±½œ m¥Ñ…Ñ¥½¹ÍtÉÉ½Èèœ°•ÉÈ¤¤ì)ô¤ì(ğ½ÍÉ¥ÁĞø((ñ‘¥Ø¥ô‰ÁÕˆµÍ•Ñ¥½¸ˆø((ğ„´´€ôôôôôôµ‰½‘¥•%¹Ñ•±±¥•¹”€˜U¹¥™¥•5½‘•±Ì€ôôôôôô€´´ø(ñ‘•Ñ…¥±Ì½Á•¸ø(ñÍÕµµ…ÉäûÂ~’Xµ‰½‘¥•%¹Ñ•±±¥•¹”€˜U¹¥™¥•5½‘•±Ì€ñÍÁ…¸±…ÍÌô‰‰…‘”µ½Õ¹ĞˆøÄğ½ÍÁ…¸øğ½ÍÕµµ…Éäø((ñ‘¥Ø±…ÍÌôÁ…Á•Èµ‰½àœøñ‘¥Ø±…ÍÌôÁ…Á•Èµ‰½àµ¥µ…”œøñ‘¥Øøñ‘¥Ø±…ÍÌô‰‰…‘”µ½¹™•É•¹”ˆùQ•¡¹¥…°I•Á½ÉĞ€ÈÀÈØğ½‘¥Øøñ¥µœÍÉŒô¥µ…•Ì½A•±¥…¹U¹¥™¥•¹Á¹œœ…±Ğô‰A•±¥…¸µU¹¥™¥•€Ä¸Àˆİ¥‘Ñ ôˆÄÀÀ”ˆøğ½‘¥Øøğ½‘¥Øø(ñ‘¥Ø±…ÍÌôÁ…Á•Èµ‰½àµÑ•áĞœµ…É­‘½İ¸ôˆÄˆø()mA•±¥…¸µU¹¥™¥•€Ä¸ÀèU¹¥™¥•µ‰½‘¥•%¹Ñ•±±¥•¹”5½‘•°€¡U$¤™½ÈU¹‘•ÉÍÑ…¹‘¥¹œ°I•…Í½¹¥¹œ°%µ…¥¹…Ñ¥½¸…¹Ñ¥½¹t¡¡ÑÑÁÌè¼½…Éá¥Ø¹½Éœ½…‰Ì¼ÈØÀÔ¸ÄÔÄÔÌ¤€ñÍÁ…¸±…ÍÌô‰É•Í•…É µÑ…ÌˆøñÍÁ…¸±…ÍÌô‰É•Í•…É µÑ…œˆùµ‰½‘¥•%¹Ñ•±±¥•¹”ğ½ÍÁ…¸øñÍÁ…¸±…ÍÌô‰É•Í•…É µÑ…œˆù]½É±5½‘•±Ìğ½ÍÁ…¸øñÍÁ…¸±…ÍÌô‰É•Í•…É µÑ…œˆùU¹¥™¥•5½‘•±Ìğ½ÍÁ…¸øğ½ÍÁ…¸øqp)…Éa¥ØQ•¡¹¥…°I•Á½ÉĞğ5…ä€ÄĞ°€ÈÀÈØqp)	•¥©¥¹œ%¹¹½Ù…Ñ¥½¸•¹Ñ•È½˜!Õµ…¹½¥I½‰½Ñ¥Ì€¡`µ!Õµ…¹½¥¤°]4MåÍÑ•´É½ÕÀì€¨©e¥¹‘„¡•¸¨¨€¡½É”½¹ÑÉ¥‰ÕÑ½È°É…¹­•Í•½¹¤()l¨©A¨©t¡¡ÑÑÁÌè¼½…Éá¥Ø¹½Éœ½Á‘˜¼ÈØÀÔ¸ÄÔÄÔÌ¹Á‘˜¤ğl¨©…Éa¥Ø¨©t¡¡ÑÑÁÌè¼½…Éá¥Ø¹½Éœ½…‰Ì¼ÈØÀÔ¸ÄÔÄÔÌ¤ğl¨©!Õ¥¹œ…”¨©t¡¡ÑÑÁÌè¼½¡Õ¥¹™…”¹¼½Á…Á•ÉÌ¼ÈØÀÔ¸ÄÔÄÔÌ¤ğl¨©=™™¥¥…°¨©t¡¡ÑÑÁÌè¼½İİÜ¹àµ¡Õµ…¹½¥¹½´¼¤ğl¨©A•½Á±”Ì…¥±ä€£’êëšÂGš^—š*”¤¨©t¡¡ÑÑÁÌè¼½İİÜ¹Á•½Á±•…ÁÀ¹½´½½±Õµ¸¼ÌÀÀÔÈÄÔÔÄàØ´ÔÀÀÀÀÜĞäÜÄÌÄ¤ğl¨©	•¥©¥¹œ…¥±ä€¼	•¥©¥¹œ½Ø€£–2_’ê³š^—}zöÚ$z{-®éÜj×\ÜÏHœ™\ÙX\˜Ú]YÈ“][[[Ù[X\›š[™ÏÜÜ[ÜÜ[ˆˆQQQH›İ\›˜[Ùˆš[ÛYYXØ[[™X[[™›Ü›X]XÜÈØİØ™\ˆM‹ŒHˆ
+Š–Z[™HÚ[—
+ŠŠÈX[™Ù˜[ˆW
+Èš[™ÈX[™ÎÈ\[™Èš[™ÎÈš[›Û™È]X[È]Z[[XY]\]YHÚ[È˜[Y[˜Z[NÈÜˆ\YYB‚ˆSTÕÑTˆ›ÜÜÙ\È[ˆ]›Û][Û˜\Hœ˜[Y]ÛÜšÈ›Üˆ›Û\Ü[Z^˜][Ûˆ›İYÚÜXÚX[^™Y™\™\Ù[][ÛˆX\›š[™È[™][KY[Y[œÚ[Û˜[]˜[X][Û‹ˆ]XÚY]™\ÈÉH™YXİ[Ûˆ[ˆ˜XİX[\œ›ÜœÈ[™MKŒÉHYÚ\ˆ™Y™\™[˜ÙHØÛÜ™\Ë‚‚Ù]‚Ù]‚‚]ˆÛ\ÜÏIÜ\\‹X›Ş	Ï]ˆÛ\ÜÏIÜ\\‹X›ŞZ[XYÙIÏ]]ˆÛ\ÜÏH˜˜YÙKXÛÛ™™\™[˜ÙH“RPĞĞRHŒÙ]]ˆÛ\ÜÏH˜˜YÙKXØÙˆ˜YÙKXØÙ‹XˆĞÑˆÙ][YÈÜ˜ÏIÚ[XYÙ\ËÓRPĞĞRLœ™ÉÈ[H’SPÕ‹TˆˆÚYHŒL	HÙ]Ù]‚]ˆÛ\ÜÏIÜ\\‹X›Ş]^	ÈX\šÙİÛHŒH‚‚–Ğ’SPÕ‹TˆH[™X\šÈ]\Ù]›ÜˆÑÕ^R[XYÙH™]šY]˜[JÎ‹ËØ\]‹›Ü™ËÜ‹ÌËŒMNNLŠHÈV×JÎ‹ËÚ[YËœÚY[Ëš[ËØ˜YÙKØÚ]][ÛœËMÌ‹X›YOÛÙÛÏYÛÛÙÛK\ØÚÛ\‰›ÙÛĞÛÛÜ]Ú]Iœİ[OY›]\Ü]X\™JWJÎ‹ËÜØÚÛ\‹™ÛÛÙÛK˜ÛÛKØÚ]][ÛœÏİšY]×ÛÜ]šY]×ØÚ]][Û‰šY[‰\Ù\Zİ›XĞPPPR‰œYÙ\Ú^™OLL	˜Ú]][Û—Ù›Ü—İšY]ÏZİ›XĞPPPR›U›\ÙPM™”PÊHÜ[ˆÛ\ÜÏHœ™\ÙX\˜Ú]YÜÈÜ[ˆÛ\ÜÏHœ™\ÙX\˜Ú]YÈ•š\Ú[Û‹S[™İXYÙOÜÜ[Ü[ˆÛ\ÜÏHœ™\ÙX\˜Ú]YÈ“][[[Ù[X\›š[™ÏÜÜ[ÜÜ[ˆ“RPĞĞRHØİØ™\ˆ‹ŒŠŠ–Z[™HÚ[ŠŠÈÚH]NÈX[Ş]H]NÈ›ÜÜÙ[H\˜İXØÚNÈš]ÙZH[Û™Â‚–ÊŠ‘]\Ù]
+Š—JÎ‹ËÚYÙÚ[™Ù˜XÙK˜ÛËÙ]\Ù]ËØŞY‹Ğ’SPÕ‹TŠHÈV×JÎ‹ËÚ[YËœÚY[Ëš[ËØ˜YÙKÉQŒ	NQ‰PM	NMÉLŒYÙÚ[™ÉLŒ˜XÙKQ]\Ù]X›YJWJÎ‹ËÚYÙÚ[™Ù˜XÙK˜ÛËÙ]\Ù]ËØŞY‹Ğ’SPÕ‹TŠB‚•\È\\ˆ™\Ù[È’SPÕ‹T‹HÑÕ^Z[XYÙH™]šY]˜[]\Ù][™YYš[™\‹ˆ\İÈÚİÈYYš[™\ˆİ]\™›Ü›\È˜\Ù[[™\È[ˆ™[]Y\ÚÜË‚‚Ù]‚Ù]‚‚]ˆÛ\ÜÏIÜ\\‹X›Ş	Ï]ˆÛ\ÜÏIÜ\\‹X›ŞZ[XYÙIÏ]]ˆÛ\ÜÏH˜˜YÙKZ›İ\›˜[’QQQHROÙ]]ˆÛ\ÜÏH˜˜YÙKZ[\Xİ˜YÙK\LH”ĞÒHLHQˆLÙ][YÈÜ˜ÏIÚ[XYÙ\ËÕRLœ™ÉÈ[H‘QˆˆÚYHŒL	HÙ]Ù]‚]ˆÛ\ÜÏIÜ\\‹X›Ş]^	ÈX\šÙİÛHŒH‚‚–Õ[œİ\\š\ÙYÛXZ[ˆY\][Ûˆ›ÜˆSH[XYÙH[›Ú\Ú[™ÈÚ][™\X›H™]ÛÜšÜ×JÙØÜËÕ[œİ\\š\ÙYÑÛXZ[—ĞY\][Û—Ù›Ü—ÑSWÒ[XYÙWÑ[›Ú\Ú[™×ÕÚ]Ò[™\X›WÓ™]ÛÜšÜËœŠHÜ[ˆÛ\ÜÏHœ™\ÙX\˜Ú]YÜÈÜ[ˆÛ\ÜÏHœ™\ÙX\˜Ú]YÈ‘ÛXZ[ˆY\][ÛÜÜ[Ü[ˆÛ\ÜÏHœ™\ÙX\˜Ú]YÈ’[XYÙH[›Ú\Ú[™ÏÜÜ[ÜÜ[ˆ’QQQH˜[œØXİ[ÛœÈÛˆYYXØ[[XYÚ[™È[HKŒ”Ú^]H[™ÎÈ
+Š–Z[™HÚ[ŠŠÈÙZHX[™ÎÈ[Øš[™Èš[™ÎÈš]ÙZH[Û™Â‚–ÊŠÛÙJŠ—JÎ‹ËÙÚ]X‹˜ÛÛKÜŞY[™ÎNKÑQŠHÈV×JÎ‹ËÚ[YËœÚY[Ëš[ËÙÚ]X‹Üİ\œËÜŞY[™ÎNKÑQÜİ[O\ÛØÚX[	›X™[PÛÙJÔİ\œÉ˜ØXÚTÙXÛÛ™ÏLÍŒ
+WJÎ‹ËÙÚ]X‹˜ÛÛKÜŞY[™ÎNKÑQŠB‚•H\\ˆ›ÜÜÙ\È[ˆ[œİ\\š\ÙYÛXZ[ˆY\][ÛˆY]Ù›ÜˆSH[XYÙH[›Ú\Ú[™ÈÚ][™\X›H™]ÛÜšÜËİ]\™›Ü›Z[™È^\İ[™ÈY]ÙË‚‚Ù]‚Ù]‚‚Ù]Z[Ï‚‚KKHOOOOOH[XYÙHÛÛ\™\ÜÚ[ÛˆOOOOOHKO‚]Z[ÈÜ[‚İ[[X\O¼'äéˆ[XYÙHÛÛ\™\ÜÚ[ÛˆÜ[ˆÛ\ÜÏH˜˜YÙKXÛİ[ŒÜÜ[Üİ[[X\O‚‚]ˆÛ\ÜÏIÜ\\‹X›Ş	Ï]ˆÛ\ÜÏIÜ\\‹X›ŞZ[XYÙIÏ]]ˆÛ\ÜÏH˜˜YÙKZ›İ\›˜[’QQQHSROÙ]]ˆÛ\ÜÏH˜˜YÙKZ[\Xİ˜YÙK\LH”ĞÒHLHQˆŒÙ][YÈÜ˜ÏIÚ[XYÙ\ËÕSRLKœ™ÉÈ[H‘ÔÓœ˜[Y]ÛÜšÈˆÚYHŒL	HÙ]Ù]‚]ˆÛ\ÜÏIÜ\\‹X›Ş]^	ÈX\šÙİÛHŒH‚‚ˆÓX\›™Y[XYÙHÛÙ[™ÈÚ]Ù[™\˜]]™H™Y™\™[˜ÙHÙˆÛÛ™][Û˜[][×JÎ‹ËØ\]‹›Ü™ËØXœËÌŒKŒ
+HÈV×JÎ‹ËÚ[YËœÚY[Ëš[ËØ˜YÙKØÚ]][ÛœËLL‹X›YOÛÙÛÏYÛÛÙÛK\ØÚÛ\‰›ÙÛĞÛÛÜ]Ú]Iœİ[OY›]\Ü]X\™JWJÎ‹ËÜØÚÛ\‹™ÛÛÙÛK˜ÛÛKØÚ]][ÛœÏİšY]×ÛÜ]šY]×ØÚ]][Û‰šY[‰\Ù\Zİ›XĞPPPR‰œYÙ\Ú^™OLL	˜Ú]][Û—Ù›Ü—İšY]ÏZİ›XĞPPPRTLQLPÊHÜ[ˆÛ\ÜÏHœ™\ÙX\˜Ú]YÜÈÜ[ˆÛ\ÜÏHœ™\ÙX\˜Ú]YÈ’[XYÙHÛÛ\™\ÜÚ[ÛÜÜ[Ü[ˆÛ\ÜÏHœ™\ÙX\˜Ú]YÈ‘Ù[™\˜]]™H[Ù[ÏÜÜ[ÜÜ[ˆˆQQQH˜[œØXİ[ÛœÈÛˆ]\›ˆ[˜[\Ú\È[™XXÚ[™H[[YÙ[˜ÙHXØÙ\YŒHˆÚ\ZHİW
+È
+Š–Z[™HÚ[—
+ŠŠÈÙZ[Z[™ÈÚ[ÈÛ™È]NÈËˆËˆÎÈšZZHB‚ˆÊŠÛÙJŠ—JÎ‹ËÙÚ]X‹˜ÛÛKŞYÚ[Œ‹ĞÓÊHÈV×JÎ‹ËÚ[YËœÚY[Ëš[ËÙÚ]X‹Üİ\œËŞYÚ[Œ‹ĞÓÏÜİ[O\ÛØÚX[	›X™[PÛÙJÔİ\œÉ˜ØXÚTÙXÛÛ™ÏLÍŒ
+WJÎ‹ËÙÚ]X‹˜ÛÛKŞYÚ[Œ‹ĞÓÊB‚ˆÔÓ™\Ù[ÈHÙ[™\šXÈœ˜[Y]ÛÜšÈ]^Ú]ÈÙ[X[XØ[HÛÜœ™[]Y^\›˜[[XYÙ\È\ÈÛÛ™][Û˜[ÛÙ[™È™Y™\™[˜Ù\È[ˆH][ÛXZ[‹ˆ™YH™Y™\™[˜ÙHÙ[™\˜][ÛˆY]ÙÈ\™H[™\İYØ]YˆØØ[Xİ[Û˜\H™]šY]˜[ÙX‹X˜\ÙY[XYÙHÙX\˜Ú[™Y™\Ú[Û‹X˜\ÙY[XYÙK]^Z[XYÙHÙ[™\˜][Û‹ˆ[Ü™]XØ[[˜[\Ú\È›İ™\È›Ø\İ™\ÜÈÈ™Y™\™[˜ÙH\\˜˜][ÛœÈšXHİXœÜXÙH™XÛİ™\H\œ›Üˆ›İ[™ËˆXÚY]™\È\ÈKHˆÓ”ˆØZ[ˆİ™\ˆİ]K[Ù‹]KX\Y]ÙÈÚ]Û›HŒŒHœİ™\šXY‚‚Ù]‚Ù]‚‚]ˆÛ\ÜÏIÜ\\‹X›Ş	Ï]ˆÛ\ÜÏIÜ\\‹X›ŞZ[XYÙIÏ]]ˆÛ\ÜÏH˜˜YÙKXÛÛ™™\™[˜ÙHPPRHŒOÙ]]ˆÛ\ÜÏH˜˜YÙKXØÙˆ˜YÙKXØÙ‹XHĞÑˆOÙ][YÈÜ˜ÏIÚ[XYÙ\ËĞPPRLKœ™ÉÈ[HÓÈˆÚYHŒL	HÙ]Ù]‚]ˆÛ\ÜÏIÜ\\‹X›Ş]^	ÈX\šÙİÛHŒH‚‚ˆĞÛÛ™][Û‹YÙ[™\˜][Ûˆ][ÛÙ[™ÈÚ][ˆ^\›˜[Xİ[Û˜\H›ÜˆY\[XYÙHÛÛ\™\ÜÚ[Û—JÙØÜËĞÛÛ™][Û—ÙÙ[™\˜][Û—Ó][ĞÛÙ[™×İÚ]Ø[—Ñ^\›˜[ÑXİ[Û˜\WÙ›Ü—ÑY\Ò[XYÙWĞÛÛ\™\ÜÚ[Û‹œŠHÈV×JÎ‹ËÚ[YËœÚY[Ëš[ËØ˜YÙKØÚ]][ÛœËLL‹X›YOÛÙÛÏYÛÛÙÛK\ØÚÛ\‰›ÙÛĞÛÛÜ]Ú]Iœİ[OY›]\Ü]X\™JWJÎ‹ËÜØÚÛ\‹™ÛÛÙÛK˜ÛÛKØÚ]][ÛœÏİšY]×ÛÜ]šY]×ØÚ]][Û‰šY[‰\Ù\Zİ›XĞPPPR‰œYÙ\Ú^™OLL	˜Ú]][Û—Ù›Ü—İšY]ÏZİ›XĞPPPRTLQLPÊHÜ[ˆÛ\ÜÏHœ™\ÙX\˜Ú]YÜÈÜ[ˆÛ\ÜÏHœ™\ÙX\˜Ú]YÈ’[XYÙHÛÛ\™\ÜÚ[ÛÜÜ[ÜÜ[ˆˆPPRHÜ[ˆİ[OH˜ÛÛÜœ™YŠŠŠ›ÛÛÛÜHœ™Y›Ü˜[Ù›ÛŠJŠÜÜ[ˆX\˜Ú‹ŒHˆÚ\ZHİNÈ
+Š–Z[™HÚ[—
+ŠŠÈÛ™È]NÈšZZHB‚ˆÊŠÛÙJŠ—JÎ‹ËÙÚ]X‹˜ÛÛKŞYÚ[Œ‹ĞÓÊHÈV×JÎ‹ËÚ[YËœÚY[Ëš[ËÙÚ]X‹Üİ\œËŞYÚ[Œ‹ĞÓÏÜİ[O\ÛØÚX[	›X™[PÛÙJÔİ\œÉ˜ØXÚTÙXÛÛ™ÏLÍŒ
+WJÎ‹ËÙÚ]X‹˜ÛÛKŞYÚ[Œ‹ĞÓÊHÊŠ•ÙZYÚÊŠ—JÎ‹ËÚYÙÚ[™Ù˜XÙK˜ÛËØŞY‹ĞÓËİ™YKÛXZ[ŠHÈV×JÎ‹ËÚ[YËœÚY[Ëš[ËØ˜YÙKÉQŒ	NQ‰PM	NMÉLŒYÙÚ[™ÉLŒ˜XÙKUÙZYÚË^Y[İÊWJÎ‹ËÚYÙÚ[™Ù˜XÙK˜ÛËØŞY‹ĞÓËİ™YKÛXZ[ŠB‚•H\\ˆ›ÜÜÙ\ÈÓÈ›ÜˆY\[XYÙHÛÛ\™\ÜÚ[Û‹ˆ]\Ù\ÈHXİ[Û˜\HÈÙ[™\˜]H™Y™\™[˜Ù\ËÚİÜÈÛÛÙ\™›Ü›X[˜ÙK[™\È[Ü™]XØ[[˜[\Ú\Ë‚‚Ù]‚Ù]‚‚Ù]Z[Ï‚‚KKHOOOOOH[XYÙHÙYÛY[][Ûˆ	ˆŞ[\Ú\ÈOOOOOHKO‚]Z[ÈÜ[‚İ[[X\O¼'ãª[XYÙHÙYÛY[][Ûˆ	ˆŞ[\Ú\ÈÜ[ˆÛ\ÜÏH˜˜YÙKXÛİ[ŒOÜÜ[Üİ[[X\O‚‚]ˆÛ\ÜÏIÜ\\‹X›Ş	Ï]ˆÛ\ÜÏIÜ\\‹X›ŞZ[XYÙIÏ]]ˆÛ\ÜÏH˜˜YÙKXÛÛ™™\™[˜ÙH“™]\’TÈŒÙ]]ˆÛ\ÜÏH˜˜YÙKXØÙˆ˜YÙKXØÙ‹XHĞÑˆOÙ][YÈÜ˜ÏIÚ[XYÙ\ËÓ™]\’TÌœ™ÉÈ[H“X\ÚÑ˜XİÜHˆÚYHŒL	HÙ]Ù]‚]ˆÛ\ÜÏIÜ\\‹X›Ş]^	ÈX\šÙİÛHŒH‚‚–ÓX\ÚÑ˜XİÜNˆİØ\™ÈYÚ\]X[]HŞ[]XÈ]HÙ[™\˜][Ûˆ›ÜˆXÚİÛ[İ\È[XYÙHÙYÛY[][Û—JÎ‹ËØ\]‹›Ü™ËÜ‹ÌL‹ŒNL
+HÈV×JÎ‹ËÚ[YËœÚY[Ëš[ËØ˜YÙKØÚ]][ÛœËL‹X›YOÛÙÛÏYÛÛÙÛK\ØÚÛ\‰›ÙÛĞÛÛÜ]Ú]Iœİ[OY›]\Ü]X\™JWJÎ‹ËÜØÚÛ\‹™ÛÛÙÛK˜ÛÛKØÚ]][ÛœÏİšY]×ÛÜ]šY]×ØÚ]][Û‰šY[‰\Ù\Zİ›XĞPPPR‰œYÙ\Ú^™OLL	˜Ú]][Û—Ù›Ü—İšY]ÏZİ›XĞPPPR˜\[šÛ[LÌË[ĞÊHÜ[ˆÛ\ÜÏHœ™\ÙX\˜Ú]YÜÈÜ[ˆÛ\ÜÏHœ™\ÙX\˜Ú]YÈ“][[[Ù[X\›š[™ÏÜÜ[ÜÜ[ˆ“™]\’TÈØİØ™\ˆMËŒ’[İX[ˆZX[È
+Š–Z[™HÚ[—
+ŠŠÈÚ[™İ[ÈİNÈ˜ZYÚZ˜^ˆÚ[ÈX[ÙØ[™Èš[È[™ËT[™È˜[‚‚–ÊŠ”›Ú™Xİ
+Š—JÎ‹ËÜZX[‹Z[Ë]X[‹™Ú]X‹š[ËÓX\ÚÑ˜XİÜKÊHÊŠÛÙJŠ—JÎ‹ËÙÚ]X‹˜ÛÛKŞYÚ[Œ‹ÓX\ÚÑ˜XİÜJHÈV×JÎ‹ËÚ[YËœÚY[Ëš[ËÙÚ]X‹Üİ\œËŞYÚ[Œ‹ÓX\ÚÑ˜XİÜOÜİ[O\ÛØÚX[	›X™[PÛÙJÔİ\œÉ˜ØXÚTÙXÛÛ™ÏLÍŒ
+WJÎ‹ËÙÚ]X‹˜ÛÛKŞYÚ[Œ‹ÓX\ÚÑ˜XİÜJB‚“X\ÚÑ˜XİÜH›ÜÜÙ\ÈHÛË\İYÙHY]ÙÈÙ[™\˜]HYÚ\]X[]HŞ[]XÈ]\Ù]È›ÜˆTËİ]\™›Ü›Z[™È^\İ[™ÈY]ÙÈ[ˆ]X[]H[™Y™šXÚY[˜ŞK‚‚Ù]‚Ù]‚‚Ù]Z[Ï‚‚Ù]‚

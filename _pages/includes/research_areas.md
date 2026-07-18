@@ -61,21 +61,21 @@
 
 <script>
 window.addEventListener('load', function() {
-  // 核心研究方向：保留原有关键词云样式，仅更新研究表述
+  // 核心研究方向（精简版，突出重点）
   const coreKeywords = [
-    { keyword: '🔬 Predictive Multimodal Intelligence', weight: 5 },
-    { keyword: '🧠 Representation & Predictive Learning', weight: 5 },
-    { keyword: '🤖 World Models & Embodied AI', weight: 4 },
-    { keyword: '🦾 Vision-Language-Action', weight: 4 },
-    { keyword: '🔍 Connectomics & Electron Microscopy', weight: 3 },
-    { keyword: '🧬 Computational Neuroscience & NeuroAI', weight: 3 }
+    { keyword: '🔬 Multimodal Learning', weight: 5 },
+    { keyword: '🧠 Self-Supervised Learning', weight: 5 },
+    { keyword: '🏥 Medical Imaging', weight: 4 },
+    { keyword: '👁️ Computer Vision', weight: 4 },
+    { keyword: '🗜️ Image Compression', weight: 3 },
+    { keyword: '🤖 Embodied AI', weight: 3 }
   ];
 
   function generateKeywordCloud() {
     const keywordCloud = document.getElementById('keywordCloud');
     if (!keywordCloud) return;
 
-    keywordCloud.innerHTML = coreKeywords.map(item =>
+    keywordCloud.innerHTML = coreKeywords.map(item => 
       `<span class="keyword" data-weight="${item.weight}">${item.keyword}</span>`
     ).join('');
   }
