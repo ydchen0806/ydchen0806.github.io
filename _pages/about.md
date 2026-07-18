@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: ""
+title: "Predictive Multimodal Intelligence"
 excerpt: ""
 author_profile: true
 redirect_from: 
@@ -12,24 +12,36 @@ redirect_from:
 {% include_relative includes/intro.md %}
 <br>
 
+<span class='anchor' id='-opportunities'></span>
+{% include_relative includes/opportunities.md %}
+<br>
+
 <span class='anchor' id='-research-areas'></span>
 {% include_relative includes/research_areas.md %}
+<br>
+
+<span class='anchor' id='-current-research'></span>
+{% include_relative includes/current_research.md %}
+<br>
+
+<span class='anchor' id='-selected-research'></span>
+{% include_relative includes/pub.md %}
 <br>
 
 <span class='anchor' id='-news'></span>
 {% include_relative includes/news.md %}
 <br>
 
-<span class='anchor' id='-educations'></span>
+<span class='anchor' id='-education'></span>
 {% include_relative includes/educations.md %}
 <br>
 
-<span class='anchor' id='-professional-experience'></span>
+<span class='anchor' id='-research-experience'></span>
 {% include_relative includes/experience.md %}
 <br>
 
-<span class='anchor' id='-publications'></span>
-{% include_relative includes/pub.md %}
+<span class='anchor' id='-advisors-and-collaborators'></span>
+{% include_relative includes/advisors.md %}
 <br>
 
 <span class='anchor' id='-honors-and-awards'></span>
