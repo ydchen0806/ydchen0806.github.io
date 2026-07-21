@@ -2,7 +2,7 @@
 
 I am [**Yinda Chen (陈胤达)**](https://ydchen0806.github.io/), a Ph.D. candidate jointly trained by the [University of Science and Technology of China (USTC)](https://sist.ustc.edu.cn/main.htm) and the [Shanghai AI Lab](https://www.shlab.org.cn/), majoring in **Information and Communication Engineering**.
 
-- 👀 My research focuses on **multimodal understanding and generation**. Initially, I explored these two directions separately—working on **representation learning**, **self-supervised pretraining**, and **efficient fine-tuning** in **computer vision** and other multimodal tasks. Now, I'm gradually moving toward a **unified framework** that bridges understanding and generation across various domains.
+- 👀 My research develops **predictive multimodal intelligence**: from **representation and predictive learning** to **world models** for embodied perception, future-state prediction, and action. Recent work in **Pelican-Unified** and its **Pelican-VLA 0.5** module connects unified multimodal representations, future imagination, and closed-loop robot control.
 
 - 🧭 I am advised by [Prof. Feng Wu (吴枫, CAE Academician, IEEE Fellow)](https://scholar.google.com/citations?user=5bInRDEAAAAJ&hl=en) and [Prof. Zhiwei Xiong (熊志伟)](https://scholar.google.com/citations?user=Snl0HPEAAAAJ&hl=en) at **USTC**, and co-supervised by [Prof. Xiaoou Tang (汤晓鸥, IEEE Fellow)](https://scholar.google.com/citations?user=qpBtpGsAAAAJ&hl=en) at the **Shanghai AI Lab**.
 

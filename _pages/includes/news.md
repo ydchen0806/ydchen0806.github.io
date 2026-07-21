@@ -74,6 +74,11 @@
 <ul class="news-list">
 
 <li class="news-item">
+  <span class="news-date">2026.07</span>
+  <span class="news-text">🤖 <a href="https://arxiv.org/abs/2607.06655"><strong>Pelican-VLA 0.5: Attending Before Acting Benefits Generalization</strong></a> technical report released. As the VLA component within Pelican-Unified, it uses learnable bottleneck tokens to connect task-relevant perception, future-frame generation, and action generalization.</span>
+</li>
+
+<li class="news-item">
   <span class="news-date">2026.06</span>
   <span class="news-text">📄 One <a href="https://ieeexplore.ieee.org/document/11557391">paper</a> was accepted by <strong>TCSVT</strong> (IEEE Transactions on Circuits and Systems for Video Technology).</span>
 </li>

@@ -63,12 +63,13 @@
 window.addEventListener('load', function() {
   // 核心研究方向（精简版，突出重点）
   const coreKeywords = [
-    { keyword: '🔬 Multimodal Learning', weight: 5 },
-    { keyword: '🧠 Self-Supervised Learning', weight: 5 },
-    { keyword: '🏥 Medical Imaging', weight: 4 },
-    { keyword: '👁️ Computer Vision', weight: 4 },
-    { keyword: '🗜️ Image Compression', weight: 3 },
-    { keyword: '🤖 Embodied AI', weight: 3 }
+    { keyword: '🌍 World Models', weight: 5 },
+    { keyword: '🤖 Embodied AI', weight: 5 },
+    { keyword: '🦾 Vision-Language-Action', weight: 4 },
+    { keyword: '🔬 Multimodal Learning', weight: 4 },
+    { keyword: '🧠 Self-Supervised Learning', weight: 3 },
+    { keyword: '🏥 Medical Imaging', weight: 3 },
+    { keyword: '🗜️ Image Compression', weight: 2 }
   ];
 
   function generateKeywordCloud() {

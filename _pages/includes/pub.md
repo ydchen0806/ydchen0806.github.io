@@ -141,8 +141,10 @@ For a complete list of publications, please visit my [Google Scholar profile](ht
 
 .research-tags {
   display: inline-flex;
+  flex-wrap: wrap;
   gap: 4px;
   margin-left: 8px;
+  max-width: 100%;
   vertical-align: middle;
 }
 .research-tag {
@@ -155,6 +157,13 @@ For a complete list of publications, please visit my [Google Scholar profile](ht
   color: #764ba2;
   border: 1px solid rgba(118, 75, 162, 0.2);
   white-space: nowrap;
+}
+@media (max-width: 600px) {
+  #pub-section .research-tags {
+    display: flex;
+    width: 100%;
+    margin: 0.4em 0 0;
+  }
 }
 
 .citation-badge {
@@ -403,7 +412,7 @@ The paper proposes an unsupervised domain adaptation method for EM image denoisi
 
 <!-- ====== World Models and Embodied Intelligence ====== -->
 <details open>
-<summary>🤖 World Models and Embodied Intelligence <span class="badge-count">1</span></summary>
+<summary>🤖 World Models and Embodied Intelligence <span class="badge-count">2</span></summary>
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge-conference">Technical Report 2026</div><img src='images/PelicanUnified.png' alt="Pelican-Unified 1.0" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
@@ -417,6 +426,22 @@ Beijing Innovation Center of Humanoid Robotics (X-Humanoid), WFM System Group; *
 Pelican-Unified 1.0, also reported as Pelican-Unify 1.0, unifies understanding, reasoning, future imagination, and action in one embodied intelligence loop. It uses a single VLM for scene/instruction understanding and task-oriented reasoning, plus a Unified Future Generator that jointly predicts future videos and actions in the same denoising process.
 
 It ranks first on WorldArena with **66.03 EWM**, reaches **98.12%** 3D accuracy, achieves **93.5** average success on RoboTwin, and scores **64.7** across eight VLM benchmarks among comparable-scale models. The model has been validated on UR5e arms and the Tiangong humanoid robot for zero-shot long-horizon tasks such as interface insertion, waterproofing, and object manipulation.
+
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge-conference">Technical Report 2026</div><img src='images/PelicanVLA05.png' alt="Pelican-VLA 0.5 attention visualizations" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[Pelican-VLA 0.5: Attending Before Acting Benefits Generalization](https://arxiv.org/abs/2607.06655) <span class="research-tags"><span class="research-tag">Vision-Language-Action</span><span class="research-tag">Embodied Intelligence</span><span class="research-tag">World Models</span></span> \\
+Technical Report | July 2026 \\
+Beijing Innovation Center of Humanoid Robotics (X-Humanoid), WFM System Group; **Yinda Chen**
+
+[**Technical Report**](https://arxiv.org/abs/2607.06655) | [**PDF**](https://arxiv.org/pdf/2607.06655) | [**Code**](https://github.com/Open-X-Humanoid/Pelican-VLA05) | [**Models**](https://huggingface.co/X-Humanoid/Pelican-VLA05)
+
+As the concrete **VLA component** within the Pelican-Unified framework, Pelican-VLA 0.5 unifies vision-language understanding, **future-frame generation**, and action prediction. Learnable **Bottleneck Tokens** route task-relevant visual information to the action pathway, producing object- and contact-centric attention that generalizes across scenes and robot embodiments.
+
+Together with Pelican-Unified 1.0, it forms a world-model narrative from **unified multimodal representations**, through **future-state modeling**, to **closed-loop action**.
 
 </div>
 </div>

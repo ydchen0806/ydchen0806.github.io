@@ -137,9 +137,9 @@
   </div>
 </div>
 <ul class="exp-details">
-  <li>Conducting research on embodied intelligence world models</li>
-  <li>Developing advanced algorithms for humanoid robot perception and decision-making</li>
-  <li>Contributed as a core contributor (ranked second) to <a href="https://arxiv.org/pdf/2605.15153.pdf">Pelican-Unified 1.0</a>, a unified embodied intelligence model for understanding, reasoning, imagination, and action</li>
+  <li>Developing unified embodied world models for humanoid robots, connecting task-relevant perception, future-state prediction, and low-level action generation in real-robot closed loops</li>
+  <li>Contributing to Unify pretraining and planning validation, including the VLA module's bottleneck representations for cross-scene and cross-embodiment manipulation generalization</li>
+  <li>Contributed as a core contributor (ranked second) to <a href="https://arxiv.org/abs/2605.15153">Pelican-Unified 1.0</a>; participated in the <a href="https://arxiv.org/abs/2607.06655">Pelican-VLA 0.5</a> technical report on its VLA component</li>
 </ul>
 </div>
 
