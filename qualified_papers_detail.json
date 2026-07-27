@@ -20,7 +20,7 @@
     "should_include": true
   },
   {
-    "title": "What Should a Skill Remember? Quality-Cost Trade-offs in Cost-Aware Skill Rewriting for Language Model Agents",
+    "title": "What Should a Skill Remember? Quality--Cost Trade-offs in Cost-Aware Skill Rewriting for Language Model Agents",
     "authors": "Q Xing, Y Chen, Y Jin, Z Wu, B Lin, H Zhou, X Chen, H Chen, Z Xiong",
     "year": "2026",
     "citations": 0,
@@ -103,7 +103,7 @@
     "title": "EMPOWER: Evolutionary Medical Prompt Optimization With Reinforcement Learning",
     "authors": "Y Chen, Y He, J Yang, D Zhang, Z Yuan, MA Khan, J Baili, L Yee",
     "year": "2026",
-    "citations": 13,
+    "citations": 14,
     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=hCvlj5cAAAAJ:J_g5lzvAfSwC",
     "is_first_author": true,
     "venue": {
@@ -123,7 +123,7 @@
     "title": "MaskTwins: Dual-form Complementary Masking for Domain-Adaptive Image Segmentation",
     "authors": "J Wang*, Y Chen*, X Liu, C Liu, D Liu, Z Xiong",
     "year": "2025",
-    "citations": 6,
+    "citations": 7,
     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=hCvlj5cAAAAJ:dhFuZR0502QC",
     "is_first_author": true,
     "venue": {
@@ -163,7 +163,7 @@
     "title": "GTGM: Generative Text-Guided 3D Vision-Language Pretraining for Medical Image Segmentation",
     "authors": "Y Chen, C Liu, W Huang, X Liu, H Shi, S Cheng, R Arcucci, Z Xiong",
     "year": "2025",
-    "citations": 121,
+    "citations": 122,
     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=hCvlj5cAAAAJ:NMxIlDl6LWMC",
     "is_first_author": true,
     "venue": {
