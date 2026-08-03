@@ -1,11 +1,11 @@
 {
   "name": "Yinda Chen",
-  "citedby": 690,
-  "citedby5y": 690,
+  "citedby": 687,
+  "citedby5y": 687,
   "hindex": 14,
   "hindex5y": 14,
-  "i10index": 17,
-  "i10index5y": 17,
+  "i10index": 18,
+  "i10index5y": 18,
   "affiliation": "University of Science and Technology of China",
   "interests": [
     "Computational Neuroscience",
@@ -20,22 +20,22 @@
     },
     {
       "year": 2023,
-      "citations": 18
+      "citations": 15
     },
     {
       "year": 2024,
-      "citations": 173
+      "citations": 159
     },
     {
       "year": 2025,
-      "citations": 305
+      "citations": 309
     },
     {
       "year": 2026,
-      "citations": 185
+      "citations": 196
     }
   ],
-  "updated": "2026-08-02 04:18:13.245866",
+  "updated": "2026-08-03 04:23:24.131416",
   "source": "serpapi",
   "publications": {},
   "first_author_papers": [
@@ -43,7 +43,7 @@
       "title": "GTGM: Generative Text-Guided 3D Vision-Language Pretraining for Medical Image Segmentation",
       "authors": "Y Chen, C Liu, W Huang, X Liu, H Shi, S Cheng, R Arcucci, Z Xiong",
       "year": "2025",
-      "citations": 122,
+      "citations": 121,
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&citation_for_view=hCvlj5cAAAAJ:NMxIlDl6LWMC",
       "citation_id": "hCvlj5cAAAAJ:NMxIlDl6LWMC"
     },
@@ -59,7 +59,7 @@
       "title": "Self-supervised neuron segmentation with multi-agent reinforcement learning",
       "authors": "Y Chen, W Huang, S Zhou, Q Chen, Z Xiong",
       "year": "2023",
-      "citations": 61,
+      "citations": 60,
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&citation_for_view=hCvlj5cAAAAJ:QIV2ME_5wuYC",
       "citation_id": "hCvlj5cAAAAJ:QIV2ME_5wuYC"
     },
@@ -75,7 +75,7 @@
       "title": "Learning multiscale consistency for self-supervised electron microscopy instance segmentation",
       "authors": "Y Chen, W Huang, X Liu, S Deng, Q Chen, Z Xiong",
       "year": "2024",
-      "citations": 37,
+      "citations": 36,
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&citation_for_view=hCvlj5cAAAAJ:9ZlFYXVOiuMC",
       "citation_id": "hCvlj5cAAAAJ:9ZlFYXVOiuMC"
     },
@@ -83,7 +83,7 @@
       "title": "MaskFactory: Towards High-quality Synthetic Data Generation for Dichotomous Image Segmentation",
       "authors": "H Qian*, YD Chen*, S Lou, FS Khan, X Jin, DP Fan",
       "year": "2024",
-      "citations": 26,
+      "citations": 25,
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&citation_for_view=hCvlj5cAAAAJ:aqlVkmm33-oC",
       "citation_id": "hCvlj5cAAAAJ:aqlVkmm33-oC"
     },
@@ -107,7 +107,7 @@
       "title": "UniCompress: Enhancing Multi-Data Medical Image Compression with Knowledge Distillation",
       "authors": "R Yang*, Y Chen*, Z Zhang, X Liu, Z Li, K He, Z Xiong, J Suo, Q Dai",
       "year": "2024",
-      "citations": 11,
+      "citations": 10,
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&citation_for_view=hCvlj5cAAAAJ:UebtZRa9Y70C",
       "citation_id": "hCvlj5cAAAAJ:UebtZRa9Y70C"
     },
@@ -115,7 +115,7 @@
       "title": "MaskTwins: Dual-form Complementary Masking for Domain-Adaptive Image Segmentation",
       "authors": "J Wang*, Y Chen*, X Liu, C Liu, D Liu, Z Xiong",
       "year": "2025",
-      "citations": 7,
+      "citations": 6,
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&citation_for_view=hCvlj5cAAAAJ:dhFuZR0502QC",
       "citation_id": "hCvlj5cAAAAJ:dhFuZR0502QC"
     },

@@ -108,7 +108,7 @@ X Wu, **Y Chen**, R Zhang, H Jin, Z Xiong
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge-conference">ICCV 2025</div><div class="badge-ccf badge-ccf-a">CCF A</div><img src='images/placeholder.png' alt="paper" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-[GTGM: Generative Text-Guided 3D Vision-Language Pretraining for Medical Image Segmentation](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=hCvlj5cAAAAJ:NMxIlDl6LWMC) <span class="citation-badge">122 citations</span> \\
+[GTGM: Generative Text-Guided 3D Vision-Language Pretraining for Medical Image Segmentation](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=hCvlj5cAAAAJ:NMxIlDl6LWMC) <span class="citation-badge">121 citations</span> \\
 ICCV | 2025 \\
 **Y Chen**, C Liu, W Huang, X Liu, H Shi, S Cheng, R Arcucci, Z Xiong
 
@@ -192,7 +192,7 @@ H Qian*, **YD Chen***, S Lou, FS Khan, X Jin, DP Fan
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge-conference">IJCAI 2023</div><div class="badge-ccf badge-ccf-a">CCF A</div><img src='images/placeholder.png' alt="paper" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-[Self-supervised neuron segmentation with multi-agent reinforcement learning](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=hCvlj5cAAAAJ:QIV2ME_5wuYC) <span class="citation-badge">61 citations</span> \\
+[Self-supervised neuron segmentation with multi-agent reinforcement learning](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=hCvlj5cAAAAJ:QIV2ME_5wuYC) <span class="citation-badge">60 citations</span> \\
 IJCAI | 2023 \\
 **Y Chen**, W Huang, S Zhou, Q Chen, Z Xiong
 
