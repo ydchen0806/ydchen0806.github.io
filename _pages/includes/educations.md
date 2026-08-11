@@ -138,7 +138,7 @@
 <ul class="edu-details">
   <li>Research focus: Machine Learning Theory, Self-Supervised Pretraining, Multimodal Large Models, Image Coding & Compression</li>
   <li>Working with <a href="https://scholar.google.com/citations?user=5bInRDEAAAAJ&hl=en">Prof. Feng Wu</a> (CAE Academician, IEEE Fellow) and <a href="https://scholar.google.com/citations?user=Snl0HPEAAAAJ&hl=en&oi=ao">Prof. Zhiwei Xiong</a></li>
-  <li>Research mentor in connectomics and neuroscience: <a href="https://hr.fudan.edu.cn/97/10/c15369a759568/page.htm">Prof. Ruobing Zhang</a> at Fudan University</li>
+  <li>Research mentor in connectomics and neuroscience: <a href="https://ibi.braintell.org/#/cn/faculty/zhang-ruobing">Prof. Ruobing Zhang</a> at Fudan University</li>
   <li>Co-supervised by <a href="https://scholar.google.com/citations?user=qpBtpGsAAAAJ&hl=en">Prof. Xiaoou Tang</a> (IEEE Fellow) at Shanghai AI Lab</li>
   <li>Selected coursework: Algorithm Design and Analysis, Statistical Learning, Deep Learning, Reinforcement Learning</li>
   <li>Principal Investigator for NSFC Ph.D. Project (2024)</li>
