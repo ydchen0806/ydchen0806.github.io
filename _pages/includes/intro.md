@@ -4,7 +4,7 @@ I am [**Yinda Chen (陈胤达)**](https://ydchen0806.github.io/), a Ph.D. candid
 
 - 👀 My research develops **predictive multimodal intelligence**: from **representation and predictive learning** to **world models** for embodied perception, future-state prediction, and action. Recent work in **Pelican-Unified** and its **Pelican-VLA 0.5** module connects unified multimodal representations, future imagination, and closed-loop robot control.
 
-- 🧭 I am advised by [Prof. Feng Wu (吴枫, CAE Academician, IEEE Fellow)](https://scholar.google.com/citations?user=5bInRDEAAAAJ&hl=en) and [Prof. Zhiwei Xiong (熊志伟)](https://scholar.google.com/citations?user=Snl0HPEAAAAJ&hl=en) at **USTC**, and co-supervised by [Prof. Xiaoou Tang (汤晓鸥, IEEE Fellow)](https://scholar.google.com/citations?user=qpBtpGsAAAAJ&hl=en) at the **Shanghai AI Lab**.
+- 🧭 I am advised by [Prof. Feng Wu (吴枫, CAE Academician, IEEE Fellow)](https://scholar.google.com/citations?user=5bInRDEAAAAJ&hl=en) and [Prof. Zhiwei Xiong (熊志伟)](https://scholar.google.com/citations?user=Snl0HPEAAAAJ&hl=en) at **USTC**, and co-supervised by [Prof. Xiaoou Tang (汤晓鸥, IEEE Fellow)](https://scholar.google.com/citations?user=qpBtpGsAAAAJ&hl=en) at the **Shanghai AI Lab**. I also work closely with [Prof. Ruobing Zhang (张若冰)](https://hr.fudan.edu.cn/97/10/c15369a759568/page.htm) at **Fudan University** as my **research mentor in connectomics and neuroscience**.
 
 <details class="about-details">
 <summary>More about my background and experience</summary>
