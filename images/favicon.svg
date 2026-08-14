@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">Yinda Chen academic favicon</title>
+  <desc id="desc">A white graduation cap on a deep blue circular badge.</desc>
+  <circle cx="256" cy="256" r="236" fill="#102A43"/>
+  <circle cx="256" cy="256" r="222" fill="none" stroke="#2CB1BC" stroke-width="12"/>
+  <path fill="#FFFFFF" d="M82 217.5 256 126l174 91.5L256 309 82 217.5Z"/>
+  <path fill="#FFFFFF" d="M151 271v62c0 38 47 70 105 70s105-32 105-70v-62l-105 55-105-55Z"/>
+  <path d="M430 218v112" fill="none" stroke="#2CB1BC" stroke-width="18" stroke-linecap="round"/>
+  <circle cx="430" cy="356" r="23" fill="#2CB1BC"/>
+</svg>
