@@ -104,29 +104,44 @@
   font-size: 0.70em;
   white-space: nowrap;
 }
-#hobbies-section .clustrmaps-wrap {
+#hobbies-section .visitor-map-area {
   width: 100%;
-  min-height: 230px;
   overflow: hidden;
-  border-radius: 6px;
+  border: 1px solid #f0f1f3;
+  border-radius: 7px;
   background: #fff;
+}
+#hobbies-section .clustrmaps-live {
+  width: 100%;
+  overflow: hidden;
   text-align: center;
 }
-#hobbies-section .clustrmaps-wrap > div,
-#hobbies-section .clustrmaps-map,
-#hobbies-section .clustrmaps-map-container,
-#hobbies-section .clustrmaps-wrap canvas,
-#hobbies-section .clustrmaps-wrap iframe {
+#hobbies-section .clustrmaps-live > div,
+#hobbies-section .clustrmaps-live .clustrmaps-map,
+#hobbies-section .clustrmaps-live .clustrmaps-map-container,
+#hobbies-section .clustrmaps-live canvas,
+#hobbies-section .clustrmaps-live iframe,
+#hobbies-section .clustrmaps-live img,
+#hobbies-section .clustrmaps-live svg {
   max-width: 100% !important;
 }
+#hobbies-section .visitor-fallback {
+  display: block;
+  text-align: center;
+  background: #fff;
+}
+#hobbies-section .visitor-fallback img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: 700px;
+  margin: 0 auto;
+}
 #hobbies-section .visitor-foot {
-  display: flex;
-  justify-content: space-between;
-  gap: 12px;
-  flex-wrap: wrap;
-  margin: 7px 2px 0;
-  color: #9aa0a8;
-  font-size: 0.68em;
+  margin: 6px 2px 0;
+  text-align: right;
+  color: #a2a8b0;
+  font-size: 0.67em;
   line-height: 1.5;
 }
 @media (max-width: 560px) {
@@ -139,16 +154,6 @@
   #hobbies-section .visitor-subtitle {
     display: block;
     margin: 2px 0 0;
-  }
-  #hobbies-section .clustrmaps-wrap {
-    min-height: 180px;
-  }
-  #hobbies-section .visitor-foot {
-    display: block;
-  }
-  #hobbies-section .visitor-foot span:last-child {
-    display: block;
-    margin-top: 2px;
   }
 }
 </style>
@@ -208,20 +213,48 @@
       <span class="visitor-heading">Visitors worldwide</span>
       <span class="visitor-subtitle">page views · countries · recent locations</span>
     </div>
-    <span class="visitor-since">historical tracker · since 2025</span>
+    <span class="visitor-since">tracking since 2025</span>
   </div>
 
-  <div class="clustrmaps-wrap">
-    <script type="text/javascript" id="clustrmaps" src="https://clustrmaps.com/map_v2.js?d=-6dpgBBQ6VS019wttjE8HshiwnZUQM6hxMNnvZM-u6c&cl=ffffff&w=a&t=n"></script>
-    <noscript>
-      <img src="https://s11.flagcounter.com/map/ydchen0806/size_l/txt_777777/border_FFFFFF/pageviews_0/viewers_0/flags_1/" alt="Visitor locations" style="max-width:100%;height:auto;"/>
-    </noscript>
+  <div class="visitor-map-area">
+    <div id="clustrmaps-live" class="clustrmaps-live">
+      <script type="text/javascript" id="clustrmaps" src="https://cdn.clustrmaps.com/map_v2.js?d=-6dpgBBQ6VS019wttjE8HshiwnZUQM6hxMNnvZM-u6c&cl=ffffff&w=a&t=n"></script>
+    </div>
+
+    <div id="visitor-fallback" class="visitor-fallback">
+      <img src="https://s11.flagcounter.com/map/ydchen0806/size_xl/txt_777777/border_FFFFFF/pageviews_0/viewers_0/flags_1/" alt="Visitor locations" decoding="async"/>
+    </div>
   </div>
 
-  <div class="visitor-foot">
-    <span>Recent visits are highlighted directly on the map.</span>
-    <span>Uses the homepage's earlier visitor tracker rather than the newer partial counter.</span>
-  </div>
+  <div class="visitor-foot">recent locations · historical tracker</div>
 </div>
+
+<script>
+(function () {
+  var live = document.getElementById('clustrmaps-live');
+  var fallback = document.getElementById('visitor-fallback');
+  if (!live || !fallback) return;
+
+  var tries = 0;
+  var timer = window.setInterval(function () {
+    tries += 1;
+    var rendered = live.querySelector('.clustrmaps-map, .clustrmaps-map-container, canvas, iframe, img, svg, object');
+    if (rendered && rendered.getBoundingClientRect().width > 40) {
+      fallback.style.display = 'none';
+      window.clearInterval(timer);
+      return;
+    }
+    if (tries >= 16) {
+      live.style.display = 'none';
+      fallback.style.display = 'block';
+      window.clearInterval(timer);
+    }
+  }, 250);
+})();
+</script>
+
+<noscript>
+  <style>#visitor-fallback{display:block!important}</style>
+</noscript>
 
 </div>
