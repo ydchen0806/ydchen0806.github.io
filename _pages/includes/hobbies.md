@@ -74,86 +74,36 @@
 }
 
 #hobbies-section .visitor-panel {
-  max-width: 720px;
+  max-width: 660px;
   margin: 0.8em auto 0;
-  padding: 12px 14px 10px;
-  border: 1px solid #e8eaed;
-  border-radius: 10px;
+  padding: 8px 8px 6px;
+  border: 1px solid #eceff2;
+  border-radius: 8px;
   background: #fff;
 }
-#hobbies-section .visitor-head {
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
-  gap: 12px;
-  margin: 0 2px 8px;
-}
-#hobbies-section .visitor-heading {
-  color: #444b55;
-  font-size: 0.88em;
-  font-weight: 600;
-}
-#hobbies-section .visitor-subtitle {
-  margin-left: 6px;
-  color: #9aa0a8;
-  font-size: 0.72em;
-  font-weight: 400;
-}
-#hobbies-section .visitor-since {
-  color: #a2a8b0;
-  font-size: 0.70em;
-  white-space: nowrap;
-}
-#hobbies-section .visitor-map-area {
-  width: 100%;
+#hobbies-section .visitor-map-frame {
   overflow: hidden;
-  border: 1px solid #f0f1f3;
-  border-radius: 7px;
+  border-radius: 5px;
   background: #fff;
-}
-#hobbies-section .clustrmaps-live {
-  width: 100%;
-  overflow: hidden;
   text-align: center;
 }
-#hobbies-section .clustrmaps-live > div,
-#hobbies-section .clustrmaps-live .clustrmaps-map,
-#hobbies-section .clustrmaps-live .clustrmaps-map-container,
-#hobbies-section .clustrmaps-live canvas,
-#hobbies-section .clustrmaps-live iframe,
-#hobbies-section .clustrmaps-live img,
-#hobbies-section .clustrmaps-live svg {
-  max-width: 100% !important;
-}
-#hobbies-section .visitor-fallback {
-  display: block;
-  text-align: center;
-  background: #fff;
-}
-#hobbies-section .visitor-fallback img {
+#hobbies-section .visitor-map-frame img {
   display: block;
   width: 100%;
   height: auto;
-  max-width: 700px;
+  max-width: 640px;
   margin: 0 auto;
 }
 #hobbies-section .visitor-foot {
-  margin: 6px 2px 0;
+  margin: 5px 3px 0;
   text-align: right;
-  color: #a2a8b0;
-  font-size: 0.67em;
-  line-height: 1.5;
+  color: #a4a9b0;
+  font-size: 0.66em;
+  line-height: 1.4;
 }
 @media (max-width: 560px) {
   #hobbies-section .visitor-panel {
-    padding: 10px 10px 8px;
-  }
-  #hobbies-section .visitor-head {
-    align-items: flex-start;
-  }
-  #hobbies-section .visitor-subtitle {
-    display: block;
-    margin: 2px 0 0;
+    padding: 6px 6px 5px;
   }
 }
 </style>
@@ -208,53 +158,14 @@
 <h1>Visitor Map</h1>
 
 <div class="visitor-panel">
-  <div class="visitor-head">
-    <div>
-      <span class="visitor-heading">Visitors worldwide</span>
-      <span class="visitor-subtitle">page views · countries · recent locations</span>
-    </div>
-    <span class="visitor-since">tracking since 2025</span>
+  <div class="visitor-map-frame">
+    <img
+      src="https://s11.flagcounter.com/map/ydchen0806/size_l/txt_8A8F98/border_FFFFFF/pageviews_0/viewers_3/flags_1/"
+      alt="Worldwide visitor distribution"
+      decoding="async"
+    />
   </div>
-
-  <div class="visitor-map-area">
-    <div id="clustrmaps-live" class="clustrmaps-live">
-      <script type="text/javascript" id="clustrmaps" src="https://cdn.clustrmaps.com/map_v2.js?d=-6dpgBBQ6VS019wttjE8HshiwnZUQM6hxMNnvZM-u6c&cl=ffffff&w=a&t=n"></script>
-    </div>
-
-    <div id="visitor-fallback" class="visitor-fallback">
-      <img src="https://s11.flagcounter.com/map/ydchen0806/size_xl/txt_777777/border_FFFFFF/pageviews_0/viewers_0/flags_1/" alt="Visitor locations" decoding="async"/>
-    </div>
-  </div>
-
-  <div class="visitor-foot">recent locations · historical tracker</div>
+  <div class="visitor-foot">visitor distribution</div>
 </div>
-
-<script>
-(function () {
-  var live = document.getElementById('clustrmaps-live');
-  var fallback = document.getElementById('visitor-fallback');
-  if (!live || !fallback) return;
-
-  var tries = 0;
-  var timer = window.setInterval(function () {
-    tries += 1;
-    var rendered = live.querySelector('.clustrmaps-map, .clustrmaps-map-container, canvas, iframe, img, svg, object');
-    if (rendered && rendered.getBoundingClientRect().width > 40) {
-      fallback.style.display = 'none';
-      window.clearInterval(timer);
-      return;
-    }
-    if (tries >= 16) {
-      live.style.display = 'none';
-      fallback.style.display = 'block';
-      window.clearInterval(timer);
-    }
-  }, 250);
-})();
-</script>
-
-<noscript>
-  <style>#visitor-fallback{display:block!important}</style>
-</noscript>
 
 </div>
