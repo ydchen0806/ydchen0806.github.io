@@ -73,31 +73,136 @@
   font-style: italic;
 }
 
-#hobbies-section .visitor-map {
-  text-align: center;
-  margin: 1em auto;
-  max-width: 640px;
+#hobbies-section .visitor-shell {
+  max-width: 760px;
+  margin: 1.1em auto 0;
+  padding: 1px;
+  border-radius: 16px;
+  background: linear-gradient(135deg, rgba(59,130,246,.35), rgba(139,92,246,.25), rgba(16,185,129,.24));
+  box-shadow: 0 10px 32px rgba(15, 23, 42, 0.08);
 }
-#hobbies-section .visitor-map-card {
-  padding: 8px;
-  border: 1px solid #e6e8eb;
-  border-radius: 8px;
+#hobbies-section .visitor-panel {
+  border-radius: 15px;
+  background: linear-gradient(180deg, #ffffff 0%, #fbfcff 100%);
+  padding: 18px 18px 14px;
+}
+#hobbies-section .visitor-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+#hobbies-section .visitor-title-wrap {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 0;
+}
+#hobbies-section .visitor-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 11px;
+  background: linear-gradient(135deg, #eff6ff, #f5f3ff);
+  font-size: 21px;
+  flex: 0 0 auto;
+}
+#hobbies-section .visitor-heading {
+  font-weight: 700;
+  color: #172033;
+  font-size: 1.02em;
+  line-height: 1.25;
+}
+#hobbies-section .visitor-subtitle {
+  margin-top: 2px;
+  color: #7a8498;
+  font-size: 0.78em;
+}
+#hobbies-section .visitor-live {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 9px;
+  border-radius: 999px;
+  background: #ecfdf3;
+  color: #247a4a;
+  font-size: 0.74em;
+  font-weight: 600;
+  white-space: nowrap;
+}
+#hobbies-section .visitor-live::before {
+  content: "";
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #22c55e;
+  box-shadow: 0 0 0 3px rgba(34,197,94,.12);
+}
+#hobbies-section .visitor-map-frame {
+  overflow: hidden;
+  border: 1px solid #eef0f4;
+  border-radius: 12px;
   background: #fff;
-  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
 }
-#hobbies-section .visitor-map-card img {
+#hobbies-section .visitor-map-frame a {
+  display: block;
+  text-decoration: none;
+}
+#hobbies-section .visitor-map-frame img {
   display: block;
   width: 100%;
   height: auto;
-  border-radius: 6px;
+  min-height: 180px;
+  object-fit: contain;
+  background: #fff;
 }
-#hobbies-section .clustrmaps-globe {
-  width: 300px;
-  height: 300px;
+#hobbies-section .visitor-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 11px;
+  color: #778195;
+  font-size: 0.76em;
+  line-height: 1.5;
 }
-#hobbies-section .clustrmaps-globe canvas {
-  width: 100% !important;
-  height: 100% !important;
+#hobbies-section .visitor-meta a {
+  color: #4f63b8;
+  text-decoration: none;
+  font-weight: 600;
+}
+#hobbies-section .visitor-meta a:hover {
+  text-decoration: underline;
+}
+#hobbies-section .visitor-chips {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+#hobbies-section .visitor-chip {
+  padding: 3px 8px;
+  border-radius: 999px;
+  background: #f4f6fa;
+  color: #687386;
+  border: 1px solid #edf0f5;
+}
+@media (max-width: 560px) {
+  #hobbies-section .visitor-panel {
+    padding: 14px 12px 12px;
+  }
+  #hobbies-section .visitor-head {
+    align-items: flex-start;
+  }
+  #hobbies-section .visitor-live {
+    padding: 4px 7px;
+  }
+  #hobbies-section .visitor-map-frame img {
+    min-height: 130px;
+  }
 }
 </style>
 
@@ -150,13 +255,37 @@
 
 <h1>Visitor Map 🌍</h1>
 
-<div class="visitor-map visitor-map-card">
-  <a href="https://flagcounter.com/" target="_blank" rel="noopener">
-    <img src="https://s11.flagcounter.com/map/ydchen0806/size_l/txt_333333/border_F2F2F2/pageviews_0/viewers_0/flags_0/" alt="Visitor map powered by Flag Counter" loading="lazy"/>
-  </a>
+<div class="visitor-shell">
+  <div class="visitor-panel">
+    <div class="visitor-head">
+      <div class="visitor-title-wrap">
+        <span class="visitor-icon">🌐</span>
+        <div>
+          <div class="visitor-heading">Visitors Worldwide</div>
+          <div class="visitor-subtitle">Live geographic traffic from this homepage</div>
+        </div>
+      </div>
+      <span class="visitor-live">LIVE</span>
+    </div>
+
+    <div class="visitor-map-frame">
+      <a href="https://info.flagcounter.com/ydchen0806" target="_blank" rel="noopener noreferrer" aria-label="Open detailed visitor statistics">
+        <img src="https://s11.flagcounter.com/map/ydchen0806/size_xl/txt_475467/border_F2F4F7/pageviews_1/viewers_Global+Visitors/flags_1/" alt="Worldwide visitor map with pageview and country statistics" decoding="async"/>
+      </a>
+    </div>
+
+    <div class="visitor-meta">
+      <div class="visitor-chips">
+        <span class="visitor-chip">Page views</span>
+        <span class="visitor-chip">Countries</span>
+        <span class="visitor-chip">Geo statistics</span>
+      </div>
+      <a href="https://info.flagcounter.com/ydchen0806" target="_blank" rel="noopener noreferrer">Recent visitors & detailed stats →</a>
+    </div>
+  </div>
 </div>
 
-<!-- ClustrMaps visitor globe. Restore this block when clustrmaps.com is healthy again.
+<!-- Legacy ClustrMaps widget kept for reference only.
 <div class="visitor-map clustrmaps-globe">
   <script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=-6dpgBBQ6VS019wttjE8HshiwnZUQM6hxMNnvZM-u6c"></script>
 </div>
