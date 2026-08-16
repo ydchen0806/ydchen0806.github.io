@@ -73,45 +73,82 @@
   font-style: italic;
 }
 
-#hobbies-section .visitor-block {
-  max-width: 700px;
+#hobbies-section .visitor-panel {
+  max-width: 720px;
   margin: 0.8em auto 0;
-}
-#hobbies-section .visitor-map-frame {
-  overflow: hidden;
-  border: 1px solid #eceff2;
-  border-radius: 8px;
+  padding: 12px 14px 10px;
+  border: 1px solid #e8eaed;
+  border-radius: 10px;
   background: #fff;
 }
-#hobbies-section .visitor-map-frame a {
-  display: block;
-  text-decoration: none;
+#hobbies-section .visitor-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  margin: 0 2px 8px;
 }
-#hobbies-section .visitor-map-frame img {
-  display: block;
-  width: 100%;
-  height: auto;
-  min-height: 150px;
-  object-fit: contain;
-  background: #fff;
+#hobbies-section .visitor-heading {
+  color: #444b55;
+  font-size: 0.88em;
+  font-weight: 600;
 }
-#hobbies-section .visitor-note {
-  margin-top: 6px;
-  text-align: right;
+#hobbies-section .visitor-subtitle {
+  margin-left: 6px;
+  color: #9aa0a8;
   font-size: 0.72em;
-  color: #9aa1aa;
+  font-weight: 400;
 }
-#hobbies-section .visitor-note a {
-  color: inherit;
-  text-decoration: none;
+#hobbies-section .visitor-since {
+  color: #a2a8b0;
+  font-size: 0.70em;
+  white-space: nowrap;
 }
-#hobbies-section .visitor-note a:hover {
-  color: #666;
-  text-decoration: underline;
+#hobbies-section .clustrmaps-wrap {
+  width: 100%;
+  min-height: 230px;
+  overflow: hidden;
+  border-radius: 6px;
+  background: #fff;
+  text-align: center;
+}
+#hobbies-section .clustrmaps-wrap > div,
+#hobbies-section .clustrmaps-map,
+#hobbies-section .clustrmaps-map-container,
+#hobbies-section .clustrmaps-wrap canvas,
+#hobbies-section .clustrmaps-wrap iframe {
+  max-width: 100% !important;
+}
+#hobbies-section .visitor-foot {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin: 7px 2px 0;
+  color: #9aa0a8;
+  font-size: 0.68em;
+  line-height: 1.5;
 }
 @media (max-width: 560px) {
-  #hobbies-section .visitor-map-frame img {
-    min-height: 120px;
+  #hobbies-section .visitor-panel {
+    padding: 10px 10px 8px;
+  }
+  #hobbies-section .visitor-head {
+    align-items: flex-start;
+  }
+  #hobbies-section .visitor-subtitle {
+    display: block;
+    margin: 2px 0 0;
+  }
+  #hobbies-section .clustrmaps-wrap {
+    min-height: 180px;
+  }
+  #hobbies-section .visitor-foot {
+    display: block;
+  }
+  #hobbies-section .visitor-foot span:last-child {
+    display: block;
+    margin-top: 2px;
   }
 }
 </style>
@@ -165,21 +202,26 @@
 
 <h1>Visitor Map</h1>
 
-<div class="visitor-block">
-  <div class="visitor-map-frame">
-    <a href="https://info.flagcounter.com/ydchen0806" target="_blank" rel="noopener noreferrer" aria-label="Open visitor statistics">
-      <img src="https://s11.flagcounter.com/map/ydchen0806/size_xl/txt_555555/border_FFFFFF/pageviews_1/viewers_0/flags_1/" alt="Visitor map with pageview and country statistics" decoding="async"/>
-    </a>
+<div class="visitor-panel">
+  <div class="visitor-head">
+    <div>
+      <span class="visitor-heading">Visitors worldwide</span>
+      <span class="visitor-subtitle">page views · countries · recent locations</span>
+    </div>
+    <span class="visitor-since">historical tracker · since 2025</span>
   </div>
-  <div class="visitor-note">
-    <a href="https://info.flagcounter.com/ydchen0806" target="_blank" rel="noopener noreferrer">recent visitors</a>
-  </div>
-</div>
 
-<!-- Legacy ClustrMaps widget kept for reference only.
-<div class="visitor-map clustrmaps-globe">
-  <script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=-6dpgBBQ6VS019wttjE8HshiwnZUQM6hxMNnvZM-u6c"></script>
+  <div class="clustrmaps-wrap">
+    <script type="text/javascript" id="clustrmaps" src="https://clustrmaps.com/map_v2.js?d=-6dpgBBQ6VS019wttjE8HshiwnZUQM6hxMNnvZM-u6c&cl=ffffff&w=a&t=n"></script>
+    <noscript>
+      <img src="https://s11.flagcounter.com/map/ydchen0806/size_l/txt_777777/border_FFFFFF/pageviews_0/viewers_0/flags_1/" alt="Visitor locations" style="max-width:100%;height:auto;"/>
+    </noscript>
+  </div>
+
+  <div class="visitor-foot">
+    <span>Recent visits are highlighted directly on the map.</span>
+    <span>Uses the homepage's earlier visitor tracker rather than the newer partial counter.</span>
+  </div>
 </div>
--->
 
 </div>
