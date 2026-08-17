@@ -345,17 +345,10 @@
     "citations": 0,
     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=hCvlj5cAAAAJ:bEWYMUwI8FkC",
     "is_first_author": false,
-    "venue": {
-      "shortcut": "PR",
-      "full_name": "Pattern Recognition",
-      "type": "journal",
-      "ccf": null,
-      "sci": "Q1",
-      "impact_factor": 8.0
-    },
+    "venue": null,
     "is_high_cited": false,
     "is_recent": true,
-    "is_qualified": true,
+    "is_qualified": null,
     "should_include": false
   },
   {
