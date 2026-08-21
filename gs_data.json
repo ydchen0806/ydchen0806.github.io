@@ -1,7 +1,7 @@
 {
   "name": "Yinda Chen",
-  "citedby": 708,
-  "citedby5y": 708,
+  "citedby": 709,
+  "citedby5y": 709,
   "hindex": 14,
   "hindex5y": 14,
   "i10index": 18,
@@ -32,10 +32,10 @@
     },
     {
       "year": 2026,
-      "citations": 221
+      "citations": 222
     }
   ],
-  "updated": "2026-08-20 02:10:13.740190",
+  "updated": "2026-08-21 02:17:16.748195",
   "source": "serpapi",
   "publications": {},
   "first_author_papers": [
@@ -126,6 +126,14 @@
       "citations": 6,
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&citation_for_view=hCvlj5cAAAAJ:u-x6o8ySG0sC",
       "citation_id": "hCvlj5cAAAAJ:u-x6o8ySG0sC"
+    },
+    {
+      "title": "Spatial synaptic regularization stabilizes learning across biological and artificial neural networks",
+      "authors": "H Zhu*, Y Chen*, P Zhao, Z Xiong, H Peng, F Wu, R Zhang",
+      "year": "2026",
+      "citations": 0,
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&citation_for_view=hCvlj5cAAAAJ:fPk4N6BV_jEC",
+      "citation_id": "hCvlj5cAAAAJ:fPk4N6BV_jEC"
     }
   ]
 }

@@ -41,7 +41,7 @@
   },
   {
     "title": "Spatial synaptic regularization stabilizes learning across biological and artificial neural networks",
-    "authors": "H Zhu, Y Chen, P Zhao, Z Xiong, H Peng, F Wu, R Zhang",
+    "authors": "H Zhu*, Y Chen*, P Zhao, Z Xiong, H Peng, F Wu, R Zhang",
     "year": "2026",
     "citations": 0,
     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=hCvlj5cAAAAJ:fPk4N6BV_jEC",
@@ -202,7 +202,7 @@
     "title": "Reasoning on the Manifold: Bidirectional Consistency for Self-Verification in Diffusion Language Models",
     "authors": "J Ruan, X Gao, Y Chen, H Zeng, L Du, G Li, J Fu, J Pu",
     "year": "2026",
-    "citations": 2,
+    "citations": 3,
     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=hCvlj5cAAAAJ:2P1L_qKh6hAC",
     "is_first_author": false,
     "venue": {
