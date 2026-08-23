@@ -1,5 +1,25 @@
 [
   {
+    "title": "VLA-Trace: Diagnosing Vision-Language-Action Models through Representation and Behavior Tracing",
+    "authors": "H Shi, X Ren, Y Zhang, Q Zhang, J Hu, H Shan, H Dong, J Lu, Y Chen, ...",
+    "year": "2026",
+    "citations": 1,
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=hCvlj5cAAAAJ:rO6llkc54NcC",
+    "is_first_author": false,
+    "venue": {
+      "shortcut": "PR",
+      "full_name": "Pattern Recognition",
+      "type": "journal",
+      "ccf": null,
+      "sci": "Q1",
+      "impact_factor": 8.0
+    },
+    "is_high_cited": false,
+    "is_recent": true,
+    "is_qualified": true,
+    "should_include": false
+  },
+  {
     "title": "Connectome-scale self-supervised representation learning reveals neuronal organization beyond canonical labels",
     "authors": "T Shi, Y Chen, C Liu, R Zhang",
     "year": "2026",
@@ -124,26 +144,6 @@
     "is_recent": true,
     "is_qualified": true,
     "should_include": true
-  },
-  {
-    "title": "VLA-Trace: Diagnosing Vision-Language-Action Models through Representation and Behavior Tracing",
-    "authors": "H Shi, X Ren, Y Zhang, Q Zhang, J Hu, H Shan, H Dong, J Lu, Y Chen, ...",
-    "year": "2026",
-    "citations": 1,
-    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=hCvlj5cAAAAJ:rO6llkc54NcC",
-    "is_first_author": false,
-    "venue": {
-      "shortcut": "PR",
-      "full_name": "Pattern Recognition",
-      "type": "journal",
-      "ccf": null,
-      "sci": "Q1",
-      "impact_factor": 8.0
-    },
-    "is_high_cited": false,
-    "is_recent": true,
-    "is_qualified": true,
-    "should_include": false
   },
   {
     "title": "Pelican-Unify 1.0: A Unified Embodied Intelligence Model for Understanding, Reasoning, Imagination and Action",
