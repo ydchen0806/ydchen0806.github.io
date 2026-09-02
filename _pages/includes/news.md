@@ -185,7 +185,7 @@
 
 <li class="news-item">
   <span class="news-date">2024.12</span>
-  <span class="news-text">🏅 Successfully selected as the principal investigator of the Ph.D. Natural Science Foundation Project.</span>
+  <span class="news-text">🏅 Successfully selected as the principal investigator of the <a href="/docs/国自然.png"><strong>Ph.D. Natural Science Foundation Project</strong></a>.</span>
 </li>
 
 <li class="news-item">
