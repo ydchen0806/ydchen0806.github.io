@@ -75,6 +75,11 @@
 
 <li class="news-item">
   <span class="news-date">2026.08</span>
+  <span class="news-text">🤖 Proud to have contributed to <strong>Tien Kung</strong> — congratulations to our team on the <a href="https://kfqgw.beijing.gov.cn/ywdt/gzdt/202608/t20260828_4841152.html"><strong>record-breaking performance</strong></a> at the World Humanoid Robot Games in Beijing!</span>
+</li>
+
+<li class="news-item">
+  <span class="news-date">2026.08</span>
   <span class="news-text">📄 One <a href="https://arxiv.org/pdf/2605.30117">paper</a> was accepted by <strong>EMNLP 2026 Main Conference</strong>.</span>
 </li>
 
