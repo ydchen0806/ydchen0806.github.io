@@ -75,7 +75,7 @@
 
 <li class="news-item">
   <span class="news-date">2026.08</span>
-  <span class="news-text">🤖 Proud to have contributed to <strong>Tien Kung</strong> — congratulations to our team on the <a href="https://kfqgw.beijing.gov.cn/ywdt/gzdt/202608/t20260828_4841152.html"><strong>record-breaking performance</strong></a> at the World Humanoid Robot Games in Beijing!</span>
+  <span class="news-text">🤖 Proud to have contributed to <strong>Tien Kung</strong> — congratulations to our team on the <a href="https://kfqgw.beijing.gov.cn/ywdt/gzdt/202608/t20260828_4841152.html"><strong>record-breaking performance</strong></a> at the <a href="https://www.news.cn/20260813/910a87f73c0f40d1b2aaf1fd12fe3809/c.html"><strong>World Humanoid Robot Games</strong></a> in Beijing!</span>
 </li>
 
 <li class="news-item">
