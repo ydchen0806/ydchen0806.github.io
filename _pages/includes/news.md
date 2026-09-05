@@ -83,10 +83,24 @@
   <span class="news-text">🤖 Proud to have contributed to <strong>Tien Kung</strong> — congratulations to our team on the <a href="https://kfqgw.beijing.gov.cn/ywdt/gzdt/202608/t20260828_4841152.html"><strong>record-breaking performance</strong></a> at the <a href="https://www.news.cn/20260813/910a87f73c0f40d1b2aaf1fd12fe3809/c.html"><strong>World Humanoid Robot Games</strong></a> in Beijing!</span>
 </li>
 
+<!--
+<li class="news-item">
+  <span class="news-date">2026.08</span>
+  <span class="news-text">📄 One <a href="https://arxiv.org/pdf/2605.30117">paper</a> was accepted by <strong>EMNLP 2026 Main Conference</strong>.</span>
+</li>
+-->
+
 <li class="news-item">
   <span class="news-date">2026.07</span>
   <span class="news-text">🤖 <a href="https://arxiv.org/abs/2607.06655"><strong>Pelican-VLA 0.5: Attending Before Acting Benefits Generalization</strong></a> technical report released. As the VLA component within Pelican-Unified, it uses learnable bottleneck tokens to connect task-relevant perception, future-frame generation, and action generalization.</span>
 </li>
+
+<!--
+<li class="news-item">
+  <span class="news-date">2026.06</span>
+  <span class="news-text">📄 One <a href="https://ieeexplore.ieee.org/document/11557391">paper</a> was accepted by <strong>TCSVT</strong> (IEEE Transactions on Circuits and Systems for Video Technology).</span>
+</li>
+-->
 
 <li class="news-item">
   <span class="news-date">2026.05</span>
@@ -115,8 +129,20 @@
 
 <li class="news-item">
   <span class="news-date">2026.01</span>
+  <span class="news-text">📄 Two papers were accepted by <strong>ICLR 2026</strong>.</span>
+</li>
+
+<li class="news-item">
+  <span class="news-date">2026.01</span>
   <span class="news-text">✈️ Traveling to Singapore for <strong>AAAI 2026</strong>. Welcome friends interested in embodied intelligence, world models, and medical imaging to connect!</span>
 </li>
+
+<!--
+<li class="news-item">
+  <span class="news-date">2026.01</span>
+  <span class="news-text">📄 One paper on medical image registration was accepted by <strong>ICASSP 2026</strong>. See you in Barcelona, Spain in May!</span>
+</li>
+-->
 
 </ul>
 
@@ -133,10 +159,39 @@
   <span class="news-text">🎉 My advisor Prof. Feng Wu (吴枫) was elected as an <a href="https://www.cae.cn/cae/html/main/col1/2025-11/21/20251121085534713797145_1.html">Academician of the Chinese Academy of Engineering</a> (CAE). A role model forever.</span>
 </li>
 
+<!--
+<li class="news-item">
+  <span class="news-date">2025.11</span>
+  <span class="news-text">📄 One paper was accepted by <strong>AAAI 2026</strong>.</span>
+</li>
+
+<li class="news-item">
+  <span class="news-date">2025.11</span>
+  <span class="news-text">📄 One <a href="https://ieeexplore.ieee.org/document/11225906">paper</a> was accepted by <strong>TCSVT</strong> (IEEE Transactions on Circuits and Systems for Video Technology).</span>
+</li>
+
+<li class="news-item">
+  <span class="news-date">2025.10</span>
+  <span class="news-text">📄 One <a href="https://ieeexplore.ieee.org/document/11205280">paper</a> was accepted by <strong>JBHI</strong> (IEEE Journal of Biomedical and Health Informatics).</span>
+</li>
+-->
+
 <li class="news-item">
   <span class="news-date">2025.08</span>
   <span class="news-text">💼 Started as Qingyun intern at <strong>Tencent IEG</strong>, working on game video scene understanding.</span>
 </li>
+
+<li class="news-item">
+  <span class="news-date">2025.06</span>
+  <span class="news-text">📄 One <a href="https://arxiv.org/pdf/2405.16847">paper</a> was accepted by <strong>ICCV 2025</strong>.</span>
+</li>
+
+<!--
+<li class="news-item">
+  <span class="news-date">2025.05</span>
+  <span class="news-text">📄 One <a href="https://arxiv.org/pdf/2412.19080">paper</a> was accepted by <strong>ACL 2025 Findings</strong>.</span>
+</li>
+-->
 
 <li class="news-item">
   <span class="news-date">2025.05</span>
@@ -153,9 +208,19 @@
   <span class="news-text">🏅 Selected as PI of the <a href="/docs/国自然.png"><strong>NSFC Young Students Basic Research Program (Doctoral Student)</strong></a> (<strong>国家自然科学基金青年学生基础研究项目（博士研究生）</strong>), the sole awardee from USTC's School of Information Science and Technology that year.</span>
 </li>
 
+<li class="news-item">
+  <span class="news-date">2024.10</span>
+  <span class="news-text">📄 One <a href="https://arxiv.org/pdf/2412.19080">paper</a> was accepted by <strong>NeurIPS 2024</strong>.</span>
+</li>
+
+<li class="news-item">
+  <span class="news-date">2022.10</span>
+  <span class="news-text">🏆 Awarded the <a href="https://iat.ustc.edu.cn/iat/x198/20221017/5920.html"><strong>Graduate National Scholarship (研究生国家奖学金)</strong></a> at USTC.</span>
+</li>
+
 </ul>
 </div>
 
-<button class="news-toggle" id="newsToggle" onclick="var m=document.getElementById('newsMore');var b=document.getElementById('newsToggle');if(m.classList.contains('show')){m.classList.remove('show');b.textContent='▼ Show earlier news (6 more)'}else{m.classList.add('show');b.textContent='▲ Collapse'}">▼ Show earlier news (6 more)</button>
+<button class="news-toggle" id="newsToggle" onclick="var m=document.getElementById('newsMore');var b=document.getElementById('newsToggle');if(m.classList.contains('show')){m.classList.remove('show');b.textContent='▼ Show earlier news (9 more)'}else{m.classList.add('show');b.textContent='▲ Collapse'}">▼ Show earlier news (9 more)</button>
 
 </div>
