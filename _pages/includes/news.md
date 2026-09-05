@@ -112,10 +112,12 @@
   <span class="news-text">📄 As a core contributor (ranked second), contributed to <a href="https://arxiv.org/pdf/2605.15153.pdf"><strong>Pelican-Unified 1.0</strong></a>: <strong>unifying understanding, reasoning, imagination, and action</strong> (统一理解、推理、想象与动作).</span>
 </li>
 
+<!-- Non-first-author paper acceptances are kept in source but hidden.
 <li class="news-item">
   <span class="news-date">2026.05</span>
   <span class="news-text">📄 Three papers were accepted by <strong>ICML 2026</strong>. See you in Seoul, South Korea!</span>
 </li>
+-->
 
 <li class="news-item">
   <span class="news-date">2026.04</span>
@@ -127,10 +129,12 @@
   <span class="news-text">🎓 Awarded the <a href="/docs/增华奖学金.jpg">Zenghua Scholarship (增华奖学金)</a> by USTC, a university-level scholarship.</span>
 </li>
 
+<!-- Non-first-author paper acceptances are kept in source but hidden.
 <li class="news-item">
   <span class="news-date">2026.01</span>
   <span class="news-text">📄 Two papers were accepted by <strong>ICLR 2026</strong>.</span>
 </li>
+-->
 
 <li class="news-item">
   <span class="news-date">2026.01</span>
