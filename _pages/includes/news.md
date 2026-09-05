@@ -75,7 +75,7 @@
 
 <li class="news-item">
   <span class="news-date">2026.09</span>
-  <span class="news-text">🏅 Selected for the <a href="https://rczx.cast.org.cn/sy/tzgg/art/2026/art_3c9cc64b5a914fa2b0e43e113ce66c39.html"><strong>2026 CAST Young Science and Technology Talent Cultivation Program</strong></a> (Doctoral Student Track).</span>
+  <span class="news-text">🏅 Selected for the <a href="https://rczx.cast.org.cn/sy/tzgg/art/2026/art_3c9cc64b5a914fa2b0e43e113ce66c39.html"><strong>2026 CAST Young Science and Technology Talent Cultivation Program</strong></a> (Doctoral Student Track; <strong>科协博士生托举项目</strong>), as one of only two awardees from USTC's School of Information Science and Technology this year.</span>
 </li>
 
 <li class="news-item">
@@ -190,7 +190,7 @@
 
 <li class="news-item">
   <span class="news-date">2024.12</span>
-  <span class="news-text">🏅 Successfully selected as the principal investigator of the <a href="/docs/国自然.png"><strong>Ph.D. Natural Science Foundation Project</strong></a>.</span>
+  <span class="news-text">🏅 Selected as PI of the <a href="/docs/国自然.png"><strong>NSFC Young Students Basic Research Program (Doctoral Student)</strong></a> (<strong>国家自然科学基金青年学生基础研究项目（博士研究生）</strong>), the sole awardee from USTC's School of Information Science and Technology that year.</span>
 </li>
 
 <li class="news-item">
