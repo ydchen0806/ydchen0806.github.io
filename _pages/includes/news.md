@@ -75,7 +75,7 @@
 
 <li class="news-item">
   <span class="news-date">2026.09</span>
-  <span class="news-text">🏅 Recommended by <strong>USTC</strong> for the <a href="https://rczx.cast.org.cn/sy/tzgg/art/2026/art_3c9cc64b5a914fa2b0e43e113ce66c39.html"><strong>2026 CAST Young Science and Technology Talent Cultivation Program</strong></a> (Doctoral Student Track; <strong>科协博士生托举项目</strong>).</span>
+  <span class="news-text">🏅 Recommended by <strong>USTC</strong> for the <a href="https://rczx.cast.org.cn/sy/tzgg/art/2026/art_3c9cc64b5a914fa2b0e43e113ce66c39.html"><strong>CAST Doctoral Student Talent Program (博士生青托)</strong></a>.</span>
 </li>
 
 <li class="news-item">
@@ -160,7 +160,7 @@
 
 <li class="news-item">
   <span class="news-date">2025.11</span>
-  <span class="news-text">🎉 My advisor Prof. Feng Wu (吴枫) was elected as an <a href="https://www.cae.cn/cae/html/main/col1/2025-11/21/20251121085534713797145_1.html">Academician of the Chinese Academy of Engineering</a> (CAE). A role model forever.</span>
+  <span class="news-text">🎉 My advisor Prof. Feng Wu (吴枫) was elected as an <a href="https://www.cae.cn/cae/html/main/col1/2025-11/21/20251121085534713797145_1.html"><strong>Academician of the Chinese Academy of Engineering</strong></a> (CAE). A role model forever.</span>
 </li>
 
 <!--
@@ -209,7 +209,7 @@
 
 <li class="news-item">
   <span class="news-date">2024.12</span>
-  <span class="news-text">🏅 Selected as PI of the <a href="/docs/国自然.png"><strong>NSFC Young Students Basic Research Program (Doctoral Student)</strong></a> (<strong>国家自然科学基金青年学生基础研究项目（博士研究生）</strong>), the sole awardee from USTC's School of Information Science and Technology that year.</span>
+  <span class="news-text">🏅 Selected as PI of the <a href="/docs/国自然.png"><strong>NSFC Doctoral Student Program (博士生国自然)</strong></a>.</span>
 </li>
 
 <li class="news-item">
