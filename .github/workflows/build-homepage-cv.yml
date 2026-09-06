@@ -1,0 +1,95 @@
+name: Build homepage CV PDFs
+
+on:
+  push:
+    paths:
+      - '.github/workflows/build-homepage-cv.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build-cv:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Reconstruct latest CV sources and assets
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p .github/cv/build
+
+          cat .github/cv/chunks/cn_* | base64 -d | gzip -dc > .github/cv/build/resume_CN.tex
+          cat .github/cv/chunks/en_* | base64 -d | gzip -dc > .github/cv/build/resume_EN.tex
+          base64 -d < .github/cv/resume.cls.gz.b64 | gzip -dc > .github/cv/build/resume.cls
+          base64 -d < .github/cv/zh_CN_fonts.sty.gz.b64 | gzip -dc > .github/cv/build/zh_CN_fonts.sty
+          base64 -d < .github/cv/linespacing_fix.sty.gz.b64 | gzip -dc > .github/cv/build/linespacing_fix.sty
+
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq poppler-utils imagemagick
+          rm -f /tmp/cvimg-*
+          pdfimages -all docs/cyd_resume_CN.pdf /tmp/cvimg
+
+          qr=''
+          photo=''
+          for f in /tmp/cvimg-*; do
+            [ -f "$f" ] || continue
+            dims=$(identify -format '%w %h' "$f" 2>/dev/null || true)
+            [ -n "$dims" ] || continue
+            read -r w h <<< "$dims"
+            diff=$(( w > h ? w-h : h-w ))
+            if [ "$diff" -le 30 ] && [ "$w" -ge 300 ]; then
+              qr="$f"
+            fi
+            if [ "$h" -gt "$w" ] && [ "$h" -ge 600 ]; then
+              photo="$f"
+            fi
+          done
+
+          test -n "$qr" || { echo 'Could not recover QR image from existing CV'; exit 1; }
+          test -n "$photo" || { echo 'Could not recover portrait from existing CV'; exit 1; }
+          cp "$qr" .github/cv/build/cydQRcode.jpeg
+          cp "$photo" .github/cv/build/cyd.jpg
+
+          echo 'Reconstructed source files:'
+          wc -c .github/cv/build/resume_CN.tex .github/cv/build/resume_EN.tex
+          identify .github/cv/build/cydQRcode.jpeg .github/cv/build/cyd.jpg
+
+      - name: Compile Chinese and English CVs with XeLaTeX
+        uses: xu-cheng/latex-action@v4
+        with:
+          root_file: |
+            resume_CN.tex
+            resume_EN.tex
+          working_directory: .github/cv/build
+          latexmk_use_xelatex: true
+
+      - name: Validate and install homepage PDFs
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -s .github/cv/build/resume_CN.pdf
+          test -s .github/cv/build/resume_EN.pdf
+          pdfinfo .github/cv/build/resume_CN.pdf | grep '^Pages:'
+          pdfinfo .github/cv/build/resume_EN.pdf | grep '^Pages:'
+          cp .github/cv/build/resume_CN.pdf docs/cyd_resume_CN.pdf
+          cp .github/cv/build/resume_EN.pdf docs/CYD_resume_EN.pdf
+
+      - name: Commit updated PDFs
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add docs/cyd_resume_CN.pdf docs/CYD_resume_EN.pdf
+          if git diff --cached --quiet; then
+            echo 'CV PDFs are already up to date.'
+          else
+            git commit -m 'Update homepage Chinese and English CV PDFs'
+            git push origin HEAD:main
+          fi
