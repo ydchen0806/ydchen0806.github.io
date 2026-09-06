@@ -1,0 +1,40 @@
+name: Patch concise CV highlights in News
+
+on:
+  push:
+    paths:
+      - '.github/workflows/patch-news-highlights.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  patch-news:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Update two concise News entries
+        shell: python
+        run: |
+          from pathlib import Path
+          p = Path('_pages/includes/news.md')
+          s = p.read_text(encoding='utf-8')
+          old_cast = '🏅 Recommended by <strong>USTC</strong> for the <a href="https://rczx.cast.org.cn/sy/tzgg/art/2026/art_3c9cc64b5a914fa2b0e43e113ce66c39.html"><strong>CAST Doctoral Student Talent Program (博士生青托)</strong></a>.'
+          new_cast = '🏅 Recommended by <strong>USTC</strong> for the <a href="https://rczx.cast.org.cn/sy/tzgg/art/2026/art_3c9cc64b5a914fa2b0e43e113ce66c39.html"><strong>CAST Doctoral Student Talent Program (博士生青托)</strong></a>, as <strong>one of two school-recommended candidates</strong> from the School of Information Science and Technology this year.'
+          old_nsfc = '🏅 Selected as PI of the <a href="/docs/国自然.png"><strong>NSFC Doctoral Student Program (博士生国自然)</strong></a>.'
+          new_nsfc = '🏅 Selected as PI of the <a href="/docs/国自然.png"><strong>NSFC Doctoral Student Program (博士生国自然)</strong></a>, the <strong>sole awardee</strong> from the School of Information Science and Technology that year.'
+          if old_cast not in s or old_nsfc not in s:
+              raise SystemExit('Expected News text not found; aborting without changes.')
+          s = s.replace(old_cast, new_cast, 1).replace(old_nsfc, new_nsfc, 1)
+          p.write_text(s, encoding='utf-8')
+      - name: Commit
+        shell: bash
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add _pages/includes/news.md
+          git commit -m 'Refine concise CAST and NSFC highlights'
+          git push origin HEAD:main
