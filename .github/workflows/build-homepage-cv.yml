@@ -30,6 +30,28 @@ jobs:
           base64 -d < .github/cv/zh_CN_fonts.sty.gz.b64 | gzip -dc > .github/cv/build/zh_CN_fonts.sty
           base64 -d < .github/cv/linespacing_fix.sty.gz.b64 | gzip -dc > .github/cv/build/linespacing_fix.sty
 
+          python - <<'PY'
+          from pathlib import Path
+
+          cn = Path('.github/cv/build/resume_CN.tex')
+          s = cn.read_text(encoding='utf-8')
+          s = s.replace(
+              '国家自然科学基金青年学生基础研究项目（博士研究生）负责人（2024年）；中国科协青年科技人才培育工程博士生专项计划推荐人选（2026年）',
+              '博士生国自然项目负责人（2024）；中科大推荐博士生青托（2026）',
+              1,
+          )
+          cn.write_text(s, encoding='utf-8')
+
+          en = Path('.github/cv/build/resume_EN.tex')
+          s = en.read_text(encoding='utf-8')
+          s = s.replace(
+              'Principal Investigator, NSFC Young Students Basic Research Program (Doctoral Student) (2024); Recommended Candidate, 2026 CAST Young Science and Technology Talent Cultivation Program (Doctoral Student Track)',
+              'PI, NSFC Doctoral Student Program (2024); USTC Nominee, CAST Doctoral Student Talent Program (2026)',
+              1,
+          )
+          en.write_text(s, encoding='utf-8')
+          PY
+
           sudo apt-get update -qq
           sudo apt-get install -y -qq poppler-utils imagemagick
           rm -f /tmp/cvimg-*
@@ -90,6 +112,6 @@ jobs:
           if git diff --cached --quiet; then
             echo 'CV PDFs are already up to date.'
           else
-            git commit -m 'Update homepage Chinese and English CV PDFs'
+            git commit -m 'Shorten CV honors summary and refresh homepage PDFs'
             git push origin HEAD:main
           fi
