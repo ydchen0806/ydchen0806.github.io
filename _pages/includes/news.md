@@ -75,7 +75,7 @@
 
 <li class="news-item">
   <span class="news-date">2026.09</span>
-  <span class="news-text">🏅 Selected for the <a href="https://rczx.cast.org.cn/sy/tzgg/art/2026/art_3c9cc64b5a914fa2b0e43e113ce66c39.html"><strong>2026 CAST Young Science and Technology Talent Cultivation Program</strong></a> (Doctoral Student Track; <strong>科协博士生托举项目</strong>), as one of only two awardees from USTC's School of Information Science and Technology this year.</span>
+  <span class="news-text">🏅 Recommended by <strong>USTC</strong> for the <a href="https://rczx.cast.org.cn/sy/tzgg/art/2026/art_3c9cc64b5a914fa2b0e43e113ce66c39.html"><strong>2026 CAST Young Science and Technology Talent Cultivation Program</strong></a> (Doctoral Student Track; <strong>科协博士生托举项目</strong>).</span>
 </li>
 
 <li class="news-item">
