@@ -1,7 +1,7 @@
 {
   "name": "Yinda Chen",
-  "citedby": 721,
-  "citedby5y": 721,
+  "citedby": 720,
+  "citedby5y": 720,
   "hindex": 14,
   "hindex5y": 14,
   "i10index": 18,
@@ -28,14 +28,14 @@
     },
     {
       "year": 2025,
-      "citations": 305
+      "citations": 304
     },
     {
       "year": 2026,
       "citations": 234
     }
   ],
-  "updated": "2026-09-11 05:24:13.692936",
+  "updated": "2026-09-12 05:14:35.291089",
   "source": "serpapi",
   "publications": {},
   "first_author_papers": [
@@ -59,7 +59,7 @@
       "title": "Self-supervised neuron segmentation with multi-agent reinforcement learning",
       "authors": "Y Chen, W Huang, S Zhou, Q Chen, Z Xiong",
       "year": "2023",
-      "citations": 62,
+      "citations": 61,
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&citation_for_view=hCvlj5cAAAAJ:QIV2ME_5wuYC",
       "citation_id": "hCvlj5cAAAAJ:QIV2ME_5wuYC"
     },
