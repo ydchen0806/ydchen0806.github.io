@@ -3,7 +3,7 @@
     "title": "VLA-Trace: Diagnosing Vision-Language-Action Models through Representation and Behavior Tracing",
     "authors": "H Shi, X Ren, Y Zhang, Q Zhang, J Hu, H Shan, H Dong, J Lu, Y Chen, ...",
     "year": "2026",
-    "citations": 1,
+    "citations": 2,
     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=hCvlj5cAAAAJ:rO6llkc54NcC",
     "is_first_author": false,
     "venue": {
@@ -262,7 +262,7 @@
     "title": "EMPOWER: Evolutionary Medical Prompt Optimization With Reinforcement Learning",
     "authors": "Y Chen, Y He, J Yang, D Zhang, Z Yuan, MA Khan, J Baili, L Yee",
     "year": "2026",
-    "citations": 14,
+    "citations": 15,
     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=hCvlj5cAAAAJ:J_g5lzvAfSwC",
     "is_first_author": true,
     "venue": {
@@ -302,7 +302,7 @@
     "title": "LLM agent driven online auction mechanism for agricultural products",
     "authors": "Y Feng, Z Wang, Y Chen, H Zhao",
     "year": "2025",
-    "citations": 4,
+    "citations": 5,
     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=hCvlj5cAAAAJ:yD5IFk8b50cC",
     "is_first_author": false,
     "venue": {
@@ -355,7 +355,7 @@
     "title": "Does DINOv3 Set a New Medical Vision Standard?",
     "authors": "C Liu, Y Chen, H Shi, J Lu, B Jian, J Pan, L Cai, J Wang, Y Zhang, J Li, ...",
     "year": "2025",
-    "citations": 44,
+    "citations": 45,
     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=hCvlj5cAAAAJ:HDshCWvjkbEC",
     "is_first_author": true,
     "venue": null,
