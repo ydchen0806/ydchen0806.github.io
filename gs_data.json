@@ -1,7 +1,7 @@
 {
   "name": "Yinda Chen",
-  "citedby": 725,
-  "citedby5y": 725,
+  "citedby": 727,
+  "citedby5y": 727,
   "hindex": 15,
   "hindex5y": 15,
   "i10index": 18,
@@ -32,10 +32,10 @@
     },
     {
       "year": 2026,
-      "citations": 249
+      "citations": 251
     }
   ],
-  "updated": "2026-09-21 05:38:30.135655",
+  "updated": "2026-09-21 15:56:42.614788",
   "source": "serpapi",
   "publications": {},
   "first_author_papers": [
@@ -83,7 +83,7 @@
       "title": "MaskFactory: Towards High-quality Synthetic Data Generation for Dichotomous Image Segmentation",
       "authors": "H Qian*, YD Chen*, S Lou, FS Khan, X Jin, DP Fan",
       "year": "2024",
-      "citations": 26,
+      "citations": 27,
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&citation_for_view=hCvlj5cAAAAJ:aqlVkmm33-oC",
       "citation_id": "hCvlj5cAAAAJ:aqlVkmm33-oC"
     },
@@ -91,7 +91,7 @@
       "title": "EMPOWER: Evolutionary Medical Prompt Optimization With Reinforcement Learning",
       "authors": "Y Chen, Y He, J Yang, D Zhang, Z Yuan, MA Khan, J Baili, L Yee",
       "year": "2026",
-      "citations": 15,
+      "citations": 16,
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&citation_for_view=hCvlj5cAAAAJ:J_g5lzvAfSwC",
       "citation_id": "hCvlj5cAAAAJ:J_g5lzvAfSwC"
     },
