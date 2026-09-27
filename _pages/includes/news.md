@@ -104,7 +104,7 @@
 
 <li class="news-item">
   <span class="news-date">2026.05</span>
-  <span class="news-text">📈 Joined <strong>Ubiquant Investment (九坤投资)</strong>, beginning my journey into <strong>quantitative research</strong>.</span>
+  <span class="news-text">📈 Joined <strong>Ubiquant Investment (九坤投资)</strong> as a research intern, working on <strong>quantitative research</strong> and <strong>large language model foundation training</strong>.</span>
 </li>
 
 <li class="news-item">
