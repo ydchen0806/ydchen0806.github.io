@@ -148,13 +148,13 @@
   <img src="/images/ubiquant-logo.png" alt="Ubiquant Logo" width="144"/>
   <div>
     <p class="company-name"><a href="https://www.ubiquant.com/">Ubiquant (九坤投资)</a></p>
-    <p class="position-info">Researcher, Quantitative Research and Large Language Model Foundation Training</p>
-    <p class="location">📍 Beijing · May 2026 - Present</p>
+    <p class="position-info">Research Intern, Quantitative Research and Large Language Model Foundation Training</p>
+    <p class="location">📍 Beijing · May 2026 - Sept 2026</p>
   </div>
 </div>
 <ul class="exp-details">
-  <li>Working on quantitative research and large language model foundation training</li>
-  <li>Experienced with thousand-GPU-scale clusters and exploring LLM applications in factor mining and data-driven decision making</li>
+  <li>Worked on quantitative research and large language model foundation training</li>
+  <li>Gained experience with thousand-GPU-scale clusters and explored LLM applications in factor mining and data-driven decision making</li>
 </ul>
 </div>
 
