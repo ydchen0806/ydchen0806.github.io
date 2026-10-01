@@ -1,7 +1,7 @@
 {
   "name": "Yinda Chen",
-  "citedby": 732,
-  "citedby5y": 732,
+  "citedby": 739,
+  "citedby5y": 739,
   "hindex": 15,
   "hindex5y": 15,
   "i10index": 18,
@@ -32,10 +32,10 @@
     },
     {
       "year": 2026,
-      "citations": 255
+      "citations": 262
     }
   ],
-  "updated": "2026-09-30 06:08:38.780146",
+  "updated": "2026-10-01 03:45:03.422766",
   "source": "serpapi",
   "publications": {},
   "first_author_papers": [
@@ -51,7 +51,7 @@
       "title": "Bimcv-r: A landmark dataset for 3d ct text-image retrieval",
       "authors": "Y Chen, C Liu, X Liu, R Arcucci, Z Xiong",
       "year": "2024",
-      "citations": 72,
+      "citations": 73,
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&citation_for_view=hCvlj5cAAAAJ:mVmsd5A6BfQC",
       "citation_id": "hCvlj5cAAAAJ:mVmsd5A6BfQC"
     },

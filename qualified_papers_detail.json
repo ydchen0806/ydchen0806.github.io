@@ -120,6 +120,19 @@
     "should_include": true
   },
   {
+    "title": "Does DINOv3 Set a New Medical Vision Standard?",
+    "authors": "C Liu, Y Chen, H Shi, J Lu, B Jian, J Pan, L Cai, J Wang, Y Zhang, J Li, ...",
+    "year": "2025",
+    "citations": 51,
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=hCvlj5cAAAAJ:HDshCWvjkbEC",
+    "is_first_author": true,
+    "venue": null,
+    "is_high_cited": true,
+    "is_recent": true,
+    "is_qualified": null,
+    "should_include": true
+  },
+  {
     "title": "MaskTwins: Dual-form Complementary Masking for Domain-Adaptive Image Segmentation",
     "authors": "J Wang*, Y Chen*, X Liu, C Liu, D Liu, Z Xiong",
     "year": "2025",
@@ -243,7 +256,7 @@
     "title": "Bimcv-r: A landmark dataset for 3d ct text-image retrieval",
     "authors": "Y Chen, C Liu, X Liu, R Arcucci, Z Xiong",
     "year": "2024",
-    "citations": 72,
+    "citations": 73,
     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=hCvlj5cAAAAJ:mVmsd5A6BfQC",
     "is_first_author": true,
     "venue": {
