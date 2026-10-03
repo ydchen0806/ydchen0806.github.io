@@ -1,7 +1,7 @@
 {
   "name": "Yinda Chen",
-  "citedby": 739,
-  "citedby5y": 739,
+  "citedby": 754,
+  "citedby5y": 754,
   "hindex": 15,
   "hindex5y": 15,
   "i10index": 18,
@@ -28,14 +28,14 @@
     },
     {
       "year": 2025,
-      "citations": 302
+      "citations": 303
     },
     {
       "year": 2026,
-      "citations": 262
+      "citations": 276
     }
   ],
-  "updated": "2026-10-02 06:25:44.570948",
+  "updated": "2026-10-03 03:16:44.812428",
   "source": "serpapi",
   "publications": {},
   "first_author_papers": [
@@ -59,7 +59,7 @@
       "title": "Self-supervised neuron segmentation with multi-agent reinforcement learning",
       "authors": "Y Chen, W Huang, S Zhou, Q Chen, Z Xiong",
       "year": "2023",
-      "citations": 63,
+      "citations": 64,
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&citation_for_view=hCvlj5cAAAAJ:QIV2ME_5wuYC",
       "citation_id": "hCvlj5cAAAAJ:QIV2ME_5wuYC"
     },
@@ -67,7 +67,7 @@
       "title": "TokenUnify: Scaling Up Autoregressive Pretraining for Neuron Segmentation",
       "authors": "Y Chen, H Shi, X Liu, T Shi, R Zhang, D Liu, Z Xiong, F Wu",
       "year": "2025",
-      "citations": 39,
+      "citations": 40,
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&citation_for_view=hCvlj5cAAAAJ:blknAaTinKkC",
       "citation_id": "hCvlj5cAAAAJ:blknAaTinKkC"
     },
@@ -75,7 +75,7 @@
       "title": "Learning multiscale consistency for self-supervised electron microscopy instance segmentation",
       "authors": "Y Chen, W Huang, X Liu, S Deng, Q Chen, Z Xiong",
       "year": "2024",
-      "citations": 36,
+      "citations": 37,
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&citation_for_view=hCvlj5cAAAAJ:9ZlFYXVOiuMC",
       "citation_id": "hCvlj5cAAAAJ:9ZlFYXVOiuMC"
     },
