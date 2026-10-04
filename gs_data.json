@@ -1,7 +1,7 @@
 {
   "name": "Yinda Chen",
-  "citedby": 754,
-  "citedby5y": 754,
+  "citedby": 758,
+  "citedby5y": 758,
   "hindex": 15,
   "hindex5y": 15,
   "i10index": 18,
@@ -32,10 +32,10 @@
     },
     {
       "year": 2026,
-      "citations": 276
+      "citations": 280
     }
   ],
-  "updated": "2026-10-03 05:53:31.181312",
+  "updated": "2026-10-04 01:03:06.987635",
   "source": "serpapi",
   "publications": {},
   "first_author_papers": [
@@ -115,7 +115,7 @@
       "title": "MaskTwins: Dual-form Complementary Masking for Domain-Adaptive Image Segmentation",
       "authors": "J Wang*, Y Chen*, X Liu, C Liu, D Liu, Z Xiong",
       "year": "2025",
-      "citations": 6,
+      "citations": 7,
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&citation_for_view=hCvlj5cAAAAJ:dhFuZR0502QC",
       "citation_id": "hCvlj5cAAAAJ:dhFuZR0502QC"
     },
