@@ -32,6 +32,24 @@ jobs:
 
           python - <<'PY'
           from pathlib import Path
+          import re
+
+          def close_ubiquant_internship(tex, employer):
+              """Change only Ubiquant's internship end date, not ongoing positions."""
+              start = tex.find(employer)
+              assert start != -1, f'Cannot find employer: {employer}'
+              end = tex.find(r'\datedsubsection', start + len(employer))
+              assert end != -1, f'Cannot locate end of Ubiquant section: {employer}'
+              section = tex[start:end]
+              dates = list(re.finditer(r'(2026\.5.{0,80}?)(至今|Present)', section, flags=re.S))
+              assert len(dates) == 1, f'Expected one ongoing 2026.5 Ubiquant date ({employer}); got {len(dates)}'
+              match = dates[0]
+              section = section[:match.start(2)] + '2026.9' + section[match.end(2):]
+              if employer == 'Ubiquant':
+                  section = section.replace('Working on', 'Worked on', 1)
+              assert re.search(r'2026\.5.{0,80}?2026\.9', section, flags=re.S), 'Incorrect Ubiquant end date'
+              return tex[:start] + section + tex[end:]
+
 
           cn = Path('.github/cv/build/resume_CN.tex')
           s = cn.read_text(encoding='utf-8')
@@ -51,6 +69,7 @@ jobs:
           assert '2028' not in s, 'Stale graduation year remains (CN)'
           assert s.count('Accepted, 2025') == 1, 'TPAMI CN acceptance label not found or ambiguous'
           s = s.replace('Accepted, 2025', 'Accepted, Oct. 2026', 1)
+          s = close_ubiquant_internship(s, '九坤投资')
           cn.write_text(s, encoding='utf-8')
 
           en = Path('.github/cv/build/resume_EN.tex')
@@ -73,6 +92,7 @@ jobs:
           assert '2028' not in s, 'Stale graduation year remains (EN)'
           assert s.count('Accepted, 2025') == 1, 'TPAMI EN acceptance label not found or ambiguous'
           s = s.replace('Accepted, 2025', 'Accepted, Oct. 2026', 1)
+          s = close_ubiquant_internship(s, 'Ubiquant')
           en.write_text(s, encoding='utf-8')
           PY
 
@@ -136,6 +156,6 @@ jobs:
           if git diff --cached --quiet; then
             echo 'CV PDFs are already up to date.'
           else
-            git commit -m 'Shorten CV honors summary and refresh homepage PDFs'
+            git commit -m 'Correct Ubiquant internship end date in bilingual CV PDFs'
             git push origin HEAD:main
           fi
