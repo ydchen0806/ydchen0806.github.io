@@ -74,6 +74,11 @@
 <ul class="news-list">
 
 <li class="news-item">
+  <span class="news-date">2026.10</span>
+  <span class="news-text">🎉 Our paper <strong title="Learned Image Coding with Generative Reference of Conditional Latents">GRCL</strong> was accepted by <strong>IEEE TPAMI</strong>.</span>
+</li>
+
+<li class="news-item">
   <span class="news-date">2026.09</span>
   <span class="news-text">🏅 Recommended by <strong>USTC</strong> for the <a href="https://rczx.cast.org.cn/sy/tzgg/art/2026/art_3c9cc64b5a914fa2b0e43e113ce66c39.html"><strong>CAST Doctoral Student Talent Program (博士生青托)</strong></a>, as <strong>one of two school-recommended candidates</strong> from the School of Information Science and Technology this year.</span>
 </li>
