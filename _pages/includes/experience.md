@@ -149,7 +149,7 @@
   <div>
     <p class="company-name"><a href="https://www.ubiquant.com/">Ubiquant (九坤投资)</a></p>
     <p class="position-info">Research Intern, Quantitative Research and Large Language Model Foundation Training</p>
-    <p class="location">📍 Beijing · May 2026 - Sept 2026</p>
+    <p class="location">📍 Beijing · May 2026 - Oct 2026</p>
   </div>
 </div>
 <ul class="exp-details">
