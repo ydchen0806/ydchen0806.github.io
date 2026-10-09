@@ -44,10 +44,10 @@ jobs:
               dates = list(re.finditer(r'(2026\.5.{0,80}?)(至今|Present)', section, flags=re.S))
               assert len(dates) == 1, f'Expected one ongoing 2026.5 Ubiquant date ({employer}); got {len(dates)}'
               match = dates[0]
-              section = section[:match.start(2)] + '2026.9' + section[match.end(2):]
+              section = section[:match.start(2)] + '2026.10' + section[match.end(2):]
               if employer == 'Ubiquant':
                   section = section.replace('Working on', 'Worked on', 1)
-              assert re.search(r'2026\.5.{0,80}?2026\.9', section, flags=re.S), 'Incorrect Ubiquant end date'
+              assert re.search(r'2026\.5.{0,80}?2026\.10', section, flags=re.S), 'Incorrect Ubiquant end date'
               return tex[:start] + section + tex[end:]
 
 
