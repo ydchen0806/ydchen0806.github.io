@@ -3,7 +3,7 @@
     "title": "VLA-Trace: Diagnosing Vision-Language-Action Models through Representation and Behavior Tracing",
     "authors": "H Shi, X Ren, Y Zhang, Q Zhang, J Hu, H Shan, H Dong, J Lu, Y Chen, ...",
     "year": "2026",
-    "citations": 8,
+    "citations": 11,
     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=hCvlj5cAAAAJ:rO6llkc54NcC",
     "is_first_author": false,
     "venue": {
@@ -43,7 +43,7 @@
     "title": "Pelican-VLA 0.5: Attending Before Acting Benefits Generalization",
     "authors": "Z Ding, W Liu, Y Xu, J Hu, Y Chen, Y Zhang, Y Dai, J Tang, X Ju",
     "year": "2026",
-    "citations": 0,
+    "citations": 1,
     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=hCvlj5cAAAAJ:cFHS6HbyZ2cC",
     "is_first_author": false,
     "venue": {
@@ -149,7 +149,7 @@
     "title": "Pelican-Unify 1.0: A Unified Embodied Intelligence Model for Understanding, Reasoning, Imagination and Action",
     "authors": "Y Zhang, Y Chen, C Liu, Z Ding, J Xu, S Zou, J Liao, J Hu, X Ren, X Zhang, ...",
     "year": "2026",
-    "citations": 6,
+    "citations": 7,
     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=hCvlj5cAAAAJ:u_35RYKgDlwC",
     "is_first_author": true,
     "venue": null,
@@ -182,7 +182,7 @@
     "title": "M 2 Reg: Unsupervised Multi-Scale Registration for Multimodal Microscopy",
     "authors": "X Wu, Y Chen, R Zhang, H Jin, Z Xiong",
     "year": "2026",
-    "citations": 0,
+    "citations": 1,
     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=hCvlj5cAAAAJ:ldfaerwXgEUC",
     "is_first_author": true,
     "venue": {
@@ -262,7 +262,7 @@
     "title": "EMPOWER: Evolutionary Medical Prompt Optimization With Reinforcement Learning",
     "authors": "Y Chen, Y He, J Yang, D Zhang, Z Yuan, MA Khan, J Baili, L Yee",
     "year": "2026",
-    "citations": 16,
+    "citations": 17,
     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=hCvlj5cAAAAJ:J_g5lzvAfSwC",
     "is_first_author": true,
     "venue": {
@@ -355,7 +355,7 @@
     "title": "Does DINOv3 Set a New Medical Vision Standard?",
     "authors": "C Liu, Y Chen, H Shi, J Lu, B Jian, J Pan, L Cai, J Wang, Y Zhang, J Li, ...",
     "year": "2025",
-    "citations": 54,
+    "citations": 55,
     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=hCvlj5cAAAAJ:HDshCWvjkbEC",
     "is_first_author": true,
     "venue": null,
@@ -388,7 +388,7 @@
     "title": "DVP-MVS++: Synergize Depth-Normal-Edge and Harmonized Visibility Prior for Multi-View Stereo",
     "authors": "Z Yuan, D Zhang, Z Li, C Qian, J Chen, Y Chen, K Chen, T Mao, Z Li, ...",
     "year": "2025",
-    "citations": 41,
+    "citations": 44,
     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=hCvlj5cAAAAJ:O3NaXMp0MMsC",
     "is_first_author": false,
     "venue": {
@@ -468,7 +468,7 @@
     "title": "MapExpert: Online HD Map Construction with Simple and Efficient Sparse Map Element Expert",
     "authors": "D Zhang, D Chen, P Zhi, Y Chen, Z Yuan, C Li, R Zhou, Q Zhou",
     "year": "2025",
-    "citations": 23,
+    "citations": 24,
     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=hCvlj5cAAAAJ:M3ejUd6NZC8C",
     "is_first_author": false,
     "venue": {
@@ -521,7 +521,7 @@
     "title": "CoC-VLA: Delving into Adversarial Domain Transfer for Explainable Autonomous Driving via Chain-of-Causality Visual-Language-Action Model",
     "authors": "D Zhang, F Shen, R Zhao, Y Chen, P Zhi, C Li, R Zhou, Q Zhou",
     "year": "2025",
-    "citations": 3,
+    "citations": 4,
     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=hCvlj5cAAAAJ:BqipwSGYUEgC",
     "is_first_author": false,
     "venue": {
@@ -714,7 +714,7 @@
     "title": "Cross-Dimension Affinity Distillation for 3D EM Neuron Segmentation",
     "authors": "X Liu, M Cai, Y Chen, Y Zhang, T Shi, R Zhang, X Chen, Z Xiong",
     "year": "2024",
-    "citations": 16,
+    "citations": 17,
     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=hCvlj5cAAAAJ:hqOjcs7Dif8C",
     "is_first_author": false,
     "venue": {
@@ -734,7 +734,7 @@
     "title": "Self-supervised neuron segmentation with multi-agent reinforcement learning",
     "authors": "Y Chen, W Huang, S Zhou, Q Chen, Z Xiong",
     "year": "2023",
-    "citations": 64,
+    "citations": 65,
     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=hCvlj5cAAAAJ:QIV2ME_5wuYC",
     "is_first_author": true,
     "venue": {

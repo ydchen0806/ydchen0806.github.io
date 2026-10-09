@@ -1,11 +1,11 @@
 {
   "name": "Yinda Chen",
-  "citedby": 760,
-  "citedby5y": 760,
+  "citedby": 775,
+  "citedby5y": 775,
   "hindex": 15,
   "hindex5y": 15,
-  "i10index": 18,
-  "i10index5y": 18,
+  "i10index": 19,
+  "i10index5y": 19,
   "affiliation": "University of Science and Technology of China",
   "interests": [
     "Computational Neuroscience",
@@ -32,10 +32,10 @@
     },
     {
       "year": 2026,
-      "citations": 284
+      "citations": 299
     }
   ],
-  "updated": "2026-10-09 06:56:57.089539",
+  "updated": "2026-10-09 22:20:27.507228",
   "source": "serpapi",
   "publications": {},
   "first_author_papers": [
@@ -59,7 +59,7 @@
       "title": "Self-supervised neuron segmentation with multi-agent reinforcement learning",
       "authors": "Y Chen, W Huang, S Zhou, Q Chen, Z Xiong",
       "year": "2023",
-      "citations": 64,
+      "citations": 65,
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&citation_for_view=hCvlj5cAAAAJ:QIV2ME_5wuYC",
       "citation_id": "hCvlj5cAAAAJ:QIV2ME_5wuYC"
     },
@@ -91,7 +91,7 @@
       "title": "EMPOWER: Evolutionary Medical Prompt Optimization With Reinforcement Learning",
       "authors": "Y Chen, Y He, J Yang, D Zhang, Z Yuan, MA Khan, J Baili, L Yee",
       "year": "2026",
-      "citations": 16,
+      "citations": 17,
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&citation_for_view=hCvlj5cAAAAJ:J_g5lzvAfSwC",
       "citation_id": "hCvlj5cAAAAJ:J_g5lzvAfSwC"
     },

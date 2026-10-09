@@ -63,7 +63,7 @@
     "title": "M 2 Reg: Unsupervised Multi-Scale Registration for Multimodal Microscopy",
     "authors": "X Wu, Y Chen, R Zhang, H Jin, Z Xiong",
     "year": "2026",
-    "citations": 0,
+    "citations": 1,
     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=hCvlj5cAAAAJ:ldfaerwXgEUC",
     "is_first_author": true,
     "venue": {
@@ -103,7 +103,7 @@
     "title": "EMPOWER: Evolutionary Medical Prompt Optimization With Reinforcement Learning",
     "authors": "Y Chen, Y He, J Yang, D Zhang, Z Yuan, MA Khan, J Baili, L Yee",
     "year": "2026",
-    "citations": 16,
+    "citations": 17,
     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=hCvlj5cAAAAJ:J_g5lzvAfSwC",
     "is_first_author": true,
     "venue": {
@@ -123,7 +123,7 @@
     "title": "Does DINOv3 Set a New Medical Vision Standard?",
     "authors": "C Liu, Y Chen, H Shi, J Lu, B Jian, J Pan, L Cai, J Wang, Y Zhang, J Li, ...",
     "year": "2025",
-    "citations": 54,
+    "citations": 55,
     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=hCvlj5cAAAAJ:HDshCWvjkbEC",
     "is_first_author": true,
     "venue": null,
@@ -316,7 +316,7 @@
     "title": "Self-supervised neuron segmentation with multi-agent reinforcement learning",
     "authors": "Y Chen, W Huang, S Zhou, Q Chen, Z Xiong",
     "year": "2023",
-    "citations": 64,
+    "citations": 65,
     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=hCvlj5cAAAAJ:QIV2ME_5wuYC",
     "is_first_author": true,
     "venue": {
