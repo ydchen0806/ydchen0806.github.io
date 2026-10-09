@@ -40,6 +40,8 @@ jobs:
               '博士生国自然项目负责人（2024）；中科大推荐博士生青托（2026）',
               1,
           )
+          assert s.count('Accepted, 2025') == 1, 'TPAMI CN acceptance label not found or ambiguous'
+          s = s.replace('Accepted, 2025', 'Accepted, Oct. 2026', 1)
           cn.write_text(s, encoding='utf-8')
 
           en = Path('.github/cv/build/resume_EN.tex')
@@ -49,6 +51,8 @@ jobs:
               'PI, NSFC Doctoral Student Program (2024); USTC Nominee, CAST Doctoral Student Talent Program (2026)',
               1,
           )
+          assert s.count('Accepted, 2025') == 1, 'TPAMI EN acceptance label not found or ambiguous'
+          s = s.replace('Accepted, 2025', 'Accepted, Oct. 2026', 1)
           en.write_text(s, encoding='utf-8')
           PY
 
