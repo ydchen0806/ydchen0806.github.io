@@ -149,7 +149,7 @@
     "title": "Pelican-Unify 1.0: A Unified Embodied Intelligence Model for Understanding, Reasoning, Imagination and Action",
     "authors": "Y Zhang, Y Chen, C Liu, Z Ding, J Xu, S Zou, J Liao, J Hu, X Ren, X Zhang, ...",
     "year": "2026",
-    "citations": 7,
+    "citations": 8,
     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=hCvlj5cAAAAJ:u_35RYKgDlwC",
     "is_first_author": true,
     "venue": null,
@@ -368,7 +368,7 @@
     "title": "T3d: Towards 3d medical image understanding through vision-language pre-training",
     "authors": "C Liu, C Ouyang, Y Chen, CC Quilodrán-Casas, L Ma, J Fu, Y Guo, ...",
     "year": "2025",
-    "citations": 42,
+    "citations": 43,
     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=hCvlj5cAAAAJ:Wp0gIr-vW9MC",
     "is_first_author": false,
     "venue": {
@@ -408,7 +408,7 @@
     "title": "Can Medical Vision-Language Pre-training Succeed with Purely Synthetic Data?",
     "authors": "C Liu, Z Wan, H Wang, Y Chen, T Qaiser, C Jin, F Yousefi, N Burlutskiy, ...",
     "year": "2025",
-    "citations": 45,
+    "citations": 46,
     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=hCvlj5cAAAAJ:YOwf2qJgpHMC",
     "is_first_author": false,
     "venue": {
@@ -541,7 +541,7 @@
     "title": "GTGM: Generative Text-Guided 3D Vision-Language Pretraining for Medical Image Segmentation",
     "authors": "Y Chen, C Liu, W Huang, X Liu, H Shi, S Cheng, R Arcucci, Z Xiong",
     "year": "2025",
-    "citations": 124,
+    "citations": 125,
     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=hCvlj5cAAAAJ:NMxIlDl6LWMC",
     "is_first_author": true,
     "venue": {
@@ -621,7 +621,7 @@
     "title": "Bimcv-r: A landmark dataset for 3d ct text-image retrieval",
     "authors": "Y Chen, C Liu, X Liu, R Arcucci, Z Xiong",
     "year": "2024",
-    "citations": 73,
+    "citations": 74,
     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=hCvlj5cAAAAJ:mVmsd5A6BfQC",
     "is_first_author": true,
     "venue": {

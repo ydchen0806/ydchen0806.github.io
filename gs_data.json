@@ -1,7 +1,7 @@
 {
   "name": "Yinda Chen",
-  "citedby": 777,
-  "citedby5y": 777,
+  "citedby": 782,
+  "citedby5y": 782,
   "hindex": 15,
   "hindex5y": 15,
   "i10index": 19,
@@ -28,14 +28,14 @@
     },
     {
       "year": 2025,
-      "citations": 301
+      "citations": 305
     },
     {
       "year": 2026,
-      "citations": 301
+      "citations": 302
     }
   ],
-  "updated": "2026-10-11 06:37:13.260025",
+  "updated": "2026-10-12 05:05:47.441914",
   "source": "serpapi",
   "publications": {},
   "first_author_papers": [
@@ -43,7 +43,7 @@
       "title": "GTGM: Generative Text-Guided 3D Vision-Language Pretraining for Medical Image Segmentation",
       "authors": "Y Chen, C Liu, W Huang, X Liu, H Shi, S Cheng, R Arcucci, Z Xiong",
       "year": "2025",
-      "citations": 124,
+      "citations": 125,
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&citation_for_view=hCvlj5cAAAAJ:NMxIlDl6LWMC",
       "citation_id": "hCvlj5cAAAAJ:NMxIlDl6LWMC"
     },
@@ -51,7 +51,7 @@
       "title": "Bimcv-r: A landmark dataset for 3d ct text-image retrieval",
       "authors": "Y Chen, C Liu, X Liu, R Arcucci, Z Xiong",
       "year": "2024",
-      "citations": 73,
+      "citations": 74,
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&citation_for_view=hCvlj5cAAAAJ:mVmsd5A6BfQC",
       "citation_id": "hCvlj5cAAAAJ:mVmsd5A6BfQC"
     },
