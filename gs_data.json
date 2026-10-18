@@ -1,11 +1,11 @@
 {
   "name": "Yinda Chen",
-  "citedby": 782,
-  "citedby5y": 782,
+  "citedby": 787,
+  "citedby5y": 787,
   "hindex": 15,
   "hindex5y": 15,
-  "i10index": 18,
-  "i10index5y": 18,
+  "i10index": 19,
+  "i10index5y": 19,
   "affiliation": "University of Science and Technology of China",
   "interests": [
     "Computational Neuroscience",
@@ -32,10 +32,10 @@
     },
     {
       "year": 2026,
-      "citations": 302
+      "citations": 307
     }
   ],
-  "updated": "2026-10-17 05:10:43.905954",
+  "updated": "2026-10-18 05:15:35.965310",
   "source": "serpapi",
   "publications": {},
   "first_author_papers": [
@@ -99,7 +99,7 @@
       "title": "Conditional Latent Coding with Learnable Synthesized Reference for Deep Image Compression",
       "authors": "S Wu*, Y Chen*, D Liu, Z He",
       "year": "2025",
-      "citations": 13,
+      "citations": 14,
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&citation_for_view=hCvlj5cAAAAJ:4DMP91E08xMC",
       "citation_id": "hCvlj5cAAAAJ:4DMP91E08xMC"
     },
