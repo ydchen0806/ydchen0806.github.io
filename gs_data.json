@@ -1,11 +1,11 @@
 {
   "name": "Yinda Chen",
-  "citedby": 787,
-  "citedby5y": 787,
+  "citedby": 790,
+  "citedby5y": 790,
   "hindex": 15,
   "hindex5y": 15,
-  "i10index": 19,
-  "i10index5y": 19,
+  "i10index": 20,
+  "i10index5y": 20,
   "affiliation": "University of Science and Technology of China",
   "interests": [
     "Computational Neuroscience",
@@ -32,10 +32,10 @@
     },
     {
       "year": 2026,
-      "citations": 307
+      "citations": 310
     }
   ],
-  "updated": "2026-10-18 05:15:35.965310",
+  "updated": "2026-10-19 00:36:26.535227",
   "source": "serpapi",
   "publications": {},
   "first_author_papers": [
