@@ -130,8 +130,16 @@
 <div id="honors-awards">
 
 <details open>
-<summary>🏅 National Awards & Research Funding <span class="badge-count">5</span></summary>
+<summary>🏅 National Awards & Research Funding <span class="badge-count">6</span></summary>
 <ul class="award-list">
+
+<li><strong><a href="/docs/cast_ccf_2026_selection_proof.png">CAST Young Science and Technology Talent Cultivation Program — Doctoral Student Track (博士生青托)</a></strong> <span class="award-date">(October 2026)</span>
+  <ul>
+    <li><strong>Status:</strong> Selected for the 2026 doctoral student cohort</li>
+    <li><strong>Cultivating Society:</strong> China Computer Federation (CCF, 中国计算机学会)</li>
+    <li><strong>Program:</strong> China Association for Science and Technology (CAST)</li>
+  </ul>
+</li>
 
 <li><strong><a href="/docs/国自然.png">National Natural Science Foundation of China (NSFC) PhD Program</a></strong> <span class="award-date">(December 2024)</span>
   <ul>

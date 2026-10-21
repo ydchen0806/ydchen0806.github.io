@@ -55,7 +55,7 @@ jobs:
           s = cn.read_text(encoding='utf-8')
           s = s.replace(
               '国家自然科学基金青年学生基础研究项目（博士研究生）负责人（2024年）；中国科协青年科技人才培育工程博士生专项计划推荐人选（2026年）',
-              '博士生国自然项目负责人（2024）；中科大推荐博士生青托（2026）',
+              '博士生国自然项目负责人（2024）；中国科协博士生青托入选者（2026，CCF培育）',
               1,
           )
           # Ph.D. expected graduation: June 2027 (not 2028).
@@ -70,13 +70,14 @@ jobs:
           assert s.count('Accepted, 2025') == 1, 'TPAMI CN acceptance label not found or ambiguous'
           s = s.replace('Accepted, 2025', 'Accepted, Oct. 2026', 1)
           s = close_ubiquant_internship(s, '九坤投资')
+          assert '中科大推荐博士生青托' not in s, 'Stale Chinese nomination label remains'
           cn.write_text(s, encoding='utf-8')
 
           en = Path('.github/cv/build/resume_EN.tex')
           s = en.read_text(encoding='utf-8')
           s = s.replace(
               'Principal Investigator, NSFC Young Students Basic Research Program (Doctoral Student) (2024); Recommended Candidate, 2026 CAST Young Science and Technology Talent Cultivation Program (Doctoral Student Track)',
-              'PI, NSFC Doctoral Student Program (2024); USTC Nominee, CAST Doctoral Student Talent Program (2026)',
+              'PI, NSFC Doctoral Student Program (2024); Selected, CAST Doctoral Student Talent Program (2026; CCF)',
               1,
           )
           # Ph.D. expected graduation: June 2027 (not 2028).
@@ -93,6 +94,7 @@ jobs:
           assert s.count('Accepted, 2025') == 1, 'TPAMI EN acceptance label not found or ambiguous'
           s = s.replace('Accepted, 2025', 'Accepted, Oct. 2026', 1)
           s = close_ubiquant_internship(s, 'Ubiquant')
+          assert 'USTC Nominee' not in s, 'Stale English nomination label remains'
           en.write_text(s, encoding='utf-8')
           PY
 
