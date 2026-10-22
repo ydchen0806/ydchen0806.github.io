@@ -136,7 +136,7 @@
 <li><strong><a href="/docs/cast_ccf_2026_selection_proof.png?v=20261022" target="_blank" rel="noopener">2026 CAST Doctoral Student Program (中国科协博士生青托)</a></strong> <span class="award-date">(October 2026)</span>
   <ul>
     <li><strong>Cultivating society:</strong> China Computer Federation (CCF, 中国计算机学会)</li>
-    <li><strong>Selection:</strong> Recommended by USTC and selected through CAST's national review.</li>
+    <li><strong>Selection:</strong> One of 2 nominees from USTC's School of Information Science and Technology, among 40 university-wide nominees (2026).</li>
     <li><strong>Outlook:</strong> Grateful for opportunities to learn from mentors and exchange ideas across disciplines.</li>
   </ul>
 </li>
