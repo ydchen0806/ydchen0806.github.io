@@ -4,6 +4,7 @@ on:
   push:
     paths:
       - '.github/workflows/build-homepage-cv.yml'
+      - '.github/cv/source/*.tex'
   workflow_dispatch:
 
 permissions:
@@ -24,8 +25,14 @@ jobs:
           set -euo pipefail
           mkdir -p .github/cv/build
 
-          cat .github/cv/chunks/cn_* | base64 -d | gzip -dc > .github/cv/build/resume_CN.tex
-          cat .github/cv/chunks/en_* | base64 -d | gzip -dc > .github/cv/build/resume_EN.tex
+          # Use editable LaTeX sources after first successful rebuild.
+          if [[ -s .github/cv/source/resume_CN.tex && -s .github/cv/source/resume_EN.tex ]]; then
+            cp .github/cv/source/resume_CN.tex .github/cv/build/resume_CN.tex
+            cp .github/cv/source/resume_EN.tex .github/cv/build/resume_EN.tex
+          else
+            cat .github/cv/chunks/cn_* | base64 -d | gzip -dc > .github/cv/build/resume_CN.tex
+            cat .github/cv/chunks/en_* | base64 -d | gzip -dc > .github/cv/build/resume_EN.tex
+          fi
           base64 -d < .github/cv/resume.cls.gz.b64 | gzip -dc > .github/cv/build/resume.cls
           base64 -d < .github/cv/zh_CN_fonts.sty.gz.b64 | gzip -dc > .github/cv/build/zh_CN_fonts.sty
           base64 -d < .github/cv/linespacing_fix.sty.gz.b64 | gzip -dc > .github/cv/build/linespacing_fix.sty
@@ -41,6 +48,8 @@ jobs:
               end = tex.find(r'\datedsubsection', start + len(employer))
               assert end != -1, f'Cannot locate end of Ubiquant section: {employer}'
               section = tex[start:end]
+              if '2026.10' in section:
+                  return tex
               dates = list(re.finditer(r'(2026\.5.{0,80}?)(至今|Present)', section, flags=re.S))
               assert len(dates) == 1, f'Expected one ongoing 2026.5 Ubiquant date ({employer}); got {len(dates)}'
               match = dates[0]
@@ -53,48 +62,58 @@ jobs:
 
           cn = Path('.github/cv/build/resume_CN.tex')
           s = cn.read_text(encoding='utf-8')
-          s = s.replace(
-              '国家自然科学基金青年学生基础研究项目（博士研究生）负责人（2024年）；中国科协青年科技人才培育工程博士生专项计划推荐人选（2026年）',
-              '博士生国自然项目负责人（2024）；中国科协博士生青托入选者（2026，CCF培育）',
-              1,
-          )
-          # Ph.D. expected graduation: June 2027 (not 2028).
-          assert s.count('2028') == 1, 'Expected a single old Ph.D. graduation year (CN)'
-          if '2028.7' in s:
-              s = s.replace('2028.7', '2027.6', 1)
-          elif '2028.07' in s:
-              s = s.replace('2028.07', '2027.06', 1)
-          else:
-              s = s.replace('2028', '2027', 1)
-          assert '2028' not in s, 'Stale graduation year remains (CN)'
-          assert s.count('Accepted, 2025') == 1, 'TPAMI CN acceptance label not found or ambiguous'
-          s = s.replace('Accepted, 2025', 'Accepted, Oct. 2026', 1)
+          chosen = r'\href{https://ydchen0806.github.io/docs/cast_ccf_2026_selection_proof.png}{入选中国科协博士生青托（2026，CCF培育）}'
+          if chosen not in s:
+              old = [
+                  '获中国科学技术大学推荐申报中国科协青年科技人才培育工程博士生专项计划（2026年）',
+                  '中国科协青年科技人才培育工程博士生专项计划推荐人选（2026年）',
+                  '中科大推荐博士生青托（2026）',
+              ]
+              matched = [x for x in old if x in s]
+              assert len(matched) == 1, 'CN: cannot find original nomination; excerpt=' + repr(s[max(0,s.find('荣誉奖励')-30):s.find('荣誉奖励')+500])
+              s = s.replace(matched[0], chosen, 1)
+          s = s.replace('国家自然科学基金青年学生基础研究项目（博士研究生）负责人（2024年）',
+                        '国家自然科学基金博士生项目负责人（2024）', 1)
+          if '2028' in s:
+              for old, new in [('2028.7','2027.6'), ('2028.07','2027.06'), ('2028','2027')]:
+                  if old in s:
+                      s = s.replace(old,new,1)
+                      break
+          assert '2028' not in s and '2027' in s, 'CN graduation date not 2027'
+          if 'Accepted, 2025' in s:
+              s = s.replace('Accepted, 2025', 'Accepted, Oct. 2026', 1)
+          assert 'Accepted, Oct. 2026' in s, 'CN TPAMI acceptance date mismatch'
           s = close_ubiquant_internship(s, '九坤投资')
-          assert '中科大推荐博士生青托' not in s, 'Stale Chinese nomination label remains'
+          assert chosen in s, 'CN selection not updated'
+          assert '获中国科学技术大学推荐申报中国科协' not in s, 'CN old nomination remains'
           cn.write_text(s, encoding='utf-8')
 
           en = Path('.github/cv/build/resume_EN.tex')
           s = en.read_text(encoding='utf-8')
-          s = s.replace(
-              'Principal Investigator, NSFC Young Students Basic Research Program (Doctoral Student) (2024); Recommended Candidate, 2026 CAST Young Science and Technology Talent Cultivation Program (Doctoral Student Track)',
-              'PI, NSFC Doctoral Student Program (2024); Selected, CAST Doctoral Student Talent Program (2026; CCF)',
-              1,
-          )
-          # Ph.D. expected graduation: June 2027 (not 2028).
-          assert s.count('2028') == 1, 'Expected a single old Ph.D. graduation year (EN)'
-          if '2028.7' in s:
-              s = s.replace('2028.7', '2027.6', 1)
-          elif '2028.07' in s:
-              s = s.replace('2028.07', '2027.06', 1)
-          elif 'July 2028' in s:
-              s = s.replace('July 2028', 'June 2027', 1)
-          else:
-              s = s.replace('2028', '2027', 1)
-          assert '2028' not in s, 'Stale graduation year remains (EN)'
-          assert s.count('Accepted, 2025') == 1, 'TPAMI EN acceptance label not found or ambiguous'
-          s = s.replace('Accepted, 2025', 'Accepted, Oct. 2026', 1)
+          chosen = r'\href{https://ydchen0806.github.io/docs/cast_ccf_2026_selection_proof.png}{Selected for the 2026 CAST Doctoral Student Program (CCF)}'
+          if chosen not in s:
+              old = [
+                  'Recommended by USTC for the 2026 CAST Young Science and Technology Talent Cultivation Program (Doctoral Student Track)',
+                  'Recommended Candidate, 2026 CAST Young Science and Technology Talent Cultivation Program (Doctoral Student Track)',
+                  'USTC Nominee, CAST Doctoral Student Talent Program (2026)',
+              ]
+              matched = [x for x in old if x in s]
+              assert len(matched) == 1, 'EN: cannot find original nomination; excerpt=' + repr(s[max(0,s.find('Honors')-30):s.find('Honors')+500])
+              s = s.replace(matched[0], chosen, 1)
+          s = s.replace('Principal Investigator, NSFC Young Students Basic Research Program (Doctoral Student) (2024)',
+                        'NSFC Doctoral Student Project PI (2024)', 1)
+          if '2028' in s:
+              for old, new in [('2028.7','2027.6'), ('2028.07','2027.06'), ('July 2028','June 2027'), ('2028','2027')]:
+                  if old in s:
+                      s = s.replace(old,new,1)
+                      break
+          assert '2028' not in s and '2027' in s, 'EN graduation date not 2027'
+          if 'Accepted, 2025' in s:
+              s = s.replace('Accepted, 2025', 'Accepted, Oct. 2026', 1)
+          assert 'Accepted, Oct. 2026' in s, 'EN TPAMI acceptance date mismatch'
           s = close_ubiquant_internship(s, 'Ubiquant')
-          assert 'USTC Nominee' not in s, 'Stale English nomination label remains'
+          assert chosen in s, 'EN selection not updated'
+          assert 'Recommended by USTC' not in s, 'EN old nomination remains'
           en.write_text(s, encoding='utf-8')
           PY
 
@@ -147,6 +166,17 @@ jobs:
           pdfinfo .github/cv/build/resume_EN.pdf | grep '^Pages:'
           cp .github/cv/build/resume_CN.pdf docs/cyd_resume_CN.pdf
           cp .github/cv/build/resume_EN.pdf docs/CYD_resume_EN.pdf
+          pdftotext -layout docs/cyd_resume_CN.pdf /tmp/cv_CN.txt
+          pdftotext -layout docs/CYD_resume_EN.pdf /tmp/cv_EN.txt
+          head -n 30 /tmp/cv_CN.txt | grep -q '博士生青托' || { echo 'ERROR: CN PDF missing selected program'; exit 1; }
+          head -n 30 /tmp/cv_CN.txt | grep -q 'CCF' || { echo 'ERROR: CN PDF missing CCF'; exit 1; }
+          head -n 30 /tmp/cv_EN.txt | grep -q 'CAST Doctoral Student Program' || { echo 'ERROR: EN PDF missing selected program'; exit 1; }
+          head -n 30 /tmp/cv_EN.txt | grep -q 'CCF' || { echo 'ERROR: EN PDF missing CCF'; exit 1; }
+          ! grep -q '获中国科学技术大学推荐' /tmp/cv_CN.txt || { echo 'ERROR: stale CN nomination'; exit 1; }
+          ! grep -q 'Recommended by USTC' /tmp/cv_EN.txt || { echo 'ERROR: stale EN nomination'; exit 1; }
+          mkdir -p .github/cv/source
+          cp .github/cv/build/resume_CN.tex .github/cv/source/resume_CN.tex
+          cp .github/cv/build/resume_EN.tex .github/cv/source/resume_EN.tex
 
       - name: Commit updated PDFs
         shell: bash
@@ -154,10 +184,10 @@ jobs:
           set -euo pipefail
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add docs/cyd_resume_CN.pdf docs/CYD_resume_EN.pdf
+          git add docs/cyd_resume_CN.pdf docs/CYD_resume_EN.pdf .github/cv/source/resume_CN.tex .github/cv/source/resume_EN.tex
           if git diff --cached --quiet; then
             echo 'CV PDFs are already up to date.'
           else
-            git commit -m 'Correct Ubiquant internship end date in bilingual CV PDFs'
+            git commit -m 'Update 2026 CAST CCF selection in bilingual CV and LaTeX sources'
             git push origin HEAD:main
           fi
