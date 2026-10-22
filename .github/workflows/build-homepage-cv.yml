@@ -196,7 +196,8 @@ jobs:
           set -euo pipefail
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add docs/cyd_resume_CN.pdf docs/CYD_resume_EN.pdf .github/cv/source/resume_CN.tex .github/cv/source/resume_EN.tex
+          git add docs/cyd_resume_CN.pdf docs/CYD_resume_EN.pdf
+          git add -f .github/cv/source/resume_CN.tex .github/cv/source/resume_EN.tex
           if git diff --cached --quiet; then
             echo 'CV PDFs are already up to date.'
           else
