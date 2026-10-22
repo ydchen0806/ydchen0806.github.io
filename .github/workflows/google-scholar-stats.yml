@@ -7,6 +7,9 @@ on:
   schedule:
     - cron: '0 1 * * *'  # 每天 UTC 01:00（约北京时间 09:00）
   workflow_dispatch:  # 允许手动触发
+  push:  # 修改本 workflow 时自动验证抓取流程
+    paths:
+      - '.github/workflows/google-scholar-stats.yml'
 
 permissions:
   contents: write
@@ -106,8 +109,11 @@ jobs:
             echo "main 分支没有变化需要提交"
           else
             git commit -m "Auto-update: citations, fallback data [skip ci]"
-            git push origin main
-            echo "✅ main 分支更改已提交"
+            if git push origin main; then
+              echo "✅ main 分支更改已提交"
+            else
+              echo "⚠️ main 分支已被其他提交更新，跳过本次 main 推送；仍继续更新 google-scholar-stats 分支"
+            fi
           fi
 
       - name: Update google-scholar-stats branch
