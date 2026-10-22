@@ -71,7 +71,7 @@ jobs:
               ]
               matched = [x for x in old if x in s]
               assert len(matched) == 1, 'CN: cannot find original nomination; excerpt=' + repr(s[max(0,s.find('荣誉奖励')-30):s.find('荣誉奖励')+500])
-              s = s.replace(matched[0], chosen, 1)
+              s = s.replace(matched[0], chosen)
           s = s.replace('国家自然科学基金青年学生基础研究项目（博士研究生）负责人（2024年）',
                         '国家自然科学基金博士生项目负责人（2024）', 1)
           if '2028' in s:
@@ -99,7 +99,7 @@ jobs:
               ]
               matched = [x for x in old if x in s]
               assert len(matched) == 1, 'EN: cannot find original nomination; excerpt=' + repr(s[max(0,s.find('Honors')-30):s.find('Honors')+500])
-              s = s.replace(matched[0], chosen, 1)
+              s = s.replace(matched[0], chosen)
           s = s.replace('Principal Investigator, NSFC Young Students Basic Research Program (Doctoral Student) (2024)',
                         'NSFC Doctoral Student Project PI (2024)', 1)
           if '2028' in s:
