@@ -80,7 +80,7 @@
 
 <li class="news-item">
   <span class="news-date">2026.10</span>
-  <span class="news-text">🏅 Selected for the <a href="/docs/cast_ccf_2026_selection_proof.png" target="_blank" rel="noopener"><strong>2026 CAST Doctoral Student Talent Cultivation Program (博士生青托)</strong></a>, with the <strong>China Computer Federation (CCF)</strong> as my designated cultivating society.</span>
+  <span class="news-text">🏅 Selected for the <a href="/docs/cast_ccf_2026_selection_proof.png?v=20261022" target="_blank" rel="noopener"><strong>2026 CAST Doctoral Student Program (博士生青托)</strong></a> (CCF).</span>
 </li>
 
 <li class="news-item">

@@ -133,11 +133,9 @@
 <summary>🏅 National Awards & Research Funding <span class="badge-count">6</span></summary>
 <ul class="award-list">
 
-<li><strong><a href="/docs/cast_ccf_2026_selection_proof.png">CAST Young Science and Technology Talent Cultivation Program — Doctoral Student Track (博士生青托)</a></strong> <span class="award-date">(October 2026)</span>
+<li><strong><a href="/docs/cast_ccf_2026_selection_proof.png?v=20261022" target="_blank" rel="noopener">2026 CAST Doctoral Student Program (中国科协博士生青托)</a></strong> <span class="award-date">(October 2026)</span>
   <ul>
-    <li><strong>Status:</strong> Selected for the 2026 doctoral student cohort</li>
-    <li><strong>Cultivating Society:</strong> China Computer Federation (CCF, 中国计算机学会)</li>
-    <li><strong>Program:</strong> China Association for Science and Technology (CAST)</li>
+    <li><strong>Cultivating society:</strong> China Computer Federation (CCF, 中国计算机学会)</li>
   </ul>
 </li>
 

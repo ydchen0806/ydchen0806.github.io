@@ -142,6 +142,7 @@
   <li>Co-supervised by <a href="https://scholar.google.com/citations?user=qpBtpGsAAAAJ&hl=en">Prof. Xiaoou Tang</a> (IEEE Fellow) at Shanghai AI Lab</li>
   <li>Selected coursework: Algorithm Design and Analysis, Statistical Learning, Deep Learning, Reinforcement Learning</li>
   <li>Principal Investigator for NSFC Ph.D. Project (2024)</li>
+  <li>Selected for the <a href="/docs/cast_ccf_2026_selection_proof.png?v=20261022" target="_blank" rel="noopener">2026 CAST Doctoral Student Program</a> (CCF)</li>
 </ul>
 </div>
 
