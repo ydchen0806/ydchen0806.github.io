@@ -226,10 +226,10 @@ jobs:
 
           To compile the English version, change `main.tex` to:
           ```tex
-          \\input{resume_EN.tex}
+          \input{resume_EN.tex}
           ```
           Alternatively set the Main document directly to `resume_EN.tex`.
-          To restore Chinese, use `\\input{resume_CN.tex}` or select `resume_CN.tex`.
+          To restore Chinese, use `\input{resume_CN.tex}` or select `resume_CN.tex`.
 
           ## Files
           - `main.tex` — default Chinese entrypoint, switchable to English
@@ -265,7 +265,7 @@ jobs:
               assert required == names, f'Missing or unexpected files: {required ^ names}'
               assert '入选中国科协博士生青托' in z.read('resume_CN.tex').decode('utf-8')
               assert 'CAST Doctoral Student Program' in z.read('resume_EN.tex').decode('utf-8')
-              assert z.read('main.tex').decode('utf-8').count(r'\\input{resume_CN.tex}') == 1
+              assert z.read('main.tex').decode('utf-8').count(r'\input{resume_CN.tex}') == 1
               assert all(z.getinfo(n).file_size > 0 for n in names)
           print(f'Overleaf source ZIP ready: {p} ({p.stat().st_size:,} bytes)')
           PY
