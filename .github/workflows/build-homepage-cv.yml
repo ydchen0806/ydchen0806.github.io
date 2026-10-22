@@ -85,6 +85,12 @@ jobs:
           assert 'Accepted, Oct. 2026' in s, 'CN TPAMI acceptance date mismatch'
           s = close_ubiquant_internship(s, '九坤投资')
           assert chosen in s, 'CN selection not updated'
+          # Also update the separate Honors section (not only PhD education).
+          s = s.replace('获中国科学技术大学推荐申报中国科协青年科技人才培育工程博士生专项计划',
+                        '入选中国科协博士生青托（CCF培育）')
+          s = s.replace('中国科学技术大学信息学院推荐人选',
+                        '培育学会：中国计算机学会（CCF）')
+          s = s.replace(r'\textbf{2026.09}', r'\textbf{2026.10}', 1)
           assert '获中国科学技术大学推荐申报中国科协' not in s, 'CN old nomination remains; excerpt=' + repr(s[max(0,s.find('获中国科学技术大学推荐')-110):s.find('获中国科学技术大学推荐')+430])
           cn.write_text(s, encoding='utf-8')
 
@@ -113,6 +119,12 @@ jobs:
           assert 'Accepted, Oct. 2026' in s, 'EN TPAMI acceptance date mismatch'
           s = close_ubiquant_internship(s, 'Ubiquant')
           assert chosen in s, 'EN selection not updated'
+          # Also update the separate Honors section (not only PhD education).
+          s = s.replace('Recommended by USTC for the 2026 CAST Young Science and Technology Talent Cultivation Program (Doctoral Student Track)',
+                        'Selected for the 2026 CAST Doctoral Student Program (CCF)')
+          s = s.replace('Recommended by USTC School of Information Science and Technology',
+                        'Cultivating society: China Computer Federation (CCF)')
+          s = s.replace(r'\textbf{2026.09}', r'\textbf{2026.10}', 1)
           assert 'Recommended by USTC' not in s, 'EN old nomination remains'
           en.write_text(s, encoding='utf-8')
           PY
