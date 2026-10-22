@@ -159,10 +159,25 @@ jobs:
           wc -c .github/cv/build/resume_CN.tex .github/cv/build/resume_EN.tex
           identify .github/cv/build/cydQRcode.jpeg .github/cv/build/cyd.jpg
 
+      - name: Prepare Overleaf project entrypoint
+        shell: bash
+        run: |
+          set -euo pipefail
+          cat > .github/cv/build/main.tex <<'EOF'
+          % !TeX program = xelatex
+          % Overleaf default: Chinese resume.
+          % Switch to English by changing the line below to resume_EN.tex.
+          \input{resume_CN.tex}
+          EOF
+          cat > .github/cv/build/latexmkrc <<'EOF'
+          $pdf_mode = 5;
+          EOF
+
       - name: Compile Chinese and English CVs with XeLaTeX
         uses: xu-cheng/latex-action@v4
         with:
           root_file: |
+            main.tex
             resume_CN.tex
             resume_EN.tex
           working_directory: .github/cv/build
@@ -190,6 +205,71 @@ jobs:
           cp .github/cv/build/resume_CN.tex .github/cv/source/resume_CN.tex
           cp .github/cv/build/resume_EN.tex .github/cv/source/resume_EN.tex
 
+      - name: Create Overleaf-ready source ZIP
+        shell: bash
+        run: |
+          set -euo pipefail
+          work=".github/cv/build"
+          cp docs/cast_ccf_2026_selection_proof.png "$work/cast_ccf_2026_selection_proof.png"
+          cat > "$work/README.md" <<'EOF'
+          # Yinda Chen | Bilingual Academic CV (October 2026)
+
+          Complete, flat-layout Overleaf project with Chinese and English LaTeX sources,
+          resume class, style dependencies, profile photo and QR code.
+
+          ## Compile on Overleaf
+
+          1. Open Overleaf > New Project > Upload Project, and upload this ZIP.
+          2. **Main document:** `main.tex` (Chinese by default).
+          3. **Compiler:** XeLaTeX (Overleaf Menu > Settings > Compiler).
+          4. Click Recompile.
+
+          To compile the English version, change `main.tex` to:
+          ```tex
+          \\input{resume_EN.tex}
+          ```
+          Alternatively set the Main document directly to `resume_EN.tex`.
+          To restore Chinese, use `\\input{resume_CN.tex}` or select `resume_CN.tex`.
+
+          ## Files
+          - `main.tex` — default Chinese entrypoint, switchable to English
+          - `resume_CN.tex`, `resume_EN.tex` — editable CV sources
+          - `resume.cls`, `zh_CN_fonts.sty`, `linespacing_fix.sty` — local template/style files
+          - `cyd.jpg`, `cydQRcode.jpeg` — profile photo and QR code
+          - `latexmkrc` — requests XeLaTeX
+          - `cast_ccf_2026_selection_proof.png` — CAST/CCF award proof (reference only)
+
+          The hyperlinks in the CV target the public homepage. All compilation
+          dependencies specific to the original CV are included as files.
+          EOF
+          zip_path="$GITHUB_WORKSPACE/docs/Yinda_Chen_CV_Overleaf_Source.zip"
+          (
+            cd "$work"
+            zip -q -X "$zip_path" main.tex latexmkrc README.md \
+              resume_CN.tex resume_EN.tex resume.cls zh_CN_fonts.sty \
+              linespacing_fix.sty cyd.jpg cydQRcode.jpeg \
+              cast_ccf_2026_selection_proof.png
+          )
+          unzip -tq "$zip_path"
+          python - <<'PY'
+          from pathlib import Path
+          import zipfile
+          p = Path('docs/Yinda_Chen_CV_Overleaf_Source.zip')
+          with zipfile.ZipFile(p) as z:
+              names = set(z.namelist())
+              required = {'main.tex','latexmkrc','README.md',
+                          'resume_CN.tex','resume_EN.tex','resume.cls',
+                          'zh_CN_fonts.sty','linespacing_fix.sty',
+                          'cyd.jpg','cydQRcode.jpeg',
+                          'cast_ccf_2026_selection_proof.png'}
+              assert required == names, f'Missing or unexpected files: {required ^ names}'
+              assert '入选中国科协博士生青托' in z.read('resume_CN.tex').decode('utf-8')
+              assert 'CAST Doctoral Student Program' in z.read('resume_EN.tex').decode('utf-8')
+              assert z.read('main.tex').decode('utf-8').count(r'\\input{resume_CN.tex}') == 1
+              assert all(z.getinfo(n).file_size > 0 for n in names)
+          print(f'Overleaf source ZIP ready: {p} ({p.stat().st_size:,} bytes)')
+          PY
+
       - name: Commit updated PDFs
         shell: bash
         run: |
@@ -198,9 +278,10 @@ jobs:
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add docs/cyd_resume_CN.pdf docs/CYD_resume_EN.pdf
           git add -f .github/cv/source/resume_CN.tex .github/cv/source/resume_EN.tex
+          git add -f docs/Yinda_Chen_CV_Overleaf_Source.zip
           if git diff --cached --quiet; then
             echo 'CV PDFs are already up to date.'
           else
-            git commit -m 'Update 2026 CAST CCF selection in bilingual CV and LaTeX sources'
+            git commit -m 'Build bilingual CV PDFs and ready-to-import Overleaf ZIP'
             git push origin HEAD:main
           fi
