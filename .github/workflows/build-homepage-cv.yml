@@ -85,7 +85,7 @@ jobs:
           assert 'Accepted, Oct. 2026' in s, 'CN TPAMI acceptance date mismatch'
           s = close_ubiquant_internship(s, '九坤投资')
           assert chosen in s, 'CN selection not updated'
-          assert '获中国科学技术大学推荐申报中国科协' not in s, 'CN old nomination remains'
+          assert '获中国科学技术大学推荐申报中国科协' not in s, 'CN old nomination remains; excerpt=' + repr(s[max(0,s.find('获中国科学技术大学推荐')-110):s.find('获中国科学技术大学推荐')+430])
           cn.write_text(s, encoding='utf-8')
 
           en = Path('.github/cv/build/resume_EN.tex')
