@@ -315,7 +315,7 @@ MaskTwins introduces a dual-form complementary masking strategy for domain-adapt
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge-journal">IEEE TPAMI</div><div class="badge-impact badge-q1">SCI Q1 | IF: 20.8</div><img src='images/TPAMI25.png' alt="GRCL Framework" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-> [**Learned Image Coding with Generative Reference of Conditional Latents**](/docs/Learned_Image_Coding_with_Generative_Reference_of_Conditional_Latents.pdf) [![](https://img.shields.io/badge/citations-15-blue?logo=google-scholar&logoColor=white&style=flat-square)](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&citation_for_view=hCvlj5cAAAAJ:4DMP91E08xMC) <span class="research-tags"><span class="research-tag">Image Compression</span><span class="research-tag">Generative Models</span></span> \\
+> [**Learned Image Coding with Generative Reference of Conditional Latents**](/docs/Learned_Image_Coding_with_Generative_Reference_of_Conditional_Latents.pdf) <span class="research-tags"><span class="research-tag">Image Compression</span><span class="research-tag">Generative Models</span></span> \\
   IEEE Transactions on Pattern Analysis and Machine Intelligence | Accepted, Oct. 2026 \\
   Siqi Wu\*; **Yinda Chen\***; Weiming Chen; Dong Liu; K. C. Ho; Zhihai He
 
