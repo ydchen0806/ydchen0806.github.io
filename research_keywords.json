@@ -16,7 +16,12 @@
   },
   {
     "keyword": "Generative Models",
-    "count": 2,
+    "count": 3,
+    "weight": 2
+  },
+  {
+    "keyword": "Image Compression",
+    "count": 3,
     "weight": 2
   },
   {
@@ -36,11 +41,6 @@
   },
   {
     "keyword": "Reinforcement Learning",
-    "count": 2,
-    "weight": 2
-  },
-  {
-    "keyword": "Image Compression",
     "count": 2,
     "weight": 2
   },
