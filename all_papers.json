@@ -1,5 +1,25 @@
 [
   {
+    "title": "IQuest-Q1: Advancing Foundation Capabilities for Agentic CLI Systems",
+    "authors": "AJ Yang, A Huang, B Dan, C Mu, C Yang, C Shi, F Chang, H Li, H Tao, ...",
+    "year": "2026",
+    "citations": 0,
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=hCvlj5cAAAAJ:abG-DnoFyZgC",
+    "is_first_author": false,
+    "venue": {
+      "shortcut": "PR",
+      "full_name": "Pattern Recognition",
+      "type": "journal",
+      "ccf": null,
+      "sci": "Q1",
+      "impact_factor": 8.0
+    },
+    "is_high_cited": false,
+    "is_recent": true,
+    "is_qualified": true,
+    "should_include": false
+  },
+  {
     "title": "Learned Image Coding With Generative Reference of Conditional Latents",
     "authors": "S Wu*, Y Chen*, W Chen, D Liu, KC Ho, Z He",
     "year": "2026",
@@ -215,7 +235,7 @@
     "title": "Pelican-Unify 1.0: A Unified Embodied Intelligence Model for Understanding, Reasoning, Imagination and Action",
     "authors": "Y Zhang, Y Chen, C Liu, Z Ding, J Xu, S Zou, J Liao, J Hu, X Ren, X Zhang, ...",
     "year": "2026",
-    "citations": 8,
+    "citations": 9,
     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=hCvlj5cAAAAJ:u_35RYKgDlwC",
     "is_first_author": true,
     "venue": null,
@@ -308,7 +328,7 @@
     "title": "MAIN-VLA: Modeling abstraction of intention and environment for vision-language-action models",
     "authors": "Z Zhou, L Du, Z Sun, X Zhou, R Ye, Q Chen, Y Chen, L Qiu",
     "year": "2026",
-    "citations": 4,
+    "citations": 5,
     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=hCvlj5cAAAAJ:RYcK_YlVTxYC",
     "is_first_author": false,
     "venue": {
@@ -727,7 +747,7 @@
     "title": "Unsupervised Domain Adaptation for EM Image Denoising with Invertible Networks",
     "authors": "S Deng, Y Chen, W Huang, R Zhang, Z Xiong",
     "year": "2024",
-    "citations": 17,
+    "citations": 18,
     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=hCvlj5cAAAAJ:KlAtU1dfN6UC",
     "is_first_author": true,
     "venue": null,
