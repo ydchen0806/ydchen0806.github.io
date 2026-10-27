@@ -75,7 +75,7 @@
 
 <li class="news-item">
   <span class="news-date">2026.10</span>
-  <span class="news-text">🎉 Our paper <a href="/docs/Learned_Image_Coding_with_Generative_Reference_of_Conditional_Latents.pdf" target="_blank" rel="noopener"><strong title="Learned Image Coding with Generative Reference of Conditional Latents">GRCL</strong></a> was accepted by <strong>IEEE TPAMI</strong>.</span>
+  <span class="news-text">🎉 Our paper <a href="https://doi.org/10.1109/TPAMI.2026.3744812" target="_blank" rel="noopener"><strong title="Learned Image Coding with Generative Reference of Conditional Latents">GRCL</strong></a> was accepted by <strong>IEEE TPAMI</strong>.</span>
 </li>
 
 <li class="news-item">
