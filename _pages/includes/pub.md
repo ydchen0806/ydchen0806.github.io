@@ -315,11 +315,11 @@ MaskTwins introduces a dual-form complementary masking strategy for domain-adapt
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge-journal">IEEE TPAMI</div><div class="badge-impact badge-q1">SCI Q1 | IF: 20.8</div><img src='images/TPAMI25.png' alt="GRCL Framework" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-> [**Learned Image Coding with Generative Reference of Conditional Latents**](/docs/Learned_Image_Coding_with_Generative_Reference_of_Conditional_Latents.pdf) <span class="research-tags"><span class="research-tag">Image Compression</span><span class="research-tag">Generative Models</span></span> \\
+> [**Learned Image Coding with Generative Reference of Conditional Latents**](https://doi.org/10.1109/TPAMI.2026.3744812) <span class="research-tags"><span class="research-tag">Image Compression</span><span class="research-tag">Generative Models</span></span> \\
   IEEE Transactions on Pattern Analysis and Machine Intelligence | Accepted, Oct. 2026 \\
   Siqi Wu\*; **Yinda Chen\***; Weiming Chen; Dong Liu; K. C. Ho; Zhihai He
 
-  [**PDF**](/docs/Learned_Image_Coding_with_Generative_Reference_of_Conditional_Latents.pdf) | [**Code**](https://github.com/ydchen0806/CLC) [![](https://img.shields.io/github/stars/ydchen0806/CLC?style=social&label=Code+Stars&cacheSeconds=3600)](https://github.com/ydchen0806/CLC)
+  [**IEEE Xplore**](https://doi.org/10.1109/TPAMI.2026.3744812) | [**PDF**](/docs/Learned_Image_Coding_with_Generative_Reference_of_Conditional_Latents.pdf) | [**Code**](https://github.com/ydchen0806/CLC) [![](https://img.shields.io/github/stars/ydchen0806/CLC?style=social&label=Code+Stars&cacheSeconds=3600)](https://github.com/ydchen0806/CLC)
 
 > GRCL presents a generic framework that exploits semantically correlated external images as conditional coding references in the latent domain. Three reference generation methods are investigated: local dictionary retrieval, web-based image search, and diffusion-based image-text-image generation. Theoretical analysis proves robustness to reference perturbations via subspace recovery error bounds. Achieves up to 1.5 dB PSNR gain over state-of-the-art methods with only ~0.005 bpp overhead.
 
