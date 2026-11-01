@@ -1,6 +1,6 @@
 name: Get Google Scholar Stats
 
-# 定时任务说明：
+# 定时任务说明（修改本工作流文件也会触发一次统计更新）：
 # - cron 使用 UTC。'0 1 * * *' = 每天 UTC 01:00（北京时间 09:00），避开整点负载高峰。
 # - GitHub 若 60 天无仓库活动，会暂停 scheduled workflow；到 Actions 里点一次 “Enable workflow” 即可恢复。
 on:
