@@ -1,7 +1,7 @@
 {
   "name": "Yinda Chen",
-  "citedby": 832,
-  "citedby5y": 832,
+  "citedby": 836,
+  "citedby5y": 836,
   "hindex": 15,
   "hindex5y": 15,
   "i10index": 20,
@@ -32,10 +32,10 @@
     },
     {
       "year": 2026,
-      "citations": 333
+      "citations": 337
     }
   ],
-  "updated": "2026-11-05 07:31:23.708547",
+  "updated": "2026-11-06 00:48:28.868537",
   "source": "serpapi",
   "publications": {},
   "first_author_papers": [
@@ -51,7 +51,7 @@
       "title": "Bimcv-r: A landmark dataset for 3d ct text-image retrieval",
       "authors": "Y Chen, C Liu, X Liu, R Arcucci, Z Xiong",
       "year": "2024",
-      "citations": 75,
+      "citations": 76,
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&citation_for_view=hCvlj5cAAAAJ:mVmsd5A6BfQC",
       "citation_id": "hCvlj5cAAAAJ:mVmsd5A6BfQC"
     },
@@ -107,7 +107,7 @@
       "title": "UniCompress: Enhancing Multi-Data Medical Image Compression with Knowledge Distillation",
       "authors": "R Yang*, Y Chen*, Z Zhang, X Liu, Z Li, K He, Z Xiong, J Suo, Q Dai",
       "year": "2024",
-      "citations": 10,
+      "citations": 11,
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&citation_for_view=hCvlj5cAAAAJ:UebtZRa9Y70C",
       "citation_id": "hCvlj5cAAAAJ:UebtZRa9Y70C"
     },
