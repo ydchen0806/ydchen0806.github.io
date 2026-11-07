@@ -1,7 +1,7 @@
 {
   "name": "Yinda Chen",
-  "citedby": 836,
-  "citedby5y": 836,
+  "citedby": 839,
+  "citedby5y": 839,
   "hindex": 15,
   "hindex5y": 15,
   "i10index": 20,
@@ -32,10 +32,10 @@
     },
     {
       "year": 2026,
-      "citations": 337
+      "citations": 340
     }
   ],
-  "updated": "2026-11-07 06:42:06.200208",
+  "updated": "2026-11-07 08:39:39.961978",
   "source": "serpapi",
   "publications": {},
   "first_author_papers": [
@@ -83,7 +83,7 @@
       "title": "MaskFactory: Towards High-quality Synthetic Data Generation for Dichotomous Image Segmentation",
       "authors": "H Qian*, YD Chen*, S Lou, FS Khan, X Jin, DP Fan",
       "year": "2024",
-      "citations": 27,
+      "citations": 28,
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&citation_for_view=hCvlj5cAAAAJ:aqlVkmm33-oC",
       "citation_id": "hCvlj5cAAAAJ:aqlVkmm33-oC"
     },
