@@ -1,170 +1,379 @@
 % !TeX program = xelatex
 % !TeX encoding = UTF-8
+% ========================================================================
 \documentclass{resume}
+% ========================================================================
+% ========================================================================
 \usepackage{zh_CN_fonts}
 \usepackage{linespacing_fix}
-\usepackage{tabularx}
-\usepackage{needspace}
-\usepackage{fancyhdr}
+\usepackage{amsmath,bm}
+\usepackage{booktabs}
+\usepackage{cite}
 \usepackage[hidelinks,bookmarks=false]{hyperref}
-
-% Keep the repository's portable XeLaTeX template and original image assets.
-% All CV-specific typography is defined here so the source remains editable.
-\geometry{a4paper,left=17mm,right=17mm,top=14mm,bottom=15mm,footskip=8mm}
-\definecolor{accent}{HTML}{173E54}
-\definecolor{muted}{HTML}{4D5962}
-\definecolor{rulegray}{HTML}{BCC7CE}
-\hypersetup{colorlinks=true,urlcolor=accent,linkcolor=accent,pdfauthor={Yinda Chen}}
-\urlstyle{same}
-\makeatletter
-\renewcommand\normalsize{\@setfontsize\normalsize{11}{14}}
-\renewcommand\small{\@setfontsize\small{10}{12.5}}
-\renewcommand\footnotesize{\@setfontsize\footnotesize{9}{11}}
-\makeatother
-\normalsize
-\setlength{\parindent}{0pt}
-\setlength{\parskip}{2pt}
-\setlength{\emergencystretch}{1.5em}
-\raggedbottom
-\titleformat{\section}{\large\bfseries\color{accent}}{}{0pt}{}[\vspace{1pt}\color{rulegray}\titlerule]
-\titlespacing*{\section}{0pt}{10pt}{5pt}
-\newcommand{\cvsection}[1]{\Needspace{5\baselineskip}\section{#1}}
-\renewcommand{\datedsubsection}[2]{%
-  \par\addvspace{5pt}\Needspace{4\baselineskip}%
-  \noindent\begin{tabularx}{\linewidth}{@{}Xr@{}}\textbf{#1}&{\small\color{muted}#2}\end{tabularx}\par\vspace{-1pt}%
-}
-\newcommand{\cvrole}[2]{\noindent\begin{tabularx}{\linewidth}{@{}Xr@{}}{\small #1}&{\small\color{muted}#2}\end{tabularx}\par\vspace{-2pt}}
-\newenvironment{cvitems}{\begin{itemize}[leftmargin=1.3em,label=\textbullet,itemsep=1.5pt,topsep=2pt,parsep=0pt,partopsep=0pt]}{\end{itemize}\vspace{1pt}}
-\newenvironment{publist}{\begin{enumerate}[leftmargin=1.9em,label={[\arabic*]},labelsep=.45em,itemsep=5pt,topsep=3pt,parsep=0pt,partopsep=0pt]}{\end{enumerate}}
-\newcommand{\pubitem}[4]{\item\begin{minipage}[t]{\linewidth}\raggedright\textbf{\href{#1}{#2}}\par\vspace{1pt}{\small #3\space\emph{#4}\par}\end{minipage}}
-\newcommand{\award}[2]{\noindent\begin{tabularx}{\linewidth}{@{}Xr@{}}#1&{\small\color{muted}#2}\end{tabularx}\par\vspace{1pt}}
-\pagestyle{fancy}
-\fancyhf{}
-\renewcommand{\headrulewidth}{0pt}
-\renewcommand{\footrulewidth}{0pt}
-\hypersetup{pdftitle={陈胤达 | 学术简历}}
-\fancyfoot[L]{\footnotesize\color{muted}陈胤达\quad 学术简历}
-\fancyfoot[R]{\footnotesize\color{muted}2026.11\qquad\thepage}
+\usepackage{fontawesome} % 图标
+\usepackage{datetime2} % 日期时间
+\usepackage{enumitem} % 用于自定义列表
+% 在导言区添加（\begin{document}之前）
+\newcommand{\confbadge}[2]{\hfill\makebox[3.5em][r]{\textcolor{#1}{\textbf{[#2]}}}}
+% ========================================================================
+% ========================================================================
 \begin{document}
-\begin{minipage}[t]{0.77\linewidth}
-  \vspace{0pt}{\fontsize{25}{29}\selectfont\bfseries 陈胤达}\quad{\large Yinda Chen}\par
-  \vspace{3pt}\textbf{中国科学技术大学 \& 上海 AI Lab 联合培养博士}\par
-  信息与通信工程\quad 预计 2027 年 6 月毕业\par
-  {\small\href{mailto:cyd0806@mail.ustc.edu.cn}{cyd0806@mail.ustc.edu.cn}\quad (+86) 130 5862 6611\par
-  \href{https://ydchen0806.github.io/}{个人主页}\quad|\quad\href{https://scholar.google.com/citations?user=hCvlj5cAAAAJ}{Google Scholar}\quad|\quad\href{https://github.com/ydchen0806}{GitHub}\par}
-\end{minipage}\hfill
-\begin{minipage}[t]{0.21\linewidth}
-  \vspace{0pt}\raggedleft
-  \includegraphics[width=1.45cm]{cydQRcode.jpeg}\hspace{1.5mm}\includegraphics[width=1.75cm]{cyd.jpg}
+% ========================================================================
+% ========================================================================
+\pagenumbering{gobble}
+% ========================================================================
+\begin{figure}[h]
+    \begin{minipage}[c]{2.15cm}
+        \centering
+        \includegraphics[height=2cm,width=2cm]{cydQRcode.jpeg}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[c]{2.5cm}
+        \centering
+        \includegraphics[height=3.5cm,width=2.5cm]{cyd.jpg}
+    \end{minipage}
+\end{figure}
+\vspace{-28mm}
+% ========================================================================
+\name{\Large\textbf{\fangsong 陈胤达}}
+% ========================================================================
+\basicInfo{\phone{(+86)13058626611}\quad\email{cyd0806@mail.ustc.edu.cn}
+            }
+
+ \centering{\faChain \url{https://ydchen0806.github.io/}} \\
+  \centering{\faChain \url{https://scholar.google.com/citations?user=hCvlj5cAAAAJ&hl=en&oi=ao}}
+% ========================================================================
+\vspace{.5em}
+
+% ========================================================================
+% ========================================================================
+\section{\makebox[.75em][c]{\faGraduationCap} \textbf{\fangsong 教育背景}}
+% ========================================================================
+\datedsubsection{\textbf{中国科学技术大学 \& 上海AI Lab}\ {\faMapMarker \small\textbf{\fangsong 合肥 \& 上海}}}{}
+% \datedsubsection{\textbf{中国科学技术大学}\ {\faMapMarker \small\textbf{\fangsong 合肥}}}{}
+\begin{flushleft}
+\textbf{\fangsong 信息与通信工程，博士研究生} \hfill \textbf{2024.7 \textasciitilde\ 2027.6（预计）}
+\end{flushleft}
+\begin{itemize}
+    \item \textbf{\kaishu 研究方向:}\hangindent=2em
+    \kaishu 预测性多模态智能：从自监督表征与预测学习到具身世界模型和VLA；兼顾科学智能体、基础模型后训练、医学影像与连接组分析
+    \item \textbf{\kaishu 导师:}\hangindent=2em
+    \kaishu \href{https://scholar.google.com/citations?user=5bInRDEAAAAJ&hl=en}{吴枫}（中国工程院院士，IEEE Fellow），\href{https://scholar.google.com/citations?user=Snl0HPEAAAAJ&hl=en&oi=ao}{熊志伟}；连接组研究指导：张若冰（复旦大学）
+    \item \textbf{\kaishu 核心课程:}\hangindent=2em
+    \kaishu 算法设计与分析，统计学习，深度学习，强化学习
+    \item \textbf{\kaishu 荣誉奖励:}\hangindent=2em
+    \kaishu 国家自然科学基金博士生项目负责人（2024年获批，2025--2027年执行）；\href{https://ydchen0806.github.io/docs/cast_ccf_2026_selection_proof.png}{入选中国科协博士生青托（2026，CCF培育）}
+\end{itemize}
+
+\datedsubsection{\textbf{中国科学技术大学}\ {\faMapMarker \small\textbf{\fangsong 合肥}}}{}
+\begin{flushleft}
+\textbf{\fangsong 计算机技术，硕士} \hfill \textbf{2022.9 \textasciitilde\ 2024.7}
+\end{flushleft}
+\begin{itemize}
+    \item \textbf{\kaishu 荣誉奖励:}\hangindent=2em
+    \kaishu 研究生国家奖学金（2022年）
+    \item \textbf{\kaishu 研究指导:}\hangindent=2em
+    \kaishu 2023年曾在上海AI Lab接受\href{https://scholar.google.com/citations?user=qpBtpGsAAAAJ&hl=en}{汤晓鸥}教授的科研指导
+\end{itemize}
+
+\datedsubsection{\textbf{厦门大学}\ {\faMapMarker \small\textbf{\fangsong 厦门}}}{}
+\begin{flushleft}
+\textbf{\fangsong 环境生态工程\&经济学双学位，本科} \hfill \textbf{2018.9 \textasciitilde\ 2022.7}
+\end{flushleft}
+\begin{itemize}
+    \item \textbf{\kaishu 综合排名: 1/31}
+    % \textbf{\kaishu 专业排名: 16/31} \qquad
+    \item \textbf{\kaishu 荣誉奖励:}\hangindent=2em
+    \kaishu 厦门大学学术之星（2021年），CDA一级认证（2022年），Kaggle Expert
+    \item \textbf{\kaishu 导师:}\hangindent=2em
+    \kaishu \href{https://scholar.google.com/citations?user=l1GMXf4AAAAJ&hl=en&oi=ao}{张原野}
+\end{itemize}
+% ========================================================================
+% ========================================================================
+% ========================================================================
+\section{\makebox[.75em][c]{\faGroup} \textbf{\fangsong 业界实习经历}}
+% ========================================================================
+\datedsubsection{\textbf{九坤投资（Ubiquant）}\ {\faMapMarker \small\textbf{\fangsong 北京}}}{}
+\begin{flushleft}
+\textbf{\fangsong 量化研究与大语言模型，研究实习生} \hfill \textbf{2026.5 \textasciitilde \ 2026.10}
+\end{flushleft}
+\begin{itemize}
+    \item \kaishu 从事\textbf{量化研究}与\textbf{通用大模型}研发。
+    \item \kaishu 具备\textbf{千卡集群}训练经验，探索通用大模型在数据驱动决策与因子挖掘中的应用。
+    \item \kaishu \textbf{\href{https://arxiv.org/abs/2610.11451}{SAIL}核心贡献者}：面向文献研究、科学编程与多步骤科研任务（2026.10技术报告）。
+    \item \kaishu 参与\textbf{\href{https://arxiv.org/abs/2610.30949}{IQuest-Q1}}智能体基座模型研究并署名技术报告（2026.10），面向命令行交互、代码与多步骤工具使用。
+\end{itemize}
+
+\datedsubsection{\textbf{北京人形机器人创新中心（X-Humanoid）}\ {\faMapMarker \small\textbf{\fangsong 北京}}}{}
+\begin{flushleft}
+\textbf{\fangsong 具身智能世界模型算法团队，核心成员} \hfill \textbf{2025.12 \textasciitilde \ 至今}
+\end{flushleft}
+\begin{itemize}
+    \item \kaishu 研发面向人形机器人的\textbf{统一具身世界模型}，在真机闭环中联通任务相关感知、未来状态预测与低层动作生成。
+    \item \kaishu 作为\textbf{Pelican-Unified 1.0}统一VLM与动作建模方向的核心贡献者，参与基模训练及规划验证；作为\textbf{Pelican-VLA 0.5}贡献者，研究任务相关瓶颈表征与动作学习。
+    \item \kaishu 具备\textbf{百卡H200}集群训练经验，支持大规模具身基础模型的高效训练与优化。
+\end{itemize}
+
+\datedsubsection{\textbf{腾讯（IEG）}\ {\faMapMarker \small\textbf{\fangsong 上海}}}{}
+\begin{flushleft}
+\textbf{\fangsong 青云计划实习生} \hfill \textbf{2025.8 \textasciitilde \ 2025.12}
+\end{flushleft}
+\begin{itemize}
+    \item \kaishu 参与\textbf{游戏世界模型}与多模态场景理解，包含和平精英项目\href{https://main-vla.github.io/}{\textbf{MAIN-VLA}}，联通意图、游戏状态与动作建模。
+    \item \kaishu 落地王者荣耀\textbf{灵宝}项目，负责\textbf{TTS}与\textbf{实时对战解说}相关能力研发。
+    \item \kaishu 基于F5-TTS和IndexTTS2训练并优化灵宝语音生成模型。
+    \item \kaishu 合作开展无路由MoE-LoRA研究，形成\href{https://arxiv.org/abs/2509.14900}{\textbf{FURINA}}，研究低秩专家更新的线性聚合与基模合并（IEEE IoTJ，2026年接收）。
+\end{itemize}
+
+\datedsubsection{\textbf{中国人民解放军总医院（301医院）}\ {\faMapMarker \small\textbf{\fangsong 北京}}}{}
+\begin{flushleft}
+\textbf{\fangsong 数据压缩小组，研究实习生} \hfill \textbf{2023.9 \textasciitilde \ 2024.2}
+\end{flushleft}
+\begin{itemize}
+    \item \kaishu 协同戴琼海院士团队进行高效数据压缩的研究。
+    \item \kaishu 研究医学影像特定的压缩算法，面向CT、MRI等模态优化内容表示、参考图像利用与编码效率。
+\end{itemize}
+
+% ========================================================================
+\section{\makebox[.75em][c]{\faUniversity} \textbf{\fangsong 学界实习经历}}
+% ========================================================================
+\datedsubsection{\textbf{帝国理工学院}\ {\faMapMarker \small\textbf{\fangsong 伦敦（remote）}}}{}
+\begin{flushleft}
+\textbf{\fangsong Data Science Institute，RA} \hfill \textbf{2022.11 \textasciitilde \ 2023.8}
+\end{flushleft}
+\begin{itemize}
+    \item \kaishu 与Rossella Arcucci、Che Liu合作开展三维医学多模态学习，形成GTGM生成文本引导预训练与BIMCV-R / MedFinder图文检索成果。
+    \item \kaishu 开发图像--文本对比学习与检索框架；参与构建含\textbf{8,069个CT体积}的\href{https://github.com/ydchen0806/MedFinder}{BIMCV-R}数据集。
+\end{itemize}
+
+\datedsubsection{\textbf{厦门大学WISER Club}\ {\faMapMarker \small\textbf{\fangsong 厦门}}}{}
+\begin{flushleft}
+\textbf{\fangsong 数据挖掘小组，学术社群成员} \hfill \textbf{2021.8 \textasciitilde \ 2022.7}
+\end{flushleft}
+\begin{itemize}
+    \item \kaishu 负责数据挖掘类课程的设计与讨论，主讲聚类和Transformer小节。
+    \item \kaishu 指导本科生完成机器学习项目，并组织校内竞赛活动。
+\end{itemize}
+
+\datedsubsection{\textbf{厦门大学王亚南经济研究院}\ {\faMapMarker \small\textbf{\fangsong 厦门}}}{}
+\begin{flushleft}
+\textbf{\fangsong 计量经济学，研究助理} \hfill \textbf{2020.8 \textasciitilde \ 2021.12}
+\end{flushleft}
+\begin{itemize}
+    \item \kaishu 协助朱炯副教授完成国土经济统计，进行宅基地信息的视觉特征提取。
+    \item \kaishu 开发卫星影像分析工具，通过视觉特征分析土地利用变化。
+\end{itemize}
+% ========================================================================
+% ========================================================================
+\section{\makebox[.75em][c]{\faFlask} \textbf{\fangsong 科研项目}}
+\datedsubsection{\textbf{\textit{具身智能与世界模型：Pelican 系列}}}{\textbf{2026.5 \textasciitilde\ 至今}}
+\role {统一具身基础模型}{Pelican-Unified 1.0 核心贡献者；Pelican-VLA 0.5 贡献者}
+\begin{itemize}
+    \item \kaishu 在\href{https://arxiv.org/abs/2605.15153}{\textbf{Pelican-Unified 1.0}}中，作为\textbf{统一VLM与动作建模}方向核心贡献者，参与联通多模态理解、未来视频预测与低层动作生成，支持理解、推理、想象与动作的一体化建模。
+    \item \kaishu 参与\href{https://arxiv.org/abs/2607.06655}{\textbf{Pelican-VLA 0.5: Attending Before Acting Benefits Generalization}}技术报告，围绕\textbf{任务相关瓶颈表征}、视觉语言条件与动作预测开展研究，并参与真实机器人闭环验证。
+    \item \kaishu 方法重点：利用可学习\textbf{Bottleneck Token}汇聚任务相关视觉信息，研究未来状态建模与动作学习的联系，评估跨场景任务中的泛化表现。
+    \item \kaishu 媒体报道：\href{https://www.peopleapp.com/column/30052155186-500007497131}{人民日报}，\href{https://www.beijing.gov.cn/fuwu/lqfw/gggs/202605/t20260519_4656998.html}{北京日报/北京市政府}，\href{https://mp.weixin.qq.com/s/z-OAqnl4IKHpaiT4bYBHIA}{机器之心}，\href{https://www.zhidx.com/p/558258.html}{智东西}
+\end{itemize}
+
+\datedsubsection{\textbf{\textit{国家自然科学基金青年学生基础研究项目（博士研究生）}}}{\textbf{2025.1 \textasciitilde \ 2027.12}}
+\role {国家自然科学基金项目}{负责人\ {(2024年获批；执行期2025--2027年；经费\textcolor{red}{30万元})}}
+\begin{enumerate}[label=\textbf{[\arabic*]}, leftmargin=2em, itemsep=3pt]
+    \item \kaishu \textbf{神经科学表征与预训练}
+    \begin{itemize}
+        \item 面向电子显微镜与三维医学图像，研究视觉token构建、\textbf{自回归预训练}与多尺度表征一致性。
+        \item 结合多模态神经影像数据，探索数据高效的\textbf{自监督与预测学习}方法。
+    \end{itemize}
+    \item \kaishu \textbf{精细神经元分割}
+    \begin{itemize}
+        \item 研究\textbf{多智能体掩码策略}、互补掩码一致性与跨域分割，提高表征迁移与分割鲁棒性。
+    \end{itemize}
+    \item \kaishu \textbf{连接组结构--功能分析}
+    \begin{itemize}
+        \item 分析成年果蝇蘑菇体连接组的神经递质侧化及其与记忆计算的联系。
+        \item \textbf{SfN 2026 poster摘要已接收：}Connectome-scale chemical lateralization predicts asymmetric memory computation in the adult Drosophila mushroom body。
+    \end{itemize}
+\end{enumerate}
+
+\datedsubsection{\textbf{\textit{表征与预测学习}}}{\textbf{2022.5 \textasciitilde \ 至今}}
+\role{Conference\&Journal}{代表性论文（作者角色见各条目）}
+\begin{enumerate}[label=\textbf{[\arabic*]}, leftmargin=2em, itemsep=3pt]
+    \item \kaishu \parbox[t]{0.88\linewidth}{\textbf{\href{https://openaccess.thecvf.com/content/ICCV2025/html/Chen_TokenUnify_Scaling_Up_Autoregressive_Pretraining_for_Neuron_Segmentation_ICCV_2025_paper.html}{TokenUnify: Scaling Up Autoregressive Pretraining for Neuron Segmentation}}, \textbf{ICCV 2025}} \hfill \textcolor{red}{\textbf{[共一]}}
+    \begin{itemize}
+        \item 提出结合\textbf{Mamba}的图像自回归预训练方法，面向长序列神经元图像学习可迁移的视觉表征。
+        \item 设计\textbf{混合token预测策略}，结合局部结构与长程依赖，兼顾预训练效率与下游分割质量。
+        \item 通过理论分析与实验研究模型规模扩展规律，验证预训练表征在电子显微镜神经元分割中的作用。
+    \end{itemize}
+
+    \item \kaishu \parbox[t]{0.88\linewidth}{\textbf{\href{https://proceedings.mlr.press/v267/wang25n.html}{MaskTwins: Dual-form Complementary Masking for Domain-Adaptive Image Segmentation}}, \textbf{ICML 2025}} \hfill \textcolor{blue}{\textbf{[理论贡献]}}
+    \begin{itemize}
+        \item 从\textbf{稀疏信号重构}角度开展互补掩码理论分析，研究对偶形式互补掩码提取领域不变特征的机制。
+        \item 结合\textbf{互补掩码一致性学习}与无监督域适应，实现跨域图像分割。
+        \item 论文在SYNTHIA$\to$Cityscapes上提升2.7个mIoU百分点，在VNCIII$\to$Lucchi上提升3.2个IoU百分点。
+    \end{itemize}
+
+    \item \kaishu \parbox[t]{0.88\linewidth}{\textbf{\href{https://www.ijcai.org/proceedings/2023/0068.pdf}{Self-supervised Neuron Segmentation with Multi-agent Reinforcement Learning}}, \textbf{IJCAI 2023}} \hfill \textcolor{red}{\textbf{[一作]}}
+    \begin{itemize}
+        \item 提出\textbf{dbMiM多智能体强化学习}框架，改进掩码自编码预训练，联合优化掩码率与掩码策略。
+        \item 通过自适应掩码任务学习神经元图像的有效表征，并用于下游神经元分割。
+    \end{itemize}
+
+    \item \kaishu \parbox[t]{0.88\linewidth}{\textbf{\href{https://arxiv.org/abs/2308.09917}{Learning Multiscale Consistency for Self-Supervised Electron Microscopy Instance Segmentation}}, \textbf{ICASSP 2024}} \hfill \textcolor{red}{\textbf{[一作]}}
+    \begin{itemize}
+        \item 结合\textbf{多尺度特征对比学习}与特征重构，构建电子显微镜图像的自监督预训练策略。
+        \item 设计\textbf{特征一致性损失}，缓解尺度变化引起的表征差异，并面向神经元实例分割进行验证。
+    \end{itemize}
+
+    \item \kaishu \parbox[t]{0.88\linewidth}{\textbf{\href{https://ydchen0806.github.io/docs/Unsupervised_Domain_Adaptation_for_EM_Image_Denoising_With_Invertible_Networks.pdf}{Unsupervised Domain Adaptation for EM Image Denoising With Invertible Networks}}, \textbf{IEEE TMI, 2024 (Early Access)}} \hfill \textcolor{blue}{\textbf{[合作作者]}}
+    \begin{itemize}
+        \item 合作研究无监督域适应的电镜图像去噪，利用\textbf{可逆网络}解耦内容与噪声，构建域无关的内容空间。
+        \item 通过域对齐与伪噪声图像重建缓解合成噪声到真实噪声的域偏移，并评估去噪质量及下游神经元分割。
+    \end{itemize}
+
+\end{enumerate}
+
+\datedsubsection{\textbf{\textit{多模态与生成模型}}}{\textbf{2023.8 \textasciitilde \ 至今}}
+\role{Conference\&Journal}{代表性论文（作者角色见各条目）}
+\begin{enumerate}[label=\textbf{[\arabic*]}, leftmargin=2em, itemsep=3pt]
+    \item \kaishu \parbox[t]{0.88\linewidth}{\textbf{\href{https://doi.org/10.1109/TPAMI.2026.3744812}{Learned Image Coding with Generative Reference of Conditional Latents}}, \textbf{IEEE TPAMI, 2026 (accepted)}} \hfill \textcolor{red}{\textbf{[共一]}}
+    \begin{itemize}
+        \item 在CLC工作基础上，进一步研究\textbf{生成式参考图像}对条件潜变量编码与熵模型的帮助。
+        \item 整合\textbf{本地字典、网络检索、图像生成}三类参考获取方式，研究多源参考与条件潜变量的联合建模。
+        \item 结合参考图像合成、条件隐变量生成与鲁棒性分析，评估参考信息对率失真性能的作用。
+    \end{itemize}
+
+    \item \kaishu \parbox[t]{0.88\linewidth}{\textbf{\href{https://doi.org/10.1609/aaai.v39i12.33403}{Conditional Latent Coding with Learnable Synthesized Reference for Deep Image Compression}}, \textbf{AAAI 2025}} \hfill \textcolor{red}{\textbf{[共一]}}
+    \begin{itemize}
+        \item 构建图像相似度字典以检索参考图像，使用\textbf{可学习合成参考}改进熵模型的概率估计。
+        \item 结合\textbf{条件潜变量编码}、参考信息合成与自适应熵建模，研究参考图像辅助的深度图像压缩。
+    \end{itemize}
+
+    \item \kaishu \parbox[t]{0.88\linewidth}{\textbf{\href{https://openaccess.thecvf.com/content/ICCV2025W/VLM3D/html/Chen_GTGM_Generative_Text-Guided_3D_Vision-Language_Pretraining_for_Medical_Image_Segmentation_ICCVW_2025_paper.html}{GTGM: Generative Text-Guided 3D Vision-Language Pretraining for Medical Image Segmentation}}, \textbf{ICCV 2025 Workshop (VLM3D)}} \hfill \textcolor{red}{\textbf{[共一]}}
+    \begin{itemize}
+        \item 利用大语言模型\textbf{生成图像描述}，在不依赖真实配对文本的条件下开展三维医学视觉语言预训练。
+        \item 结合图文对比学习与生成文本引导，学习用于医学图像分割的多模态表征；在10个数据集上进行下游有监督微调与评估。
+    \end{itemize}
+
+    \item \kaishu \parbox[t]{0.88\linewidth}{\textbf{\href{https://arxiv.org/abs/2403.15992}{BIMCV-R: A Landmark Dataset for 3D CT Text-Image Retrieval}}, \textbf{MICCAI 2024}} \hfill \textcolor{red}{\textbf{[一作]}}
+    \begin{itemize}
+        \item 参与构建含\textbf{8,069个CT体积}的三维医学图文检索数据集，为体积影像与临床报告之间的检索提供基准。
+        \item 开发图文对齐与检索框架\href{https://github.com/ydchen0806/MedFinder}{\textbf{MedFinder}}，支持三维CT语义检索与相关信息搜索。
+    \end{itemize}
+
+    \item \kaishu \parbox[t]{0.88\linewidth}{\textbf{\href{https://arxiv.org/abs/2412.19080}{MaskFactory: Towards High-quality Synthetic Data Generation for Dichotomous Image Segmentation}}, \textbf{NeurIPS 2024}} \hfill \textcolor{red}{\textbf{[共一]}}
+    \begin{itemize}
+        \item 通过\textbf{刚性与非刚性形变}编辑掩码，再利用ControlNet生成对应的掩码--图像对。
+        \item 结合形变驱动的掩码编辑、生成条件控制与合成数据质量评估，研究合成训练数据对二分图像分割的帮助。
+    \end{itemize}
+
+    \item \kaishu \parbox[t]{0.88\linewidth}{\textbf{\href{https://doi.org/10.1109/TCSVT.2026.3702531}{Joint Semantic and Coded Generation for Conditional Latent Coding}}, \textbf{IEEE TCSVT, 2026}} \hfill \textcolor{blue}{\textbf{[合作作者]}}
+    \begin{itemize}
+        \item 合作开展\textbf{语义与编码信息联合引导}的参考图像生成，结合文本描述与编码特征辅助条件潜变量编码。
+        \item 研究生成参考与编码特征之间的对齐、信息融合和概率估计，连接可控图像生成与深度图像压缩。
+    \end{itemize}
+
+    \item \kaishu \parbox[t]{0.88\linewidth}{\textbf{\href{https://ieeexplore.ieee.org/document/11205280}{EMPOWER: Evolutionary Medical Prompt Optimization With Reinforcement Learning}}, \textbf{IEEE JBHI, 2025 (Early Access)}} \hfill \textcolor{red}{\textbf{[共一]}}
+    \begin{itemize}
+        \item 结合领域知识与\textbf{强化学习}开展医疗提示词的进化优化，使用医学注意力、多维度质量评估、进化搜索与语义验证。
+        \item 论文实验中事实错误减少24.7\%，盲测中的临床医生偏好提升15.3\%，评估提示优化对医疗回答质量的作用。
+    \end{itemize}
+
+    \item \kaishu \parbox[t]{0.88\linewidth}{\textbf{\href{https://arxiv.org/abs/2509.14900}{FURINA: Free from Unmergeable Router via LINear Aggregation of mixed experts}}, \textbf{IEEE IoTJ, 2026 (accepted)}} \hfill \textcolor{blue}{\textbf{[合作作者]}}
+    \begin{itemize}
+        \item 合作开展\textbf{无路由MoE-LoRA}研究，采用线性聚合整合多个低秩专家的参数更新。
+        \item 将专家更新合并至基础模型，研究多专家适配能力与合并部署之间的兼容性，避免额外路由器阻碍参数合并。
+    \end{itemize}
+
+\end{enumerate}
+
+\datedsubsection{\textbf{\textit{大模型工程}}}{\textbf{2023.9 \textasciitilde \ 至今}}
+\role{Projects}{核心成员}
+\begin{itemize}
+    \item \kaishu \textbf{基础模型系统：}开展图像编码、通用大模型训练与量化研究工作流建设，具备\textbf{千卡集群}训练经验，使用DDP与DeepSpeed优化分布式训练。
+    \item \kaishu \textbf{具身与生物医学模型：}参与真机闭环、Pelican-Unified基模训练及具身训练基础设施建设，具备\textbf{百卡H200}训练经验；开展医学图像与神经元模型预训练，使用\textbf{64卡A40}训练环境。
+\end{itemize}
+
+
+% ========================================================================
+\section{\makebox[.75em][c]{\faTrophy} \textbf{\fangsong 荣誉奖项}}
+% ========================================================================
+\vspace{.5mm}
+\begin{itemize}[leftmargin=0em, itemsep=3pt]
+    \item \textbf{\fangsong 入选中国科协博士生青托（CCF培育）} \hfill \textbf{2026.10}
+    \begin{itemize}[leftmargin=1.5em]
+        \item \kaishu 培育学会：中国计算机学会（CCF）
+    \end{itemize}
+
+    \item \textbf{\fangsong 中国科学技术大学增华奖学金} \hfill \textbf{2026}
+
+    \item \textbf{\fangsong 交叉学科建模竞赛（ICM）} \hfill \textbf{2024}
+    \begin{itemize}[leftmargin=1.5em]
+        \item \kaishu Outstanding Winner
+    \end{itemize}
+
+    \item \textbf{\fangsong 国家自然科学基金青年学生基础研究项目（博士研究生）} \hfill \textbf{2024.12}
+    \begin{itemize}[leftmargin=1.5em]
+        \item \kaishu 项目负责人；2024年获批，执行期2025--2027年，经费30万元
+    \end{itemize}
+
+    \item \textbf{\fangsong 研究生国家奖学金} \hfill \textbf{2022.12}
+    \begin{itemize}[leftmargin=1.5em]
+        \item \kaishu 中国科学技术大学研究生国家奖学金
+    \end{itemize}
+
+    \item \textbf{\fangsong 厦门大学学术之星} \hfill \textbf{2021.12}
+    \begin{itemize}[leftmargin=1.5em]
+        \item \kaishu 本科阶段科研荣誉
+    \end{itemize}
+
+    \item \textbf{\fangsong ``景润杯"数学竞赛数学专业类} \hfill \textbf{2021.10}
+    \begin{itemize}[leftmargin=1.5em]
+        \item \kaishu 厦门大学第一名
+    \end{itemize}
+
+    \item \textbf{\fangsong ``互联网+"大赛} \hfill \textbf{2021.08}
+    \begin{itemize}[leftmargin=1.5em]
+        \item \kaishu 福建省金奖
+    \end{itemize}
+
+    \item \textbf{\fangsong 全国大学生数学竞赛非数学专业组决赛} \hfill \textbf{2021.05}
+    \begin{itemize}[leftmargin=1.5em]
+        \item \kaishu 全国二等奖
+    \end{itemize}
+
+    \item \textbf{\fangsong ``挑战杯"全国大学生课外学术科技作品竞赛} \hfill \textbf{2021.05}
+    \begin{itemize}[leftmargin=1.5em]
+        \item \kaishu 福建省一等奖
+    \end{itemize}
+
+    \item \textbf{\fangsong 全国大学生数学竞赛非数学专业组} \hfill \textbf{2020.11}
+    \begin{itemize}[leftmargin=1.5em]
+        \item \kaishu 福建省第一名
+    \end{itemize}
+    \end{itemize}
+% ========================================================================
+\section{\makebox[.75em][c]{\faCogs} \textbf{\fangsong 专业技能}}
+% ========================================================================
+\noindent
+\begin{minipage}[t]{.5\textwidth}
+    \begin{itemize}
+    \item \textbf{\kaishu 编程能力}: Python, MATLAB, \LaTeX, C, C++, Java
+    \item \textbf{\kaishu 深度学习}: PyTorch, TensorFlow, DeepSpeed, DDP
+    \end{itemize}
+\end{minipage}
+\begin{minipage}[t]{.5\textwidth}
+    \begin{itemize}
+    \item \textbf{\kaishu 英语能力}: TOEFL(110), GRE(328)
+    \item \textbf{\kaishu 专业工具}: Git, Docker, CUDA, HPC
+    \end{itemize}
 \end{minipage}
 
-\cvsection{研究概述}
-研究具身世界模型与视觉--语言--动作（VLA）模型、科学智能体与基础模型后训练，以及自监督和多模态表征学习。以三维医学影像与连接组为长期研究场景，关注数据高效学习、域迁移及神经回路的结构--功能联系。
+% ========================================================================
+\section{\makebox[.75em][c]{\faUsers} \textbf{\fangsong 学术服务}}
+% ========================================================================
+\begin{itemize}
+    \item \textbf{\kaishu 期刊\&会议审稿人}: CVPR 2025, ICCV 2025, WACV 2026, NeurIPS 2024, ICML 2025, ICLR 2024, MICCAI 2025, ACM MM 2024, AISTATS 2024, IJCV, TIP
+    \item \textbf{\kaishu 邀请报告}: Vision-Language Pretraining Using Generative Methods，京东AI团队，2023.03。
+\end{itemize}
 
-\cvsection{教育背景}
-\datedsubsection{中国科学技术大学 \& 上海 AI Lab}{2024.07--2027.06（预计）}
-信息与通信工程，博士研究生（联合培养）。导师：吴枫、熊志伟。\par
-{\small 连接组研究指导：张若冰（复旦大学）。}
-\datedsubsection{中国科学技术大学}{2022.09--2024.07}
-计算机技术，硕士。{\small 此前于 2023 年在上海 AI Lab 接受汤晓鸥教授的研究指导。}
-\datedsubsection{厦门大学}{2018.09--2022.07}
-环境生态工程与经济学双学位，本科。{\small 指导教师：张原野。}
-
-\cvsection{科研与实习经历}
-\datedsubsection{北京人形机器人创新中心（X-Humanoid）}{2025.12--至今}
-\cvrole{具身智能世界模型算法团队，核心成员}{北京}
-\begin{cvitems}
-  \item 作为 \href{https://arxiv.org/abs/2605.15153}{Pelican-Unified 1.0} 统一 VLM 与动作建模方向的核心贡献者，参与联通视觉语言理解、未来状态预测与机器人动作的统一模型研究。
-  \item 参与 \href{https://arxiv.org/abs/2607.06655}{Pelican-VLA 0.5} 的任务相关瓶颈表征与动作学习研究，以及真实机器人闭环验证；具备百卡 H200 集群训练经验。
-\end{cvitems}
-\datedsubsection{九坤投资（Ubiquant）}{2026.05--2026.10}
-\cvrole{量化研究与大语言模型，研究实习生}{北京}
-\begin{cvitems}
-  \item 参与量化研究与通用大模型训练，具备\textbf{千卡集群}训练经验；探索模型在数据驱动决策与因子挖掘中的应用。
-  \item \href{https://arxiv.org/abs/2610.11451}{\textbf{SAIL}} 核心贡献者：面向文献研究、科学编程与多步骤科研工作流开展科学智能体研究（2026.10）。
-  \item \href{https://arxiv.org/abs/2610.30949}{\textbf{IQuest-Q1}} 署名贡献者：参与面向命令行交互、代码与多步工具使用的智能体基座模型研究（2026.10）。
-\end{cvitems}
-\datedsubsection{腾讯互动娱乐事业群（IEG）}{2025.08--2025.12}
-\cvrole{青云计划，研究实习生}{上海}
-\begin{cvitems}
-  \item 参与和平精英世界模型 \href{https://main-vla.github.io/}{MAIN-VLA} 与多模态场景理解；在王者荣耀灵宝项目中基于 F5-TTS、IndexTTS2 开展语音合成与实时对战解说。
-  \item 合作开展无路由 MoE-LoRA 研究，形成 \href{https://arxiv.org/abs/2509.14900}{FURINA}，研究多专家低秩更新的合并与部署（IEEE IoTJ，2026 年接收）。
-\end{cvitems}
-\datedsubsection{中国人民解放军总医院（301 医院）}{2023.09--2024.02}
-\cvrole{数据压缩小组，研究实习生}{北京}
-\begin{cvitems}
-  \item 与戴琼海院士团队合作研究高效医学影像压缩，针对 CT、MRI 等模态探索内容与模态特异的压缩方法。
-\end{cvitems}
-\datedsubsection{中国科学技术大学｜表征学习与连接组研究}{2022.09--至今}
-\cvrole{硕士、博士阶段研究；NSFC 博士生项目负责人（2025--2027）}{合肥}
-\begin{cvitems}
-  \item 开展自回归预训练（TokenUnify）、多智能体掩码学习（dbMiM）及跨域分割理论分析（MaskTwins），面向电镜与三维医学影像研究数据高效的学习方法。
-  \item 分析果蝇蘑菇体连接组的神经递质侧化及结构--功能联系；相关连接组研究摘要已获 SfN 2026 poster 接收。
-\end{cvitems}
-\datedsubsection{Imperial College London，Data Science Institute}{2022.11--2023.08}
-\cvrole{研究实习生}{伦敦（远程）}
-\begin{cvitems}
-  \item 与 Rossella Arcucci、Che Liu 合作开展三维医学多模态学习：利用生成文本进行视觉语言预训练（GTGM），以及 CT 图文检索（BIMCV-R / MedFinder）。
-  \item 参与构建含 8,069 个 CT 体积的 \href{https://github.com/ydchen0806/MedFinder}{BIMCV-R} 检索数据集及对应检索框架。
-\end{cvitems}
-\datedsubsection{厦门大学 WISER Club}{2021.08--2022.07}
-\cvrole{数据挖掘小组，学术社群成员}{厦门}
-\begin{cvitems}
-  \item 设计并主讲聚类、Transformer 等数据挖掘课程内容，指导本科生机器学习项目并组织校内竞赛活动。
-\end{cvitems}
-\datedsubsection{厦门大学王亚南经济研究院}{2020.08--2021.12}
-\cvrole{计量经济学研究助理}{厦门}
-\begin{cvitems}
-  \item 协助朱炯副教授开展国土经济统计与宅基地信息分析，使用卫星影像提取视觉特征并分析土地利用变化。
-\end{cvitems}
-
-\cvsection{技术报告}
-\begin{publist}
-\pubitem{https://arxiv.org/abs/2610.30949}{IQuest-Q1: Advancing Foundation Capabilities for Agentic CLI Systems}{IQuest Research；署名贡献者。}{技术报告，2026.10。}
-\pubitem{https://arxiv.org/abs/2610.11451}{SAIL: Scientific Agentic Intelligence via a Science-Aware Loop}{SAIL Model Team / IQuest Research；核心贡献者。}{技术报告，2026.10。}
-\pubitem{https://arxiv.org/abs/2607.06655}{Pelican-VLA 0.5: Attending Before Acting Benefits Generalization}{X-Humanoid, WFM System Group；贡献者。}{技术报告，2026.07。}
-\pubitem{https://arxiv.org/abs/2605.15153}{Pelican-Unified 1.0: A Unified Embodied Intelligence Model (UEI) for Understanding, Reasoning, Imagination and Action}{X-Humanoid, WFM System Group；统一 VLM 与动作建模方向核心贡献者。}{技术报告，2026.05。}
-\end{publist}
-\cvsection{精选同行评审论文}
-{\small $^{*}$ 表示共同一作；作者顺序按论文列示。完整列表见 \href{https://scholar.google.com/citations?user=hCvlj5cAAAAJ}{Google Scholar}。}
-\begin{publist}
-\pubitem{https://doi.org/10.1109/TPAMI.2026.3744812}{Learned Image Coding with Generative Reference of Conditional Latents}{Siqi Wu$^{*}$, \textbf{Yinda Chen}$^{*}$, Weiming Chen, Dong Liu, K. C. Ho, Zhihai He.}{IEEE TPAMI，2026（已接收）。}
-\pubitem{https://arxiv.org/abs/2509.14900}{FURINA: Free from Unmergeable Router via LINear Aggregation of mixed experts}{Jiayi Han et al.（含 \textbf{Yinda Chen}）。}{IEEE Internet of Things Journal，2026（已接收）。}
-\pubitem{https://doi.org/10.1109/TCSVT.2026.3702531}{Joint Semantic and Coded Generation for Conditional Latent Coding}{Siqi Wu, Weiming Chen, \textbf{Yinda Chen}, Dong Liu, K. C. Ho, Zhihai He.}{IEEE TCSVT，2026。}
-\pubitem{https://openaccess.thecvf.com/content/ICCV2025/html/Chen_TokenUnify_Scaling_Up_Autoregressive_Pretraining_for_Neuron_Segmentation_ICCV_2025_paper.html}{TokenUnify: Scaling Up Autoregressive Pretraining for Neuron Segmentation}{\textbf{Yinda Chen}$^{*}$, Haoyuan Shi$^{*}$, Xiaoyu Liu, Te Shi, Ruobing Zhang, Dong Liu, Zhiwei Xiong, Feng Wu.}{ICCV，2025。}
-\pubitem{https://proceedings.mlr.press/v267/wang25n.html}{MaskTwins: Dual-form Complementary Masking for Domain-Adaptive Image Segmentation}{Jiawen Wang, \textbf{Yinda Chen}, Xiaoyu Liu, Che Liu, Dong Liu, Jianqing Gao, Zhiwei Xiong.}{ICML，2025；理论贡献。}
-\pubitem{https://doi.org/10.1609/aaai.v39i12.33403}{Conditional Latent Coding with Learnable Synthesized Reference for Deep Image Compression}{Siqi Wu$^{*}$, \textbf{Yinda Chen}$^{*}$, Dong Liu, Zhihai He.}{AAAI，2025。}
-\pubitem{https://openaccess.thecvf.com/content/ICCV2025W/VLM3D/html/Chen_GTGM_Generative_Text-Guided_3D_Vision-Language_Pretraining_for_Medical_Image_Segmentation_ICCVW_2025_paper.html}{GTGM: Generative Text-Guided 3D Vision-Language Pretraining for Medical Image Segmentation}{\textbf{Yinda Chen}$^{*}$, Che Liu$^{*}$, Wei Huang, Xiaoyu Liu, Haoyuan Shi, Sibo Cheng, Rossella Arcucci, Zhiwei Xiong.}{ICCV Workshop (VLM3D)，2025。}
-\pubitem{https://ieeexplore.ieee.org/document/11205280}{EMPOWER: Evolutionary Medical Prompt Optimization With Reinforcement Learning}{\textbf{Yinda Chen}$^{*}$, Yangfan He$^{*}$, Jing Yang, Dapeng Zhang, Zhenlong Yuan, Muhammad Attique Khan, Jamel Baili, Por Lip Yee.}{IEEE JBHI，2025（Early Access）。}
-\pubitem{https://arxiv.org/abs/2403.15992}{BIMCV-R: A Landmark Dataset for 3D CT Text-Image Retrieval}{\textbf{Yinda Chen}, Che Liu, Xiaoyu Liu, Rossella Arcucci, Zhiwei Xiong.}{MICCAI，2024。}
-\pubitem{https://arxiv.org/abs/2412.19080}{MaskFactory: Towards High-quality Synthetic Data Generation for Dichotomous Image Segmentation}{Haotian Qian$^{*}$, \textbf{Yinda Chen}$^{*}$, Shengtao Lou, Fahad Shahbaz Khan, Xiaogang Jin, Deng-Ping Fan.}{NeurIPS，2024。}
-\pubitem{https://ydchen0806.github.io/docs/Unsupervised_Domain_Adaptation_for_EM_Image_Denoising_With_Invertible_Networks.pdf}{Unsupervised Domain Adaptation for EM Image Denoising With Invertible Networks}{Shiyu Deng, \textbf{Yinda Chen}, Wei Huang, Ruobing Zhang, Zhiwei Xiong.}{IEEE TMI，2024。}
-\pubitem{https://arxiv.org/abs/2308.09917}{Learning Multiscale Consistency for Self-Supervised Electron Microscopy Instance Segmentation}{\textbf{Yinda Chen}, Wei Huang, Xiaoyu Liu, Shiyu Deng, Qi Chen, Zhiwei Xiong.}{ICASSP，2024。}
-\pubitem{https://www.ijcai.org/proceedings/2023/0068.pdf}{Self-supervised Neuron Segmentation with Multi-agent Reinforcement Learning}{\textbf{Yinda Chen}, Wei Huang, Shenglong Zhou, Qi Chen, Zhiwei Xiong.}{IJCAI，2023。}
-\end{publist}
-\cvsection{会议摘要与报告}
-\textbf{Connectome-scale chemical lateralization predicts asymmetric memory computation in the adult Drosophila mushroom body}\par
-{\small SfN 2026，poster 摘要已接收。}\par\vspace{3pt}
-\textbf{Vision-Language Pretraining Using Generative Methods}\par
-{\small 京东 AI 团队邀请报告，2023.03。}
-
-\cvsection{科研资助与荣誉}
-\award{\textbf{国家自然科学基金青年学生基础研究项目（博士研究生）}}{2025--2027}
-{\small 项目负责人；2024 年获批，项目执行期 2025--2027 年，经费人民币 30 万元。}\par
-\award{\href{https://ydchen0806.github.io/docs/cast_ccf_2026_selection_proof.png}{\textbf{中国科协博士生青托}}（中国计算机学会 CCF 培育）}{2026}
-\award{中国科学技术大学增华奖学金}{2026}
-\award{交叉学科建模竞赛（ICM），Outstanding Winner}{2024}
-\award{研究生国家奖学金}{2022}
-\award{厦门大学学术之星}{2021}
-\award{全国大学生数学竞赛非数学专业组，决赛二等奖}{2021}
-\award{厦门大学“景润杯”数学竞赛数学专业类，第一名}{2021}
-\award{“互联网+”创新创业大赛，福建省金奖}{2021}
-\award{“挑战杯”大学生课外学术科技作品竞赛，福建省一等奖}{2021}
-\award{全国大学生数学竞赛非数学专业组，福建省第一名}{2020}
-
-\cvsection{学术服务与专业技能}
-\textbf{审稿服务：}CVPR 2025，ICCV 2025，WACV 2026，NeurIPS 2024，ICML 2025，ICLR 2024，MICCAI 2025，ACM MM 2024，AISTATS 2024；IJCV、IEEE TIP。\par
-\textbf{编程与工具：}Python、C/C++、MATLAB、Java、\LaTeX；PyTorch、TensorFlow、DeepSpeed、DDP；Git、Docker、CUDA/HPC。\par
-\textbf{训练实践：}大规模分布式训练；千卡集群、百卡 H200 以及 64 卡 A40 训练环境。\par
-\textbf{语言：}中文（母语），英语（TOEFL 110，GRE 328）。
+% ========================================================================
 \end{document}

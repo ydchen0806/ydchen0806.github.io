@@ -1,214 +1,476 @@
-## Selected research
+# 📝 Selected Research
 
-Selected journal and conference papers, followed by technical reports. **Yinda Chen** is highlighted in each author list; \* denotes equal contribution where indicated.
-For the complete publication record, see [Google Scholar](https://scholar.google.com/citations?user=hCvlj5cAAAAJ&hl=en).
+For a complete list of publications, please visit my [Google Scholar profile](https://scholar.google.com/citations?user=hCvlj5cAAAAJ&hl=en&oi=ao) [![](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/ydchen0806/ydchen0806.github.io/google-scholar-stats/gs_data_shieldsio.json&logo=google-scholar&logoColor=white)](https://scholar.google.com/citations?user=hCvlj5cAAAAJ&hl=en&oi=ao)
 
-<details class="citation-details">
-<summary>Citation history</summary>
-<div class="citation-chart">
-  <a href="https://scholar.google.com/citations?user=hCvlj5cAAAAJ&hl=en"><img src="https://raw.githubusercontent.com/ydchen0806/ydchen0806.github.io/google-scholar-stats/citation_trend.svg" alt="Citation history from Google Scholar" loading="lazy" /></a>
+<details>
+<summary>📈 <strong>View Citation Trend</strong></summary>
+<div align="center" style="padding: 1em;">
+  <img src="https://raw.githubusercontent.com/ydchen0806/ydchen0806.github.io/google-scholar-stats/citation_trend.svg" alt="Citation Trend" style="max-width: 100%; height: auto;">
 </div>
 </details>
+
+**Note:** * denotes equal contribution. Individual roles are stated where applicable.
+
+<style>
+#pub-section details {
+  margin-bottom: 1em;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  border: 1px solid #e8e8e8;
+  transition: box-shadow 0.3s;
+}
+#pub-section details:hover {
+  box-shadow: 0 4px 16px rgba(0,0,0,0.10);
+}
+#pub-section details[open] {
+  box-shadow: 0 4px 16px rgba(0,0,0,0.10);
+}
+
+#pub-section summary {
+  padding: 0.9em 1.2em;
+  cursor: pointer;
+  font-size: 1.1em;
+  font-weight: 600;
+  color: #1a1a1a;
+  background: linear-gradient(135deg, #fef5ff 0%, #f5eef8 100%);
+  user-select: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  list-style: none;
+  transition: background 0.2s;
+}
+#pub-section summary::-webkit-details-marker { display: none; }
+#pub-section summary::before {
+  content: "▶";
+  font-size: 0.7em;
+  color: #9C27B0;
+  transition: transform 0.25s;
+  display: inline-block;
+}
+#pub-section details[open] > summary::before {
+  transform: rotate(90deg);
+}
+#pub-section summary:hover {
+  background: linear-gradient(135deg, #f5eef8 0%, #ece0f0 100%);
+}
+
+#pub-section .badge-count {
+  font-size: 0.75em;
+  font-weight: 500;
+  color: #fff;
+  background: #9C27B0;
+  padding: 2px 9px;
+  border-radius: 12px;
+  margin-left: auto;
+}
+
+.paper-box {
+  list-style-type: none;
+  margin-bottom: 0;
+  padding: 1.5em;
+  border-bottom: 1px solid #f0f0f0;
+  transition: background 0.15s;
+}
+.paper-box:last-child { border-bottom: none; }
+.paper-box:hover { background: #fdfaff; }
+
+.paper-box-image img {
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.paper-box-text a {
+  color: #1a1a1a;
+  font-weight: 600;
+  font-size: 1.05em;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+.paper-box-text a:hover {
+  color: #9C27B0;
+  text-decoration: underline;
+}
+
+.badge-journal, .badge-conference {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-size: 0.85em;
+  font-weight: 600;
+  margin-right: 6px;
+  margin-bottom: 8px;
+}
+.badge-journal {
+  background: #9C27B0;
+  color: white;
+}
+.badge-conference {
+  background: #673AB7;
+  color: white;
+}
+
+.badge-impact, .badge-ccf {
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: 3px;
+  font-size: 0.75em;
+  font-weight: 500;
+}
+.badge-q1 {
+  background: #FFD700;
+  color: #333;
+}
+.badge-ccf-a {
+  background: #E91E63;
+  color: white;
+}
+.badge-ccf-b {
+  background: #FF9800;
+  color: white;
+}
+
+.paper-box-text strong {
+  color: #9C27B0;
+}
+.paper-box-text img[src*="shields.io"] {
+  vertical-align: middle;
+  margin-left: 4px;
+}
+
+.research-tags {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin-left: 8px;
+  max-width: 100%;
+  vertical-align: middle;
+}
+.research-tag {
+  display: inline-block;
+  padding: 2px 6px;
+  font-size: 0.7em;
+  font-weight: 500;
+  border-radius: 3px;
+  background: rgba(118, 75, 162, 0.1);
+  color: #764ba2;
+  border: 1px solid rgba(118, 75, 162, 0.2);
+  white-space: nowrap;
+}
+@media (max-width: 600px) {
+  #pub-section .research-tags {
+    display: flex;
+    width: 100%;
+    margin: 0.4em 0 0;
+  }
+}
+
+.citation-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  padding: 2px 6px;
+  font-size: 0.7em;
+  font-weight: 500;
+  border-radius: 4px;
+  background: #4285f4;
+  color: white;
+  margin-left: 6px;
+  vertical-align: middle;
+}
+.citation-badge::before {
+  content: '📊';
+  font-size: 0.85em;
+}
+/* New text-only entries use the same card typography without an empty image column. */
+#pub-section .paper-text-only .paper-box-text { max-width: 100%; padding-left: 0; }
+#pub-section .paper-text-only .badge-journal,
+#pub-section .paper-text-only .badge-conference { position: static; }
+#pub-section .paper-citation[hidden] { display: none; }
+</style>
+
+<script>
+window.addEventListener('load', function () {
+  // Exact normalized titles prevent citation totals being assigned to a different paper.
+  function normalize(title) { return title.toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim(); }
+  fetch('https://raw.githubusercontent.com/ydchen0806/ydchen0806.github.io/google-scholar-stats/first_author_papers.json')
+    .then(function (response) { return response.ok ? response.json() : []; })
+    .then(function (papers) {
+      if (!Array.isArray(papers)) return;
+      document.querySelectorAll('#pub-section .paper-citation').forEach(function (badge) {
+        var paper = papers.find(function (item) { return normalize(item.title || '') === normalize(badge.dataset.title); });
+        if (!paper || !Number.isFinite(paper.citations) || paper.citations < 10) return;
+        var count = Math.floor(paper.citations);
+        var img = badge.querySelector('img');
+        img.src = 'https://img.shields.io/badge/citations-' + count + '-blue?logo=google-scholar&logoColor=white&style=flat-square';
+        img.alt = count + ' Google Scholar citations';
+        badge.hidden = false;
+      });
+    }).catch(function () {});
+});
+</script>
 
 <div id="pub-section">
 
 <details open>
-<summary>Representation and generative learning <span class="section-count">7 papers</span></summary>
+<summary>🧠 Representation and Predictive Learning <span class="badge-count">4</span></summary>
 
-<article class="paper-box">
-<div class="paper-box-image"><img src="/images/TPAMI25.png" alt="Learned Image Coding with Generative Reference of Conditional Latents research overview" loading="lazy" /></div>
-<div class="paper-box-text">
-<p class="paper-venue">IEEE TPAMI · Accepted October 2026</p>
-<h3><a href="https://doi.org/10.1109/TPAMI.2026.3744812">Learned Image Coding with Generative Reference of Conditional Latents</a></h3>
-<p class="paper-authors">Siqi Wu*; <strong>Yinda Chen*</strong>; Weiming Chen; Dong Liu; K. C. Ho; Zhihai He</p>
-<p>GRCL uses retrieved or generated images as references for conditional latent coding. The framework combines reference generation, latent matching and synthesis, and theoretical analysis of robustness to reference perturbations.</p>
-<p class="paper-links"><a href="/docs/Learned_Image_Coding_with_Generative_Reference_of_Conditional_Latents.pdf">PDF</a><a href="https://github.com/ydchen0806/CLC">Code</a></p>
-</div>
-</article>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge-conference">ICCV 2025</div><div class="badge-ccf badge-ccf-a">CCF A</div><img src='images/ICCV25.png' alt="TokenUnify" width="100%" loading="lazy"></div></div>
+<div class='paper-box-text' markdown="1">
 
-<article class="paper-box paper-text-only">
-<div class="paper-box-text">
-<p class="paper-venue">IEEE Internet of Things Journal · Accepted 2026</p>
-<h3><a href="https://arxiv.org/abs/2509.14900">FURINA: Free from Unmergeable Router via LINear Aggregation of mixed experts</a></h3>
-<p class="paper-authors">Jiayi Han et al. (including <strong>Yinda Chen</strong>)</p>
-<p>Router-free mixture-of-experts adaptation with LoRA. The expert updates can be merged into the base model, avoiding an additional routing structure at inference.</p>
-<p class="paper-links"><a href="https://arxiv.org/abs/2509.14900">Preprint</a></p>
-</div>
-</article>
+[TokenUnify: Scaling Up Autoregressive Pretraining for Neuron Segmentation](https://openaccess.thecvf.com/content/ICCV2025/html/Chen_TokenUnify_Scaling_Up_Autoregressive_Pretraining_for_Neuron_Segmentation_ICCV_2025_paper.html) <a class="paper-citation" hidden href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=hCvlj5cAAAAJ&amp;pagesize=100&amp;citation_for_view=hCvlj5cAAAAJ:blknAaTinKkC" data-title="TokenUnify: Scaling Up Autoregressive Pretraining for Neuron Segmentation"><img alt="Google Scholar citations" /></a> <span class="research-tags"><span class="research-tag">Computer Vision</span><span class="research-tag">Self-Supervised Learning</span></span> \\
+ICCV · 2025 \\
+**Yinda Chen**\*; Haoyuan Shi\*; Xiaoyu Liu; Te Shi; Ruobing Zhang; Dong Liu; Zhiwei Xiong; Feng Wu
 
-<article class="paper-box paper-text-only">
-<div class="paper-box-text">
-<p class="paper-venue">IEEE TCSVT · 2026</p>
-<h3><a href="https://doi.org/10.1109/TCSVT.2026.3702531">Joint Semantic and Coded Generation for Conditional Latent Coding</a></h3>
-<p class="paper-authors">Siqi Wu; Weiming Chen; <strong>Yinda Chen</strong>; Dong Liu; K. C. Ho; Zhihai He</p>
-<p>Collaborative work on jointly using semantic information and coded representations to generate references for conditional latent image compression.</p>
-<p class="paper-links"><a href="https://ieeexplore.ieee.org/document/11557391/">Paper</a></p>
-</div>
-</article>
+[**Code**](https://github.com/ydchen0806/TokenUnify) [![](https://img.shields.io/github/stars/ydchen0806/TokenUnify?style=social&label=Code+Stars&cacheSeconds=3600)](https://github.com/ydchen0806/TokenUnify) | [**Dataset**](https://huggingface.co/datasets/cyd0806/wafer_EM) | [**Weights**](https://huggingface.co/cyd0806/TokenUnify/tree/main/Pretrained_weights)
 
-<article class="paper-box">
-<div class="paper-box-image"><img src="/images/ICCV25.png" alt="TokenUnify research overview" loading="lazy" /></div>
-<div class="paper-box-text">
-<p class="paper-venue">ICCV · 2025</p>
-<h3><a href="https://openaccess.thecvf.com/content/ICCV2025/html/Chen_TokenUnify_Scaling_Up_Autoregressive_Pretraining_for_Neuron_Segmentation_ICCV_2025_paper.html">TokenUnify: Scaling Up Autoregressive Pretraining for Neuron Segmentation</a></h3>
-<p class="paper-authors"><strong>Yinda Chen*</strong>; Haoyuan Shi*; Xiaoyu Liu; Te Shi; Ruobing Zhang; Dong Liu; Zhiwei Xiong; Feng Wu</p>
-<p>Autoregressive pretraining for volumetric neuron segmentation, combining three complementary prediction objectives with long-sequence modeling and an analysis of prediction-error accumulation.</p>
-<p class="paper-links"><a href="https://github.com/ydchen0806/TokenUnify">Code</a><a href="https://huggingface.co/datasets/cyd0806/wafer_EM">Dataset</a><a href="https://huggingface.co/cyd0806/TokenUnify/tree/main/Pretrained_weights">Weights</a></p>
-</div>
-</article>
+Autoregressive pretraining for volumetric neuron segmentation, combining three complementary prediction objectives with long-sequence modeling and an analysis of prediction-error accumulation.
 
-<article class="paper-box">
-<div class="paper-box-image"><img src="/images/ICML25.png" alt="MaskTwins research overview" loading="lazy" /></div>
-<div class="paper-box-text">
-<p class="paper-venue">ICML · 2025</p>
-<h3><a href="https://proceedings.mlr.press/v267/wang25n.html">MaskTwins: Dual-form Complementary Masking for Domain-Adaptive Image Segmentation</a></h3>
-<p class="paper-authors">Jiawen Wang; <strong>Yinda Chen</strong>; Xiaoyu Liu; Che Liu; Dong Liu; Jianqing Gao; Zhiwei Xiong</p>
-<p class="paper-role">My contribution: theoretical analysis.</p>
-<p>Complementary spatial and feature masking for domain-adaptive segmentation, evaluated on urban-scene and electron microscopy benchmarks.</p>
-<p class="paper-links"><a href="https://github.com/jwwang0421/masktwins">Code</a><a href="https://icml.cc/media/PosterPDFs/ICML%202025/46243.png?t=1750997391.8351207">Poster</a></p>
 </div>
-</article>
+</div>
 
-<article class="paper-box">
-<div class="paper-box-image"><img src="/images/AAAI25.png" alt="Conditional Latent Coding with Learnable Synthesized Reference for Deep Image Compression research overview" loading="lazy" /></div>
-<div class="paper-box-text">
-<p class="paper-venue">AAAI · 2025</p>
-<h3><a href="https://doi.org/10.1609/aaai.v39i12.33403">Conditional Latent Coding with Learnable Synthesized Reference for Deep Image Compression</a></h3>
-<p class="paper-authors">Siqi Wu*; <strong>Yinda Chen*</strong>; Dong Liu; Zhihai He</p>
-<p>Learnable reference synthesis from an external image dictionary improves conditional latent coding for learned image compression.</p>
-<p class="paper-links"><a href="/docs/Condition_generation_Latent_Coding_with_an_External_Dictionary_for_Deep_Image_Compression.pdf">PDF</a><a href="https://github.com/ydchen0806/CLC">Code</a><a href="https://huggingface.co/cyd0806/CLC">Weights</a></p>
-</div>
-</article>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge-conference">ICML 2025</div><div class="badge-ccf badge-ccf-a">CCF A</div><img src='images/ICML25.png' alt="MaskTwins" width="100%" loading="lazy"></div></div>
+<div class='paper-box-text' markdown="1">
 
-<article class="paper-box">
-<div class="paper-box-image"><img src="/images/NeurIPS24.png" alt="MaskFactory research overview" loading="lazy" /></div>
-<div class="paper-box-text">
-<p class="paper-venue">NeurIPS · 2024</p>
-<h3><a href="https://arxiv.org/abs/2412.19080">MaskFactory: Towards High-quality Synthetic Data Generation for Dichotomous Image Segmentation</a></h3>
-<p class="paper-authors">Haotian Qian*; <strong>Yinda Chen*</strong>; Shengtao Lou; Fahad Shahbaz Khan; Xiaogang Jin; Deng-Ping Fan</p>
-<p>A two-stage framework for generating paired images and masks for dichotomous image segmentation, expanding training data while preserving image–mask consistency.</p>
-<p class="paper-links"><a href="https://qian-hao-tian.github.io/MaskFactory/">Project</a><a href="https://github.com/ydchen0806/MaskFactory">Code</a></p>
+[MaskTwins: Dual-form Complementary Masking for Domain-Adaptive Image Segmentation](https://proceedings.mlr.press/v267/wang25n.html)  <span class="research-tags"><span class="research-tag">Domain Adaptation</span><span class="research-tag">Pretraining Methods</span></span> \\
+ICML · 2025 \\
+Jiawen Wang; **Yinda Chen**; Xiaoyu Liu; Che Liu; Dong Liu; Jianqing Gao; Zhiwei Xiong
+
+[**Code**](https://github.com/jwwang0421/masktwins) [![](https://img.shields.io/github/stars/jwwang0421/masktwins?style=social&label=Code+Stars&cacheSeconds=3600)](https://github.com/jwwang0421/masktwins) | [**Poster**](https://icml.cc/media/PosterPDFs/ICML%202025/46243.png?t=1750997391.8351207)
+
+My contribution: theoretical analysis.
+
+Complementary spatial and feature masking for domain-adaptive segmentation, evaluated on urban-scene and electron microscopy benchmarks.
+
 </div>
-</article>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge-conference">IJCAI 2023</div><div class="badge-ccf badge-ccf-a">CCF A</div><img src='images/ijcai2023.png' alt="dbMiM" width="100%" loading="lazy"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[Self-Supervised Neuron Segmentation with Multi-Agent Reinforcement Learning](https://www.ijcai.org/proceedings/2023/68) <a class="paper-citation" hidden href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=hCvlj5cAAAAJ&amp;pagesize=100&amp;citation_for_view=hCvlj5cAAAAJ:QIV2ME_5wuYC" data-title="Self-Supervised Neuron Segmentation with Multi-Agent Reinforcement Learning"><img alt="Google Scholar citations" /></a> <span class="research-tags"><span class="research-tag">Computer Vision</span><span class="research-tag">Self-Supervised Learning</span></span> \\
+IJCAI · 2023 \\
+**Yinda Chen**; Wei Huang; Shenglong Zhou; Qi Chen; Zhiwei Xiong
+
+[**Code**](https://github.com/ydchen0806/dbMiM) [![](https://img.shields.io/github/stars/ydchen0806/dbMiM?style=social&label=Code+Stars&cacheSeconds=3600)](https://github.com/ydchen0806/dbMiM) | [**Pretraining data**](https://huggingface.co/datasets/cyd0806/EM_pretrain_data)
+
+Decision-based masked image modeling that learns masking policies through multi-agent reinforcement learning for neuron segmentation.
+
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge-conference">ICASSP 2024</div><div class="badge-ccf badge-ccf-b">CCF B</div><img src='images/ICASSP24.png' alt="MS-Con" width="100%" loading="lazy"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[Learning Multiscale Consistency for Self-Supervised Electron Microscopy Instance Segmentation](https://arxiv.org/abs/2308.09917) <a class="paper-citation" hidden href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=hCvlj5cAAAAJ&amp;pagesize=100&amp;citation_for_view=hCvlj5cAAAAJ:9ZlFYXVOiuMC" data-title="Learning Multiscale Consistency for Self-Supervised Electron Microscopy Instance Segmentation"><img alt="Google Scholar citations" /></a> <span class="research-tags"><span class="research-tag">Computer Vision</span><span class="research-tag">Pretraining Methods</span></span> \\
+ICASSP · 2024 \\
+**Yinda Chen**; Wei Huang; Xiaoyu Liu; Shiyu Deng; Qi Chen; Zhiwei Xiong
+
+[**Code**](https://github.com/ydchen0806/MS-Con-EM-Seg) [![](https://img.shields.io/github/stars/ydchen0806/MS-Con-EM-Seg?style=social&label=Code+Stars&cacheSeconds=3600)](https://github.com/ydchen0806/MS-Con-EM-Seg)
+
+Self-supervised pretraining that encourages multiscale consistency in volumetric electron microscopy representations for neuron instance segmentation.
+
+</div>
+</div>
 
 </details>
 
 <details>
-<summary>Biomedical imaging and connectomics <span class="section-count">6 papers</span></summary>
+<summary>✨ Multimodal and Generative Models <span class="badge-count">9</span></summary>
 
-<article class="paper-box">
-<div class="paper-box-image"><img src="/images/GTGM.png" alt="GTGM research overview" loading="lazy" /></div>
-<div class="paper-box-text">
-<p class="paper-venue">ICCV Workshop on VLM3D · 2025</p>
-<h3><a href="https://openaccess.thecvf.com/content/ICCV2025W/VLM3D/html/Chen_GTGM_Generative_Text-Guided_3D_Vision-Language_Pretraining_for_Medical_Image_Segmentation_ICCVW_2025_paper.html">GTGM: Generative Text-Guided 3D Vision-Language Pretraining for Medical Image Segmentation</a></h3>
-<p class="paper-authors"><strong>Yinda Chen*</strong>; Che Liu*; Wei Huang; Xiaoyu Liu; Haoyuan Shi; Sibo Cheng; Rossella Arcucci; Zhiwei Xiong</p>
-<p>Uses generated textual descriptions and negative-free contrastive learning to pretrain 3D medical image representations without paired medical text; evaluated through downstream segmentation on 10 CT/MRI datasets.</p>
-<p class="paper-links"><a href="https://github.com/ydchen0806/gtgm">Code</a></p>
-</div>
-</article>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge-journal">IEEE TPAMI</div><img src='images/TPAMI25.png' alt="GRCL Framework" width="100%" loading="lazy"></div></div>
+<div class='paper-box-text' markdown="1">
 
-<article class="paper-box">
-<div class="paper-box-image"><img src="/images/JBHI25.png" alt="EMPOWER research overview" loading="lazy" /></div>
-<div class="paper-box-text">
-<p class="paper-venue">IEEE JBHI · 2025</p>
-<h3><a href="https://doi.org/10.1109/JBHI.2025.3621907">EMPOWER: Evolutionary Medical Prompt Optimization With Reinforcement Learning</a></h3>
-<p class="paper-authors"><strong>Yinda Chen*</strong>; Yangfan He*; Jing Yang; Dapeng Zhang; Zhenlong Yuan; Muhammad Attique Khan; Jamel Baili; Por Lip Yee</p>
-<p>Combines evolutionary prompt optimization with reinforcement learning and multi-dimensional evaluation for medical language tasks.</p>
-<p class="paper-links"><a href="https://ieeexplore.ieee.org/document/11205280/">Paper</a></p>
-</div>
-</article>
+[Learned Image Coding with Generative Reference of Conditional Latents](https://doi.org/10.1109/TPAMI.2026.3744812)  <span class="research-tags"><span class="research-tag">Image Compression</span><span class="research-tag">Generative Models</span></span> \\
+IEEE TPAMI · Accepted October 2026 \\
+Siqi Wu\*; **Yinda Chen**\*; Weiming Chen; Dong Liu; K. C. Ho; Zhihai He
 
-<article class="paper-box">
-<div class="paper-box-image"><img src="/images/MICCAI24.png" alt="BIMCV-R research overview" loading="lazy" /></div>
-<div class="paper-box-text">
-<p class="paper-venue">MICCAI · 2024</p>
-<h3><a href="https://papers.miccai.org/miccai-2024/100-Paper1194.html">BIMCV-R: A Landmark Dataset for 3D CT Text-Image Retrieval</a></h3>
-<p class="paper-authors"><strong>Yinda Chen</strong>; Che Liu; Xiaoyu Liu; Rossella Arcucci; Zhiwei Xiong</p>
-<p>A dataset of 8,069 3D CT volumes with paired radiology reports, together with the MedFinder framework for bidirectional medical image–text retrieval.</p>
-<p class="paper-links"><a href="https://huggingface.co/datasets/cyd0806/BIMCV-R">Dataset</a><a href="https://github.com/ydchen0806/MedFinder">Code</a></p>
-</div>
-</article>
+[**PDF**](/docs/Learned_Image_Coding_with_Generative_Reference_of_Conditional_Latents.pdf) | [**Code**](https://github.com/ydchen0806/CLC) [![](https://img.shields.io/github/stars/ydchen0806/CLC?style=social&label=Code+Stars&cacheSeconds=3600)](https://github.com/ydchen0806/CLC)
 
-<article class="paper-box">
-<div class="paper-box-image"><img src="/images/TMI24.png" alt="Unsupervised Domain Adaptation for EM Image Denoising with Invertible Networks research overview" loading="lazy" /></div>
-<div class="paper-box-text">
-<p class="paper-venue">IEEE TMI · 2024</p>
-<h3><a href="/docs/Unsupervised_Domain_Adaptation_for_EM_Image_Denoising_With_Invertible_Networks.pdf">Unsupervised Domain Adaptation for EM Image Denoising with Invertible Networks</a></h3>
-<p class="paper-authors">Shiyu Deng; <strong>Yinda Chen</strong>; Wei Huang; Ruobing Zhang; Zhiwei Xiong</p>
-<p>Invertible networks for unsupervised adaptation of electron microscopy denoising across imaging domains.</p>
-<p class="paper-links"><a href="https://github.com/sydeng99/DADn">Code</a></p>
-</div>
-</article>
+GRCL uses retrieved or generated images as references for conditional latent coding. The framework combines reference generation, latent matching and synthesis, and theoretical analysis of robustness to reference perturbations.
 
-<article class="paper-box">
-<div class="paper-box-image"><img src="/images/ICASSP24.png" alt="Learning Multiscale Consistency for Self-Supervised Electron Microscopy Instance Segmentation research overview" loading="lazy" /></div>
-<div class="paper-box-text">
-<p class="paper-venue">ICASSP · 2024</p>
-<h3><a href="https://arxiv.org/abs/2308.09917">Learning Multiscale Consistency for Self-Supervised Electron Microscopy Instance Segmentation</a></h3>
-<p class="paper-authors"><strong>Yinda Chen</strong>; Wei Huang; Xiaoyu Liu; Shiyu Deng; Qi Chen; Zhiwei Xiong</p>
-<p>Self-supervised pretraining that encourages multiscale consistency in volumetric electron microscopy representations for neuron instance segmentation.</p>
-<p class="paper-links"><a href="https://github.com/ydchen0806/MS-Con-EM-Seg">Code</a></p>
 </div>
-</article>
+</div>
 
-<article class="paper-box">
-<div class="paper-box-image"><img src="/images/ijcai2023.png" alt="Self-Supervised Neuron Segmentation with Multi-Agent Reinforcement Learning research overview" loading="lazy" /></div>
-<div class="paper-box-text">
-<p class="paper-venue">IJCAI · 2023</p>
-<h3><a href="https://www.ijcai.org/proceedings/2023/68">Self-Supervised Neuron Segmentation with Multi-Agent Reinforcement Learning</a></h3>
-<p class="paper-authors"><strong>Yinda Chen</strong>; Wei Huang; Shenglong Zhou; Qi Chen; Zhiwei Xiong</p>
-<p>Decision-based masked image modeling that learns masking policies through multi-agent reinforcement learning for neuron segmentation.</p>
-<p class="paper-links"><a href="https://github.com/ydchen0806/dbMiM">Code</a><a href="https://huggingface.co/datasets/cyd0806/EM_pretrain_data">Pretraining data</a></p>
+<div class='paper-box paper-text-only'><div class='paper-box-text' markdown="1">
+
+<div class="badge-journal">IEEE TCSVT</div>
+
+[Joint Semantic and Coded Generation for Conditional Latent Coding](https://doi.org/10.1109/TCSVT.2026.3702531)  <span class="research-tags"><span class="research-tag">Image Compression</span><span class="research-tag">Generative Models</span></span> \\
+IEEE TCSVT · 2026 \\
+Siqi Wu; Weiming Chen; **Yinda Chen**; Dong Liu; K. C. Ho; Zhihai He
+
+[**Paper**](https://ieeexplore.ieee.org/document/11557391/)
+
+Collaborative work on jointly using semantic information and coded representations to generate references for conditional latent image compression.
+
 </div>
-</article>
+</div>
+
+<div class='paper-box paper-text-only'><div class='paper-box-text' markdown="1">
+
+<div class="badge-journal">IEEE Internet of Things Journal</div>
+
+[FURINA: Free from Unmergeable Router via LINear Aggregation of mixed experts](https://arxiv.org/abs/2509.14900)  <span class="research-tags"><span class="research-tag">Mixture of Experts</span><span class="research-tag">Efficient Adaptation</span></span> \\
+IEEE Internet of Things Journal · Accepted 2026 \\
+Jiayi Han et al. (including **Yinda Chen**)
+
+[**Preprint**](https://arxiv.org/abs/2509.14900)
+
+Router-free mixture-of-experts adaptation with LoRA. The expert updates can be merged into the base model, avoiding an additional routing structure at inference.
+
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge-conference">AAAI 2025</div><div class="badge-ccf badge-ccf-a">CCF A</div><img src='images/AAAI25.png' alt="CLC" width="100%" loading="lazy"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[Conditional Latent Coding with Learnable Synthesized Reference for Deep Image Compression](https://doi.org/10.1609/aaai.v39i12.33403) <a class="paper-citation" hidden href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=hCvlj5cAAAAJ&amp;pagesize=100&amp;citation_for_view=hCvlj5cAAAAJ:4DMP91E08xMC" data-title="Conditional Latent Coding with Learnable Synthesized Reference for Deep Image Compression"><img alt="Google Scholar citations" /></a> <span class="research-tags"><span class="research-tag">Image Compression</span></span> \\
+AAAI · 2025 \\
+Siqi Wu\*; **Yinda Chen**\*; Dong Liu; Zhihai He
+
+[**PDF**](/docs/Condition_generation_Latent_Coding_with_an_External_Dictionary_for_Deep_Image_Compression.pdf) | [**Code**](https://github.com/ydchen0806/CLC) [![](https://img.shields.io/github/stars/ydchen0806/CLC?style=social&label=Code+Stars&cacheSeconds=3600)](https://github.com/ydchen0806/CLC) | [**Weights**](https://huggingface.co/cyd0806/CLC)
+
+Learnable reference synthesis from an external image dictionary improves conditional latent coding for learned image compression.
+
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge-conference">ICCV Workshop 2025</div><img src='images/GTGM.png' alt="GTGM" width="100%" loading="lazy"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[GTGM: Generative Text-Guided 3D Vision-Language Pretraining for Medical Image Segmentation](https://openaccess.thecvf.com/content/ICCV2025W/VLM3D/html/Chen_GTGM_Generative_Text-Guided_3D_Vision-Language_Pretraining_for_Medical_Image_Segmentation_ICCVW_2025_paper.html) <a class="paper-citation" hidden href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=hCvlj5cAAAAJ&amp;pagesize=100&amp;citation_for_view=hCvlj5cAAAAJ:NMxIlDl6LWMC" data-title="GTGM: Generative Text-Guided 3D Vision-Language Pretraining for Medical Image Segmentation"><img alt="Google Scholar citations" /></a> <span class="research-tags"><span class="research-tag">Vision-Language</span><span class="research-tag">Medical Imaging</span></span> \\
+ICCV Workshop on VLM3D · 2025 \\
+**Yinda Chen**\*; Che Liu\*; Wei Huang; Xiaoyu Liu; Haoyuan Shi; Sibo Cheng; Rossella Arcucci; Zhiwei Xiong
+
+[**Code**](https://github.com/ydchen0806/gtgm) [![](https://img.shields.io/github/stars/ydchen0806/gtgm?style=social&label=Code+Stars&cacheSeconds=3600)](https://github.com/ydchen0806/gtgm)
+
+Uses generated textual descriptions and negative-free contrastive learning to pretrain 3D medical image representations without paired medical text; evaluated through downstream segmentation on 10 CT/MRI datasets.
+
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge-conference">MICCAI 2024</div><div class="badge-ccf badge-ccf-b">CCF B</div><img src='images/MICCAI24.png' alt="BIMCV-R" width="100%" loading="lazy"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[BIMCV-R: A Landmark Dataset for 3D CT Text-Image Retrieval](https://papers.miccai.org/miccai-2024/100-Paper1194.html) <a class="paper-citation" hidden href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=hCvlj5cAAAAJ&amp;pagesize=100&amp;citation_for_view=hCvlj5cAAAAJ:mVmsd5A6BfQC" data-title="BIMCV-R: A Landmark Dataset for 3D CT Text-Image Retrieval"><img alt="Google Scholar citations" /></a> <span class="research-tags"><span class="research-tag">Vision-Language</span><span class="research-tag">Multimodal Learning</span></span> \\
+MICCAI · 2024 \\
+**Yinda Chen**; Che Liu; Xiaoyu Liu; Rossella Arcucci; Zhiwei Xiong
+
+[**Dataset**](https://huggingface.co/datasets/cyd0806/BIMCV-R) | [**Code**](https://github.com/ydchen0806/MedFinder) [![](https://img.shields.io/github/stars/ydchen0806/MedFinder?style=social&label=Code+Stars&cacheSeconds=3600)](https://github.com/ydchen0806/MedFinder)
+
+A dataset of 8,069 3D CT volumes with paired radiology reports, together with the MedFinder framework for bidirectional medical image–text retrieval.
+
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge-conference">NeurIPS 2024</div><div class="badge-ccf badge-ccf-a">CCF A</div><img src='images/NeurIPS24.png' alt="MaskFactory" width="100%" loading="lazy"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[MaskFactory: Towards High-quality Synthetic Data Generation for Dichotomous Image Segmentation](https://arxiv.org/abs/2412.19080) <a class="paper-citation" hidden href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=hCvlj5cAAAAJ&amp;pagesize=100&amp;citation_for_view=hCvlj5cAAAAJ:aqlVkmm33-oC" data-title="MaskFactory: Towards High-quality Synthetic Data Generation for Dichotomous Image Segmentation"><img alt="Google Scholar citations" /></a> <span class="research-tags"><span class="research-tag">Multimodal Learning</span></span> \\
+NeurIPS · 2024 \\
+Haotian Qian\*; **Yinda Chen**\*; Shengtao Lou; Fahad Shahbaz Khan; Xiaogang Jin; Deng-Ping Fan
+
+[**Project**](https://qian-hao-tian.github.io/MaskFactory/) | [**Code**](https://github.com/ydchen0806/MaskFactory) [![](https://img.shields.io/github/stars/ydchen0806/MaskFactory?style=social&label=Code+Stars&cacheSeconds=3600)](https://github.com/ydchen0806/MaskFactory)
+
+A two-stage framework for generating paired images and masks for dichotomous image segmentation, expanding training data while preserving image–mask consistency.
+
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge-journal">IEEE TMI</div><img src='images/TMI24.png' alt="DADn" width="100%" loading="lazy"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[Unsupervised Domain Adaptation for EM Image Denoising with Invertible Networks](/docs/Unsupervised_Domain_Adaptation_for_EM_Image_Denoising_With_Invertible_Networks.pdf)  <span class="research-tags"><span class="research-tag">Domain Adaptation</span><span class="research-tag">Image Denoising</span></span> \\
+IEEE TMI · 2024 \\
+Shiyu Deng; **Yinda Chen**; Wei Huang; Ruobing Zhang; Zhiwei Xiong
+
+[**Code**](https://github.com/sydeng99/DADn) [![](https://img.shields.io/github/stars/sydeng99/DADn?style=social&label=Code+Stars&cacheSeconds=3600)](https://github.com/sydeng99/DADn)
+
+Invertible networks for unsupervised adaptation of electron microscopy denoising across imaging domains.
+
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge-journal">IEEE JBHI</div><img src='images/JBHI25.png' alt="EMPOWER" width="100%" loading="lazy"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[EMPOWER: Evolutionary Medical Prompt Optimization With Reinforcement Learning](https://doi.org/10.1109/JBHI.2025.3621907) <a class="paper-citation" hidden href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=hCvlj5cAAAAJ&amp;pagesize=100&amp;citation_for_view=hCvlj5cAAAAJ:J_g5lzvAfSwC" data-title="EMPOWER: Evolutionary Medical Prompt Optimization With Reinforcement Learning"><img alt="Google Scholar citations" /></a> <span class="research-tags"><span class="research-tag">Vision-Language</span><span class="research-tag">Multimodal Learning</span></span> \\
+IEEE JBHI · 2025 \\
+**Yinda Chen**\*; Yangfan He\*; Jing Yang; Dapeng Zhang; Zhenlong Yuan; Muhammad Attique Khan; Jamel Baili; Por Lip Yee
+
+[**Paper**](https://ieeexplore.ieee.org/document/11205280/)
+
+Combines evolutionary prompt optimization with reinforcement learning and multi-dimensional evaluation for medical language tasks.
+
+</div>
+</div>
 
 </details>
 
 <details open>
-<summary>Embodied and agentic models <span class="section-count">4 technical reports</span></summary>
+<summary>🤖 World Models and Embodied Intelligence <span class="badge-count">4</span></summary>
 
-<article class="paper-box paper-text-only">
-<div class="paper-box-text">
-<p class="paper-venue">IQuest Research · October 2026</p>
-<h3><a href="https://arxiv.org/abs/2610.30949">IQuest-Q1: Advancing Foundation Capabilities for Agentic CLI Systems</a></h3>
-<p class="paper-authors">IQuest-Q1 Team · <strong>Yinda Chen</strong>, co-author</p>
-<p>A foundation model for command-line interaction, coding, and multi-step tool use. Contributed during my research internship at Ubiquant / IQuest Research.</p>
-<p class="paper-links"><a href="https://arxiv.org/abs/2610.30949">Report</a><a href="https://iquestlab.github.io/">Project</a><a href="https://github.com/IQuestLab/IQuest-Q1">Code</a><a href="https://huggingface.co/IQuestLab/IQuest-Q1">Models</a></p>
-</div>
-</article>
+<div class='paper-box paper-text-only'><div class='paper-box-text' markdown="1">
 
-<article class="paper-box paper-text-only">
-<div class="paper-box-text">
-<p class="paper-venue">Ubiquant / IQuest Research · October 2026</p>
-<h3><a href="https://arxiv.org/abs/2610.11451">SAIL: Scientific Agentic Intelligence via a Science-Aware Loop</a></h3>
-<p class="paper-authors">SAIL Model Team · <strong>Yinda Chen</strong>, core contributor</p>
-<p>A scientific-agent research project for literature research, scientific coding, and multi-step investigations, developed through a science-aware improvement loop.</p>
-<p class="paper-links"><a href="https://arxiv.org/abs/2610.11451">Report</a></p>
-</div>
-</article>
+<div class="badge-conference">Technical Report 2026</div>
 
-<article class="paper-box">
-<div class="paper-box-image"><img src="/images/PelicanVLA05.png" alt="Pelican-VLA 0.5 research overview" loading="lazy" /></div>
-<div class="paper-box-text">
-<p class="paper-venue">X-Humanoid, WFM System Group · July 2026</p>
-<h3><a href="https://arxiv.org/abs/2607.06655">Pelican-VLA 0.5: Attending Before Acting Benefits Generalization</a></h3>
-<p class="paper-authors">Pelican-VLA Team · <strong>Yinda Chen</strong>, contributor</p>
-<p>The VLA component of Pelican-Unified connects vision-language understanding, future-frame generation, and action prediction through learnable bottleneck tokens. The work studies task-relevant attention and manipulation generalization.</p>
-<p class="paper-links"><a href="https://arxiv.org/abs/2607.06655">Report</a><a href="https://github.com/Open-X-Humanoid/Pelican-VLA05">Code</a><a href="https://huggingface.co/X-Humanoid/Pelican-VLA05">Models</a></p>
-</div>
-</article>
+[IQuest-Q1: Advancing Foundation Capabilities for Agentic CLI Systems](https://arxiv.org/abs/2610.30949)  <span class="research-tags"><span class="research-tag">Agentic Models</span><span class="research-tag">Tool Use</span></span> \\
+IQuest Research · October 2026 \\
+IQuest-Q1 Team · **Yinda Chen**, co-author
 
-<article class="paper-box">
-<div class="paper-box-image"><img src="/images/PelicanUnified.png" alt="Pelican-Unified 1.0 research overview" loading="lazy" /></div>
-<div class="paper-box-text">
-<p class="paper-venue">X-Humanoid, WFM System Group · May 2026</p>
-<h3><a href="https://arxiv.org/abs/2605.15153">Pelican-Unified 1.0: A Unified Embodied Intelligence Model (UEI) for Understanding, Reasoning, Imagination and Action</a></h3>
-<p class="paper-authors">Pelican-Unified Team · <strong>Yinda Chen</strong>, core contributor</p>
-<p class="paper-role">My contribution: unified vision-language modeling and action capability.</p>
-<p>A unified embodied model that combines scene and instruction understanding, task reasoning, and joint prediction of future video and robot actions.</p>
-<p class="paper-links"><a href="https://arxiv.org/abs/2605.15153">Report</a><a href="https://www.x-humanoid.com/">Organization</a></p>
+[**Report**](https://arxiv.org/abs/2610.30949) | [**Project**](https://iquestlab.github.io/) | [**Code**](https://github.com/IQuestLab/IQuest-Q1) [![](https://img.shields.io/github/stars/IQuestLab/IQuest-Q1?style=social&label=Code+Stars&cacheSeconds=3600)](https://github.com/IQuestLab/IQuest-Q1) | [**Models**](https://huggingface.co/IQuestLab/IQuest-Q1)
+
+A foundation model for command-line interaction, coding, and multi-step tool use. Contributed during my research internship at Ubiquant / IQuest Research.
+
 </div>
-</article>
+</div>
+
+<div class='paper-box paper-text-only'><div class='paper-box-text' markdown="1">
+
+<div class="badge-conference">Technical Report 2026</div>
+
+[SAIL: Scientific Agentic Intelligence via a Science-Aware Loop](https://arxiv.org/abs/2610.11451)  <span class="research-tags"><span class="research-tag">Scientific Agents</span><span class="research-tag">Agentic Models</span></span> \\
+Ubiquant / IQuest Research · October 2026 \\
+SAIL Model Team · **Yinda Chen**, core contributor
+
+[**Report**](https://arxiv.org/abs/2610.11451)
+
+A scientific-agent research project for literature research, scientific coding, and multi-step investigations, developed through a science-aware improvement loop.
+
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge-conference">Technical Report 2026</div><img src='images/PelicanUnified.png' alt="Pelican-Unified 1.0" width="100%" loading="lazy"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[Pelican-Unified 1.0: A Unified Embodied Intelligence Model (UEI) for Understanding, Reasoning, Imagination and Action](https://arxiv.org/abs/2605.15153)  <span class="research-tags"><span class="research-tag">Embodied Intelligence</span><span class="research-tag">World Models</span><span class="research-tag">Unified Models</span></span> \\
+X-Humanoid, WFM System Group · May 2026 \\
+Pelican-Unified Team · **Yinda Chen**, core contributor
+
+[**Report**](https://arxiv.org/abs/2605.15153) | [**Organization**](https://www.x-humanoid.com/)
+
+My contribution: unified vision-language modeling and action capability.
+
+A unified embodied model that combines scene and instruction understanding, task reasoning, and joint prediction of future video and robot actions.
+
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge-conference">Technical Report 2026</div><img src='images/PelicanVLA05.png' alt="Pelican-VLA 0.5 attention visualizations" width="100%" loading="lazy"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[Pelican-VLA 0.5: Attending Before Acting Benefits Generalization](https://arxiv.org/abs/2607.06655)  <span class="research-tags"><span class="research-tag">Vision-Language-Action</span><span class="research-tag">Embodied Intelligence</span><span class="research-tag">World Models</span></span> \\
+X-Humanoid, WFM System Group · July 2026 \\
+Pelican-VLA Team · **Yinda Chen**, contributor
+
+[**Report**](https://arxiv.org/abs/2607.06655) | [**Code**](https://github.com/Open-X-Humanoid/Pelican-VLA05) [![](https://img.shields.io/github/stars/Open-X-Humanoid/Pelican-VLA05?style=social&label=Code+Stars&cacheSeconds=3600)](https://github.com/Open-X-Humanoid/Pelican-VLA05) | [**Models**](https://huggingface.co/X-Humanoid/Pelican-VLA05)
+
+The VLA component of Pelican-Unified connects vision-language understanding, future-frame generation, and action prediction through learnable bottleneck tokens. The work studies task-relevant attention and manipulation generalization.
+
+</div>
+</div>
 
 </details>
 
