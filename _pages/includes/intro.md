@@ -1,42 +1,26 @@
-<br>
+I am **Yinda Chen (陈胤达)**, a Ph.D. candidate in Information and Communication Engineering at the [University of Science and Technology of China (USTC)](https://sist.ustc.edu.cn/main.htm), jointly trained with the [Shanghai AI Lab](https://www.shlab.org.cn/). I expect to graduate in **June 2027**.
 
-I am [**Yinda Chen (陈胤达)**](https://ydchen0806.github.io/), a Ph.D. candidate jointly trained by the [University of Science and Technology of China (USTC)](https://sist.ustc.edu.cn/main.htm) and the [Shanghai AI Lab](https://www.shlab.org.cn/), majoring in **Information and Communication Engineering**.
+My research connects **representation and multimodal learning** with **embodied world models** and **agentic foundation models**. I study how models learn useful representations, predict future states, and reason and act through interaction, with applications in robotics, biomedical imaging, and connectomics.
 
-- 👀 My research develops **predictive multimodal intelligence**: from **representation and predictive learning** to **world models** for embodied perception, future-state prediction, and action. Recent work in **Pelican-Unified** and its **Pelican-VLA 0.5** module connects unified multimodal representations, future imagination, and closed-loop robot control.
+I am advised by [Prof. Feng Wu (吴枫)](https://scholar.google.com/citations?user=5bInRDEAAAAJ&hl=en) and [Prof. Zhiwei Xiong (熊志伟)](https://scholar.google.com/citations?user=Snl0HPEAAAAJ&hl=en&oi=ao) at USTC, and work with [Prof. Ruobing Zhang (张若冰)](https://ibi.braintell.org/#/cn/faculty/zhang-ruobing) at Fudan University as my research mentor in connectomics and neuroscience.
 
-- 🧭 I am advised by [Prof. Feng Wu (吴枫, CAE Academician, IEEE Fellow)](https://scholar.google.com/citations?user=5bInRDEAAAAJ&hl=en) and [Prof. Zhiwei Xiong (熊志伟)](https://scholar.google.com/citations?user=Snl0HPEAAAAJ&hl=en) at **USTC**, work closely with [Prof. Ruobing Zhang (张若冰)](https://ibi.braintell.org/#/cn/faculty/zhang-ruobing) at **Fudan University** as my **research mentor in connectomics and neuroscience**, and am co-supervised by [Prof. Xiaoou Tang (汤晓鸥, IEEE Fellow)](https://scholar.google.com/citations?user=qpBtpGsAAAAJ&hl=en) at the **Shanghai AI Lab**.
+<nav class="profile-links" aria-label="Curriculum vitae and research profiles">
+  <a class="cv-link" href="/docs/cyd_resume_CN.pdf?v=20261109-r2">CV · 中文</a>
+  <a class="cv-link" href="/docs/CYD_resume_EN.pdf?v=20261109-r2">CV · English</a>
+  <a href="https://scholar.google.com/citations?user=hCvlj5cAAAAJ&hl=en">Google Scholar</a>
+  <a href="https://github.com/ydchen0806">GitHub</a>
+  <a href="mailto:cyd0806@mail.ustc.edu.cn">Email</a>
+</nav>
 
 <details class="about-details">
-<summary>More about my background and experience</summary>
+<summary>Background and collaborators</summary>
 <div class="about-details__content" markdown="1">
 
-- 🤝 I have the honor to collaborate closely with [Prof. Dong Liu (刘东)](https://scholar.google.com/citations?user=lOWByxoAAAAJ&hl=en), [Prof. Li Li (李礼)](https://scholar.google.com/citations?user=dEm6VKAAAAAJ&hl=en), and [Prof. Zhihai He (何志海, IEEE Fellow)](https://scholar.google.com/citations?user=wtr6OgkAAAAJ&hl=en). I have also conducted research internships at **Imperial College London** with [Dr. Rossella Arcucci](https://scholar.google.com/citations?user=oxy2ZQoAAAAJ&hl=en) and [Dr. Che Liu (刘澈)](https://scholar.google.com/citations?user=HED_458AAAAJ&hl=en&oi=sra), and the **PLA General Hospital (301 Hospital)** with [Prof. Qionghai Dai (戴琼海, CAE Academician, IEEE Fellow)](https://scholar.google.com/citations?user=CHAajY4AAAAJ&hl=en).
+At the [Beijing Innovation Center of Humanoid Robotics (X-Humanoid)](https://www.x-humanoid.com/), I work on unified embodied models with [Dr. Yong Dai (代勇)](https://scholar.google.com/citations?user=mCCOT7wAAAAJ&hl=zh-CN). My previous research internships include Ubiquant, Tencent IEG, Imperial College London, and the PLA General Hospital (301 Hospital).
 
-- 🌱 Currently, I'm a **core member** at the [Beijing Humanoid Robot Innovation Center (UBTECH Robotics)](https://www.x-humanoid.com/), focusing on **embodied intelligence world models** and **unified models** for humanoid robots under the mentorship of [Dr. Yong Dai (代勇)](https://scholar.google.com/citations?user=mCCOT7wAAAAJ&hl=zh-CN). Previously, I conducted a research internship at [**Ubiquant (九坤投资)**](https://www.ubiquant.com/), focusing on **quantitative research** and **large language model foundation training**, with exposure to **thousand-GPU-scale clusters**. I also interned at **Tencent IEG (Interactive Entertainment Group)** through the *Qingyun Program*, where I worked on **game world models** and helped deliver *Honor of Kings – Lingbao*, focusing on **TTS (Text-to-Speech)** and **real-time match commentary** under the guidance of [Dr. Liang Du (杜量)](https://scholar.google.com/citations?user=oxNIbCUAAAAJ&hl=en&oi=ao) and [Dr. Wentao Yao (姚文韬)](https://scholar.google.com/citations?hl=en&user=ibNed18AAAAJ).
+In 2023, I was mentored by [Prof. Xiaoou Tang (汤晓鸥)](https://scholar.google.com/citations?user=qpBtpGsAAAAJ&hl=en) at Shanghai AI Lab. My research collaborators and mentors also include [Prof. Dong Liu (刘东)](https://scholar.google.com/citations?user=lOWByxoAAAAJ&hl=en), [Prof. Li Li (李礼)](https://scholar.google.com/citations?user=dEm6VKAAAAAJ&hl=en), [Prof. Zhihai He (何志海)](https://scholar.google.com/citations?user=wtr6OgkAAAAJ&hl=en), [Dr. Rossella Arcucci](https://scholar.google.com/citations?user=oxy2ZQoAAAAJ&hl=en), [Dr. Che Liu (刘澈)](https://scholar.google.com/citations?user=HED_458AAAAJ&hl=en&oi=sra), [Prof. Qionghai Dai (戴琼海)](https://scholar.google.com/citations?user=CHAajY4AAAAJ&hl=en), [Dr. Liang Du (杜量)](https://scholar.google.com/citations?user=oxNIbCUAAAAJ&hl=en&oi=ao), and [Dr. Wentao Yao (姚文韬)](https://scholar.google.com/citations?hl=en&user=ibNed18AAAAJ).
 
-- 💞️ Coming from a non-traditional background with **dual bachelor's degrees** in *Environmental Ecological Engineering* and *Economics* at Xiamen University, I've always been fascinated by interdisciplinary research. During my undergraduate years, I had the privilege of being mentored by [Prof. Yuanye Zhang (张原野)](https://scholar.google.com/citations?user=l1GMXf4AAAAJ&hl=en&oi=ao), whose passion and rigor guided me into my initial research endeavors. My journey into AI began in 2021 as an active member of [WISERCLUB](https://github.com/wise-r), a data science community that shaped my early curiosity—I'm deeply grateful to my good friend [Ziqian Lin (林子谦)](https://scholar.google.com/citations?user=72n5vvcAAAAJ&hl=en&oi=ao) (now at Peking University Guanghua School of Management, Department of Statistics) for recommending me to this amazing community. As someone who transitioned across fields, I deeply understand the challenges of learning something entirely new, and this experience has made me incredibly grateful for every mentor and collaborator who has guided me along the way.
-
-- 📝 Thanks to the generous guidance of my mentors and the support of amazing collaborators, I've been fortunate to publish papers <a href='https://scholar.google.com/citations?user=hCvlj5cAAAAJ&hl=en'><img src="https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/ydchen0806/ydchen0806.github.io/google-scholar-stats/gs_data_shieldsio.json&logo=google-scholar&logoColor=white"></a> at conferences including **ICLR**, **ICML**, **ICCV**, **NeurIPS**, **AAAI**, **ACL**, **IJCAI**, and **MICCAI**, and journals including **TPAMI**, **TMI**, and **JBHI**. 
-
-- 📄 My CV is available in [Chinese](/docs/cyd_resume_CN.pdf?v=20261109) and [English](/docs/CYD_resume_EN.pdf?v=20261109).
-
-I know my talents may not match those of many brilliant pioneers in this field, but I believe in the power of continuous learning and genuine collaboration. I'm always eager to exchange ideas, seek advice from the community, and help those who are just starting their research journey. Please feel free to reach out—I'd be truly honored to connect, collaborate, or simply share thoughts about research! 🌟
+I studied Environmental Ecological Engineering and Economics at Xiamen University, where I was advised by [Prof. Yuanye Zhang (张原野)](https://scholar.google.com/citations?user=l1GMXf4AAAAJ&hl=en&oi=ao). I began working on machine learning through [WISER Club](https://github.com/wise-r) in 2021, introduced by [Ziqian Lin (林子谦)](https://scholar.google.com/citations?user=72n5vvcAAAAJ&hl=en&oi=ao).
 
 </div>
 </details>
-
-<style>
-.about-details {
-  margin-top: 1.25em;
-  border-top: 1px solid #e8e8e8;
-  border-bottom: 1px solid #e8e8e8;
-}
-.about-details summary {
-  padding: 0.8em 0;
-  cursor: pointer;
-  font-weight: 600;
-}
-.about-details__content {
-  padding-bottom: 0.25em;
-}
-</style>

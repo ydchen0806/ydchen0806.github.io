@@ -2,13 +2,19 @@ name: Build homepage CV PDFs
 
 on:
   push:
+    branches: [main]
     paths:
       - '.github/workflows/build-homepage-cv.yml'
       - '.github/cv/source/*.tex'
+      - '.github/cv/*.gz.b64'
   workflow_dispatch:
 
 permissions:
   contents: write
+
+concurrency:
+  group: homepage-cv-${{ github.ref }}
+  cancel-in-progress: false
 
 jobs:
   build-cv:
@@ -19,159 +25,47 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Reconstruct latest CV sources and assets
+      - name: Prepare authoritative sources and project assets
         shell: bash
         run: |
           set -euo pipefail
-          mkdir -p .github/cv/build
-
-          # Use editable LaTeX sources after first successful rebuild.
-          if [[ -s .github/cv/source/resume_CN.tex && -s .github/cv/source/resume_EN.tex ]]; then
-            cp .github/cv/source/resume_CN.tex .github/cv/build/resume_CN.tex
-            cp .github/cv/source/resume_EN.tex .github/cv/build/resume_EN.tex
-          else
-            cat .github/cv/chunks/cn_* | base64 -d | gzip -dc > .github/cv/build/resume_CN.tex
-            cat .github/cv/chunks/en_* | base64 -d | gzip -dc > .github/cv/build/resume_EN.tex
-          fi
-          base64 -d < .github/cv/resume.cls.gz.b64 | gzip -dc > .github/cv/build/resume.cls
-          base64 -d < .github/cv/zh_CN_fonts.sty.gz.b64 | gzip -dc > .github/cv/build/zh_CN_fonts.sty
-          base64 -d < .github/cv/linespacing_fix.sty.gz.b64 | gzip -dc > .github/cv/build/linespacing_fix.sty
-
           python - <<'PY'
+          import base64
+          import gzip
+          import shutil
+          import zipfile
           from pathlib import Path
-          import re
 
-          def close_ubiquant_internship(tex, employer):
-              """Change only Ubiquant's internship end date, not ongoing positions."""
-              start = tex.find(employer)
-              assert start != -1, f'Cannot find employer: {employer}'
-              end = tex.find(r'\datedsubsection', start + len(employer))
-              assert end != -1, f'Cannot locate end of Ubiquant section: {employer}'
-              section = tex[start:end]
-              if '2026.10' in section:
-                  return tex
-              dates = list(re.finditer(r'(2026\.5.{0,80}?)(至今|Present)', section, flags=re.S))
-              assert len(dates) == 1, f'Expected one ongoing 2026.5 Ubiquant date ({employer}); got {len(dates)}'
-              match = dates[0]
-              section = section[:match.start(2)] + '2026.10' + section[match.end(2):]
-              if employer == 'Ubiquant':
-                  section = section.replace('Working on', 'Worked on', 1)
-              assert re.search(r'2026\.5.{0,80}?2026\.10', section, flags=re.S), 'Incorrect Ubiquant end date'
-              return tex[:start] + section + tex[end:]
+          build = Path('.github/cv/build')
+          build.mkdir(parents=True, exist_ok=True)
+          for name in ('resume_CN.tex', 'resume_EN.tex'):
+              source = Path('.github/cv/source') / name
+              assert source.is_file() and source.stat().st_size, f'Missing source: {source}'
+              shutil.copyfile(source, build / name)
 
+          for name in ('resume.cls', 'zh_CN_fonts.sty', 'linespacing_fix.sty'):
+              packed = Path('.github/cv') / (name + '.gz.b64')
+              (build / name).write_bytes(gzip.decompress(base64.b64decode(packed.read_bytes())))
 
-          cn = Path('.github/cv/build/resume_CN.tex')
-          s = cn.read_text(encoding='utf-8')
-          chosen = r'\href{https://ydchen0806.github.io/docs/cast_ccf_2026_selection_proof.png}{入选中国科协博士生青托（2026，CCF培育）}'
-          if chosen not in s:
-              old = [
-                  '获中国科学技术大学推荐申报中国科协青年科技人才培育工程博士生专项计划（2026年）',
-                  '中国科协青年科技人才培育工程博士生专项计划推荐人选（2026年）',
-                  '中科大推荐博士生青托（2026）',
-              ]
-              matched = [x for x in old if x in s]
-              assert len(matched) == 1, 'CN: cannot find original nomination; excerpt=' + repr(s[max(0,s.find('荣誉奖励')-30):s.find('荣誉奖励')+500])
-              s = s.replace(matched[0], chosen)
-          s = s.replace('国家自然科学基金青年学生基础研究项目（博士研究生）负责人（2024年）',
-                        '国家自然科学基金博士生项目负责人（2024）', 1)
-          if '2028' in s:
-              for old, new in [('2028.7','2027.6'), ('2028.07','2027.06'), ('2028','2027')]:
-                  if old in s:
-                      s = s.replace(old,new,1)
-                      break
-          assert '2028' not in s and '2027' in s, 'CN graduation date not 2027'
-          if 'Accepted, 2025' in s:
-              s = s.replace('Accepted, 2025', 'Accepted, Oct. 2026', 1)
-          assert 'Accepted, Oct. 2026' in s, 'CN TPAMI acceptance date mismatch'
-          s = close_ubiquant_internship(s, '九坤投资')
-          assert chosen in s, 'CN selection not updated'
-          # Also update the separate Honors section (not only PhD education).
-          s = s.replace('获中国科学技术大学推荐申报中国科协青年科技人才培育工程博士生专项计划',
-                        '入选中国科协博士生青托（CCF培育）')
-          s = s.replace('中国科学技术大学信息学院推荐人选',
-                        '培育学会：中国计算机学会（CCF）')
-          s = s.replace(r'\textbf{2026.09}', r'\textbf{2026.10}', 1)
-          assert '获中国科学技术大学推荐申报中国科协' not in s, 'CN old nomination remains; excerpt=' + repr(s[max(0,s.find('获中国科学技术大学推荐')-110):s.find('获中国科学技术大学推荐')+430])
-          cn.write_text(s, encoding='utf-8')
+          # Recover original assets independently of the previous PDF layout.
+          with zipfile.ZipFile('docs/Yinda_Chen_CV_Overleaf_Source.zip') as archive:
+              for name in ('cyd.jpg', 'cydQRcode.jpeg'):
+                  data = archive.read(name)
+                  assert data, f'Empty asset: {name}'
+                  (build / name).write_bytes(data)
+          shutil.copyfile('docs/cast_ccf_2026_selection_proof.png',
+                          build / 'cast_ccf_2026_selection_proof.png')
+          (build / 'main.tex').write_text(
+              '% !TeX program = xelatex\n'
+              '% Chinese by default; change the input below to resume_EN.tex for English.\n'
+              '\\input{resume_CN.tex}\n', encoding='utf-8')
+          (build / 'latexmkrc').write_text('$pdf_mode = 5;\n', encoding='utf-8')
 
-          en = Path('.github/cv/build/resume_EN.tex')
-          s = en.read_text(encoding='utf-8')
-          chosen = r'\href{https://ydchen0806.github.io/docs/cast_ccf_2026_selection_proof.png}{Selected for the 2026 CAST Doctoral Student Program (CCF)}'
-          if chosen not in s:
-              old = [
-                  'Recommended by USTC for the 2026 CAST Young Science and Technology Talent Cultivation Program (Doctoral Student Track)',
-                  'Recommended Candidate, 2026 CAST Young Science and Technology Talent Cultivation Program (Doctoral Student Track)',
-                  'USTC Nominee, CAST Doctoral Student Talent Program (2026)',
-              ]
-              matched = [x for x in old if x in s]
-              assert len(matched) == 1, 'EN: cannot find original nomination; excerpt=' + repr(s[max(0,s.find('Honors')-30):s.find('Honors')+500])
-              s = s.replace(matched[0], chosen)
-          s = s.replace('Principal Investigator, NSFC Young Students Basic Research Program (Doctoral Student) (2024)',
-                        'NSFC Doctoral Student Project PI (2024)', 1)
-          if '2028' in s:
-              for old, new in [('2028.7','2027.6'), ('2028.07','2027.06'), ('July 2028','June 2027'), ('2028','2027')]:
-                  if old in s:
-                      s = s.replace(old,new,1)
-                      break
-          assert '2028' not in s and '2027' in s, 'EN graduation date not 2027'
-          if 'Accepted, 2025' in s:
-              s = s.replace('Accepted, 2025', 'Accepted, Oct. 2026', 1)
-          assert 'Accepted, Oct. 2026' in s, 'EN TPAMI acceptance date mismatch'
-          s = close_ubiquant_internship(s, 'Ubiquant')
-          assert chosen in s, 'EN selection not updated'
-          # Also update the separate Honors section (not only PhD education).
-          s = s.replace('Recommended by USTC for the 2026 CAST Young Science and Technology Talent Cultivation Program (Doctoral Student Track)',
-                        'Selected for the 2026 CAST Doctoral Student Program (CCF)')
-          s = s.replace('Recommended by USTC School of Information Science and Technology',
-                        'Cultivating society: China Computer Federation (CCF)')
-          s = s.replace(r'\textbf{2026.09}', r'\textbf{2026.10}', 1)
-          assert 'Recommended by USTC' not in s, 'EN old nomination remains'
-          en.write_text(s, encoding='utf-8')
+          # Editable sources are authoritative. Never rewrite CV content during builds.
+          for name in ('resume_CN.tex', 'resume_EN.tex'):
+              assert (build / name).read_bytes() == (Path('.github/cv/source') / name).read_bytes()
+          print('Prepared both CV sources, local style dependencies, and original images.')
           PY
-
-          sudo apt-get update -qq
-          sudo apt-get install -y -qq poppler-utils imagemagick
-          rm -f /tmp/cvimg-*
-          pdfimages -all docs/cyd_resume_CN.pdf /tmp/cvimg
-
-          qr=''
-          photo=''
-          for f in /tmp/cvimg-*; do
-            [ -f "$f" ] || continue
-            dims=$(identify -format '%w %h' "$f" 2>/dev/null || true)
-            [ -n "$dims" ] || continue
-            read -r w h <<< "$dims"
-            diff=$(( w > h ? w-h : h-w ))
-            if [ "$diff" -le 30 ] && [ "$w" -ge 300 ]; then
-              qr="$f"
-            fi
-            if [ "$h" -gt "$w" ] && [ "$h" -ge 600 ]; then
-              photo="$f"
-            fi
-          done
-
-          test -n "$qr" || { echo 'Could not recover QR image from existing CV'; exit 1; }
-          test -n "$photo" || { echo 'Could not recover portrait from existing CV'; exit 1; }
-          cp "$qr" .github/cv/build/cydQRcode.jpeg
-          cp "$photo" .github/cv/build/cyd.jpg
-
-          echo 'Reconstructed source files:'
-          wc -c .github/cv/build/resume_CN.tex .github/cv/build/resume_EN.tex
-          identify .github/cv/build/cydQRcode.jpeg .github/cv/build/cyd.jpg
-
-      - name: Prepare Overleaf project entrypoint
-        shell: bash
-        run: |
-          set -euo pipefail
-          cat > .github/cv/build/main.tex <<'EOF'
-          % !TeX program = xelatex
-          % Overleaf default: Chinese resume.
-          % Switch to English by changing the line below to resume_EN.tex.
-          \input{resume_CN.tex}
-          EOF
-          cat > .github/cv/build/latexmkrc <<'EOF'
-          $pdf_mode = 5;
-          EOF
 
       - name: Compile Chinese and English CVs with XeLaTeX
         uses: xu-cheng/latex-action@v4
@@ -187,101 +81,98 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          test -s .github/cv/build/resume_CN.pdf
-          test -s .github/cv/build/resume_EN.pdf
-          pdfinfo .github/cv/build/resume_CN.pdf | grep '^Pages:'
-          pdfinfo .github/cv/build/resume_EN.pdf | grep '^Pages:'
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq poppler-utils
+          for lang in CN EN; do
+            pdf=".github/cv/build/resume_${lang}.pdf"
+            test -s "$pdf"
+            pdfinfo "$pdf"
+            pdftotext -layout "$pdf" "/tmp/resume_${lang}.txt"
+            test "$(wc -m < "/tmp/resume_${lang}.txt")" -gt 1000
+            cmp ".github/cv/source/resume_${lang}.tex" ".github/cv/build/resume_${lang}.tex"
+          done
           cp .github/cv/build/resume_CN.pdf docs/cyd_resume_CN.pdf
           cp .github/cv/build/resume_EN.pdf docs/CYD_resume_EN.pdf
-          pdftotext -layout docs/cyd_resume_CN.pdf /tmp/cv_CN.txt
-          pdftotext -layout docs/CYD_resume_EN.pdf /tmp/cv_EN.txt
-          head -n 30 /tmp/cv_CN.txt | grep -q '博士生青托' || { echo 'ERROR: CN PDF missing selected program'; exit 1; }
-          head -n 30 /tmp/cv_CN.txt | grep -q 'CCF' || { echo 'ERROR: CN PDF missing CCF'; exit 1; }
-          head -n 30 /tmp/cv_EN.txt | grep -q 'CAST Doctoral Student Program' || { echo 'ERROR: EN PDF missing selected program'; exit 1; }
-          head -n 30 /tmp/cv_EN.txt | grep -q 'CCF' || { echo 'ERROR: EN PDF missing CCF'; exit 1; }
-          ! grep -q '获中国科学技术大学推荐' /tmp/cv_CN.txt || { echo 'ERROR: stale CN nomination'; exit 1; }
-          ! grep -q 'Recommended by USTC' /tmp/cv_EN.txt || { echo 'ERROR: stale EN nomination'; exit 1; }
-          mkdir -p .github/cv/source
-          cp .github/cv/build/resume_CN.tex .github/cv/source/resume_CN.tex
-          cp .github/cv/build/resume_EN.tex .github/cv/source/resume_EN.tex
 
       - name: Create Overleaf-ready source ZIP
         shell: bash
         run: |
           set -euo pipefail
-          work=".github/cv/build"
-          cp docs/cast_ccf_2026_selection_proof.png "$work/cast_ccf_2026_selection_proof.png"
-          cat > "$work/README.md" <<'EOF'
+          cat > .github/cv/build/README.md <<'EOF'
           # Yinda Chen | Bilingual Academic CV
 
-          Complete, flat-layout Overleaf project with Chinese and English LaTeX sources,
-          resume class, style dependencies, profile photo and QR code.
+          A self-contained LaTeX project with Chinese and English academic CVs.
 
           ## Compile on Overleaf
 
-          1. Open Overleaf > New Project > Upload Project, and upload this ZIP.
-          2. **Main document:** `main.tex` (Chinese by default).
-          3. **Compiler:** XeLaTeX (Overleaf Menu > Settings > Compiler).
+          1. Select New Project > Upload Project and upload this ZIP.
+          2. Set the main document to main.tex (Chinese by default).
+          3. Select XeLaTeX as the compiler.
           4. Click Recompile.
 
-          To compile the English version, change `main.tex` to:
-          ```tex
+          For English, set the main document to resume_EN.tex, or change main.tex to:
+          ~~~tex
           \input{resume_EN.tex}
-          ```
-          Alternatively set the Main document directly to `resume_EN.tex`.
-          To restore Chinese, use `\input{resume_CN.tex}` or select `resume_CN.tex`.
+          ~~~
 
-          ## Files
-          - `main.tex` — default Chinese entrypoint, switchable to English
-          - `resume_CN.tex`, `resume_EN.tex` — editable CV sources
-          - `resume.cls`, `zh_CN_fonts.sty`, `linespacing_fix.sty` — local template/style files
-          - `cyd.jpg`, `cydQRcode.jpeg` — profile photo and QR code
-          - `latexmkrc` — requests XeLaTeX
-          - `cast_ccf_2026_selection_proof.png` — CAST/CCF award proof (reference only)
+          For Chinese, select resume_CN.tex, or use:
+          ~~~tex
+          \input{resume_CN.tex}
+          ~~~
 
-          The hyperlinks in the CV target the public homepage. All compilation
-          dependencies specific to the original CV are included as files.
+          ## Compile locally
+
+          With a current TeX Live installation:
+          ~~~bash
+          latexmk -xelatex -interaction=nonstopmode -halt-on-error resume_CN.tex
+          latexmk -xelatex -interaction=nonstopmode -halt-on-error resume_EN.tex
+          ~~~
+
+          ## Editable sources and assets
+
+          - resume_CN.tex and resume_EN.tex: authoritative CV content and formatting.
+          - resume.cls, zh_CN_fonts.sty, linespacing_fix.sty: local template dependencies.
+          - cyd.jpg and cydQRcode.jpeg: original portrait and contact QR image.
+          - main.tex and latexmkrc: compiler entrypoint and configuration.
+          - cast_ccf_2026_selection_proof.png: supporting award document; not required for typesetting.
+
+          The GitHub workflow compiles these sources without rewriting their content.
+          PDF hyperlinks point to the public homepage and original research resources.
           EOF
-          zip_path="$GITHUB_WORKSPACE/docs/Yinda_Chen_CV_Overleaf_Source.zip"
-          (
-            cd "$work"
-            zip -q -X "$zip_path" main.tex latexmkrc README.md \
-              resume_CN.tex resume_EN.tex resume.cls zh_CN_fonts.sty \
-              linespacing_fix.sty cyd.jpg cydQRcode.jpeg \
-              cast_ccf_2026_selection_proof.png
-          )
-          unzip -tq "$zip_path"
           python - <<'PY'
           from pathlib import Path
           import zipfile
-          p = Path('docs/Yinda_Chen_CV_Overleaf_Source.zip')
-          with zipfile.ZipFile(p) as z:
-              names = set(z.namelist())
-              required = {'main.tex','latexmkrc','README.md',
-                          'resume_CN.tex','resume_EN.tex','resume.cls',
-                          'zh_CN_fonts.sty','linespacing_fix.sty',
-                          'cyd.jpg','cydQRcode.jpeg',
-                          'cast_ccf_2026_selection_proof.png'}
-              assert required == names, f'Missing or unexpected files: {required ^ names}'
-              assert '入选中国科协博士生青托' in z.read('resume_CN.tex').decode('utf-8')
-              assert 'CAST Doctoral Student Program' in z.read('resume_EN.tex').decode('utf-8')
-              assert z.read('main.tex').decode('utf-8').count(r'\input{resume_CN.tex}') == 1
-              assert all(z.getinfo(n).file_size > 0 for n in names)
-          print(f'Overleaf source ZIP ready: {p} ({p.stat().st_size:,} bytes)')
+
+          build = Path('.github/cv/build')
+          target = Path('docs/Yinda_Chen_CV_Overleaf_Source.zip')
+          names = (
+              'main.tex', 'latexmkrc', 'README.md', 'resume_CN.tex', 'resume_EN.tex',
+              'resume.cls', 'zh_CN_fonts.sty', 'linespacing_fix.sty',
+              'cyd.jpg', 'cydQRcode.jpeg', 'cast_ccf_2026_selection_proof.png',
+          )
+          with zipfile.ZipFile(target, 'w', zipfile.ZIP_DEFLATED, compresslevel=9) as archive:
+              for name in names:
+                  assert (build / name).stat().st_size, f'Empty file: {name}'
+                  archive.write(build / name, arcname=name)
+          with zipfile.ZipFile(target) as archive:
+              assert archive.testzip() is None
+              assert set(archive.namelist()) == set(names)
+              for name in ('resume_CN.tex', 'resume_EN.tex'):
+                  assert archive.read(name) == (Path('.github/cv/source') / name).read_bytes()
+          print(f'Overleaf source ZIP ready: {target} ({target.stat().st_size:,} bytes)')
           PY
 
-      - name: Commit updated PDFs
+      - name: Commit compiled PDFs and source archive
         shell: bash
         run: |
           set -euo pipefail
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add docs/cyd_resume_CN.pdf docs/CYD_resume_EN.pdf
-          git add -f .github/cv/source/resume_CN.tex .github/cv/source/resume_EN.tex
           git add -f docs/Yinda_Chen_CV_Overleaf_Source.zip
           if git diff --cached --quiet; then
-            echo 'CV PDFs are already up to date.'
+            echo 'CV PDFs and source archive are already up to date.'
           else
-            git commit -m 'Build bilingual CV PDFs and ready-to-import Overleaf ZIP'
+            git commit -m 'Build revised bilingual academic CVs and Overleaf source archive'
             git push origin HEAD:main
           fi

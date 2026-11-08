@@ -7,31 +7,14 @@ layout: compress
   <head>
     {% include head.html %}
     {% include head/custom.html %}
-    <style>
-      /* 🔧 简单样式：全局更新时间样式 */
-      .site-footer {
-        text-align: center;
-        margin: 3em 0 1em 0;
-        font-size: 0.9rem;
-        color: #777;
-      }
-      @media (prefers-color-scheme: dark) {
-        .site-footer {
-          color: #aaa;
-        }
-      }
-    </style>
   </head>
-
   <body>
-
     {% include browser-upgrade.html %}
     {% include masthead.html %}
 
     <div id="main" role="main">
       {% include sidebar.html %}
-    
-      <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
+      <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
         {% if page.title %}
         <meta itemprop="headline" content="{{ page.title | markdownify | strip_html | strip_newlines | escape_once }}">
         {% endif %}
@@ -43,34 +26,23 @@ layout: compress
       </article>
     </div>
 
-    <!-- ✅ 新增页脚更新时间 -->
     <footer class="site-footer">
-      Last updated: {{ site.time | date: "%Y-%m-%d %H:%M:%S" }}
+      Yinda Chen · Updated {{ site.time | date: "%B %Y" }}
     </footer>
 
-    <!-- Back to Top Button -->
-    <button id="backToTop" aria-label="Back to top" style="
-      display:none; position:fixed; bottom:2em; right:2em; z-index:999;
-      width:44px; height:44px; border-radius:50%; border:none;
-      background:linear-gradient(135deg,#667eea,#764ba2);
-      color:#fff; font-size:1.3em; cursor:pointer;
-      box-shadow:0 4px 14px rgba(102,126,234,0.4);
-      transition:all 0.3s; opacity:0;
-    ">▲</button>
+    <button id="backToTop" aria-label="Back to top" hidden>↑</button>
     <script>
-    (function(){
-      var btn=document.getElementById('backToTop');
-      window.addEventListener('scroll',function(){
-        if(window.scrollY>400){btn.style.display='block';setTimeout(function(){btn.style.opacity='1'},10)}
-        else{btn.style.opacity='0';setTimeout(function(){if(window.scrollY<=400)btn.style.display='none'},300)}
+    (function () {
+      var button = document.getElementById('backToTop');
+      function updateVisibility() { button.hidden = window.scrollY <= 400; }
+      window.addEventListener('scroll', updateVisibility, { passive: true });
+      updateVisibility();
+      button.addEventListener('click', function () {
+        var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        window.scrollTo({ top: 0, behavior: reduceMotion ? 'auto' : 'smooth' });
       });
-      btn.addEventListener('click',function(){window.scrollTo({top:0,behavior:'smooth'})});
-      btn.addEventListener('mouseenter',function(){btn.style.transform='translateY(-3px)';btn.style.boxShadow='0 6px 20px rgba(102,126,234,0.5)'});
-      btn.addEventListener('mouseleave',function(){btn.style.transform='';btn.style.boxShadow='0 4px 14px rgba(102,126,234,0.4)'});
     })();
     </script>
-
     {% include scripts.html %}
-
   </body>
 </html>

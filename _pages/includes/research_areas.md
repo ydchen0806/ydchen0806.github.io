@@ -1,86 +1,20 @@
-# 🎯 Research Areas
+## Research interests
 
-<div class="research-visualization">
-  <div class="keyword-cloud" id="keywordCloud">
-    <!-- Keywords will be auto-generated -->
+<div class="research-grid">
+  <div class="research-card">
+    <h3>Embodied intelligence and world models</h3>
+    <p>Unified models that connect visual understanding, future prediction, and robot action. Recent work includes <a href="https://arxiv.org/abs/2605.15153">Pelican-Unified 1.0</a> and its <a href="https://arxiv.org/abs/2607.06655">Pelican-VLA 0.5</a> component for manipulation across scenes and embodiments.</p>
+  </div>
+  <div class="research-card">
+    <h3>Agentic foundation models</h3>
+    <p>Models for coding, tool use, and scientific research workflows. At Ubiquant / IQuest Research, I contributed to <a href="https://arxiv.org/abs/2610.30949">IQuest-Q1</a> and was a core contributor to <a href="https://arxiv.org/abs/2610.11451">SAIL</a>.</p>
+  </div>
+  <div class="research-card">
+    <h3>Representation and multimodal learning</h3>
+    <p>Self-supervised pretraining, domain adaptation, and generative image compression. Examples include <a href="https://openaccess.thecvf.com/content/ICCV2025/html/Chen_TokenUnify_Scaling_Up_Autoregressive_Pretraining_for_Neuron_Segmentation_ICCV_2025_paper.html">TokenUnify</a>, <a href="https://proceedings.mlr.press/v267/wang25n.html">MaskTwins</a>, and <a href="https://doi.org/10.1109/TPAMI.2026.3744812">GRCL</a>.</p>
+  </div>
+  <div class="research-card">
+    <h3>Connectomics and biomedical AI</h3>
+    <p>Learning from electron microscopy and volumetric medical images, and studying how neural circuit structure relates to computation. My work spans neuron segmentation, medical image-text learning, and connectome analysis of the Drosophila mushroom body.</p>
   </div>
 </div>
-
-<style>
-.research-visualization {
-  margin: 1.5em 0;
-  text-align: center;
-}
-
-.keyword-cloud {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.8em;
-  justify-content: center;
-  padding: 1em;
-}
-
-.keyword {
-  display: inline-block;
-  padding: 0.5em 1.2em;
-  background: linear-gradient(135deg, #667eea, #764ba2);
-  color: white;
-  border-radius: 25px;
-  font-weight: 500;
-  transition: all 0.2s ease;
-  cursor: default;
-  box-shadow: 0 2px 8px rgba(102, 126, 234, 0.3);
-}
-
-.keyword[data-weight="5"] {
-  font-size: 1.2em;
-  padding: 0.6em 1.4em;
-  background: linear-gradient(135deg, #9C27B0, #673AB7);
-  box-shadow: 0 4px 12px rgba(156, 39, 176, 0.4);
-}
-
-.keyword[data-weight="4"] {
-  font-size: 1.05em;
-  padding: 0.55em 1.3em;
-}
-
-.keyword[data-weight="3"] {
-  font-size: 0.95em;
-}
-
-.keyword[data-weight="2"] {
-  font-size: 0.85em;
-  opacity: 0.9;
-}
-
-.keyword:hover {
-  transform: translateY(-3px) scale(1.05);
-  box-shadow: 0 6px 16px rgba(102, 126, 234, 0.4);
-}
-</style>
-
-<script>
-window.addEventListener('load', function() {
-  // 核心研究方向（精简版，突出重点）
-  const coreKeywords = [
-    { keyword: '🌍 World Models', weight: 5 },
-    { keyword: '🤖 Embodied AI', weight: 5 },
-    { keyword: '🦾 Vision-Language-Action', weight: 4 },
-    { keyword: '🔬 Multimodal Learning', weight: 4 },
-    { keyword: '🧠 Self-Supervised Learning', weight: 3 },
-    { keyword: '🏥 Medical Imaging', weight: 3 },
-    { keyword: '🗜️ Image Compression', weight: 2 }
-  ];
-
-  function generateKeywordCloud() {
-    const keywordCloud = document.getElementById('keywordCloud');
-    if (!keywordCloud) return;
-
-    keywordCloud.innerHTML = coreKeywords.map(item => 
-      `<span class="keyword" data-weight="${item.weight}">${item.keyword}</span>`
-    ).join('');
-  }
-
-  generateKeywordCloud();
-});
-</script>

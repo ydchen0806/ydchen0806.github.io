@@ -1,67 +1,6 @@
-# 🔥 News
+## News
 
 <style>
-#news-section .news-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-#news-section .news-item {
-  display: flex;
-  align-items: flex-start;
-  gap: 0.8em;
-  padding: 0.7em 1em;
-  border-radius: 8px;
-  transition: background 0.15s;
-  border-left: 3px solid transparent;
-}
-#news-section .news-item:hover {
-  background: #f8f9fa;
-  border-left-color: #FF5722;
-}
-#news-section .news-date {
-  flex-shrink: 0;
-  font-size: 0.82em;
-  font-weight: 600;
-  color: #fff;
-  background: linear-gradient(135deg, #FF5722, #FF9800);
-  padding: 3px 10px;
-  border-radius: 4px;
-  min-width: 80px;
-  text-align: center;
-  margin-top: 2px;
-}
-#news-section .news-text {
-  line-height: 1.7;
-  color: #333;
-  font-size: 0.95em;
-}
-#news-section .news-text a {
-  color: #2196F3;
-  text-decoration: none;
-  transition: color 0.2s;
-}
-#news-section .news-text a:hover {
-  color: #1565C0;
-  text-decoration: underline;
-}
-#news-section .news-toggle {
-  display: block;
-  margin: 0.8em auto 0;
-  padding: 6px 20px;
-  background: none;
-  border: 1.5px solid #bbb;
-  border-radius: 20px;
-  color: #666;
-  font-size: 0.88em;
-  cursor: pointer;
-  transition: all 0.2s;
-}
-#news-section .news-toggle:hover {
-  border-color: #FF5722;
-  color: #FF5722;
-  background: #fff5f2;
-}
 #news-section:not(.news-expanded) .news-list > .news-item:nth-child(n + 7) {
   display: none;
 }
@@ -75,27 +14,27 @@
 
 <li class="news-item">
   <span class="news-date">2026.10</span>
-  <span class="news-text">📄 <a href="https://arxiv.org/abs/2610.30949"><strong title="IQuest-Q1: Advancing Foundation Capabilities for Agentic CLI Systems">IQuest-Q1</strong></a> technical report released. I contributed to this agentic foundation model for CLI interaction, coding, and multi-step tool use during my research internship at <strong>Ubiquant / IQuest Research</strong>.</span>
+  <span class="news-text"><a href="https://arxiv.org/abs/2610.30949"><strong title="IQuest-Q1: Advancing Foundation Capabilities for Agentic CLI Systems">IQuest-Q1</strong></a> technical report released. I contributed to this agentic foundation model for CLI interaction, coding, and multi-step tool use during my research internship at <strong>Ubiquant / IQuest Research</strong>.</span>
 </li>
 
 <li class="news-item">
   <span class="news-date">2026.10</span>
-  <span class="news-text">🔬 Core contributor to <a href="https://arxiv.org/abs/2610.11451"><strong title="SAIL: Scientific Agentic Intelligence via a Science-Aware Loop">SAIL</strong></a>, a scientific-agent model for literature research, scientific coding, and multi-step research workflows at <strong>Ubiquant / IQuest Research</strong>. October preprint; currently withdrawn pending internal checks.</span>
+  <span class="news-text">Core contributor to <a href="https://arxiv.org/abs/2610.11451"><strong title="SAIL: Scientific Agentic Intelligence via a Science-Aware Loop">SAIL</strong></a>, a scientific-agent model for literature research, scientific coding, and multi-step research workflows at <strong>Ubiquant / IQuest Research</strong>.</span>
 </li>
 
 <li class="news-item">
   <span class="news-date">2026.10</span>
-  <span class="news-text">🎉 Our paper <a href="https://doi.org/10.1109/TPAMI.2026.3744812" target="_blank" rel="noopener"><strong title="Learned Image Coding with Generative Reference of Conditional Latents">GRCL</strong></a> was accepted by <strong>IEEE TPAMI</strong>.</span>
+  <span class="news-text">Our paper <a href="https://doi.org/10.1109/TPAMI.2026.3744812" target="_blank" rel="noopener"><strong title="Learned Image Coding with Generative Reference of Conditional Latents">GRCL</strong></a> was accepted by <strong>IEEE TPAMI</strong>.</span>
 </li>
 
 <li class="news-item">
   <span class="news-date">2026.10</span>
-  <span class="news-text">🏅 Selected for the <a href="/docs/cast_ccf_2026_selection_proof.png?v=20261022" target="_blank" rel="noopener"><strong>2026 CAST Doctoral Student Program (博士生青托)</strong></a> (CCF).</span>
+  <span class="news-text">Selected for the <a href="/docs/cast_ccf_2026_selection_proof.png?v=20261022" target="_blank" rel="noopener"><strong>2026 CAST Doctoral Student Program (博士生青托)</strong></a> (CCF).</span>
 </li>
 
 <li class="news-item">
   <span class="news-date">2026.08</span>
-  <span class="news-text">🤖 Proud to have contributed to <strong>Tien Kung</strong> — congratulations to our team on the <a href="https://kfqgw.beijing.gov.cn/ywdt/gzdt/202608/t20260828_4841152.html"><strong>record-breaking performance</strong></a> at the <a href="https://www.news.cn/20260813/910a87f73c0f40d1b2aaf1fd12fe3809/c.html"><strong>World Humanoid Robot Games</strong></a> in Beijing!</span>
+  <span class="news-text">Contributed to <strong>Tien Kung</strong>; see our <a href="https://kfqgw.beijing.gov.cn/ywdt/gzdt/202608/t20260828_4841152.html">team results</a> at the <a href="https://www.news.cn/20260813/910a87f73c0f40d1b2aaf1fd12fe3809/c.html">World Humanoid Robot Games</a> in Beijing.</span>
 </li>
 
 <!--
@@ -107,7 +46,7 @@
 
 <li class="news-item">
   <span class="news-date">2026.07</span>
-  <span class="news-text">🤖 <a href="https://arxiv.org/abs/2607.06655"><strong>Pelican-VLA 0.5: Attending Before Acting Benefits Generalization</strong></a> technical report released. As the VLA component within Pelican-Unified, it uses learnable bottleneck tokens to connect task-relevant perception, future-frame generation, and action generalization.</span>
+  <span class="news-text"><a href="https://arxiv.org/abs/2607.06655"><strong>Pelican-VLA 0.5: Attending Before Acting Benefits Generalization</strong></a> technical report released. As the VLA component within Pelican-Unified, it uses learnable bottleneck tokens to connect task-relevant perception, future-frame generation, and action generalization.</span>
 </li>
 
 <!--
@@ -119,12 +58,12 @@
 
 <li class="news-item">
   <span class="news-date">2026.05</span>
-  <span class="news-text">📈 Joined <strong>Ubiquant Investment (九坤投资)</strong> as a research intern, working on <strong>quantitative research</strong> and <strong>large language model foundation training</strong>.</span>
+  <span class="news-text">Joined <strong>Ubiquant Investment (九坤投资)</strong> as a research intern, working on <strong>quantitative research</strong> and <strong>large language model foundation training</strong>.</span>
 </li>
 
 <li class="news-item">
   <span class="news-date">2026.05</span>
-  <span class="news-text">📄 As a core contributor (ranked second), contributed to <a href="https://arxiv.org/pdf/2605.15153.pdf"><strong>Pelican-Unified 1.0</strong></a>: <strong>unifying understanding, reasoning, imagination, and action</strong> (统一理解、推理、想象与动作).</span>
+  <span class="news-text">Core contributor to <a href="https://arxiv.org/abs/2605.15153"><strong>Pelican-Unified 1.0</strong></a>, with work on unified vision-language modeling and action capability.</span>
 </li>
 
 <!-- Non-first-author paper acceptances are kept in source but hidden.
@@ -136,12 +75,12 @@
 
 <li class="news-item">
   <span class="news-date">2026.04</span>
-  <span class="news-text">🎵 Earned the <a href="/docs/berklee_singing_popular_music_cert.png">Singing Popular Music</a> certification from <strong>Berklee College of Music</strong>.</span>
+  <span class="news-text">Earned the <a href="/docs/berklee_singing_popular_music_cert.png">Singing Popular Music</a> certification from <strong>Berklee College of Music</strong>.</span>
 </li>
 
 <li class="news-item">
   <span class="news-date">2026.01</span>
-  <span class="news-text">🎓 Awarded the <a href="/docs/增华奖学金.jpg">Zenghua Scholarship (增华奖学金)</a> by USTC, a university-level scholarship.</span>
+  <span class="news-text">Awarded the <a href="/docs/增华奖学金.jpg">Zenghua Scholarship (增华奖学金)</a> by USTC, a university-level scholarship.</span>
 </li>
 
 <!-- Non-first-author paper acceptances are kept in source but hidden.
@@ -153,7 +92,7 @@
 
 <li class="news-item">
   <span class="news-date">2026.01</span>
-  <span class="news-text">✈️ Traveling to Singapore for <strong>AAAI 2026</strong>. Welcome friends interested in embodied intelligence, world models, and medical imaging to connect!</span>
+  <span class="news-text">Traveling to Singapore for <strong>AAAI 2026</strong>.</span>
 </li>
 
 <!--
@@ -165,12 +104,12 @@
 
 <li class="news-item">
   <span class="news-date">2025.12</span>
-  <span class="news-text">💼 Joined <a href="https://www.x-humanoid.com/">Beijing Humanoid Robot Innovation Center (UBTECH Robotics)</a> as a core member, focusing on <strong>embodied intelligence world models</strong> for humanoid robots.</span>
+  <span class="news-text">Joined <a href="https://www.x-humanoid.com/">Beijing Innovation Center of Humanoid Robotics (X-Humanoid)</a> as a core member, focusing on <strong>embodied intelligence world models</strong> for humanoid robots.</span>
 </li>
 
 <li class="news-item">
   <span class="news-date">2025.11</span>
-  <span class="news-text">🎉 My advisor Prof. Feng Wu (吴枫) was elected as an <a href="https://www.cae.cn/cae/html/main/col1/2025-11/21/20251121085534713797145_1.html"><strong>Academician of the Chinese Academy of Engineering</strong></a> (CAE). A role model forever.</span>
+  <span class="news-text">My advisor Prof. Feng Wu (吴枫) was elected as an <a href="https://www.cae.cn/cae/html/main/col1/2025-11/21/20251121085534713797145_1.html"><strong>Academician of the Chinese Academy of Engineering</strong></a> (CAE).</span>
 </li>
 
 <!--
@@ -192,12 +131,12 @@
 
 <li class="news-item">
   <span class="news-date">2025.08</span>
-  <span class="news-text">💼 Started as Qingyun intern at <strong>Tencent IEG</strong>, working on game video scene understanding.</span>
+  <span class="news-text">Started as Qingyun intern at <strong>Tencent IEG</strong>, working on game video scene understanding.</span>
 </li>
 
 <li class="news-item">
   <span class="news-date">2025.06</span>
-  <span class="news-text">📄 One <a href="https://arxiv.org/pdf/2405.16847">paper</a> was accepted by <strong>ICCV 2025</strong>.</span>
+  <span class="news-text">One <a href="https://openaccess.thecvf.com/content/ICCV2025/html/Chen_TokenUnify_Scaling_Up_Autoregressive_Pretraining_for_Neuron_Segmentation_ICCV_2025_paper.html">paper</a> was accepted by <strong>ICCV 2025</strong>.</span>
 </li>
 
 <!--
@@ -209,27 +148,27 @@
 
 <li class="news-item">
   <span class="news-date">2025.05</span>
-  <span class="news-text">📄 One <a href="https://openreview.net/pdf?id=wJGXiHQwpZ">paper</a> was accepted by <strong>ICML 2025</strong>.</span>
+  <span class="news-text">One <a href="https://proceedings.mlr.press/v267/wang25n.html">paper</a> was accepted by <strong>ICML 2025</strong>.</span>
 </li>
 
 <li class="news-item">
   <span class="news-date">2025.01</span>
-  <span class="news-text">📄 One <a href="/files/Condition_generation_Latent_Coding_with_an_External_Dictionary_for_Deep_Image_Compression.pdf">paper</a> was selected as <strong style="color:#E91E63">oral</strong> by <strong>AAAI 2025</strong>.</span>
+  <span class="news-text">One <a href="/docs/Condition_generation_Latent_Coding_with_an_External_Dictionary_for_Deep_Image_Compression.pdf">paper</a> was selected as <strong>oral</strong> by <strong>AAAI 2025</strong>.</span>
 </li>
 
 <li class="news-item">
   <span class="news-date">2024.12</span>
-  <span class="news-text">🏅 Selected as PI of the <a href="/docs/国自然.png"><strong>NSFC Doctoral Student Program (博士生国自然)</strong></a>, the <strong>sole awardee</strong> from the School of Information Science and Technology that year.</span>
+  <span class="news-text">Awarded the <a href="/docs/国自然.png"><strong>NSFC Doctoral Student Project (博士生国自然)</strong></a> as Principal Investigator, for the 2025–2027 project period.</span>
 </li>
 
 <li class="news-item">
   <span class="news-date">2024.10</span>
-  <span class="news-text">📄 One <a href="https://arxiv.org/pdf/2412.19080">paper</a> was accepted by <strong>NeurIPS 2024</strong>.</span>
+  <span class="news-text">One <a href="https://arxiv.org/pdf/2412.19080">paper</a> was accepted by <strong>NeurIPS 2024</strong>.</span>
 </li>
 
 <li class="news-item">
   <span class="news-date">2022.10</span>
-  <span class="news-text">🏆 Awarded the <a href="https://iat.ustc.edu.cn/iat/x198/20221017/5920.html"><strong>Graduate National Scholarship (研究生国家奖学金)</strong></a> at USTC.</span>
+  <span class="news-text">Awarded the <a href="https://iat.ustc.edu.cn/iat/x198/20221017/5920.html"><strong>Graduate National Scholarship (研究生国家奖学金)</strong></a> at USTC.</span>
 </li>
 
 </ul>

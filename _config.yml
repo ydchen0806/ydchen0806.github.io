@@ -7,7 +7,7 @@
 
 # Site Settings
 title                    : "Yinda Chen"
-description              : "PhD Candidate"
+description              : "Yinda Chen, Ph.D. candidate at USTC and Shanghai AI Lab. Research in multimodal learning, embodied intelligence, agentic models, and connectomics."
 repository               : "ydchen0806/ydchen0806.github.io"
 google_scholar_stats_use_cdn : true
 
@@ -23,8 +23,8 @@ baidu_site_verification  : code-ZxFK3f4pfb
 author:
   name             : "Yinda Chen (陈胤达)"
   avatar           : "images/profile.png"
-  bio              : # "PhD Candidate"
-  location         : "Shanghai"
+  bio              : "Ph.D. candidate"
+  location         :
   employer         : "USTC & Shanghai AI Lab"
   email            : "cyd0806@mail.ustc.edu.cn"
   pubmed           : 
