@@ -155,6 +155,8 @@
 <ul class="exp-details">
   <li>Worked on quantitative research and large language model foundation training</li>
   <li>Gained experience with thousand-GPU-scale clusters and explored LLM applications in factor mining and data-driven decision making</li>
+  <li>Contributor and co-author of <a href="https://arxiv.org/abs/2610.30949" title="IQuest-Q1: Advancing Foundation Capabilities for Agentic CLI Systems">IQuest-Q1</a>, an agentic foundation model for CLI interaction, coding, and multi-step tool use (October 2026 technical report)</li>
+  <li>Core contributor to <a href="https://arxiv.org/abs/2610.11451" title="SAIL: Scientific Agentic Intelligence via a Science-Aware Loop">SAIL</a>, a scientific-agent model for literature research, scientific coding, and multi-step research workflows (October 2026 preprint; currently withdrawn pending internal checks)</li>
 </ul>
 </div>
 

@@ -62,16 +62,26 @@
   color: #FF5722;
   background: #fff5f2;
 }
-#news-section .news-more {
+#news-section:not(.news-expanded) .news-list > .news-item:nth-child(n + 7) {
   display: none;
 }
-#news-section .news-more.show {
-  display: block;
+#news-section .news-toggle[hidden] {
+  display: none;
 }
 </style>
 
 <div id="news-section">
-<ul class="news-list">
+<ul class="news-list" id="newsList">
+
+<li class="news-item">
+  <span class="news-date">2026.10</span>
+  <span class="news-text">📄 <a href="https://arxiv.org/abs/2610.30949"><strong title="IQuest-Q1: Advancing Foundation Capabilities for Agentic CLI Systems">IQuest-Q1</strong></a> technical report released. I contributed to this agentic foundation model for CLI interaction, coding, and multi-step tool use during my research internship at <strong>Ubiquant / IQuest Research</strong>.</span>
+</li>
+
+<li class="news-item">
+  <span class="news-date">2026.10</span>
+  <span class="news-text">🔬 Core contributor to <a href="https://arxiv.org/abs/2610.11451"><strong title="SAIL: Scientific Agentic Intelligence via a Science-Aware Loop">SAIL</strong></a>, a scientific-agent model for literature research, scientific coding, and multi-step research workflows at <strong>Ubiquant / IQuest Research</strong>. October preprint; currently withdrawn pending internal checks.</span>
+</li>
 
 <li class="news-item">
   <span class="news-date">2026.10</span>
@@ -153,11 +163,6 @@
 </li>
 -->
 
-</ul>
-
-<div class="news-more" id="newsMore">
-<ul class="news-list">
-
 <li class="news-item">
   <span class="news-date">2025.12</span>
   <span class="news-text">💼 Joined <a href="https://www.x-humanoid.com/">Beijing Humanoid Robot Innovation Center (UBTECH Robotics)</a> as a core member, focusing on <strong>embodied intelligence world models</strong> for humanoid robots.</span>
@@ -228,8 +233,38 @@
 </li>
 
 </ul>
+
+<button type="button" class="news-toggle" id="newsToggle" aria-expanded="false" aria-controls="newsList">▼ Show all news</button>
+
 </div>
 
-<button class="news-toggle" id="newsToggle" onclick="var m=document.getElementById('newsMore');var b=document.getElementById('newsToggle');if(m.classList.contains('show')){m.classList.remove('show');b.textContent='▼ Show earlier news (9 more)'}else{m.classList.add('show');b.textContent='▲ Collapse'}">▼ Show earlier news (9 more)</button>
+<script>
+(function () {
+  var section = document.getElementById('news-section');
+  var list = document.getElementById('newsList');
+  var button = document.getElementById('newsToggle');
+  var visibleCount = 6;
+  var moreCount = Math.max(0, list.querySelectorAll('.news-item').length - visibleCount);
 
-</div>
+  function setExpanded(expanded) {
+    section.classList.toggle('news-expanded', expanded);
+    button.setAttribute('aria-expanded', String(expanded));
+    button.textContent = expanded
+      ? '▲ Show latest ' + visibleCount
+      : '▼ Show all news (' + moreCount + ' more)';
+  }
+
+  button.hidden = moreCount === 0;
+  setExpanded(false);
+  button.addEventListener('click', function () {
+    setExpanded(button.getAttribute('aria-expanded') !== 'true');
+  });
+})();
+</script>
+
+<noscript>
+<style>
+#news-section:not(.news-expanded) .news-list > .news-item:nth-child(n + 7) { display: flex; }
+#news-section .news-toggle { display: none; }
+</style>
+</noscript>

@@ -212,7 +212,7 @@ jobs:
           work=".github/cv/build"
           cp docs/cast_ccf_2026_selection_proof.png "$work/cast_ccf_2026_selection_proof.png"
           cat > "$work/README.md" <<'EOF'
-          # Yinda Chen | Bilingual Academic CV (October 2026)
+          # Yinda Chen | Bilingual Academic CV
 
           Complete, flat-layout Overleaf project with Chinese and English LaTeX sources,
           resume class, style dependencies, profile photo and QR code.
