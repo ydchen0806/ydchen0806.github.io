@@ -5,8 +5,8 @@ My research connects **representation and multimodal learning** with **embodied 
 I am advised by [Prof. Feng Wu (吴枫)](https://scholar.google.com/citations?user=5bInRDEAAAAJ&hl=en) and [Prof. Zhiwei Xiong (熊志伟)](https://scholar.google.com/citations?user=Snl0HPEAAAAJ&hl=en&oi=ao) at USTC, and work with [Prof. Ruobing Zhang (张若冰)](https://ibi.braintell.org/#/cn/faculty/zhang-ruobing) at Fudan University as my research mentor in connectomics and neuroscience.
 
 <nav class="profile-links" aria-label="Curriculum vitae and research profiles">
-  <a class="cv-link" href="/docs/cyd_resume_CN.pdf?v=20261109-r2">CV · 中文</a>
-  <a class="cv-link" href="/docs/CYD_resume_EN.pdf?v=20261109-r2">CV · English</a>
+  <a class="cv-link" href="/docs/cyd_resume_CN.pdf?v=20261109-r3">CV · 中文</a>
+  <a class="cv-link" href="/docs/CYD_resume_EN.pdf?v=20261109-r3">CV · English</a>
   <a href="https://scholar.google.com/citations?user=hCvlj5cAAAAJ&hl=en">Google Scholar</a>
   <a href="https://github.com/ydchen0806">GitHub</a>
   <a href="mailto:cyd0806@mail.ustc.edu.cn">Email</a>
