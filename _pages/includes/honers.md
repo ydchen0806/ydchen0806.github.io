@@ -44,8 +44,8 @@
   <p><a href="https://github.com/ydchen0806/24ICM_E_O_Award_Paper_code">Paper and code</a>.</p>
 </li>
 
-<li><strong><a href="/docs/景润杯奖状.png">Jingrun Cup Mathematics Competition, First Prize</a></strong> <span class="award-date">October 2021</span>
-  <p>Professional category, Xiamen University. <a href="https://math.xmu.edu.cn/info/1024/11221.htm">Competition news</a>.</p>
+<li><strong><a href="/docs/景润杯奖状.png">Jingrun Cup Mathematics Competition, First Place</a></strong> <span class="award-date">October 2021</span>
+  <p>Mathematics majors category, Xiamen University. <a href="https://math.xmu.edu.cn/info/1024/11221.htm">Competition news</a>.</p>
 </li>
 
 <li><strong><a href="/docs/互联网+.png">Internet+ Innovation and Entrepreneurship Competition, Gold Medal</a></strong> <span class="award-date">August 2021</span>
@@ -60,7 +60,7 @@
   <p>National Undergraduate Academic Science and Technology Competition, Fujian provincial round.</p>
 </li>
 
-<li><strong><a href="/docs/数竞.png">National Undergraduate Mathematics Competition, First Prize</a></strong> <span class="award-date">November 2020</span>
+<li><strong><a href="/docs/数竞.png">National Undergraduate Mathematics Competition, First Place in Fujian</a></strong> <span class="award-date">November 2020</span>
   <p>Fujian regional round, non-mathematics majors category.</p>
 </li>
 
