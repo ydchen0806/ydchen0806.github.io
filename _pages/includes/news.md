@@ -75,12 +75,12 @@
 
 <li class="news-item">
   <span class="news-date">2026.10</span>
-  <span class="news-text">📄 <a href="https://arxiv.org/abs/2610.30949"><strong title="IQuest-Q1: Advancing Foundation Capabilities for Agentic CLI Systems">IQuest-Q1</strong></a> technical report released. I contributed to this agentic foundation model for CLI interaction, coding, and multi-step tool use during my research internship at <strong>Ubiquant / IQuest Research</strong>.</span>
+  <span class="news-text">📄 <a href="https://arxiv.org/abs/2610.30949"><strong title="Q1: Advancing Foundation Capabilities for Agentic CLI Systems">Q1</strong></a> technical report released. I contributed to this agentic foundation model for CLI interaction, coding, and multi-step tool use during my research internship at <strong>Ubiquant (九坤投资)</strong>.</span>
 </li>
 
 <li class="news-item">
   <span class="news-date">2026.10</span>
-  <span class="news-text">🔬 Core contributor to <a href="https://arxiv.org/abs/2610.11451"><strong title="SAIL: Scientific Agentic Intelligence via a Science-Aware Loop">SAIL</strong></a>, a scientific-agent model for literature research, scientific coding, and multi-step research workflows at <strong>Ubiquant / IQuest Research</strong>.</span>
+  <span class="news-text">🔬 Core contributor to <a href="https://arxiv.org/abs/2610.11451"><strong title="SAIL: Scientific Agentic Intelligence via a Science-Aware Loop">SAIL</strong></a>, a scientific-agent model for literature research, scientific coding, and multi-step research workflows at <strong>Ubiquant (九坤投资)</strong>.</span>
 </li>
 
 <li class="news-item">
@@ -206,11 +206,6 @@
   <span class="news-text">📄 One <a href="https://arxiv.org/pdf/2412.19080">paper</a> was accepted by <strong>ACL 2025 Findings</strong>.</span>
 </li>
 -->
-
-<li class="news-item">
-  <span class="news-date">2025.05</span>
-  <span class="news-text">📄 One <a href="https://proceedings.mlr.press/v267/wang25n.html">paper</a> was accepted by <strong>ICML 2025</strong>.</span>
-</li>
 
 <li class="news-item">
   <span class="news-date">2025.01</span>

@@ -154,7 +154,7 @@
 </div>
 <ul class="exp-details">
   <li>Worked on quantitative research and language models for factor mining and data-driven decisions, with experience in thousand-GPU-scale training.</li>
-  <li>Contributor and co-author of <a href="https://arxiv.org/abs/2610.30949" title="IQuest-Q1: Advancing Foundation Capabilities for Agentic CLI Systems">IQuest-Q1</a>, an agentic foundation model for CLI interaction, coding, and multi-step tool use (October 2026 technical report).</li>
+  <li>Contributor and co-author of <a href="https://arxiv.org/abs/2610.30949" title="Q1: Advancing Foundation Capabilities for Agentic CLI Systems">Q1</a>, an agentic foundation model for CLI interaction, coding, and multi-step tool use (October 2026 technical report).</li>
   <li>Core contributor to <a href="https://arxiv.org/abs/2610.11451" title="SAIL: Scientific Agentic Intelligence via a Science-Aware Loop">SAIL</a>, a scientific-agent model for literature research, scientific coding, and multi-step research workflows (October 2026).</li>
 </ul>
 </div>
@@ -172,7 +172,7 @@
   <li>Developed multimodal scene understanding and game world models for gameplay analysis and content generation.</li>
   <li>Worked on <em>Honor of Kings – Lingbao</em>, including text-to-speech and live match commentary, with <a href="https://scholar.google.com/citations?user=oxNIbCUAAAAJ&hl=en&oi=ao">Dr. Liang Du</a> and <a href="https://scholar.google.com/citations?hl=en&user=ibNed18AAAAJ">Dr. Wentao Yao</a>.</li>
   <li>Contributed to <a href="https://main-vla.github.io/">MAIN-VLA</a>, a world model for <em>Game for Peace (和平精英)</em> that connects intentions, game states, and actions.</li>
-  <li>Co-author of <a href="https://arxiv.org/abs/2509.14900">FURINA</a>, a router-free MoE-LoRA method for model adaptation (accepted by IEEE Internet of Things Journal, 2026).</li>
+  <li>Researched router-free MoE-LoRA adaptation through linear aggregation and merging of low-rank expert updates.</li>
 </ul>
 </div>
 

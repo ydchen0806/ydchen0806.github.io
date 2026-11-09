@@ -9,7 +9,7 @@ For a complete list of publications, please visit my [Google Scholar profile](ht
 </div>
 </details>
 
-**Note:** * denotes equal contribution. Individual roles are stated where applicable.
+**Note:** * denotes equal contribution. Journal and conference papers shown here are first- or co-first-authored; technical-report roles are stated individually.
 
 <style>
 #pub-section details {
@@ -219,7 +219,7 @@ window.addEventListener('load', function () {
 <div id="pub-section">
 
 <details open>
-<summary>🧠 Representation and Predictive Learning <span class="badge-count">4</span></summary>
+<summary>🧠 Representation and Predictive Learning <span class="badge-count">3</span></summary>
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge-conference">ICCV 2025</div><div class="badge-ccf badge-ccf-a">CCF A</div><a href="/images/ICCV25.png" class="image-popup" title="TokenUnify: autoregressive pretraining objectives"><img src="/images/ICCV25.png" alt="TokenUnify: autoregressive pretraining objectives" width="1269" height="360" loading="lazy" decoding="async" style="width: 100%; height: auto;"></a></div></div>
 <div class='paper-box-text' markdown="1">
@@ -231,22 +231,6 @@ ICCV · 2025 \\
 [**Code**](https://github.com/ydchen0806/TokenUnify) [![](https://img.shields.io/github/stars/ydchen0806/TokenUnify?style=social&label=Code+Stars&cacheSeconds=3600)](https://github.com/ydchen0806/TokenUnify) | [**Dataset**](https://huggingface.co/datasets/cyd0806/wafer_EM) | [**Weights**](https://huggingface.co/cyd0806/TokenUnify/tree/main/Pretrained_weights)
 
 Autoregressive pretraining for volumetric neuron segmentation, combining three complementary prediction objectives with long-sequence modeling and an analysis of prediction-error accumulation.
-
-</div>
-</div>
-
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge-conference">ICML 2025</div><div class="badge-ccf badge-ccf-a">CCF A</div><a href="/images/ICML25.png" class="image-popup" title="MaskTwins: dual-form complementary masking framework"><img src="/images/ICML25.png" alt="MaskTwins: dual-form complementary masking framework" width="1635" height="630" loading="lazy" decoding="async" style="width: 100%; height: auto;"></a></div></div>
-<div class='paper-box-text' markdown="1">
-
-[MaskTwins: Dual-form Complementary Masking for Domain-Adaptive Image Segmentation](https://proceedings.mlr.press/v267/wang25n.html)  <span class="research-tags"><span class="research-tag">Domain Adaptation</span><span class="research-tag">Pretraining Methods</span></span> \\
-ICML · 2025 \\
-Jiawen Wang; **Yinda Chen**; Xiaoyu Liu; Che Liu; Dong Liu; Jianqing Gao; Zhiwei Xiong
-
-[**Code**](https://github.com/jwwang0421/masktwins) [![](https://img.shields.io/github/stars/jwwang0421/masktwins?style=social&label=Code+Stars&cacheSeconds=3600)](https://github.com/jwwang0421/masktwins) | [**Poster**](https://icml.cc/media/PosterPDFs/ICML%202025/46243.png?t=1750997391.8351207)
-
-My contribution: theoretical analysis.
-
-Complementary spatial and feature masking for domain-adaptive segmentation, evaluated on urban-scene and electron microscopy benchmarks.
 
 </div>
 </div>
@@ -283,7 +267,7 @@ Self-supervised pretraining that encourages multiscale consistency in volumetric
 </details>
 
 <details>
-<summary>✨ Foundation Models, Multimodal Learning &amp; Agents <span class="badge-count">11</span></summary>
+<summary>✨ Foundation Models, Multimodal Learning &amp; Agents <span class="badge-count">8</span></summary>
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge-journal">IEEE TPAMI</div><a href="/images/TPAMI25.png" class="image-popup" title="GRCL: generative reference and conditional latent coding framework"><img src="/images/TPAMI25.png" alt="GRCL: generative reference and conditional latent coding framework" width="1740" height="501" loading="lazy" decoding="async" style="width: 100%; height: auto;"></a></div></div>
 <div class='paper-box-text' markdown="1">
@@ -295,42 +279,6 @@ Siqi Wu\*; **Yinda Chen**\*; Weiming Chen; Dong Liu; K. C. Ho; Zhihai He
 [**PDF**](/docs/Learned_Image_Coding_with_Generative_Reference_of_Conditional_Latents.pdf) | [**Code**](https://github.com/ydchen0806/CLC) [![](https://img.shields.io/github/stars/ydchen0806/CLC?style=social&label=Code+Stars&cacheSeconds=3600)](https://github.com/ydchen0806/CLC)
 
 GRCL uses retrieved or generated images as references for conditional latent coding. The framework combines reference generation, latent matching and synthesis, and theoretical analysis of robustness to reference perturbations.
-
-</div>
-</div>
-
-<!-- Original author-provided figure: https://www.weimingchen.net/images/JSCCL.png -->
-<div class='paper-box'><div class='paper-box-image'><div>
-<div class="badge-journal">IEEE TCSVT</div>
-<a href="/images/JSCCL.png" class="image-popup" title="JSCCL: joint semantic and coded generation framework"><img src="/images/JSCCL.png" alt="JSCCL: joint semantic and coded generation framework" width="1800" height="1080" loading="lazy" decoding="async" style="width: 100%; height: auto;"></a>
-</div></div>
-<div class='paper-box-text' markdown="1">
-
-[Joint Semantic and Coded Generation for Conditional Latent Coding](https://doi.org/10.1109/TCSVT.2026.3702531)  <span class="research-tags"><span class="research-tag">Image Compression</span><span class="research-tag">Generative Models</span></span> \\
-IEEE TCSVT · 2026 \\
-Siqi Wu; Weiming Chen; **Yinda Chen**; Dong Liu; K. C. Ho; Zhihai He
-
-[**Paper**](https://ieeexplore.ieee.org/document/11557391/)
-
-Collaborative work on jointly using semantic information and coded representations to generate references for conditional latent image compression.
-
-</div>
-</div>
-
-<!-- Original paper figure: https://arxiv.org/pdf/2509.14900v2, Figure 2 (page 3) -->
-<div class='paper-box'><div class='paper-box-image'><div>
-<div class="badge-journal">IEEE Internet of Things Journal</div>
-<a href="/images/FURINA.png" class="image-popup" title="FURINA, Figure 2: overall training framework"><img src="/images/FURINA.png" alt="FURINA, Figure 2: overall training framework" width="1401" height="600" loading="lazy" decoding="async" style="width: 100%; height: auto;"></a>
-</div></div>
-<div class='paper-box-text' markdown="1">
-
-[FURINA: Free from Unmergeable Router via LINear Aggregation of mixed experts](https://arxiv.org/abs/2509.14900)  <span class="research-tags"><span class="research-tag">Mixture of Experts</span><span class="research-tag">Efficient Adaptation</span></span> \\
-IEEE Internet of Things Journal · Accepted 2026 \\
-Jiayi Han et al. (including **Yinda Chen**)
-
-[**Preprint**](https://arxiv.org/abs/2509.14900)
-
-Router-free mixture-of-experts adaptation with LoRA. The expert updates can be merged into the base model, avoiding an additional routing structure at inference.
 
 </div>
 </div>
@@ -392,20 +340,6 @@ A two-stage framework for generating paired images and masks for dichotomous ima
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge-journal">IEEE TMI</div><a href="/images/TMI24.png" class="image-popup" title="DADn: domain-adaptive denoising with invertible networks"><img src="/images/TMI24.png" alt="DADn: domain-adaptive denoising with invertible networks" width="1023" height="448" loading="lazy" decoding="async" style="width: 100%; height: auto;"></a></div></div>
-<div class='paper-box-text' markdown="1">
-
-[Unsupervised Domain Adaptation for EM Image Denoising with Invertible Networks](/docs/Unsupervised_Domain_Adaptation_for_EM_Image_Denoising_With_Invertible_Networks.pdf)  <span class="research-tags"><span class="research-tag">Domain Adaptation</span><span class="research-tag">Image Denoising</span></span> \\
-IEEE TMI · 2024 \\
-Shiyu Deng; **Yinda Chen**; Wei Huang; Ruobing Zhang; Zhiwei Xiong
-
-[**Code**](https://github.com/sydeng99/DADn) [![](https://img.shields.io/github/stars/sydeng99/DADn?style=social&label=Code+Stars&cacheSeconds=3600)](https://github.com/sydeng99/DADn)
-
-Invertible networks for unsupervised adaptation of electron microscopy denoising across imaging domains.
-
-</div>
-</div>
-
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge-journal">IEEE JBHI</div><a href="/images/JBHI25.png" class="image-popup" title="EMPOWER: evolutionary medical prompt optimization framework"><img src="/images/JBHI25.png" alt="EMPOWER: evolutionary medical prompt optimization framework" width="1335" height="774" loading="lazy" decoding="async" style="width: 100%; height: auto;"></a></div></div>
 <div class='paper-box-text' markdown="1">
 
@@ -425,17 +359,17 @@ Combines evolutionary prompt optimization with reinforcement learning and multi-
 <div class='paper-box' id='iquest-q1-report' style="scroll-margin-top: 90px;">
 <div class='paper-box-image'><div>
 <div class="badge-conference" style="position: static;">Technical Report 2026</div>
-<a href="/images/IQuestQ1.png" class="image-popup" title="IQuest-Q1 report, Figure 3: overall model architecture"><img src="/images/IQuestQ1.png" alt="IQuest-Q1 report, Figure 3: overall model architecture" width="1400" height="1241" loading="lazy" decoding="async" style="width: 100%; height: auto;"></a>
+<a href="/images/IQuestQ1.png" class="image-popup" title="Q1 technical report, Figure 3: overall model architecture"><img src="/images/IQuestQ1.png" alt="Q1 technical report, Figure 3: overall model architecture" width="1400" height="1241" loading="lazy" decoding="async" style="width: 100%; height: auto;"></a>
 </div></div>
 <div class='paper-box-text' markdown="1">
 
-[IQuest-Q1: Advancing Foundation Capabilities for Agentic CLI Systems](https://arxiv.org/abs/2610.30949)  <span class="research-tags"><span class="research-tag">Agentic Models</span><span class="research-tag">Tool Use</span></span> \\
-IQuest Research · October 2026 \\
-IQuest-Q1 Team · **Yinda Chen**, co-author
+[Q1: Advancing Foundation Capabilities for Agentic CLI Systems](https://arxiv.org/abs/2610.30949)  <span class="research-tags"><span class="research-tag">Agentic Models</span><span class="research-tag">Tool Use</span></span> \\
+Ubiquant (九坤投资) · October 2026 \\
+**Yinda Chen**, co-author
 
 [**Report**](https://arxiv.org/abs/2610.30949) | [**Project**](https://iquestlab.github.io/) | [**Code**](https://github.com/IQuestLab/IQuest-Q1) [![](https://img.shields.io/github/stars/IQuestLab/IQuest-Q1?style=social&label=Code+Stars&cacheSeconds=3600)](https://github.com/IQuestLab/IQuest-Q1) | [**Models**](https://huggingface.co/IQuestLab/IQuest-Q1)
 
-A foundation model for command-line interaction, coding, and multi-step tool use. Contributed during my research internship at Ubiquant / IQuest Research.
+A foundation model for command-line interaction, coding, and multi-step tool use. Contributed during my research internship at Ubiquant (九坤投资).
 
 </div>
 </div>
@@ -449,7 +383,7 @@ A foundation model for command-line interaction, coding, and multi-step tool use
 <div class='paper-box-text' markdown="1">
 
 [SAIL: Scientific Agentic Intelligence via a Science-Aware Loop](https://arxiv.org/abs/2610.11451)  <span class="research-tags"><span class="research-tag">Scientific Agents</span><span class="research-tag">Agentic Models</span></span> \\
-Ubiquant / IQuest Research · October 2026 \\
+Ubiquant (九坤投资) · October 2026 \\
 SAIL Model Team · **Yinda Chen**, core contributor
 
 [**Report**](https://arxiv.org/abs/2610.11451)

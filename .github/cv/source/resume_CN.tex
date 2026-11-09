@@ -101,7 +101,7 @@
     \item \kaishu 从事\textbf{量化研究}与\textbf{通用大模型}研发。
     \item \kaishu 具备\textbf{千卡集群}训练经验，探索通用大模型在数据驱动决策与因子挖掘中的应用。
     \item \kaishu \textbf{\href{https://arxiv.org/abs/2610.11451}{SAIL}核心贡献者}：面向文献研究、科学编程与多步骤科研任务（2026.10技术报告）。
-    \item \kaishu 参与\textbf{\href{https://arxiv.org/abs/2610.30949}{IQuest-Q1}}智能体基座模型研究并署名技术报告（2026.10），面向命令行交互、代码与多步骤工具使用。
+    \item \kaishu 参与\textbf{\href{https://arxiv.org/abs/2610.30949}{Q1}}智能体基座模型研究并署名技术报告（2026.10），面向命令行交互、代码与多步骤工具使用。
 \end{itemize}
 
 \datedsubsection{\textbf{北京人形机器人创新中心（X-Humanoid）}\ {\faMapMarker \small\textbf{\fangsong 北京}}}{}
@@ -122,7 +122,7 @@
     \item \kaishu 参与\textbf{游戏世界模型}与多模态场景理解，包含和平精英项目\href{https://main-vla.github.io/}{\textbf{MAIN-VLA}}，联通意图、游戏状态与动作建模。
     \item \kaishu 落地王者荣耀\textbf{灵宝}项目，负责\textbf{TTS}与\textbf{实时对战解说}相关能力研发。
     \item \kaishu 基于F5-TTS和IndexTTS2训练并优化灵宝语音生成模型。
-    \item \kaishu 合作开展无路由MoE-LoRA研究，形成\href{https://arxiv.org/abs/2509.14900}{\textbf{FURINA}}，研究低秩专家更新的线性聚合与基模合并（IEEE IoTJ，2026年接收）。
+    \item \kaishu 合作开展\textbf{无路由MoE-LoRA}研究，探索低秩专家更新的线性聚合与基模合并。
 \end{itemize}
 
 \datedsubsection{\textbf{中国人民解放军总医院（301医院）}\ {\faMapMarker \small\textbf{\fangsong 北京}}}{}
@@ -195,20 +195,13 @@
 \end{enumerate}
 
 \datedsubsection{\textbf{\textit{表征与预测学习}}}{\textbf{2022.5 \textasciitilde \ 至今}}
-\role{Conference\&Journal}{代表性论文（作者角色见各条目）}
+\role{Conference\&Journal}{代表性论文（一作/共一）}
 \begin{enumerate}[label=\textbf{[\arabic*]}, leftmargin=2em, itemsep=3pt]
     \item \kaishu \parbox[t]{0.88\linewidth}{\textbf{\href{https://openaccess.thecvf.com/content/ICCV2025/html/Chen_TokenUnify_Scaling_Up_Autoregressive_Pretraining_for_Neuron_Segmentation_ICCV_2025_paper.html}{TokenUnify: Scaling Up Autoregressive Pretraining for Neuron Segmentation}}, \textbf{ICCV 2025}} \hfill \textcolor{red}{\textbf{[共一]}}
     \begin{itemize}
         \item 提出结合\textbf{Mamba}的图像自回归预训练方法，面向长序列神经元图像学习可迁移的视觉表征。
         \item 设计\textbf{混合token预测策略}，结合局部结构与长程依赖，兼顾预训练效率与下游分割质量。
         \item 通过理论分析与实验研究模型规模扩展规律，验证预训练表征在电子显微镜神经元分割中的作用。
-    \end{itemize}
-
-    \item \kaishu \parbox[t]{0.88\linewidth}{\textbf{\href{https://proceedings.mlr.press/v267/wang25n.html}{MaskTwins: Dual-form Complementary Masking for Domain-Adaptive Image Segmentation}}, \textbf{ICML 2025}} \hfill \textcolor{blue}{\textbf{[理论贡献]}}
-    \begin{itemize}
-        \item 从\textbf{稀疏信号重构}角度开展互补掩码理论分析，研究对偶形式互补掩码提取领域不变特征的机制。
-        \item 结合\textbf{互补掩码一致性学习}与无监督域适应，实现跨域图像分割。
-        \item 论文在SYNTHIA$\to$Cityscapes上提升2.7个mIoU百分点，在VNCIII$\to$Lucchi上提升3.2个IoU百分点。
     \end{itemize}
 
     \item \kaishu \parbox[t]{0.88\linewidth}{\textbf{\href{https://www.ijcai.org/proceedings/2023/0068.pdf}{Self-supervised Neuron Segmentation with Multi-agent Reinforcement Learning}}, \textbf{IJCAI 2023}} \hfill \textcolor{red}{\textbf{[一作]}}
@@ -223,16 +216,10 @@
         \item 设计\textbf{特征一致性损失}，缓解尺度变化引起的表征差异，并面向神经元实例分割进行验证。
     \end{itemize}
 
-    \item \kaishu \parbox[t]{0.88\linewidth}{\textbf{\href{https://ydchen0806.github.io/docs/Unsupervised_Domain_Adaptation_for_EM_Image_Denoising_With_Invertible_Networks.pdf}{Unsupervised Domain Adaptation for EM Image Denoising With Invertible Networks}}, \textbf{IEEE TMI, 2024 (Early Access)}} \hfill \textcolor{blue}{\textbf{[合作作者]}}
-    \begin{itemize}
-        \item 合作研究无监督域适应的电镜图像去噪，利用\textbf{可逆网络}解耦内容与噪声，构建域无关的内容空间。
-        \item 通过域对齐与伪噪声图像重建缓解合成噪声到真实噪声的域偏移，并评估去噪质量及下游神经元分割。
-    \end{itemize}
-
 \end{enumerate}
 
 \datedsubsection{\textbf{\textit{多模态与生成模型}}}{\textbf{2023.8 \textasciitilde \ 至今}}
-\role{Conference\&Journal}{代表性论文（作者角色见各条目）}
+\role{Conference\&Journal}{代表性论文（一作/共一）}
 \begin{enumerate}[label=\textbf{[\arabic*]}, leftmargin=2em, itemsep=3pt]
     \item \kaishu \parbox[t]{0.88\linewidth}{\textbf{\href{https://doi.org/10.1109/TPAMI.2026.3744812}{Learned Image Coding with Generative Reference of Conditional Latents}}, \textbf{IEEE TPAMI, 2026 (accepted)}} \hfill \textcolor{red}{\textbf{[共一]}}
     \begin{itemize}
@@ -265,22 +252,10 @@
         \item 结合形变驱动的掩码编辑、生成条件控制与合成数据质量评估，研究合成训练数据对二分图像分割的帮助。
     \end{itemize}
 
-    \item \kaishu \parbox[t]{0.88\linewidth}{\textbf{\href{https://doi.org/10.1109/TCSVT.2026.3702531}{Joint Semantic and Coded Generation for Conditional Latent Coding}}, \textbf{IEEE TCSVT, 2026}} \hfill \textcolor{blue}{\textbf{[合作作者]}}
-    \begin{itemize}
-        \item 合作开展\textbf{语义与编码信息联合引导}的参考图像生成，结合文本描述与编码特征辅助条件潜变量编码。
-        \item 研究生成参考与编码特征之间的对齐、信息融合和概率估计，连接可控图像生成与深度图像压缩。
-    \end{itemize}
-
     \item \kaishu \parbox[t]{0.88\linewidth}{\textbf{\href{https://ieeexplore.ieee.org/document/11205280}{EMPOWER: Evolutionary Medical Prompt Optimization With Reinforcement Learning}}, \textbf{IEEE JBHI, 2025 (Early Access)}} \hfill \textcolor{red}{\textbf{[共一]}}
     \begin{itemize}
         \item 结合领域知识与\textbf{强化学习}开展医疗提示词的进化优化，使用医学注意力、多维度质量评估、进化搜索与语义验证。
         \item 论文实验中事实错误减少24.7\%，盲测中的临床医生偏好提升15.3\%，评估提示优化对医疗回答质量的作用。
-    \end{itemize}
-
-    \item \kaishu \parbox[t]{0.88\linewidth}{\textbf{\href{https://arxiv.org/abs/2509.14900}{FURINA: Free from Unmergeable Router via LINear Aggregation of mixed experts}}, \textbf{IEEE IoTJ, 2026 (accepted)}} \hfill \textcolor{blue}{\textbf{[合作作者]}}
-    \begin{itemize}
-        \item 合作开展\textbf{无路由MoE-LoRA}研究，采用线性聚合整合多个低秩专家的参数更新。
-        \item 将专家更新合并至基础模型，研究多专家适配能力与合并部署之间的兼容性，避免额外路由器阻碍参数合并。
     \end{itemize}
 
 \end{enumerate}
