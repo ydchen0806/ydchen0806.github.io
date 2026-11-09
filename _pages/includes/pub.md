@@ -81,6 +81,15 @@ For a complete list of publications, please visit my [Google Scholar profile](ht
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
 
+#pub-section .paper-box-image > div { width: 100%; }
+#pub-section .paper-box-image .image-popup { display: block; cursor: zoom-in; }
+#pub-section .paper-box-image .badge-journal,
+#pub-section .paper-box-image .badge-conference,
+#pub-section .paper-box-image .badge-ccf {
+  position: static;
+  margin-bottom: 8px;
+}
+
 .paper-box-text a {
   color: #1a1a1a;
   font-weight: 600;
@@ -183,10 +192,6 @@ For a complete list of publications, please visit my [Google Scholar profile](ht
   content: '📊';
   font-size: 0.85em;
 }
-/* New text-only entries use the same card typography without an empty image column. */
-#pub-section .paper-text-only .paper-box-text { max-width: 100%; padding-left: 0; }
-#pub-section .paper-text-only .badge-journal,
-#pub-section .paper-text-only .badge-conference { position: static; }
 #pub-section .paper-citation[hidden] { display: none; }
 </style>
 
@@ -216,7 +221,7 @@ window.addEventListener('load', function () {
 <details open>
 <summary>🧠 Representation and Predictive Learning <span class="badge-count">4</span></summary>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge-conference">ICCV 2025</div><div class="badge-ccf badge-ccf-a">CCF A</div><img src='images/ICCV25.png' alt="TokenUnify" width="100%" loading="lazy"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge-conference">ICCV 2025</div><div class="badge-ccf badge-ccf-a">CCF A</div><a href="/images/ICCV25.png" class="image-popup" title="TokenUnify: autoregressive pretraining objectives"><img src="/images/ICCV25.png" alt="TokenUnify: autoregressive pretraining objectives" width="1269" height="360" loading="lazy" decoding="async" style="width: 100%; height: auto;"></a></div></div>
 <div class='paper-box-text' markdown="1">
 
 [TokenUnify: Scaling Up Autoregressive Pretraining for Neuron Segmentation](https://openaccess.thecvf.com/content/ICCV2025/html/Chen_TokenUnify_Scaling_Up_Autoregressive_Pretraining_for_Neuron_Segmentation_ICCV_2025_paper.html) <a class="paper-citation" hidden href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=hCvlj5cAAAAJ&amp;pagesize=100&amp;citation_for_view=hCvlj5cAAAAJ:blknAaTinKkC" data-title="TokenUnify: Scaling Up Autoregressive Pretraining for Neuron Segmentation"><img alt="Google Scholar citations" /></a> <span class="research-tags"><span class="research-tag">Computer Vision</span><span class="research-tag">Self-Supervised Learning</span></span> \\
@@ -230,7 +235,7 @@ Autoregressive pretraining for volumetric neuron segmentation, combining three c
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge-conference">ICML 2025</div><div class="badge-ccf badge-ccf-a">CCF A</div><img src='images/ICML25.png' alt="MaskTwins" width="100%" loading="lazy"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge-conference">ICML 2025</div><div class="badge-ccf badge-ccf-a">CCF A</div><a href="/images/ICML25.png" class="image-popup" title="MaskTwins: dual-form complementary masking framework"><img src="/images/ICML25.png" alt="MaskTwins: dual-form complementary masking framework" width="1635" height="630" loading="lazy" decoding="async" style="width: 100%; height: auto;"></a></div></div>
 <div class='paper-box-text' markdown="1">
 
 [MaskTwins: Dual-form Complementary Masking for Domain-Adaptive Image Segmentation](https://proceedings.mlr.press/v267/wang25n.html)  <span class="research-tags"><span class="research-tag">Domain Adaptation</span><span class="research-tag">Pretraining Methods</span></span> \\
@@ -246,7 +251,7 @@ Complementary spatial and feature masking for domain-adaptive segmentation, eval
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge-conference">IJCAI 2023</div><div class="badge-ccf badge-ccf-a">CCF A</div><img src='images/ijcai2023.png' alt="dbMiM" width="100%" loading="lazy"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge-conference">IJCAI 2023</div><div class="badge-ccf badge-ccf-a">CCF A</div><a href="/images/ijcai2023.png" class="image-popup" title="dbMiM: pretraining and finetuning framework"><img src="/images/ijcai2023.png" alt="dbMiM: pretraining and finetuning framework" width="743" height="362" loading="lazy" decoding="async" style="width: 100%; height: auto;"></a></div></div>
 <div class='paper-box-text' markdown="1">
 
 [Self-Supervised Neuron Segmentation with Multi-Agent Reinforcement Learning](https://www.ijcai.org/proceedings/2023/68) <a class="paper-citation" hidden href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=hCvlj5cAAAAJ&amp;pagesize=100&amp;citation_for_view=hCvlj5cAAAAJ:QIV2ME_5wuYC" data-title="Self-Supervised Neuron Segmentation with Multi-Agent Reinforcement Learning"><img alt="Google Scholar citations" /></a> <span class="research-tags"><span class="research-tag">Computer Vision</span><span class="research-tag">Self-Supervised Learning</span></span> \\
@@ -260,7 +265,8 @@ Decision-based masked image modeling that learns masking policies through multi-
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge-conference">ICASSP 2024</div><div class="badge-ccf badge-ccf-b">CCF B</div><img src='images/ICASSP24.png' alt="MS-Con" width="100%" loading="lazy"></div></div>
+<!-- Original paper figure: https://arxiv.org/pdf/2308.09917, Figure 1 (page 2) -->
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge-conference">ICASSP 2024</div><div class="badge-ccf badge-ccf-b">CCF B</div><a href="/images/ICASSP24.png" class="image-popup" title="MS-Con, Figure 1: multiscale pretraining and segmentation framework"><img src="/images/ICASSP24.png" alt="MS-Con, Figure 1: multiscale pretraining and segmentation framework" width="1401" height="1002" loading="lazy" decoding="async" style="width: 100%; height: auto;"></a></div></div>
 <div class='paper-box-text' markdown="1">
 
 [Learning Multiscale Consistency for Self-Supervised Electron Microscopy Instance Segmentation](https://arxiv.org/abs/2308.09917) <a class="paper-citation" hidden href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=hCvlj5cAAAAJ&amp;pagesize=100&amp;citation_for_view=hCvlj5cAAAAJ:9ZlFYXVOiuMC" data-title="Learning Multiscale Consistency for Self-Supervised Electron Microscopy Instance Segmentation"><img alt="Google Scholar citations" /></a> <span class="research-tags"><span class="research-tag">Computer Vision</span><span class="research-tag">Pretraining Methods</span></span> \\
@@ -279,7 +285,7 @@ Self-supervised pretraining that encourages multiscale consistency in volumetric
 <details>
 <summary>✨ Foundation Models, Multimodal Learning &amp; Agents <span class="badge-count">11</span></summary>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge-journal">IEEE TPAMI</div><img src='images/TPAMI25.png' alt="GRCL Framework" width="100%" loading="lazy"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge-journal">IEEE TPAMI</div><a href="/images/TPAMI25.png" class="image-popup" title="GRCL: generative reference and conditional latent coding framework"><img src="/images/TPAMI25.png" alt="GRCL: generative reference and conditional latent coding framework" width="1740" height="501" loading="lazy" decoding="async" style="width: 100%; height: auto;"></a></div></div>
 <div class='paper-box-text' markdown="1">
 
 [Learned Image Coding with Generative Reference of Conditional Latents](https://doi.org/10.1109/TPAMI.2026.3744812)  <span class="research-tags"><span class="research-tag">Image Compression</span><span class="research-tag">Generative Models</span></span> \\
@@ -293,9 +299,12 @@ GRCL uses retrieved or generated images as references for conditional latent cod
 </div>
 </div>
 
-<div class='paper-box paper-text-only'><div class='paper-box-text' markdown="1">
-
+<!-- Original author-provided figure: https://www.weimingchen.net/images/JSCCL.png -->
+<div class='paper-box'><div class='paper-box-image'><div>
 <div class="badge-journal">IEEE TCSVT</div>
+<a href="/images/JSCCL.png" class="image-popup" title="JSCCL: joint semantic and coded generation framework"><img src="/images/JSCCL.png" alt="JSCCL: joint semantic and coded generation framework" width="1800" height="1080" loading="lazy" decoding="async" style="width: 100%; height: auto;"></a>
+</div></div>
+<div class='paper-box-text' markdown="1">
 
 [Joint Semantic and Coded Generation for Conditional Latent Coding](https://doi.org/10.1109/TCSVT.2026.3702531)  <span class="research-tags"><span class="research-tag">Image Compression</span><span class="research-tag">Generative Models</span></span> \\
 IEEE TCSVT · 2026 \\
@@ -308,9 +317,12 @@ Collaborative work on jointly using semantic information and coded representatio
 </div>
 </div>
 
-<div class='paper-box paper-text-only'><div class='paper-box-text' markdown="1">
-
+<!-- Original paper figure: https://arxiv.org/pdf/2509.14900v2, Figure 2 (page 3) -->
+<div class='paper-box'><div class='paper-box-image'><div>
 <div class="badge-journal">IEEE Internet of Things Journal</div>
+<a href="/images/FURINA.png" class="image-popup" title="FURINA, Figure 2: overall training framework"><img src="/images/FURINA.png" alt="FURINA, Figure 2: overall training framework" width="1401" height="600" loading="lazy" decoding="async" style="width: 100%; height: auto;"></a>
+</div></div>
+<div class='paper-box-text' markdown="1">
 
 [FURINA: Free from Unmergeable Router via LINear Aggregation of mixed experts](https://arxiv.org/abs/2509.14900)  <span class="research-tags"><span class="research-tag">Mixture of Experts</span><span class="research-tag">Efficient Adaptation</span></span> \\
 IEEE Internet of Things Journal · Accepted 2026 \\
@@ -323,7 +335,8 @@ Router-free mixture-of-experts adaptation with LoRA. The expert updates can be m
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge-conference">AAAI 2025</div><div class="badge-ccf badge-ccf-a">CCF A</div><img src='images/AAAI25.png' alt="CLC" width="100%" loading="lazy"></div></div>
+<!-- Original paper figure: /docs/Condition_generation_Latent_Coding_with_an_External_Dictionary_for_Deep_Image_Compression.pdf, Figure 1 (page 2) -->
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge-conference">AAAI 2025</div><div class="badge-ccf badge-ccf-a">CCF A</div><a href="/images/AAAI25.png" class="image-popup" title="CLC, Figure 1: conditional latent coding framework"><img src="/images/AAAI25.png" alt="CLC, Figure 1: conditional latent coding framework" width="1401" height="955" loading="lazy" decoding="async" style="width: 100%; height: auto;"></a></div></div>
 <div class='paper-box-text' markdown="1">
 
 [Conditional Latent Coding with Learnable Synthesized Reference for Deep Image Compression](https://doi.org/10.1609/aaai.v39i12.33403) <a class="paper-citation" hidden href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=hCvlj5cAAAAJ&amp;pagesize=100&amp;citation_for_view=hCvlj5cAAAAJ:4DMP91E08xMC" data-title="Conditional Latent Coding with Learnable Synthesized Reference for Deep Image Compression"><img alt="Google Scholar citations" /></a> <span class="research-tags"><span class="research-tag">Image Compression</span></span> \\
@@ -337,7 +350,7 @@ Learnable reference synthesis from an external image dictionary improves conditi
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge-conference">ICCV Workshop 2025</div><img src='images/GTGM.png' alt="GTGM" width="100%" loading="lazy"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge-conference">ICCV Workshop 2025</div><a href="/images/GTGM.png" class="image-popup" title="GTGM: generative text-guided pretraining framework"><img src="/images/GTGM.png" alt="GTGM: generative text-guided pretraining framework" width="1497" height="744" loading="lazy" decoding="async" style="width: 100%; height: auto;"></a></div></div>
 <div class='paper-box-text' markdown="1">
 
 [GTGM: Generative Text-Guided 3D Vision-Language Pretraining for Medical Image Segmentation](https://openaccess.thecvf.com/content/ICCV2025W/VLM3D/html/Chen_GTGM_Generative_Text-Guided_3D_Vision-Language_Pretraining_for_Medical_Image_Segmentation_ICCVW_2025_paper.html) <a class="paper-citation" hidden href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=hCvlj5cAAAAJ&amp;pagesize=100&amp;citation_for_view=hCvlj5cAAAAJ:NMxIlDl6LWMC" data-title="GTGM: Generative Text-Guided 3D Vision-Language Pretraining for Medical Image Segmentation"><img alt="Google Scholar citations" /></a> <span class="research-tags"><span class="research-tag">Vision-Language</span><span class="research-tag">Medical Imaging</span></span> \\
@@ -351,7 +364,7 @@ Uses generated textual descriptions and negative-free contrastive learning to pr
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge-conference">MICCAI 2024</div><div class="badge-ccf badge-ccf-b">CCF B</div><img src='images/MICCAI24.png' alt="BIMCV-R" width="100%" loading="lazy"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge-conference">MICCAI 2024</div><div class="badge-ccf badge-ccf-b">CCF B</div><a href="/images/MICCAI24.png" class="image-popup" title="BIMCV-R: MedFinder image-text retrieval framework"><img src="/images/MICCAI24.png" alt="BIMCV-R: MedFinder image-text retrieval framework" width="782" height="362" loading="lazy" decoding="async" style="width: 100%; height: auto;"></a></div></div>
 <div class='paper-box-text' markdown="1">
 
 [BIMCV-R: A Landmark Dataset for 3D CT Text-Image Retrieval](https://papers.miccai.org/miccai-2024/100-Paper1194.html) <a class="paper-citation" hidden href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=hCvlj5cAAAAJ&amp;pagesize=100&amp;citation_for_view=hCvlj5cAAAAJ:mVmsd5A6BfQC" data-title="BIMCV-R: A Landmark Dataset for 3D CT Text-Image Retrieval"><img alt="Google Scholar citations" /></a> <span class="research-tags"><span class="research-tag">Vision-Language</span><span class="research-tag">Multimodal Learning</span></span> \\
@@ -365,7 +378,7 @@ A dataset of 8,069 3D CT volumes with paired radiology reports, together with th
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge-conference">NeurIPS 2024</div><div class="badge-ccf badge-ccf-a">CCF A</div><img src='images/NeurIPS24.png' alt="MaskFactory" width="100%" loading="lazy"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge-conference">NeurIPS 2024</div><div class="badge-ccf badge-ccf-a">CCF A</div><a href="/images/NeurIPS24.png" class="image-popup" title="MaskFactory: mask editing and image generation framework"><img src="/images/NeurIPS24.png" alt="MaskFactory: mask editing and image generation framework" width="806" height="602" loading="lazy" decoding="async" style="width: 100%; height: auto;"></a></div></div>
 <div class='paper-box-text' markdown="1">
 
 [MaskFactory: Towards High-quality Synthetic Data Generation for Dichotomous Image Segmentation](https://arxiv.org/abs/2412.19080) <a class="paper-citation" hidden href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=hCvlj5cAAAAJ&amp;pagesize=100&amp;citation_for_view=hCvlj5cAAAAJ:aqlVkmm33-oC" data-title="MaskFactory: Towards High-quality Synthetic Data Generation for Dichotomous Image Segmentation"><img alt="Google Scholar citations" /></a> <span class="research-tags"><span class="research-tag">Multimodal Learning</span></span> \\
@@ -379,7 +392,7 @@ A two-stage framework for generating paired images and masks for dichotomous ima
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge-journal">IEEE TMI</div><img src='images/TMI24.png' alt="DADn" width="100%" loading="lazy"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge-journal">IEEE TMI</div><a href="/images/TMI24.png" class="image-popup" title="DADn: domain-adaptive denoising with invertible networks"><img src="/images/TMI24.png" alt="DADn: domain-adaptive denoising with invertible networks" width="1023" height="448" loading="lazy" decoding="async" style="width: 100%; height: auto;"></a></div></div>
 <div class='paper-box-text' markdown="1">
 
 [Unsupervised Domain Adaptation for EM Image Denoising with Invertible Networks](/docs/Unsupervised_Domain_Adaptation_for_EM_Image_Denoising_With_Invertible_Networks.pdf)  <span class="research-tags"><span class="research-tag">Domain Adaptation</span><span class="research-tag">Image Denoising</span></span> \\
@@ -393,7 +406,7 @@ Invertible networks for unsupervised adaptation of electron microscopy denoising
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge-journal">IEEE JBHI</div><img src='images/JBHI25.png' alt="EMPOWER" width="100%" loading="lazy"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge-journal">IEEE JBHI</div><a href="/images/JBHI25.png" class="image-popup" title="EMPOWER: evolutionary medical prompt optimization framework"><img src="/images/JBHI25.png" alt="EMPOWER: evolutionary medical prompt optimization framework" width="1335" height="774" loading="lazy" decoding="async" style="width: 100%; height: auto;"></a></div></div>
 <div class='paper-box-text' markdown="1">
 
 [EMPOWER: Evolutionary Medical Prompt Optimization With Reinforcement Learning](https://doi.org/10.1109/JBHI.2025.3621907) <a class="paper-citation" hidden href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=hCvlj5cAAAAJ&amp;pagesize=100&amp;citation_for_view=hCvlj5cAAAAJ:J_g5lzvAfSwC" data-title="EMPOWER: Evolutionary Medical Prompt Optimization With Reinforcement Learning"><img alt="Google Scholar citations" /></a> <span class="research-tags"><span class="research-tag">Vision-Language</span><span class="research-tag">Multimodal Learning</span></span> \\
@@ -451,7 +464,7 @@ A scientific-agent research project for literature research, scientific coding, 
 <details open>
 <summary>🤖 World Models and Embodied Intelligence <span class="badge-count">2</span></summary>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge-conference">Technical Report 2026</div><img src='images/PelicanUnified.png' alt="Pelican-Unified 1.0" width="100%" loading="lazy"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge-conference">Technical Report 2026</div><a href="/images/PelicanUnified.png" class="image-popup" title="Pelican-Unified 1.0: unified embodied model overview"><img src="/images/PelicanUnified.png" alt="Pelican-Unified 1.0: unified embodied model overview" width="1300" height="1119" loading="lazy" decoding="async" style="width: 100%; height: auto;"></a></div></div>
 <div class='paper-box-text' markdown="1">
 
 [Pelican-Unified 1.0: A Unified Embodied Intelligence Model (UEI) for Understanding, Reasoning, Imagination and Action](https://arxiv.org/abs/2605.15153)  <span class="research-tags"><span class="research-tag">Embodied Intelligence</span><span class="research-tag">World Models</span><span class="research-tag">Unified Models</span></span> \\
@@ -467,7 +480,8 @@ A unified embodied model that combines scene and instruction understanding, task
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge-conference">Technical Report 2026</div><img src='images/PelicanVLA05.png' alt="Pelican-VLA 0.5 attention visualizations" width="100%" loading="lazy"></div></div>
+<!-- Original paper figure: https://arxiv.org/html/2607.06655v2/structure.png, Figure 2 (PDF page 4) -->
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge-conference">Technical Report 2026</div><a href="/images/PelicanVLA05.png" class="image-popup" title="Pelican-VLA 0.5, Figure 2: model overview"><img src="/images/PelicanVLA05.png" alt="Pelican-VLA 0.5, Figure 2: model overview" width="1520" height="597" loading="lazy" decoding="async" style="width: 100%; height: auto;"></a></div></div>
 <div class='paper-box-text' markdown="1">
 
 [Pelican-VLA 0.5: Attending Before Acting Benefits Generalization](https://arxiv.org/abs/2607.06655)  <span class="research-tags"><span class="research-tag">Vision-Language-Action</span><span class="research-tag">Embodied Intelligence</span><span class="research-tag">World Models</span></span> \\
