@@ -277,7 +277,7 @@ Self-supervised pretraining that encourages multiscale consistency in volumetric
 </details>
 
 <details>
-<summary>✨ Multimodal and Generative Models <span class="badge-count">9</span></summary>
+<summary>✨ Foundation Models, Multimodal Learning &amp; Agents <span class="badge-count">11</span></summary>
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge-journal">IEEE TPAMI</div><img src='images/TPAMI25.png' alt="GRCL Framework" width="100%" loading="lazy"></div></div>
 <div class='paper-box-text' markdown="1">
@@ -407,10 +407,6 @@ Combines evolutionary prompt optimization with reinforcement learning and multi-
 </div>
 </div>
 
-</details>
-
-<details open>
-<summary>🛠️ Agentic Foundation Models &amp; Scientific Agents <span class="badge-count">2</span></summary>
 
 <!-- Original report figure: https://arxiv.org/html/2610.30949v1/M1-ARCH-V3.svg -->
 <div class='paper-box' id='iquest-q1-report' style="scroll-margin-top: 90px;">
