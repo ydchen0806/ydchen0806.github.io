@@ -410,11 +410,15 @@ Combines evolutionary prompt optimization with reinforcement learning and multi-
 </details>
 
 <details open>
-<summary>🤖 World Models and Embodied Intelligence <span class="badge-count">4</span></summary>
+<summary>🛠️ Agentic Foundation Models &amp; Scientific Agents <span class="badge-count">2</span></summary>
 
-<div class='paper-box paper-text-only'><div class='paper-box-text' markdown="1">
-
-<div class="badge-conference">Technical Report 2026</div>
+<!-- Original report figure: https://arxiv.org/html/2610.30949v1/M1-ARCH-V3.svg -->
+<div class='paper-box' id='iquest-q1-report' style="scroll-margin-top: 90px;">
+<div class='paper-box-image'><div>
+<div class="badge-conference" style="position: static;">Technical Report 2026</div>
+<a href="/images/IQuestQ1.png" class="image-popup" title="IQuest-Q1 report, Figure 3: overall model architecture"><img src="/images/IQuestQ1.png" alt="IQuest-Q1 report, Figure 3: overall model architecture" width="1400" height="1241" loading="lazy" decoding="async" style="width: 100%; height: auto;"></a>
+</div></div>
+<div class='paper-box-text' markdown="1">
 
 [IQuest-Q1: Advancing Foundation Capabilities for Agentic CLI Systems](https://arxiv.org/abs/2610.30949)  <span class="research-tags"><span class="research-tag">Agentic Models</span><span class="research-tag">Tool Use</span></span> \\
 IQuest Research · October 2026 \\
@@ -427,9 +431,13 @@ A foundation model for command-line interaction, coding, and multi-step tool use
 </div>
 </div>
 
-<div class='paper-box paper-text-only'><div class='paper-box-text' markdown="1">
-
-<div class="badge-conference">Technical Report 2026</div>
+<!-- Original report figure: https://arxiv.org/html/2610.11451v1/improvement-loop.svg -->
+<div class='paper-box' id='sail-report' style="scroll-margin-top: 90px;">
+<div class='paper-box-image'><div>
+<div class="badge-conference" style="position: static;">Technical Report 2026</div>
+<a href="/images/SAIL.png" class="image-popup" title="SAIL report, Figure 4: science-aware improvement loop"><img src="/images/SAIL.png" alt="SAIL report, Figure 4: science-aware improvement loop" width="1400" height="875" loading="lazy" decoding="async" style="width: 100%; height: auto;"></a>
+</div></div>
+<div class='paper-box-text' markdown="1">
 
 [SAIL: Scientific Agentic Intelligence via a Science-Aware Loop](https://arxiv.org/abs/2610.11451)  <span class="research-tags"><span class="research-tag">Scientific Agents</span><span class="research-tag">Agentic Models</span></span> \\
 Ubiquant / IQuest Research · October 2026 \\
@@ -441,6 +449,11 @@ A scientific-agent research project for literature research, scientific coding, 
 
 </div>
 </div>
+
+</details>
+
+<details open>
+<summary>🤖 World Models and Embodied Intelligence <span class="badge-count">2</span></summary>
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge-conference">Technical Report 2026</div><img src='images/PelicanUnified.png' alt="Pelican-Unified 1.0" width="100%" loading="lazy"></div></div>
 <div class='paper-box-text' markdown="1">
