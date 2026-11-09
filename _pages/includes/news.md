@@ -75,7 +75,7 @@
 
 <li class="news-item">
   <span class="news-date">2026.10</span>
-  <span class="news-text">📄 <a href="https://arxiv.org/abs/2610.30949"><strong title="Q1: Advancing Foundation Capabilities for Agentic CLI Systems">Q1</strong></a> technical report released. I contributed to this agentic foundation model for CLI interaction, coding, and multi-step tool use during my research internship at <strong>Ubiquant (九坤投资)</strong>.</span>
+  <span class="news-text">📄 <a href="https://arxiv.org/abs/2610.30949"><strong title="IQuest-Q1: Advancing Foundation Capabilities for Agentic CLI Systems">IQuest-Q1</strong></a> technical report released. I contributed to this agentic foundation model for CLI interaction, coding, and multi-step tool use during my research internship at <strong>Ubiquant (九坤投资)</strong>.</span>
 </li>
 
 <li class="news-item">

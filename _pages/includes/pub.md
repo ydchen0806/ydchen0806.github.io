@@ -359,11 +359,11 @@ Combines evolutionary prompt optimization with reinforcement learning and multi-
 <div class='paper-box' id='iquest-q1-report' style="scroll-margin-top: 90px;">
 <div class='paper-box-image'><div>
 <div class="badge-conference" style="position: static;">Technical Report 2026</div>
-<a href="/images/IQuestQ1.png" class="image-popup" title="Q1 technical report, Figure 3: overall model architecture"><img src="/images/IQuestQ1.png" alt="Q1 technical report, Figure 3: overall model architecture" width="1400" height="1241" loading="lazy" decoding="async" style="width: 100%; height: auto;"></a>
+<a href="/images/IQuestQ1.png" class="image-popup" title="IQuest-Q1 technical report, Figure 3: overall model architecture"><img src="/images/IQuestQ1.png" alt="IQuest-Q1 technical report, Figure 3: overall model architecture" width="1400" height="1241" loading="lazy" decoding="async" style="width: 100%; height: auto;"></a>
 </div></div>
 <div class='paper-box-text' markdown="1">
 
-[Q1: Advancing Foundation Capabilities for Agentic CLI Systems](https://arxiv.org/abs/2610.30949)  <span class="research-tags"><span class="research-tag">Agentic Models</span><span class="research-tag">Tool Use</span></span> \\
+[IQuest-Q1: Advancing Foundation Capabilities for Agentic CLI Systems](https://arxiv.org/abs/2610.30949)  <span class="research-tags"><span class="research-tag">Agentic Models</span><span class="research-tag">Tool Use</span></span> \\
 Ubiquant (九坤投资) · October 2026 \\
 **Yinda Chen**, co-author
 
