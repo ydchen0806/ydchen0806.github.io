@@ -137,7 +137,7 @@
 </div>
 <ul class="edu-details">
   <li>Research focus: representation and multimodal learning, embodied world models, agentic foundation models, and connectomics.</li>
-  <li>Advisors: <a href="https://scholar.google.com/citations?user=5bInRDEAAAAJ&hl=en">Prof. Feng Wu</a> and <a href="https://scholar.google.com/citations?user=Snl0HPEAAAAJ&hl=en&oi=ao">Prof. Zhiwei Xiong</a>; connectomics and neuroscience mentor: <a href="https://ibi.braintell.org/#/cn/faculty/zhang-ruobing">Prof. Ruobing Zhang</a>.</li>
+  <li>Advisors and research mentors: <a href="https://scholar.google.com/citations?user=5bInRDEAAAAJ&hl=en">Prof. Feng Wu</a> and <a href="https://scholar.google.com/citations?user=Snl0HPEAAAAJ&hl=en&oi=ao">Prof. Zhiwei Xiong</a>; <a href="https://scholar.google.com/citations?user=qpBtpGsAAAAJ&hl=en"><strong>Prof. Xiaoou Tang (汤晓鸥, IEEE Fellow)</strong></a>, co-supervisor at Shanghai AI Lab in 2023; <a href="https://ibi.braintell.org/#/cn/faculty/zhang-ruobing">Prof. Ruobing Zhang</a>, connectomics and neuroscience mentor.</li>
   <li>Principal Investigator, <a href="/docs/国自然.png">NSFC Doctoral Student Project</a> (awarded in 2024; project period 2025–2027; funding: RMB 300,000).</li>
   <li>Selected for the <a href="/docs/cast_ccf_2026_selection_proof.png?v=20261022">2026 CAST Doctoral Student Program</a>, with the China Computer Federation (CCF) as the cultivating society.</li>
 </ul>
