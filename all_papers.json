@@ -371,6 +371,19 @@
     "should_include": true
   },
   {
+    "title": "A medial entorhinal connectome reveals compartmentalized microcircuit architecture",
+    "authors": "T Shi, Y Chen, H Jin, H Jiang, X Chen, Z Xiong, F Wu, R Zhang",
+    "year": "2026",
+    "citations": 0,
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hCvlj5cAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=hCvlj5cAAAAJ:NhqRSupF_l8C",
+    "is_first_author": true,
+    "venue": null,
+    "is_high_cited": false,
+    "is_recent": true,
+    "is_qualified": null,
+    "should_include": null
+  },
+  {
     "title": "Reasoning-VLA: A fast and general vision-language-action reasoning model for autonomous driving",
     "authors": "D Zhang, Z Yuan, Z Chen, CT Liao, Y Chen, F Shen, Q Zhou, TS Chua",
     "year": "2025",
