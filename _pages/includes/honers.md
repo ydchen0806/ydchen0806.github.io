@@ -130,7 +130,7 @@
 <div id="honors-awards">
 
 <details open>
-<summary>🏅 National Awards & Research Funding <span class="badge-count">5</span></summary>
+<summary>🏅 National Awards & Research Funding <span class="badge-count">6</span></summary>
 <ul class="award-list">
 
 <li><strong><a href="/docs/cast_ccf_2026_selection_proof.png?v=20261022" target="_blank" rel="noopener">2026 CAST Doctoral Student Program (中国科协博士生青托)</a></strong> <span class="award-date">(October 2026)</span>
@@ -143,6 +143,13 @@
   <ul>
     <li><strong>Role:</strong> Principal Investigator</li>
     <li><strong>Project:</strong> Awarded in 2024; project period 2025–2027; funding of RMB 300,000</li>
+  </ul>
+</li>
+
+<li><strong><a href="https://www.overleaf.com/read/hjrjffjfthgc#d8acfd">Interdisciplinary Contest in Modeling (ICM), Outstanding Winner</a></strong> <span class="award-date">(May 2024)</span>
+  <ul>
+    <li><strong>Competition:</strong> International mathematical modeling competition organized by COMAP</li>
+    <li><strong>Resources:</strong> 📝 <a href="https://github.com/ydchen0806/24ICM_E_O_Award_Paper_code">Paper &amp; Code</a> <a href="https://github.com/ydchen0806/24ICM_E_O_Award_Paper_code"><img src="https://img.shields.io/github/stars/ydchen0806/24ICM_E_O_Award_Paper_code?style=social&amp;label=Stars" alt="Stars"></a></li>
   </ul>
 </li>
 
@@ -171,8 +178,14 @@
 </details>
 
 <details open>
-<summary>🎓 Academic Honors <span class="badge-count">1</span></summary>
+<summary>🎓 Academic Honors & Scholarships <span class="badge-count">2</span></summary>
 <ul class="award-list">
+
+<li><strong><a href="/docs/增华奖学金.jpg">Zenghua Scholarship (增华奖学金)</a></strong> <span class="award-date">(January 2026)</span>
+  <ul>
+    <li><strong>Level:</strong> University-level scholarship, University of Science and Technology of China</li>
+  </ul>
+</li>
 
 <li><strong><a href="/docs/学术之星奖杯.jpg">Xiamen University Academic Star (学术之星)</a></strong> <span class="award-date">(December 2021)</span>
   <ul>
