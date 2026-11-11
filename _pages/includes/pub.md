@@ -9,7 +9,7 @@ For a complete list of publications, please visit my [Google Scholar profile](ht
 </div>
 </details>
 
-<p class="report-shortcuts" id="ubiquant-reports"><strong>Ubiquant technical reports:</strong> <a href="#sail-report">SAIL</a> · <a href="#iquest-q1-report">IQuest-Q1</a></p>
+<p class="report-shortcuts" id="ubiquant-reports"><strong>Ubiquant technical reports:</strong> <span><a href="#sail-report">SAIL</a> · <a href="#iquest-q1-report">IQuest-Q1</a></span></p>
 
 **Note:** * denotes equal contribution. Journal and conference papers shown here are first- or co-first-authored; technical-report roles are stated individually.
 
@@ -93,6 +93,12 @@ For a complete list of publications, please visit my [Google Scholar profile](ht
 }
 
 .report-shortcuts { scroll-margin-top: 90px; }
+.report-shortcuts span { white-space: nowrap; }
+/* Keep the transparent vector figure legible in the dark image viewer. */
+.mfp-img[src$="/IQuestQ1.svg"] {
+  background: #fff;
+  background-clip: content-box;
+}
 #pub-section .report-paper .paper-box-image img {
   width: 100%;
   height: auto;
