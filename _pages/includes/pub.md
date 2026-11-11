@@ -1,4 +1,4 @@
-# 📝 Selected Research
+# 📝 Publications & Technical Reports
 
 For a complete list of publications, please visit my [Google Scholar profile](https://scholar.google.com/citations?user=hCvlj5cAAAAJ&hl=en&oi=ao) [![](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/ydchen0806/ydchen0806.github.io/google-scholar-stats/gs_data_shieldsio.json&logo=google-scholar&logoColor=white)](https://scholar.google.com/citations?user=hCvlj5cAAAAJ&hl=en&oi=ao)
 
@@ -8,6 +8,8 @@ For a complete list of publications, please visit my [Google Scholar profile](ht
   <img src="https://raw.githubusercontent.com/ydchen0806/ydchen0806.github.io/google-scholar-stats/citation_trend.svg" alt="Citation Trend" style="max-width: 100%; height: auto;">
 </div>
 </details>
+
+<p class="report-shortcuts" id="ubiquant-reports"><strong>Ubiquant technical reports:</strong> <a href="#sail-report">SAIL</a> · <a href="#iquest-q1-report">IQuest-Q1</a></p>
 
 **Note:** * denotes equal contribution. Journal and conference papers shown here are first- or co-first-authored; technical-report roles are stated individually.
 
@@ -90,25 +92,19 @@ For a complete list of publications, please visit my [Google Scholar profile](ht
   margin-bottom: 8px;
 }
 
-#pub-section .report-figure-pair {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 10px;
-}
-#pub-section .report-figure-pair img {
+.report-shortcuts { scroll-margin-top: 90px; }
+#pub-section .report-paper .paper-box-image img {
   width: 100%;
-  height: 150px;
+  height: auto;
   object-fit: contain;
   background: #fff;
 }
-#pub-section .report-figure-label {
-  display: block;
-  margin-top: 6px;
+#pub-section .figure-caption {
+  margin: 0.7em 0 0;
+  color: #666;
+  font-size: 0.75em;
+  line-height: 1.5;
   text-align: center;
-  font-size: 0.8em;
-}
-#pub-section .paired-report-title {
-  white-space: nowrap;
 }
 
 .paper-box-text a {
@@ -287,8 +283,48 @@ Self-supervised pretraining that encourages multiscale consistency in volumetric
 
 </details>
 
-<details>
+<details open>
 <summary>✨ Foundation Models, Multimodal Learning &amp; Agents <span class="badge-count">8</span></summary>
+
+<!-- Original report figure: https://arxiv.org/html/2610.30949v1/M1-ARCH-V3.svg -->
+<div class='paper-box report-paper' id='iquest-q1-report' style="scroll-margin-top: 90px;">
+<div class='paper-box-image'><div>
+<div class="badge-conference" style="position: static;">Technical Report 2026</div>
+<a href="/images/IQuestQ1.svg" class="image-popup" title="IQuest-Q1 technical report, Figure 3: overall model architecture"><img src="/images/IQuestQ1.svg" alt="IQuest-Q1 technical report, Figure 3: overall model architecture" width="1400" height="1241" loading="lazy" decoding="async" style="width: 100%; height: auto;"></a>
+<p class="figure-caption">Figure 3 · Model architecture · Click to enlarge</p>
+</div></div>
+<div class='paper-box-text' markdown="1">
+
+[IQuest-Q1: Advancing Foundation Capabilities for Agentic CLI Systems](https://arxiv.org/abs/2610.30949)  <span class="research-tags"><span class="research-tag">Agentic Models</span><span class="research-tag">Tool Use</span></span> \\
+Ubiquant (九坤投资) · October 2026 \\
+**Yinda Chen**, co-author
+
+[**Report**](https://arxiv.org/abs/2610.30949) | [**Project**](https://iquestlab.github.io/) | [**Code**](https://github.com/IQuestLab/IQuest-Q1) [![](https://img.shields.io/github/stars/IQuestLab/IQuest-Q1?style=social&label=Code+Stars&cacheSeconds=3600)](https://github.com/IQuestLab/IQuest-Q1) | [**Models**](https://huggingface.co/IQuestLab/IQuest-Q1)
+
+A foundation model for command-line interaction, coding, and multi-step tool use. Contributed during my research internship at Ubiquant (九坤投资).
+
+</div>
+</div>
+
+<!-- Original report figure: https://arxiv.org/html/2610.11451v1/improvement-loop.svg -->
+<div class='paper-box report-paper' id='sail-report' style="scroll-margin-top: 90px;">
+<div class='paper-box-image'><div>
+<div class="badge-conference" style="position: static;">Technical Report 2026</div>
+<a href="/images/SAIL.png" class="image-popup" title="SAIL report, Figure 4: science-aware improvement loop"><img src="/images/SAIL.png" alt="SAIL report, Figure 4: science-aware improvement loop" width="1400" height="875" loading="lazy" decoding="async" style="width: 100%; height: auto;"></a>
+<p class="figure-caption">Figure 4 · Science-aware improvement loop · Click to enlarge</p>
+</div></div>
+<div class='paper-box-text' markdown="1">
+
+[SAIL: Scientific Agentic Intelligence via a Science-Aware Loop](https://arxiv.org/abs/2610.11451)  <span class="research-tags"><span class="research-tag">Scientific Agents</span><span class="research-tag">Agentic Models</span></span> \\
+Ubiquant (九坤投资) · October 2026 \\
+SAIL Model Team · **Yinda Chen**, core contributor
+
+[**Report**](https://arxiv.org/abs/2610.11451)
+
+A scientific-agent research project for literature research, scientific coding, and multi-step investigations, developed through a science-aware improvement loop.
+
+</div>
+</div>
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge-journal">IEEE TPAMI</div><a href="/images/TPAMI25.png" class="image-popup" title="GRCL: generative reference and conditional latent coding framework"><img src="/images/TPAMI25.png" alt="GRCL: generative reference and conditional latent coding framework" width="1740" height="501" loading="lazy" decoding="async" style="width: 100%; height: auto;"></a></div></div>
 <div class='paper-box-text' markdown="1">
@@ -375,25 +411,6 @@ Combines evolutionary prompt optimization with reinforcement learning and multi-
 </div>
 </div>
 
-
-<!-- Original report figures: https://arxiv.org/html/2610.11451v1/improvement-loop.svg and https://arxiv.org/html/2610.30949v1/M1-ARCH-V3.svg -->
-<div class='paper-box' id='ubiquant-reports' style="scroll-margin-top: 90px;">
-<div class='paper-box-image'><div>
-<div class="badge-conference" style="position: static;">Technical Reports 2026</div>
-<div class="report-figure-pair">
-<div id="sail-report" style="scroll-margin-top: 90px;"><a href="/images/SAIL.png" class="image-popup" title="SAIL report, Figure 4: science-aware improvement loop"><img src="/images/SAIL.png" alt="SAIL report, Figure 4: science-aware improvement loop" width="1400" height="875" loading="lazy" decoding="async"></a><span class="report-figure-label">SAIL</span></div>
-<div id="iquest-q1-report" style="scroll-margin-top: 90px;"><a href="/images/IQuestQ1.png" class="image-popup" title="IQuest-Q1 technical report, Figure 3: overall model architecture"><img src="/images/IQuestQ1.png" alt="IQuest-Q1 technical report, Figure 3: overall model architecture" width="1400" height="1241" loading="lazy" decoding="async"></a><span class="report-figure-label">IQuest-Q1</span></div>
-</div>
-</div></div>
-<div class='paper-box-text'>
-<p><span class="paired-report-title"><a href="https://arxiv.org/abs/2610.11451" title="SAIL: Scientific Agentic Intelligence via a Science-Aware Loop">SAIL</a> · <a href="https://arxiv.org/abs/2610.30949" title="IQuest-Q1: Advancing Foundation Capabilities for Agentic CLI Systems">IQuest-Q1</a></span> <span class="research-tags"><span class="research-tag">Scientific Agents</span><span class="research-tag">Agentic Models</span></span><br>
-Ubiquant (九坤投资) · October 2026<br>
-<strong>Yinda Chen</strong> — SAIL: core contributor; IQuest-Q1: co-author</p>
-<p><a href="https://arxiv.org/abs/2610.11451"><strong>SAIL Report</strong></a> | <a href="https://arxiv.org/abs/2610.30949"><strong>IQuest-Q1 Report</strong></a><br>
-<a href="https://iquestlab.github.io/"><strong>IQuest-Q1 Project</strong></a> | <a href="https://github.com/IQuestLab/IQuest-Q1"><strong>Code</strong></a> <a href="https://github.com/IQuestLab/IQuest-Q1"><img src="https://img.shields.io/github/stars/IQuestLab/IQuest-Q1?style=social&amp;label=Code+Stars&amp;cacheSeconds=3600" alt="Code Stars"></a> | <a href="https://huggingface.co/IQuestLab/IQuest-Q1"><strong>Models</strong></a></p>
-<p>SAIL studies scientific-agent workflows through a science-aware improvement loop; IQuest-Q1 develops foundation capabilities for command-line interaction, coding, and multi-step tool use.</p>
-</div>
-</div>
 
 </details>
 
