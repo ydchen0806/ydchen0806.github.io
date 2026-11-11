@@ -75,12 +75,7 @@
 
 <li class="news-item">
   <span class="news-date">2026.10</span>
-  <span class="news-text">📄 <a href="https://arxiv.org/abs/2610.30949"><strong title="IQuest-Q1: Advancing Foundation Capabilities for Agentic CLI Systems">IQuest-Q1</strong></a> technical report released. I contributed to this agentic foundation model for CLI interaction, coding, and multi-step tool use during my research internship at <strong>Ubiquant (九坤投资)</strong>.</span>
-</li>
-
-<li class="news-item">
-  <span class="news-date">2026.10</span>
-  <span class="news-text">🔬 Core contributor to <a href="https://arxiv.org/abs/2610.11451"><strong title="SAIL: Scientific Agentic Intelligence via a Science-Aware Loop">SAIL</strong></a>, a scientific-agent model for literature research, scientific coding, and multi-step research workflows at <strong>Ubiquant (九坤投资)</strong>.</span>
+  <span class="news-text">📄 <a href="https://arxiv.org/abs/2610.11451"><strong title="SAIL: Scientific Agentic Intelligence via a Science-Aware Loop">SAIL</strong></a> (core contributor) and <a href="https://arxiv.org/abs/2610.30949"><strong title="IQuest-Q1: Advancing Foundation Capabilities for Agentic CLI Systems">IQuest-Q1</strong></a> (co-author): technical reports from my research internship at <strong>Ubiquant (九坤投资)</strong>.</span>
 </li>
 
 <li class="news-item">
@@ -137,11 +132,6 @@
 <li class="news-item">
   <span class="news-date">2026.04</span>
   <span class="news-text">🎵 Earned the <a href="/docs/berklee_singing_popular_music_cert.png">Singing Popular Music</a> certification from <strong>Berklee College of Music</strong>.</span>
-</li>
-
-<li class="news-item">
-  <span class="news-date">2026.01</span>
-  <span class="news-text">🎓 Awarded the <a href="/docs/增华奖学金.jpg">Zenghua Scholarship (增华奖学金)</a> by USTC, a university-level scholarship.</span>
 </li>
 
 <!-- Non-first-author paper acceptances are kept in source but hidden.

@@ -18,7 +18,7 @@ I am [**Yinda Chen (陈胤达)**](https://ydchen0806.github.io/), a Ph.D. candid
 
 - 📝 My publications as first or co-first author include papers at **ICCV**, **NeurIPS**, **AAAI**, **IJCAI**, **ICASSP**, and **MICCAI**, and in **TPAMI** and **JBHI**. See the [publications section](#-publications) or my <a href="https://scholar.google.com/citations?user=hCvlj5cAAAAJ&hl=en">Google Scholar profile <img src="https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/ydchen0806/ydchen0806.github.io/google-scholar-stats/gs_data_shieldsio.json&logo=google-scholar&logoColor=white" alt="Google Scholar citations"></a> for details.
 
-- 📄 My CV is available in [Chinese](/docs/cyd_resume_CN.pdf?v=20261109-r11) and [English](/docs/CYD_resume_EN.pdf?v=20261109-r11).
+- 📄 My CV is available in [Chinese](/docs/cyd_resume_CN.pdf?v=20261111-r12) and [English](/docs/CYD_resume_EN.pdf?v=20261111-r12).
 
 I welcome research discussions and collaboration on representation learning, embodied intelligence, agentic models, and connectomics. Please feel free to reach out.
 
