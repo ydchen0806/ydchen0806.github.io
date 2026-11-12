@@ -90,6 +90,14 @@
   color: #666;
   margin-top: 2px;
 }
+#others-section .talk-download {
+  display: inline-block;
+  margin-top: 0.4em;
+  font-size: 0.88em;
+  font-weight: 600;
+  color: #1976D2;
+  text-decoration: underline;
+}
 
 /* Skill pills */
 #others-section .skill-group {
@@ -170,11 +178,12 @@
 <summary>🎤 Talks & Presentations <span class="badge-count">3</span></summary>
 <div class="section-content">
 
-<div class="talk-item">
+<div class="talk-item" id="sfn-2026-poster" style="scroll-margin-top: 90px;">
   <span class="talk-date">2026</span>
   <div class="talk-text">
     <strong>Connectome-scale chemical lateralization predicts asymmetric memory computation in the adult Drosophila mushroom body</strong>
     <span class="talk-venue">Society for Neuroscience (SfN) 2026 · Accepted poster</span>
+    <a class="talk-download" href="/docs/SFN2026_Poster_Yinda_Chen.pdf" download="SFN2026_Poster_Yinda_Chen.pdf" type="application/pdf">Download poster (PDF, 1.4 MB)</a>
   </div>
 </div>
 
