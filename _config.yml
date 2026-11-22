@@ -14,6 +14,10 @@ google_scholar_stats_use_cdn : true
 # google analytics
 google_analytics_id      : G-SWFCX99KQZ
 
+# Optional private visitor tracking: set the HTTPS Worker root after deployment.
+# An empty value disables new event collection; Flag Counter and GA4 remain active.
+visitor_analytics_endpoint: ""
+
 # SEO Related
 google_site_verification : b_BbOIt7d513ZXYDw-YRMicO6O5tthYiouqWDdWjGTU
 bing_site_verification   : B5AA590E7B9C03956A6F7DEC0F776211
@@ -89,6 +93,7 @@ exclude:
   - tmp
   - vendor
   - google_scholar_crawler
+  - visitor-analytics
   - github_myprofile_updater
 keep_files:
   - .git
