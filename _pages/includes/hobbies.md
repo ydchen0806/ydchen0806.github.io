@@ -165,7 +165,7 @@
       decoding="async"
     />
   </div>
-  <div class="visitor-foot">visitor distribution</div>
+  <div class="visitor-foot">visitor distribution · <a href="/privacy/">privacy</a></div>
 </div>
 
 </div>
