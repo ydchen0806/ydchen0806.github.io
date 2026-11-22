@@ -16,7 +16,7 @@ google_analytics_id      : G-SWFCX99KQZ
 
 # Optional private visitor tracking: set the HTTPS Worker root after deployment.
 # An empty value disables new event collection; Flag Counter and GA4 remain active.
-visitor_analytics_endpoint: ""
+visitor_analytics_endpoint: "https://yinda-visitor-analytics.cyd3933529.workers.dev"
 
 # SEO Related
 google_site_verification : b_BbOIt7d513ZXYDw-YRMicO6O5tthYiouqWDdWjGTU
