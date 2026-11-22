@@ -1,4 +1,7 @@
 <script src="assets/js/main.min.js"></script>
 
 {% include analytics.html %}
+{% if site.visitor_analytics_endpoint and site.visitor_analytics_endpoint != '' %}
+<script defer src="{{ '/assets/js/visitor-tracker.js' | relative_url }}" data-endpoint="{{ site.visitor_analytics_endpoint | escape }}"></script>
+{% endif %}
 {% include fetch_google_scholar_stats.html %}
