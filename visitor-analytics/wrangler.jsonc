@@ -1,0 +1,19 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "yinda-visitor-analytics",
+  "main": "src/worker.js",
+  "compatibility_date": "2026-11-01",
+  "vars": {
+    "SITE_ORIGIN": "https://ydchen0806.github.io",
+    "RAW_IP_DAYS": "3",
+    "DATA_RETENTION_DAYS": "30"
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "yinda-visitor-logs",
+      "database_id": "REPLACE_WITH_YOUR_DATABASE_ID"
+    }
+  ],
+  "triggers": { "crons": ["0 3 * * *"] }
+}
