@@ -165,7 +165,12 @@
       decoding="async"
     />
   </div>
-  <div class="visitor-foot">visitor distribution · <a href="/privacy/">privacy</a></div>
+  <div class="visitor-foot">
+    visitor distribution · <a href="/privacy/">privacy</a>
+    {% if site.visitor_analytics_endpoint and site.visitor_analytics_endpoint != '' %}
+      <a href="{{ site.visitor_analytics_endpoint | escape }}/dashboard" aria-label="Visitor dashboard" title="Visitor dashboard" style="display:inline-block; padding:0.25em 0.45em; color:inherit"><i class="fas fa-lock" aria-hidden="true"></i></a>
+    {% endif %}
+  </div>
 </div>
 
 </div>
